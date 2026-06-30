@@ -3,6 +3,8 @@ layout: post
 title_en: "Privatization of Education: Opportunity or Obstacle?"
 title_ur: ""
 date: 2026-06-30
+author_en: ""
+author_ur: ""
 description_en: "As private institutions reshape the global education landscape, the real debate is not whether private education should exist, but how it can coexist with a strong public system."
 description_ur: ""
 ---

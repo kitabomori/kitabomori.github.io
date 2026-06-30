@@ -16,10 +16,6 @@ layout: base
       {% endif %}
     </h1>
 
-    <p class="post-date">
-      {{ page.date | date: "%d %B %Y" }}
-    </p>
-
     {% if page.description_en or page.description_ur %}
     <p class="post-description">
       {% if site.lang == 'ur' %}
@@ -34,6 +30,21 @@ layout: base
   <div class="post-body">
     {{ content }}
   </div>
+
+  <!-- Author and date, shown at the end of the piece -->
+  {% assign post_author = page.author_en %}
+  {% if site.lang == 'ur' %}{% assign post_author = page.author_ur %}{% endif %}
+  <p class="post-meta-bottom" style="margin-top:32px; padding-top:16px; border-top:1px solid #e0e0e0; color:#555; font-size:0.9rem;">
+    {% if post_author and post_author != "" %}
+      {% if site.lang == 'ur' %}
+        تحریر: {{ post_author }} &mdash; {{ page.date | date: "%d %B %Y" }}
+      {% else %}
+        By {{ post_author }} &mdash; {{ page.date | date: "%d %B %Y" }}
+      {% endif %}
+    {% else %}
+      {{ page.date | date: "%d %B %Y" }}
+    {% endif %}
+  </p>
 
   <!-- Back link -->
   <p class="post-back">

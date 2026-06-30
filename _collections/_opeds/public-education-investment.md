@@ -3,6 +3,8 @@ layout: post
 title_en: "Public Education Is an Investment We Cannot Afford to Neglect"
 title_ur: ""
 date: 2026-06-30
+author_en: ""
+author_ur: ""
 description_en: "Public education remains one of the most powerful tools for building a prosperous, stable, and equitable society — and it cannot be treated as a discretionary expense."
 description_ur: ""
 ---

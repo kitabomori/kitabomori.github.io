@@ -3,6 +3,8 @@ layout: post
 title_en: "A Letter to My Teacher"
 title_ur: "محترمہ ٹیچر کے نام ایک خط"
 date: 2026-06-24
+author_en: ""
+author_ur: ""
 description_en: "A personal letter reflecting on education, change, and the courage to speak up."
 description_ur: "تعلیم، تبدیلی، اور آواز اٹھانے کی ہمت پر ایک ذاتی خط۔"
 ---

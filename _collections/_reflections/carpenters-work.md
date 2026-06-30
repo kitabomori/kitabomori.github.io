@@ -3,6 +3,8 @@ layout: post
 title_en: "Carpenter's Work"
 title_ur: ""
 date: 2026-06-30
+author_en: ""
+author_ur: ""
 description_en: "A reflection on what watching a carpenter at work reveals about preparation, perseverance, craftsmanship, and the quiet dignity of skilled labor."
 description_ur: ""
 ---
