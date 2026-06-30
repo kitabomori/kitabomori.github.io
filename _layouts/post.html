@@ -34,7 +34,7 @@ layout: base
   <!-- Author and date, shown at the end of the piece -->
   {% assign post_author = page.author_en %}
   {% if site.lang == 'ur' %}{% assign post_author = page.author_ur %}{% endif %}
-  <p class="post-meta-bottom" style="margin-top:32px; padding-top:16px; border-top:1px solid #e0e0e0; color:#555; font-size:0.9rem;">
+  <p class="post-meta-bottom">
     {% if post_author and post_author != "" %}
       {% if site.lang == 'ur' %}
         تحریر: {{ post_author }} &mdash; {{ page.date | date: "%d %B %Y" }}
