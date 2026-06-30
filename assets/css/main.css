@@ -153,9 +153,9 @@
 
 .post-body p {
   text-align: justify;
-  text-indent: 2em;
+  text-indent: 0;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 /* Author + date byline at the end of the post */

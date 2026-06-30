@@ -8,14 +8,6 @@ permalink: /main-ne-kya-dekha/
 ---
 
 {% if site.lang == 'ur' %}
-<p class="collection-intro">مطالعے اور سیکھنے کی جگہوں پر فیلڈ نوٹس اور بصری مشاہدات۔</p>
-{% else %}
-<p class="collection-intro">Field notes and visual observations on reading and learning spaces.</p>
-{% endif %}
-
----
-
-{% if site.lang == 'ur' %}
 
 ### ایک: دیہاتی کلاس روم میں بچے
 

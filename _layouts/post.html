@@ -15,16 +15,6 @@ layout: base
         {{ page.title_en | default: page.title }}
       {% endif %}
     </h1>
-
-    {% if page.description_en or page.description_ur %}
-    <p class="post-description">
-      {% if site.lang == 'ur' %}
-        {{ page.description_ur }}
-      {% else %}
-        {{ page.description_en }}
-      {% endif %}
-    </p>
-    {% endif %}
   </header>
 
   <div class="post-body">

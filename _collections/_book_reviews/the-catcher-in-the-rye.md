@@ -9,8 +9,6 @@ description_en: "A look at why Salinger's 1951 novel of adolescence, alienation,
 description_ur: ""
 ---
 
-**Title:** The Catcher in the Rye | **Author:** J. D. Salinger | **Publisher:** Little, Brown and Company | **Year:** 1951
-
 Published in 1951, The Catcher in the Rye remains one of the most influential and controversial novels in modern American literature. Written by J. D. Salinger, the novel follows sixteen-year-old Holden Caulfield as he wanders through New York City after being expelled from school. More than a coming-of-age story, the novel is a profound exploration of adolescence, identity, loneliness, and the struggle to preserve innocence in an increasingly complex world.
 
 The story unfolds over a few days as Holden leaves his boarding school and avoids returning home. During his journey, he encounters former classmates, strangers, nuns, and family members, each interaction revealing his deep dissatisfaction with what he calls the "phoniness" of the adult world. Beneath Holden's sarcastic humor and rebellious attitude lies a young man grappling with grief, isolation, and emotional vulnerability following the death of his younger brother, Allie.

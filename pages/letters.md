@@ -7,12 +7,6 @@ description_ur: "اساتذہ، طلباء اور محققین کی طرف سے 
 permalink: /letters/
 ---
 
-{% if site.lang == 'ur' %}
-<p class="collection-intro">اساتذہ، طلباء اور محققین کی طرف سے ذاتی خطوط۔</p>
-{% else %}
-<p class="collection-intro">Personal letters from teachers, students, and researchers.</p>
-{% endif %}
-
 <div class="card-grid">
   {% assign sorted_items = site.letters | sort: "date" | reverse %}
   {% for item in sorted_items %}
@@ -23,13 +17,6 @@ permalink: /letters/
       </a>
     </h2>
     <p class="card-date">{{ item.date | date: "%d %B %Y" }}</p>
-    <p class="card-excerpt">
-      {% if site.lang == 'ur' %}
-        {{ item.description_ur }}
-      {% else %}
-        {{ item.description_en }}
-      {% endif %}
-    </p>
     <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}" class="card-read-more">
       {% if site.lang == 'ur' %}مزید پڑھیں &rarr;{% else %}Read more &rarr;{% endif %}
     </a>
