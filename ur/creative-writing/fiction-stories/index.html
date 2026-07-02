@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     base.html – root layout for all pages.
+     Sets html lang/dir, loads head, header, footer, and
+     applies body font from site config.
+     ============================================================ -->
+<html lang="ur"
+      dir="rtl"
+      class="">
+<head>
+  <!-- ============================================================
+     head.html – <head> block for all pages
+     Sets charset, viewport, Google Fonts, Tailwind CSS, theme script,
+     and all metadata. Called once from base.html.
+     ============================================================ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Page title: prefer page-specific title, fall back to site title -->
+<title>
+  
+    افسانہ اور کہانیاں – کتابومری
+  
+</title>
+
+<!-- Meta description -->
+<meta name="description" content="کتابومری کمیونٹی کی جانب سے مختصر کہانیاں اور تخیلاتی افسانے۔">
+
+<!-- Open Graph -->
+<meta property="og:title" content="افسانہ اور کہانیاں">
+<meta property="og:description" content="کتابومری کمیونٹی کی جانب سے مختصر کہانیاں اور تخیلاتی افسانے۔">
+<meta property="og:type" content="website">
+
+<!-- Google Fonts: Inter (English) + Noto Nastaliq Urdu (Urdu)
+     Loaded with display=swap for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS (compiled by PostCSS build step) -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!-- Theme script: runs before paint to prevent flash of wrong colour scheme -->
+<script src="/assets/js/theme.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+</head>
+<body style="font-family: 'Noto Nastaliq Urdu', serif;">
+
+  <!-- ============================================================
+     header.html – site-wide header
+     Contains: logo/site name, navigation (with one dropdown for
+     Creative Writing), language switcher, dark mode toggle.
+     Background: #009F93 (brand teal). Text: #FFFFFF.
+     No icons anywhere – plain text only.
+     ============================================================ -->
+<header class="site-header" style="background-color:#009F93;">
+  <div class="header-inner">
+
+    <!-- Site name / logo -->
+    <a href="/ur/"
+       class="site-title"
+       style="color:#FFFFFF; text-decoration:none;">
+      کتابومری
+    </a>
+
+    <!-- Mobile nav toggle (plain text, no icon) -->
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation"
+            aria-expanded="false" aria-controls="main-nav"
+            style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:4px 10px; cursor:pointer; font-size:0.85rem;">
+      مینو
+    </button>
+
+    <!-- Main navigation -->
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        
+        
+        <li>
+          <a href="/ur/"
+             style="color:#FFFFFF;">
+            مرکزی صفحہ
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/opeds/"
+             style="color:#FFFFFF;">
+            کالم
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/blogs/"
+             style="color:#FFFFFF;">
+            بلاگز
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/reviews/"
+             style="color:#FFFFFF;">
+            جائزے
+          </a>
+        </li>
+        
+        
+        
+        <li class="nav-item-has-children">
+          <div class="nav-parent-row">
+            <a href="/ur/creative-writing/"
+               style="color:#FFFFFF;">
+              تخلیقی تحریر
+            </a>
+            <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
+                     aria-label="ذیلی مینو کھولیں"
+                     aria-expanded="false"
+                     style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
+          </div>
+          <ul class="submenu">
+            
+            <li>
+              <a href="/ur/creative-writing/fiction-stories/"
+                 style="color:#FFFFFF;">
+                افسانہ اور کہانیاں
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/poetry/"
+                 style="color:#FFFFFF;">
+                شاعری
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/what-i-saw/"
+                 style="color:#FFFFFF;">
+                میں نے دیکھا
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/reflections/"
+             style="color:#FFFFFF;">
+            عکاسی
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/letters/"
+             style="color:#FFFFFF;">
+            خطوط
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/events/"
+             style="color:#FFFFFF;">
+            تقریبات
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/search/"
+             style="color:#FFFFFF;">
+            تلاش
+          </a>
+        </li>
+        
+        
+      </ul>
+    </nav>
+
+    <!-- Header controls: language switcher + dark mode toggle -->
+    <div class="header-controls">
+
+      <!-- Language switcher: swaps /en/ <-> /ur/ in the current URL -->
+      <a href="#" onclick="switchLanguage(event)" class="lang-switch"
+         style="color:#FFFFFF; border:1px solid #FFFFFF; padding:3px 10px; text-decoration:none; font-size:0.85rem;">
+        EN
+      </a>
+
+      <!-- Dark mode toggle: plain text, no icon -->
+      <button onclick="toggleDark()" id="theme-btn"
+              style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-right:6px;">
+        تاریک
+      </button>
+
+    </div><!-- /.header-controls -->
+  </div><!-- /.header-inner -->
+</header>
+
+<script>
+  /* --------------------------------------------------------
+     switchLanguage()
+     Swaps /en/ and /ur/ in the current path, then navigates.
+     Falls back to the opposite home page if swap fails.
+  -------------------------------------------------------- */
+  function switchLanguage(e) {
+    e.preventDefault();
+    var path = window.location.pathname;
+    var newPath;
+    if (path.includes('/en/')) {
+      newPath = path.replace('/en/', '/ur/');
+    } else if (path.includes('/ur/')) {
+      newPath = path.replace('/ur/', '/en/');
+    } else {
+      // Fallback: go to opposite home
+      newPath = path.includes('/ur') ? '/en/' : '/ur/';
+    }
+    window.location.href = newPath;
+  }
+
+  /* --------------------------------------------------------
+     toggleNav()
+     Shows/hides the mobile navigation menu.
+  -------------------------------------------------------- */
+  function toggleNav() {
+    var nav = document.getElementById('main-nav');
+    var btn = document.querySelector('.nav-toggle');
+    var isOpen = nav.classList.toggle('open');
+    if (btn) { btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false'); }
+  }
+
+  /* --------------------------------------------------------
+     toggleSubmenu()
+     Mobile: tapping the caret expands/collapses the Creative
+     Writing submenu as an accordion. Desktop uses CSS hover,
+     but the button also works there via click for keyboard/touch
+     users (e.g. tablets that don't fire hover reliably).
+  -------------------------------------------------------- */
+  function toggleSubmenu(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    var li = btn.closest('.nav-item-has-children');
+    var isOpen = li.classList.toggle('submenu-open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  // Close any open submenu when clicking elsewhere
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (li) {
+      if (!li.contains(e.target)) {
+        li.classList.remove('submenu-open');
+        var btn = li.querySelector('.submenu-toggle');
+        if (btn) { btn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+  });
+
+  /* --------------------------------------------------------
+     Update dark mode button label after theme.js runs.
+  -------------------------------------------------------- */
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('theme-btn');
+    if (btn) {
+      var isDark = document.documentElement.classList.contains('dark');
+      
+        btn.textContent = isDark ? 'روشن' : 'تاریک';
+      
+    }
+  });
+</script>
+
+
+  <main id="main-content">
+    <!-- ============================================================
+     page.html – layout for standard content pages.
+     Wraps content in a centred container with page-title heading.
+     ============================================================ -->
+<div class="page-container">
+
+  <h1 class="page-title">
+    
+      افسانہ اور کہانیاں
+    
+  </h1>
+
+  <div class="page-content">
+    
+<p class="collection-intro">تخیل پر مبنی مختصر کہانیاں اور افسانے۔</p>
+
+<div class="card-grid">
+  
+  
+  <div class="content-card">
+    <h2 class="card-title">
+      <a href="/ur/creative-writing/fiction-stories/the-borrowed-lantern/">
+        ادھار کی لالٹین
+      </a>
+    </h2>
+    <p class="card-date">27 June 2026</p>
+    <p class="card-excerpt">
+      
+        ایک دیہاتی استاد کی کہانی جو رات کو پڑھنے والے طالب علم کو روشنی سے کہیں زیادہ عطا کرتا ہے۔
+      
+    </p>
+    <a href="/ur/creative-writing/fiction-stories/the-borrowed-lantern/" class="card-read-more">
+      مزید پڑھیں &rarr;
+    </a>
+  </div>
+  
+</div>
+
+  </div>
+
+</div>
+
+  </main>
+
+  <!-- ============================================================
+     footer.html – site-wide footer
+     Centered, stacked layout: nav links, submission/guidelines,
+     social row, email, privacy policy, copyright.
+     Background: #009F93, Text: #FFFFFF. No icons anywhere.
+     ============================================================ -->
+<footer class="site-footer" style="background-color:#009F93; color:#FFFFFF;">
+  <div class="footer-inner">
+
+    <!-- Row 1: Return to ... main section links -->
+    <p class="footer-row">
+      <span class="footer-label">واپس جائیں:</span>
+      
+      
+        <a href="/ur/" style="color:#FFFFFF;">
+          مرکزی صفحہ
+        </a> · 
+      
+        <a href="/ur/opeds/" style="color:#FFFFFF;">
+          کالم
+        </a> · 
+      
+        <a href="/ur/blogs/" style="color:#FFFFFF;">
+          بلاگز
+        </a> · 
+      
+        <a href="/ur/reviews/" style="color:#FFFFFF;">
+          جائزے
+        </a> · 
+      
+        <a href="/ur/creative-writing/" style="color:#FFFFFF;">
+          تخلیقی تحریر
+        </a> · 
+      
+        <a href="/ur/reflections/" style="color:#FFFFFF;">
+          عکاسی
+        </a> · 
+      
+        <a href="/ur/letters/" style="color:#FFFFFF;">
+          خطوط
+        </a> · 
+      
+        <a href="/ur/events/" style="color:#FFFFFF;">
+          تقریبات
+        </a>
+      
+    </p>
+
+    <!-- Row 2: Submission page / Submission Form / Guidelines -->
+    <p class="footer-row">
+      <a href="/ur/submission/" style="color:#FFFFFF;">
+        تحریر جمع کروائیں
+      </a>
+      &nbsp;&nbsp;
+      <a href="https://forms.gle/a3AosqLwLdP7q9Co7" target="_blank" rel="noopener" style="color:#FFFFFF;">
+        جمع کروانے کا فارم
+      </a>
+      &nbsp;&nbsp;
+      <a href="/ur/guidelines/" style="color:#FFFFFF;">
+        ہدایات
+      </a>
+    </p>
+
+    <!-- Row 3: Social -->
+    <p class="footer-row">
+      <span class="footer-label">ہمیں فالو کریں:</span>
+      <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
+      <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
+      <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener" style="color:#FFFFFF;">YouTube</a>
+    </p>
+
+    <!-- Row 4: Email -->
+    <p class="footer-row">
+      <span class="footer-label">ای میل:</span>
+      <a href="mailto:kitabomori@gmail.com" style="color:#FFFFFF;">kitabomori@gmail.com</a>
+    </p>
+
+    <!-- Row 5: Privacy Policy -->
+    <p class="footer-row">
+      <a href="/ur/privacy/" style="color:#FFFFFF;">
+        رازداری کی پالیسی
+      </a>
+    </p>
+
+    <!-- Row 6: Copyright -->
+    <p class="footer-copy">
+      &copy; 2026 Kitabomori.
+      
+        تمام حقوق محفوظ ہیں۔
+      
+    </p>
+
+  </div><!-- /.footer-inner -->
+</footer>
+
+
+</body>
+</html>

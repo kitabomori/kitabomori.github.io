@@ -24,11 +24,11 @@
 </title>
 
 <!-- Meta description -->
-<meta name="description" content="کتابومری میں آپنی بلاگ، اوپ ایڈ، کتابی جائزہ یا خط جمع کرانے کا طریقہ۔">
+<meta name="description" content="کتابومری میں اپنی تحریر جمع کروانے کا مکمل طریقہ — بلاگز، کالم، جائزے، خطوط، عکاسی، افسانہ اور کہانیاں، شاعری، اور میں نے دیکھا۔">
 
 <!-- Open Graph -->
 <meta property="og:title" content="اشاعت کی ہدایات">
-<meta property="og:description" content="کتابومری میں آپنی بلاگ، اوپ ایڈ، کتابی جائزہ یا خط جمع کرانے کا طریقہ۔">
+<meta property="og:description" content="کتابومری میں اپنی تحریر جمع کروانے کا مکمل طریقہ — بلاگز، کالم، جائزے، خطوط، عکاسی، افسانہ اور کہانیاں، شاعری، اور میں نے دیکھا۔">
 <meta property="og:type" content="website">
 
 <!-- Google Fonts: Inter (English) + Noto Nastaliq Urdu (Urdu)
@@ -51,7 +51,8 @@
 
   <!-- ============================================================
      header.html – site-wide header
-     Contains: logo/site name, navigation, language switcher, dark mode toggle.
+     Contains: logo/site name, navigation (with one dropdown for
+     Creative Writing), language switcher, dark mode toggle.
      Background: #009F93 (brand teal). Text: #FFFFFF.
      No icons anywhere – plain text only.
      ============================================================ -->
@@ -76,12 +77,24 @@
     <nav class="main-nav" id="main-nav">
       <ul>
         
+        
         <li>
           <a href="/ur/"
              style="color:#FFFFFF;">
-            گھر
+            مرکزی صفحہ
           </a>
         </li>
+        
+        
+        
+        <li>
+          <a href="/ur/opeds/"
+             style="color:#FFFFFF;">
+            کالم
+          </a>
+        </li>
+        
+        
         
         <li>
           <a href="/ur/blogs/"
@@ -90,26 +103,55 @@
           </a>
         </li>
         
+        
+        
         <li>
-          <a href="/ur/opeds/"
+          <a href="/ur/reviews/"
              style="color:#FFFFFF;">
-            اوپ ایڈ
+            جائزے
           </a>
         </li>
         
-        <li>
-          <a href="/ur/letters/"
-             style="color:#FFFFFF;">
-            خطوط
-          </a>
+        
+        
+        <li class="nav-item-has-children">
+          <div class="nav-parent-row">
+            <a href="/ur/creative-writing/"
+               style="color:#FFFFFF;">
+              تخلیقی تحریر
+            </a>
+            <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
+                     aria-label="ذیلی مینو کھولیں"
+                     aria-expanded="false"
+                     style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
+          </div>
+          <ul class="submenu">
+            
+            <li>
+              <a href="/ur/creative-writing/fiction-stories/"
+                 style="color:#FFFFFF;">
+                افسانہ اور کہانیاں
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/poetry/"
+                 style="color:#FFFFFF;">
+                شاعری
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/what-i-saw/"
+                 style="color:#FFFFFF;">
+                میں نے دیکھا
+              </a>
+            </li>
+            
+          </ul>
         </li>
         
-        <li>
-          <a href="/ur/book-reviews/"
-             style="color:#FFFFFF;">
-            کتابی جائزے
-          </a>
-        </li>
+        
         
         <li>
           <a href="/ur/reflections/"
@@ -118,12 +160,25 @@
           </a>
         </li>
         
+        
+        
         <li>
-          <a href="/ur/main-ne-kya-dekha/"
+          <a href="/ur/letters/"
              style="color:#FFFFFF;">
-            میں نے کیا دیکھا
+            خطوط
           </a>
         </li>
+        
+        
+        
+        <li>
+          <a href="/ur/events/"
+             style="color:#FFFFFF;">
+            تقریبات
+          </a>
+        </li>
+        
+        
         
         <li>
           <a href="/ur/search/"
@@ -131,6 +186,7 @@
             تلاش
           </a>
         </li>
+        
         
       </ul>
     </nav>
@@ -187,6 +243,32 @@
   }
 
   /* --------------------------------------------------------
+     toggleSubmenu()
+     Mobile: tapping the caret expands/collapses the Creative
+     Writing submenu as an accordion. Desktop uses CSS hover,
+     but the button also works there via click for keyboard/touch
+     users (e.g. tablets that don't fire hover reliably).
+  -------------------------------------------------------- */
+  function toggleSubmenu(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    var li = btn.closest('.nav-item-has-children');
+    var isOpen = li.classList.toggle('submenu-open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  // Close any open submenu when clicking elsewhere
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (li) {
+      if (!li.contains(e.target)) {
+        li.classList.remove('submenu-open');
+        var btn = li.querySelector('.submenu-toggle');
+        if (btn) { btn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+  });
+
+  /* --------------------------------------------------------
      Update dark mode button label after theme.js runs.
   -------------------------------------------------------- */
   document.addEventListener('DOMContentLoaded', function () {
@@ -218,7 +300,7 @@
     
 <h2 id="اشاعت-کی-ہدایات">اشاعت کی ہدایات</h2>
 
-<p>کتابومری پر اشاعت کے لیے آپ کا خیر مقدم ہے۔ ذیل میں چار اقسام کی تحریروں کے لیے مکمل ہدایات دی گئی ہیں۔</p>
+<p>کتابومری پر اشاعت کے لیے آپ کا خیر مقدم ہے۔ ذیل میں ہر قسم کی تحریر کے لیے مکمل ہدایات دی گئی ہیں۔</p>
 
 <hr />
 
@@ -246,7 +328,7 @@
 
 <hr />
 
-<h3 id="سیکشن-ب-اوپ-ایڈ-education-week-طرز">سیکشن ب: اوپ ایڈ (Education Week طرز)</h3>
+<h3 id="سیکشن-ب-کالم-اوپ-ایڈ-education-week-طرز">سیکشن ب: کالم (اوپ ایڈ) (Education Week طرز)</h3>
 
 <p><strong>طوالت:</strong> ۷۰۰ سے ۱۰۰۰ الفاظ</p>
 
@@ -262,7 +344,7 @@
 
 <hr />
 
-<h3 id="سیکشن-ج-کتابی-جائزے">سیکشن ج: کتابی جائزے</h3>
+<h3 id="سیکشن-ج-جائزے">سیکشن ج: جائزے</h3>
 
 <p><strong>طوالت:</strong> ۵۰۰ سے ۸۰۰ الفاظ</p>
 
@@ -283,18 +365,105 @@
   <li>وضاحت کے لیے تدوین کی جا سکتی ہے۔</li>
 </ol>
 
+<p><strong>حوالہ:</strong> London Review of Books اور اکادمک کتابی جائزوں کا انداز۔</p>
+
+<hr />
+
+<h3 id="سیکشن-د-خطوط">سیکشن د: خطوط</h3>
+
+<p><strong>طوالت:</strong> ۴۰۰ سے ۹۰۰ الفاظ</p>
+
+<p><strong>مقصد:</strong> کسی حقیقی یا فرضی مکتوب الیہ (استاد، طالب علم، ادارہ، یا خود اپنے آپ) کو لکھا گیا ذاتی خط، جو تعلیم، مطالعے یا ذاتی تجربے سے متعلق کوئی سچا اور دلی لمحہ بیان کرے۔ یہ اخبار کے “خط بنام مدیر” (چند سو الفاظ کی رائے) سے مختلف ہے — یہاں زور ذاتی، کھلے اور مخلصانہ لہجے پر ہے۔</p>
+
+<p><strong>عمل:</strong></p>
+<ol>
+  <li>مکمل مسودہ اور دو سے تین سطروں کی مختصر سوانح کے ساتھ ای میل کریں۔</li>
+  <li>خط میں شامل حقیقی افراد کی رازداری کا خیال رکھیں — اگر ضروری ہو تو نام تبدیل کیے جا سکتے ہیں۔</li>
+  <li>دو ہفتوں کے اندر جواب دیا جائے گا۔</li>
+</ol>
+
+<hr />
+
+<h3 id="سیکشن-ہ-عکاسی">سیکشن ہ: عکاسی</h3>
+
+<p><strong>طوالت:</strong> ۶۰۰ سے ۱۲۰۰ الفاظ</p>
+
+<p><strong>مقصد:</strong> مطالعے، تعلیم یا روزمرہ زندگی کے کسی تجربے پر ذاتی، فکر انگیز غور و فکر۔ سچائی اور کھلاپن، ادبی چمک دمک سے زیادہ اہم ہے۔</p>
+
+<p><strong>عمل:</strong></p>
+<ol>
+  <li>مکمل مسودہ ای میل کریں۔</li>
+  <li>تین ہفتوں کے اندر جواب دیا جائے گا۔</li>
+</ol>
+
+<p><strong>حوالہ:</strong> The Sun Magazine کی ذاتی مضامین کی روایت سے متاثر۔</p>
+
+<hr />
+
+<h3 id="سیکشن-و-افسانہ-اور-کہانیاں">سیکشن و: افسانہ اور کہانیاں</h3>
+
+<p><strong>طوالت:</strong> ۸۰۰ سے ۴۰۰۰ الفاظ</p>
+
+<p><strong>عمل:</strong></p>
+<ol>
+  <li>ایک وقت میں صرف ایک کہانی جمع کروائیں۔</li>
+  <li>مکمل مسودہ، دو سے تین سطروں کی سوانح کے ساتھ ای میل کریں۔</li>
+  <li>چار ہفتوں کے اندر جواب دیا جائے گا۔</li>
+</ol>
+
+<p><strong>حوالہ:</strong> The London Magazine کی افسانوی تحریروں کی ہدایات (زیادہ سے زیادہ ۴۰۰۰ الفاظ) سے متاثر۔</p>
+
+<hr />
+
+<h3 id="سیکشن-ز-شاعری">سیکشن ز: شاعری</h3>
+
+<p><strong>طوالت:</strong> ہر نظم زیادہ سے زیادہ ۵۰ سطریں؛ ایک جمع کرانے میں زیادہ سے زیادہ ۵ نظمیں</p>
+
+<p><strong>عمل:</strong></p>
+<ol>
+  <li>تمام نظمیں ایک ہی فائل میں جمع کروائیں۔</li>
+  <li>دو سے تین سطروں کی سوانح شامل کریں۔</li>
+  <li>چار ہفتوں کے اندر جواب دیا جائے گا۔</li>
+</ol>
+
+<p><strong>حوالہ:</strong> Poetry Foundation اور The London Magazine کی شاعری جمع کروانے کی عام ہدایات سے متاثر۔</p>
+
+<hr />
+
+<h3 id="سیکشن-ح-میں-نے-دیکھا">سیکشن ح: میں نے دیکھا</h3>
+
+<p><strong>طوالت:</strong> ۳۰۰ سے ۸۰۰ الفاظ</p>
+
+<p><strong>مقصد:</strong> روزمرہ زندگی کے کسی مشاہدے پر مبنی مختصر، حسی تفصیلات سے بھرپور فیلڈ نوٹ — ایک منظر، ایک لمحہ، یا ایک شخص، بغیر زیادہ تجزیے کے۔</p>
+
+<p><strong>عمل:</strong></p>
+<ol>
+  <li>مکمل مسودہ ای میل کریں۔</li>
+  <li>دو ہفتوں کے اندر جواب دیا جائے گا۔</li>
+</ol>
+
 <hr />
 
 <h3 id="مشترک-ہدایات-تمام-اقسام">مشترک ہدایات (تمام اقسام)</h3>
 
 <ul>
   <li>صرف اصل اور غیر شائع شدہ تحریریں قبول کی جائیں گی۔</li>
+  <li>سرقہ (Plagiarism) کسی بھی صورت قابل قبول نہیں؛ حوالہ جات درست اور مکمل ہونے چاہئیں۔</li>
+  <li>اگر تحریر تیار کرنے میں کسی AI ٹول کی مدد لی گئی ہو تو اس کا واضح اظہار ضروری ہے؛ حقائق کی درستگی کی ذمہ داری بہرحال مصنف پر ہوگی۔</li>
+  <li>جہاں مناسب ہو، حوالہ جات APA 7th edition انداز میں دیے جائیں۔</li>
   <li>ابھی صرف انگریزی میں تحریریں قبول ہیں (اردو ترجمہ بعد میں مانگا جا سکتا ہے)۔</li>
   <li>دو یا تین سطروں کی مختصر مصنف سوانح لازمی شامل کریں۔</li>
-  <li>ایک ساتھ کئی جگہ جمع کرانا منع ہے۔</li>
-  <li>کتابومری کو رد کرنے کا حق حاصل ہے۔</li>
+  <li>ایک ساتھ کئی جگہ جمع کرانا (Simultaneous Submission) منع ہے۔</li>
+  <li>تحریریں وضاحت اور اسلوب کے لیے تدوین کی جا سکتی ہیں؛ اہم تبدیلیوں سے پہلے مصنف سے رجوع کیا جائے گا۔</li>
+  <li>اشاعت کے بعد حقوق مصنف اور کتابومری دونوں کے پاس مشترکہ طور پر رہتے ہیں؛ مصنف اپنی تحریر کہیں اور بھی شائع کر سکتا ہے، بشرطیکہ کتابومری کو بطور اولین ناشر تسلیم کیا جائے۔</li>
+  <li>کتابومری کو رد کرنے کا حق حاصل ہے، بلا وجہ بتائے۔</li>
   <li>کوئی معاوضہ نہیں دیا جاتا – یہ ایک رضاکارانہ تعلیمی پلیٹ فارم ہے۔</li>
+  <li>متوقع جواب کا وقت ہر سیکشن میں الگ سے بتایا گیا ہے (عام طور پر دو سے چار ہفتے)۔</li>
 </ul>
+
+<hr />
+
+<p><strong>جمع کروانے کے لیے:</strong> ہمارا <a href="/ur/submission/">جمع کروانے کا صفحہ</a> دیکھیں، ہمارے <a href="/ur/contact/">رابطہ صفحے</a> کا استعمال کریں، یا ای میل کریں <a href="mailto:kitabomori@gmail.com">kitabomori@gmail.com</a>۔</p>
 
 
   </div>
@@ -305,8 +474,8 @@
 
   <!-- ============================================================
      footer.html – site-wide footer
-     Centered, stacked layout: nav links, call-for-pubs/guidelines,
-     social row, privacy policy, copyright.
+     Centered, stacked layout: nav links, submission/guidelines,
+     social row, email, privacy policy, copyright.
      Background: #009F93, Text: #FFFFFF. No icons anywhere.
      ============================================================ -->
 <footer class="site-footer" style="background-color:#009F93; color:#FFFFFF;">
@@ -316,65 +485,79 @@
     <p class="footer-row">
       <span class="footer-label">واپس جائیں:</span>
       
+      
         <a href="/ur/" style="color:#FFFFFF;">
-          گھر
+          مرکزی صفحہ
+        </a> · 
+      
+        <a href="/ur/opeds/" style="color:#FFFFFF;">
+          کالم
         </a> · 
       
         <a href="/ur/blogs/" style="color:#FFFFFF;">
           بلاگز
         </a> · 
       
-        <a href="/ur/opeds/" style="color:#FFFFFF;">
-          اوپ ایڈ
+        <a href="/ur/reviews/" style="color:#FFFFFF;">
+          جائزے
         </a> · 
       
-        <a href="/ur/letters/" style="color:#FFFFFF;">
-          خطوط
-        </a> · 
-      
-        <a href="/ur/book-reviews/" style="color:#FFFFFF;">
-          کتابی جائزے
+        <a href="/ur/creative-writing/" style="color:#FFFFFF;">
+          تخلیقی تحریر
         </a> · 
       
         <a href="/ur/reflections/" style="color:#FFFFFF;">
           عکاسی
         </a> · 
       
-        <a href="/ur/main-ne-kya-dekha/" style="color:#FFFFFF;">
-          میں نے کیا دیکھا
+        <a href="/ur/letters/" style="color:#FFFFFF;">
+          خطوط
+        </a> · 
+      
+        <a href="/ur/events/" style="color:#FFFFFF;">
+          تقریبات
         </a>
       
     </p>
 
-    <!-- Row 2: Call for Publications / Guidelines -->
+    <!-- Row 2: Submission page / Submission Form / Guidelines -->
     <p class="footer-row">
-      
-      
-      <a href="" style="color:#FFFFFF;">
-        
+      <a href="/ur/submission/" style="color:#FFFFFF;">
+        تحریر جمع کروائیں
       </a>
       &nbsp;&nbsp;
-      <a href="" style="color:#FFFFFF;">
-        
+      <a href="https://forms.gle/a3AosqLwLdP7q9Co7" target="_blank" rel="noopener" style="color:#FFFFFF;">
+        جمع کروانے کا فارم
+      </a>
+      &nbsp;&nbsp;
+      <a href="/ur/guidelines/" style="color:#FFFFFF;">
+        ہدایات
       </a>
     </p>
 
     <!-- Row 3: Social -->
     <p class="footer-row">
       <span class="footer-label">ہمیں فالو کریں:</span>
-      <a href="#" style="color:#FFFFFF;">YouTube</a> ·
-      <a href="#" style="color:#FFFFFF;">X</a> ·
-      <a href="#" style="color:#FFFFFF;">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
+      <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
+      <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener" style="color:#FFFFFF;">YouTube</a>
     </p>
 
-    <!-- Row 4: Privacy Policy -->
+    <!-- Row 4: Email -->
+    <p class="footer-row">
+      <span class="footer-label">ای میل:</span>
+      <a href="mailto:kitabomori@gmail.com" style="color:#FFFFFF;">kitabomori@gmail.com</a>
+    </p>
+
+    <!-- Row 5: Privacy Policy -->
     <p class="footer-row">
       <a href="/ur/privacy/" style="color:#FFFFFF;">
         رازداری کی پالیسی
       </a>
     </p>
 
-    <!-- Row 5: Copyright -->
+    <!-- Row 6: Copyright -->
     <p class="footer-copy">
       &copy; 2026 Kitabomori.
       

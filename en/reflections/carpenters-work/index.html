@@ -51,7 +51,8 @@
 
   <!-- ============================================================
      header.html – site-wide header
-     Contains: logo/site name, navigation, language switcher, dark mode toggle.
+     Contains: logo/site name, navigation (with one dropdown for
+     Creative Writing), language switcher, dark mode toggle.
      Background: #009F93 (brand teal). Text: #FFFFFF.
      No icons anywhere – plain text only.
      ============================================================ -->
@@ -76,6 +77,7 @@
     <nav class="main-nav" id="main-nav">
       <ul>
         
+        
         <li>
           <a href="/en/"
              style="color:#FFFFFF;">
@@ -83,12 +85,7 @@
           </a>
         </li>
         
-        <li>
-          <a href="/en/blogs/"
-             style="color:#FFFFFF;">
-            Blogs
-          </a>
-        </li>
+        
         
         <li>
           <a href="/en/opeds/"
@@ -97,19 +94,64 @@
           </a>
         </li>
         
+        
+        
         <li>
-          <a href="/en/letters/"
+          <a href="/en/blogs/"
              style="color:#FFFFFF;">
-            Letters
+            Blogs
           </a>
         </li>
         
+        
+        
         <li>
-          <a href="/en/book-reviews/"
+          <a href="/en/reviews/"
              style="color:#FFFFFF;">
-            Book Reviews
+            Reviews
           </a>
         </li>
+        
+        
+        
+        <li class="nav-item-has-children">
+          <div class="nav-parent-row">
+            <a href="/en/creative-writing/"
+               style="color:#FFFFFF;">
+              Creative Writing
+            </a>
+            <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
+                     aria-label="Open submenu"
+                     aria-expanded="false"
+                     style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
+          </div>
+          <ul class="submenu">
+            
+            <li>
+              <a href="/en/creative-writing/fiction-stories/"
+                 style="color:#FFFFFF;">
+                Fiction & Stories
+              </a>
+            </li>
+            
+            <li>
+              <a href="/en/creative-writing/poetry/"
+                 style="color:#FFFFFF;">
+                Poetry
+              </a>
+            </li>
+            
+            <li>
+              <a href="/en/creative-writing/what-i-saw/"
+                 style="color:#FFFFFF;">
+                What I Saw
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        
         
         <li>
           <a href="/en/reflections/"
@@ -118,12 +160,25 @@
           </a>
         </li>
         
+        
+        
         <li>
-          <a href="/en/main-ne-kya-dekha/"
+          <a href="/en/letters/"
              style="color:#FFFFFF;">
-            What I Saw
+            Letters
           </a>
         </li>
+        
+        
+        
+        <li>
+          <a href="/en/events/"
+             style="color:#FFFFFF;">
+            Events
+          </a>
+        </li>
+        
+        
         
         <li>
           <a href="/en/search/"
@@ -131,6 +186,7 @@
             Search
           </a>
         </li>
+        
         
       </ul>
     </nav>
@@ -185,6 +241,32 @@
     var isOpen = nav.classList.toggle('open');
     if (btn) { btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false'); }
   }
+
+  /* --------------------------------------------------------
+     toggleSubmenu()
+     Mobile: tapping the caret expands/collapses the Creative
+     Writing submenu as an accordion. Desktop uses CSS hover,
+     but the button also works there via click for keyboard/touch
+     users (e.g. tablets that don't fire hover reliably).
+  -------------------------------------------------------- */
+  function toggleSubmenu(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    var li = btn.closest('.nav-item-has-children');
+    var isOpen = li.classList.toggle('submenu-open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  // Close any open submenu when clicking elsewhere
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (li) {
+      if (!li.contains(e.target)) {
+        li.classList.remove('submenu-open');
+        var btn = li.querySelector('.submenu-toggle');
+        if (btn) { btn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+  });
 
   /* --------------------------------------------------------
      Update dark mode button label after theme.js runs.
@@ -242,6 +324,11 @@
     
   </p>
 
+  <!-- Author biography, shown only if provided. Layout stays intact if missing. -->
+  
+  
+  
+
   <!-- Back link -->
   <p class="post-back">
     <button onclick="history.back()" class="post-back-btn">
@@ -255,8 +342,8 @@
 
   <!-- ============================================================
      footer.html – site-wide footer
-     Centered, stacked layout: nav links, call-for-pubs/guidelines,
-     social row, privacy policy, copyright.
+     Centered, stacked layout: nav links, submission/guidelines,
+     social row, email, privacy policy, copyright.
      Background: #009F93, Text: #FFFFFF. No icons anywhere.
      ============================================================ -->
 <footer class="site-footer" style="background-color:#009F93; color:#FFFFFF;">
@@ -266,65 +353,79 @@
     <p class="footer-row">
       <span class="footer-label">Return to:</span>
       
+      
         <a href="/en/" style="color:#FFFFFF;">
           Home
-        </a> · 
-      
-        <a href="/en/blogs/" style="color:#FFFFFF;">
-          Blogs
         </a> · 
       
         <a href="/en/opeds/" style="color:#FFFFFF;">
           Op-Eds
         </a> · 
       
-        <a href="/en/letters/" style="color:#FFFFFF;">
-          Letters
+        <a href="/en/blogs/" style="color:#FFFFFF;">
+          Blogs
         </a> · 
       
-        <a href="/en/book-reviews/" style="color:#FFFFFF;">
-          Book Reviews
+        <a href="/en/reviews/" style="color:#FFFFFF;">
+          Reviews
+        </a> · 
+      
+        <a href="/en/creative-writing/" style="color:#FFFFFF;">
+          Creative Writing
         </a> · 
       
         <a href="/en/reflections/" style="color:#FFFFFF;">
           Reflections
         </a> · 
       
-        <a href="/en/main-ne-kya-dekha/" style="color:#FFFFFF;">
-          What I Saw
+        <a href="/en/letters/" style="color:#FFFFFF;">
+          Letters
+        </a> · 
+      
+        <a href="/en/events/" style="color:#FFFFFF;">
+          Events
         </a>
       
     </p>
 
-    <!-- Row 2: Call for Publications / Guidelines -->
+    <!-- Row 2: Submission page / Submission Form / Guidelines -->
     <p class="footer-row">
-      
-      
-      <a href="" style="color:#FFFFFF;">
-        
+      <a href="/en/submission/" style="color:#FFFFFF;">
+        Submission
       </a>
       &nbsp;&nbsp;
-      <a href="" style="color:#FFFFFF;">
-        
+      <a href="https://forms.gle/a3AosqLwLdP7q9Co7" target="_blank" rel="noopener" style="color:#FFFFFF;">
+        Submission Form
+      </a>
+      &nbsp;&nbsp;
+      <a href="/en/guidelines/" style="color:#FFFFFF;">
+        Guidelines
       </a>
     </p>
 
     <!-- Row 3: Social -->
     <p class="footer-row">
       <span class="footer-label">Follow us:</span>
-      <a href="#" style="color:#FFFFFF;">YouTube</a> ·
-      <a href="#" style="color:#FFFFFF;">X</a> ·
-      <a href="#" style="color:#FFFFFF;">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
+      <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
+      <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener" style="color:#FFFFFF;">YouTube</a>
     </p>
 
-    <!-- Row 4: Privacy Policy -->
+    <!-- Row 4: Email -->
+    <p class="footer-row">
+      <span class="footer-label">Email:</span>
+      <a href="mailto:kitabomori@gmail.com" style="color:#FFFFFF;">kitabomori@gmail.com</a>
+    </p>
+
+    <!-- Row 5: Privacy Policy -->
     <p class="footer-row">
       <a href="/en/privacy/" style="color:#FFFFFF;">
         Privacy Policy
       </a>
     </p>
 
-    <!-- Row 5: Copyright -->
+    <!-- Row 6: Copyright -->
     <p class="footer-copy">
       &copy; 2026 Kitabomori.
       

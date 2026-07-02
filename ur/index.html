@@ -19,16 +19,16 @@
 <!-- Page title: prefer page-specific title, fall back to site title -->
 <title>
   
-    گھر – کتابومری
+    مرکزی صفحہ – کتابومری
   
 </title>
 
 <!-- Meta description -->
-<meta name="description" content="کتابومری – تحقیق پر مبنی مواد کے ذریعے مطالعے کا فروغ">
+<meta name="description" content="کتابومری – پڑھنے اور لکھنے کے کلچر کو فروغ دینا">
 
 <!-- Open Graph -->
-<meta property="og:title" content="گھر">
-<meta property="og:description" content="کتابومری – تحقیق پر مبنی مواد کے ذریعے مطالعے کا فروغ">
+<meta property="og:title" content="مرکزی صفحہ">
+<meta property="og:description" content="کتابومری – پڑھنے اور لکھنے کے کلچر کو فروغ دینا">
 <meta property="og:type" content="website">
 
 <!-- Google Fonts: Inter (English) + Noto Nastaliq Urdu (Urdu)
@@ -51,7 +51,8 @@
 
   <!-- ============================================================
      header.html – site-wide header
-     Contains: logo/site name, navigation, language switcher, dark mode toggle.
+     Contains: logo/site name, navigation (with one dropdown for
+     Creative Writing), language switcher, dark mode toggle.
      Background: #009F93 (brand teal). Text: #FFFFFF.
      No icons anywhere – plain text only.
      ============================================================ -->
@@ -76,12 +77,24 @@
     <nav class="main-nav" id="main-nav">
       <ul>
         
+        
         <li>
           <a href="/ur/"
              style="color:#FFFFFF;">
-            گھر
+            مرکزی صفحہ
           </a>
         </li>
+        
+        
+        
+        <li>
+          <a href="/ur/opeds/"
+             style="color:#FFFFFF;">
+            کالم
+          </a>
+        </li>
+        
+        
         
         <li>
           <a href="/ur/blogs/"
@@ -90,26 +103,55 @@
           </a>
         </li>
         
+        
+        
         <li>
-          <a href="/ur/opeds/"
+          <a href="/ur/reviews/"
              style="color:#FFFFFF;">
-            اوپ ایڈ
+            جائزے
           </a>
         </li>
         
-        <li>
-          <a href="/ur/letters/"
-             style="color:#FFFFFF;">
-            خطوط
-          </a>
+        
+        
+        <li class="nav-item-has-children">
+          <div class="nav-parent-row">
+            <a href="/ur/creative-writing/"
+               style="color:#FFFFFF;">
+              تخلیقی تحریر
+            </a>
+            <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
+                     aria-label="ذیلی مینو کھولیں"
+                     aria-expanded="false"
+                     style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
+          </div>
+          <ul class="submenu">
+            
+            <li>
+              <a href="/ur/creative-writing/fiction-stories/"
+                 style="color:#FFFFFF;">
+                افسانہ اور کہانیاں
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/poetry/"
+                 style="color:#FFFFFF;">
+                شاعری
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/what-i-saw/"
+                 style="color:#FFFFFF;">
+                میں نے دیکھا
+              </a>
+            </li>
+            
+          </ul>
         </li>
         
-        <li>
-          <a href="/ur/book-reviews/"
-             style="color:#FFFFFF;">
-            کتابی جائزے
-          </a>
-        </li>
+        
         
         <li>
           <a href="/ur/reflections/"
@@ -118,12 +160,25 @@
           </a>
         </li>
         
+        
+        
         <li>
-          <a href="/ur/main-ne-kya-dekha/"
+          <a href="/ur/letters/"
              style="color:#FFFFFF;">
-            میں نے کیا دیکھا
+            خطوط
           </a>
         </li>
+        
+        
+        
+        <li>
+          <a href="/ur/events/"
+             style="color:#FFFFFF;">
+            تقریبات
+          </a>
+        </li>
+        
+        
         
         <li>
           <a href="/ur/search/"
@@ -131,6 +186,7 @@
             تلاش
           </a>
         </li>
+        
         
       </ul>
     </nav>
@@ -187,6 +243,32 @@
   }
 
   /* --------------------------------------------------------
+     toggleSubmenu()
+     Mobile: tapping the caret expands/collapses the Creative
+     Writing submenu as an accordion. Desktop uses CSS hover,
+     but the button also works there via click for keyboard/touch
+     users (e.g. tablets that don't fire hover reliably).
+  -------------------------------------------------------- */
+  function toggleSubmenu(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    var li = btn.closest('.nav-item-has-children');
+    var isOpen = li.classList.toggle('submenu-open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  // Close any open submenu when clicking elsewhere
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (li) {
+      if (!li.contains(e.target)) {
+        li.classList.remove('submenu-open');
+        var btn = li.querySelector('.submenu-toggle');
+        if (btn) { btn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+  });
+
+  /* --------------------------------------------------------
      Update dark mode button label after theme.js runs.
   -------------------------------------------------------- */
   document.addEventListener('DOMContentLoaded', function () {
@@ -205,12 +287,14 @@
     <!-- News ticker – Home page only -->
 <!-- ============================================================
      ticker.html – scrolling news ticker for the Home page only.
-     Shows the 5 most recent items from blogs, opeds, letters,
-     and book_reviews combined, sorted by date (newest first).
+     Shows the 5 most recent items across Op-Eds, Blogs, Reviews,
+     Creative Writing (Fiction & Stories, Poetry, What I Saw),
+     Reflections, and Letters — sorted by date (newest first).
+     "Calls" (calls for submissions) are intentionally excluded.
 
      COLOURS:
        Background: #FFFFFF (dark mode: #1a1a1a)
-       Text:       #00C851 (bright green)
+       Text:       #aab52d
        Border:     1px bottom in #009F93
        Heading:    #009F93
 
@@ -219,7 +303,7 @@
      No icons, no emoji, plain text only.
      ============================================================ -->
 
-<!-- Step 1: Collect all items from the four collections into one array -->
+<!-- Step 1: Collect all items from every ticker-eligible collection -->
 
 <!-- Step 2: Sort by date descending, take top 5 -->
 
@@ -240,165 +324,371 @@
   <div class="ticker-overflow">
     <div class="ticker-track">
 
-      <!-- Step 4: Output each item with its collection-type label -->
-      
-
-        <!-- Determine collection-type label -->
-        
-        
-
-        
-
-        <span class="ticker-item" style="color:#00C851;">
-          <a href="/ur/book-reviews/three-questions-md/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            01 July 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-
-      
-
-        <!-- Determine collection-type label -->
-        
-        
-
-        
-
-        <span class="ticker-item" style="color:#00C851;">
-          <a href="/ur/book-reviews/the-catcher-in-the-rye/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            30 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-
-      
-
-        <!-- Determine collection-type label -->
-        
-        
-
-        
-
-        <span class="ticker-item" style="color:#00C851;">
-          <a href="/ur/opeds/public-education-investment/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            30 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-
-      
-
-        <!-- Determine collection-type label -->
-        
-        
-
-        
-
-        <span class="ticker-item" style="color:#00C851;">
-          <a href="/ur/blogs/privatization-of-education/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            30 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-
-      
-
-        <!-- Determine collection-type label -->
-        
-        
-
-        
-
-        <span class="ticker-item" style="color:#00C851;">
-          <a href="/ur/letters/letter-to-teacher/" style="color:#00C851; text-decoration:none;">
-            []
-            محترمہ ٹیچر کے نام ایک خط
-            &ndash;
-            24 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-
-      
-
-      <!-- Step 5: Duplicate items so the scroll loops seamlessly -->
+      <!-- Step 4: Output each item with its collection-type label (twice, for a seamless loop) -->
       
         
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;">
+            <a href="/ur/reviews/three-questions/" style="color:#aab52d; text-decoration:none;">
+              []
+              
+              &ndash;
+              01 July 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;">
+            <a href="/ur/reflections/carpenters-work/" style="color:#aab52d; text-decoration:none;">
+              []
+              
+              &ndash;
+              30 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
-        <span class="ticker-item" style="color:#00C851;" aria-hidden="true">
-          <a href="/ur/book-reviews/three-questions-md/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            01 July 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;">
+            <a href="/ur/reviews/the-catcher-in-the-rye/" style="color:#aab52d; text-decoration:none;">
+              []
+              
+              &ndash;
+              30 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
+        
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;">
+            <a href="/ur/blogs/privatization-of-education/" style="color:#aab52d; text-decoration:none;">
+              []
+              
+              &ndash;
+              30 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
+        
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;">
+            <a href="/ur/opeds/public-education-investment/" style="color:#aab52d; text-decoration:none;">
+              []
+              
+              &ndash;
+              30 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
+        
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;">
+            <a href="/ur/creative-writing/poetry/first-page/" style="color:#aab52d; text-decoration:none;">
+              []
+              پہلا صفحہ
+              &ndash;
+              28 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
+        
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;">
+            <a href="/ur/creative-writing/fiction-stories/the-borrowed-lantern/" style="color:#aab52d; text-decoration:none;">
+              []
+              ادھار کی لالٹین
+              &ndash;
+              27 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
+        
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;">
+            <a href="/ur/letters/letter-to-teacher/" style="color:#aab52d; text-decoration:none;">
+              []
+              محترمہ ٹیچر کے نام ایک خط
+              &ndash;
+              24 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
+        
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;">
+            <a href="/ur/creative-writing/what-i-saw/a-police-officer-on-duty/" style="color:#aab52d; text-decoration:none;">
+              []
+              ڈیوٹی پر ایک پولیس اہلکار
+              &ndash;
+              22 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
+        
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;">
+            <a href="/ur/creative-writing/what-i-saw/street-booksellers-in-the-market/" style="color:#aab52d; text-decoration:none;">
+              []
+              سڑک کنارے کتابیں
+              &ndash;
+              15 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
+        
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;">
+            <a href="/ur/creative-writing/what-i-saw/librarys-silent-hour/" style="color:#aab52d; text-decoration:none;">
+              []
+              لائبریری کی خاموش گھڑی
+              &ndash;
+              08 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
+        
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;">
+            <a href="/ur/creative-writing/what-i-saw/children-reading-rural-classroom/" style="color:#aab52d; text-decoration:none;">
+              []
+              دیہاتی کلاس روم میں بچے
+              &ndash;
+              01 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
+        
       
         
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;" aria-hidden="true">
+            <a href="/ur/reviews/three-questions/" style="color:#aab52d; text-decoration:none;">
+              []
+              
+              &ndash;
+              01 July 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;" aria-hidden="true">
+            <a href="/ur/reflections/carpenters-work/" style="color:#aab52d; text-decoration:none;">
+              []
+              
+              &ndash;
+              30 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
-        <span class="ticker-item" style="color:#00C851;" aria-hidden="true">
-          <a href="/ur/book-reviews/the-catcher-in-the-rye/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            30 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-      
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;" aria-hidden="true">
+            <a href="/ur/reviews/the-catcher-in-the-rye/" style="color:#aab52d; text-decoration:none;">
+              []
+              
+              &ndash;
+              30 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;" aria-hidden="true">
+            <a href="/ur/blogs/privatization-of-education/" style="color:#aab52d; text-decoration:none;">
+              []
+              
+              &ndash;
+              30 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;" aria-hidden="true">
+            <a href="/ur/opeds/public-education-investment/" style="color:#aab52d; text-decoration:none;">
+              []
+              
+              &ndash;
+              30 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
-        <span class="ticker-item" style="color:#00C851;" aria-hidden="true">
-          <a href="/ur/opeds/public-education-investment/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            30 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-      
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;" aria-hidden="true">
+            <a href="/ur/creative-writing/poetry/first-page/" style="color:#aab52d; text-decoration:none;">
+              []
+              پہلا صفحہ
+              &ndash;
+              28 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;" aria-hidden="true">
+            <a href="/ur/creative-writing/fiction-stories/the-borrowed-lantern/" style="color:#aab52d; text-decoration:none;">
+              []
+              ادھار کی لالٹین
+              &ndash;
+              27 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;" aria-hidden="true">
+            <a href="/ur/letters/letter-to-teacher/" style="color:#aab52d; text-decoration:none;">
+              []
+              محترمہ ٹیچر کے نام ایک خط
+              &ndash;
+              24 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
-        <span class="ticker-item" style="color:#00C851;" aria-hidden="true">
-          <a href="/ur/blogs/privatization-of-education/" style="color:#00C851; text-decoration:none;">
-            []
-            
-            &ndash;
-            30 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
-      
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;" aria-hidden="true">
+            <a href="/ur/creative-writing/what-i-saw/a-police-officer-on-duty/" style="color:#aab52d; text-decoration:none;">
+              []
+              ڈیوٹی پر ایک پولیس اہلکار
+              &ndash;
+              22 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;" aria-hidden="true">
+            <a href="/ur/creative-writing/what-i-saw/street-booksellers-in-the-market/" style="color:#aab52d; text-decoration:none;">
+              []
+              سڑک کنارے کتابیں
+              &ndash;
+              15 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;" aria-hidden="true">
+            <a href="/ur/creative-writing/what-i-saw/librarys-silent-hour/" style="color:#aab52d; text-decoration:none;">
+              []
+              لائبریری کی خاموش گھڑی
+              &ndash;
+              08 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
         
-        <span class="ticker-item" style="color:#00C851;" aria-hidden="true">
-          <a href="/ur/letters/letter-to-teacher/" style="color:#00C851; text-decoration:none;">
-            []
-            محترمہ ٹیچر کے نام ایک خط
-            &ndash;
-            24 June 2026
-          </a>
-          &nbsp;&nbsp;&nbsp;
-        </span>
+          
+          
+
+          
+
+          <span class="ticker-item" style="color:#aab52d;" aria-hidden="true">
+            <a href="/ur/creative-writing/what-i-saw/children-reading-rural-classroom/" style="color:#aab52d; text-decoration:none;">
+              []
+              دیہاتی کلاس روم میں بچے
+              &ndash;
+              01 June 2026
+            </a>
+            &nbsp;&nbsp;&nbsp;
+          </span>
+        
       
 
     </div><!-- /.ticker-track -->
@@ -413,14 +703,12 @@
 
   <section class="home-welcome">
     <h1 class="home-heading">کتابومری میں خوش آمدید</h1>
-    <p class="home-tagline">تحقیق پر مبنی مواد کے ذریعے مطالعے کا فروغ</p>
+    <p class="home-tagline">تنقیدی مطالعے اور تحریر کے کلچر کو فروغ دیتے ہوئے معاشرے میں تبدیلی لانا۔</p>
     <p>
-      کتابومری ایک رضاکارانہ تعلیمی اشاعتی پلیٹ فارم ہے جو محققین، طلباء، اساتذہ، پالیسی سازوں، صحافیوں اور عوام کے لیے بنایا گیا ہے۔
-      ہمارا مقصد تعلیم، خواندگی اور مطالعے سے متعلق شواہد پر مبنی گفتگو کو فروغ دینا ہے۔
+      شینا زبان میں "کتاب" کا مطلب ہے کتاب، اور "موری" کا مطلب ہے گفتگو۔ اسی لیے یہ پہل مطالعے اور تحریر کو فروغ دیتی ہے اور تعلیم، ثقافت، زبان اور انسانی تجربے سے جڑی ہر بات پر گفتگو کو جنم دیتی ہے۔ اس کا مقصد سمجھ بوجھ کے لیے فکر انگیز مکالمے کی حوصلہ افزائی کرنا ہے۔ یہاں آپ کو بلاگز، کالم، جائزے، عکاسی، تخلیقی تحریر اور خطوط ملیں گے۔
     </p>
     <p>
-      آپ یہاں بلاگز، اوپ ایڈز، خطوط، کتابی جائزے اور ذاتی عکاسی پائیں گے۔
-      اگر آپ اپنی تحریر شیئر کرنا چاہتے ہیں تو ہماری <a href="/ur/guidelines/">ہدایات</a> پڑھیں اور <a href="/ur/contact/">رابطہ</a> کریں۔
+      کتابومری ایک رضاکارانہ تعلیمی اشاعتی پلیٹ فارم ہے جو محققین، طلباء، اساتذہ، پالیسی سازوں اور عام قارئین کے لیے بنایا گیا ہے۔ اگر آپ اپنی تحریر شیئر کرنا چاہتے ہیں تو ہماری <span class="highlight"><a href="/ur/guidelines/">ہدایات</a></span> پڑھیں اور <span class="highlight"><a href="/ur/contact/">رابطہ</a></span> کریں۔
     </p>
   </section>
 
@@ -428,23 +716,23 @@
     <div class="section-cards">
 
       <div class="section-card">
+        <h2><a href="/ur/opeds/">کالم</a></h2>
+        <p>تجربے اور تحقیق پر مبنی رائے جس میں عملی تجاویز شامل ہیں۔</p>
+      </div>
+
+      <div class="section-card">
         <h2><a href="/ur/blogs/">بلاگز</a></h2>
         <p>تعلیم اور معاشرے پر مبنی تجزیاتی اور دلیل پر مبنی تحریریں۔</p>
       </div>
 
       <div class="section-card">
-        <h2><a href="/ur/opeds/">اوپ ایڈ</a></h2>
-        <p>تجربے اور تحقیق پر مبنی رائے جس میں عملی تجاویز شامل ہیں۔</p>
-      </div>
-
-      <div class="section-card">
-        <h2><a href="/ur/letters/">خطوط</a></h2>
-        <p>اساتذہ، طلباء اور محققین کی طرف سے ذاتی خطوط۔</p>
-      </div>
-
-      <div class="section-card">
-        <h2><a href="/ur/book-reviews/">کتابی جائزے</a></h2>
+        <h2><a href="/ur/reviews/">جائزے</a></h2>
         <p>تعلیم، خواندگی اور تحقیق سے متعلق کتابوں کے تنقیدی جائزے۔</p>
+      </div>
+
+      <div class="section-card">
+        <h2><a href="/ur/creative-writing/">تخلیقی تحریر</a></h2>
+        <p>افسانہ اور کہانیاں، شاعری، اور میں نے دیکھا۔</p>
       </div>
 
       <div class="section-card">
@@ -453,8 +741,13 @@
       </div>
 
       <div class="section-card">
-        <h2><a href="/ur/main-ne-kya-dekha/">میں نے کیا دیکھا</a></h2>
-        <p>مطالعے اور سیکھنے کی جگہوں پر فیلڈ نوٹس۔</p>
+        <h2><a href="/ur/letters/">خطوط</a></h2>
+        <p>اساتذہ، طلباء اور محققین کی طرف سے ذاتی خطوط۔</p>
+      </div>
+
+      <div class="section-card">
+        <h2><a href="/ur/events/">تقریبات</a></h2>
+        <p>ریڈنگ سرکل، ورکشاپس اور کتابومری کی دیگر تقریبات۔</p>
       </div>
 
     </div>
@@ -468,8 +761,8 @@
 
   <!-- ============================================================
      footer.html – site-wide footer
-     Centered, stacked layout: nav links, call-for-pubs/guidelines,
-     social row, privacy policy, copyright.
+     Centered, stacked layout: nav links, submission/guidelines,
+     social row, email, privacy policy, copyright.
      Background: #009F93, Text: #FFFFFF. No icons anywhere.
      ============================================================ -->
 <footer class="site-footer" style="background-color:#009F93; color:#FFFFFF;">
@@ -479,65 +772,79 @@
     <p class="footer-row">
       <span class="footer-label">واپس جائیں:</span>
       
+      
         <a href="/ur/" style="color:#FFFFFF;">
-          گھر
+          مرکزی صفحہ
+        </a> · 
+      
+        <a href="/ur/opeds/" style="color:#FFFFFF;">
+          کالم
         </a> · 
       
         <a href="/ur/blogs/" style="color:#FFFFFF;">
           بلاگز
         </a> · 
       
-        <a href="/ur/opeds/" style="color:#FFFFFF;">
-          اوپ ایڈ
+        <a href="/ur/reviews/" style="color:#FFFFFF;">
+          جائزے
         </a> · 
       
-        <a href="/ur/letters/" style="color:#FFFFFF;">
-          خطوط
-        </a> · 
-      
-        <a href="/ur/book-reviews/" style="color:#FFFFFF;">
-          کتابی جائزے
+        <a href="/ur/creative-writing/" style="color:#FFFFFF;">
+          تخلیقی تحریر
         </a> · 
       
         <a href="/ur/reflections/" style="color:#FFFFFF;">
           عکاسی
         </a> · 
       
-        <a href="/ur/main-ne-kya-dekha/" style="color:#FFFFFF;">
-          میں نے کیا دیکھا
+        <a href="/ur/letters/" style="color:#FFFFFF;">
+          خطوط
+        </a> · 
+      
+        <a href="/ur/events/" style="color:#FFFFFF;">
+          تقریبات
         </a>
       
     </p>
 
-    <!-- Row 2: Call for Publications / Guidelines -->
+    <!-- Row 2: Submission page / Submission Form / Guidelines -->
     <p class="footer-row">
-      
-      
-      <a href="" style="color:#FFFFFF;">
-        
+      <a href="/ur/submission/" style="color:#FFFFFF;">
+        تحریر جمع کروائیں
       </a>
       &nbsp;&nbsp;
-      <a href="" style="color:#FFFFFF;">
-        
+      <a href="https://forms.gle/a3AosqLwLdP7q9Co7" target="_blank" rel="noopener" style="color:#FFFFFF;">
+        جمع کروانے کا فارم
+      </a>
+      &nbsp;&nbsp;
+      <a href="/ur/guidelines/" style="color:#FFFFFF;">
+        ہدایات
       </a>
     </p>
 
     <!-- Row 3: Social -->
     <p class="footer-row">
       <span class="footer-label">ہمیں فالو کریں:</span>
-      <a href="#" style="color:#FFFFFF;">YouTube</a> ·
-      <a href="#" style="color:#FFFFFF;">X</a> ·
-      <a href="#" style="color:#FFFFFF;">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
+      <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
+      <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener" style="color:#FFFFFF;">YouTube</a>
     </p>
 
-    <!-- Row 4: Privacy Policy -->
+    <!-- Row 4: Email -->
+    <p class="footer-row">
+      <span class="footer-label">ای میل:</span>
+      <a href="mailto:kitabomori@gmail.com" style="color:#FFFFFF;">kitabomori@gmail.com</a>
+    </p>
+
+    <!-- Row 5: Privacy Policy -->
     <p class="footer-row">
       <a href="/ur/privacy/" style="color:#FFFFFF;">
         رازداری کی پالیسی
       </a>
     </p>
 
-    <!-- Row 5: Copyright -->
+    <!-- Row 6: Copyright -->
     <p class="footer-copy">
       &copy; 2026 Kitabomori.
       

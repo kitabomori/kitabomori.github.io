@@ -24,11 +24,11 @@
 </title>
 
 <!-- Meta description -->
-<meta name="description" content="How to submit your blog, op-ed, book review, or letter to Kitabomori.">
+<meta name="description" content="How to submit your writing to Kitabomori — Blogs, Op-Eds, Reviews, Letters, Reflections, Fiction & Stories, Poetry, and What I Saw.">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Submission Guidelines">
-<meta property="og:description" content="How to submit your blog, op-ed, book review, or letter to Kitabomori.">
+<meta property="og:description" content="How to submit your writing to Kitabomori — Blogs, Op-Eds, Reviews, Letters, Reflections, Fiction & Stories, Poetry, and What I Saw.">
 <meta property="og:type" content="website">
 
 <!-- Google Fonts: Inter (English) + Noto Nastaliq Urdu (Urdu)
@@ -51,7 +51,8 @@
 
   <!-- ============================================================
      header.html – site-wide header
-     Contains: logo/site name, navigation, language switcher, dark mode toggle.
+     Contains: logo/site name, navigation (with one dropdown for
+     Creative Writing), language switcher, dark mode toggle.
      Background: #009F93 (brand teal). Text: #FFFFFF.
      No icons anywhere – plain text only.
      ============================================================ -->
@@ -76,6 +77,7 @@
     <nav class="main-nav" id="main-nav">
       <ul>
         
+        
         <li>
           <a href="/en/"
              style="color:#FFFFFF;">
@@ -83,12 +85,7 @@
           </a>
         </li>
         
-        <li>
-          <a href="/en/blogs/"
-             style="color:#FFFFFF;">
-            Blogs
-          </a>
-        </li>
+        
         
         <li>
           <a href="/en/opeds/"
@@ -97,19 +94,64 @@
           </a>
         </li>
         
+        
+        
         <li>
-          <a href="/en/letters/"
+          <a href="/en/blogs/"
              style="color:#FFFFFF;">
-            Letters
+            Blogs
           </a>
         </li>
         
+        
+        
         <li>
-          <a href="/en/book-reviews/"
+          <a href="/en/reviews/"
              style="color:#FFFFFF;">
-            Book Reviews
+            Reviews
           </a>
         </li>
+        
+        
+        
+        <li class="nav-item-has-children">
+          <div class="nav-parent-row">
+            <a href="/en/creative-writing/"
+               style="color:#FFFFFF;">
+              Creative Writing
+            </a>
+            <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
+                     aria-label="Open submenu"
+                     aria-expanded="false"
+                     style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
+          </div>
+          <ul class="submenu">
+            
+            <li>
+              <a href="/en/creative-writing/fiction-stories/"
+                 style="color:#FFFFFF;">
+                Fiction & Stories
+              </a>
+            </li>
+            
+            <li>
+              <a href="/en/creative-writing/poetry/"
+                 style="color:#FFFFFF;">
+                Poetry
+              </a>
+            </li>
+            
+            <li>
+              <a href="/en/creative-writing/what-i-saw/"
+                 style="color:#FFFFFF;">
+                What I Saw
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        
         
         <li>
           <a href="/en/reflections/"
@@ -118,12 +160,25 @@
           </a>
         </li>
         
+        
+        
         <li>
-          <a href="/en/main-ne-kya-dekha/"
+          <a href="/en/letters/"
              style="color:#FFFFFF;">
-            What I Saw
+            Letters
           </a>
         </li>
+        
+        
+        
+        <li>
+          <a href="/en/events/"
+             style="color:#FFFFFF;">
+            Events
+          </a>
+        </li>
+        
+        
         
         <li>
           <a href="/en/search/"
@@ -131,6 +186,7 @@
             Search
           </a>
         </li>
+        
         
       </ul>
     </nav>
@@ -185,6 +241,32 @@
     var isOpen = nav.classList.toggle('open');
     if (btn) { btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false'); }
   }
+
+  /* --------------------------------------------------------
+     toggleSubmenu()
+     Mobile: tapping the caret expands/collapses the Creative
+     Writing submenu as an accordion. Desktop uses CSS hover,
+     but the button also works there via click for keyboard/touch
+     users (e.g. tablets that don't fire hover reliably).
+  -------------------------------------------------------- */
+  function toggleSubmenu(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    var li = btn.closest('.nav-item-has-children');
+    var isOpen = li.classList.toggle('submenu-open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  // Close any open submenu when clicking elsewhere
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (li) {
+      if (!li.contains(e.target)) {
+        li.classList.remove('submenu-open');
+        var btn = li.querySelector('.submenu-toggle');
+        if (btn) { btn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+  });
 
   /* --------------------------------------------------------
      Update dark mode button label after theme.js runs.
@@ -262,7 +344,7 @@
 
 <hr />
 
-<h3 id="section-c-book-reviews">Section C: Book Reviews</h3>
+<h3 id="section-c-reviews">Section C: Reviews</h3>
 
 <p><strong>Length:</strong> 500–800 words</p>
 
@@ -287,20 +369,101 @@
 
 <hr />
 
+<h3 id="section-d-letters">Section D: Letters</h3>
+
+<p><strong>Length:</strong> 400–900 words</p>
+
+<p><strong>Purpose:</strong> A personal letter addressed to a real or imagined recipient — a teacher, a student, an institution, or your younger self — that shares a genuine, heartfelt moment connected to education, reading, or personal experience. This is different from a newspaper “letter to the editor,” which is a short, argument-driven response to a news item. Here, the emphasis is on a personal, open, and sincere voice rather than making a policy case.</p>
+
+<p><strong>Process:</strong></p>
+<ol>
+  <li>Email the full draft along with a short, 2–3 sentence author bio.</li>
+  <li>Please respect the privacy of any real people named in your letter — names can be changed if needed.</li>
+  <li>You will receive a response within two weeks.</li>
+</ol>
+
+<hr />
+
+<h3 id="section-e-reflections">Section E: Reflections</h3>
+
+<p><strong>Length:</strong> 600–1,200 words</p>
+
+<p><strong>Purpose:</strong> A personal, thoughtful piece of reflection on an experience connected to reading, education, or everyday life. Honesty and a clear, unguarded voice matter more than literary polish.</p>
+
+<p><strong>Process:</strong></p>
+<ol>
+  <li>Email the full draft.</li>
+  <li>You will receive a response within three weeks.</li>
+</ol>
+
+<p><strong>Reference style:</strong> Inspired by the personal-essay tradition of publications such as <em>The Sun Magazine</em>.</p>
+
+<hr />
+
+<h3 id="section-f-fiction--stories">Section F: Fiction &amp; Stories</h3>
+
+<p><strong>Length:</strong> 800–4,000 words</p>
+
+<p><strong>Process:</strong></p>
+<ol>
+  <li>Submit one story at a time.</li>
+  <li>Email the full draft along with a short, 2–3 sentence author bio.</li>
+  <li>You will receive a response within four weeks.</li>
+</ol>
+
+<p><strong>Reference style:</strong> Guided by common literary-magazine norms such as <em>The London Magazine’s</em> fiction guidelines (stories up to roughly 4,000 words).</p>
+
+<hr />
+
+<h3 id="section-g-poetry">Section G: Poetry</h3>
+
+<p><strong>Length:</strong> Up to 50 lines per poem; up to 5 poems per submission</p>
+
+<p><strong>Process:</strong></p>
+<ol>
+  <li>Submit all poems together in a single file.</li>
+  <li>Include a short, 2–3 sentence author bio.</li>
+  <li>You will receive a response within four weeks.</li>
+</ol>
+
+<p><strong>Reference style:</strong> Informed by common practice at publications such as <em>Poetry</em> (Poetry Foundation) and <em>The London Magazine</em>, which typically accept a small batch of poems (often up to five) per submission.</p>
+
+<hr />
+
+<h3 id="section-h-what-i-saw">Section H: What I Saw</h3>
+
+<p><strong>Length:</strong> 300–800 words</p>
+
+<p><strong>Purpose:</strong> A short, sensory field note built around a single observation from everyday life — a scene, a moment, or a person — told with a light touch and minimal analysis.</p>
+
+<p><strong>Process:</strong></p>
+<ol>
+  <li>Email the full draft.</li>
+  <li>You will receive a response within two weeks.</li>
+</ol>
+
+<hr />
+
 <h3 id="common-guidelines-all-contributions">Common Guidelines (All Contributions)</h3>
 
 <ul>
   <li>We accept only original, previously unpublished work.</li>
+  <li>Plagiarism is never acceptable; all references and citations must be accurate and complete.</li>
+  <li>If you used a generative AI tool while drafting, disclose this clearly. You remain responsible for the accuracy of any facts, quotes, or references.</li>
+  <li>Where citations are appropriate, please use APA 7th edition style.</li>
   <li>At present, Kitabomori publishes in English only. Urdu translations may be requested after acceptance.</li>
   <li>Include a short author bio of 2–3 sentences at the end of your submission.</li>
   <li>We do not accept simultaneous submissions: please do not submit the same piece to another publication while it is under consideration here.</li>
+  <li>Submissions may be edited for clarity and style; we will contact you before making any substantial changes.</li>
+  <li>Publication rights are shared between the author and Kitabomori; you are free to republish your work elsewhere afterward, provided Kitabomori is credited as first publisher.</li>
   <li>Kitabomori reserves the right to decline any submission without explanation.</li>
   <li>No payment is offered. Kitabomori is a volunteer educational initiative.</li>
+  <li>Expected response times are listed under each section above (typically two to four weeks).</li>
 </ul>
 
 <hr />
 
-<p><strong>To submit:</strong> Use the <a href="/en/contact/">Contact page</a> or email <a href="mailto:kitabomori@gmail.com">kitabomori@gmail.com</a>.</p>
+<p><strong>To submit:</strong> Visit our <a href="/en/submission/">Submission page</a>, use the <a href="/en/contact/">Contact page</a>, or email <a href="mailto:kitabomori@gmail.com">kitabomori@gmail.com</a>.</p>
 
 
   </div>
@@ -311,8 +474,8 @@
 
   <!-- ============================================================
      footer.html – site-wide footer
-     Centered, stacked layout: nav links, call-for-pubs/guidelines,
-     social row, privacy policy, copyright.
+     Centered, stacked layout: nav links, submission/guidelines,
+     social row, email, privacy policy, copyright.
      Background: #009F93, Text: #FFFFFF. No icons anywhere.
      ============================================================ -->
 <footer class="site-footer" style="background-color:#009F93; color:#FFFFFF;">
@@ -322,65 +485,79 @@
     <p class="footer-row">
       <span class="footer-label">Return to:</span>
       
+      
         <a href="/en/" style="color:#FFFFFF;">
           Home
-        </a> · 
-      
-        <a href="/en/blogs/" style="color:#FFFFFF;">
-          Blogs
         </a> · 
       
         <a href="/en/opeds/" style="color:#FFFFFF;">
           Op-Eds
         </a> · 
       
-        <a href="/en/letters/" style="color:#FFFFFF;">
-          Letters
+        <a href="/en/blogs/" style="color:#FFFFFF;">
+          Blogs
         </a> · 
       
-        <a href="/en/book-reviews/" style="color:#FFFFFF;">
-          Book Reviews
+        <a href="/en/reviews/" style="color:#FFFFFF;">
+          Reviews
+        </a> · 
+      
+        <a href="/en/creative-writing/" style="color:#FFFFFF;">
+          Creative Writing
         </a> · 
       
         <a href="/en/reflections/" style="color:#FFFFFF;">
           Reflections
         </a> · 
       
-        <a href="/en/main-ne-kya-dekha/" style="color:#FFFFFF;">
-          What I Saw
+        <a href="/en/letters/" style="color:#FFFFFF;">
+          Letters
+        </a> · 
+      
+        <a href="/en/events/" style="color:#FFFFFF;">
+          Events
         </a>
       
     </p>
 
-    <!-- Row 2: Call for Publications / Guidelines -->
+    <!-- Row 2: Submission page / Submission Form / Guidelines -->
     <p class="footer-row">
-      
-      
-      <a href="" style="color:#FFFFFF;">
-        
+      <a href="/en/submission/" style="color:#FFFFFF;">
+        Submission
       </a>
       &nbsp;&nbsp;
-      <a href="" style="color:#FFFFFF;">
-        
+      <a href="https://forms.gle/a3AosqLwLdP7q9Co7" target="_blank" rel="noopener" style="color:#FFFFFF;">
+        Submission Form
+      </a>
+      &nbsp;&nbsp;
+      <a href="/en/guidelines/" style="color:#FFFFFF;">
+        Guidelines
       </a>
     </p>
 
     <!-- Row 3: Social -->
     <p class="footer-row">
       <span class="footer-label">Follow us:</span>
-      <a href="#" style="color:#FFFFFF;">YouTube</a> ·
-      <a href="#" style="color:#FFFFFF;">X</a> ·
-      <a href="#" style="color:#FFFFFF;">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
+      <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
+      <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener" style="color:#FFFFFF;">YouTube</a>
     </p>
 
-    <!-- Row 4: Privacy Policy -->
+    <!-- Row 4: Email -->
+    <p class="footer-row">
+      <span class="footer-label">Email:</span>
+      <a href="mailto:kitabomori@gmail.com" style="color:#FFFFFF;">kitabomori@gmail.com</a>
+    </p>
+
+    <!-- Row 5: Privacy Policy -->
     <p class="footer-row">
       <a href="/en/privacy/" style="color:#FFFFFF;">
         Privacy Policy
       </a>
     </p>
 
-    <!-- Row 5: Copyright -->
+    <!-- Row 6: Copyright -->
     <p class="footer-copy">
       &copy; 2026 Kitabomori.
       

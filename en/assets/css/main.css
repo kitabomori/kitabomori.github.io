@@ -1,5 +1,5 @@
 /* ============================================================
-   main.css – Tailwind CSS input file for EduWings.
+   main.css – Tailwind CSS input file for Kitabomori.
    PostCSS/Tailwind processes this file during build.
    Custom component styles follow the @tailwind directives.
    ============================================================ */
@@ -47,6 +47,63 @@
 
 .header-controls {
   @apply flex items-center gap-2 flex-shrink-0;
+}
+
+/* ---- Dropdown submenu (Creative Writing) ---- */
+.nav-item-has-children {
+  @apply relative;
+}
+
+.nav-parent-row {
+  @apply flex items-center gap-1;
+}
+
+.submenu-toggle {
+  @apply md:hidden;
+}
+
+/* Desktop: caret always shown, submenu revealed on hover */
+@media (min-width: 768px) {
+  .submenu-toggle {
+    display: inline-block;
+  }
+
+  .submenu {
+    @apply hidden absolute left-0 top-full min-w-[190px] flex-col gap-0 list-none m-0 p-2 z-50 rounded-b shadow-md;
+    background-color: #009F93;
+  }
+
+  [dir="rtl"] .submenu {
+    @apply left-auto right-0;
+  }
+
+  .nav-item-has-children:hover .submenu,
+  .nav-item-has-children.submenu-open .submenu {
+    @apply flex;
+  }
+
+  .submenu li a {
+    @apply block py-1.5 px-2 text-sm rounded hover:bg-white/10 hover:underline;
+  }
+}
+
+/* Mobile: submenu is a simple indented accordion list */
+@media (max-width: 767px) {
+  .submenu {
+    @apply hidden flex-col list-none m-0 p-0 pl-4 gap-1;
+  }
+
+  [dir="rtl"] .submenu {
+    @apply pl-0 pr-4;
+  }
+
+  .nav-item-has-children.submenu-open .submenu {
+    @apply flex mt-1;
+  }
+
+  .submenu li a {
+    @apply block text-sm py-1;
+  }
 }
 
 /* ---- Ticker ---- */
@@ -175,6 +232,34 @@
 
 [dir="rtl"] .post-meta-bottom {
   text-align: left;
+}
+
+/* Author biography block, shown after the byline when provided */
+.post-author-bio {
+  @apply mt-3 pt-3 text-sm;
+  border-top: 1px dashed #d0d0d0;
+  text-align: left;
+}
+
+[dir="rtl"] .post-author-bio {
+  text-align: right;
+}
+
+.post-author-bio-name {
+  @apply font-semibold mb-1;
+  color: #009F93;
+}
+
+.post-author-bio-text {
+  color: #555555;
+}
+
+.dark .post-author-bio {
+  border-top-color: #374151;
+}
+
+.dark .post-author-bio-text {
+  @apply text-gray-400;
 }
 
 .post-back {

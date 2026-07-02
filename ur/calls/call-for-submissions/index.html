@@ -24,11 +24,11 @@
 </title>
 
 <!-- Meta description -->
-<meta name="description" content="ایڈیوونگز محققین، اساتذہ، طلباء اور پالیسی سازوں کو آراء، اوپ ایڈز، خطوط اور کتابی جائزے جمع کرانے کی دعوت دیتا ہے۔">
+<meta name="description" content="کتابومری محققین، اساتذہ، طلباء اور پالیسی سازوں کو بلاگز، کالم، خطوط، جائزے اور تخلیقی تحریر جمع کرانے کی دعوت دیتا ہے۔">
 
 <!-- Open Graph -->
 <meta property="og:title" content="مضامین کی دعوت: پاکستان میں مطالعے پر آوازیں">
-<meta property="og:description" content="ایڈیوونگز محققین، اساتذہ، طلباء اور پالیسی سازوں کو آراء، اوپ ایڈز، خطوط اور کتابی جائزے جمع کرانے کی دعوت دیتا ہے۔">
+<meta property="og:description" content="کتابومری محققین، اساتذہ، طلباء اور پالیسی سازوں کو بلاگز، کالم، خطوط، جائزے اور تخلیقی تحریر جمع کرانے کی دعوت دیتا ہے۔">
 <meta property="og:type" content="website">
 
 <!-- Google Fonts: Inter (English) + Noto Nastaliq Urdu (Urdu)
@@ -51,7 +51,8 @@
 
   <!-- ============================================================
      header.html – site-wide header
-     Contains: logo/site name, navigation, language switcher, dark mode toggle.
+     Contains: logo/site name, navigation (with one dropdown for
+     Creative Writing), language switcher, dark mode toggle.
      Background: #009F93 (brand teal). Text: #FFFFFF.
      No icons anywhere – plain text only.
      ============================================================ -->
@@ -76,12 +77,24 @@
     <nav class="main-nav" id="main-nav">
       <ul>
         
+        
         <li>
           <a href="/ur/"
              style="color:#FFFFFF;">
-            گھر
+            مرکزی صفحہ
           </a>
         </li>
+        
+        
+        
+        <li>
+          <a href="/ur/opeds/"
+             style="color:#FFFFFF;">
+            کالم
+          </a>
+        </li>
+        
+        
         
         <li>
           <a href="/ur/blogs/"
@@ -90,26 +103,55 @@
           </a>
         </li>
         
+        
+        
         <li>
-          <a href="/ur/opeds/"
+          <a href="/ur/reviews/"
              style="color:#FFFFFF;">
-            اوپ ایڈ
+            جائزے
           </a>
         </li>
         
-        <li>
-          <a href="/ur/letters/"
-             style="color:#FFFFFF;">
-            خطوط
-          </a>
+        
+        
+        <li class="nav-item-has-children">
+          <div class="nav-parent-row">
+            <a href="/ur/creative-writing/"
+               style="color:#FFFFFF;">
+              تخلیقی تحریر
+            </a>
+            <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
+                     aria-label="ذیلی مینو کھولیں"
+                     aria-expanded="false"
+                     style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
+          </div>
+          <ul class="submenu">
+            
+            <li>
+              <a href="/ur/creative-writing/fiction-stories/"
+                 style="color:#FFFFFF;">
+                افسانہ اور کہانیاں
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/poetry/"
+                 style="color:#FFFFFF;">
+                شاعری
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/what-i-saw/"
+                 style="color:#FFFFFF;">
+                میں نے دیکھا
+              </a>
+            </li>
+            
+          </ul>
         </li>
         
-        <li>
-          <a href="/ur/book-reviews/"
-             style="color:#FFFFFF;">
-            کتابی جائزے
-          </a>
-        </li>
+        
         
         <li>
           <a href="/ur/reflections/"
@@ -118,12 +160,25 @@
           </a>
         </li>
         
+        
+        
         <li>
-          <a href="/ur/main-ne-kya-dekha/"
+          <a href="/ur/letters/"
              style="color:#FFFFFF;">
-            میں نے کیا دیکھا
+            خطوط
           </a>
         </li>
+        
+        
+        
+        <li>
+          <a href="/ur/events/"
+             style="color:#FFFFFF;">
+            تقریبات
+          </a>
+        </li>
+        
+        
         
         <li>
           <a href="/ur/search/"
@@ -131,6 +186,7 @@
             تلاش
           </a>
         </li>
+        
         
       </ul>
     </nav>
@@ -187,6 +243,32 @@
   }
 
   /* --------------------------------------------------------
+     toggleSubmenu()
+     Mobile: tapping the caret expands/collapses the Creative
+     Writing submenu as an accordion. Desktop uses CSS hover,
+     but the button also works there via click for keyboard/touch
+     users (e.g. tablets that don't fire hover reliably).
+  -------------------------------------------------------- */
+  function toggleSubmenu(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    var li = btn.closest('.nav-item-has-children');
+    var isOpen = li.classList.toggle('submenu-open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  }
+
+  // Close any open submenu when clicking elsewhere
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (li) {
+      if (!li.contains(e.target)) {
+        li.classList.remove('submenu-open');
+        var btn = li.querySelector('.submenu-toggle');
+        if (btn) { btn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+  });
+
+  /* --------------------------------------------------------
      Update dark mode button label after theme.js runs.
   -------------------------------------------------------- */
   document.addEventListener('DOMContentLoaded', function () {
@@ -218,7 +300,7 @@
 
   <div class="post-body">
     
-<p>ایڈیوونگز پاکستان اور دنیا بھر میں تعلیم، خواندگی اور مطالعے سے متعلق تحریریں قبول کر رہا ہے۔</p>
+<p>کتابومری پاکستان اور دنیا بھر میں تعلیم، خواندگی اور مطالعے سے متعلق تحریریں قبول کر رہا ہے۔</p>
 
 <p>ہم خاص طور پر ان لوگوں کی آوازوں کو خوش آمدید کہتے ہیں جو:</p>
 
@@ -243,6 +325,11 @@
     
   </p>
 
+  <!-- Author biography, shown only if provided. Layout stays intact if missing. -->
+  
+  
+  
+
   <!-- Back link -->
   <p class="post-back">
     <button onclick="history.back()" class="post-back-btn">
@@ -256,8 +343,8 @@
 
   <!-- ============================================================
      footer.html – site-wide footer
-     Centered, stacked layout: nav links, call-for-pubs/guidelines,
-     social row, privacy policy, copyright.
+     Centered, stacked layout: nav links, submission/guidelines,
+     social row, email, privacy policy, copyright.
      Background: #009F93, Text: #FFFFFF. No icons anywhere.
      ============================================================ -->
 <footer class="site-footer" style="background-color:#009F93; color:#FFFFFF;">
@@ -267,65 +354,79 @@
     <p class="footer-row">
       <span class="footer-label">واپس جائیں:</span>
       
+      
         <a href="/ur/" style="color:#FFFFFF;">
-          گھر
+          مرکزی صفحہ
+        </a> · 
+      
+        <a href="/ur/opeds/" style="color:#FFFFFF;">
+          کالم
         </a> · 
       
         <a href="/ur/blogs/" style="color:#FFFFFF;">
           بلاگز
         </a> · 
       
-        <a href="/ur/opeds/" style="color:#FFFFFF;">
-          اوپ ایڈ
+        <a href="/ur/reviews/" style="color:#FFFFFF;">
+          جائزے
         </a> · 
       
-        <a href="/ur/letters/" style="color:#FFFFFF;">
-          خطوط
-        </a> · 
-      
-        <a href="/ur/book-reviews/" style="color:#FFFFFF;">
-          کتابی جائزے
+        <a href="/ur/creative-writing/" style="color:#FFFFFF;">
+          تخلیقی تحریر
         </a> · 
       
         <a href="/ur/reflections/" style="color:#FFFFFF;">
           عکاسی
         </a> · 
       
-        <a href="/ur/main-ne-kya-dekha/" style="color:#FFFFFF;">
-          میں نے کیا دیکھا
+        <a href="/ur/letters/" style="color:#FFFFFF;">
+          خطوط
+        </a> · 
+      
+        <a href="/ur/events/" style="color:#FFFFFF;">
+          تقریبات
         </a>
       
     </p>
 
-    <!-- Row 2: Call for Publications / Guidelines -->
+    <!-- Row 2: Submission page / Submission Form / Guidelines -->
     <p class="footer-row">
-      
-      
-      <a href="" style="color:#FFFFFF;">
-        
+      <a href="/ur/submission/" style="color:#FFFFFF;">
+        تحریر جمع کروائیں
       </a>
       &nbsp;&nbsp;
-      <a href="" style="color:#FFFFFF;">
-        
+      <a href="https://forms.gle/a3AosqLwLdP7q9Co7" target="_blank" rel="noopener" style="color:#FFFFFF;">
+        جمع کروانے کا فارم
+      </a>
+      &nbsp;&nbsp;
+      <a href="/ur/guidelines/" style="color:#FFFFFF;">
+        ہدایات
       </a>
     </p>
 
     <!-- Row 3: Social -->
     <p class="footer-row">
       <span class="footer-label">ہمیں فالو کریں:</span>
-      <a href="#" style="color:#FFFFFF;">YouTube</a> ·
-      <a href="#" style="color:#FFFFFF;">X</a> ·
-      <a href="#" style="color:#FFFFFF;">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
+      <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
+      <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener" style="color:#FFFFFF;">YouTube</a>
     </p>
 
-    <!-- Row 4: Privacy Policy -->
+    <!-- Row 4: Email -->
+    <p class="footer-row">
+      <span class="footer-label">ای میل:</span>
+      <a href="mailto:kitabomori@gmail.com" style="color:#FFFFFF;">kitabomori@gmail.com</a>
+    </p>
+
+    <!-- Row 5: Privacy Policy -->
     <p class="footer-row">
       <a href="/ur/privacy/" style="color:#FFFFFF;">
         رازداری کی پالیسی
       </a>
     </p>
 
-    <!-- Row 5: Copyright -->
+    <!-- Row 6: Copyright -->
     <p class="footer-copy">
       &copy; 2026 Kitabomori.
       
