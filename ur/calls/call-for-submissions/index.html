@@ -125,7 +125,7 @@
                      aria-expanded="false"
                      style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
           </div>
-          <ul class="submenu">
+          <ul class="submenu" style="display:none;">
             
             <li>
               <a href="/ur/creative-writing/fiction-stories/"
@@ -244,17 +244,31 @@
 
   /* --------------------------------------------------------
      toggleSubmenu()
-     Mobile: tapping the caret expands/collapses the Creative
-     Writing submenu as an accordion. Desktop uses CSS hover,
-     but the button also works there via click for keyboard/touch
-     users (e.g. tablets that don't fire hover reliably).
+     Opens/closes the Creative Writing submenu ONLY on click —
+     directly toggling inline display style (not just a CSS
+     class) so visibility can never depend on hover or on
+     Tailwind's compiled/cached CSS.
   -------------------------------------------------------- */
   function toggleSubmenu(e, btn) {
     e.preventDefault();
     e.stopPropagation();
     var li = btn.closest('.nav-item-has-children');
-    var isOpen = li.classList.toggle('submenu-open');
-    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    var submenu = li.querySelector('.submenu');
+    var willOpen = submenu.style.display !== 'flex';
+
+    // Close every other open submenu first
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (openLi) {
+      if (openLi !== li) {
+        openLi.classList.remove('submenu-open');
+        openLi.querySelector('.submenu').style.display = 'none';
+        var openBtn = openLi.querySelector('.submenu-toggle');
+        if (openBtn) { openBtn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+
+    submenu.style.display = willOpen ? 'flex' : 'none';
+    li.classList.toggle('submenu-open', willOpen);
+    btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
   }
 
   // Close any open submenu when clicking elsewhere
@@ -262,6 +276,8 @@
     document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (li) {
       if (!li.contains(e.target)) {
         li.classList.remove('submenu-open');
+        var submenu = li.querySelector('.submenu');
+        if (submenu) { submenu.style.display = 'none'; }
         var btn = li.querySelector('.submenu-toggle');
         if (btn) { btn.setAttribute('aria-expanded', 'false'); }
       }
@@ -389,14 +405,10 @@
       
     </p>
 
-    <!-- Row 2: Submission page / Submission Form / Guidelines -->
+    <!-- Row 2: Submission page / Guidelines -->
     <p class="footer-row">
       <a href="/ur/submission/" style="color:#FFFFFF;">
         تحریر جمع کروائیں
-      </a>
-      &nbsp;&nbsp;
-      <a href="https://forms.gle/a3AosqLwLdP7q9Co7" target="_blank" rel="noopener" style="color:#FFFFFF;">
-        جمع کروانے کا فارم
       </a>
       &nbsp;&nbsp;
       <a href="/ur/guidelines/" style="color:#FFFFFF;">
