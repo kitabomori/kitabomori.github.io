@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: ""
+title_en: "To my Teacher"
 title_ur: "محترمہ ٹیچر، کے نام ایک خط"
 date: 2026-06-24
 author_en: ""
