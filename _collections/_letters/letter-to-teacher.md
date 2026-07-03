@@ -4,7 +4,7 @@ title_en: "To my Teacher"
 title_ur: "محترمہ ٹیچر، کے نام ایک خط"
 date: 2026-06-24
 author_en: ""
-author_ur: ""
+author_ur: "کتابومری"
 bio_en: ""
 bio_ur: ""
 description_en: ""
