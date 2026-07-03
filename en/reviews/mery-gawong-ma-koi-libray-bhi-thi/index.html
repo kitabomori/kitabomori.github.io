@@ -4,8 +4,8 @@
      Sets html lang/dir, loads head, header, footer, and
      applies body font from site config.
      ============================================================ -->
-<html lang="ur"
-      dir="rtl"
+<html lang="en"
+      dir="ltr"
       class="">
 <head>
   <!-- ============================================================
@@ -19,16 +19,16 @@
 <!-- Page title: prefer page-specific title, fall back to site title -->
 <title>
   
-    جائزے – کتابومری
+     – Kitabomori
   
 </title>
 
 <!-- Meta description -->
-<meta name="description" content="تعلیم، خواندگی اور تحقیق سے متعلق کتابوں کے تنقیدی جائزے۔">
+<meta name="description" content="Promoting reading through evidence-based research">
 
 <!-- Open Graph -->
-<meta property="og:title" content="جائزے">
-<meta property="og:description" content="تعلیم، خواندگی اور تحقیق سے متعلق کتابوں کے تنقیدی جائزے۔">
+<meta property="og:title" content="Kitabomori">
+<meta property="og:description" content="Promoting reading through evidence-based research">
 <meta property="og:type" content="website">
 
 <!-- Google Fonts: Inter (English) + Noto Nastaliq Urdu (Urdu)
@@ -47,7 +47,7 @@
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 
 </head>
-<body style="font-family: 'Noto Nastaliq Urdu', serif;">
+<body style="font-family: 'Inter', sans-serif;">
 
   <!-- ============================================================
      header.html – site-wide header
@@ -60,17 +60,17 @@
   <div class="header-inner">
 
     <!-- Site name / logo -->
-    <a href="/ur/"
+    <a href="/en/"
        class="site-title"
        style="color:#FFFFFF; text-decoration:none;">
-      کتابومری
+      Kitabomori
     </a>
 
     <!-- Mobile nav toggle (plain text, no icon) -->
     <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation"
             aria-expanded="false" aria-controls="main-nav"
             style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:4px 10px; cursor:pointer; font-size:0.85rem;">
-      مینو
+      Menu
     </button>
 
     <!-- Main navigation -->
@@ -79,36 +79,36 @@
         
         
         <li>
-          <a href="/ur/"
+          <a href="/en/"
              style="color:#FFFFFF;">
-            مرکزی صفحہ
+            Home
           </a>
         </li>
         
         
         
         <li>
-          <a href="/ur/opeds/"
+          <a href="/en/opeds/"
              style="color:#FFFFFF;">
-            کالم
+            Op-Eds
           </a>
         </li>
         
         
         
         <li>
-          <a href="/ur/blogs/"
+          <a href="/en/blogs/"
              style="color:#FFFFFF;">
-            بلاگز
+            Blogs
           </a>
         </li>
         
         
         
         <li>
-          <a href="/ur/reviews/"
+          <a href="/en/reviews/"
              style="color:#FFFFFF;">
-            جائزے
+            Reviews
           </a>
         </li>
         
@@ -116,35 +116,35 @@
         
         <li class="nav-item-has-children">
           <div class="nav-parent-row">
-            <a href="/ur/creative-writing/"
+            <a href="/en/creative-writing/"
                style="color:#FFFFFF;">
-              تخلیقی تحریر
+              Creative Writing
             </a>
             <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
-                     aria-label="ذیلی مینو کھولیں"
+                     aria-label="Open submenu"
                      aria-expanded="false"
                      style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
           </div>
           <ul class="submenu" style="display:none;">
             
             <li>
-              <a href="/ur/creative-writing/fiction-stories/"
+              <a href="/en/creative-writing/fiction-stories/"
                  style="color:#FFFFFF;">
-                افسانہ اور کہانیاں
+                Fiction & Stories
               </a>
             </li>
             
             <li>
-              <a href="/ur/creative-writing/poetry/"
+              <a href="/en/creative-writing/poetry/"
                  style="color:#FFFFFF;">
-                شاعری
+                Poetry
               </a>
             </li>
             
             <li>
-              <a href="/ur/creative-writing/what-i-saw/"
+              <a href="/en/creative-writing/what-i-saw/"
                  style="color:#FFFFFF;">
-                میں نے دیکھا
+                What I Saw
               </a>
             </li>
             
@@ -154,36 +154,36 @@
         
         
         <li>
-          <a href="/ur/reflections/"
+          <a href="/en/reflections/"
              style="color:#FFFFFF;">
-            عکاسی
+            Reflections
           </a>
         </li>
         
         
         
         <li>
-          <a href="/ur/letters/"
+          <a href="/en/letters/"
              style="color:#FFFFFF;">
-            خطوط
+            Letters
           </a>
         </li>
         
         
         
         <li>
-          <a href="/ur/events/"
+          <a href="/en/events/"
              style="color:#FFFFFF;">
-            تقریبات
+            Events
           </a>
         </li>
         
         
         
         <li>
-          <a href="/ur/search/"
+          <a href="/en/search/"
              style="color:#FFFFFF;">
-            تلاش
+            Search
           </a>
         </li>
         
@@ -197,13 +197,13 @@
       <!-- Language switcher: swaps /en/ <-> /ur/ in the current URL -->
       <a href="#" onclick="switchLanguage(event)" class="lang-switch"
          style="color:#FFFFFF; border:1px solid #FFFFFF; padding:3px 10px; text-decoration:none; font-size:0.85rem;">
-        EN
+        UR
       </a>
 
       <!-- Dark mode toggle: plain text, no icon -->
       <button onclick="toggleDark()" id="theme-btn"
-              style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-right:6px;">
-        تاریک
+              style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-left:6px;">
+        Dark
       </button>
 
     </div><!-- /.header-controls -->
@@ -292,7 +292,7 @@
     if (btn) {
       var isDark = document.documentElement.classList.contains('dark');
       
-        btn.textContent = isDark ? 'روشن' : 'تاریک';
+        btn.textContent = isDark ? 'Light' : 'Dark';
       
     }
   });
@@ -301,80 +301,46 @@
 
   <main id="main-content">
     <!-- ============================================================
-     page.html – layout for standard content pages.
-     Wraps content in a centred container with page-title heading.
+     post.html – layout for collection items (blogs, letters, etc.)
+     Shows title, date, description, and body content.
      ============================================================ -->
-<div class="page-container">
+<article class="post-container">
 
-  <h1 class="page-title">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+        Mery Gawong Ma Koi Libray Bhi Thi
+      
+    </h1>
+  </header>
+
+  <div class="post-body">
     
-      جائزے
+
+  </div>
+
+  <!-- Author and date, shown at the end of the piece -->
+  
+  
+  <p class="post-meta-bottom">
     
-  </h1>
-
-  <div class="page-content">
+      03 July 2026
     
-<p class="collection-intro">تعلیم، خواندگی اور تحقیق سے متعلق کتابوں کے تنقیدی جائزے۔</p>
+  </p>
 
-<div class="card-grid">
+  <!-- Author biography, shown only if provided. Layout stays intact if missing. -->
   
   
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/ur/reviews/mery-gawong-ma-koi-libray-bhi-thi/">
-        میرے گاؤں میں کوئی لائبریری بھی تھی
-      </a>
-    </h2>
-    <p class="card-date">03 July 2026</p>
-    <p class="card-excerpt">
-      
-        فیض آباد کی پرانی لائبری کی یاد میں۔۔۔
-      
-    </p>
-    <a href="/ur/reviews/mery-gawong-ma-koi-libray-bhi-thi/" class="card-read-more">
-      مزید پڑھیں &rarr;
-    </a>
-  </div>
   
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/ur/reviews/three-questions/">
-        
-      </a>
-    </h2>
-    <p class="card-date">01 July 2026</p>
-    <p class="card-excerpt">
-      
-        
-      
-    </p>
-    <a href="/ur/reviews/three-questions/" class="card-read-more">
-      مزید پڑھیں &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/ur/reviews/the-catcher-in-the-rye/">
-        
-      </a>
-    </h2>
-    <p class="card-date">30 June 2026</p>
-    <p class="card-excerpt">
-      
-        
-      
-    </p>
-    <a href="/ur/reviews/the-catcher-in-the-rye/" class="card-read-more">
-      مزید پڑھیں &rarr;
-    </a>
-  </div>
-  
-</div>
 
-  </div>
+  <!-- Back link -->
+  <p class="post-back">
+    <button onclick="history.back()" class="post-back-btn">
+      &larr; Go back
+    </button>
+  </p>
 
-</div>
+</article>
 
   </main>
 
@@ -389,57 +355,57 @@
 
     <!-- Row 1: Return to ... main section links -->
     <p class="footer-row">
-      <span class="footer-label">واپس جائیں:</span>
+      <span class="footer-label">Return to:</span>
       
       
-        <a href="/ur/" style="color:#FFFFFF;">
-          مرکزی صفحہ
+        <a href="/en/" style="color:#FFFFFF;">
+          Home
         </a> · 
       
-        <a href="/ur/opeds/" style="color:#FFFFFF;">
-          کالم
+        <a href="/en/opeds/" style="color:#FFFFFF;">
+          Op-Eds
         </a> · 
       
-        <a href="/ur/blogs/" style="color:#FFFFFF;">
-          بلاگز
+        <a href="/en/blogs/" style="color:#FFFFFF;">
+          Blogs
         </a> · 
       
-        <a href="/ur/reviews/" style="color:#FFFFFF;">
-          جائزے
+        <a href="/en/reviews/" style="color:#FFFFFF;">
+          Reviews
         </a> · 
       
-        <a href="/ur/creative-writing/" style="color:#FFFFFF;">
-          تخلیقی تحریر
+        <a href="/en/creative-writing/" style="color:#FFFFFF;">
+          Creative Writing
         </a> · 
       
-        <a href="/ur/reflections/" style="color:#FFFFFF;">
-          عکاسی
+        <a href="/en/reflections/" style="color:#FFFFFF;">
+          Reflections
         </a> · 
       
-        <a href="/ur/letters/" style="color:#FFFFFF;">
-          خطوط
+        <a href="/en/letters/" style="color:#FFFFFF;">
+          Letters
         </a> · 
       
-        <a href="/ur/events/" style="color:#FFFFFF;">
-          تقریبات
+        <a href="/en/events/" style="color:#FFFFFF;">
+          Events
         </a>
       
     </p>
 
     <!-- Row 2: Submission page / Guidelines -->
     <p class="footer-row">
-      <a href="/ur/submission/" style="color:#FFFFFF;">
-        تحریر جمع کروائیں
+      <a href="/en/submission/" style="color:#FFFFFF;">
+        Submission
       </a>
       &nbsp;&nbsp;
-      <a href="/ur/guidelines/" style="color:#FFFFFF;">
-        ہدایات
+      <a href="/en/guidelines/" style="color:#FFFFFF;">
+        Guidelines
       </a>
     </p>
 
     <!-- Row 3: Social -->
     <p class="footer-row">
-      <span class="footer-label">ہمیں فالو کریں:</span>
+      <span class="footer-label">Follow us:</span>
       <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
       <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
       <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
@@ -448,14 +414,14 @@
 
     <!-- Row 4: Email -->
     <p class="footer-row">
-      <span class="footer-label">ای میل:</span>
+      <span class="footer-label">Email:</span>
       <a href="mailto:kitabomori@gmail.com" style="color:#FFFFFF;">kitabomori@gmail.com</a>
     </p>
 
     <!-- Row 5: Privacy Policy -->
     <p class="footer-row">
-      <a href="/ur/privacy/" style="color:#FFFFFF;">
-        رازداری کی پالیسی
+      <a href="/en/privacy/" style="color:#FFFFFF;">
+        Privacy Policy
       </a>
     </p>
 
@@ -463,7 +429,7 @@
     <p class="footer-copy">
       &copy; 2026 Kitabomori.
       
-        تمام حقوق محفوظ ہیں۔
+        All rights reserved. A volunteer educational publishing initiative.
       
     </p>
 
