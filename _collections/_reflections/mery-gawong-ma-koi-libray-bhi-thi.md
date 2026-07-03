@@ -8,7 +8,7 @@ author_ur: "کتابومری"
 bio_en: ""
 bio_ur: "کتابومری"
 description_en: ""
-description_ur:"فیض آباد کی پرانی لائبری کی یاد میں"
+description_ur: "فیض آباد کی پرانی لائبری کی یاد میں"
 ---
 
 {% if site.lang == 'ur' %}
