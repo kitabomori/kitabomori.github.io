@@ -184,6 +184,26 @@
   text-align: center;
 }
 
+/* Audio (YouTube) link, shown right under the post title */
+.post-audio-link {
+  @apply text-sm mb-4;
+  text-align: center;
+}
+
+.post-audio-link a {
+  color: #009F93;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.post-audio-link a:hover {
+  color: #007A70;
+}
+
+.dark .post-audio-link a {
+  color: #4FD1C5;
+}
+
 .post-date {
   @apply text-sm text-gray-500 mb-2;
   text-align: left;
