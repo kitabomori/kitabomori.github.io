@@ -26,6 +26,8 @@ bio_en: ""                                 # Optional: 2-4 line author bio (Engl
 bio_ur: ""                                 # Optional: 2-4 line author bio (Urdu). Leave blank to hide.
 description_en: "A short English summary of this piece (1–2 sentences)."
 description_ur: "اس تحریر کا مختصر اردو خلاصہ (ایک یا دو جملے)۔"
+youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Replace with this post's English audio link on YouTube
+youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Replace with this post's Urdu audio link on YouTube
 ---
 
 {% if site.lang == 'ur' %}

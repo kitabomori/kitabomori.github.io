@@ -9,6 +9,8 @@ bio_en: ""
 bio_ur: ""
 description_en: "Kitabomori invites researchers, teachers, students, and policymakers to contribute blogs, op-eds, letters, reviews, and creative writing."
 description_ur: "کتابومری محققین، اساتذہ، طلباء اور پالیسی سازوں کو بلاگز، کالم، خطوط، جائزے اور تخلیقی تحریر جمع کرانے کی دعوت دیتا ہے۔"
+youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
 {% if site.lang == 'ur' %}

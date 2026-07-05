@@ -4,6 +4,13 @@ baseurl: ""
 url: "https://kitabomori.github.io"
 collections_dir: _collections
 
+# Default YouTube channel link, used as a fallback on posts that don't yet
+# have their own per-post/per-language audio link (youtube_en / youtube_ur
+# in the post's front matter). Update here to change the site-wide default,
+# or override per post by setting youtube_en / youtube_ur in that post's
+# front matter.
+youtube_channel: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+
 plugins:
   - jekyll-sitemap
 

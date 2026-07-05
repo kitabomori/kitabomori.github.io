@@ -15,6 +15,24 @@ layout: base
         {{ page.title_en | default: page.title }}
       {% endif %}
     </h1>
+
+    <!-- Audio link (YouTube). Each post/language can set its own link via
+         youtube_en / youtube_ur in front matter; if a post hasn't set one
+         yet, it falls back to the site-wide YouTube channel link. -->
+    {% assign post_audio_link = page.youtube_en %}
+    {% if site.lang == 'ur' %}{% assign post_audio_link = page.youtube_ur %}{% endif %}
+    {% assign post_audio_link = post_audio_link | default: site.youtube_channel %}
+    {% if post_audio_link and post_audio_link != "" %}
+    <p class="post-audio-link">
+      <a href="{{ post_audio_link }}" target="_blank" rel="noopener">
+        {% if site.lang == 'ur' %}
+          اس تحریر کی آڈیو یوٹیوب پر سننے کے لیے کلک کریں
+        {% else %}
+          Click to listen the audio of the text on YouTube
+        {% endif %}
+      </a>
+    </p>
+    {% endif %}
   </header>
 
   <div class="post-body">

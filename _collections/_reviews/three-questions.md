@@ -9,6 +9,8 @@ bio_en: ""
 bio_ur: ""
 description_en: ""
 description_ur: ""
+youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
 Lev Nikolayevich Tolstoy (1828-1910) believed that novels serve as tools for psychological education and reform, helping us understand one another, especially those who may seem unappealing at first glance. As the master of realistic fiction, he wrote acclaimed works such as “War and Peace,” “Anna Karenina,” and the novella "The Death of Ivan Ilyich," which is considered one of his finest. His idea of nonviolent resistance, as expressed in "The Kingdom of God Is Within You," has profoundly influenced 20th-century figures, including Mahatma Gandhi and Martin Luther King Jr. In "The Three Questions," part of the compilation "What Men Live By and Other Tales," Tolstoy offers deep, insightful perspectives on various aspects of human life.

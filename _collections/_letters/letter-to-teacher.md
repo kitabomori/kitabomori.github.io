@@ -9,6 +9,8 @@ bio_en: ""
 bio_ur: ""
 description_en: ""
 description_ur: "تعلیم، تبدیلی، اور آواز اٹھانے کی ہمت پر ایک ذاتی خط۔"
+youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
 {% if site.lang == 'ur' %}

@@ -9,6 +9,8 @@ bio_en: ""
 bio_ur: "کتابومری"
 description_en: ""
 description_ur: "فیض آباد کی پرانی لائبری کی یاد میں"
+youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
 {% if site.lang == 'ur' %}
