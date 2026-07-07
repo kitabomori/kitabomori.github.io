@@ -184,10 +184,22 @@
   text-align: center;
 }
 
+/* Nastaliq glyphs are tall and extend well below the normal line box,
+   so the default line-height/margin isn't enough clearance before the
+   audio link below — without this the two visually overlap in Urdu. */
+[dir="rtl"] .post-title {
+  line-height: 2.4;
+  margin-bottom: 1rem;
+}
+
 /* Audio (YouTube) link, shown right under the post title */
 .post-audio-link {
   @apply text-sm mb-4;
   text-align: center;
+}
+
+[dir="rtl"] .post-audio-link {
+  margin-top: 0.5rem;
 }
 
 .post-audio-link a {
