@@ -12,6 +12,17 @@
 
 
 
+
+  {
+    "title_en": "Kitabomori's First Reading Circle",
+    "title_ur": "کتابومری کا پہلا ریڈنگ سرکل",
+    "url_en": "/en/events/first-reading-circle/",
+    "url_ur": "/ur/events/first-reading-circle/",
+    "date": "2026-07-15",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
   {
     "title_en": "There was a library in My Village",
     "title_ur": "میرے گاؤں میں کوئی لائبریری بھی تھی",
@@ -33,6 +44,16 @@
   },
 
   {
+    "title_en": "Why Reading Aloud Still Matters in Secondary Classrooms",
+    "title_ur": "",
+    "url_en": "/en/blogs/reading-aloud-secondary-classrooms/",
+    "url_ur": "/ur/blogs/reading-aloud-secondary-classrooms/",
+    "date": "2026-07-01",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
     "title_en": "To my Teacher",
     "title_ur": "ٹیچر کے نام ایک خط",
     "url_en": "/en/letters/letter-to-teacher/",
@@ -43,11 +64,61 @@
   },
 
   {
+    "title_en": "Pakistan's Reading Crisis Needs More Than New Textbooks",
+    "title_ur": "",
+    "url_en": "/en/opeds/reading-crisis-more-than-textbooks/",
+    "url_ur": "/ur/opeds/reading-crisis-more-than-textbooks/",
+    "date": "2026-06-20",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
+    "title_en": "The Last Period",
+    "title_ur": "",
+    "url_en": "/en/creative-writing/fiction-stories/the-last-period/",
+    "url_ur": "/ur/creative-writing/fiction-stories/the-last-period/",
+    "date": "2026-06-15",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
+    "title_en": "Chalk Dust",
+    "title_ur": "",
+    "url_en": "/en/creative-writing/poetry/chalk-dust/",
+    "url_ur": "/ur/creative-writing/poetry/chalk-dust/",
+    "date": "2026-06-10",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
+    "title_en": "The Boy Who Shared His Only Pencil",
+    "title_ur": "",
+    "url_en": "/en/creative-writing/what-i-saw/the-shared-pencil/",
+    "url_ur": "/ur/creative-writing/what-i-saw/the-shared-pencil/",
+    "date": "2026-06-05",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
     "title_en": "Call for Submissions: Voices on Reading in Pakistan",
     "title_ur": "مضامین کی دعوت: پاکستان میں مطالعے پر آوازیں",
     "url_en": "/en/calls/call-for-submissions/",
     "url_ur": "/ur/calls/call-for-submissions/",
     "date": "2026-06-01",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
+    "title_en": "My Teaching Philosophy",
+    "title_ur": "میرا فلسفہ تدریس",
+    "url_en": "/en/diary/teaching-philosophy/",
+    "url_ur": "/ur/diary/teaching-philosophy/",
+    "date": "2023-10-19",
     "type_en": "Call",
     "type_ur": "دعوت"
   }

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     base.html – root layout for all pages.
+     Sets html lang/dir, loads head, header, footer, and
+     applies body font from site config.
+     ============================================================ -->
+<html lang="en"
+      dir="ltr"
+      class="">
+<head>
+  <!-- ============================================================
+     head.html – <head> block for all pages
+     Sets charset, viewport, Google Fonts, Tailwind CSS, theme script,
+     and all metadata. Called once from base.html.
+     ============================================================ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Page title: prefer page-specific title, fall back to site title -->
+<title>
+  
+    My Teaching Philosophy – Kitabomori
+  
+</title>
+
+<!-- Meta description -->
+<meta name="description" content="On the teacher as gardener: facilitating a student's innate potential to learn, grow, and serve.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="My Teaching Philosophy">
+<meta property="og:description" content="On the teacher as gardener: facilitating a student's innate potential to learn, grow, and serve.">
+<meta property="og:type" content="website">
+
+<!-- Google Fonts: Inter (English) + Noto Nastaliq Urdu (Urdu)
+     Loaded with display=swap for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS (compiled by PostCSS build step) -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!-- Theme script: runs before paint to prevent flash of wrong colour scheme -->
+<script src="/assets/js/theme.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+</head>
+<body style="font-family: 'Inter', sans-serif;">
+
+  <!-- ============================================================
+     header.html – site-wide header
+     Contains: logo/site name, navigation (with one dropdown for
+     Creative Writing), language switcher, dark mode toggle.
+     Background: #009F93 (brand teal). Text: #FFFFFF.
+     No icons anywhere – plain text only.
+     ============================================================ -->
+<header class="site-header" style="background-color:#009F93;">
+  <div class="header-inner">
+
+    <!-- Site name / logo -->
+    <a href="/en/"
+       class="site-title"
+       style="color:#FFFFFF; text-decoration:none;">
+      Kitabomori
+    </a>
+
+    <!-- Mobile nav toggle (plain text, no icon) -->
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation"
+            aria-expanded="false" aria-controls="main-nav"
+            style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:4px 10px; cursor:pointer; font-size:0.85rem;">
+      Menu
+    </button>
+
+    <!-- Main navigation -->
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        
+        
+        <li>
+          <a href="/en/"
+             style="color:#FFFFFF;">
+            Home
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/opeds/"
+             style="color:#FFFFFF;">
+            Op-Eds
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/blogs/"
+             style="color:#FFFFFF;">
+            Blogs
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/reviews/"
+             style="color:#FFFFFF;">
+            Reviews
+          </a>
+        </li>
+        
+        
+        
+        <li class="nav-item-has-children">
+          <div class="nav-parent-row">
+            <a href="/en/creative-writing/"
+               style="color:#FFFFFF;">
+              Creative Writing
+            </a>
+            <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
+                     aria-label="Open submenu"
+                     aria-expanded="false"
+                     style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
+          </div>
+          <ul class="submenu" style="display:none;">
+            
+            <li>
+              <a href="/en/creative-writing/fiction-stories/"
+                 style="color:#FFFFFF;">
+                Fiction & Stories
+              </a>
+            </li>
+            
+            <li>
+              <a href="/en/creative-writing/poetry/"
+                 style="color:#FFFFFF;">
+                Poetry
+              </a>
+            </li>
+            
+            <li>
+              <a href="/en/creative-writing/what-i-saw/"
+                 style="color:#FFFFFF;">
+                What I Saw
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/reflections/"
+             style="color:#FFFFFF;">
+            Reflections
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/letters/"
+             style="color:#FFFFFF;">
+            Letters
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/diary/"
+             style="color:#FFFFFF;">
+            Teaching Diary
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/events/"
+             style="color:#FFFFFF;">
+            Events
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/search/"
+             style="color:#FFFFFF;">
+            Search
+          </a>
+        </li>
+        
+        
+      </ul>
+    </nav>
+
+    <!-- Header controls: language switcher + dark mode toggle -->
+    <div class="header-controls">
+
+      <!-- Language switcher: swaps /en/ <-> /ur/ in the current URL -->
+      <a href="#" onclick="switchLanguage(event)" class="lang-switch"
+         style="color:#FFFFFF; border:1px solid #FFFFFF; padding:3px 10px; text-decoration:none; font-size:0.85rem;">
+        UR
+      </a>
+
+      <!-- Dark mode toggle: plain text, no icon -->
+      <button onclick="toggleDark()" id="theme-btn"
+              style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-left:6px;">
+        Dark
+      </button>
+
+    </div><!-- /.header-controls -->
+  </div><!-- /.header-inner -->
+</header>
+
+<script>
+  /* --------------------------------------------------------
+     switchLanguage()
+     Swaps /en/ and /ur/ in the current path, then navigates.
+     Falls back to the opposite home page if swap fails.
+  -------------------------------------------------------- */
+  function switchLanguage(e) {
+    e.preventDefault();
+    var path = window.location.pathname;
+    var newPath;
+    if (path.includes('/en/')) {
+      newPath = path.replace('/en/', '/ur/');
+    } else if (path.includes('/ur/')) {
+      newPath = path.replace('/ur/', '/en/');
+    } else {
+      // Fallback: go to opposite home
+      newPath = path.includes('/ur') ? '/en/' : '/ur/';
+    }
+    window.location.href = newPath;
+  }
+
+  /* --------------------------------------------------------
+     toggleNav()
+     Shows/hides the mobile navigation menu.
+  -------------------------------------------------------- */
+  function toggleNav() {
+    var nav = document.getElementById('main-nav');
+    var btn = document.querySelector('.nav-toggle');
+    var isOpen = nav.classList.toggle('open');
+    if (btn) { btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false'); }
+  }
+
+  /* --------------------------------------------------------
+     toggleSubmenu()
+     Opens/closes the Creative Writing submenu ONLY on click —
+     directly toggling inline display style (not just a CSS
+     class) so visibility can never depend on hover or on
+     Tailwind's compiled/cached CSS.
+  -------------------------------------------------------- */
+  function toggleSubmenu(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    var li = btn.closest('.nav-item-has-children');
+    var submenu = li.querySelector('.submenu');
+    var willOpen = submenu.style.display !== 'flex';
+
+    // Close every other open submenu first
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (openLi) {
+      if (openLi !== li) {
+        openLi.classList.remove('submenu-open');
+        openLi.querySelector('.submenu').style.display = 'none';
+        var openBtn = openLi.querySelector('.submenu-toggle');
+        if (openBtn) { openBtn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+
+    submenu.style.display = willOpen ? 'flex' : 'none';
+    li.classList.toggle('submenu-open', willOpen);
+    btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+  }
+
+  // Close any open submenu when clicking elsewhere
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (li) {
+      if (!li.contains(e.target)) {
+        li.classList.remove('submenu-open');
+        var submenu = li.querySelector('.submenu');
+        if (submenu) { submenu.style.display = 'none'; }
+        var btn = li.querySelector('.submenu-toggle');
+        if (btn) { btn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+  });
+
+  /* --------------------------------------------------------
+     Update dark mode button label after theme.js runs.
+  -------------------------------------------------------- */
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('theme-btn');
+    if (btn) {
+      var isDark = document.documentElement.classList.contains('dark');
+      
+        btn.textContent = isDark ? 'Light' : 'Dark';
+      
+    }
+  });
+</script>
+
+
+  <main id="main-content">
+    <!-- ============================================================
+     post.html – layout for collection items (blogs, letters, etc.)
+     Shows title, date, description, and body content.
+     ============================================================ -->
+<article class="post-container">
+
+  <header class="post-header">
+    <h1 class="post-title">
+      
+        My Teaching Philosophy
+      
+    </h1>
+
+    <!-- Audio link (YouTube). Each post/language can set its own link via
+         youtube_en / youtube_ur in front matter; if a post hasn't set one
+         yet, it falls back to the site-wide YouTube channel link. -->
+    
+    
+    
+    
+    <p class="post-audio-link">
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener">
+        
+          Click for audio on YouTube
+        
+      </a>
+    </p>
+    
+  </header>
+
+  <div class="post-body">
+    
+<p>Imagine a rose plant cutting, buried two thirds of it in a bed to grow a new one. In the bed, various flowers are already grown, probably not of the same color and shape. The bed has all the necessary minerals, along with exposure to sunlight and constant supply of water. There is also a gardener who once in a while only sees the cutting. With the passage of time, would the cutting grow into a plant by growing roots and shoots? It’s complicated to answer. Weeds would grow and they may not allow the sunlight to reach the cutting and ultimately it would die out losing its capacity to grow into a plant. In a second case, when a good gardener starts to nurture the cutting and the already grown flower, facilitating the natural process by removing the weeds and protecting it from being eaten by a sheep or other animals. The rose cutting, one day would fully grow into a plant and add its own beauty and fragrance along with other flowers to the garden.</p>
+
+<p>If the rose cutting is replaced by a child (student) and bed by school, then there is always need for a good teacher to facilitate the growth and learning. And this is what I believe and striving to be as a teacher who gets rid of the weeds and lets the sunlight reach the plant to grow its innate potential. I regard it as true, each child has the potential to learn, grow and serve, when provided with suitable environments and facilitated by a teacher. It is not always possible inside the classroom to appreciate, listen and care for the needs of each and every student in the classroom within 40 minutes. Therefore, it is vital to be available to the students. It’s healthy to remain among students and to interact with students at playgrounds and other places to become their friend and class fellow. This results in removal of any unwanted barriers the students might have to inquire to learn and ends the stereotypical thoughts.</p>
+
+<p>I am never in favor of being an authoritative manager to maintain the decor of the classroom and thinking of depositing a set of information in the student, which Paulo Freire calls the banking model of education. Not allowing students to express and to do things of their interest, sticking to one particular method to teach and not engaging students based on the individual differences, results in learning nothing new. Such practices create a living hell and that is why Bell Hooks might have said this. “The academy is not paradise. But learning is a place where paradise can be created”. Teaching should be engaging and relevant to the interest of the students. It is also the responsibility of teachers to develop awareness of what is happening in their surroundings, which should lead them to reflect and take action (Freireian praxis).</p>
+
+<p>A teacher must do a job to foster creativity. To achieve this aim it’s effective to embrace the mistakes of students and create a learning environment that allows them to feel comfortable to take chances. Promotion of collaborative learning helps students to express, challenge and refine their thought processes. By listening to peers, students also come across new perspectives that broaden their horizons and deepen their understanding and knowledge.</p>
+
+<p>I more or less have the feeling, education should enable an individual to qualify, socialize and to develop subjectivity. According to Biesta (2010) qualification is concerned with the transmission and acquisition of knowledge, skills and dispositions. It enables individuals to do something to earn. Socialization is about the through transmission of community knowledge, norms and values through interaction, which is thought to be part of the hidden curriculum. While subjectification refers to the process through which individuals become subjective beings, developing a sense of identity, agency and subjectivity.</p>
+
+<p>Conclusively, my teaching philosophy includes engaged pedagogy of Bell Hooks and emancipatory process of Paulo Freire, as I believe that the contextual and engaging practices that transgress the language and authoritative ideologies in the classroom so that the lived realities of the students are utilized to better facilitate the learning. Moreover, the dimension of Gert Biesta plays a vital role in my teaching philosophy as I wholeheartedly stand for development of skills, agency and self-expression of students so that their identity is formed keeping the trait of socialization and development of great social factors.</p>
+
+<p>19-10-2023</p>
+
+
+  </div>
+
+  <!-- Author and date, shown at the end of the piece -->
+  
+  
+  <p class="post-meta-bottom">
+    
+      19 October 2023
+    
+  </p>
+
+  <!-- Author biography, shown only if provided. Layout stays intact if missing. -->
+  
+  
+  
+
+  <!-- Back link -->
+  <p class="post-back">
+    <button onclick="history.back()" class="post-back-btn">
+      &larr; Go back
+    </button>
+  </p>
+
+</article>
+
+  </main>
+
+  <!-- ============================================================
+     footer.html – site-wide footer
+     Centered, stacked layout: nav links, submission/guidelines,
+     social row, email, privacy policy, copyright.
+     Background: #009F93, Text: #FFFFFF. No icons anywhere.
+     ============================================================ -->
+<footer class="site-footer" style="background-color:#009F93; color:#FFFFFF;">
+  <div class="footer-inner">
+
+    <!-- Row 1: Return to ... main section links -->
+    <p class="footer-row">
+      <span class="footer-label">Return to:</span>
+      
+      
+        <a href="/en/" style="color:#FFFFFF;">
+          Home
+        </a> · 
+      
+        <a href="/en/opeds/" style="color:#FFFFFF;">
+          Op-Eds
+        </a> · 
+      
+        <a href="/en/blogs/" style="color:#FFFFFF;">
+          Blogs
+        </a> · 
+      
+        <a href="/en/reviews/" style="color:#FFFFFF;">
+          Reviews
+        </a> · 
+      
+        <a href="/en/creative-writing/" style="color:#FFFFFF;">
+          Creative Writing
+        </a> · 
+      
+        <a href="/en/reflections/" style="color:#FFFFFF;">
+          Reflections
+        </a> · 
+      
+        <a href="/en/letters/" style="color:#FFFFFF;">
+          Letters
+        </a> · 
+      
+        <a href="/en/diary/" style="color:#FFFFFF;">
+          Teaching Diary
+        </a> · 
+      
+        <a href="/en/events/" style="color:#FFFFFF;">
+          Events
+        </a>
+      
+    </p>
+
+    <!-- Row 2: Submission page / Guidelines -->
+    <p class="footer-row">
+      <a href="/en/submission/" style="color:#FFFFFF;">
+        Submission
+      </a>
+      &nbsp;&nbsp;
+      <a href="/en/guidelines/" style="color:#FFFFFF;">
+        Guidelines
+      </a>
+    </p>
+
+    <!-- Row 3: Social -->
+    <p class="footer-row">
+      <span class="footer-label">Follow us:</span>
+      <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
+      <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
+      <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener" style="color:#FFFFFF;">YouTube</a>
+    </p>
+
+    <!-- Row 4: Email -->
+    <p class="footer-row">
+      <span class="footer-label">Email:</span>
+      <a href="mailto:kitabomori@gmail.com" style="color:#FFFFFF;">kitabomori@gmail.com</a>
+    </p>
+
+    <!-- Row 5: Privacy Policy -->
+    <p class="footer-row">
+      <a href="/en/privacy/" style="color:#FFFFFF;">
+        Privacy Policy
+      </a>
+    </p>
+
+    <!-- Row 6: Copyright -->
+    <p class="footer-copy">
+      &copy; 2026 Kitabomori.
+      
+        All rights reserved. A volunteer educational publishing initiative.
+      
+    </p>
+
+  </div><!-- /.footer-inner -->
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     base.html – root layout for all pages.
+     Sets html lang/dir, loads head, header, footer, and
+     applies body font from site config.
+     ============================================================ -->
+<html lang="ur"
+      dir="rtl"
+      class="">
+<head>
+  <!-- ============================================================
+     head.html – <head> block for all pages
+     Sets charset, viewport, Google Fonts, Tailwind CSS, theme script,
+     and all metadata. Called once from base.html.
+     ============================================================ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Page title: prefer page-specific title, fall back to site title -->
+<title>
+  
+    میرا فلسفہ تدریس – کتابومری
+  
+</title>
+
+<!-- Meta description -->
+<meta name="description" content="استاد بطور مالی: طالب علم کی سیکھنے، بڑھنے اور خدمت کرنے کی فطری صلاحیت کو پروان چڑھانا۔">
+
+<!-- Open Graph -->
+<meta property="og:title" content="میرا فلسفہ تدریس">
+<meta property="og:description" content="استاد بطور مالی: طالب علم کی سیکھنے، بڑھنے اور خدمت کرنے کی فطری صلاحیت کو پروان چڑھانا۔">
+<meta property="og:type" content="website">
+
+<!-- Google Fonts: Inter (English) + Noto Nastaliq Urdu (Urdu)
+     Loaded with display=swap for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS (compiled by PostCSS build step) -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!-- Theme script: runs before paint to prevent flash of wrong colour scheme -->
+<script src="/assets/js/theme.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+</head>
+<body style="font-family: 'Noto Nastaliq Urdu', serif;">
+
+  <!-- ============================================================
+     header.html – site-wide header
+     Contains: logo/site name, navigation (with one dropdown for
+     Creative Writing), language switcher, dark mode toggle.
+     Background: #009F93 (brand teal). Text: #FFFFFF.
+     No icons anywhere – plain text only.
+     ============================================================ -->
+<header class="site-header" style="background-color:#009F93;">
+  <div class="header-inner">
+
+    <!-- Site name / logo -->
+    <a href="/ur/"
+       class="site-title"
+       style="color:#FFFFFF; text-decoration:none;">
+      کتابومری
+    </a>
+
+    <!-- Mobile nav toggle (plain text, no icon) -->
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation"
+            aria-expanded="false" aria-controls="main-nav"
+            style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:4px 10px; cursor:pointer; font-size:0.85rem;">
+      مینو
+    </button>
+
+    <!-- Main navigation -->
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        
+        
+        <li>
+          <a href="/ur/"
+             style="color:#FFFFFF;">
+            مرکزی صفحہ
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/opeds/"
+             style="color:#FFFFFF;">
+            کالم
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/blogs/"
+             style="color:#FFFFFF;">
+            بلاگز
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/reviews/"
+             style="color:#FFFFFF;">
+            جائزے
+          </a>
+        </li>
+        
+        
+        
+        <li class="nav-item-has-children">
+          <div class="nav-parent-row">
+            <a href="/ur/creative-writing/"
+               style="color:#FFFFFF;">
+              تخلیقی تحریر
+            </a>
+            <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
+                     aria-label="ذیلی مینو کھولیں"
+                     aria-expanded="false"
+                     style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
+          </div>
+          <ul class="submenu" style="display:none;">
+            
+            <li>
+              <a href="/ur/creative-writing/fiction-stories/"
+                 style="color:#FFFFFF;">
+                افسانہ اور کہانیاں
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/poetry/"
+                 style="color:#FFFFFF;">
+                شاعری
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/what-i-saw/"
+                 style="color:#FFFFFF;">
+                میں نے دیکھا
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/reflections/"
+             style="color:#FFFFFF;">
+            عکاسی
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/letters/"
+             style="color:#FFFFFF;">
+            خطوط
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/diary/"
+             style="color:#FFFFFF;">
+            تدریسی ڈائری
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/events/"
+             style="color:#FFFFFF;">
+            تقریبات
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/ur/search/"
+             style="color:#FFFFFF;">
+            تلاش
+          </a>
+        </li>
+        
+        
+      </ul>
+    </nav>
+
+    <!-- Header controls: language switcher + dark mode toggle -->
+    <div class="header-controls">
+
+      <!-- Language switcher: swaps /en/ <-> /ur/ in the current URL -->
+      <a href="#" onclick="switchLanguage(event)" class="lang-switch"
+         style="color:#FFFFFF; border:1px solid #FFFFFF; padding:3px 10px; text-decoration:none; font-size:0.85rem;">
+        EN
+      </a>
+
+      <!-- Dark mode toggle: plain text, no icon -->
+      <button onclick="toggleDark()" id="theme-btn"
+              style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-right:6px;">
+        تاریک
+      </button>
+
+    </div><!-- /.header-controls -->
+  </div><!-- /.header-inner -->
+</header>
+
+<script>
+  /* --------------------------------------------------------
+     switchLanguage()
+     Swaps /en/ and /ur/ in the current path, then navigates.
+     Falls back to the opposite home page if swap fails.
+  -------------------------------------------------------- */
+  function switchLanguage(e) {
+    e.preventDefault();
+    var path = window.location.pathname;
+    var newPath;
+    if (path.includes('/en/')) {
+      newPath = path.replace('/en/', '/ur/');
+    } else if (path.includes('/ur/')) {
+      newPath = path.replace('/ur/', '/en/');
+    } else {
+      // Fallback: go to opposite home
+      newPath = path.includes('/ur') ? '/en/' : '/ur/';
+    }
+    window.location.href = newPath;
+  }
+
+  /* --------------------------------------------------------
+     toggleNav()
+     Shows/hides the mobile navigation menu.
+  -------------------------------------------------------- */
+  function toggleNav() {
+    var nav = document.getElementById('main-nav');
+    var btn = document.querySelector('.nav-toggle');
+    var isOpen = nav.classList.toggle('open');
+    if (btn) { btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false'); }
+  }
+
+  /* --------------------------------------------------------
+     toggleSubmenu()
+     Opens/closes the Creative Writing submenu ONLY on click —
+     directly toggling inline display style (not just a CSS
+     class) so visibility can never depend on hover or on
+     Tailwind's compiled/cached CSS.
+  -------------------------------------------------------- */
+  function toggleSubmenu(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    var li = btn.closest('.nav-item-has-children');
+    var submenu = li.querySelector('.submenu');
+    var willOpen = submenu.style.display !== 'flex';
+
+    // Close every other open submenu first
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (openLi) {
+      if (openLi !== li) {
+        openLi.classList.remove('submenu-open');
+        openLi.querySelector('.submenu').style.display = 'none';
+        var openBtn = openLi.querySelector('.submenu-toggle');
+        if (openBtn) { openBtn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+
+    submenu.style.display = willOpen ? 'flex' : 'none';
+    li.classList.toggle('submenu-open', willOpen);
+    btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+  }
+
+  // Close any open submenu when clicking elsewhere
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (li) {
+      if (!li.contains(e.target)) {
+        li.classList.remove('submenu-open');
+        var submenu = li.querySelector('.submenu');
+        if (submenu) { submenu.style.display = 'none'; }
+        var btn = li.querySelector('.submenu-toggle');
+        if (btn) { btn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+  });
+
+  /* --------------------------------------------------------
+     Update dark mode button label after theme.js runs.
+  -------------------------------------------------------- */
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('theme-btn');
+    if (btn) {
+      var isDark = document.documentElement.classList.contains('dark');
+      
+        btn.textContent = isDark ? 'روشن' : 'تاریک';
+      
+    }
+  });
+</script>
+
+
+  <main id="main-content">
+    <!-- ============================================================
+     post.html – layout for collection items (blogs, letters, etc.)
+     Shows title, date, description, and body content.
+     ============================================================ -->
+<article class="post-container">
+
+  <header class="post-header">
+    <h1 class="post-title">
+      
+        میرا فلسفہ تدریس
+      
+    </h1>
+
+    <!-- Audio link (YouTube). Each post/language can set its own link via
+         youtube_en / youtube_ur in front matter; if a post hasn't set one
+         yet, it falls back to the site-wide YouTube channel link. -->
+    
+    
+    
+    
+    <p class="post-audio-link">
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener">
+        
+          یوٹیوب پر آڈیو کے لیے کلک کریں
+        
+      </a>
+    </p>
+    
+  </header>
+
+  <div class="post-body">
+    
+<p>ایک گلاب کے پودے کی قلم کا تصور کریں، جسے نئے پودے کے طور پر اگانے کے لیے اس کا دو تہائی حصہ ایک کیاری میں دبا دیا گیا ہو۔ اس کیاری میں پہلے سے مختلف پھول اگے ہوئے ہیں، شاید مختلف رنگوں اور شکلوں کے۔ کیاری میں تمام ضروری معدنیات، سورج کی روشنی اور پانی کی مسلسل فراہمی موجود ہے۔ ایک مالی بھی ہے جو کبھی کبھار ہی اس قلم کو دیکھنے آتا ہے۔ وقت گزرنے کے ساتھ، کیا یہ قلم جڑیں اور شاخیں نکال کر ایک مکمل پودے میں ڈھل جائے گی؟ اس کا جواب دینا آسان نہیں۔ جڑی بوٹیاں اگ آئیں گی اور شاید وہ سورج کی روشنی کو قلم تک پہنچنے نہ دیں، اور آخرکار یہ اپنی نشوونما کی صلاحیت کھو کر مرجھا جائے گی۔ دوسری صورت میں، جب ایک اچھا مالی اس قلم اور پہلے سے موجود پھولوں کی دیکھ بھال شروع کرتا ہے، جڑی بوٹیاں ہٹا کر اور اسے بھیڑ یا دوسرے جانوروں سے کھائے جانے سے بچا کر فطری عمل میں مدد دیتا ہے، تو یہی گلاب کی قلم ایک دن مکمل پودہ بن کر باغ میں دوسرے پھولوں کے ساتھ اپنی خوبصورتی اور خوشبو کا اضافہ کرتی ہے۔</p>
+
+<p>اگر گلاب کی قلم کو ایک بچے (طالب علم) سے اور کیاری کو اسکول سے بدل دیا جائے، تو نشوونما اور سیکھنے کے عمل کو آسان بنانے کے لیے ہمیشہ ایک اچھے استاد کی ضرورت رہتی ہے۔ اور یہی وہ بات ہے جس پر میں یقین رکھتا ہوں اور بطور استاد اسی کوشش میں ہوں کہ جڑی بوٹیاں ہٹاؤں اور سورج کی روشنی کو پودے تک پہنچنے دوں تاکہ اس کی فطری صلاحیت پروان چڑھ سکے۔ میں اسے سچ مانتا ہوں کہ ہر بچے میں سیکھنے، بڑھنے اور خدمت کرنے کی صلاحیت موجود ہوتی ہے، بشرطیکہ اسے موزوں ماحول میسر ہو اور ایک استاد اس عمل میں سہولت کار بنے۔ کلاس روم کے اندر چالیس منٹ میں ہر طالب علم کی ضروریات کو سراہنا، سننا اور ان کا خیال رکھنا ہمیشہ ممکن نہیں ہوتا۔ اسی لیے طلبہ کے لیے دستیاب رہنا انتہائی ضروری ہے۔ طلبہ کے درمیان رہنا اور کھیل کے میدانوں اور دوسری جگہوں پر ان سے بات چیت کر کے ان کا دوست اور ہم جماعت بننا مفید ثابت ہوتا ہے۔ اس سے طلبہ کے وہ غیر ضروری رکاوٹیں دور ہو جاتی ہیں جو انہیں سیکھنے کے لیے سوال کرنے سے روکتی ہیں، اور دقیانوسی سوچ کا خاتمہ ہوتا ہے۔</p>
+
+<p>میں کبھی بھی کلاس روم کی نظم و ضبط برقرار رکھنے کے لیے ایک مطلق العنان منتظم بن کر طالب علم میں معلومات کے ایک مجموعے کو “جمع” کرنے کے حق میں نہیں رہا، جسے پاؤلو فریرے تعلیم کا “بینکنگ ماڈل” کہتے ہیں۔ طلبہ کو اپنی دلچسپی کی چیزیں کرنے اور اظہار کرنے کی اجازت نہ دینا، پڑھانے کے صرف ایک طریقے پر قائم رہنا اور انفرادی فرق کی بنیاد پر طلبہ کو مشغول نہ کرنا، اس کا نتیجہ کچھ نیا نہ سیکھنے کی صورت میں نکلتا ہے۔ ایسے طور طریقے ایک جیتی جاگتی جہنم پیدا کر دیتے ہیں، اور شاید اسی لیے بیل ہکس نے کہا ہو: “درس گاہ جنت نہیں ہے۔ لیکن سیکھنا وہ جگہ ہے جہاں جنت تخلیق کی جا سکتی ہے۔” تدریس کو دلچسپ اور طلبہ کی دلچسپی سے متعلق ہونا چاہیے۔ یہ بھی اساتذہ کی ذمہ داری ہے کہ وہ اپنے ماحول میں ہونے والے واقعات کا شعور پیدا کریں، جو انہیں غور و فکر اور عمل کی طرف لے جائے (فریرین پریکسس)۔</p>
+
+<p>استاد کا کام تخلیقی صلاحیت کو پروان چڑھانا بھی ہے۔ اس مقصد کے حصول کے لیے طلبہ کی غلطیوں کو قبول کرنا اور ایک ایسا سیکھنے کا ماحول تخلیق کرنا مؤثر ہے جو انہیں غلطی کرنے میں بھی سہولت محسوس کرنے دے۔ باہمی تعاون پر مبنی سیکھنے کو فروغ دینا طلبہ کو اپنے خیالات کا اظہار کرنے، ان پر سوال اٹھانے اور انہیں نکھارنے میں مدد دیتا ہے۔ ساتھی طلبہ کو سن کر، طلبہ نئے نقطہ ہائے نظر سے بھی روشناس ہوتے ہیں جو ان کے افق کو وسیع کرتے اور ان کی سمجھ و علم میں اضافہ کرتے ہیں۔</p>
+
+<p>میں کچھ حد تک یہ محسوس کرتا ہوں کہ تعلیم کو ایک فرد کو اہل بنانے (qualification)، سماجی بنانے (socialization) اور اپنی انفرادیت (subjectivity) پیدا کرنے کے قابل بنانا چاہیے۔ بیئسٹا (2010) کے مطابق، اہلیت کا تعلق علم، مہارتوں اور رجحانات کی ترسیل اور حصولیابی سے ہے۔ یہ فرد کو کچھ کما سکنے کے قابل بناتی ہے۔ سماجی بندی، بات چیت کے ذریعے برادری کے علم، اصولوں اور اقدار کی ترسیل سے متعلق ہے، جسے پوشیدہ نصاب (hidden curriculum) کا حصہ سمجھا جاتا ہے۔ جبکہ سبجیکٹی فیکیشن اس عمل کو بیان کرتا ہے جس کے ذریعے افراد اپنی شناخت، اختیار اور انفرادیت کا احساس پیدا کرتے ہوئے موضوعی وجود بنتے ہیں۔</p>
+
+<p>آخر میں، میرا فلسفہ تدریس بیل ہکس کی مصروفانہ تربیت (engaged pedagogy) اور پاؤلو فریرے کے آزادی بخش عمل (emancipatory process) پر مشتمل ہے، کیونکہ میں یقین رکھتا ہوں کہ سیاق و سباق سے جڑی اور مصروف عملی روش، جو کلاس روم میں زبان اور مطلق العنان نظریات سے تجاوز کرتی ہے، طلبہ کے حقیقی تجربات کو سیکھنے کی بہتر سہولت کاری کے لیے استعمال کرتی ہے۔ مزید برآں، گرٹ بیئسٹا کی جہت بھی میرے فلسفہ تدریس میں اہم کردار ادا کرتی ہے، کیونکہ میں دل و جان سے طلبہ کی مہارتوں، اختیار اور خود اظہاری کی نشوونما کا حامی ہوں تاکہ ان کی شناخت، سماجی بندی اور بڑے سماجی عوامل کی نشوونما کی خصوصیت کو برقرار رکھتے ہوئے تشکیل پائے۔</p>
+
+<p>۱۹-۱۰-۲۰۲۳</p>
+
+
+  </div>
+
+  <!-- Author and date, shown at the end of the piece -->
+  
+  
+  <p class="post-meta-bottom">
+    
+      
+        تحریر: کتابومری &mdash; 19 October 2023
+      
+    
+  </p>
+
+  <!-- Author biography, shown only if provided. Layout stays intact if missing. -->
+  
+  
+  
+
+  <!-- Back link -->
+  <p class="post-back">
+    <button onclick="history.back()" class="post-back-btn">
+      ← واپس جائیں
+    </button>
+  </p>
+
+</article>
+
+  </main>
+
+  <!-- ============================================================
+     footer.html – site-wide footer
+     Centered, stacked layout: nav links, submission/guidelines,
+     social row, email, privacy policy, copyright.
+     Background: #009F93, Text: #FFFFFF. No icons anywhere.
+     ============================================================ -->
+<footer class="site-footer" style="background-color:#009F93; color:#FFFFFF;">
+  <div class="footer-inner">
+
+    <!-- Row 1: Return to ... main section links -->
+    <p class="footer-row">
+      <span class="footer-label">واپس جائیں:</span>
+      
+      
+        <a href="/ur/" style="color:#FFFFFF;">
+          مرکزی صفحہ
+        </a> · 
+      
+        <a href="/ur/opeds/" style="color:#FFFFFF;">
+          کالم
+        </a> · 
+      
+        <a href="/ur/blogs/" style="color:#FFFFFF;">
+          بلاگز
+        </a> · 
+      
+        <a href="/ur/reviews/" style="color:#FFFFFF;">
+          جائزے
+        </a> · 
+      
+        <a href="/ur/creative-writing/" style="color:#FFFFFF;">
+          تخلیقی تحریر
+        </a> · 
+      
+        <a href="/ur/reflections/" style="color:#FFFFFF;">
+          عکاسی
+        </a> · 
+      
+        <a href="/ur/letters/" style="color:#FFFFFF;">
+          خطوط
+        </a> · 
+      
+        <a href="/ur/diary/" style="color:#FFFFFF;">
+          تدریسی ڈائری
+        </a> · 
+      
+        <a href="/ur/events/" style="color:#FFFFFF;">
+          تقریبات
+        </a>
+      
+    </p>
+
+    <!-- Row 2: Submission page / Guidelines -->
+    <p class="footer-row">
+      <a href="/ur/submission/" style="color:#FFFFFF;">
+        تحریر جمع کروائیں
+      </a>
+      &nbsp;&nbsp;
+      <a href="/ur/guidelines/" style="color:#FFFFFF;">
+        ہدایات
+      </a>
+    </p>
+
+    <!-- Row 3: Social -->
+    <p class="footer-row">
+      <span class="footer-label">ہمیں فالو کریں:</span>
+      <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
+      <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
+      <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener" style="color:#FFFFFF;">YouTube</a>
+    </p>
+
+    <!-- Row 4: Email -->
+    <p class="footer-row">
+      <span class="footer-label">ای میل:</span>
+      <a href="mailto:kitabomori@gmail.com" style="color:#FFFFFF;">kitabomori@gmail.com</a>
+    </p>
+
+    <!-- Row 5: Privacy Policy -->
+    <p class="footer-row">
+      <a href="/ur/privacy/" style="color:#FFFFFF;">
+        رازداری کی پالیسی
+      </a>
+    </p>
+
+    <!-- Row 6: Copyright -->
+    <p class="footer-copy">
+      &copy; 2026 Kitabomori.
+      
+        تمام حقوق محفوظ ہیں۔
+      
+    </p>
+
+  </div><!-- /.footer-inner -->
+</footer>
+
+
+</body>
+</html>

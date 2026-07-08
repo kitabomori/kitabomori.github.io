@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     base.html – root layout for all pages.
+     Sets html lang/dir, loads head, header, footer, and
+     applies body font from site config.
+     ============================================================ -->
+<html lang="en"
+      dir="ltr"
+      class="">
+<head>
+  <!-- ============================================================
+     head.html – <head> block for all pages
+     Sets charset, viewport, Google Fonts, Tailwind CSS, theme script,
+     and all metadata. Called once from base.html.
+     ============================================================ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Page title: prefer page-specific title, fall back to site title -->
+<title>
+  
+    The Last Period – Kitabomori
+  
+</title>
+
+<!-- Meta description -->
+<meta name="description" content="A short story about a substitute teacher, a restless class, and the last forty minutes of a school day neither of them expected to remember.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="The Last Period">
+<meta property="og:description" content="A short story about a substitute teacher, a restless class, and the last forty minutes of a school day neither of them expected to remember.">
+<meta property="og:type" content="website">
+
+<!-- Google Fonts: Inter (English) + Noto Nastaliq Urdu (Urdu)
+     Loaded with display=swap for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS (compiled by PostCSS build step) -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!-- Theme script: runs before paint to prevent flash of wrong colour scheme -->
+<script src="/assets/js/theme.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+</head>
+<body style="font-family: 'Inter', sans-serif;">
+
+  <!-- ============================================================
+     header.html – site-wide header
+     Contains: logo/site name, navigation (with one dropdown for
+     Creative Writing), language switcher, dark mode toggle.
+     Background: #009F93 (brand teal). Text: #FFFFFF.
+     No icons anywhere – plain text only.
+     ============================================================ -->
+<header class="site-header" style="background-color:#009F93;">
+  <div class="header-inner">
+
+    <!-- Site name / logo -->
+    <a href="/en/"
+       class="site-title"
+       style="color:#FFFFFF; text-decoration:none;">
+      Kitabomori
+    </a>
+
+    <!-- Mobile nav toggle (plain text, no icon) -->
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation"
+            aria-expanded="false" aria-controls="main-nav"
+            style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:4px 10px; cursor:pointer; font-size:0.85rem;">
+      Menu
+    </button>
+
+    <!-- Main navigation -->
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        
+        
+        <li>
+          <a href="/en/"
+             style="color:#FFFFFF;">
+            Home
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/opeds/"
+             style="color:#FFFFFF;">
+            Op-Eds
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/blogs/"
+             style="color:#FFFFFF;">
+            Blogs
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/reviews/"
+             style="color:#FFFFFF;">
+            Reviews
+          </a>
+        </li>
+        
+        
+        
+        <li class="nav-item-has-children">
+          <div class="nav-parent-row">
+            <a href="/en/creative-writing/"
+               style="color:#FFFFFF;">
+              Creative Writing
+            </a>
+            <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
+                     aria-label="Open submenu"
+                     aria-expanded="false"
+                     style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
+          </div>
+          <ul class="submenu" style="display:none;">
+            
+            <li>
+              <a href="/en/creative-writing/fiction-stories/"
+                 style="color:#FFFFFF;">
+                Fiction & Stories
+              </a>
+            </li>
+            
+            <li>
+              <a href="/en/creative-writing/poetry/"
+                 style="color:#FFFFFF;">
+                Poetry
+              </a>
+            </li>
+            
+            <li>
+              <a href="/en/creative-writing/what-i-saw/"
+                 style="color:#FFFFFF;">
+                What I Saw
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/reflections/"
+             style="color:#FFFFFF;">
+            Reflections
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/letters/"
+             style="color:#FFFFFF;">
+            Letters
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/diary/"
+             style="color:#FFFFFF;">
+            Teaching Diary
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/events/"
+             style="color:#FFFFFF;">
+            Events
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a href="/en/search/"
+             style="color:#FFFFFF;">
+            Search
+          </a>
+        </li>
+        
+        
+      </ul>
+    </nav>
+
+    <!-- Header controls: language switcher + dark mode toggle -->
+    <div class="header-controls">
+
+      <!-- Language switcher: swaps /en/ <-> /ur/ in the current URL -->
+      <a href="#" onclick="switchLanguage(event)" class="lang-switch"
+         style="color:#FFFFFF; border:1px solid #FFFFFF; padding:3px 10px; text-decoration:none; font-size:0.85rem;">
+        UR
+      </a>
+
+      <!-- Dark mode toggle: plain text, no icon -->
+      <button onclick="toggleDark()" id="theme-btn"
+              style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-left:6px;">
+        Dark
+      </button>
+
+    </div><!-- /.header-controls -->
+  </div><!-- /.header-inner -->
+</header>
+
+<script>
+  /* --------------------------------------------------------
+     switchLanguage()
+     Swaps /en/ and /ur/ in the current path, then navigates.
+     Falls back to the opposite home page if swap fails.
+  -------------------------------------------------------- */
+  function switchLanguage(e) {
+    e.preventDefault();
+    var path = window.location.pathname;
+    var newPath;
+    if (path.includes('/en/')) {
+      newPath = path.replace('/en/', '/ur/');
+    } else if (path.includes('/ur/')) {
+      newPath = path.replace('/ur/', '/en/');
+    } else {
+      // Fallback: go to opposite home
+      newPath = path.includes('/ur') ? '/en/' : '/ur/';
+    }
+    window.location.href = newPath;
+  }
+
+  /* --------------------------------------------------------
+     toggleNav()
+     Shows/hides the mobile navigation menu.
+  -------------------------------------------------------- */
+  function toggleNav() {
+    var nav = document.getElementById('main-nav');
+    var btn = document.querySelector('.nav-toggle');
+    var isOpen = nav.classList.toggle('open');
+    if (btn) { btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false'); }
+  }
+
+  /* --------------------------------------------------------
+     toggleSubmenu()
+     Opens/closes the Creative Writing submenu ONLY on click —
+     directly toggling inline display style (not just a CSS
+     class) so visibility can never depend on hover or on
+     Tailwind's compiled/cached CSS.
+  -------------------------------------------------------- */
+  function toggleSubmenu(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    var li = btn.closest('.nav-item-has-children');
+    var submenu = li.querySelector('.submenu');
+    var willOpen = submenu.style.display !== 'flex';
+
+    // Close every other open submenu first
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (openLi) {
+      if (openLi !== li) {
+        openLi.classList.remove('submenu-open');
+        openLi.querySelector('.submenu').style.display = 'none';
+        var openBtn = openLi.querySelector('.submenu-toggle');
+        if (openBtn) { openBtn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+
+    submenu.style.display = willOpen ? 'flex' : 'none';
+    li.classList.toggle('submenu-open', willOpen);
+    btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+  }
+
+  // Close any open submenu when clicking elsewhere
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (li) {
+      if (!li.contains(e.target)) {
+        li.classList.remove('submenu-open');
+        var submenu = li.querySelector('.submenu');
+        if (submenu) { submenu.style.display = 'none'; }
+        var btn = li.querySelector('.submenu-toggle');
+        if (btn) { btn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+  });
+
+  /* --------------------------------------------------------
+     Update dark mode button label after theme.js runs.
+  -------------------------------------------------------- */
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('theme-btn');
+    if (btn) {
+      var isDark = document.documentElement.classList.contains('dark');
+      
+        btn.textContent = isDark ? 'Light' : 'Dark';
+      
+    }
+  });
+</script>
+
+
+  <main id="main-content">
+    <!-- ============================================================
+     post.html – layout for collection items (blogs, letters, etc.)
+     Shows title, date, description, and body content.
+     ============================================================ -->
+<article class="post-container">
+
+  <header class="post-header">
+    <h1 class="post-title">
+      
+        The Last Period
+      
+    </h1>
+
+    <!-- Audio link (YouTube). Each post/language can set its own link via
+         youtube_en / youtube_ur in front matter; if a post hasn't set one
+         yet, it falls back to the site-wide YouTube channel link. -->
+    
+    
+    
+    
+    <p class="post-audio-link">
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener">
+        
+          Click for audio on YouTube
+        
+      </a>
+    </p>
+    
+  </header>
+
+  <div class="post-body">
+    <p>The register said thirty-one names. Fourteen were present, which Miss Ambreen decided was either a very honest attendance sheet or a very dishonest one, and she had no way of telling which from the doorway of Room 9.</p>
+
+<p>She was not supposed to be here. The regular teacher, Sir Farhan, had left at lunch with a fever nobody believed was real, and the timetable had produced her name for the last period of the day almost by accident — she taught Grade 6 down the corridor, and someone had decided that “teaches children” was qualification enough to cover Grade 9 English for forty minutes.</p>
+
+<p>“Copy the notes from the board,” she told them, pointing at a board that had nothing written on it, and then immediately regretted the instruction.</p>
+
+<p>A boy in the back row, arms folded like a small and unimpressed judge, said, “There’s nothing on the board, Miss.”</p>
+
+<p>“I know,” she said. “I was seeing if anyone would tell me.”</p>
+
+<p>That got a laugh, small and surprised, from somewhere near the window. She decided to keep it going.</p>
+
+<p>“Right. Put your pens down. I’m not going to pretend I know your syllabus, and you’re not going to pretend you were going to do quiet work for forty minutes on a Thursday afternoon with your actual teacher absent. So we’re going to do something else.”</p>
+
+<p>“Are we watching a movie?” said the boy in the back, hopeful now instead of unimpressed.</p>
+
+<p>“No projector in this room. Sorry to disappoint you twice in one lesson.” She pulled a chair around to face them instead of standing at the board, which felt, immediately, like the right decision, though she couldn’t have said why. “Tell me the worst book you were ever forced to read for school.”</p>
+
+<p>There was a pause of the kind that happens right before a room decides whether to cooperate. Then a girl near the front, who had not looked up from her notebook until now, said, “The one about the boy and the mountain. I don’t remember the name. We had a test on it and I didn’t understand why the boy didn’t just tell someone what happened.”</p>
+
+<p>“Why do you think he didn’t?”</p>
+
+<p>The girl considered this seriously, as though it had not occurred to her that the question could be asked without a mark attached to the answer. “Maybe he thought no one would believe him,” she said. “Or maybe he thought if he said it out loud, it would become more true.”</p>
+
+<p>Miss Ambreen had not expected an answer that good, from a book she had never read, in a class she had never taught, forty minutes before the final bell. She wrote the girl’s sentence on the empty board, because it seemed a shame to let it exist only in the air of Room 9 and then disappear.</p>
+
+<p><em>Maybe if he said it out loud, it would become more true.</em></p>
+
+<p>“That’s a real idea,” she said. “That’s the kind of thing people write books about, actually. Does anyone disagree with her?”</p>
+
+<p>Three hands went up, and for a while the class argued — properly argued, with evidence pulled from a book half of them clearly hadn’t finished and were reconstructing from memory and each other’s summaries — about whether silence protects people or destroys them, whether a boy in a novel about a mountain was a coward or simply eleven years old and scared, and whether those were the same thing at that age or not.</p>
+
+<p>The bell rang somewhere in the middle of someone’s sentence, and nobody moved for it.</p>
+
+<p>“That’s the bell,” said Miss Ambreen, mostly to remind herself as much as them. “You can go.”</p>
+
+<p>Nobody went, for four more minutes, which was either the longest or the shortest four minutes of her week, she couldn’t decide which. When they finally filed out — bags dragged rather than lifted, the usual scraping of chairs — the boy from the back row paused at the door.</p>
+
+<p>“Are you coming again, Miss?”</p>
+
+<p>“I teach Grade 6,” she said. “This was a one-time thing.”</p>
+
+<p>He nodded, unconvinced, the way children are unconvinced by adults who explain a system instead of answering a question, and left.</p>
+
+<p>She looked at the sentence still on the board — <em>maybe if he said it out loud, it would become more true</em> — and found she did not want to erase it before the next class arrived and asked what it meant. She left it there and went to find out whether Sir Farhan’s fever had been real after all.</p>
+
+  </div>
+
+  <!-- Author and date, shown at the end of the piece -->
+  
+  
+  <p class="post-meta-bottom">
+    
+      15 June 2026
+    
+  </p>
+
+  <!-- Author biography, shown only if provided. Layout stays intact if missing. -->
+  
+  
+  
+
+  <!-- Back link -->
+  <p class="post-back">
+    <button onclick="history.back()" class="post-back-btn">
+      &larr; Go back
+    </button>
+  </p>
+
+</article>
+
+  </main>
+
+  <!-- ============================================================
+     footer.html – site-wide footer
+     Centered, stacked layout: nav links, submission/guidelines,
+     social row, email, privacy policy, copyright.
+     Background: #009F93, Text: #FFFFFF. No icons anywhere.
+     ============================================================ -->
+<footer class="site-footer" style="background-color:#009F93; color:#FFFFFF;">
+  <div class="footer-inner">
+
+    <!-- Row 1: Return to ... main section links -->
+    <p class="footer-row">
+      <span class="footer-label">Return to:</span>
+      
+      
+        <a href="/en/" style="color:#FFFFFF;">
+          Home
+        </a> · 
+      
+        <a href="/en/opeds/" style="color:#FFFFFF;">
+          Op-Eds
+        </a> · 
+      
+        <a href="/en/blogs/" style="color:#FFFFFF;">
+          Blogs
+        </a> · 
+      
+        <a href="/en/reviews/" style="color:#FFFFFF;">
+          Reviews
+        </a> · 
+      
+        <a href="/en/creative-writing/" style="color:#FFFFFF;">
+          Creative Writing
+        </a> · 
+      
+        <a href="/en/reflections/" style="color:#FFFFFF;">
+          Reflections
+        </a> · 
+      
+        <a href="/en/letters/" style="color:#FFFFFF;">
+          Letters
+        </a> · 
+      
+        <a href="/en/diary/" style="color:#FFFFFF;">
+          Teaching Diary
+        </a> · 
+      
+        <a href="/en/events/" style="color:#FFFFFF;">
+          Events
+        </a>
+      
+    </p>
+
+    <!-- Row 2: Submission page / Guidelines -->
+    <p class="footer-row">
+      <a href="/en/submission/" style="color:#FFFFFF;">
+        Submission
+      </a>
+      &nbsp;&nbsp;
+      <a href="/en/guidelines/" style="color:#FFFFFF;">
+        Guidelines
+      </a>
+    </p>
+
+    <!-- Row 3: Social -->
+    <p class="footer-row">
+      <span class="footer-label">Follow us:</span>
+      <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
+      <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
+      <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener" style="color:#FFFFFF;">YouTube</a>
+    </p>
+
+    <!-- Row 4: Email -->
+    <p class="footer-row">
+      <span class="footer-label">Email:</span>
+      <a href="mailto:kitabomori@gmail.com" style="color:#FFFFFF;">kitabomori@gmail.com</a>
+    </p>
+
+    <!-- Row 5: Privacy Policy -->
+    <p class="footer-row">
+      <a href="/en/privacy/" style="color:#FFFFFF;">
+        Privacy Policy
+      </a>
+    </p>
+
+    <!-- Row 6: Copyright -->
+    <p class="footer-copy">
+      &copy; 2026 Kitabomori.
+      
+        All rights reserved. A volunteer educational publishing initiative.
+      
+    </p>
+
+  </div><!-- /.footer-inner -->
+</footer>
+
+
+</body>
+</html>
