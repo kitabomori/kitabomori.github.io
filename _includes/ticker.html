@@ -30,9 +30,9 @@
 {% assign ticker_items = ticker_items | concat: site.letters %}
 {% assign ticker_items = ticker_items | concat: site.diary %}
 
-<!-- Step 2: Sort by date descending, take top 5 -->
+<!-- Step 2: Sort by date descending, take top 9 -->
 {% assign ticker_sorted = ticker_items | sort: "date" | reverse %}
-{% assign ticker_top5 = ticker_sorted | limit: 5 %}
+{% assign ticker_top9 = ticker_sorted | limit: 9 %}
 
 <!-- Step 3: Render the ticker bar -->
 <div class="ticker-bar" style="background-color:#FFFFFF; border-bottom:1px solid #009F93;">
@@ -55,7 +55,7 @@
 
       <!-- Step 4: Output each item with its collection-type label (twice, for a seamless loop) -->
       {% for pass in (1..2) %}
-        {% for item in ticker_top5 %}
+        {% for item in ticker_top9 %}
           {% assign item_type_en = "" %}
           {% assign item_type_ur = "" %}
 
