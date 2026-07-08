@@ -2,8 +2,8 @@
 layout: page
 title_en: "Submission Guidelines"
 title_ur: "اشاعت کی ہدایات"
-description_en: "How to submit your writing to Kitabomori — Blogs, Op-Eds, Reviews, Letters, Reflections, Fiction & Stories, Poetry, and What I Saw."
-description_ur: "کتابومری میں اپنی تحریر جمع کروانے کا مکمل طریقہ — بلاگز، کالم، جائزے، خطوط، عکاسی، افسانہ اور کہانیاں، شاعری، اور میں نے دیکھا۔"
+description_en: "How to submit your writing to Kitabomori — Articles, Reviews, Letters, Reflections, Fiction & Stories, Poetry, and What I Saw."
+description_ur: "کتابومری میں اپنی تحریر جمع کروانے کا مکمل طریقہ — مضامین، جائزے، خطوط، عکاسی، افسانہ اور کہانیاں، شاعری، اور میں نے دیکھا۔"
 permalink: /guidelines/
 ---
 
@@ -15,27 +15,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن الف: بلاگز (BERA بلاگ طرز)
-
-**طوالت:** ۵۰۰ سے ۷۵۰ الفاظ (حوالہ جات سمیت)
-
-**مقصد:** کسی تعلیمی مسئلے پر تحقیق پر مبنی، عام فہم تحریر — جو عام قارئین کے لیے ہو، نہ کہ صرف ماہرین کے لیے۔ BERA (برطانوی تعلیمی تحقیقی ایسوسی ایشن) کی اپنی ہدایات کے مطابق:
-- بین الاقوامی قارئین کو مدنظر رکھیں، یہ فرض نہ کریں کہ قاری کسی خاص ملک کے تعلیمی نظام سے واقف ہے۔
-- حوالہ جات صرف ضرورت کے مطابق دیں، تحریر کی طوالت کے تناسب سے۔
-- حوالہ جات براہ راست متن میں لنک کی صورت میں دیں؛ اگر باقاعدہ حوالہ ضروری ہو تو APA 7th edition انداز اپنائیں۔
-- ایسے مواد کا لنک نہ دیں جو غیر اخلاقی ہو یا کسی کی دانشورانہ ملکیت کی خلاف ورزی کرتا ہو۔
-
-**عمل:**
-1. مکمل مسودہ، مختصر سوانح اور (اگر دستیاب ہو) تصویر کے ساتھ ای میل کریں۔
-2. اگر تحریر کسی شائع شدہ تحقیق، خبر یا واقعہ پر مبنی ہو تو جمع کرانے کے وقت اس کا ذکر کریں۔
-3. اگر تحریر تیار کرنے میں کوئی AI ٹول استعمال کیا گیا ہو تو واضح طور پر بتائیں کہ کون سا ٹول اور کس مقصد کے لیے استعمال ہوا۔ حقائق اور حوالہ جات کی درستگی کی ذمہ داری آپ پر ہوگی۔
-4. دو ہفتوں کے اندر جواب دیا جائے گا۔
-
-**ماخذ:** [BERA Blog کی جمع کرانے کی پالیسی](https://www.bera.ac.uk/blog/submission-policy) سے ماخوذ ہدایات۔
-
----
-
-### سیکشن ب: کالم (اوپ ایڈ) (Education Week طرز)
+### سیکشن الف: مضامین (Education Week طرز)
 
 **طوالت:** ۷۰۰ سے ۱۰۰۰ الفاظ
 
@@ -49,7 +29,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن ج: جائزے
+### سیکشن ب: جائزے
 
 **طوالت:** ۵۰۰ سے ۸۰۰ الفاظ
 
@@ -70,7 +50,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن د: خطوط
+### سیکشن ج: خطوط
 
 **طوالت:** ۴۰۰ سے ۹۰۰ الفاظ
 
@@ -83,7 +63,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن ہ: عکاسی
+### سیکشن د: عکاسی
 
 **طوالت:** ۶۰۰ سے ۱۲۰۰ الفاظ
 
@@ -97,7 +77,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن و: افسانہ اور کہانیاں
+### سیکشن ہ: افسانہ اور کہانیاں
 
 **طوالت:** ۸۰۰ سے ۴۰۰۰ الفاظ
 
@@ -110,7 +90,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن ز: شاعری
+### سیکشن و: شاعری
 
 **طوالت:** ہر نظم زیادہ سے زیادہ ۵۰ سطریں؛ ایک جمع کرانے میں زیادہ سے زیادہ ۵ نظمیں
 
@@ -123,7 +103,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن ح: میں نے دیکھا
+### سیکشن ز: میں نے دیکھا
 
 **طوالت:** ۳۰۰ سے ۸۰۰ الفاظ
 
@@ -162,27 +142,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section A: Blogs (BERA Blog Style)
-
-**Length:** 500–750 words, including any references.
-
-**Purpose:** A research-informed, accessible piece on an educational issue — written for a broad readership rather than an academic one. Based on the British Educational Research Association's (BERA) own blog guidance, a strong submission should:
-- write for an international audience, without assuming readers know any one country's specific education system
-- keep references to the minimum needed to support the argument, proportional to the length of the piece
-- link to sources directly in the text rather than listing a separate bibliography; where formal citations are unavoidable, follow APA 7th edition style
-- avoid linking to material that is profane, obscene, or that knowingly infringes intellectual property
-
-**Process:**
-1. Send the full draft by email, along with a short author bio and (if available) a headshot photo.
-2. If your piece is based on a published research article, news story, or event, mention this when you submit so we can link to it.
-3. Disclose clearly if you used any generative AI tool while drafting, and what it was used for. You remain responsible for checking that any facts, data, or references the AI produced are accurate.
-4. You will receive a response within two weeks.
-
-**Source:** Guidance adapted from the [BERA Blog submission policy](https://www.bera.ac.uk/blog/submission-policy).
-
----
-
-### Section B: Op-Eds (Education Week Style)
+### Section A: Articles (Education Week Style)
 
 **Length:** 700–1,000 words
 
@@ -196,7 +156,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section C: Reviews
+### Section B: Reviews
 
 **Length:** 500–800 words
 
@@ -217,7 +177,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section D: Letters
+### Section C: Letters
 
 **Length:** 400–900 words
 
@@ -230,7 +190,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section E: Reflections
+### Section D: Reflections
 
 **Length:** 600–1,200 words
 
@@ -244,7 +204,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section F: Fiction & Stories
+### Section E: Fiction & Stories
 
 **Length:** 800–4,000 words
 
@@ -257,7 +217,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section G: Poetry
+### Section F: Poetry
 
 **Length:** Up to 50 lines per poem; up to 5 poems per submission
 
@@ -270,7 +230,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section H: What I Saw
+### Section G: What I Saw
 
 **Length:** 300–800 words
 

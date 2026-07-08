@@ -10,7 +10,7 @@ permalink: /submission/
 {% if site.lang == 'ur' %}
 
 <p>
-کتابومری آپ کی تحریروں کا خیر مقدم کرتا ہے — چاہے وہ بلاگ ہو، کالم، جائزہ، خط، عکاسی، یا تخلیقی تحریر (افسانہ، شاعری یا میں نے دیکھا)۔ جمع کروانے سے پہلے براہ کرم ہماری <a href="{{ site.baseurl }}/ur/guidelines/">تفصیلی ہدایات</a> ملاحظہ کریں، جہاں ہر قسم کی تحریر کے لیے طوالت، ڈھانچہ اور دیگر ضروریات درج ہیں۔
+کتابومری آپ کی تحریروں کا خیر مقدم کرتا ہے — چاہے وہ مضمون ہو، جائزہ، خط، عکاسی، یا تخلیقی تحریر (افسانہ، شاعری یا میں نے دیکھا)۔ جمع کروانے سے پہلے براہ کرم ہماری <a href="{{ site.baseurl }}/ur/guidelines/">تفصیلی ہدایات</a> ملاحظہ کریں، جہاں ہر قسم کی تحریر کے لیے طوالت، ڈھانچہ اور دیگر ضروریات درج ہیں۔
 
 </p>
 
@@ -32,7 +32,7 @@ permalink: /submission/
 {% else %}
 
 <p>
-Kitabomori welcomes your writing — whether a blog post, op-ed, review, letter, reflection, or creative writing (fiction, poetry, or What I Saw). Before submitting, please read our <a href="{{ site.baseurl }}/en/guidelines/">full submission guidelines</a>, which set out the word limits, structure, and other requirements for each category.
+Kitabomori welcomes your writing — whether an article, review, letter, reflection, or creative writing (fiction, poetry, or What I Saw). Before submitting, please read our <a href="{{ site.baseurl }}/en/guidelines/">full submission guidelines</a>, which set out the word limits, structure, and other requirements for each category.
 </p>
 
 <p>

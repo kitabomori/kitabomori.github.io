@@ -2,8 +2,7 @@
 layout: post
 # -------------------------------------------------------
 # INSTRUCTIONS: Copy this file into the correct folder:
-#   Blogs:              _collections/_blogs/your-post-name.md
-#   Op-Eds:              _collections/_opeds/your-post-name.md
+#   Articles:            _collections/_articles/your-post-name.md
 #   Letters:             _collections/_letters/your-post-name.md
 #   Teaching Diary:      _collections/_diary/your-post-name.md
 #   Reviews:             _collections/_reviews/your-post-name.md

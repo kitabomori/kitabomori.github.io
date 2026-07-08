@@ -1,14 +1,14 @@
 ---
 layout: page
-title_en: "Op-Eds"
-title_ur: "اوپ ایڈ"
+title_en: "Articles"
+title_ur: "مضامین"
 description_en: "Opinion grounded in experience and research, with actionable recommendations."
 description_ur: "تجربے اور تحقیق پر مبنی رائے جس میں عملی تجاویز شامل ہیں۔"
-permalink: /opeds/
+permalink: /articles/
 ---
 
 <div class="card-grid">
-  {% assign sorted_items = site.opeds | sort: "date" | reverse %}
+  {% assign sorted_items = site.articles | sort: "date" | reverse %}
   {% for item in sorted_items %}
   <div class="content-card">
     <h2 class="card-title">

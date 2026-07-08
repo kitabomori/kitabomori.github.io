@@ -7,8 +7,8 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Kitabomori invites researchers, teachers, students, and policymakers to contribute blogs, op-eds, letters, reviews, and creative writing."
-description_ur: "کتابومری محققین، اساتذہ، طلباء اور پالیسی سازوں کو بلاگز، کالم، خطوط، جائزے اور تخلیقی تحریر جمع کرانے کی دعوت دیتا ہے۔"
+description_en: "Kitabomori invites researchers, teachers, students, and policymakers to contribute articles, letters, reviews, and creative writing."
+description_ur: "کتابومری محققین، اساتذہ، طلباء اور پالیسی سازوں کو مضامین، خطوط، جائزے اور تخلیقی تحریر جمع کرانے کی دعوت دیتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -37,6 +37,6 @@ We particularly welcome voices from:
 - Students who want to write about their own educational experiences
 - Policymakers engaged with curriculum or teacher education
 
-We accept blogs, op-eds, letters, reviews, reflections, and creative writing (fiction, poetry, and What I Saw). Please read our [Guidelines](/en/guidelines/) before submitting, or [submit your writing](/en/submission/).
+We accept articles, letters, reviews, reflections, and creative writing (fiction, poetry, and What I Saw). Please read our [Guidelines](/en/guidelines/) before submitting, or [submit your writing](/en/submission/).
 
 {% endif %}

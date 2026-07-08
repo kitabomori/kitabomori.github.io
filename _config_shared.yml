@@ -16,12 +16,9 @@ plugins:
 
 # Collections – shared across both languages
 collections:
-  blogs:
+  articles:
     output: true
-    permalink: /:collection/:name/
-  opeds:
-    output: true
-    permalink: /:collection/:name/
+    permalink: /articles/:name/
   letters:
     output: true
     permalink: /:collection/:name/
@@ -54,12 +51,7 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: blogs
-    values:
-      layout: post
-  - scope:
-      path: ""
-      type: opeds
+      type: articles
     values:
       layout: post
   - scope:

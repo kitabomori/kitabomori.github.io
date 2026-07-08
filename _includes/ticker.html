@@ -1,6 +1,6 @@
 <!-- ============================================================
      ticker.html – scrolling news ticker for the Home page only.
-     Shows the 5 most recent items across Op-Eds, Blogs, Reviews,
+     Shows the 5 most recent items across Articles, Reviews,
      Creative Writing (Fiction & Stories, Poetry, What I Saw),
      Reflections, Letters, and the Teaching Diary — sorted by
      date (newest first).
@@ -19,8 +19,7 @@
 
 <!-- Step 1: Collect all items from every ticker-eligible collection -->
 {% assign ticker_items = "" | split: "" %}
-{% assign ticker_items = ticker_items | concat: site.opeds %}
-{% assign ticker_items = ticker_items | concat: site.blogs %}
+{% assign ticker_items = ticker_items | concat: site.articles %}
 {% assign ticker_items = ticker_items | concat: site.reviews %}
 {% assign ticker_items = ticker_items | concat: site.fiction_stories %}
 {% assign ticker_items = ticker_items | concat: site.poetry %}
@@ -58,12 +57,9 @@
           {% assign item_type_en = "" %}
           {% assign item_type_ur = "" %}
 
-          {% if site.opeds contains item %}
-            {% assign item_type_en = "Op-Ed" %}
-            {% assign item_type_ur = "کالم" %}
-          {% elsif site.blogs contains item %}
-            {% assign item_type_en = "Blog" %}
-            {% assign item_type_ur = "بلاگ" %}
+          {% if site.articles contains item %}
+            {% assign item_type_en = "Article" %}
+            {% assign item_type_ur = "مضمون" %}
           {% elsif site.reviews contains item %}
             {% assign item_type_en = "Review" %}
             {% assign item_type_ur = "جائزہ" %}

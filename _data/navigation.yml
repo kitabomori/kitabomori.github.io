@@ -10,15 +10,10 @@
   url_en: "/en/"
   url_ur: "/ur/"
 
-- name_en: "Op-Eds"
-  name_ur: "کالم"
-  url_en: "/en/opeds/"
-  url_ur: "/ur/opeds/"
-
-- name_en: "Blogs"
-  name_ur: "بلاگز"
-  url_en: "/en/blogs/"
-  url_ur: "/ur/blogs/"
+- name_en: "Articles"
+  name_ur: "مضامین"
+  url_en: "/en/articles/"
+  url_ur: "/ur/articles/"
 
 - name_en: "Reviews"
   name_ur: "جائزے"

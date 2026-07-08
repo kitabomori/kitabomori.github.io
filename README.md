@@ -24,12 +24,11 @@ A bilingual (English/Urdu) educational publishing website built with Jekyll, Tai
 
 ## What this site is
 
-Kitabomori publishes eleven types of content:
+Kitabomori publishes ten types of content:
 
 | Type | Folder | Purpose |
 |------|--------|---------|
-| Blogs | `_collections/_blogs/` | Evidence-based arguments (500–750 words) |
-| Op-Eds | `_collections/_opeds/` | Experience-grounded opinion with recommendations |
+| Articles | `_collections/_articles/` | Experience-grounded opinion with recommendations |
 | Reviews | `_collections/_reviews/` | Critical reviews of education-related books |
 | Letters | `_collections/_letters/` | Personal letters from educators and students |
 | Teaching Diary | `_collections/_diary/` | Teaching notes, assignments, strategies, lesson ideas, reflections, and resources |
@@ -217,10 +216,10 @@ kitabomori.github.io/
 │   ├── page.html                  ← For standard pages
 │   └── post.html                  ← For collection items (incl. author bio block)
 ├── _collections/                  ← All published content lives here
-│   ├── _blogs/
-│   ├── _opeds/
+│   ├── _articles/
 │   ├── _reviews/
 │   ├── _letters/                  ← Sample: letter-to-teacher.md
+│   ├── _diary/                    ← Teaching Diary entries
 │   ├── _reflections/
 │   ├── _fiction_stories/
 │   ├── _poetry/
@@ -239,9 +238,9 @@ kitabomori.github.io/
 │   ├── what-i-saw.md
 │   ├── events.md
 │   ├── reflections.md
-│   ├── opeds.md
-│   ├── blogs.md
+│   ├── articles.md
 │   ├── letters.md
+│   ├── diary.md
 │   ├── search.md
 │   └── privacy.md
 ├── _drafts/
