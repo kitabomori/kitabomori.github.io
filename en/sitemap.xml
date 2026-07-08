@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://kitabomori.github.io/blogs/reading-aloud-secondary-classrooms/</loc>
-<lastmod>2026-07-01T00:00:00+00:00</lastmod>
+<loc>https://kitabomori.github.io/articles/reading-crisis-more-than-textbooks/</loc>
+<lastmod>2026-06-20T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://kitabomori.github.io/calls/call-for-submissions/</loc>
@@ -25,10 +25,6 @@
 <lastmod>2026-06-24T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://kitabomori.github.io/opeds/reading-crisis-more-than-textbooks/</loc>
-<lastmod>2026-06-20T00:00:00+00:00</lastmod>
-</url>
-<url>
 <loc>https://kitabomori.github.io/creative-writing/poetry/chalk-dust/</loc>
 <lastmod>2026-06-10T00:00:00+00:00</lastmod>
 </url>
@@ -45,7 +41,7 @@
 <lastmod>2026-06-05T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://kitabomori.github.io/blogs/</loc>
+<loc>https://kitabomori.github.io/articles/</loc>
 </url>
 <url>
 <loc>https://kitabomori.github.io/book-reviews/</loc>
@@ -70,9 +66,6 @@
 </url>
 <url>
 <loc>https://kitabomori.github.io/letters/</loc>
-</url>
-<url>
-<loc>https://kitabomori.github.io/opeds/</loc>
 </url>
 <url>
 <loc>https://kitabomori.github.io/creative-writing/poetry/</loc>

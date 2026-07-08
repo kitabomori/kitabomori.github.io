@@ -4,8 +4,8 @@
      Sets html lang/dir, loads head, header, footer, and
      applies body font from site config.
      ============================================================ -->
-<html lang="en"
-      dir="ltr"
+<html lang="ur"
+      dir="rtl"
       class="">
 <head>
   <!-- ============================================================
@@ -19,16 +19,16 @@
 <!-- Page title: prefer page-specific title, fall back to site title -->
 <title>
   
-    Op-Eds – Kitabomori
+     – کتابومری
   
 </title>
 
 <!-- Meta description -->
-<meta name="description" content="Opinion grounded in experience and research, with actionable recommendations.">
+<meta name="description" content="تحقیق پر مبنی مواد کے ذریعے مطالعے کا فروغ">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Op-Eds">
-<meta property="og:description" content="Opinion grounded in experience and research, with actionable recommendations.">
+<meta property="og:title" content="کتابومری">
+<meta property="og:description" content="تحقیق پر مبنی مواد کے ذریعے مطالعے کا فروغ">
 <meta property="og:type" content="website">
 
 <!-- Google Fonts: Inter (English) + Noto Nastaliq Urdu (Urdu)
@@ -47,7 +47,7 @@
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 
 </head>
-<body style="font-family: 'Inter', sans-serif;">
+<body style="font-family: 'Noto Nastaliq Urdu', serif;">
 
   <!-- ============================================================
      header.html – site-wide header
@@ -60,17 +60,17 @@
   <div class="header-inner">
 
     <!-- Site name / logo -->
-    <a href="/en/"
+    <a href="/ur/"
        class="site-title"
        style="color:#FFFFFF; text-decoration:none;">
-      Kitabomori
+      کتابومری
     </a>
 
     <!-- Mobile nav toggle (plain text, no icon) -->
     <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation"
             aria-expanded="false" aria-controls="main-nav"
             style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:4px 10px; cursor:pointer; font-size:0.85rem;">
-      Menu
+      مینو
     </button>
 
     <!-- Main navigation -->
@@ -79,36 +79,27 @@
         
         
         <li>
-          <a href="/en/"
+          <a href="/ur/"
              style="color:#FFFFFF;">
-            Home
+            مرکزی صفحہ
           </a>
         </li>
         
         
         
         <li>
-          <a href="/en/opeds/"
+          <a href="/ur/articles/"
              style="color:#FFFFFF;">
-            Op-Eds
+            مضامین
           </a>
         </li>
         
         
         
         <li>
-          <a href="/en/blogs/"
+          <a href="/ur/reviews/"
              style="color:#FFFFFF;">
-            Blogs
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a href="/en/reviews/"
-             style="color:#FFFFFF;">
-            Reviews
+            جائزے
           </a>
         </li>
         
@@ -116,35 +107,35 @@
         
         <li class="nav-item-has-children">
           <div class="nav-parent-row">
-            <a href="/en/creative-writing/"
+            <a href="/ur/creative-writing/"
                style="color:#FFFFFF;">
-              Creative Writing
+              تخلیقی تحریر
             </a>
             <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
-                     aria-label="Open submenu"
+                     aria-label="ذیلی مینو کھولیں"
                      aria-expanded="false"
                      style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
           </div>
           <ul class="submenu" style="display:none;">
             
             <li>
-              <a href="/en/creative-writing/fiction-stories/"
+              <a href="/ur/creative-writing/fiction-stories/"
                  style="color:#FFFFFF;">
-                Fiction & Stories
+                افسانہ اور کہانیاں
               </a>
             </li>
             
             <li>
-              <a href="/en/creative-writing/poetry/"
+              <a href="/ur/creative-writing/poetry/"
                  style="color:#FFFFFF;">
-                Poetry
+                شاعری
               </a>
             </li>
             
             <li>
-              <a href="/en/creative-writing/what-i-saw/"
+              <a href="/ur/creative-writing/what-i-saw/"
                  style="color:#FFFFFF;">
-                What I Saw
+                میں نے دیکھا
               </a>
             </li>
             
@@ -154,45 +145,45 @@
         
         
         <li>
-          <a href="/en/reflections/"
+          <a href="/ur/reflections/"
              style="color:#FFFFFF;">
-            Reflections
+            عکاسی
           </a>
         </li>
         
         
         
         <li>
-          <a href="/en/letters/"
+          <a href="/ur/letters/"
              style="color:#FFFFFF;">
-            Letters
+            خطوط
           </a>
         </li>
         
         
         
         <li>
-          <a href="/en/diary/"
+          <a href="/ur/diary/"
              style="color:#FFFFFF;">
-            Teaching Diary
+            تدریسی ڈائری
           </a>
         </li>
         
         
         
         <li>
-          <a href="/en/events/"
+          <a href="/ur/events/"
              style="color:#FFFFFF;">
-            Events
+            تقریبات
           </a>
         </li>
         
         
         
         <li>
-          <a href="/en/search/"
+          <a href="/ur/search/"
              style="color:#FFFFFF;">
-            Search
+            تلاش
           </a>
         </li>
         
@@ -206,13 +197,13 @@
       <!-- Language switcher: swaps /en/ <-> /ur/ in the current URL -->
       <a href="#" onclick="switchLanguage(event)" class="lang-switch"
          style="color:#FFFFFF; border:1px solid #FFFFFF; padding:3px 10px; text-decoration:none; font-size:0.85rem;">
-        UR
+        EN
       </a>
 
       <!-- Dark mode toggle: plain text, no icon -->
       <button onclick="toggleDark()" id="theme-btn"
-              style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-left:6px;">
-        Dark
+              style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-right:6px;">
+        تاریک
       </button>
 
     </div><!-- /.header-controls -->
@@ -301,7 +292,7 @@
     if (btn) {
       var isDark = document.documentElement.classList.contains('dark');
       
-        btn.textContent = isDark ? 'Light' : 'Dark';
+        btn.textContent = isDark ? 'روشن' : 'تاریک';
       
     }
   });
@@ -310,38 +301,72 @@
 
   <main id="main-content">
     <!-- ============================================================
-     page.html – layout for standard content pages.
-     Wraps content in a centred container with page-title heading.
+     post.html – layout for collection items (articles, letters, etc.)
+     Shows title, date, description, and body content.
      ============================================================ -->
-<div class="page-container">
+<article class="post-container">
 
-  <h1 class="page-title">
-    
-      Op-Eds
-    
-  </h1>
+  <header class="post-header">
+    <h1 class="post-title">
+      
+        Reading Crisis More Than Textbooks
+      
+    </h1>
 
-  <div class="page-content">
-    <div class="card-grid">
-  
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/opeds/reading-crisis-more-than-textbooks/">
-        Pakistan's Reading Crisis Needs More Than New Textbooks
+    <!-- Audio link (YouTube). Each post/language can set its own link via
+         youtube_en / youtube_ur in front matter; if a post hasn't set one
+         yet, it falls back to the site-wide YouTube channel link. -->
+    
+    
+    
+    
+    <p class="post-audio-link">
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener">
+        
+          یوٹیوب پر آڈیو کے لیے کلک کریں
+        
       </a>
-    </h2>
-    <p class="card-date">20 June 2026</p>
-    <a href="/en/opeds/reading-crisis-more-than-textbooks/" class="card-read-more">
-      Read more &rarr;
-    </a>
+    </p>
+    
+  </header>
+
+  <div class="post-body">
+    <p>Every few years, a new curriculum or a new set of textbooks is announced as the answer to Pakistan’s reading outcomes, and every few years the underlying numbers barely move. Large-scale learning assessments have repeatedly found that a majority of children in the early grades of government schools cannot read a simple sentence in their own language, let alone comprehend a short paragraph. It is tempting to treat this as a curriculum problem — the wrong books, the wrong sequence of lessons — because a curriculum is something a ministry can rewrite in a single budget cycle. It is much harder to admit that the problem sits closer to the classroom floor than to the printing press.</p>
+
+<p>Consider what a textbook reform actually changes. It changes the content a teacher is asked to deliver. It does not change whether that teacher had access to structured training in how to teach early reading, whether the class size makes individual attention possible, whether there is a functioning library within walking distance of the school, or whether books exist in the child’s home language before they arrive at school in an unfamiliar one. A better textbook handed to an untrained teacher in an overcrowded, under-resourced classroom is still a better textbook sitting largely unused.</p>
+
+<p>The evidence from years of donor-funded literacy pilots across Pakistan’s provinces tells a consistent story: the interventions that move the needle are not glossy new books but unglamorous, sustained ones — structured phonics-based instruction, regular formative assessment that tells a teacher which specific child is struggling with which specific skill, and coaching support for teachers rather than one-off training workshops that are never followed up. None of this photographs well for a press release. All of it costs more, in recurring terms, than printing a new edition of a textbook.</p>
+
+<p>There is also a library gap that rarely enters the policy conversation at all. A child who decodes words competently but never encounters a book worth finishing will not become a reader; decoding is necessary but not sufficient. Yet very few government schools in Pakistan have a functioning library, let alone a librarian or a rotating collection of age-appropriate storybooks. Reading, treated only as a technical skill to be tested rather than a habit to be built, produces students who can pass a reading assessment and still never choose to read.</p>
+
+<p>None of this is an argument against updating textbooks, which do need periodic revision. It is an argument against treating a textbook reform as if it were, by itself, a literacy policy. A serious response to Pakistan’s reading crisis would put comparable investment into three less visible places: sustained, coached teacher training in early-grade reading instruction; school libraries stocked with books children actually want to read, in languages they actually speak at home; and assessment systems that identify struggling readers early enough for a teacher to do something about it, rather than only measuring failure at the end of a school year.</p>
+
+<p>Reading policy has an unfortunate tendency to reward whatever change can be announced quickly. Teachers, libraries, and early intervention are slower, less photogenic, and considerably more likely to work.</p>
+
   </div>
+
+  <!-- Author and date, shown at the end of the piece -->
   
-</div>
+  
+  <p class="post-meta-bottom">
+    
+      20 June 2026
+    
+  </p>
 
-  </div>
+  <!-- Author biography, shown only if provided. Layout stays intact if missing. -->
+  
+  
+  
 
-</div>
+  <!-- Back link -->
+  <p class="post-back">
+    <button onclick="history.back()" class="post-back-btn">
+      ← واپس جائیں
+    </button>
+  </p>
+
+</article>
 
   </main>
 
@@ -356,61 +381,57 @@
 
     <!-- Row 1: Return to ... main section links -->
     <p class="footer-row">
-      <span class="footer-label">Return to:</span>
+      <span class="footer-label">واپس جائیں:</span>
       
       
-        <a href="/en/" style="color:#FFFFFF;">
-          Home
+        <a href="/ur/" style="color:#FFFFFF;">
+          مرکزی صفحہ
         </a> · 
       
-        <a href="/en/opeds/" style="color:#FFFFFF;">
-          Op-Eds
+        <a href="/ur/articles/" style="color:#FFFFFF;">
+          مضامین
         </a> · 
       
-        <a href="/en/blogs/" style="color:#FFFFFF;">
-          Blogs
+        <a href="/ur/reviews/" style="color:#FFFFFF;">
+          جائزے
         </a> · 
       
-        <a href="/en/reviews/" style="color:#FFFFFF;">
-          Reviews
+        <a href="/ur/creative-writing/" style="color:#FFFFFF;">
+          تخلیقی تحریر
         </a> · 
       
-        <a href="/en/creative-writing/" style="color:#FFFFFF;">
-          Creative Writing
+        <a href="/ur/reflections/" style="color:#FFFFFF;">
+          عکاسی
         </a> · 
       
-        <a href="/en/reflections/" style="color:#FFFFFF;">
-          Reflections
+        <a href="/ur/letters/" style="color:#FFFFFF;">
+          خطوط
         </a> · 
       
-        <a href="/en/letters/" style="color:#FFFFFF;">
-          Letters
+        <a href="/ur/diary/" style="color:#FFFFFF;">
+          تدریسی ڈائری
         </a> · 
       
-        <a href="/en/diary/" style="color:#FFFFFF;">
-          Teaching Diary
-        </a> · 
-      
-        <a href="/en/events/" style="color:#FFFFFF;">
-          Events
+        <a href="/ur/events/" style="color:#FFFFFF;">
+          تقریبات
         </a>
       
     </p>
 
     <!-- Row 2: Submission page / Guidelines -->
     <p class="footer-row">
-      <a href="/en/submission/" style="color:#FFFFFF;">
-        Submission
+      <a href="/ur/submission/" style="color:#FFFFFF;">
+        تحریر جمع کروائیں
       </a>
       &nbsp;&nbsp;
-      <a href="/en/guidelines/" style="color:#FFFFFF;">
-        Guidelines
+      <a href="/ur/guidelines/" style="color:#FFFFFF;">
+        ہدایات
       </a>
     </p>
 
     <!-- Row 3: Social -->
     <p class="footer-row">
-      <span class="footer-label">Follow us:</span>
+      <span class="footer-label">ہمیں فالو کریں:</span>
       <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
       <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
       <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
@@ -419,14 +440,14 @@
 
     <!-- Row 4: Email -->
     <p class="footer-row">
-      <span class="footer-label">Email:</span>
+      <span class="footer-label">ای میل:</span>
       <a href="mailto:kitabomori@gmail.com" style="color:#FFFFFF;">kitabomori@gmail.com</a>
     </p>
 
     <!-- Row 5: Privacy Policy -->
     <p class="footer-row">
-      <a href="/en/privacy/" style="color:#FFFFFF;">
-        Privacy Policy
+      <a href="/ur/privacy/" style="color:#FFFFFF;">
+        رازداری کی پالیسی
       </a>
     </p>
 
@@ -434,7 +455,7 @@
     <p class="footer-copy">
       &copy; 2026 Kitabomori.
       
-        All rights reserved. A volunteer educational publishing initiative.
+        تمام حقوق محفوظ ہیں۔
       
     </p>
 
