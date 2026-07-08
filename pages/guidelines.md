@@ -2,8 +2,8 @@
 layout: page
 title_en: "Submission Guidelines"
 title_ur: "اشاعت کی ہدایات"
-description_en: "How to submit your writing to Kitabomori — Articles, Reviews, Letters, Short Stories, Poetry, Reflection, Dialogues, Satire, and Nonfiction."
-description_ur: "کتابومری میں اپنی تحریر جمع کروانے کا مکمل طریقہ — مضامین، جائزے، خطوط، مختصر کہانیاں، شاعری، عکاسی، مکالمے، طنزیہ تحریر، اور نان فکشن۔"
+description_en: "How to submit your writing to Kitabomori — Articles, Reviews, Letters, Short Stories, Poetry, Reflection, Dialogues, Satire, and Nonfiction. Submissions welcome in English and Urdu."
+description_ur: "کتابومری میں اپنی تحریر جمع کروانے کا مکمل طریقہ — مضامین، جائزے، خطوط، مختصر کہانیاں، شاعری، عکاسی، مکالمے، طنزیہ تحریر، اور نان فکشن۔ اردو اور انگریزی دونوں زبانوں میں تحریریں قبول ہیں۔"
 permalink: /guidelines/
 ---
 
@@ -11,7 +11,7 @@ permalink: /guidelines/
 
 ## اشاعت کی ہدایات
 
-کتابومری پر اشاعت کے لیے آپ کا خیر مقدم ہے۔ ذیل میں ہر قسم کی تحریر کے لیے مکمل ہدایات دی گئی ہیں۔
+کتابومری پر اشاعت کے لیے آپ کا خیر مقدم ہے۔ ذیل میں ہر قسم کی تحریر کے لیے مکمل ہدایات دی گئی ہیں۔ تحریریں اردو اور انگریزی، دونوں زبانوں میں قبول کی جاتی ہیں۔
 
 ---
 
@@ -19,11 +19,10 @@ permalink: /guidelines/
 
 **طوالت:** ۷۰۰ سے ۱۰۰۰ الفاظ
 
-**مقصد:** تجربے یا تحقیق پر مبنی رائے جس میں عملی تجاویز شامل ہوں۔ لہجہ مستند مگر عام فہم ہو۔
+**مقصد:** تعلیم، مطالعے، خواندگی، ثقافت یا معاشرے سے متعلق مسائل پر تحقیق، پیشہ ورانہ تجربے اور واضح دلیل پر مبنی فکر انگیز مضامین، جو معلمین، پالیسی سازوں یا اداروں کے لیے عملی بصیرت یا تجاویز پیش کریں۔ لہجہ مستند مگر عام فہم ہو — ایک باخبر ماہرِ تعلیم کی طرح لکھیں، نہ کہ کسی علمی جریدے کے لیے لکھنے والے محقق کی طرح۔
 
 **عمل:**
-1. رابطہ فارم کے ذریعے مکمل مسودہ بھیجیں۔
-2. تین ہفتوں کے اندر جواب دیا جائے گا۔
+1. مکمل مسودہ ہمارے جمع کروانے کے صفحے کے ذریعے بھیجیں یا [kitabomori@gmail.com](mailto:kitabomori@gmail.com) پر ای میل کریں۔
 
 **حوالہ:** [Education Week Opinion](https://www.edweek.org/opinion)
 
@@ -33,8 +32,10 @@ permalink: /guidelines/
 
 **طوالت:** ۵۰۰ سے ۸۰۰ الفاظ
 
+**مقصد:** تعلیم، مطالعے، خواندگی، ثقافت یا معاشرے سے متعلق مکالمے میں حصہ ڈالنے والی کتابوں کے تنقیدی اور متوازن جائزے۔ جائزہ محض خلاصے سے آگے بڑھ کر فکر انگیز تجزیہ پیش کرے اور قارئین کو یہ سمجھنے میں مدد دے کہ کتاب کیوں اہم ہے۔
+
 **ڈھانچہ:**
-- اوپر: کتاب کا نام، مصنف، ناشر
+- اوپر: کتاب کا نام، مصنف، ناشر، اور سالِ اشاعت
 - خلاصہ
 - خوبیاں
 - کمزوریاں
@@ -54,7 +55,7 @@ permalink: /guidelines/
 
 **طوالت:** ۴۰۰ سے ۹۰۰ الفاظ
 
-**مقصد:** کسی حقیقی یا فرضی مکتوب الیہ (استاد، طالب علم، ادارہ، یا خود اپنے آپ) کو لکھا گیا ذاتی خط، جو تعلیم، مطالعے یا ذاتی تجربے سے متعلق کوئی سچا اور دلی لمحہ بیان کرے۔ یہ اخبار کے "خط بنام مدیر" (چند سو الفاظ کی رائے) سے مختلف ہے — یہاں زور ذاتی، کھلے اور مخلصانہ لہجے پر ہے۔
+**مقصد:** ایسے ذاتی خطوط جو تعلیم، مطالعے، سیکھنے یا روزمرہ زندگی سے جڑے سچے تجربات، جذبات یا عکاسی کو بیان کریں۔ ہم مکالمانہ چمک دمک کی بجائے دیانت، بے باکی اور ایک منفرد آواز کو اہمیت دیتے ہیں۔ یہ کسی حقیقی یا فرضی مکتوب الیہ (استاد، طالب علم، ادارہ، یا خود اپنے آپ) کو لکھا گیا خط ہو سکتا ہے، جو تعلیم، مطالعے یا ذاتی تجربے سے متعلق کوئی سچا اور دلی لمحہ بیان کرے۔ یہ اخبار کے "خط بنام مدیر" (چند سو الفاظ کی رائے) سے مختلف ہے — یہاں زور ذاتی، کھلے اور مخلصانہ لہجے پر ہے، دلیل بازی پر نہیں۔
 
 **عمل:**
 1. مکمل مسودہ اور دو سے تین سطروں کی مختصر سوانح کے ساتھ ای میل کریں۔
@@ -67,10 +68,11 @@ permalink: /guidelines/
 
 **طوالت:** ۸۰۰ سے ۴۰۰۰ الفاظ
 
+**مقصد:** اصل افسانوی تحریریں جو زبردست کرداروں، بامعنی تصادم اور فکر انگیز کہانی کاری کے ذریعے انسانی تجربے کو روشن کریں۔ کہانیاں تعلیم، مطالعے یا زندگی کے وسیع تر پہلوؤں کا احاطہ کر سکتی ہیں، لیکن قارئین کو غور و فکر کے لیے کچھ ضرور دیں۔
+
 **عمل:**
 1. ایک وقت میں صرف ایک کہانی جمع کروائیں۔
 2. مکمل مسودہ، دو سے تین سطروں کی سوانح کے ساتھ ای میل کریں۔
-3. چار ہفتوں کے اندر جواب دیا جائے گا۔
 
 **حوالہ:** The London Magazine کی افسانوی تحریروں کی ہدایات (زیادہ سے زیادہ ۴۰۰۰ الفاظ) سے متاثر۔
 
@@ -80,10 +82,12 @@ permalink: /guidelines/
 
 **طوالت:** ہر نظم زیادہ سے زیادہ ۵۰ سطریں؛ ایک جمع کرانے میں زیادہ سے زیادہ ۵ نظمیں
 
+**مقصد:** ایسی نظمیں جو تازہ زبان، یادگار منظر کشی اور جذباتی یا فکری گہرائی پیش کریں۔ روایتی ہوں یا تجرباتی، ہر انداز کی شاعری کا خیرمقدم ہے۔
+
 **عمل:**
 1. تمام نظمیں ایک ہی فائل میں جمع کروائیں۔
 2. دو سے تین سطروں کی سوانح شامل کریں۔
-3. چار ہفتوں کے اندر جواب دیا جائے گا۔
+3. دو ہفتوں کے اندر جواب دیا جائے گا۔
 
 **حوالہ:** Poetry Foundation اور The London Magazine کی شاعری جمع کروانے کی عام ہدایات سے متاثر۔
 
@@ -93,11 +97,11 @@ permalink: /guidelines/
 
 **طوالت:** ۶۰۰ سے ۱۲۰۰ الفاظ
 
-**مقصد:** مطالعے، تعلیم یا روزمرہ زندگی کے کسی تجربے پر ذاتی، فکر انگیز غور و فکر۔ سچائی اور کھلاپن، ادبی چمک دمک سے زیادہ اہم ہے۔
+**مقصد:** مطالعے، تعلیم، کام یا روزمرہ زندگی کے کسی تجربے، سوال یا نشوونما کے لمحے پر ذاتی اور فکر انگیز غور و فکر۔ یہ صرف بیان تک محدود نہ رہے بلکہ بصیرت اور سیکھے گئے سبق کو بھی ظاہر کرے۔ سچائی اور کھلاپن، ادبی چمک دمک سے زیادہ اہم ہے۔
 
 **عمل:**
 1. مکمل مسودہ ای میل کریں۔
-2. تین ہفتوں کے اندر جواب دیا جائے گا۔
+2. دو ہفتوں کے اندر جواب دیا جائے گا۔
 
 **حوالہ:** The Sun Magazine کی ذاتی مضامین کی روایت سے متاثر۔
 
@@ -107,12 +111,12 @@ permalink: /guidelines/
 
 **طوالت:** ۴۰۰ سے ۱۲۰۰ الفاظ
 
-**مقصد:** دو یا زیادہ آوازوں کے درمیان لکھا گیا مکالمہ (حقیقی یا تخیلاتی) جو کسی تعلیمی یا ذاتی سوال کو ڈرامائی انداز میں پیش کرے۔ روایتی مضمون کی بجائے یہاں زور کردار کی الگ الگ آوازوں اور ان کے درمیان تناؤ پر ہے۔
+**مقصد:** دو یا زیادہ آوازوں کے درمیان لکھا گیا مکالمہ (حقیقی یا تخیلاتی) جو کسی تعلیمی یا ذاتی سوال کو ڈرامائی انداز میں پیش کرے۔ روایتی مضمون کی بجائے یہاں زور کردار کی الگ الگ آوازوں اور ان کے درمیان تناؤ پر ہے۔ مکالمہ حقیقی تناؤ، تجسس یا اختلافِ رائے پیش کرے اور قارئین کو تنقیدی انداز میں سوچنے کی ترغیب دے۔
 
 **عمل:**
-1. مکمل مسودہ اسکرپٹ کی صورت میں (ہر بولنے والے کا نام واضح طور پر لکھ کر) ای میل کریں۔
+1. مکمل مسودہ اسکرپٹ کی صورت میں (ہر بولنے والے کا نام واضح طور پر لکھ کر) ہمارے جمع کروانے کے صفحے کے ذریعے بھیجیں یا ای میل کریں۔
 2. دو سے تین سطروں کی سوانح شامل کریں۔
-3. تین ہفتوں کے اندر جواب دیا جائے گا۔
+3. دو ہفتوں کے اندر جواب دیا جائے گا۔
 
 ---
 
@@ -120,11 +124,11 @@ permalink: /guidelines/
 
 **طوالت:** ۵۰۰ سے ۱۲۰۰ الفاظ
 
-**مقصد:** تعلیم، پالیسی یا معاشرتی رویوں پر طنز، مبالغہ آرائی یا لطیف ظرافت کے ذریعے تبصرہ۔ مقصد تضحیک نہیں بلکہ کسی حقیقی مسئلے کی نشاندہی ہے۔ کسی حقیقی، نامزد شخص کو ہدف نہ بنایا جائے۔
+**مقصد:** تعلیم، پالیسی یا معاشرتی رویوں پر ظرافت، طنز، مبالغہ آرائی یا لایعنیت کے ذریعے تیز اور ذہین تبصرہ۔ مقصد تضحیک نہیں بلکہ کسی حقیقی مسئلے پر غور و فکر کو ابھارنا ہے۔ کسی حقیقی، نامزد شخص کو ہدف نہ بنایا جائے۔
 
 **عمل:**
 1. مکمل مسودہ ای میل کریں۔
-2. تین ہفتوں کے اندر جواب دیا جائے گا۔
+2. دو ہفتوں کے اندر جواب دیا جائے گا۔
 
 ---
 
@@ -132,11 +136,11 @@ permalink: /guidelines/
 
 **طوالت:** ۸۰۰ سے ۲۰۰۰ الفاظ
 
-**مقصد:** حقیقی تجربے، تحقیق یا مشاہدے پر مبنی بیانیہ مضمون، جو معیاری آرٹیکل سے زیادہ ادبی اور کہانی نما انداز میں لکھا گیا ہو۔
+**مقصد:** بیانیہ نان فکشن جو حقائق کی درستگی کو ادبی کہانی کاری کے ساتھ ملاتا ہے۔ ہم زندہ تجربے، مشاہدے، رپورٹنگ یا تحقیق میں جڑے مضامین کا خیرمقدم کرتے ہیں جو مواد اور ہنر دونوں کے ذریعے قارئین کو مشغول رکھیں — معیاری آرٹیکل سے زیادہ ادبی اور کہانی نما انداز میں۔
 
 **عمل:**
 1. مکمل مسودہ، دو سے تین سطروں کی سوانح کے ساتھ ای میل کریں۔
-2. تین ہفتوں کے اندر جواب دیا جائے گا۔
+2. دو ہفتوں کے اندر جواب دیا جائے گا۔
 
 ---
 
@@ -146,7 +150,7 @@ permalink: /guidelines/
 - سرقہ (Plagiarism) کسی بھی صورت قابل قبول نہیں؛ حوالہ جات درست اور مکمل ہونے چاہئیں۔
 - اگر تحریر تیار کرنے میں کسی AI ٹول کی مدد لی گئی ہو تو اس کا واضح اظہار ضروری ہے؛ حقائق کی درستگی کی ذمہ داری بہرحال مصنف پر ہوگی۔
 - جہاں مناسب ہو، حوالہ جات APA 7th edition انداز میں دیے جائیں۔
-- ابھی صرف انگریزی میں تحریریں قبول ہیں (اردو ترجمہ بعد میں مانگا جا سکتا ہے)۔
+- کتابومری اردو اور انگریزی، دونوں زبانوں میں تحریریں قبول کرتا ہے۔
 - دو یا تین سطروں کی مختصر مصنف سوانح لازمی شامل کریں۔
 - ایک ساتھ کئی جگہ جمع کرانا (Simultaneous Submission) منع ہے۔
 - تحریریں وضاحت اور اسلوب کے لیے تدوین کی جا سکتی ہیں؛ اہم تبدیلیوں سے پہلے مصنف سے رجوع کیا جائے گا۔
@@ -163,7 +167,7 @@ permalink: /guidelines/
 
 ## Submission Guidelines
 
-Welcome to Kitabomori. Below you will find complete guidelines for each type of contribution we publish.
+Welcome to Kitabomori. Below you will find complete guidelines for each type of contribution we publish. We accept submissions in both English and Urdu.
 
 ---
 
@@ -171,11 +175,11 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 **Length:** 700–1,000 words
 
-**Purpose:** Opinion grounded in professional experience or research, with concrete and actionable recommendations for educators, policymakers, or institutions. The tone should be authoritative but accessible: write as a knowledgeable practitioner, not as an academic writing for a journal.
+**Purpose:** Thoughtful, evidence-informed articles that explore issues related to education, reading, literacy, culture, or society. We welcome pieces that combine research, professional experience, and clear argument to offer practical insights or recommendations for educators, policymakers, or institutions. The tone should be authoritative but accessible: write as a knowledgeable practitioner, not as an academic writing for a journal.
 
 **Process:**
-1. Submit the full draft via the Submission page.
-2. You will receive a response within three weeks.
+1. Submit the full draft via our Submission page, or email it to [kitabomori@gmail.com](mailto:kitabomori@gmail.com).
+2. You will receive a response within two weeks.
 
 **Reference style:** [Education Week Opinion](https://www.edweek.org/opinion)
 
@@ -184,6 +188,8 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 ### Section B: Reviews
 
 **Length:** 500–800 words
+
+**Purpose:** Critical and balanced reviews of books that contribute to conversations about education, reading, literacy, culture, or society. Reviews should go beyond summary by offering thoughtful analysis and helping readers decide why the book matters.
 
 **Structure:**
 - At the top: book title, author, publisher, year of publication
@@ -206,7 +212,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 **Length:** 400–900 words
 
-**Purpose:** A personal letter addressed to a real or imagined recipient — a teacher, a student, an institution, or your younger self — that shares a genuine, heartfelt moment connected to education, reading, or personal experience. This is different from a newspaper "letter to the editor," which is a short, argument-driven response to a news item. Here, the emphasis is on a personal, open, and sincere voice rather than making a policy case.
+**Purpose:** Personal letters that capture authentic experiences, emotions, or reflections connected to education, reading, learning, or everyday life. We value honesty, vulnerability, and a distinctive voice over polished rhetoric. A letter might be addressed to a real or imagined recipient — a teacher, a student, an institution, or your younger self — sharing a genuine, heartfelt moment connected to education, reading, or personal experience. This is different from a newspaper "letter to the editor," which is a short, argument-driven response to a news item. Here, the emphasis is on a personal, open, and sincere voice rather than making a policy case.
 
 **Process:**
 1. Email the full draft along with a short, 2–3 sentence author bio.
@@ -218,6 +224,8 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 ### Section D: Short Stories
 
 **Length:** 800–4,000 words
+
+**Purpose:** Original works of fiction that illuminate human experience through compelling characters, meaningful conflict, and thoughtful storytelling. Stories may explore education, reading, or broader aspects of life, but should leave readers with something to reflect upon.
 
 **Process:**
 1. Submit one story at a time.
@@ -232,6 +240,8 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 **Length:** Up to 50 lines per poem; up to 5 poems per submission
 
+**Purpose:** Poems that offer fresh language, memorable imagery, and emotional or intellectual depth. We welcome a range of styles and forms, whether traditional or experimental.
+
 **Process:**
 1. Submit all poems together in a single file.
 2. Include a short, 2–3 sentence author bio.
@@ -245,11 +255,11 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 **Length:** 600–1,200 words
 
-**Purpose:** A personal, thoughtful piece of reflection on an experience connected to reading, education, or everyday life. Honesty and a clear, unguarded voice matter more than literary polish.
+**Purpose:** Personal essays that thoughtfully examine an experience, question, or moment of growth related to reading, education, work, or everyday life. Reflection should move beyond description to reveal insight and learning. Honesty and a clear, unguarded voice matter more than literary polish.
 
 **Process:**
 1. Email the full draft.
-2. You will receive a response within three weeks.
+2. You will receive a response within two weeks.
 
 **Reference style:** Inspired by the personal-essay tradition of publications such as *The Sun Magazine*.
 
@@ -259,12 +269,12 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 **Length:** 400–1,200 words
 
-**Purpose:** A conversation between two or more voices — real or imagined — that dramatizes an educational or personal question. The emphasis is on distinct character voices and the tension between them, rather than a conventional essay structure.
+**Purpose:** Scripted conversations that explore ideas through the interaction of distinct voices rather than conventional narration — a conversation between two or more voices, real or imagined, that dramatizes an educational or personal question. Dialogues should present genuine tension, curiosity, or disagreement while encouraging readers to think critically, with the emphasis on distinct character voices rather than a conventional essay structure.
 
 **Process:**
-1. Email the full draft formatted as a script, with each speaker clearly labeled.
+1. Submit the full draft via our Submission page, or email it, formatted as a script with each speaker clearly labeled.
 2. Include a short, 2–3 sentence author bio.
-3. You will receive a response within three weeks.
+3. You will receive a response within two weeks.
 
 ---
 
@@ -272,11 +282,11 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 **Length:** 500–1,200 words
 
-**Purpose:** Commentary on education, policy, or social behavior delivered through exaggeration, irony, or wit. The target should be a real issue, not a real, named individual.
+**Purpose:** Sharp, intelligent satire that uses humor, irony, exaggeration, or absurdity to examine educational, cultural, or social issues. The purpose should be to provoke reflection rather than ridicule individuals. The target should be a real issue, not a real, named individual.
 
 **Process:**
 1. Email the full draft.
-2. You will receive a response within three weeks.
+2. You will receive a response within two weeks.
 
 ---
 
@@ -284,11 +294,11 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 **Length:** 800–2,000 words
 
-**Purpose:** A narrative essay grounded in real experience, research, or observation, written with more literary shape and storytelling craft than a standard article.
+**Purpose:** Narrative nonfiction that combines factual accuracy with literary storytelling. We welcome essays rooted in lived experience, observation, reporting, or research that engage readers through both substance and craft, written with more literary shape and storytelling craft than a standard article.
 
 **Process:**
 1. Email the full draft along with a short, 2–3 sentence author bio.
-2. You will receive a response within three weeks.
+2. You will receive a response within two weeks.
 
 ---
 
@@ -298,7 +308,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 - Plagiarism is never acceptable; all references and citations must be accurate and complete.
 - If you used a generative AI tool while drafting, disclose this clearly. You remain responsible for the accuracy of any facts, quotes, or references.
 - Where citations are appropriate, please use APA 7th edition style.
-- At present, Kitabomori publishes in English only. Urdu translations may be requested after acceptance.
+- Kitabomori accepts submissions in both English and Urdu.
 - Include a short author bio of 2–3 sentences at the end of your submission.
 - We do not accept simultaneous submissions: please do not submit the same piece to another publication while it is under consideration here.
 - Submissions may be edited for clarity and style; we will contact you before making any substantial changes.
