@@ -2,12 +2,12 @@
 layout: post
 title_en: "The Right Way to Shit on..."
 title_ur: ""
-date: 2026-06-28
+date: 2026-07-08
 author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "A satire on eucation and edcated."
+description_en: "A satire on education and edcated."
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -27,4 +27,4 @@ To make complicated things easier, the toilets had already issued a user manual.
 
 Toilets also claim to offer the best places where individuals can find peace of mind. Often claim that the best ideas originate on the toilet seat, where everyone feels free to think about anything. At times, we not only flash the waste but also the tamper, depression and ugly thoughts. Hence, it is a shame to disrespect the toilets which offer the best of their services to inhumane humans.
 
-<p style="margin-top:2rem; font-size:0.9rem; color:#666;"><em>Satire — any resemblance to specific policies, ministries, or ceremonies is, regrettably, not entirely coincidental.</em></p>
+<p style="margin-top:2rem; font-size:0.9rem; color:#666;"><em>Satire — any resemblance to specific institutions, policies, ministries, or ceremonies is, regrettably, not entirely coincidental.</em></p>
