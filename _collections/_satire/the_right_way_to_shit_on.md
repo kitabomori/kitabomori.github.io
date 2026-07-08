@@ -27,7 +27,4 @@ To make complicated things easier, the toilets had already issued a user manual.
 
 Toilets also claim to offer the best places where individuals can find peace of mind. Often claim that the best ideas originate on the toilet seat, where everyone feels free to think about anything. At times, we not only flash the waste but also the tamper, depression and ugly thoughts. Hence, it is a shame to disrespect the toilets which offer the best of their services to inhumane humans.
 
-<p style="margin-top:2rem; font-size:0.9rem; color:#666;"><em>This was written in 2022. It was edited and published on 8 July 2026 on Kitabomori</em></p>
-
-
-<p style="margin-top:2rem; font-size:0.9rem; color:#666;"><em>Satire — any resemblance to specific institutions, policies, ministries, or ceremonies is, regrettably, not entirely coincidental.</em></p>
+<p style="margin-top:2rem; font-size:0.9rem; color:#666;"><em>This satire was written in 2022.— any resemblance to specific institutions, policies, ministries, or ceremonies is, regrettably, not entirely coincidental.</em></p>
