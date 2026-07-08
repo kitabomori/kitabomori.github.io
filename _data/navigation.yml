@@ -53,6 +53,11 @@
   url_en: "/en/letters/"
   url_ur: "/ur/letters/"
 
+- name_en: "Teaching Diary"
+  name_ur: "تدریسی ڈائری"
+  url_en: "/en/diary/"
+  url_ur: "/ur/diary/"
+
 - name_en: "Events"
   name_ur: "تقریبات"
   url_en: "/en/events/"

@@ -5,6 +5,7 @@ layout: post
 #   Blogs:              _collections/_blogs/your-post-name.md
 #   Op-Eds:              _collections/_opeds/your-post-name.md
 #   Letters:             _collections/_letters/your-post-name.md
+#   Teaching Diary:      _collections/_diary/your-post-name.md
 #   Reviews:             _collections/_reviews/your-post-name.md
 #   Reflections:         _collections/_reflections/your-post-name.md
 #   Calls:               _collections/_calls/your-post-name.md

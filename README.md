@@ -24,7 +24,7 @@ A bilingual (English/Urdu) educational publishing website built with Jekyll, Tai
 
 ## What this site is
 
-Kitabomori publishes ten types of content:
+Kitabomori publishes eleven types of content:
 
 | Type | Folder | Purpose |
 |------|--------|---------|
@@ -32,6 +32,7 @@ Kitabomori publishes ten types of content:
 | Op-Eds | `_collections/_opeds/` | Experience-grounded opinion with recommendations |
 | Reviews | `_collections/_reviews/` | Critical reviews of education-related books |
 | Letters | `_collections/_letters/` | Personal letters from educators and students |
+| Teaching Diary | `_collections/_diary/` | Teaching notes, assignments, strategies, lesson ideas, reflections, and resources |
 | Reflections | `_collections/_reflections/` | Short personal observations |
 | Fiction & Stories | `_collections/_fiction_stories/` | Short fiction, under the Creative Writing menu |
 | Poetry | `_collections/_poetry/` | Poems, under the Creative Writing menu |

@@ -46,6 +46,9 @@ collections:
   events:
     output: true
     permalink: /events/:name/
+  diary:
+    output: true
+    permalink: /diary/:name/
 
 # Default layouts
 defaults:
@@ -97,6 +100,11 @@ defaults:
   - scope:
       path: ""
       type: events
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: diary
     values:
       layout: post
 

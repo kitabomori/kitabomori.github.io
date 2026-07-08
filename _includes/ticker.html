@@ -2,7 +2,8 @@
      ticker.html – scrolling news ticker for the Home page only.
      Shows the 5 most recent items across Op-Eds, Blogs, Reviews,
      Creative Writing (Fiction & Stories, Poetry, What I Saw),
-     Reflections, and Letters — sorted by date (newest first).
+     Reflections, Letters, and the Teaching Diary — sorted by
+     date (newest first).
      "Calls" (calls for submissions) are intentionally excluded.
 
      COLOURS:
@@ -26,6 +27,7 @@
 {% assign ticker_items = ticker_items | concat: site.what_i_saw %}
 {% assign ticker_items = ticker_items | concat: site.reflections %}
 {% assign ticker_items = ticker_items | concat: site.letters %}
+{% assign ticker_items = ticker_items | concat: site.diary %}
 
 <!-- Step 2: Sort by date descending, take top 5 -->
 {% assign ticker_sorted = ticker_items | sort: "date" | reverse %}
@@ -80,6 +82,9 @@
           {% elsif site.letters contains item %}
             {% assign item_type_en = "Letter" %}
             {% assign item_type_ur = "خط" %}
+          {% elsif site.diary contains item %}
+            {% assign item_type_en = "Diary" %}
+            {% assign item_type_ur = "ڈائری" %}
           {% endif %}
 
           <span class="ticker-item" style="color:#aab52d;" {% if pass == 2 %}aria-hidden="true"{% endif %}>
