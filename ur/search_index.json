@@ -12,6 +12,8 @@
 
 
 
+
+
   {
     "title_en": "Kitabomori's First Reading Circle",
     "title_ur": "کتابومری کا پہلا ریڈنگ سرکل",
@@ -25,9 +27,19 @@
   {
     "title_en": "There was a library in My Village",
     "title_ur": "میرے گاؤں میں کوئی لائبریری بھی تھی",
-    "url_en": "/en/reflections/mery-gawong-ma-koi-libray-bhi-thi/",
-    "url_ur": "/ur/reflections/mery-gawong-ma-koi-libray-bhi-thi/",
+    "url_en": "/en/creative-writing/reflection/mery-gawong-ma-koi-libray-bhi-thi/",
+    "url_ur": "/ur/creative-writing/reflection/mery-gawong-ma-koi-libray-bhi-thi/",
     "date": "2026-07-03",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
+    "title_en": "Two Teachers, One Staff Room",
+    "title_ur": "",
+    "url_en": "/en/creative-writing/dialogues/two-teachers-one-staff-room/",
+    "url_ur": "/ur/creative-writing/dialogues/two-teachers-one-staff-room/",
+    "date": "2026-07-01",
     "type_en": "Call",
     "type_ur": "دعوت"
   },
@@ -43,11 +55,31 @@
   },
 
   {
+    "title_en": "A Brief Guide to Reforming Education Without Changing Anything",
+    "title_ur": "",
+    "url_en": "/en/creative-writing/satire/reforming-education-without-changing-anything/",
+    "url_ur": "/ur/creative-writing/satire/reforming-education-without-changing-anything/",
+    "date": "2026-06-28",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
     "title_en": "To my Teacher",
     "title_ur": "ٹیچر کے نام ایک خط",
     "url_en": "/en/letters/letter-to-teacher/",
     "url_ur": "/ur/letters/letter-to-teacher/",
     "date": "2026-06-24",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
+    "title_en": "What Forty Minutes Actually Holds",
+    "title_ur": "",
+    "url_en": "/en/creative-writing/nonfiction/what-forty-minutes-actually-holds/",
+    "url_ur": "/ur/creative-writing/nonfiction/what-forty-minutes-actually-holds/",
+    "date": "2026-06-22",
     "type_en": "Call",
     "type_ur": "دعوت"
   },
@@ -65,8 +97,8 @@
   {
     "title_en": "The Last Period",
     "title_ur": "",
-    "url_en": "/en/creative-writing/fiction-stories/the-last-period/",
-    "url_ur": "/ur/creative-writing/fiction-stories/the-last-period/",
+    "url_en": "/en/creative-writing/short-stories/the-last-period/",
+    "url_ur": "/ur/creative-writing/short-stories/the-last-period/",
     "date": "2026-06-15",
     "type_en": "Call",
     "type_ur": "دعوت"
@@ -78,16 +110,6 @@
     "url_en": "/en/creative-writing/poetry/chalk-dust/",
     "url_ur": "/ur/creative-writing/poetry/chalk-dust/",
     "date": "2026-06-10",
-    "type_en": "Call",
-    "type_ur": "دعوت"
-  },
-
-  {
-    "title_en": "The Boy Who Shared His Only Pencil",
-    "title_ur": "",
-    "url_en": "/en/creative-writing/what-i-saw/the-shared-pencil/",
-    "url_ur": "/ur/creative-writing/what-i-saw/the-shared-pencil/",
-    "date": "2026-06-05",
     "type_en": "Call",
     "type_ur": "دعوت"
   },

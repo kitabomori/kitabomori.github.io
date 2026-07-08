@@ -4,8 +4,8 @@
      Sets html lang/dir, loads head, header, footer, and
      applies body font from site config.
      ============================================================ -->
-<html lang="en"
-      dir="ltr"
+<html lang="ur"
+      dir="rtl"
       class="">
 <head>
   <!-- ============================================================
@@ -19,16 +19,16 @@
 <!-- Page title: prefer page-specific title, fall back to site title -->
 <title>
   
-    Fiction & Stories – Kitabomori
+    مختصر کہانیاں – کتابومری
   
 </title>
 
 <!-- Meta description -->
-<meta name="description" content="Short fiction and imaginative storytelling from the Kitabomori community.">
+<meta name="description" content="کتابومری کمیونٹی کی جانب سے مختصر کہانیاں اور تخیلاتی افسانے۔">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Fiction & Stories">
-<meta property="og:description" content="Short fiction and imaginative storytelling from the Kitabomori community.">
+<meta property="og:title" content="مختصر کہانیاں">
+<meta property="og:description" content="کتابومری کمیونٹی کی جانب سے مختصر کہانیاں اور تخیلاتی افسانے۔">
 <meta property="og:type" content="website">
 
 <!-- Google Fonts: Inter (English) + Noto Nastaliq Urdu (Urdu)
@@ -47,7 +47,7 @@
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 
 </head>
-<body style="font-family: 'Inter', sans-serif;">
+<body style="font-family: 'Noto Nastaliq Urdu', serif;">
 
   <!-- ============================================================
      header.html – site-wide header
@@ -60,17 +60,17 @@
   <div class="header-inner">
 
     <!-- Site name / logo -->
-    <a href="/en/"
+    <a href="/ur/"
        class="site-title"
        style="color:#FFFFFF; text-decoration:none;">
-      Kitabomori
+      کتابومری
     </a>
 
     <!-- Mobile nav toggle (plain text, no icon) -->
     <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation"
             aria-expanded="false" aria-controls="main-nav"
             style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:4px 10px; cursor:pointer; font-size:0.85rem;">
-      Menu
+      مینو
     </button>
 
     <!-- Main navigation -->
@@ -79,27 +79,27 @@
         
         
         <li>
-          <a href="/en/"
+          <a href="/ur/"
              style="color:#FFFFFF;">
-            Home
+            مرکزی صفحہ
           </a>
         </li>
         
         
         
         <li>
-          <a href="/en/articles/"
+          <a href="/ur/articles/"
              style="color:#FFFFFF;">
-            Articles
+            مضامین
           </a>
         </li>
         
         
         
         <li>
-          <a href="/en/reviews/"
+          <a href="/ur/reviews/"
              style="color:#FFFFFF;">
-            Reviews
+            جائزے
           </a>
         </li>
         
@@ -107,35 +107,56 @@
         
         <li class="nav-item-has-children">
           <div class="nav-parent-row">
-            <a href="/en/creative-writing/"
+            <a href="/ur/creative-writing/"
                style="color:#FFFFFF;">
-              Creative Writing
+              تخلیقی تحریر
             </a>
             <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
-                     aria-label="Open submenu"
+                     aria-label="ذیلی مینو کھولیں"
                      aria-expanded="false"
                      style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
           </div>
           <ul class="submenu" style="display:none;">
             
             <li>
-              <a href="/en/creative-writing/fiction-stories/"
+              <a href="/ur/creative-writing/short-stories/"
                  style="color:#FFFFFF;">
-                Fiction & Stories
+                مختصر کہانیاں
               </a>
             </li>
             
             <li>
-              <a href="/en/creative-writing/poetry/"
+              <a href="/ur/creative-writing/poetry/"
                  style="color:#FFFFFF;">
-                Poetry
+                شاعری
               </a>
             </li>
             
             <li>
-              <a href="/en/creative-writing/what-i-saw/"
+              <a href="/ur/creative-writing/reflection/"
                  style="color:#FFFFFF;">
-                What I Saw
+                عکاسی
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/dialogues/"
+                 style="color:#FFFFFF;">
+                مکالمے
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/satire/"
+                 style="color:#FFFFFF;">
+                طنزیہ تحریر
+              </a>
+            </li>
+            
+            <li>
+              <a href="/ur/creative-writing/nonfiction/"
+                 style="color:#FFFFFF;">
+                نان فکشن
               </a>
             </li>
             
@@ -145,45 +166,36 @@
         
         
         <li>
-          <a href="/en/reflections/"
+          <a href="/ur/letters/"
              style="color:#FFFFFF;">
-            Reflections
+            خطوط
           </a>
         </li>
         
         
         
         <li>
-          <a href="/en/letters/"
+          <a href="/ur/diary/"
              style="color:#FFFFFF;">
-            Letters
+            تدریسی ڈائری
           </a>
         </li>
         
         
         
         <li>
-          <a href="/en/diary/"
+          <a href="/ur/events/"
              style="color:#FFFFFF;">
-            Teaching Diary
+            تقریبات
           </a>
         </li>
         
         
         
         <li>
-          <a href="/en/events/"
+          <a href="/ur/search/"
              style="color:#FFFFFF;">
-            Events
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a href="/en/search/"
-             style="color:#FFFFFF;">
-            Search
+            تلاش
           </a>
         </li>
         
@@ -197,13 +209,13 @@
       <!-- Language switcher: swaps /en/ <-> /ur/ in the current URL -->
       <a href="#" onclick="switchLanguage(event)" class="lang-switch"
          style="color:#FFFFFF; border:1px solid #FFFFFF; padding:3px 10px; text-decoration:none; font-size:0.85rem;">
-        UR
+        EN
       </a>
 
       <!-- Dark mode toggle: plain text, no icon -->
       <button onclick="toggleDark()" id="theme-btn"
-              style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-left:6px;">
-        Dark
+              style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-right:6px;">
+        تاریک
       </button>
 
     </div><!-- /.header-controls -->
@@ -292,7 +304,7 @@
     if (btn) {
       var isDark = document.documentElement.classList.contains('dark');
       
-        btn.textContent = isDark ? 'Light' : 'Dark';
+        btn.textContent = isDark ? 'روشن' : 'تاریک';
       
     }
   });
@@ -308,31 +320,31 @@
 
   <h1 class="page-title">
     
-      Fiction & Stories
+      مختصر کہانیاں
     
   </h1>
 
   <div class="page-content">
     
-<p class="collection-intro">Short fiction and imaginative storytelling.</p>
+<p class="collection-intro">تخیل پر مبنی مختصر کہانیاں اور افسانے۔</p>
 
 <div class="card-grid">
   
   
   <div class="content-card">
     <h2 class="card-title">
-      <a href="/en/creative-writing/fiction-stories/the-last-period/">
-        The Last Period
+      <a href="/ur/creative-writing/short-stories/the-last-period/">
+        
       </a>
     </h2>
     <p class="card-date">15 June 2026</p>
     <p class="card-excerpt">
       
-        A short story about a substitute teacher, a restless class, and the last forty minutes of a school day neither of them expected to remember.
+        
       
     </p>
-    <a href="/en/creative-writing/fiction-stories/the-last-period/" class="card-read-more">
-      Read more &rarr;
+    <a href="/ur/creative-writing/short-stories/the-last-period/" class="card-read-more">
+      مزید پڑھیں &rarr;
     </a>
   </div>
   
@@ -355,57 +367,53 @@
 
     <!-- Row 1: Return to ... main section links -->
     <p class="footer-row">
-      <span class="footer-label">Return to:</span>
+      <span class="footer-label">واپس جائیں:</span>
       
       
-        <a href="/en/" style="color:#FFFFFF;">
-          Home
+        <a href="/ur/" style="color:#FFFFFF;">
+          مرکزی صفحہ
         </a> · 
       
-        <a href="/en/articles/" style="color:#FFFFFF;">
-          Articles
+        <a href="/ur/articles/" style="color:#FFFFFF;">
+          مضامین
         </a> · 
       
-        <a href="/en/reviews/" style="color:#FFFFFF;">
-          Reviews
+        <a href="/ur/reviews/" style="color:#FFFFFF;">
+          جائزے
         </a> · 
       
-        <a href="/en/creative-writing/" style="color:#FFFFFF;">
-          Creative Writing
+        <a href="/ur/creative-writing/" style="color:#FFFFFF;">
+          تخلیقی تحریر
         </a> · 
       
-        <a href="/en/reflections/" style="color:#FFFFFF;">
-          Reflections
+        <a href="/ur/letters/" style="color:#FFFFFF;">
+          خطوط
         </a> · 
       
-        <a href="/en/letters/" style="color:#FFFFFF;">
-          Letters
+        <a href="/ur/diary/" style="color:#FFFFFF;">
+          تدریسی ڈائری
         </a> · 
       
-        <a href="/en/diary/" style="color:#FFFFFF;">
-          Teaching Diary
-        </a> · 
-      
-        <a href="/en/events/" style="color:#FFFFFF;">
-          Events
+        <a href="/ur/events/" style="color:#FFFFFF;">
+          تقریبات
         </a>
       
     </p>
 
     <!-- Row 2: Submission page / Guidelines -->
     <p class="footer-row">
-      <a href="/en/submission/" style="color:#FFFFFF;">
-        Submission
+      <a href="/ur/submission/" style="color:#FFFFFF;">
+        تحریر جمع کروائیں
       </a>
       &nbsp;&nbsp;
-      <a href="/en/guidelines/" style="color:#FFFFFF;">
-        Guidelines
+      <a href="/ur/guidelines/" style="color:#FFFFFF;">
+        ہدایات
       </a>
     </p>
 
     <!-- Row 3: Social -->
     <p class="footer-row">
-      <span class="footer-label">Follow us:</span>
+      <span class="footer-label">ہمیں فالو کریں:</span>
       <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
       <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
       <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
@@ -414,14 +422,14 @@
 
     <!-- Row 4: Email -->
     <p class="footer-row">
-      <span class="footer-label">Email:</span>
+      <span class="footer-label">ای میل:</span>
       <a href="mailto:kitabomori@gmail.com" style="color:#FFFFFF;">kitabomori@gmail.com</a>
     </p>
 
     <!-- Row 5: Privacy Policy -->
     <p class="footer-row">
-      <a href="/en/privacy/" style="color:#FFFFFF;">
-        Privacy Policy
+      <a href="/ur/privacy/" style="color:#FFFFFF;">
+        رازداری کی پالیسی
       </a>
     </p>
 
@@ -429,7 +437,7 @@
     <p class="footer-copy">
       &copy; 2026 Kitabomori.
       
-        All rights reserved. A volunteer educational publishing initiative.
+        تمام حقوق محفوظ ہیں۔
       
     </p>
 
