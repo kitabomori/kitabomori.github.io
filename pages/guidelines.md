@@ -2,8 +2,8 @@
 layout: page
 title_en: "Submission Guidelines"
 title_ur: "اشاعت کی ہدایات"
-description_en: "How to submit your writing to Kitabomori — Articles, Reviews, Letters, Reflections, Fiction & Stories, Poetry, and What I Saw."
-description_ur: "کتابومری میں اپنی تحریر جمع کروانے کا مکمل طریقہ — مضامین، جائزے، خطوط، عکاسی، افسانہ اور کہانیاں، شاعری، اور میں نے دیکھا۔"
+description_en: "How to submit your writing to Kitabomori — Articles, Reviews, Letters, Short Stories, Poetry, Reflection, Dialogues, Satire, and Nonfiction."
+description_ur: "کتابومری میں اپنی تحریر جمع کروانے کا مکمل طریقہ — مضامین، جائزے، خطوط، مختصر کہانیاں، شاعری، عکاسی، مکالمے، طنزیہ تحریر، اور نان فکشن۔"
 permalink: /guidelines/
 ---
 
@@ -63,7 +63,33 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن د: عکاسی
+### سیکشن د: مختصر کہانیاں
+
+**طوالت:** ۸۰۰ سے ۴۰۰۰ الفاظ
+
+**عمل:**
+1. ایک وقت میں صرف ایک کہانی جمع کروائیں۔
+2. مکمل مسودہ، دو سے تین سطروں کی سوانح کے ساتھ ای میل کریں۔
+3. چار ہفتوں کے اندر جواب دیا جائے گا۔
+
+**حوالہ:** The London Magazine کی افسانوی تحریروں کی ہدایات (زیادہ سے زیادہ ۴۰۰۰ الفاظ) سے متاثر۔
+
+---
+
+### سیکشن ہ: شاعری
+
+**طوالت:** ہر نظم زیادہ سے زیادہ ۵۰ سطریں؛ ایک جمع کرانے میں زیادہ سے زیادہ ۵ نظمیں
+
+**عمل:**
+1. تمام نظمیں ایک ہی فائل میں جمع کروائیں۔
+2. دو سے تین سطروں کی سوانح شامل کریں۔
+3. چار ہفتوں کے اندر جواب دیا جائے گا۔
+
+**حوالہ:** Poetry Foundation اور The London Magazine کی شاعری جمع کروانے کی عام ہدایات سے متاثر۔
+
+---
+
+### سیکشن و: عکاسی
 
 **طوالت:** ۶۰۰ سے ۱۲۰۰ الفاظ
 
@@ -77,41 +103,40 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن ہ: افسانہ اور کہانیاں
+### سیکشن ز: مکالمے
 
-**طوالت:** ۸۰۰ سے ۴۰۰۰ الفاظ
+**طوالت:** ۴۰۰ سے ۱۲۰۰ الفاظ
 
-**عمل:**
-1. ایک وقت میں صرف ایک کہانی جمع کروائیں۔
-2. مکمل مسودہ، دو سے تین سطروں کی سوانح کے ساتھ ای میل کریں۔
-3. چار ہفتوں کے اندر جواب دیا جائے گا۔
-
-**حوالہ:** The London Magazine کی افسانوی تحریروں کی ہدایات (زیادہ سے زیادہ ۴۰۰۰ الفاظ) سے متاثر۔
-
----
-
-### سیکشن و: شاعری
-
-**طوالت:** ہر نظم زیادہ سے زیادہ ۵۰ سطریں؛ ایک جمع کرانے میں زیادہ سے زیادہ ۵ نظمیں
+**مقصد:** دو یا زیادہ آوازوں کے درمیان لکھا گیا مکالمہ (حقیقی یا تخیلاتی) جو کسی تعلیمی یا ذاتی سوال کو ڈرامائی انداز میں پیش کرے۔ روایتی مضمون کی بجائے یہاں زور کردار کی الگ الگ آوازوں اور ان کے درمیان تناؤ پر ہے۔
 
 **عمل:**
-1. تمام نظمیں ایک ہی فائل میں جمع کروائیں۔
+1. مکمل مسودہ اسکرپٹ کی صورت میں (ہر بولنے والے کا نام واضح طور پر لکھ کر) ای میل کریں۔
 2. دو سے تین سطروں کی سوانح شامل کریں۔
-3. چار ہفتوں کے اندر جواب دیا جائے گا۔
-
-**حوالہ:** Poetry Foundation اور The London Magazine کی شاعری جمع کروانے کی عام ہدایات سے متاثر۔
+3. تین ہفتوں کے اندر جواب دیا جائے گا۔
 
 ---
 
-### سیکشن ز: میں نے دیکھا
+### سیکشن ح: طنزیہ تحریر
 
-**طوالت:** ۳۰۰ سے ۸۰۰ الفاظ
+**طوالت:** ۵۰۰ سے ۱۲۰۰ الفاظ
 
-**مقصد:** روزمرہ زندگی کے کسی مشاہدے پر مبنی مختصر، حسی تفصیلات سے بھرپور فیلڈ نوٹ — ایک منظر، ایک لمحہ، یا ایک شخص، بغیر زیادہ تجزیے کے۔
+**مقصد:** تعلیم، پالیسی یا معاشرتی رویوں پر طنز، مبالغہ آرائی یا لطیف ظرافت کے ذریعے تبصرہ۔ مقصد تضحیک نہیں بلکہ کسی حقیقی مسئلے کی نشاندہی ہے۔ کسی حقیقی، نامزد شخص کو ہدف نہ بنایا جائے۔
 
 **عمل:**
 1. مکمل مسودہ ای میل کریں۔
-2. دو ہفتوں کے اندر جواب دیا جائے گا۔
+2. تین ہفتوں کے اندر جواب دیا جائے گا۔
+
+---
+
+### سیکشن ط: نان فکشن
+
+**طوالت:** ۸۰۰ سے ۲۰۰۰ الفاظ
+
+**مقصد:** حقیقی تجربے، تحقیق یا مشاہدے پر مبنی بیانیہ مضمون، جو معیاری آرٹیکل سے زیادہ ادبی اور کہانی نما انداز میں لکھا گیا ہو۔
+
+**عمل:**
+1. مکمل مسودہ، دو سے تین سطروں کی سوانح کے ساتھ ای میل کریں۔
+2. تین ہفتوں کے اندر جواب دیا جائے گا۔
 
 ---
 
@@ -190,7 +215,33 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section D: Reflections
+### Section D: Short Stories
+
+**Length:** 800–4,000 words
+
+**Process:**
+1. Submit one story at a time.
+2. Email the full draft along with a short, 2–3 sentence author bio.
+3. You will receive a response within four weeks.
+
+**Reference style:** Guided by common literary-magazine norms such as *The London Magazine's* fiction guidelines (stories up to roughly 4,000 words).
+
+---
+
+### Section E: Poetry
+
+**Length:** Up to 50 lines per poem; up to 5 poems per submission
+
+**Process:**
+1. Submit all poems together in a single file.
+2. Include a short, 2–3 sentence author bio.
+3. You will receive a response within four weeks.
+
+**Reference style:** Informed by common practice at publications such as *Poetry* (Poetry Foundation) and *The London Magazine*, which typically accept a small batch of poems (often up to five) per submission.
+
+---
+
+### Section F: Reflection
 
 **Length:** 600–1,200 words
 
@@ -204,41 +255,40 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section E: Fiction & Stories
+### Section G: Dialogues
 
-**Length:** 800–4,000 words
+**Length:** 400–1,200 words
 
-**Process:**
-1. Submit one story at a time.
-2. Email the full draft along with a short, 2–3 sentence author bio.
-3. You will receive a response within four weeks.
-
-**Reference style:** Guided by common literary-magazine norms such as *The London Magazine's* fiction guidelines (stories up to roughly 4,000 words).
-
----
-
-### Section F: Poetry
-
-**Length:** Up to 50 lines per poem; up to 5 poems per submission
+**Purpose:** A conversation between two or more voices — real or imagined — that dramatizes an educational or personal question. The emphasis is on distinct character voices and the tension between them, rather than a conventional essay structure.
 
 **Process:**
-1. Submit all poems together in a single file.
+1. Email the full draft formatted as a script, with each speaker clearly labeled.
 2. Include a short, 2–3 sentence author bio.
-3. You will receive a response within four weeks.
-
-**Reference style:** Informed by common practice at publications such as *Poetry* (Poetry Foundation) and *The London Magazine*, which typically accept a small batch of poems (often up to five) per submission.
+3. You will receive a response within three weeks.
 
 ---
 
-### Section G: What I Saw
+### Section H: Satire
 
-**Length:** 300–800 words
+**Length:** 500–1,200 words
 
-**Purpose:** A short, sensory field note built around a single observation from everyday life — a scene, a moment, or a person — told with a light touch and minimal analysis.
+**Purpose:** Commentary on education, policy, or social behavior delivered through exaggeration, irony, or wit. The target should be a real issue, not a real, named individual.
 
 **Process:**
 1. Email the full draft.
-2. You will receive a response within two weeks.
+2. You will receive a response within three weeks.
+
+---
+
+### Section I: Nonfiction
+
+**Length:** 800–2,000 words
+
+**Purpose:** A narrative essay grounded in real experience, research, or observation, written with more literary shape and storytelling craft than a standard article.
+
+**Process:**
+1. Email the full draft along with a short, 2–3 sentence author bio.
+2. You will receive a response within three weeks.
 
 ---
 

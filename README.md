@@ -24,7 +24,7 @@ A bilingual (English/Urdu) educational publishing website built with Jekyll, Tai
 
 ## What this site is
 
-Kitabomori publishes ten types of content:
+Kitabomori publishes twelve types of content:
 
 | Type | Folder | Purpose |
 |------|--------|---------|
@@ -32,14 +32,16 @@ Kitabomori publishes ten types of content:
 | Reviews | `_collections/_reviews/` | Critical reviews of education-related books |
 | Letters | `_collections/_letters/` | Personal letters from educators and students |
 | Teaching Diary | `_collections/_diary/` | Teaching notes, assignments, strategies, lesson ideas, reflections, and resources |
-| Reflections | `_collections/_reflections/` | Short personal observations |
-| Fiction & Stories | `_collections/_fiction_stories/` | Short fiction, under the Creative Writing menu |
+| Short Stories | `_collections/_short_stories/` | Short fiction, under the Creative Writing menu |
 | Poetry | `_collections/_poetry/` | Poems, under the Creative Writing menu |
-| What I Saw | `_collections/_what_i_saw/` | Short field notes, under the Creative Writing menu |
+| Reflection | `_collections/_reflections/` | Short personal observations, under the Creative Writing menu |
+| Dialogues | `_collections/_dialogues/` | Conversations, real or imagined, under the Creative Writing menu |
+| Satire | `_collections/_satire/` | Wit and exaggeration turned toward education and society, under the Creative Writing menu |
+| Nonfiction | `_collections/_nonfiction/` | Narrative essays grounded in real experience, under the Creative Writing menu |
 | Events | `_collections/_events/` | Reading circles, workshops, and other events |
 | Calls | `_collections/_calls/` | Announcements and calls for submissions (not shown in nav/ticker) |
 
-Fiction & Stories, Poetry, and What I Saw sit together under a **Creative Writing** dropdown in the main navigation.
+Short Stories, Poetry, Reflection, Dialogues, Satire, and Nonfiction sit together under a **Creative Writing** dropdown in the main navigation.
 
 ---
 
@@ -220,10 +222,12 @@ kitabomori.github.io/
 │   ├── _reviews/
 │   ├── _letters/                  ← Sample: letter-to-teacher.md
 │   ├── _diary/                    ← Teaching Diary entries
-│   ├── _reflections/
-│   ├── _fiction_stories/
-│   ├── _poetry/
-│   ├── _what_i_saw/
+│   ├── _short_stories/            ← Creative Writing
+│   ├── _poetry/                   ← Creative Writing
+│   ├── _reflections/              ← Creative Writing
+│   ├── _dialogues/                ← Creative Writing
+│   ├── _satire/                   ← Creative Writing
+│   ├── _nonfiction/               ← Creative Writing
 │   ├── _events/
 │   └── _calls/
 ├── pages/                         ← Static pages
@@ -233,11 +237,13 @@ kitabomori.github.io/
 │   ├── reviews.md
 │   ├── book-reviews-redirect.md   ← Redirects old /book-reviews/ URL to /reviews/
 │   ├── creative-writing.md        ← Creative Writing landing page
-│   ├── fiction-stories.md
+│   ├── short-stories.md
 │   ├── poetry.md
-│   ├── what-i-saw.md
+│   ├── reflection.md
+│   ├── dialogues.md
+│   ├── satire.md
+│   ├── nonfiction.md
 │   ├── events.md
-│   ├── reflections.md
 │   ├── articles.md
 │   ├── letters.md
 │   ├── diary.md

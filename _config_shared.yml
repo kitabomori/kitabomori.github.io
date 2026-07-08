@@ -27,19 +27,26 @@ collections:
     permalink: /reviews/:name/
   reflections:
     output: true
-    permalink: /:collection/:name/
+    permalink: /creative-writing/reflection/:name/
   calls:
     output: true
     permalink: /:collection/:name/
-  fiction_stories:
+  short_stories:
     output: true
-    permalink: /creative-writing/fiction-stories/:name/
+    permalink: /creative-writing/short-stories/:name/
   poetry:
     output: true
     permalink: /creative-writing/poetry/:name/
-  what_i_saw:
+  dialogues:
     output: true
-    permalink: /creative-writing/what-i-saw/:name/
+    permalink: /creative-writing/dialogues/:name/
+  satire:
+    output: true
+    permalink: /creative-writing/satire/:name/
+  nonfiction:
+    output: true
+    permalink: /creative-writing/nonfiction/:name/
+
   events:
     output: true
     permalink: /events/:name/
@@ -76,7 +83,7 @@ defaults:
       layout: post
   - scope:
       path: ""
-      type: fiction_stories
+      type: short_stories
     values:
       layout: post
   - scope:
@@ -86,9 +93,20 @@ defaults:
       layout: post
   - scope:
       path: ""
-      type: what_i_saw
+      type: dialogues
     values:
       layout: post
+  - scope:
+      path: ""
+      type: satire
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: nonfiction
+    values:
+      layout: post
+
   - scope:
       path: ""
       type: events

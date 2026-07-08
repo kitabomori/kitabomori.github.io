@@ -10,7 +10,6 @@ layout: post
 #   Calls:               _collections/_calls/your-post-name.md
 #   Fiction & Stories:   _collections/_fiction_stories/your-post-name.md
 #   Poetry:              _collections/_poetry/your-post-name.md
-#   What I Saw:          _collections/_what_i_saw/your-post-name.md
 #   Events:              _collections/_events/your-post-name.md
 #
 # Rename the file (no spaces – use hyphens).

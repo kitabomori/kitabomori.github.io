@@ -18,7 +18,7 @@ permalink: /
     <h1 class="home-heading">کتابومری میں خوش آمدید</h1>
     <p class="home-tagline">تنقیدی مطالعے اور تحریر کے کلچر کو فروغ دیتے ہوئے معاشرے میں تبدیلی لانا۔</p>
     <p>
-      شینا زبان میں "کتاب" کا مطلب ہے کتاب، اور "موری" کا مطلب ہے گفتگو۔ اسی لیے یہ پہل مطالعے اور تحریر کو فروغ دیتی ہے اور تعلیم، ثقافت، زبان اور انسانی تجربے سے جڑی ہر بات پر گفتگو کو جنم دیتی ہے۔ اس کا مقصد سمجھ بوجھ کے لیے فکر انگیز مکالمے کی حوصلہ افزائی کرنا ہے۔ یہاں آپ کو مضامین، جائزے، عکاسی، تخلیقی تحریر اور خطوط ملیں گے۔
+      شینا زبان میں "کتاب" کا مطلب ہے کتاب، اور "موری" کا مطلب ہے گفتگو۔ اسی لیے یہ پہل مطالعے اور تحریر کو فروغ دیتی ہے اور تعلیم، ثقافت، زبان اور انسانی تجربے سے جڑی ہر بات پر گفتگو کو جنم دیتی ہے۔ اس کا مقصد سمجھ بوجھ کے لیے فکر انگیز مکالمے کی حوصلہ افزائی کرنا ہے۔ یہاں آپ کو مضامین، جائزے، تخلیقی تحریر اور خطوط ملیں گے۔
     </p>
     <p>
       کتابومری ایک رضاکارانہ تعلیمی اشاعتی پلیٹ فارم ہے جو محققین، طلباء، اساتذہ، پالیسی سازوں اور عام قارئین کے لیے بنایا گیا ہے۔ اگر آپ اپنی تحریر شیئر کرنا چاہتے ہیں تو ہماری <span class="highlight"><a href="{{ site.baseurl }}/ur/guidelines/">ہدایات</a></span> پڑھیں اور <span class="highlight"><a href="{{ site.baseurl }}/ur/submission/">تحریر جمع کروائیں</a></span>۔
@@ -40,12 +40,7 @@ permalink: /
 
       <div class="section-card">
         <h2><a href="{{ site.baseurl }}/ur/creative-writing/">تخلیقی تحریر</a></h2>
-        <p>افسانہ اور کہانیاں، شاعری، اور میں نے دیکھا۔</p>
-      </div>
-
-      <div class="section-card">
-        <h2><a href="{{ site.baseurl }}/ur/reflections/">عکاسی</a></h2>
-        <p>مطالعے اور تعلیمی سفر پر ذاتی مشاہدات۔</p>
+        <p>مختصر کہانیاں، شاعری، عکاسی، مکالمے، طنزیہ تحریر، اور نان فکشن۔</p>
       </div>
 
       <div class="section-card">
@@ -72,7 +67,7 @@ permalink: /
     <h1 class="home-heading">Welcome to Kitabomori</h1>
     <p class="home-tagline">Promotes a culture of critical reading and writing to transform society.</p>
     <p>
-      In Shina, "kitab" means "book," and "mori" means "conversation." Hence, this initiative promotes reading and writing and ignites conversation about education, culture, language, and everything that relates to human experience. It aims to encourage thoughtful discussion for understanding. Here, you will find articles, reviews, reflections, creative writing, and letters.
+      In Shina, "kitab" means "book," and "mori" means "conversation." Hence, this initiative promotes reading and writing and ignites conversation about education, culture, language, and everything that relates to human experience. It aims to encourage thoughtful discussion for understanding. Here, you will find articles, reviews, creative writing, and letters.
     </p>
     <p>
       Kitabomori is a volunteer educational publishing platform created for researchers, students, teachers, policymakers, and the general public. If you would like to contribute your writing, please read our <span class="highlight"><a href="{{ site.baseurl }}/en/guidelines/">submission guidelines</a></span> and <span class="highlight"><a href="{{ site.baseurl }}/en/submission/">submit your work</a></span>.
@@ -94,12 +89,7 @@ permalink: /
 
       <div class="section-card">
         <h2><a href="{{ site.baseurl }}/en/creative-writing/">Creative Writing</a></h2>
-        <p>Fiction & Stories, Poetry, and What I Saw.</p>
-      </div>
-
-      <div class="section-card">
-        <h2><a href="{{ site.baseurl }}/en/reflections/">Reflections</a></h2>
-        <p>Personal observations on reading and the educational journey.</p>
+        <p>Short Stories, Poetry, Reflection, Dialogues, Satire, and Nonfiction.</p>
       </div>
 
       <div class="section-card">

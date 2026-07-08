@@ -37,6 +37,6 @@ We particularly welcome voices from:
 - Students who want to write about their own educational experiences
 - Policymakers engaged with curriculum or teacher education
 
-We accept articles, letters, reviews, reflections, and creative writing (fiction, poetry, and What I Saw). Please read our [Guidelines](/en/guidelines/) before submitting, or [submit your writing](/en/submission/).
+We accept articles, letters, reviews, and creative writing (short stories, poetry, reflection, dialogues, satire, and nonfiction). Please read our [Guidelines](/en/guidelines/) before submitting, or [submit your writing](/en/submission/).
 
 {% endif %}

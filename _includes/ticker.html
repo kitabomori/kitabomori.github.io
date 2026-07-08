@@ -1,9 +1,9 @@
 <!-- ============================================================
      ticker.html – scrolling news ticker for the Home page only.
      Shows the 5 most recent items across Articles, Reviews,
-     Creative Writing (Fiction & Stories, Poetry, What I Saw),
-     Reflections, Letters, and the Teaching Diary — sorted by
-     date (newest first).
+     Creative Writing (Short Stories, Poetry, Reflection, Dialogues,
+     Satire, Nonfiction), Letters, and the Teaching
+     Diary — sorted by date (newest first).
      "Calls" (calls for submissions) are intentionally excluded.
 
      COLOURS:
@@ -21,10 +21,12 @@
 {% assign ticker_items = "" | split: "" %}
 {% assign ticker_items = ticker_items | concat: site.articles %}
 {% assign ticker_items = ticker_items | concat: site.reviews %}
-{% assign ticker_items = ticker_items | concat: site.fiction_stories %}
+{% assign ticker_items = ticker_items | concat: site.short_stories %}
 {% assign ticker_items = ticker_items | concat: site.poetry %}
-{% assign ticker_items = ticker_items | concat: site.what_i_saw %}
 {% assign ticker_items = ticker_items | concat: site.reflections %}
+{% assign ticker_items = ticker_items | concat: site.dialogues %}
+{% assign ticker_items = ticker_items | concat: site.satire %}
+{% assign ticker_items = ticker_items | concat: site.nonfiction %}
 {% assign ticker_items = ticker_items | concat: site.letters %}
 {% assign ticker_items = ticker_items | concat: site.diary %}
 
@@ -63,18 +65,24 @@
           {% elsif site.reviews contains item %}
             {% assign item_type_en = "Review" %}
             {% assign item_type_ur = "جائزہ" %}
-          {% elsif site.fiction_stories contains item %}
-            {% assign item_type_en = "Fiction" %}
-            {% assign item_type_ur = "افسانہ" %}
+          {% elsif site.short_stories contains item %}
+            {% assign item_type_en = "Short Story" %}
+            {% assign item_type_ur = "مختصر کہانی" %}
           {% elsif site.poetry contains item %}
             {% assign item_type_en = "Poetry" %}
             {% assign item_type_ur = "شاعری" %}
-          {% elsif site.what_i_saw contains item %}
-            {% assign item_type_en = "What I Saw" %}
-            {% assign item_type_ur = "میں نے دیکھا" %}
           {% elsif site.reflections contains item %}
             {% assign item_type_en = "Reflection" %}
             {% assign item_type_ur = "عکاسی" %}
+          {% elsif site.dialogues contains item %}
+            {% assign item_type_en = "Dialogue" %}
+            {% assign item_type_ur = "مکالمہ" %}
+          {% elsif site.satire contains item %}
+            {% assign item_type_en = "Satire" %}
+            {% assign item_type_ur = "طنزیہ تحریر" %}
+          {% elsif site.nonfiction contains item %}
+            {% assign item_type_en = "Nonfiction" %}
+            {% assign item_type_ur = "نان فکشن" %}
           {% elsif site.letters contains item %}
             {% assign item_type_en = "Letter" %}
             {% assign item_type_ur = "خط" %}

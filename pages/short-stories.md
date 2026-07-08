@@ -1,10 +1,10 @@
 ---
 layout: page
-title_en: "Fiction & Stories"
-title_ur: "افسانہ اور کہانیاں"
+title_en: "Short Stories"
+title_ur: "مختصر کہانیاں"
 description_en: "Short fiction and imaginative storytelling from the Kitabomori community."
 description_ur: "کتابومری کمیونٹی کی جانب سے مختصر کہانیاں اور تخیلاتی افسانے۔"
-permalink: /creative-writing/fiction-stories/
+permalink: /creative-writing/short-stories/
 ---
 
 {% if site.lang == 'ur' %}
@@ -14,7 +14,7 @@ permalink: /creative-writing/fiction-stories/
 {% endif %}
 
 <div class="card-grid">
-  {% assign sorted_items = site.fiction_stories | sort: "date" | reverse %}
+  {% assign sorted_items = site.short_stories | sort: "date" | reverse %}
   {% for item in sorted_items %}
   <div class="content-card">
     <h2 class="card-title">
