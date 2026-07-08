@@ -15,7 +15,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن الف: مضامین (Education Week طرز)
+###  الف: مضامین (Education Week طرز)
 
 **طوالت:** ۷۰۰ سے ۱۰۰۰ الفاظ
 
@@ -28,7 +28,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن ب: جائزے
+###  ب: جائزے
 
 **طوالت:** ۵۰۰ سے ۸۰۰ الفاظ
 
@@ -51,7 +51,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن ج: خطوط
+###  ج: خطوط
 
 **طوالت:** ۴۰۰ سے ۹۰۰ الفاظ
 
@@ -64,7 +64,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن د: مختصر کہانیاں
+###  د: مختصر کہانیاں
 
 **طوالت:** ۸۰۰ سے ۴۰۰۰ الفاظ
 
@@ -78,7 +78,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن ہ: شاعری
+###  ہ: شاعری
 
 **طوالت:** ہر نظم زیادہ سے زیادہ ۵۰ سطریں؛ ایک جمع کرانے میں زیادہ سے زیادہ ۵ نظمیں
 
@@ -93,7 +93,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن و: عکاسی
+###  و: عکاسی
 
 **طوالت:** ۶۰۰ سے ۱۲۰۰ الفاظ
 
@@ -107,7 +107,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن ز: مکالمے
+###  ز: مکالمے
 
 **طوالت:** ۴۰۰ سے ۱۲۰۰ الفاظ
 
@@ -120,7 +120,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن ح: طنزیہ تحریر
+###  ح: طنزیہ تحریر
 
 **طوالت:** ۵۰۰ سے ۱۲۰۰ الفاظ
 
@@ -132,7 +132,7 @@ permalink: /guidelines/
 
 ---
 
-### سیکشن ط: نان فکشن
+###  ط: نان فکشن
 
 **طوالت:** ۸۰۰ سے ۲۰۰۰ الفاظ
 
@@ -171,7 +171,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section A: Articles (Education Week Style)
+###  A: Articles (Education Week Style)
 
 **Length:** 700–1,000 words
 
@@ -185,7 +185,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section B: Reviews
+###  B: Reviews
 
 **Length:** 500–800 words
 
@@ -208,7 +208,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section C: Letters
+###  C: Letters
 
 **Length:** 400–900 words
 
@@ -221,7 +221,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section D: Short Stories
+###  D: Short Stories
 
 **Length:** 800–4,000 words
 
@@ -236,7 +236,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section E: Poetry
+###  E: Poetry
 
 **Length:** Up to 50 lines per poem; up to 5 poems per submission
 
@@ -251,7 +251,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section F: Reflection
+###  F: Reflection
 
 **Length:** 600–1,200 words
 
@@ -265,7 +265,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section G: Dialogues
+###  G: Dialogues
 
 **Length:** 400–1,200 words
 
@@ -278,7 +278,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section H: Satire
+###  H: Satire
 
 **Length:** 500–1,200 words
 
@@ -290,7 +290,7 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 
 ---
 
-### Section I: Nonfiction
+###  I: Nonfiction
 
 **Length:** 800–2,000 words
 
@@ -322,3 +322,5 @@ Welcome to Kitabomori. Below you will find complete guidelines for each type of 
 **To submit:** Visit our [Submission page]({{ site.baseurl }}/en/submission/) or email [kitabomori@gmail.com](mailto:kitabomori@gmail.com).
 
 {% endif %}
+
+
