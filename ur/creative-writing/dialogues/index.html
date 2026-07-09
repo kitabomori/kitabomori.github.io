@@ -53,6 +53,192 @@
 <body style="font-family: 'Noto Nastaliq Urdu', serif;">
 
   <!-- ============================================================
+     icons-sprite.svg – hidden sprite sheet of decorative line-art
+     icons, one per section. Referenced elsewhere via:
+       <svg class="decor-svg"><use href="#icon-NAME"></use></svg>
+     Included once, near the top of <body>, in base.html.
+     All icons share stroke="currentColor" so they inherit colour
+     (brand teal in light mode) via CSS, and stay crisp at any size.
+     ============================================================ -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute; width:0; height:0; overflow:hidden;" aria-hidden="true">
+  <defs>
+
+    <!-- Open book with a pen resting on it — used on Home -->
+    <symbol id="icon-open-book-pen" viewBox="0 0 120 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M60 20 C50 12 32 10 16 14 V68 C32 64 50 66 60 74"/>
+        <path d="M60 20 C70 12 88 10 104 14 V68 C88 64 70 66 60 74"/>
+        <path d="M60 20 V74"/>
+        <path d="M24 26 H50 M24 36 H50 M24 46 H48" opacity="0.55"/>
+        <path d="M70 26 H96 M70 36 H96 M70 46 H94" opacity="0.55"/>
+        <path d="M38 6 L100 32" stroke-width="2.75"/>
+        <path d="M100 32 L106 26 L112 32 L106 40 Z" fill="currentColor" stroke="none" opacity="0.9"/>
+        <circle cx="38" cy="6" r="2.6" fill="currentColor" stroke="none"/>
+      </g>
+    </symbol>
+
+    <!-- Papers / document stack — Articles -->
+    <symbol id="icon-papers" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="18" y="16" width="46" height="60" rx="3" opacity="0.45"/>
+        <rect x="26" y="10" width="46" height="60" rx="3"/>
+        <path d="M34 24 H64 M34 34 H64 M34 44 H58 M34 54 H50"/>
+      </g>
+    </symbol>
+
+    <!-- Quill with ink drop — Poetry -->
+    <symbol id="icon-quill" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M64 12 C48 20 34 40 26 66 C40 60 58 48 68 30 C74 20 72 12 64 12 Z"/>
+        <path d="M64 12 C58 22 48 40 26 66" opacity="0.5"/>
+        <path d="M26 66 L16 78"/>
+        <circle cx="70" cy="70" r="5" opacity="0.6"/>
+      </g>
+    </symbol>
+
+    <!-- Envelope with wax-seal-style dot — Letters -->
+    <symbol id="icon-letter" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="12" y="24" width="66" height="46" rx="4"/>
+        <path d="M12 28 L45 54 L78 28"/>
+        <circle cx="45" cy="44" r="7" opacity="0.6"/>
+      </g>
+    </symbol>
+
+    <!-- Open book — Short Stories -->
+    <symbol id="icon-open-book" viewBox="0 0 100 80">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 16 C40 9 22 7 8 11 V62 C22 58 40 60 50 67"/>
+        <path d="M50 16 C60 9 78 7 92 11 V62 C78 58 60 60 50 67"/>
+        <path d="M50 16 V67"/>
+        <path d="M16 22 H42 M16 32 H42 M16 42 H40" opacity="0.55"/>
+        <path d="M58 22 H84 M58 32 H84 M58 42 H82" opacity="0.55"/>
+      </g>
+    </symbol>
+
+    <!-- Stack of books — Nonfiction -->
+    <symbol id="icon-book-stack" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="14" y="58" width="62" height="12" rx="2"/>
+        <rect x="20" y="44" width="50" height="12" rx="2"/>
+        <rect x="16" y="30" width="58" height="12" rx="2"/>
+        <path d="M45 30 V16 C50 11 60 11 65 16 V26" opacity="0.6"/>
+      </g>
+    </symbol>
+
+    <!-- Open book with a star — Reviews -->
+    <symbol id="icon-book-star" viewBox="0 0 100 80">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 20 C40 13 22 11 8 15 V60 C22 56 40 58 50 65"/>
+        <path d="M50 20 C60 13 78 11 92 15 V60 C78 56 60 58 50 65"/>
+        <path d="M50 20 V65"/>
+        <path d="M50 6 L53.5 13 L61 14 L55.5 19 L57 26.5 L50 22.5 L43 26.5 L44.5 19 L39 14 L46.5 13 Z" fill="currentColor" stroke="none" opacity="0.85"/>
+      </g>
+    </symbol>
+
+    <!-- Calendar with a small book — Events -->
+    <symbol id="icon-calendar-book" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="12" y="16" width="52" height="46" rx="4"/>
+        <path d="M12 28 H64"/>
+        <path d="M24 10 V22 M52 10 V22"/>
+        <path d="M22 40 H36 M22 50 H36" opacity="0.55"/>
+        <path d="M66 46 C60 42 50 41 44 43 V70 C50 68 60 69 66 73 C72 69 82 68 88 70 V43 C82 41 72 42 66 46 Z" opacity="0.85"/>
+      </g>
+    </symbol>
+
+    <!-- Notebook with pen — Teaching Diary -->
+    <symbol id="icon-journal" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="16" y="10" width="50" height="68" rx="4"/>
+        <path d="M16 20 H10 M16 34 H10 M16 48 H10 M16 62 H10" opacity="0.5"/>
+        <path d="M26 26 H56 M26 36 H56 M26 46 H48"/>
+        <path d="M52 58 L74 36 L80 42 L58 64 L50 66 Z" opacity="0.9"/>
+      </g>
+    </symbol>
+
+    <!-- Two speech bubbles — Dialogues -->
+    <symbol id="icon-dialogue" viewBox="0 0 90 80">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10 14 H54 C57 14 59 16 59 19 V38 C59 41 57 43 54 43 H30 L18 52 V43 H10 C7 43 5 41 5 38 V19 C5 16 7 14 10 14 Z" opacity="0.55"/>
+        <path d="M36 30 H80 C83 30 85 32 85 35 V54 C85 57 83 59 80 59 H70 V68 L58 59 H36 C33 59 31 57 31 54 V35 C31 32 33 30 36 30 Z"/>
+      </g>
+    </symbol>
+
+    <!-- Theatre masks — Satire -->
+    <symbol id="icon-masks" viewBox="0 0 90 80">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 20 C12 12 20 8 28 8 C36 8 44 12 44 20 C44 32 36 44 28 44 C20 44 12 32 12 20 Z" opacity="0.55"/>
+        <path d="M21 18 h2 M35 18 h2" stroke-width="3"/>
+        <path d="M21 30 C24 26 32 26 35 30" opacity="0.7"/>
+        <path d="M46 34 C46 26 54 22 62 22 C70 22 78 26 78 34 C78 46 70 58 62 58 C54 58 46 46 46 34 Z"/>
+        <path d="M55 32 h2 M69 32 h2" stroke-width="3"/>
+        <path d="M55 46 C58 50 66 50 69 46"/>
+      </g>
+    </symbol>
+
+    <!-- Open book above its own faint mirrored reflection — Reflection -->
+    <symbol id="icon-mirror-book" viewBox="0 0 100 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 18 C42 12 26 10 14 14 V44 C26 40 42 42 50 48"/>
+        <path d="M50 18 C58 12 74 10 86 14 V44 C74 40 58 42 50 48"/>
+        <path d="M50 18 V48"/>
+        <g opacity="0.3" transform="translate(0,96) scale(1,-1)">
+          <path d="M50 18 C42 12 26 10 14 14 V44 C26 40 42 42 50 48"/>
+          <path d="M50 18 C58 12 74 10 86 14 V44 C74 40 58 42 50 48"/>
+          <path d="M50 18 V48"/>
+        </g>
+        <path d="M10 62 H90" opacity="0.35" stroke-dasharray="1 5"/>
+      </g>
+    </symbol>
+
+    <!-- Pen nib with ink swirl — Creative Writing hub -->
+    <symbol id="icon-pen-nib" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 8 L66 40 L45 76 L24 40 Z"/>
+        <path d="M45 22 V60"/>
+        <path d="M45 76 L38 88 M45 76 L52 88" opacity="0.6"/>
+        <path d="M14 66 C22 60 30 60 36 64" opacity="0.55"/>
+      </g>
+    </symbol>
+
+    <!-- Checklist on paper — Guidelines -->
+    <symbol id="icon-checklist" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="16" y="10" width="58" height="70" rx="4"/>
+        <path d="M28 28 L32 32 L40 22" opacity="0.85"/>
+        <path d="M48 28 H62" opacity="0.55"/>
+        <path d="M28 46 L32 50 L40 40" opacity="0.85"/>
+        <path d="M48 46 H62" opacity="0.55"/>
+        <path d="M28 64 L32 68 L40 58" opacity="0.85"/>
+        <path d="M48 64 H62" opacity="0.55"/>
+      </g>
+    </symbol>
+
+    <!-- Folded paper airplane — Submission -->
+    <symbol id="icon-paper-plane" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 46 L82 14 L52 82 L42 54 Z"/>
+        <path d="M42 54 L82 14" opacity="0.55"/>
+        <path d="M8 46 L42 54"/>
+      </g>
+    </symbol>
+
+    <!-- Magnifying glass over a page — Search -->
+    <symbol id="icon-magnifier" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="12" y="10" width="46" height="58" rx="3" opacity="0.5"/>
+        <path d="M20 24 H50 M20 34 H50 M20 44 H42" opacity="0.4"/>
+        <circle cx="56" cy="56" r="18"/>
+        <path d="M69 69 L82 82"/>
+      </g>
+    </symbol>
+
+  </defs>
+</svg>
+
+
+  <!-- ============================================================
      header.html – site-wide header
      Contains: logo/site name, navigation (with one dropdown for
      Creative Writing), language switcher, dark mode toggle.
@@ -320,6 +506,19 @@
      Wraps content in a centred container with page-title heading.
      ============================================================ -->
 <div class="page-container">
+
+  <!-- ============================================================
+     page-decor.html – picks a decorative line-art icon for the
+     current page based on its permalink, and renders it.
+     Included from _layouts/page.html.
+     ============================================================ -->
+
+
+
+<div class="page-decor decor-dialogue" aria-hidden="true">
+  <svg class="decor-svg"><use href="#icon-dialogue"></use></svg>
+</div>
+
 
   <h1 class="page-title">
     

@@ -51,6 +51,90 @@ body {
    CUSTOM COMPONENT STYLES
    ============================================================ */
 
+/* ============================================================
+   DECORATIVE PAGE ICONS
+   Small line-art SVGs (book / pen / papers / etc.) that hint at
+   each page's content. Defined once as symbols in icons-sprite.svg
+   and referenced here via <use>. Pure CSS, no images to load.
+   ============================================================ */
+.page-decor {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+  width: 56px;
+  height: 56px;
+  color: #009F93;
+}
+
+.dark .page-decor {
+  color: #4FD1C5;
+}
+
+.decor-svg,
+.decor-svg-sm {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+  animation: decor-float 4.5s ease-in-out infinite;
+}
+
+/* Smaller icon variant used inside post headers and home cards */
+.page-decor-post {
+  width: 44px;
+  height: 44px;
+}
+
+.card-icon {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto 0.6rem;
+  color: #009F93;
+}
+
+.dark .card-icon {
+  color: #4FD1C5;
+}
+
+/* Larger hero illustration on the home page */
+.page-decor-hero {
+  width: 110px;
+  height: 88px;
+  margin-bottom: 0.5rem;
+}
+
+.page-decor-hero .decor-svg {
+  animation: decor-float 5.5s ease-in-out infinite;
+}
+
+@keyframes decor-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+
+/* Pen / quill icons get a subtle writing-motion wiggle instead of
+   a plain float, since a straight up-down bob looks odd on a nib. */
+.decor-quill .decor-svg,
+.decor-pen-nib .decor-svg {
+  animation: decor-write 3.2s ease-in-out infinite;
+  transform-origin: 70% 85%;
+}
+
+@keyframes decor-write {
+  0%, 100% { transform: rotate(-6deg); }
+  50%      { transform: rotate(6deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .decor-svg,
+  .decor-svg-sm,
+  .page-decor-hero .decor-svg,
+  .decor-quill .decor-svg,
+  .decor-pen-nib .decor-svg {
+    animation: none;
+  }
+}
+
 /* ---- Header ---- */
 .site-header {
   @apply w-full sticky top-0 z-50 shadow-sm;
