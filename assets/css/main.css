@@ -9,6 +9,45 @@
 @tailwind utilities;
 
 /* ============================================================
+   READING-FRIENDLY BASE PALETTE
+   Warm, low-glare tones instead of pure white/black: reduces eye
+   strain on long-form reading. Body copy uses Literata (a serif
+   built for on-screen reading); headings/UI keep the brand teal.
+   ============================================================ */
+:root {
+  --reading-bg: #FBF8F2;      /* warm paper, not stark white */
+  --reading-text: #2B2A26;    /* soft near-black, not pure #000 */
+  --reading-muted: #5C5A54;   /* muted warm grey for meta text */
+}
+
+.dark {
+  --reading-bg: #1B1A17;      /* warm near-black, not cold #111 */
+  --reading-text: #E9E4D8;    /* warm off-white, not stark white */
+  --reading-muted: #B4AFA2;
+}
+
+html {
+  background-color: var(--reading-bg);
+}
+
+body {
+  background-color: var(--reading-bg);
+  color: var(--reading-text);
+}
+
+/* Long-form copy: comfortable size, generous leading, capped
+   measure (line length) — all standard reading-comfort levers. */
+.page-content,
+.post-body {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+}
+
+.post-body p {
+  color: var(--reading-text);
+}
+
+/* ============================================================
    CUSTOM COMPONENT STYLES
    ============================================================ */
 
@@ -450,7 +489,8 @@
 
 /* ---- Dark mode base overrides ---- */
 .dark body {
-  @apply bg-gray-900 text-gray-100;
+  background-color: var(--reading-bg);
+  color: var(--reading-text);
 }
 
 .dark .page-content,
@@ -525,13 +565,13 @@
   border: 1px solid #d9d9d9;
   border-radius: 8px;
   padding: 1.5rem;
-  background: #fff;
+  background: #FFFFFF;
   text-align: center;
 }
 
 .dark .section-card {
-  background: #1f2937;
-  border-color: #374151;
+  background: #242320;
+  border-color: #3E3B34;
 }
 
 /* Card title */
