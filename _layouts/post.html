@@ -23,14 +23,12 @@ layout: base
     {% assign word_count = content | number_of_words %}
     {% assign reading_minutes = word_count | plus: 199 | divided_by: 200 %}
     {% if reading_minutes < 1 %}{% assign reading_minutes = 1 %}{% endif %}
-    <p class="post-date">
-      {{ page.date | date: "%d %B %Y" }}
-      &nbsp;&middot;&nbsp;
-      {% if site.lang == 'ur' %}
-        {{ reading_minutes }} منٹ کا مطالعہ
-      {% else %}
-        {{ reading_minutes }} min read
-      {% endif %}
+    <!-- Reading time, shown as a duration-style badge (e.g. "3:00")
+         rather than repeating the date, which already appears in the
+         byline at the end of the piece. -->
+    <p class="post-date post-reading-time"
+       aria-label="{% if site.lang == 'ur' %}اندازاً مطالعے کا وقت: {{ reading_minutes }} منٹ{% else %}Estimated reading time: {{ reading_minutes }} minutes{% endif %}">
+      {{ reading_minutes }}:00
     </p>
 
     <!-- Audio link (YouTube). Each post/language can set its own link via
@@ -62,12 +60,12 @@ layout: base
   <p class="post-meta-bottom">
     {% if post_author and post_author != "" %}
       {% if site.lang == 'ur' %}
-        تحریر: {{ post_author }} &mdash; {{ page.date | date: "%d %B %Y" }}
+        تحریر: {{ post_author }} &mdash; {% include localized-date.html date=page.date %}
       {% else %}
-        By {{ post_author }} &mdash; {{ page.date | date: "%d %B %Y" }}
+        By {{ post_author }} &mdash; {% include localized-date.html date=page.date %}
       {% endif %}
     {% else %}
-      {{ page.date | date: "%d %B %Y" }}
+      {% include localized-date.html date=page.date %}
     {% endif %}
   </p>
 

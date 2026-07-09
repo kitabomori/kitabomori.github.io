@@ -1,0 +1,17 @@
+{% comment %}
+  localized-date.html – renders a date as "DD Month YYYY".
+  On Urdu pages, uses the Urdu month name from _data/urdu_months.yml
+  (Ruby's strftime has no Urdu locale, so %B always returns the
+  English name — this include substitutes it manually).
+  On English pages, falls back to the normal "%d %B %Y" format.
+
+  Usage: {% include localized-date.html date=page.date %}
+{% endcomment %}
+{%- assign _ld_date = include.date -%}
+{%- if site.lang == 'ur' -%}
+  {%- assign _ld_month_num = _ld_date | date: "%-m" -%}
+  {%- assign _ld_month_name = site.data.urdu_months[_ld_month_num] -%}
+  {{- _ld_date | date: "%d" }} {{ _ld_month_name }} {{ _ld_date | date: "%Y" -}}
+{%- else -%}
+  {{- _ld_date | date: "%d %B %Y" -}}
+{%- endif -%}

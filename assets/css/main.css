@@ -227,6 +227,22 @@ body {
   }
 }
 
+/* ---- Reading-time duration badge (e.g. "3:00") ---- */
+.post-reading-time {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  color: #009F93;
+  font-weight: 600;
+}
+
+.dark .post-reading-time {
+  color: #4FD1C5;
+}
+
+.sepia .post-reading-time {
+  color: #8A6D3B;
+}
+
 /* ---- Drop cap: first letter of the first paragraph, LTR only.
    Nastaliq/RTL scripts don't carry this convention, so it's
    scoped to English (and any future LTR-language) posts. ---- */

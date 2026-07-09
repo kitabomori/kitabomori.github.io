@@ -22,7 +22,7 @@ permalink: /events/
         {% if site.lang == 'ur' %}{{ item.title_ur }}{% else %}{{ item.title_en }}{% endif %}
       </a>
     </h2>
-    <p class="card-date">{{ item.date | date: "%d %B %Y" }}</p>
+    <p class="card-date">{% include localized-date.html date=item.date %}</p>
     <p class="card-excerpt">
       {% if site.lang == 'ur' %}
         {{ item.description_ur }}

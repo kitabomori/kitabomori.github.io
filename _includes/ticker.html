@@ -96,7 +96,7 @@
               [{% if site.lang == 'ur' %}{{ item_type_ur }}{% else %}{{ item_type_en }}{% endif %}]
               {% if site.lang == 'ur' %}{{ item.title_ur }}{% else %}{{ item.title_en }}{% endif %}
               &ndash;
-              {{ item.date | date: "%d %B %Y" }}
+              {% include localized-date.html date=item.date %}
             </a>
             &nbsp;&nbsp;&nbsp;
           </span>

@@ -22,7 +22,7 @@ permalink: /creative-writing/nonfiction/
         {% if site.lang == 'ur' %}{{ item.title_ur }}{% else %}{{ item.title_en }}{% endif %}
       </a>
     </h2>
-    <p class="card-date">{{ item.date | date: "%d %B %Y" }}</p>
+    <p class="card-date">{% include localized-date.html date=item.date %}</p>
     <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}" class="card-read-more">
       {% if site.lang == 'ur' %}مزید پڑھیں &rarr;{% else %}Read more &rarr;{% endif %}
     </a>
