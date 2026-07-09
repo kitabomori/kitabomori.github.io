@@ -8,6 +8,8 @@ layout: base
 <article class="post-container">
 
   <header class="post-header">
+    {% include post-decor.html %}
+
     <h1 class="post-title">
       {% if site.lang == 'ur' %}
         {{ page.title_ur | default: page.title }}

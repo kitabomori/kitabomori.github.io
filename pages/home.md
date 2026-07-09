@@ -15,6 +15,9 @@ permalink: /
   {% if site.lang == 'ur' %}
 
   <section class="home-welcome">
+    <div class="page-decor page-decor-hero decor-open-book-pen" aria-hidden="true">
+      <svg class="decor-svg"><use href="#icon-open-book-pen"></use></svg>
+    </div>
     <h1 class="home-heading">کتابومری میں خوش آمدید</h1>
     <p class="home-tagline">تنقیدی مطالعے اور تحریر کے کلچر کو فروغ دیتے ہوئے معاشرے میں تبدیلی لانا۔</p>
     <p>
@@ -29,31 +32,37 @@ permalink: /
     <div class="section-cards">
 
       <div class="section-card">
+        <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-papers"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/ur/articles/">مضامین</a></h2>
         <p>تجربے اور تحقیق پر مبنی رائے جس میں عملی تجاویز شامل ہیں۔</p>
       </div>
 
       <div class="section-card">
+        <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-book-star"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/ur/reviews/">جائزے</a></h2>
         <p>تعلیم، خواندگی اور تحقیق سے متعلق کتابوں کے تنقیدی جائزے۔</p>
       </div>
 
       <div class="section-card">
+        <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-pen-nib"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/ur/creative-writing/">تخلیقی تحریر</a></h2>
         <p>مختصر کہانیاں، شاعری، عکاسی، مکالمے، طنزیہ تحریر، اور نان فکشن۔</p>
       </div>
 
       <div class="section-card">
+        <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-letter"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/ur/letters/">خطوط</a></h2>
         <p>اساتذہ، طلباء اور محققین کی طرف سے ذاتی خطوط۔</p>
       </div>
 
       <div class="section-card">
+        <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-journal"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/ur/diary/">تدریسی ڈائری</a></h2>
         <p>تدریسی نوٹس، اسائنمنٹس، حکمتِ عملیوں اور تعلیمی وسائل کا مجموعہ۔</p>
       </div>
 
       <div class="section-card">
+        <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-calendar-book"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/ur/events/">تقریبات</a></h2>
         <p>ریڈنگ سرکل، ورکشاپس اور کتابومری کی دیگر تقریبات۔</p>
       </div>
@@ -64,6 +73,9 @@ permalink: /
   {% else %}
 
   <section class="home-welcome">
+    <div class="page-decor page-decor-hero decor-open-book-pen" aria-hidden="true">
+      <svg class="decor-svg"><use href="#icon-open-book-pen"></use></svg>
+    </div>
     <h1 class="home-heading">Welcome to Kitabomori</h1>
     <p class="home-tagline">Promotes a culture of critical reading and writing to transform society.</p>
     <p>
@@ -78,31 +90,37 @@ permalink: /
     <div class="section-cards">
 
       <div class="section-card">
+        <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-papers"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/en/articles/">Articles</a></h2>
         <p>Opinion grounded in experience and research, with actionable recommendations.</p>
       </div>
 
       <div class="section-card">
+        <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-book-star"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/en/reviews/">Reviews</a></h2>
         <p>Critical reviews of books on education, literacy, and research.</p>
       </div>
 
       <div class="section-card">
+        <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-pen-nib"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/en/creative-writing/">Creative Writing</a></h2>
         <p>Short Stories, Poetry, Reflection, Dialogues, Satire, and Nonfiction.</p>
       </div>
 
       <div class="section-card">
+        <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-letter"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/en/letters/">Letters</a></h2>
         <p>Personal letters from teachers, students, and researchers.</p>
       </div>
 
       <div class="section-card">
+        <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-journal"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/en/diary/">Teaching Diary</a></h2>
         <p>Teaching notes, assignments, strategies, and educational resources.</p>
       </div>
 
       <div class="section-card">
+        <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-calendar-book"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/en/events/">Events</a></h2>
         <p>Reading circles, workshops, and other Kitabomori events.</p>
       </div>
