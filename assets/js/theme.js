@@ -1,36 +1,52 @@
 /* ============================================================
-   theme.js – Dark mode toggle for Kitabomori.
-   Runs before paint to prevent flash of wrong colour scheme.
-   Uses localStorage to persist preference.
-   Called from base.html <head> so it executes immediately.
+   theme.js – Three-way reading theme for Kitabomori:
+   Light -> Sepia -> Dark, cycled by the header button.
+   Runs before paint (called from <head>) to prevent a flash of
+   the wrong theme. Uses localStorage to persist preference.
    ============================================================ */
 
+var THEME_ORDER = ['light', 'sepia', 'dark'];
+var THEME_LABELS = {
+  en: { light: 'Light', sepia: 'Sepia', dark: 'Dark' },
+  ur: { light: 'روشن',  sepia: 'سیپیا', dark: 'تاریک' }
+};
+
+function applyTheme(mode) {
+  var html = document.documentElement;
+  html.classList.remove('dark', 'sepia');
+  if (mode === 'dark')  html.classList.add('dark');
+  if (mode === 'sepia') html.classList.add('sepia');
+  localStorage.setItem('ew-theme', mode);
+  updateThemeLabel(mode);
+}
+
+function updateThemeLabel(mode) {
+  var btn = document.getElementById('theme-btn');
+  if (!btn) return;
+  var lang = document.documentElement.getAttribute('lang') || 'en';
+  var set = THEME_LABELS[lang] || THEME_LABELS.en;
+  btn.textContent = set[mode] || set.light;
+}
+
+/* toggleDark() – called by the button in header.html.
+   Name kept for backwards compatibility with the existing
+   onclick="toggleDark()" markup; it now cycles three states. */
+function toggleDark() {
+  var current = localStorage.getItem('ew-theme') || 'light';
+  var idx = THEME_ORDER.indexOf(current);
+  if (idx === -1) idx = 0;
+  var next = THEME_ORDER[(idx + 1) % THEME_ORDER.length];
+  applyTheme(next);
+}
+
 (function () {
-  // Read stored preference; fall back to OS setting
   var stored = localStorage.getItem('ew-theme');
   var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  var isDark = stored === 'dark' || (!stored && prefersDark);
-
-  if (isDark) {
-    document.documentElement.classList.add('dark');
-  }
-})();
-
-/* toggleDark() – called by the button in header.html */
-function toggleDark() {
+  var mode = stored || (prefersDark ? 'dark' : 'light');
   var html = document.documentElement;
-  var isDark = html.classList.toggle('dark');
-  localStorage.setItem('ew-theme', isDark ? 'dark' : 'light');
-
-  // Update button label
-  var btn = document.getElementById('theme-btn');
-  if (btn) {
-    // Detect language from <html lang="…">
-    var lang = html.getAttribute('lang') || 'en';
-    if (lang === 'ur') {
-      btn.textContent = isDark ? 'روشن' : 'تاریک';
-    } else {
-      btn.textContent = isDark ? 'Light' : 'Dark';
-    }
-  }
-}
+  if (mode === 'dark')  html.classList.add('dark');
+  if (mode === 'sepia') html.classList.add('sepia');
+  // Don't call updateThemeLabel yet: header.html hasn't rendered
+  // this early (theme.js runs from <head>). It syncs the label
+  // itself on DOMContentLoaded.
+})();

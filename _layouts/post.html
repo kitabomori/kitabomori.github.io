@@ -18,6 +18,21 @@ layout: base
       {% endif %}
     </h1>
 
+    <!-- Date + reading time. number_of_words is a built-in Jekyll
+         filter; reading speed assumed at 200 wpm, rounded up. -->
+    {% assign word_count = content | number_of_words %}
+    {% assign reading_minutes = word_count | plus: 199 | divided_by: 200 %}
+    {% if reading_minutes < 1 %}{% assign reading_minutes = 1 %}{% endif %}
+    <p class="post-date">
+      {{ page.date | date: "%d %B %Y" }}
+      &nbsp;&middot;&nbsp;
+      {% if site.lang == 'ur' %}
+        {{ reading_minutes }} منٹ کا مطالعہ
+      {% else %}
+        {{ reading_minutes }} min read
+      {% endif %}
+    </p>
+
     <!-- Audio link (YouTube). Each post/language can set its own link via
          youtube_en / youtube_ur in front matter; if a post hasn't set one
          yet, it falls back to the site-wide YouTube channel link. -->
@@ -66,6 +81,47 @@ layout: base
     {% endif %}
     <p class="post-author-bio-text">{{ post_bio }}</p>
   </div>
+  {% endif %}
+
+  <!-- Prev / next navigation within this collection, sorted the same
+       way the collection's listing page sorts (newest first). -->
+  {% assign collection_sorted = site[page.collection] | sort: "date" | reverse %}
+  {% assign current_index = -1 %}
+  {% for doc in collection_sorted %}
+    {% if doc.url == page.url %}
+      {% assign current_index = forloop.index0 %}
+    {% endif %}
+  {% endfor %}
+
+  {% if current_index > -1 %}
+    {% if current_index > 0 %}
+      {% assign newer_post = collection_sorted[current_index | minus: 1] %}
+    {% endif %}
+    {% assign older_post = collection_sorted[current_index | plus: 1] %}
+
+    {% if newer_post or older_post %}
+    <nav class="post-nav" aria-label="{% if site.lang == 'ur' %}مزید تحریریں{% else %}More from this collection{% endif %}">
+      {% if older_post %}
+      <a class="post-nav-link post-nav-prev" href="{{ site.baseurl }}/{{ site.lang }}{{ older_post.url }}">
+        <span class="post-nav-label">{% if site.lang == 'ur' %}پرانی تحریر{% else %}Older{% endif %}</span>
+        <span class="post-nav-title">
+          {% if site.lang == 'ur' %}{{ older_post.title_ur | default: older_post.title }}{% else %}{{ older_post.title_en | default: older_post.title }}{% endif %}
+        </span>
+      </a>
+      {% else %}
+      <span></span>
+      {% endif %}
+
+      {% if newer_post %}
+      <a class="post-nav-link post-nav-next" href="{{ site.baseurl }}/{{ site.lang }}{{ newer_post.url }}">
+        <span class="post-nav-label">{% if site.lang == 'ur' %}نئی تحریر{% else %}Newer{% endif %}</span>
+        <span class="post-nav-title">
+          {% if site.lang == 'ur' %}{{ newer_post.title_ur | default: newer_post.title }}{% else %}{{ newer_post.title_en | default: newer_post.title }}{% endif %}
+        </span>
+      </a>
+      {% endif %}
+    </nav>
+    {% endif %}
   {% endif %}
 
   <!-- Back link -->

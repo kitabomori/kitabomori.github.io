@@ -70,10 +70,11 @@
         {% if site.lang == 'ur' %}EN{% else %}UR{% endif %}
       </a>
 
-      <!-- Dark mode toggle: plain text, no icon -->
+      <!-- Theme toggle: cycles Light -> Sepia -> Dark. Plain text, no icon. -->
       <button onclick="toggleDark()" id="theme-btn"
+              title="{% if site.lang == 'ur' %}تھیم تبدیل کریں (روشن / سیپیا / تاریک){% else %}Cycle theme (Light / Sepia / Dark){% endif %}"
               style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-{% if site.lang == 'ur' %}right{% else %}left{% endif %}:6px;">
-        {% if site.lang == 'ur' %}تاریک{% else %}Dark{% endif %}
+        {% if site.lang == 'ur' %}سیپیا{% else %}Sepia{% endif %}
       </button>
 
     </div><!-- /.header-controls -->
@@ -155,17 +156,15 @@
   });
 
   /* --------------------------------------------------------
-     Update dark mode button label after theme.js runs.
+     Sync theme toggle button label after theme.js runs.
   -------------------------------------------------------- */
   document.addEventListener('DOMContentLoaded', function () {
-    var btn = document.getElementById('theme-btn');
-    if (btn) {
-      var isDark = document.documentElement.classList.contains('dark');
-      {% if site.lang == 'ur' %}
-        btn.textContent = isDark ? 'روشن' : 'تاریک';
-      {% else %}
-        btn.textContent = isDark ? 'Light' : 'Dark';
-      {% endif %}
+    var html = document.documentElement;
+    var mode = html.classList.contains('dark') ? 'dark'
+             : html.classList.contains('sepia') ? 'sepia'
+             : 'light';
+    if (typeof updateThemeLabel === 'function') {
+      updateThemeLabel(mode);
     }
   });
 </script>
