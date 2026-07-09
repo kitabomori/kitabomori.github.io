@@ -401,10 +401,11 @@
         UR
       </a>
 
-      <!-- Dark mode toggle: plain text, no icon -->
+      <!-- Theme toggle: cycles Light -> Sepia -> Dark. Plain text, no icon. -->
       <button onclick="toggleDark()" id="theme-btn"
+              title="Cycle theme (Light / Sepia / Dark)"
               style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-left:6px;">
-        Dark
+        Sepia
       </button>
 
     </div><!-- /.header-controls -->
@@ -486,15 +487,15 @@
   });
 
   /* --------------------------------------------------------
-     Update dark mode button label after theme.js runs.
+     Sync theme toggle button label after theme.js runs.
   -------------------------------------------------------- */
   document.addEventListener('DOMContentLoaded', function () {
-    var btn = document.getElementById('theme-btn');
-    if (btn) {
-      var isDark = document.documentElement.classList.contains('dark');
-      
-        btn.textContent = isDark ? 'Light' : 'Dark';
-      
+    var html = document.documentElement;
+    var mode = html.classList.contains('dark') ? 'dark'
+             : html.classList.contains('sepia') ? 'sepia'
+             : 'light';
+    if (typeof updateThemeLabel === 'function') {
+      updateThemeLabel(mode);
     }
   });
 </script>

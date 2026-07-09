@@ -401,10 +401,11 @@
         UR
       </a>
 
-      <!-- Dark mode toggle: plain text, no icon -->
+      <!-- Theme toggle: cycles Light -> Sepia -> Dark. Plain text, no icon. -->
       <button onclick="toggleDark()" id="theme-btn"
+              title="Cycle theme (Light / Sepia / Dark)"
               style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:3px 10px; cursor:pointer; font-size:0.85rem; margin-left:6px;">
-        Dark
+        Sepia
       </button>
 
     </div><!-- /.header-controls -->
@@ -486,15 +487,15 @@
   });
 
   /* --------------------------------------------------------
-     Update dark mode button label after theme.js runs.
+     Sync theme toggle button label after theme.js runs.
   -------------------------------------------------------- */
   document.addEventListener('DOMContentLoaded', function () {
-    var btn = document.getElementById('theme-btn');
-    if (btn) {
-      var isDark = document.documentElement.classList.contains('dark');
-      
-        btn.textContent = isDark ? 'Light' : 'Dark';
-      
+    var html = document.documentElement;
+    var mode = html.classList.contains('dark') ? 'dark'
+             : html.classList.contains('sepia') ? 'sepia'
+             : 'light';
+    if (typeof updateThemeLabel === 'function') {
+      updateThemeLabel(mode);
     }
   });
 </script>
@@ -526,6 +527,19 @@
         To my Teacher
       
     </h1>
+
+    <!-- Date + reading time. number_of_words is a built-in Jekyll
+         filter; reading speed assumed at 200 wpm, rounded up. -->
+    
+    
+    
+    <p class="post-date">
+      24 June 2026
+      &nbsp;&middot;&nbsp;
+      
+        1 min read
+      
+    </p>
 
     <!-- Audio link (YouTube). Each post/language can set its own link via
          youtube_en / youtube_ur in front matter; if a post hasn't set one
@@ -561,6 +575,32 @@
   <!-- Author biography, shown only if provided. Layout stays intact if missing. -->
   
   
+  
+
+  <!-- Prev / next navigation within this collection, sorted the same
+       way the collection's listing page sorts (newest first). -->
+  
+  
+  
+
+  
+    
+    
+
+    
+    <nav class="post-nav" aria-label="More from this collection">
+      
+      <a class="post-nav-link post-nav-prev" href="/en">
+        <span class="post-nav-label">Older</span>
+        <span class="post-nav-title">
+          
+        </span>
+      </a>
+      
+
+      
+    </nav>
+    
   
 
   <!-- Back link -->

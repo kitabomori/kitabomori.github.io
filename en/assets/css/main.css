@@ -26,6 +26,34 @@
   --reading-muted: #B4AFA2;
 }
 
+/* Sepia: a third reading mode, closer to aged paper — many reading
+   apps offer this and it suits a literary journal well. */
+.sepia {
+  --reading-bg: #F1E7D0;
+  --reading-text: #4A3826;
+  --reading-muted: #7A6952;
+}
+
+.sepia .post-body,
+.sepia .content-card,
+.sepia .section-card {
+  background: #F7EFDC;
+  border-color: #DCC9A3;
+}
+
+.sepia .reading-progress {
+  background: linear-gradient(to right, #8A6D3B, #009F93);
+}
+
+.sepia .ticker-bar {
+  background-color: #E8DAB8 !important;
+}
+
+.sepia .post-meta-bottom,
+.sepia .post-author-bio {
+  border-top-color: #DCC9A3;
+}
+
 html {
   background-color: var(--reading-bg);
 }
@@ -196,6 +224,157 @@ body {
   .post-body {
     padding: 1.5rem 1.25rem;
     border-radius: 10px;
+  }
+}
+
+/* ---- Drop cap: first letter of the first paragraph, LTR only.
+   Nastaliq/RTL scripts don't carry this convention, so it's
+   scoped to English (and any future LTR-language) posts. ---- */
+[dir="ltr"] .post-body > p:first-of-type::first-letter {
+  float: left;
+  font-family: 'Literata', serif;
+  font-weight: 600;
+  font-size: 3.6em;
+  line-height: 0.82;
+  padding: 0.03em 0.09em 0 0.02em;
+  color: #009F93;
+}
+
+.dark [dir="ltr"] .post-body > p:first-of-type::first-letter {
+  color: #4FD1C5;
+}
+
+.sepia [dir="ltr"] .post-body > p:first-of-type::first-letter {
+  color: #8A6D3B;
+}
+
+/* ---- Pull quotes: any blockquote in the writing becomes a
+   large, quiet quotation rather than a boxed callout. ---- */
+.post-body blockquote {
+  border: none;
+  margin: 2rem 0;
+  padding: 0 1rem 0 2.75rem;
+  position: relative;
+  font-family: 'Literata', serif;
+  font-style: italic;
+  font-size: 1.3em;
+  line-height: 1.6;
+  color: var(--reading-text);
+  opacity: 0.92;
+}
+
+.post-body blockquote::before {
+  content: "\201C";
+  position: absolute;
+  left: 0;
+  top: -0.15em;
+  font-size: 2.6em;
+  font-style: normal;
+  font-family: Georgia, serif;
+  color: #009F93;
+  opacity: 0.5;
+  line-height: 1;
+}
+
+.dark .post-body blockquote::before {
+  color: #4FD1C5;
+}
+
+.sepia .post-body blockquote::before {
+  color: #8A6D3B;
+}
+
+[dir="rtl"] .post-body blockquote {
+  padding: 0 2.75rem 0 1rem;
+}
+
+[dir="rtl"] .post-body blockquote::before {
+  content: "\201D";
+  left: auto;
+  right: 0;
+}
+
+/* ---- Prev / next navigation between pieces in a collection ---- */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.dark .post-nav {
+  border-top-color: #374151;
+}
+
+.sepia .post-nav {
+  border-top-color: #DCC9A3;
+}
+
+.post-nav-link {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-nav-link.post-nav-next {
+  text-align: right;
+  align-items: flex-end;
+}
+
+[dir="rtl"] .post-nav-link.post-nav-next {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.post-nav-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--reading-muted);
+}
+
+.post-nav-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #009F93;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1.5px;
+  transition: background-size 0.35s ease-out;
+  padding-bottom: 1px;
+  overflow-wrap: anywhere;
+}
+
+.dark .post-nav-title {
+  color: #4FD1C5;
+}
+
+.sepia .post-nav-title {
+  color: #8A6D3B;
+}
+
+.post-nav-link:hover .post-nav-title {
+  background-size: 100% 1.5px;
+}
+
+@media (max-width: 480px) {
+  .post-nav {
+    flex-direction: column;
+  }
+  .post-nav-link.post-nav-next {
+    text-align: left;
+    align-items: flex-start;
+  }
+  [dir="rtl"] .post-nav-link.post-nav-next {
+    text-align: right;
+    align-items: flex-end;
   }
 }
 
