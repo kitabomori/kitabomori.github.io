@@ -18,19 +18,6 @@ layout: base
       {% endif %}
     </h1>
 
-    <!-- Date + reading time. number_of_words is a built-in Jekyll
-         filter; reading speed assumed at 200 wpm, rounded up. -->
-    {% assign word_count = content | number_of_words %}
-    {% assign reading_minutes = word_count | plus: 199 | divided_by: 200 %}
-    {% if reading_minutes < 1 %}{% assign reading_minutes = 1 %}{% endif %}
-    <!-- Reading time, shown as a duration-style badge (e.g. "3:00")
-         rather than repeating the date, which already appears in the
-         byline at the end of the piece. -->
-    <p class="post-date post-reading-time"
-       aria-label="{% if site.lang == 'ur' %}اندازاً مطالعے کا وقت: {{ reading_minutes }} منٹ{% else %}Estimated reading time: {{ reading_minutes }} minutes{% endif %}">
-      {{ reading_minutes }}:00
-    </p>
-
     <!-- Audio link (YouTube). Each post/language can set its own link via
          youtube_en / youtube_ur in front matter; if a post hasn't set one
          yet, it falls back to the site-wide YouTube channel link. -->

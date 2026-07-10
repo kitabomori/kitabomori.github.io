@@ -8,7 +8,7 @@
 
      COLOURS:
        Background: #FFFFFF (dark mode: #1a1a1a)
-       Text:       #aab52d
+       Text:       #808217
        Border:     1px bottom in #009F93
        Heading:    ##00A693
 
@@ -91,8 +91,8 @@
             {% assign item_type_ur = "ڈائری" %}
           {% endif %}
 
-          <span class="ticker-item" style="color:#aab52d;" {% if pass == 2 %}aria-hidden="true"{% endif %}>
-            <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}" style="color:#aab52d; text-decoration:none;">
+          <span class="ticker-item" style="color:#808217;" {% if pass == 2 %}aria-hidden="true"{% endif %}>
+            <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}" style="color:#808217; text-decoration:none;">
               [{% if site.lang == 'ur' %}{{ item_type_ur }}{% else %}{{ item_type_en }}{% endif %}]
               {% if site.lang == 'ur' %}{{ item.title_ur }}{% else %}{{ item.title_en }}{% endif %}
               &ndash;

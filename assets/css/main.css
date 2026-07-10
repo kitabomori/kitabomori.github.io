@@ -632,6 +632,19 @@ body {
   @apply text-sm font-medium;
 }
 
+/* Nastaliq glyphs are tall and extend below the normal line box, so the
+   default tight line-height clips them against the ticker's
+   overflow-hidden wrapper — give RTL extra vertical room. */
+[dir="rtl"] .ticker-bar {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+[dir="rtl"] .ticker-item {
+  line-height: 2.2;
+  display: inline-block;
+}
+
 @keyframes ticker-scroll {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
