@@ -205,25 +205,70 @@ body {
   to { transform: scaleY(1); }
 }
 
-/* ---- Classic Paper Frame — the writing itself sits on a page ---- */
+/* ---- Classic Paper Frame — the writing itself sits on a page,
+   styled to feel like an old diary entry: aged paper tone, faint
+   ruled lines, a folded page corner, and a touch of tilt. ---- */
 .post-body {
-  background: #FCFBF8;
-  border: 1px solid #E7E2D5;
-  border-radius: 14px;
+  background-color: #FBF3DE;
+  background-image:
+    repeating-linear-gradient(to bottom, transparent 0, transparent 30px, rgba(120, 92, 48, 0.09) 31px, transparent 32px),
+    radial-gradient(circle at 6% 10%, rgba(120, 92, 48, 0.07), transparent 40%),
+    radial-gradient(circle at 94% 88%, rgba(120, 92, 48, 0.06), transparent 45%);
+  border: 1px solid #DFCFA2;
+  border-radius: 3px 16px 6px 18px;
   padding: 2.25rem 2.5rem;
-  box-shadow: 0 1px 3px rgba(43, 42, 38, 0.05);
+  box-shadow: 0 6px 18px rgba(74, 56, 32, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  position: relative;
+  transform: rotate(-0.3deg);
+}
+
+/* Folded top-right corner, like a well-thumbed diary page */
+.post-body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 32px 32px 0;
+  border-color: transparent #EADFBC transparent transparent;
+  filter: drop-shadow(-1px 1px 2px rgba(74, 56, 32, 0.25));
+}
+
+[dir="rtl"] .post-body::after {
+  right: auto;
+  left: 0;
+  border-width: 0 0 32px 32px;
+  border-color: transparent transparent transparent #EADFBC;
+  filter: drop-shadow(1px 1px 2px rgba(74, 56, 32, 0.25));
 }
 
 .dark .post-body {
-  background: #221F1B;
+  background-color: #221F1B;
+  background-image: none;
   border-color: #3A362E;
   box-shadow: none;
+  transform: none;
+}
+
+.dark .post-body::after {
+  display: none;
 }
 
 @media (max-width: 640px) {
   .post-body {
     padding: 1.5rem 1.25rem;
     border-radius: 10px;
+    transform: none;
+  }
+
+  .post-body::after {
+    border-width: 0 22px 22px 0;
+  }
+
+  [dir="rtl"] .post-body::after {
+    border-width: 0 0 22px 22px;
   }
 }
 
@@ -515,6 +560,47 @@ body {
   right: 2.5rem;
 }
 
+.post-side-left {
+  left: 2.5rem;
+}
+
+/* Horizontal echo of the same motif, placed under the post title. */
+.post-title-divider {
+  position: relative;
+  display: block;
+  width: 140px;
+  height: 2px;
+  margin: 0.75rem auto 1.5rem;
+  background: linear-gradient(to right, transparent, #009F93 15%, #009F93 85%, transparent);
+}
+
+.post-title-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #009F93;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.dark .post-title-divider {
+  background: linear-gradient(to right, transparent, #4FD1C5 15%, #4FD1C5 85%, transparent);
+}
+
+.dark .post-title-divider::before {
+  background: #4FD1C5;
+}
+
+.sepia .post-title-divider {
+  background: linear-gradient(to right, transparent, #8A6D3B 15%, #8A6D3B 85%, transparent);
+}
+
+.sepia .post-title-divider::before {
+  background: #8A6D3B;
+}
+
 /* Purely decorative vertical rule, echoing the same gradient-line
    + diamond motif already used beside poetry pieces. */
 .post-ornament {
@@ -756,13 +842,13 @@ body {
 }
 
 .post-audio-link a {
-  color: #009F93;
+  color: #000000;
   text-decoration: underline;
   font-weight: 600;
 }
 
 .post-audio-link a:hover {
-  color: #007A70;
+  color: #333333;
 }
 
 .dark .post-audio-link a {
