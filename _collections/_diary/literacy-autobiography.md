@@ -1,14 +1,14 @@
 ---
 layout: post
 title_en: "Literacy Autobiography"
-title_ur: ""
+title_ur: "ادبی خودنوشت"
 date: 2026-07-10
-author_en: ""
-author_ur: ""
+author_en: "Kitabomori"
+author_ur: "کتابومری"
 bio_en: ""
 bio_ur: ""
 description_en: "A personal reflection on how reading, writing, and education shaped my identity, voice, and commitment to questioning and improving the world around me."
-description_ur: ""
+description_ur: "مطالعے، تحریر اور تعلیم نے مجھے کس طرح بدلا، اس پر ایک ذاتی تأمل۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
