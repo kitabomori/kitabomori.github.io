@@ -35,16 +35,6 @@
   },
 
   {
-    "title_en": "My Teaching Philosophy",
-    "title_ur": "میرا فلسفہ تدریس",
-    "url_en": "/en/diary/teaching-philosophy/",
-    "url_ur": "/ur/diary/teaching-philosophy/",
-    "date": "2026-07-08",
-    "type_en": "Call",
-    "type_ur": "دعوت"
-  },
-
-  {
     "title_en": "There was a library in My Village",
     "title_ur": "میرے گاؤں میں کوئی لائبریری بھی تھی",
     "url_en": "/en/creative-writing/reflection/mery-gawong-ma-koi-libray-bhi-thi/",
@@ -130,6 +120,16 @@
     "url_en": "/en/calls/call-for-submissions/",
     "url_ur": "/ur/calls/call-for-submissions/",
     "date": "2026-06-01",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
+    "title_en": "My Teaching Philosophy",
+    "title_ur": "میرا فلسفہ تدریس",
+    "url_en": "/en/diary/teaching-philosophy/",
+    "url_ur": "/ur/diary/teaching-philosophy/",
+    "date": "2023-10-19",
     "type_en": "Call",
     "type_ur": "دعوت"
   },
