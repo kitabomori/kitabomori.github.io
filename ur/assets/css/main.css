@@ -71,15 +71,6 @@ body {
   line-height: 1.85;
 }
 
-/* Caveat (English body font) renders visually smaller/thinner than a
-   normal serif at the same font-size, so bump it up for legibility.
-   Scoped to LTR only so Urdu (Noto Nastaliq) is untouched. */
-[dir="ltr"] .page-content,
-[dir="ltr"] .post-body {
-  font-size: 1.5rem;
-  line-height: 1.6;
-}
-
 .post-body p {
   color: var(--reading-text);
 }
@@ -257,7 +248,7 @@ body {
    scoped to English (and any future LTR-language) posts. ---- */
 [dir="ltr"] .post-body > p:first-of-type::first-letter {
   float: left;
-  font-family: 'Caveat', cursive;
+  font-family: 'Literata', serif;
   font-weight: 600;
   font-size: 3.6em;
   line-height: 0.82;
@@ -280,7 +271,7 @@ body {
   margin: 2rem 0;
   padding: 0 1rem 0 2.75rem;
   position: relative;
-  font-family: 'Caveat', cursive;
+  font-family: 'Literata', serif;
   font-style: italic;
   font-size: 1.3em;
   line-height: 1.6;
