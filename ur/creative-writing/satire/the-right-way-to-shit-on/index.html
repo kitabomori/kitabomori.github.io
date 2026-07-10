@@ -507,10 +507,13 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
-<!-- Margin content on the right, for wide screens only (see .post-side
-     in main.css) — a purely decorative vertical rule, echoing the
-     site's brand-teal accent. Fixed-position, so placement in the DOM
-     doesn't matter. -->
+<!-- Margin content either side of the post, for wide screens only
+     (see .post-side in main.css) — purely decorative vertical rules,
+     echoing the site's brand-teal accent. Fixed-position, so
+     placement in the DOM doesn't matter. -->
+<aside class="post-side post-side-left" aria-hidden="true">
+  <span class="post-ornament"></span>
+</aside>
 <aside class="post-side post-side-right" aria-hidden="true">
   <span class="post-ornament"></span>
 </aside>
@@ -536,6 +539,8 @@
         The_right_way_to_shit_on
       
     </h1>
+
+    <span class="post-title-divider" aria-hidden="true"></span>
 
     <!-- Audio link (YouTube). Each post/language can set its own link via
          youtube_en / youtube_ur in front matter; if a post hasn't set one
