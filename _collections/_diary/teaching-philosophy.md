@@ -25,6 +25,7 @@ I more or less have the feeling, education should enable an individual to qualif
 
 Conclusively, my teaching philosophy includes engaged pedagogy of Bell Hooks and emancipatory process of Paulo Freire, as I believe that the contextual and engaging practices that transgress the language and authoritative ideologies in the classroom so that the lived realities of the students are utilized to better facilitate the learning. Moreover, the dimension of Gert Biesta plays a vital role in my teaching philosophy as I wholeheartedly stand for development of skills, agency and self-expression of students so that their identity is formed keeping the trait of socialization and development of great social factors.
 
+
 <p style="margin-top:2rem; font-size:0.9rem; color:#666;"><em> This teaching philosophy was originally written in October 2023 as part of the Foundation of Education course. It has since been revised and is published here in its edited form.</em></p>
 
 
