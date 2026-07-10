@@ -30,7 +30,7 @@
    apps offer this and it suits a literary journal well. */
 .sepia {
   --reading-bg: #F1E7D0;
-  --reading-text: #4A3826;
+  --reading-text: #000000;
   --reading-muted: #7A6952;
 }
 
@@ -248,7 +248,7 @@ body {
    scoped to English (and any future LTR-language) posts. ---- */
 [dir="ltr"] .post-body > p:first-of-type::first-letter {
   float: left;
-  font-family: 'Literata', serif;
+  font-family: 'Caveat', cursive;
   font-weight: 600;
   font-size: 3.6em;
   line-height: 0.82;
@@ -271,7 +271,7 @@ body {
   margin: 2rem 0;
   padding: 0 1rem 0 2.75rem;
   position: relative;
-  font-family: 'Literata', serif;
+  font-family: 'Caveat', cursive;
   font-style: italic;
   font-size: 1.3em;
   line-height: 1.6;

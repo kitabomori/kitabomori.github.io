@@ -24,7 +24,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Literata', 'serif'],
+        sans: ['Caveat', 'cursive'],
         urdu: ['"Noto Nastaliq Urdu"', 'serif'],
       },
     },
