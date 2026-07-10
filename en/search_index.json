@@ -25,6 +25,16 @@
   },
 
   {
+    "title_en": "Literacy Autobiography",
+    "title_ur": "",
+    "url_en": "/en/diary/literacy-autobiography/",
+    "url_ur": "/ur/diary/literacy-autobiography/",
+    "date": "2026-07-10",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
     "title_en": "There was a library in My Village",
     "title_ur": "میرے گاؤں میں کوئی لائبریری بھی تھی",
     "url_en": "/en/creative-writing/reflection/mery-gawong-ma-koi-libray-bhi-thi/",
@@ -120,16 +130,6 @@
     "url_en": "/en/diary/teaching-philosophy/",
     "url_ur": "/ur/diary/teaching-philosophy/",
     "date": "2023-10-19",
-    "type_en": "Call",
-    "type_ur": "دعوت"
-  },
-
-  {
-    "title_en": "The Right Way to Shit on...",
-    "title_ur": "",
-    "url_en": "/en/diary/literacy-autobiography/",
-    "url_ur": "/ur/diary/literacy-autobiography/",
-    "date": "2022-03-05",
     "type_en": "Call",
     "type_ur": "دعوت"
   },
