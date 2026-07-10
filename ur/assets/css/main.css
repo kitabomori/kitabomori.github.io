@@ -219,7 +219,6 @@ body {
   padding: 2.25rem 2.5rem;
   box-shadow: 0 6px 18px rgba(74, 56, 32, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
   position: relative;
-  transform: rotate(-0.3deg);
 }
 
 /* Folded top-right corner, like a well-thumbed diary page */
@@ -249,7 +248,6 @@ body {
   background-image: none;
   border-color: #3A362E;
   box-shadow: none;
-  transform: none;
 }
 
 .dark .post-body::after {
@@ -260,7 +258,6 @@ body {
   .post-body {
     padding: 1.5rem 1.25rem;
     border-radius: 10px;
-    transform: none;
   }
 
   .post-body::after {
