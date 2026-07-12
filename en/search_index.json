@@ -25,21 +25,21 @@
   },
 
   {
-    "title_en": null,
-    "title_ur": null,
-    "url_en": "/en/diary/literacy-autobiography/",
-    "url_ur": "/ur/diary/literacy-autobiography/",
+    "title_en": "My Teaching Philosophy",
+    "title_ur": "میرا فلسفہ تدریس",
+    "url_en": "/en/diary/teaching-philosophy/",
+    "url_ur": "/ur/diary/teaching-philosophy/",
     "date": "2026-07-12",
     "type_en": "Call",
     "type_ur": "دعوت"
   },
 
   {
-    "title_en": "My Teaching Philosophy",
-    "title_ur": "میرا فلسفہ تدریس",
-    "url_en": "/en/diary/teaching-philosophy/",
-    "url_ur": "/ur/diary/teaching-philosophy/",
-    "date": "2026-07-12",
+    "title_en": "Literacy Autobiography",
+    "title_ur": "",
+    "url_en": "/en/diary/literacy-autobiography/",
+    "url_ur": "/ur/diary/literacy-autobiography/",
+    "date": "2026-07-10",
     "type_en": "Call",
     "type_ur": "دعوت"
   },
