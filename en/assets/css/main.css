@@ -598,6 +598,22 @@ body {
   background: #8A6D3B;
 }
 
+/* Subtitle shown under the post title (its description_en/ur front
+   matter) — centered and muted so it reads as a dek, not competing
+   with the title. */
+.post-description {
+  @apply text-base text-gray-600 mb-6;
+  text-align: center;
+  font-style: italic;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dark .post-description {
+  @apply text-gray-300;
+}
+
 /* Purely decorative vertical rule, echoing the same gradient-line
    + diamond motif already used beside poetry pieces. */
 .post-ornament {
