@@ -2,6 +2,9 @@ lang: ur
 direction: rtl
 body_font: "'Noto Nastaliq Urdu', serif"
 
+# See the matching comment in _config_en.yml — same fix, /ur subpath.
+url: "https://kitabomori.github.io/ur"
+
 title_display: "کتابومری"
 tagline: "تحقیق پر مبنی مواد کے ذریعے مطالعے کا فروغ"
 

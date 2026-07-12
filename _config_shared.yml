@@ -2,6 +2,13 @@ title: Kitabomori
 email: kitabomori@gmail.com
 baseurl: ""
 url: "https://kitabomori.github.io"
+# root_url has no language subpath — used to build the alternate-language
+# (hreflang) links, which always point at the *other* language's copy of
+# the current page. Kept separate from `url` because `url` itself is
+# overridden per-language below (see _config_en.yml / _config_ur.yml) so
+# that the sitemap, canonical tags, and Open Graph URLs are correct for
+# each language build.
+root_url: "https://kitabomori.github.io"
 collections_dir: _collections
 
 # Default YouTube channel link, used as a fallback on posts that don't yet

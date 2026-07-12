@@ -6,22 +6,122 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+{% comment %}
+  Shared values used by title, description, OG, Twitter, and JSON-LD below,
+  computed once instead of repeating the same if/else in five places.
+{% endcomment %}
+{% if site.lang == 'ur' %}
+  {% assign page_title = page.title_ur | default: page.title_en | default: 'کتابومری' %}
+  {% assign page_desc  = page.description_ur | default: page.description_en | default: site.tagline %}
+  {% assign og_locale  = 'ur_PK' %}
+  {% assign alt_locale = 'en_US' %}
+{% else %}
+  {% assign page_title = page.title_en | default: page.title | default: 'Kitabomori' %}
+  {% assign page_desc  = page.description_en | default: site.tagline %}
+  {% assign og_locale  = 'en_US' %}
+  {% assign alt_locale = 'ur_PK' %}
+{% endif %}
+{% assign canonical_url = site.url | append: page.url %}
+{% comment %} Per-page image (set `image: /assets/img/whatever.png` in front matter) wins; otherwise fall back to the site-wide share image. {% endcomment %}
+{% if page.image %}
+  {% assign share_image = site.root_url | append: page.image %}
+{% else %}
+  {% assign share_image = site.root_url | append: '/assets/img/og-default.png' %}
+{% endif %}
+
 <!-- Page title: prefer page-specific title, fall back to site title -->
 <title>
-  {% if page.title_en %}
-    {% if site.lang == 'en' %}{{ page.title_en }} – Kitabomori{% else %}{{ page.title_ur }} – کتابومری{% endif %}
-  {% else %}
-    Kitabomori – Promoting reading through evidence-based research
-  {% endif %}
+  {% if page.title_en or page.title_ur %}{{ page_title }} – {% if site.lang == 'ur' %}کتابومری{% else %}Kitabomori{% endif %}{% else %}Kitabomori – Promoting reading through evidence-based research{% endif %}
 </title>
 
 <!-- Meta description -->
-<meta name="description" content="{% if site.lang == 'en' %}{{ page.description_en | default: site.tagline }}{% else %}{{ page.description_ur | default: site.tagline }}{% endif %}">
+<meta name="description" content="{{ page_desc }}">
 
-<!-- Open Graph -->
-<meta property="og:title" content="{% if site.lang == 'en' %}{{ page.title_en | default: 'Kitabomori' }}{% else %}{{ page.title_ur | default: 'کتابومری' }}{% endif %}">
-<meta property="og:description" content="{% if site.lang == 'en' %}{{ page.description_en | default: site.tagline }}{% else %}{{ page.description_ur | default: site.tagline }}{% endif %}">
-<meta property="og:type" content="website">
+<!-- Canonical URL: tells search engines which exact address is the
+     authoritative one for this page, and consolidates ranking signals
+     if it's ever reachable at more than one URL. -->
+<link rel="canonical" href="{{ canonical_url }}">
+
+<!-- Hreflang alternates: this site publishes the same content in English
+     and Urdu at identical paths under /en/ and /ur/. These tags tell
+     Google and Bing that the two are translations of each other, so the
+     right language is served in search results instead of ranking them
+     as duplicate content or picking one at random. x-default is the
+     fallback for languages we don't explicitly support. -->
+<link rel="alternate" hreflang="en" href="{{ site.root_url }}/en{{ page.url }}">
+<link rel="alternate" hreflang="ur" href="{{ site.root_url }}/ur{{ page.url }}">
+<link rel="alternate" hreflang="x-default" href="{{ site.root_url }}/en{{ page.url }}">
+
+<!-- Open Graph (Facebook, LinkedIn, WhatsApp, Slack previews, etc.) -->
+<meta property="og:title" content="{{ page_title }}">
+<meta property="og:description" content="{{ page_desc }}">
+<meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="og:site_name" content="Kitabomori">
+<meta property="og:locale" content="{{ og_locale }}">
+<meta property="og:locale:alternate" content="{{ alt_locale }}">
+<meta property="og:image" content="{{ share_image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{% if page.date %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% endif %}
+
+<!-- Twitter Card: without these, links shared on X/Twitter fall back to
+     a plain link with no image or description. -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_desc }}">
+<meta name="twitter:image" content="{{ share_image }}">
+
+<!-- JSON-LD structured data. WebSite (with a Sitelinks Search Box target)
+     is emitted on every page; Article is added on top of it for
+     individual posts so search engines can show byline/date-aware
+     rich results. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Kitabomori",
+  "url": "{{ site.root_url }}/{{ site.lang }}/",
+  "inLanguage": "{{ site.lang }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.url }}/search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{% if page.date %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page_title | jsonify }},
+  "description": {{ page_desc | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "inLanguage": "{{ site.lang }}",
+  "image": "{{ share_image }}",
+  "url": "{{ canonical_url }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Kitabomori"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kitabomori",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.root_url }}/assets/favicon.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ canonical_url }}"
+  }
+}
+</script>
+{% endif %}
 
 <!-- Google Fonts: Literata (English) + Noto Nastaliq Urdu (Urdu)
      Literata is a serif designed by Google specifically for comfortable

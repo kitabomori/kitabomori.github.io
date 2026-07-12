@@ -2,6 +2,14 @@ lang: en
 direction: ltr
 body_font: "'Literata', serif"
 
+# Overrides the shared `url`. This build's pages are physically deployed
+# under /en/ (see .github/workflows/deploy.yml), but Jekyll's own page.url
+# values don't know that — they're computed as if this build were the
+# whole site. Pointing `url` at the /en subpath here means every place
+# that does {{ site.url }}{{ page.url }} (sitemap.xml, canonical tags,
+# og:url) resolves to the real, live address instead of a 404.
+url: "https://kitabomori.github.io/en"
+
 title_display: "Kitabomori"
 tagline: "Promoting reading through evidence-based research"
 

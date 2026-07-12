@@ -1,3 +1,0 @@
-# Force consistent LF line endings for all text files,
-# regardless of what operating system or editor is used to save them.
-* text=auto eol=lf
