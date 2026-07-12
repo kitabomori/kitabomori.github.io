@@ -6,8 +6,8 @@ date: 2026-07-03
 author_en: "" 
 author_ur: "کتابومری" 
 bio_en: ""
-bio_ur: "کتابومری"
-description_en: ""
+bio_ur: ""
+description_en: "Please switch to the Urdu version of the website to read."
 description_ur: "فیض آباد کی پرانی لائبری کی یاد میں"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -32,9 +32,3 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 آج  میں محسوس کرتا ہوں کتابوں کی طرف میرا رجحان کسی نصیحت نے نہیں بلکہ ایک استاد، ایک لائبریری اور ایک مناسب ماحول نے راغب کیا۔ کاش آج بھی میرے گاؤں میں کوئی لائبریری ہوتی۔ ایک ایسی جگہ جہاں بچے  سوال کرنے اور اپنے خیالات کو وسعت دینے کے لیے کتابیں پڑھتے۔ جہاں شام کے وقت نوجوان علم، ادب اور تاریخ کی صحبت اختیار کرتے۔ جہاں بزرگ اپنی زندگی کے تجربات نئی نسل تک منتقل کرتے اور نئی نسل کتابوں سے حاصل ہونے والی بصیرت کے ساتھ اپنے مستقبل کی تعمیر کرتی۔ شاید پھر ہمارے گاؤں کی گفتگو صرف روزمرہ مسائل تک محدود نہ رہتی بلکہ خیالات، امکانات اور تبدیلی کے گرد گھومتی۔
 
 {% endif %}
-
-
-
-
-
-
