@@ -1,0 +1,102 @@
+name: Build and Deploy Kitabomori
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Setup Ruby for Jekyll
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      # 3. Install Jekyll and dependencies
+      - name: Install Jekyll
+        run: gem install jekyll bundler
+
+      # 4. Setup Node.js for Tailwind CSS
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # 5. Install npm dependencies (Tailwind, PostCSS, etc.)
+      - name: Install npm dependencies
+        run: npm ci
+
+      # 6. Create output directories
+      - name: Create output directories
+        run: mkdir -p _site/en _site/ur _site/assets/css _site/assets/js
+
+      # 7. Build Tailwind CSS (minified)
+      - name: Build Tailwind CSS
+        run: npx tailwindcss -i ./assets/css/main.css -o ./_site/assets/css/main.css --minify
+
+      # 8. Copy static assets (JS, favicon, images, etc.) to _site
+      - name: Copy static assets
+        run: |
+          mkdir -p _site/assets
+          cp -r assets/js _site/assets/
+          if [ -f assets/favicon.svg ]; then cp assets/favicon.svg _site/assets/; fi
+          if [ -d assets/img ]; then cp -r assets/img _site/assets/; fi
+
+      # 9. Build English site
+      - name: Build English site
+        run: bundle exec jekyll build --config _config_shared.yml,_config_en.yml --destination ./_site/en
+
+      # 10. Build Urdu site
+      - name: Build Urdu site
+        run: bundle exec jekyll build --config _config_shared.yml,_config_ur.yml --destination ./_site/ur
+
+      # 11. Copy root redirect, 404 page, robots.txt, and verification/key
+      #     files to _site. Google site verification, IndexNow, and
+      #     robots.txt itself all require a file at the exact top-level URL
+      #     (https://kitabomori.github.io/<file>) — the per-language builds
+      #     each get their own copy of these too, but that alone doesn't
+      #     make them reachable at the true domain root, so copy explicitly.
+      - name: Copy root files
+        run: |
+          cp index.html _site/
+          cp _site/en/404.html _site/404.html
+          cp robots.txt _site/
+          cp llms.txt _site/
+          cp google9c30cc0cd18db47c.html _site/ 2>/dev/null || true
+          cp a51d63ea5d5d7edbe0ca11095090ae2d.txt _site/
+
+      # 12. Deploy to GitHub Pages (gh-pages branch)
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          enable_jekyll: false
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+
+      # 13. Notify IndexNow (Bing, Yandex, and increasingly Google) that
+      #     content changed, instead of waiting for the next crawl. Reads
+      #     every <loc> out of both sitemaps and submits them as one batch.
+      #     Safe to run on every push — IndexNow simply re-notes the URLs.
+      - name: Ping IndexNow
+        run: |
+          KEY="a51d63ea5d5d7edbe0ca11095090ae2d"
+          URLS=$( { grep -oP '(?<=<loc>)[^<]+' _site/en/sitemap.xml; grep -oP '(?<=<loc>)[^<]+' _site/ur/sitemap.xml; } | jq -R . | jq -s . )
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{\"host\":\"kitabomori.github.io\",\"key\":\"${KEY}\",\"keyLocation\":\"https://kitabomori.github.io/${KEY}.txt\",\"urlList\":${URLS}}" \
+            || echo "IndexNow ping failed (non-blocking)"
