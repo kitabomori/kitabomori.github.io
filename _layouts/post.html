@@ -30,6 +30,16 @@ layout: base
       {% endif %}
     </h1>
 
+    <!-- Description / dek: the short one- or two-line summary already
+         written for every post's front matter (description_en /
+         description_ur) — previously used only for the invisible SEO
+         meta tag, now also shown to readers as a subtitle. -->
+    {% assign post_desc = page.description_en %}
+    {% if site.lang == 'ur' %}{% assign post_desc = page.description_ur %}{% endif %}
+    {% if post_desc and post_desc != "" %}
+    <p class="post-description">{{ post_desc }}</p>
+    {% endif %}
+
     <span class="post-title-divider" aria-hidden="true"></span>
 
     <!-- Audio link (YouTube). Each post/language can set its own link via
