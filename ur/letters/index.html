@@ -16,20 +16,74 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+
+
+
+
 <!-- Page title: prefer page-specific title, fall back to site title -->
 <title>
-  
-    خطوط – کتابومری
-  
+  خطوط – کتابومری
 </title>
 
 <!-- Meta description -->
 <meta name="description" content="اساتذہ، طلباء اور محققین کی طرف سے ذاتی خطوط۔">
 
-<!-- Open Graph -->
+<!-- Canonical URL: tells search engines which exact address is the
+     authoritative one for this page, and consolidates ranking signals
+     if it's ever reachable at more than one URL. -->
+<link rel="canonical" href="https://kitabomori.github.io/ur/letters/">
+
+<!-- Hreflang alternates: this site publishes the same content in English
+     and Urdu at identical paths under /en/ and /ur/. These tags tell
+     Google and Bing that the two are translations of each other, so the
+     right language is served in search results instead of ranking them
+     as duplicate content or picking one at random. x-default is the
+     fallback for languages we don't explicitly support. -->
+<link rel="alternate" hreflang="en" href="https://kitabomori.github.io/en/letters/">
+<link rel="alternate" hreflang="ur" href="https://kitabomori.github.io/ur/letters/">
+<link rel="alternate" hreflang="x-default" href="https://kitabomori.github.io/en/letters/">
+
+<!-- Open Graph (Facebook, LinkedIn, WhatsApp, Slack previews, etc.) -->
 <meta property="og:title" content="خطوط">
 <meta property="og:description" content="اساتذہ، طلباء اور محققین کی طرف سے ذاتی خطوط۔">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://kitabomori.github.io/ur/letters/">
+<meta property="og:site_name" content="Kitabomori">
+<meta property="og:locale" content="ur_PK">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="https://kitabomori.github.io/assets/img/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<!-- Twitter Card: without these, links shared on X/Twitter fall back to
+     a plain link with no image or description. -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="خطوط">
+<meta name="twitter:description" content="اساتذہ، طلباء اور محققین کی طرف سے ذاتی خطوط۔">
+<meta name="twitter:image" content="https://kitabomori.github.io/assets/img/og-default.png">
+
+<!-- JSON-LD structured data. WebSite (with a Sitelinks Search Box target)
+     is emitted on every page; Article is added on top of it for
+     individual posts so search engines can show byline/date-aware
+     rich results. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Kitabomori",
+  "url": "https://kitabomori.github.io/ur/",
+  "inLanguage": "ur",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://kitabomori.github.io/ur/search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 
 <!-- Google Fonts: Literata (English) + Noto Nastaliq Urdu (Urdu)
      Literata is a serif designed by Google specifically for comfortable

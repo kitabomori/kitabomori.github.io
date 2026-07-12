@@ -16,20 +16,105 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+
+
+
+
 <!-- Page title: prefer page-specific title, fall back to site title -->
 <title>
-  
-    Literacy Autobiography – Kitabomori
-  
+  Literacy Autobiography – Kitabomori
 </title>
 
 <!-- Meta description -->
 <meta name="description" content="A personal reflection on how reading, writing, and education shaped my identity, voice, and commitment to questioning and improving the world around me.">
 
-<!-- Open Graph -->
+<!-- Canonical URL: tells search engines which exact address is the
+     authoritative one for this page, and consolidates ranking signals
+     if it's ever reachable at more than one URL. -->
+<link rel="canonical" href="https://kitabomori.github.io/en/diary/literacy-autobiography/">
+
+<!-- Hreflang alternates: this site publishes the same content in English
+     and Urdu at identical paths under /en/ and /ur/. These tags tell
+     Google and Bing that the two are translations of each other, so the
+     right language is served in search results instead of ranking them
+     as duplicate content or picking one at random. x-default is the
+     fallback for languages we don't explicitly support. -->
+<link rel="alternate" hreflang="en" href="https://kitabomori.github.io/en/diary/literacy-autobiography/">
+<link rel="alternate" hreflang="ur" href="https://kitabomori.github.io/ur/diary/literacy-autobiography/">
+<link rel="alternate" hreflang="x-default" href="https://kitabomori.github.io/en/diary/literacy-autobiography/">
+
+<!-- Open Graph (Facebook, LinkedIn, WhatsApp, Slack previews, etc.) -->
 <meta property="og:title" content="Literacy Autobiography">
 <meta property="og:description" content="A personal reflection on how reading, writing, and education shaped my identity, voice, and commitment to questioning and improving the world around me.">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kitabomori.github.io/en/diary/literacy-autobiography/">
+<meta property="og:site_name" content="Kitabomori">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ur_PK">
+<meta property="og:image" content="https://kitabomori.github.io/assets/img/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta property="article:published_time" content="2026-07-10T00:00:00+00:00">
+
+
+<!-- Twitter Card: without these, links shared on X/Twitter fall back to
+     a plain link with no image or description. -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Literacy Autobiography">
+<meta name="twitter:description" content="A personal reflection on how reading, writing, and education shaped my identity, voice, and commitment to questioning and improving the world around me.">
+<meta name="twitter:image" content="https://kitabomori.github.io/assets/img/og-default.png">
+
+<!-- JSON-LD structured data. WebSite (with a Sitelinks Search Box target)
+     is emitted on every page; Article is added on top of it for
+     individual posts so search engines can show byline/date-aware
+     rich results. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Kitabomori",
+  "url": "https://kitabomori.github.io/en/",
+  "inLanguage": "en",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://kitabomori.github.io/en/search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Literacy Autobiography",
+  "description": "A personal reflection on how reading, writing, and education shaped my identity, voice, and commitment to questioning and improving the world around me.",
+  "datePublished": "2026-07-10T00:00:00+00:00",
+  "inLanguage": "en",
+  "image": "https://kitabomori.github.io/assets/img/og-default.png",
+  "url": "https://kitabomori.github.io/en/diary/literacy-autobiography/",
+  "author": {
+    "@type": "Organization",
+    "name": "Kitabomori"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kitabomori",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kitabomori.github.io/assets/favicon.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kitabomori.github.io/en/diary/literacy-autobiography/"
+  }
+}
+</script>
+
 
 <!-- Google Fonts: Literata (English) + Noto Nastaliq Urdu (Urdu)
      Literata is a serif designed by Google specifically for comfortable
@@ -572,7 +657,7 @@
 
 <p>To me, this raises an important question about leadership, accountability, and literacy. If a person is educated and committed to the public good, should they remain silent in the face of clear problems, or do they have a responsibility to speak up? I continue to seek an answer to this dilemma: why is constructive criticism so often perceived as a threat rather than an opportunity for improvement?</p>
 
-<p style="margin-top:2rem; font-size:0.9rem; color:#666;"><em> This literacy autobiography was originally written in December 2022 as part of the Teaching Teacher Literacy course. It has since been revised and is published here in its edited form.</em></p>
+<p style="margin-top:2rem; font-size:0.9rem; color:#666;"><em> This literacy autobiography was originally written in December 2022 as part of the Teaching Literacy course. It has since been revised and is published here in its edited form.</em></p>
 
   </div>
 

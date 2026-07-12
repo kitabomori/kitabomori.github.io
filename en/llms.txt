@@ -1,0 +1,40 @@
+# Kitabomori
+
+> Kitabomori is a volunteer educational publishing platform promoting a
+> culture of reading and writing. In the Shina language, "kitab" means
+> book and "mori" means conversation — the site publishes articles,
+> book reviews, creative writing, letters, and teaching reflections
+> aimed at researchers, students, teachers, policymakers, and general
+> readers, encouraging thoughtful dialogue around education, culture,
+> language, and human experience. Content is published bilingually in
+> English and Urdu.
+
+## Sections
+
+- [Articles](https://kitabomori.github.io/en/articles/): Experience- and research-based opinion pieces with practical suggestions on reading, writing, and education.
+- [Reviews](https://kitabomori.github.io/en/reviews/): Book reviews and critical takes on published works.
+- [Creative Writing](https://kitabomori.github.io/en/creative-writing/): Original short stories, poetry, reflections, dialogues, satire, and nonfiction.
+  - [Short Stories](https://kitabomori.github.io/en/creative-writing/short-stories/)
+  - [Poetry](https://kitabomori.github.io/en/creative-writing/poetry/)
+  - [Reflection](https://kitabomori.github.io/en/creative-writing/reflection/)
+  - [Dialogues](https://kitabomori.github.io/en/creative-writing/dialogues/)
+  - [Satire](https://kitabomori.github.io/en/creative-writing/satire/)
+  - [Nonfiction](https://kitabomori.github.io/en/creative-writing/nonfiction/)
+- [Letters](https://kitabomori.github.io/en/letters/): Personal letters from teachers, students, and researchers.
+- [Teaching Diary](https://kitabomori.github.io/en/diary/): First-person reflections and journal entries from educators.
+- [Events](https://kitabomori.github.io/en/events/): Announcements and write-ups of Kitabomori events and activities.
+
+## Other languages
+
+- Urdu edition (same sections, translated content): https://kitabomori.github.io/ur/
+
+## Contributing
+
+- [Submission guidelines](https://kitabomori.github.io/en/guidelines/): How to write for Kitabomori.
+- [Submit writing](https://kitabomori.github.io/en/submission/): Where to send a submission.
+
+## Optional
+
+- [Sitemap (English)](https://kitabomori.github.io/en/sitemap.xml)
+- [Sitemap (Urdu)](https://kitabomori.github.io/ur/sitemap.xml)
+- [Privacy Policy](https://kitabomori.github.io/en/privacy/)

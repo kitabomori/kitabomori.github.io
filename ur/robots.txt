@@ -1,5 +1,55 @@
 User-agent: *
 Allow: /
 
+# ------------------------------------------------------------------
+# AI crawlers — explicit policy (added 2026)
+# Kitabomori is free, volunteer-run educational content with nothing
+# to protect from reuse — the goal is maximum reach, including being
+# cited by AI answer engines (ChatGPT Search, Perplexity, Copilot,
+# Gemini, etc.) and included in model training. So every documented
+# AI crawler is explicitly allowed below, covering both the
+# "training" bots (feed model training data) and the "retrieval /
+# search" bots (power live, citation-linked AI answers).
+# Bots with a documented history of ignoring robots.txt (e.g.
+# Bytespider) are left out entirely since a rule for them has no
+# real effect either way.
+# ------------------------------------------------------------------
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Google AI training (separate from regular Googlebot/Search)
+User-agent: Google-Extended
+Allow: /
+
+# Apple AI training
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (used as training data by many models)
+User-agent: CCBot
+Allow: /
+
 Sitemap: https://kitabomori.github.io/en/sitemap.xml
 Sitemap: https://kitabomori.github.io/ur/sitemap.xml
