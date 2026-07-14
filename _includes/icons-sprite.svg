@@ -9,17 +9,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute; width:0; height:0; overflow:hidden;" aria-hidden="true">
   <defs>
 
-    <!-- Open book with a pen resting on it — used on Home -->
-    <symbol id="icon-open-book-pen" viewBox="0 0 120 90">
+    <!-- Open book resting on a baseline, with a pencil — used on Home and in the header -->
+    <symbol id="icon-open-book-pen" viewBox="0 0 120 100">
       <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M60 20 C50 12 32 10 16 14 V68 C32 64 50 66 60 74"/>
-        <path d="M60 20 C70 12 88 10 104 14 V68 C88 64 70 66 60 74"/>
-        <path d="M60 20 V74"/>
-        <path d="M24 26 H50 M24 36 H50 M24 46 H48" opacity="0.55"/>
-        <path d="M70 26 H96 M70 36 H96 M70 46 H94" opacity="0.55"/>
-        <path d="M38 6 L100 32" stroke-width="2.75"/>
-        <path d="M100 32 L106 26 L112 32 L106 40 Z" fill="currentColor" stroke="none" opacity="0.9"/>
-        <circle cx="38" cy="6" r="2.6" fill="currentColor" stroke="none"/>
+        <path d="M10 80 H110"/>
+        <path d="M14 46 C30 50 46 58 60 76 C74 58 90 50 106 46"/>
+        <path d="M22 58 C34 61 46 67 55 74" opacity="0.5"/>
+        <path d="M98 58 C86 61 74 67 65 74" opacity="0.5"/>
+        <path d="M52 68 L88 26"/>
+        <path d="M52 68 L58 62 L60 70 Z" fill="currentColor" stroke="none"/>
+        <path d="M79 37 L88 26 L96 33 L87 44 Z"/>
+        <path d="M88 26 C88 20 92 16 97 15 C96 20 94 24 90 28 Z"/>
       </g>
     </symbol>
 
