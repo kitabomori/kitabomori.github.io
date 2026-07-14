@@ -1,5 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#009F93"/>
-  <text x="32" y="42" font-family="Arial, sans-serif" font-size="28" font-weight="700"
-        fill="#FFFFFF" text-anchor="middle">EW</text>
+  <rect width="64" height="64" rx="12" fill="#FBF7F0"/>
+  <path d="M32 32.8 L32 49.6" stroke="#009F93" stroke-width="1.4"/>
+  <path d="M12.8 29.2 C18 27 25 27 32 32.8 C32 32.8 32 32.8 32 32.8 L32 49.6 C25 43.8 18 43.8 12.8 46 Z" fill="none" stroke="#009F93" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M51.2 29.2 C46 27 39 27 32 32.8 L32 49.6 C39 43.8 46 43.8 51.2 46 Z" fill="none" stroke="#009F93" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M24.8 37.6 L44 18.4" stroke="#009F93" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M38.4 24 L44 18.4 C45.5 12.5 50 10 55.5 9.5 C53 14 51 18 45.5 20 L40 25.5 Z" fill="none" stroke="#009F93" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M45.5 20 L45.5 9.5" stroke="#009F93" stroke-width="1.2" stroke-linecap="round"/>
 </svg>

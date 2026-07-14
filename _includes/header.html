@@ -11,7 +11,9 @@
     <!-- Site name / logo -->
     <a href="{{ site.baseurl }}/{% if site.lang == 'ur' %}ur{% else %}en{% endif %}/"
        class="site-title"
-       style="color:#FFFFFF; text-decoration:none;">
+       style="color:#FFFFFF; text-decoration:none; display:flex; align-items:center; gap:8px;">
+      <img src="{{ site.baseurl }}/assets/favicon.svg" alt="" width="32" height="32"
+           style="border-radius:8px; flex-shrink:0;">
       {% if site.lang == 'ur' %}کتابومری{% else %}Kitabomori{% endif %}
     </a>
 
