@@ -93,12 +93,12 @@
 
           <span class="ticker-item" style="color:#808217;" {% if pass == 2 %}aria-hidden="true"{% endif %}>
             <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}" style="color:#808217; text-decoration:none;">
-              [{% if site.lang == 'ur' %}{{ item_type_ur }}{% else %}{{ item_type_en }}{% endif %}]
+              {% if site.lang == 'ur' %}{{ item_type_ur }}{% else %}{{ item_type_en }}{% endif %}
               {% if site.lang == 'ur' %}{{ item.title_ur }}{% else %}{{ item.title_en }}{% endif %}
               &ndash;
               {% include localized-date.html date=item.date %}
             </a>
-            &nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;|&nbsp;&nbsp;
           </span>
         {% endfor %}
       {% endfor %}
