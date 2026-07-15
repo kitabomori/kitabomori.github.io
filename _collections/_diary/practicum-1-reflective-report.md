@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum-I: Reflective Report"
+title_en: "Practicum I: Reflective Report"
 title_ur: ""
 date: 2024-01-20
 author_en: ""
@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.25rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
+<p style="font-size:0.9rem; color:#666;"><strong>Date:</strong> January 20, 2024</p>
 
 <p>The third semester of B.Ed.-III at Sukkur IBA University started in October 2021. With other courses, Practicum-I was also part of the semester. The practicum (teaching practices) course is unique in that it aims to provide prospective teachers with experience by exposing them to the school environment through weekly visits. It also has specific objectives, such as identifying connections between teaching theory and practice. The other rationales are: to collaborate with peers, cooperating teachers, school staff, and the practicum supervisor; and to develop professional relationships by observing elements of the school from the gatekeeper to the principal. Most of the lot was to invite, accept and utilise feedback from the cooperating teacher, supervisor and peers for learning.</p>
 
@@ -40,5 +40,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <ol><li>To improve my oral communication and further improve my writing.</li><li>Making a good presentation using the available resources.</li><li>The ability to work in a team and leadership skills.</li></ol>
 
 <p>There is no use becoming a teacher who is not intrinsically motivated. One thing I believe was missing throughout the practicum was the motivation and passion that students and teachers would have developed by seeing the devotion of cooperating teachers to their profession of teaching at the respective school. The school which we visited was a place where anyone with high hopes would end up in deep despair. Next time, when I get a chance to visit the school, I will be looking to develop this by asking the cooperating teacher why they are teaching. The rest of the course's tactics and techniques were fine, as I underwent a process of just getting to know the school's dimensions.</p>
+
+<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
 <p style="margin-top:2rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-1/" style="color:#009F93;">&uarr; Back to Reflection 1</a></p>
