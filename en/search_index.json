@@ -15,16 +15,6 @@
 
 
   {
-    "title_en": null,
-    "title_ur": null,
-    "url_en": "/en/diary/practicum-1-reflection-6/",
-    "url_ur": "/ur/diary/practicum-1-reflection-6/",
-    "date": "2026-07-15",
-    "type_en": "Call",
-    "type_ur": "دعوت"
-  },
-
-  {
     "title_en": "Kitabomori's First Reading Circle",
     "title_ur": "کتابومری کا پہلا ریڈنگ سرکل",
     "url_en": "/en/events/first-reading-circle/",
@@ -230,6 +220,16 @@
     "url_en": "/en/diary/practicum-1-reflection-7/",
     "url_ur": "/ur/diary/practicum-1-reflection-7/",
     "date": "2021-11-24",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
+    "title_en": "Practicum I Reflection 6",
+    "title_ur": "",
+    "url_en": "/en/diary/practicum-1-reflection-6/",
+    "url_ur": "/ur/diary/practicum-1-reflection-6/",
+    "date": "2021-11-10",
     "type_en": "Call",
     "type_ur": "دعوت"
   },
