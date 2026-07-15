@@ -24,16 +24,16 @@
 
 <!-- Page title: prefer page-specific title, fall back to site title -->
 <title>
-  Teaching Diary – Kitabomori
+  Practicum II Lesson Plan 3 – Kitabomori
 </title>
 
 <!-- Meta description -->
-<meta name="description" content="A collection of teaching notes, assignments, practical strategies, lesson ideas, reflections, and educational resources gathered throughout my four-year teacher education journey.">
+<meta name="description" content="Co-teacher H is handed a grade 2 class on no notice and improvises — and still walks away with mostly positive feedback.">
 
 <!-- Canonical URL: tells search engines which exact address is the
      authoritative one for this page, and consolidates ranking signals
      if it's ever reachable at more than one URL. -->
-<link rel="canonical" href="https://kitabomori.github.io/en/diary/">
+<link rel="canonical" href="https://kitabomori.github.io/en/diary/practicum-2-lesson-plan-3/">
 
 <!-- Hreflang alternates: this site publishes the same content in English
      and Urdu at identical paths under /en/ and /ur/. These tags tell
@@ -41,15 +41,15 @@
      right language is served in search results instead of ranking them
      as duplicate content or picking one at random. x-default is the
      fallback for languages we don't explicitly support. -->
-<link rel="alternate" hreflang="en" href="https://kitabomori.github.io/en/diary/">
-<link rel="alternate" hreflang="ur" href="https://kitabomori.github.io/ur/diary/">
-<link rel="alternate" hreflang="x-default" href="https://kitabomori.github.io/en/diary/">
+<link rel="alternate" hreflang="en" href="https://kitabomori.github.io/en/diary/practicum-2-lesson-plan-3/">
+<link rel="alternate" hreflang="ur" href="https://kitabomori.github.io/ur/diary/practicum-2-lesson-plan-3/">
+<link rel="alternate" hreflang="x-default" href="https://kitabomori.github.io/en/diary/practicum-2-lesson-plan-3/">
 
 <!-- Open Graph (Facebook, LinkedIn, WhatsApp, Slack previews, etc.) -->
-<meta property="og:title" content="Teaching Diary">
-<meta property="og:description" content="A collection of teaching notes, assignments, practical strategies, lesson ideas, reflections, and educational resources gathered throughout my four-year teacher education journey.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kitabomori.github.io/en/diary/">
+<meta property="og:title" content="Practicum II Lesson Plan 3">
+<meta property="og:description" content="Co-teacher H is handed a grade 2 class on no notice and improvises — and still walks away with mostly positive feedback.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kitabomori.github.io/en/diary/practicum-2-lesson-plan-3/">
 <meta property="og:site_name" content="Kitabomori">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ur_PK">
@@ -57,12 +57,14 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
+<meta property="article:published_time" content="2026-07-15T00:00:00+00:00">
+
 
 <!-- Twitter Card: without these, links shared on X/Twitter fall back to
      a plain link with no image or description. -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Teaching Diary">
-<meta name="twitter:description" content="A collection of teaching notes, assignments, practical strategies, lesson ideas, reflections, and educational resources gathered throughout my four-year teacher education journey.">
+<meta name="twitter:title" content="Practicum II Lesson Plan 3">
+<meta name="twitter:description" content="Co-teacher H is handed a grade 2 class on no notice and improvises — and still walks away with mostly positive feedback.">
 <meta name="twitter:image" content="https://kitabomori.github.io/assets/img/og-default.png">
 
 <!-- JSON-LD structured data. WebSite (with a Sitelinks Search Box target)
@@ -80,6 +82,35 @@
     "@type": "SearchAction",
     "target": "https://kitabomori.github.io/en/search/?q={search_term_string}",
     "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Practicum II Lesson Plan 3",
+  "description": "Co-teacher H is handed a grade 2 class on no notice and improvises — and still walks away with mostly positive feedback.",
+  "datePublished": "2026-07-15T00:00:00+00:00",
+  "inLanguage": "en",
+  "image": "https://kitabomori.github.io/assets/img/og-default.png",
+  "url": "https://kitabomori.github.io/en/diary/practicum-2-lesson-plan-3/",
+  "author": {
+    "@type": "Organization",
+    "name": "Kitabomori"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kitabomori",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kitabomori.github.io/assets/favicon.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kitabomori.github.io/en/diary/practicum-2-lesson-plan-3/"
   }
 }
 </script>
@@ -554,487 +585,197 @@
 
   <main id="main-content">
     <!-- ============================================================
-     page.html – layout for standard content pages.
-     Wraps content in a centred container with page-title heading.
-     ============================================================ -->
-<div class="page-container">
-
-  <!-- ============================================================
-     page-decor.html – picks a decorative line-art icon for the
-     current page based on its permalink, and renders it.
-     Included from _layouts/page.html.
+     post.html – layout for collection items (articles, letters, etc.)
+     Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Margin content either side of the post, for wide screens only
+     (see .post-side in main.css) — purely decorative vertical rules,
+     echoing the site's brand-teal accent. Fixed-position, so
+     placement in the DOM doesn't matter. -->
+<aside class="post-side post-side-left" aria-hidden="true">
+  <span class="post-ornament"></span>
+</aside>
+<aside class="post-side post-side-right" aria-hidden="true">
+  <span class="post-ornament"></span>
+</aside>
+
+<article class="post-container">
+
+  <header class="post-header">
+    <!-- ============================================================
+     post-decor.html – picks a decorative line-art icon for the
+     current post based on its collection.
+     Included from _layouts/post.html.
+     ============================================================ -->
 
 
-<div class="page-decor decor-journal" aria-hidden="true">
+
+<div class="page-decor page-decor-post decor-journal" aria-hidden="true">
   <svg class="decor-svg"><use href="#icon-journal"></use></svg>
 </div>
 
 
-  <h1 class="page-title">
-    
-      Teaching Diary
-    
-  </h1>
-
-  <div class="page-content">
-    <p class="collection-intro">
-  
-    This is a collection of teaching notes, assignments, practical strategies, lesson ideas, reflections, and educational resources gathered throughout my four-year teacher education journey.
-  
-</p>
-
-<div class="card-grid">
-  
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-2-reflection-5/">
-        Practicum II Reflection 5
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">Sitting in on exam day at a government primary school — two papers in one day, no separate answer sheets, and a run-in with a visiting official.</p>
-    
-    <a href="/en/diary/practicum-2-reflection-5/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-2-reflection-4/">
-        Practicum II Reflection 4
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">A near-empty classroom during Ramadan forces a last-minute switch to grade 3 — and a real lesson in why lesson plans matter.</p>
-    
-    <a href="/en/diary/practicum-2-reflection-4/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-2-reflection-3/">
-        Practicum II Reflection 3
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">A turn purely observing — and what it teaches to sit in the corner, take notes, and resist the urge to intervene.</p>
-    
-    <a href="/en/diary/practicum-2-reflection-3/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-2-reflection-2/">
-        Practicum II Reflection 2
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">A first turn actually delivering the lesson — low attendance, overloaded content, and what the co-teachers' feedback revealed.</p>
-    
-    <a href="/en/diary/practicum-2-reflection-2/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-2-reflection-1/">
-        Practicum II Reflection 1
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">Starting Practicum-II with a school visit, a choice between an Urdu- and Sindhi-medium school, and a first look at what co-teaching will demand.</p>
-    
-    <a href="/en/diary/practicum-2-reflection-1/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-2-lesson-plan-5/">
-        Practicum II Lesson Plan 5
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">The final Practicum-II plan: introducing grade 8 students to plotting irrational numbers, like the square root of 2, on the real number line.</p>
-    
-    <a href="/en/diary/practicum-2-lesson-plan-5/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-2-lesson-plan-4/">
-        Practicum II Lesson Plan 4
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">A planned-but-untaught lesson introducing triangles and their types by side length, built around flashcards and a simple board activity.</p>
-    
-    <a href="/en/diary/practicum-2-lesson-plan-4/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-2-lesson-plan-3/">
+    <h1 class="post-title">
+      
         Practicum II Lesson Plan 3
+      
+    </h1>
+
+    <!-- Description / dek: the short one- or two-line summary already
+         written for every post's front matter (description_en /
+         description_ur) — previously used only for the invisible SEO
+         meta tag, now also shown to readers as a subtitle. -->
+    
+    
+    
+    <p class="post-description">Co-teacher H is handed a grade 2 class on no notice and improvises — and still walks away with mostly positive feedback.</p>
+    
+
+    <span class="post-title-divider" aria-hidden="true"></span>
+
+    <!-- Audio link (YouTube). Each post/language can set its own link via
+         youtube_en / youtube_ur in front matter; if a post hasn't set one
+         yet, it falls back to the site-wide YouTube channel link. -->
+    
+    
+    
+    
+    <p class="post-audio-link">
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener">
+        
+          Click for audio on YouTube
+        
       </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">Co-teacher H is handed a grade 2 class on no notice and improvises — and still walks away with mostly positive feedback.</p>
-    
-    <a href="/en/diary/practicum-2-lesson-plan-3/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-2-lesson-plan-2/">
-        Practicum II Lesson Plan 2
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">Co-teacher N takes the lead on adding fractions, earning strong feedback on classroom control and a note to work on volume and vocabulary.</p>
-    
-    <a href="/en/diary/practicum-2-lesson-plan-2/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-2-lesson-plan-1/">
-        Practicum II Lesson Plan 1
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">The first fractions lesson for grade 5, with feedback from both co-teachers on pacing, examples, and helping students who fall behind.</p>
-    
-    <a href="/en/diary/practicum-2-lesson-plan-1/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflective-report/">
-        Practicum I: Reflective Report
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">Looking back on sixteen weeks of Practicum-I — what the visits taught me about schools, teaching, and myself.</p>
-    
-    <a href="/en/diary/practicum-1-reflective-report/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-9/">
-        Practicum I Reflection 9
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">A lunch-break interview with a student named A.</p>
-    
-    <a href="/en/diary/practicum-1-reflection-9/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-8/">
-        Practicum I Reflection 8
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">How questions, tone, and verbal instructions shape whether students feel cared for — or singled out.</p>
-    
-    <a href="/en/diary/practicum-1-reflection-8/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-7/">
-        Practicum I Reflection 7
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">Tracking ten students through a maths class to see exactly when attention holds — and when it doesn't.</p>
-    
-    <a href="/en/diary/practicum-1-reflection-7/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-6/">
-        Practicum I Reflection 6
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">A teacher who hasn't planned a lesson in years.</p>
-    
-    <a href="/en/diary/practicum-1-reflection-6/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-5/">
-        Practicum I Reflection 5
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">An interview with a cooperating teacher and what that reveals about staying updated in teaching.</p>
-    
-    <a href="/en/diary/practicum-1-reflection-5/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-4/">
-        Practicum I Reflection 4
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">Observing how a teacher moves in a classroom and what that movement does for engagement.</p>
-    
-    <a href="/en/diary/practicum-1-reflection-4/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-3/">
-        Practicum I Reflection 3
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">A first field visit to Government X School, Old Sukkur.</p>
-    
-    <a href="/en/diary/practicum-1-reflection-3/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-2/">
-        Practicum I Reflection 2
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">Setting rules for school visits, and why praising effort and listening to everyone takes time.</p>
-    
-    <a href="/en/diary/practicum-1-reflection-2/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-13/">
-        Practicum I Reflection 13
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">A final visit spent understanding bullying — its causes, forms, and a teacher's responsibility to notice it.</p>
-    
-    <a href="/en/diary/practicum-1-reflection-13/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-12/">
-        Practicum I Reflection 12
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">Scoring a cooperating teacher's performance — strong on content knowledge, weaker on planning and assessment.</p>
-    
-    <a href="/en/diary/practicum-1-reflection-12/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-11/">
-        Practicum I Reflection 11
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">A school says it has a discipline policy, but no one can produce it in writing</p>
-    
-    <a href="/en/diary/practicum-1-reflection-11/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-10/">
-        Practicum I Reflection 10
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">Observing a student in maths class, a conversation about sketching, cricket, and group study.</p>
-    
-    <a href="/en/diary/practicum-1-reflection-10/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/practicum-1-reflection-1/">
-        Practicum I Reflection 1
-      </a>
-    </h2>
-    <p class="card-date">15 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">The first class of Practicum: a nervous room, a teacher full of energy, and a first lesson in how to write a reflection.</p>
-    
-    <a href="/en/diary/practicum-1-reflection-1/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/teaching-philosophy/">
-        My Teaching Philosophy
-      </a>
-    </h2>
-    <p class="card-date">12 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">On the teacher as gardener: facilitating a student's innate potential to learn, grow, and serve.</p>
-    
-    <a href="/en/diary/teaching-philosophy/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/diary/literacy-autobiography/">
-        Literacy Autobiography
-      </a>
-    </h2>
-    <p class="card-date">10 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">A reflection on how reading, writing, and conversations shaped my identity, leading me to question the world around me.</p>
-    
-    <a href="/en/diary/literacy-autobiography/" class="card-read-more">
-      Read more &rarr;
-    </a>
-  </div>
-  
-</div>
+    </p>
+    
+  </header>
+
+  <div class="post-body post-body-diary">
+    <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">5th &nbsp;&nbsp; Time: 35 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Mathematics &nbsp;&nbsp; Class strength: 25</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Chapter 3</td><td style="padding:4px 0;">Fraction (کسور) &nbsp;&nbsp; Topic: Basics of Fraction</td></tr></table>
+
+<h4>1. General Objectives</h4>
+
+<p>Students will be able to:</p>
+
+<ul><li>develop mathematical curiosity when solving problems.</li><li>become confident in using mathematics to analyse and solve problems both in school and in real-life situations.</li><li>develop the knowledge, skills, and attitudes necessary to pursue further studies in mathematics.</li></ul>
+
+<h4>2. Specific Objectives (Students' Learning Outcomes)</h4>
+
+<p>Students will be able to:</p>
+
+<ul><li>recall solving fractions with the same denominator.</li><li>differentiate between fractions with the same and different denominators.</li><li>solve the addition or subtraction of fractions with different denominators.</li></ul>
+
+<h4>3. Materials &amp; Resources</h4>
+
+<p>Blackboard, different coloured chalks, and a textbook.</p>
+
+<h4>4. Greetings (4 minutes)</h4>
+
+<p>The teacher will greet the students and, before going to the topic, will inquire about their prior knowledge of solving fractions with the same denominator. The teacher will ask the students if they have any difficulty or confusion with the previous topic. After a short review of the previous lesson, the teacher will move on to the topic.</p>
+
+<h4>5. Introduction (2 minutes)</h4>
+
+<p>As the students are already familiar with fractions with different denominators, the teacher will move on to the topic.</p>
+
+<h4>6. Lesson (12 minutes)</h4>
+
+<p>The teacher will deliver the lesson using examples from the book on page 33, example no. 1. The teacher will explain the method for solving fractions with different denominators, such as finding the LCM and then adding or subtracting them. There are numerous examples in the book. After their solution on the board, the teacher will move to the exercise. As the exercise is quite lengthy, the more confusing questions will be solved on the board — in particular, questions involving three terms from the exercise, parts b and d.</p>
+
+<h4>7. Discussion and Questions (14 minutes)</h4>
+
+<p>While solving questions on the board, the teacher will ask the students verbally to tell her the procedure. Furthermore, the teacher will ask students who are willing to solve questions on the board. This will help the teacher identify where students get confused or cannot solve questions.</p>
+
+<h4>8. Assessment</h4>
+
+<p>The teacher will assess the students, and they will reflect upon their teaching method. The teacher, with the assistance of a co-teacher, will observe students solving assessment questions.</p>
+
+<h4>9. Homework (3 minutes)</h4>
+
+<p>The teacher will specify some questions from the exercise for homework.</p>
+
+<p style="font-style:italic; color:#666;">Note: Co-teacher H delivered the lesson.</p>
+
+<hr style="margin:2rem 0; border:none; border-top:1px solid #ddd;" />
+
+<h4>Feedback to Co-teacher H</h4>
+
+<p>On what basis should I give you feedback, given that the intended lesson plan was not implemented in the respective class? The following is general feedback that highlights the sparkling areas and a few of the hollow ones.</p>
+
+<p>There were many positives to take away from today's class:</p>
+
+<ul><li>The ability to make quick decisions. You did not even take a minute to decide what to do (tables and then addition) or how to teach grade two when the intended class, 5th, was wholly absent. Such ability is vital in teaching, as things never go as planned.</li><li>There was scorching temperature, and you were full of energy. You were continuously interacting with students for one hour and forty-five minutes, excluding the poems and playtime, which certainly needs appreciation.</li><li>Your voice was audible to the whole class.</li><li>The other ability was to mingle with students. I guess they didn't feel any difficulty, since you were delivering a lecture for the first time.</li><li>Bringing students to the board and asking them to solve questions, then using rewards to praise their performance, was a good strategy. I believe it has given tons of confidence to lots of students who were afraid to come forward.</li></ul>
+
+<p>As the lesson was a spontaneous one, there's nothing to critique, but a few points that might help you strengthen your teaching further:</p>
+
+<ul><li>There was limited movement on your part during the whole class — concentrated around the blackboard area. It's worth remembering to move around the whole class to have a glance.</li><li>Initially, you started to teach about tables, then switched to addition. At this age, it might not be easy for grade two students to comprehend two topics and make connections between them.</li><li>One more thing that could have been done was using the concepts of units, tens, and hundredths to further clarify the concept of carrying tens during addition.</li><li>A short break after one hour or 45 minutes could have been appreciated, giving some time for the tiny brain to digest the information.</li></ul>
+
+<p>I hope this feedback will help bring a little improvement.</p>
+
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, April 28, 2022</p>
+
+<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
+
+<p style="margin-top:1.5rem;">Coming up: Reflection 4, when the whole plan changes again — a nearly empty classroom and a sudden switch to grade 3.</p>
+<p style="margin-top:0.75rem;"><a href="/en/diary/practicum-2-reflection-4/" style="color:#009F93; font-weight:600;">Next: Practicum II Reflection 4 &rarr;</a></p>
 
   </div>
 
-</div>
+  <!-- Author and date, shown at the end of the piece -->
+  
+  
+  <p class="post-meta-bottom">
+    
+      15 July 2026
+    
+  </p>
+
+  <!-- Author biography, shown only if provided. Layout stays intact if missing. -->
+  
+  
+  
+
+  <!-- Prev / next navigation within this collection, sorted the same
+       way the collection's listing page sorts (newest first). -->
+  
+  
+  
+
+  
+    
+    
+
+    
+    <nav class="post-nav" aria-label="More from this collection">
+      
+      <a class="post-nav-link post-nav-prev" href="/en">
+        <span class="post-nav-label">Older</span>
+        <span class="post-nav-title">
+          
+        </span>
+      </a>
+      
+
+      
+      <a class="post-nav-link post-nav-next" href="/en">
+        <span class="post-nav-label">Newer</span>
+        <span class="post-nav-title">
+          
+        </span>
+      </a>
+      
+    </nav>
+    
+  
+
+  <!-- Back link -->
+  <p class="post-back">
+    <button onclick="history.back()" class="post-back-btn">
+      &larr; Go back
+    </button>
+  </p>
+
+</article>
 
   </main>
 
