@@ -24,16 +24,16 @@
 
 <!-- Page title: prefer page-specific title, fall back to site title -->
 <title>
-  Reviews – Kitabomori
+  Kitabomori's First Reading Circle – Kitabomori
 </title>
 
 <!-- Meta description -->
-<meta name="description" content="Critical reviews of books on education, literacy, and research.">
+<meta name="description" content="An informal monthly gathering for teachers, students, and researchers to discuss one book on education, literacy, or reading.">
 
 <!-- Canonical URL: tells search engines which exact address is the
      authoritative one for this page, and consolidates ranking signals
      if it's ever reachable at more than one URL. -->
-<link rel="canonical" href="https://kitabomori.github.io/en/reviews/">
+<link rel="canonical" href="https://kitabomori.github.io/en/events/first-reading-circle/">
 
 <!-- Hreflang alternates: this site publishes the same content in English
      and Urdu at identical paths under /en/ and /ur/. These tags tell
@@ -41,15 +41,15 @@
      right language is served in search results instead of ranking them
      as duplicate content or picking one at random. x-default is the
      fallback for languages we don't explicitly support. -->
-<link rel="alternate" hreflang="en" href="https://kitabomori.github.io/en/reviews/">
-<link rel="alternate" hreflang="ur" href="https://kitabomori.github.io/ur/reviews/">
-<link rel="alternate" hreflang="x-default" href="https://kitabomori.github.io/en/reviews/">
+<link rel="alternate" hreflang="en" href="https://kitabomori.github.io/en/events/first-reading-circle/">
+<link rel="alternate" hreflang="ur" href="https://kitabomori.github.io/ur/events/first-reading-circle/">
+<link rel="alternate" hreflang="x-default" href="https://kitabomori.github.io/en/events/first-reading-circle/">
 
 <!-- Open Graph (Facebook, LinkedIn, WhatsApp, Slack previews, etc.) -->
-<meta property="og:title" content="Reviews">
-<meta property="og:description" content="Critical reviews of books on education, literacy, and research.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kitabomori.github.io/en/reviews/">
+<meta property="og:title" content="Kitabomori's First Reading Circle">
+<meta property="og:description" content="An informal monthly gathering for teachers, students, and researchers to discuss one book on education, literacy, or reading.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kitabomori.github.io/en/events/first-reading-circle/">
 <meta property="og:site_name" content="Kitabomori">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ur_PK">
@@ -57,12 +57,14 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 
+<meta property="article:published_time" content="2026-07-15T00:00:00+00:00">
+
 
 <!-- Twitter Card: without these, links shared on X/Twitter fall back to
      a plain link with no image or description. -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Reviews">
-<meta name="twitter:description" content="Critical reviews of books on education, literacy, and research.">
+<meta name="twitter:title" content="Kitabomori's First Reading Circle">
+<meta name="twitter:description" content="An informal monthly gathering for teachers, students, and researchers to discuss one book on education, literacy, or reading.">
 <meta name="twitter:image" content="https://kitabomori.github.io/assets/img/og-default.png">
 
 <!-- JSON-LD structured data. WebSite (with a Sitelinks Search Box target)
@@ -80,6 +82,35 @@
     "@type": "SearchAction",
     "target": "https://kitabomori.github.io/en/search/?q={search_term_string}",
     "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Kitabomori's First Reading Circle",
+  "description": "An informal monthly gathering for teachers, students, and researchers to discuss one book on education, literacy, or reading.",
+  "datePublished": "2026-07-15T00:00:00+00:00",
+  "inLanguage": "en",
+  "image": "https://kitabomori.github.io/assets/img/og-default.png",
+  "url": "https://kitabomori.github.io/en/events/first-reading-circle/",
+  "author": {
+    "@type": "Organization",
+    "name": "Kitabomori"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kitabomori",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://kitabomori.github.io/assets/favicon.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kitabomori.github.io/en/events/first-reading-circle/"
   }
 }
 </script>
@@ -554,62 +585,131 @@
 
   <main id="main-content">
     <!-- ============================================================
-     page.html – layout for standard content pages.
-     Wraps content in a centred container with page-title heading.
-     ============================================================ -->
-<div class="page-container">
-
-  <!-- ============================================================
-     page-decor.html – picks a decorative line-art icon for the
-     current page based on its permalink, and renders it.
-     Included from _layouts/page.html.
+     post.html – layout for collection items (articles, letters, etc.)
+     Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Margin content either side of the post, for wide screens only
+     (see .post-side in main.css) — purely decorative vertical rules,
+     echoing the site's brand-teal accent. Fixed-position, so
+     placement in the DOM doesn't matter. -->
+<aside class="post-side post-side-left" aria-hidden="true">
+  <span class="post-ornament"></span>
+</aside>
+<aside class="post-side post-side-right" aria-hidden="true">
+  <span class="post-ornament"></span>
+</aside>
+
+<article class="post-container">
+
+  <header class="post-header">
+    <!-- ============================================================
+     post-decor.html – picks a decorative line-art icon for the
+     current post based on its collection.
+     Included from _layouts/post.html.
+     ============================================================ -->
 
 
-<div class="page-decor decor-book-star" aria-hidden="true">
-  <svg class="decor-svg"><use href="#icon-book-star"></use></svg>
+
+<div class="page-decor page-decor-post decor-calendar-book" aria-hidden="true">
+  <svg class="decor-svg"><use href="#icon-calendar-book"></use></svg>
 </div>
 
 
-  <h1 class="page-title">
-    
-      Reviews
-    
-  </h1>
-
-  <div class="page-content">
-    
-<p class="collection-intro">Critical reviews of books on education, literacy, and research.</p>
-
-<div class="card-grid">
-  
-  
-  <div class="content-card">
-    <h2 class="card-title">
-      <a href="/en/reviews/three-questions/">
-        Review: The Three Questions
-      </a>
-    </h2>
-    <p class="card-date">01 July 2026</p>
-    
-    
-    
-    <p class="card-excerpt">
+    <h1 class="post-title">
       
+        Kitabomori's First Reading Circle
+      
+    </h1>
+
+    <!-- Description / dek: the short one- or two-line summary already
+         written for every post's front matter (description_en /
+         description_ur) — previously used only for the invisible SEO
+         meta tag, now also shown to readers as a subtitle. -->
+    
+    
+    
+    <p class="post-description">An informal monthly gathering for teachers, students, and researchers to discuss one book on education, literacy, or reading.</p>
+    
+
+    <span class="post-title-divider" aria-hidden="true"></span>
+
+    <!-- Audio link (YouTube). Each post/language can set its own link via
+         youtube_en / youtube_ur in front matter; if a post hasn't set one
+         yet, it falls back to the site-wide YouTube channel link. -->
+    
+    
+    
+    
+    <p class="post-audio-link">
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener">
         
-      
+          Click for audio on YouTube
+        
+      </a>
     </p>
-    <a href="/en/reviews/three-questions/" class="card-read-more">
-      Read more &rarr;
-    </a>
+    
+  </header>
+
+  <div class="post-body post-body-events">
+    
+<p>Kitabomori is hosting its first online reading circle — an informal gathering for teachers, students, researchers, and anyone curious about reading and education to discuss a single book together.</p>
+
+<p>The session will open with a short prompt on one chapter or idea from the book, followed by an open discussion where participants bring in their own classroom or reading experiences. No formal presentation or preparation is required — just having read the book, or at least being curious enough to listen in.</p>
+
+<p>Interested participants can email <a href="mailto:kitabomori@gmail.com">kitabomori@gmail.com</a> to receive the chosen book and the connection details.</p>
+
+
   </div>
+
+  <!-- Author and date, shown at the end of the piece -->
   
-</div>
+  
+  <p class="post-meta-bottom">
+    
+      15 July 2026
+    
+  </p>
 
-  </div>
+  <!-- Author biography, shown only if provided. Layout stays intact if missing. -->
+  
+  
+  
 
-</div>
+  <!-- Prev / next navigation within this collection, sorted the same
+       way the collection's listing page sorts (newest first). -->
+  
+  
+  
+
+  
+    
+    
+
+    
+    <nav class="post-nav" aria-label="More from this collection">
+      
+      <a class="post-nav-link post-nav-prev" href="/en">
+        <span class="post-nav-label">Older</span>
+        <span class="post-nav-title">
+          
+        </span>
+      </a>
+      
+
+      
+    </nav>
+    
+  
+
+  <!-- Back link -->
+  <p class="post-back">
+    <button onclick="history.back()" class="post-back-btn">
+      &larr; Go back
+    </button>
+  </p>
+
+</article>
 
   </main>
 

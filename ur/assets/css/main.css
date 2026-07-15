@@ -672,6 +672,27 @@ body {
   @apply flex items-center gap-2 flex-shrink-0;
 }
 
+/* Borderless header controls (language switch, theme toggle):
+   no box, underline on hover/focus for click affordance. */
+.header-control-btn {
+  @apply text-sm font-semibold tracking-wide bg-transparent border-none cursor-pointer;
+  text-underline-offset: 3px;
+}
+.header-control-btn:hover,
+.header-control-btn:focus-visible {
+  text-decoration: underline;
+}
+
+/* Borderless ticker pause/resume control, same affordance pattern. */
+.ticker-pause-btn {
+  @apply text-xs font-semibold bg-transparent border-none cursor-pointer flex-shrink-0;
+  text-underline-offset: 3px;
+}
+.ticker-pause-btn:hover,
+.ticker-pause-btn:focus-visible {
+  text-decoration: underline;
+}
+
 /* ---- Dropdown submenu (Creative Writing) ---- */
 .nav-item-has-children {
   @apply relative;
