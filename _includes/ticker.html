@@ -43,9 +43,9 @@
   </span>
 
   <!-- Pause/resume control for accessibility (WCAG 2.2.2) -->
-  <button class="ticker-pause" onclick="document.querySelector('.ticker-track').classList.toggle('paused')"
+  <button class="ticker-pause ticker-pause-btn" onclick="document.querySelector('.ticker-track').classList.toggle('paused')"
           aria-label="{% if site.lang == 'ur' %}سکرول روکیں یا جاری رکھیں{% else %}Pause or resume scrolling{% endif %}"
-          style="color:#009F93; background:none; border:1px solid #009F93; padding:2px 8px; font-size:0.75rem; margin-right:8px; cursor:pointer; flex-shrink:0;">
+          style="color:#009F93; padding:2px 6px; margin-right:8px;">
     {% if site.lang == 'ur' %}⏸{% else %}Pause{% endif %}
   </button>
 
