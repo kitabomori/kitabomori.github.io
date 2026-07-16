@@ -7,7 +7,7 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "The final Practicum-II plan: introducing grade 8 students to plotting irrational numbers, like the square root of 2, on the real number line."
+description_en: "Practicum-II final lesson plan: introducing grade 8 students to plotting irrational numbers."
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -55,5 +55,4 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">That's the last entry from Practicum-II.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-1/" style="color:#009F93;">&uarr; Back to Practicum II, Reflection 1</a></p>
