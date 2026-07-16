@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum I: Reflective Report"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-14
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -39,7 +39,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>There is no use becoming a teacher who is not intrinsically motivated. One thing I believe was missing throughout the practicum was the motivation and passion that students and teachers would have developed by seeing the devotion of cooperating teachers to their profession of teaching at the respective school. The school which we visited was a place where anyone with high hopes would end up in deep despair. Next time, when I get a chance to visit the school, I will be looking to develop this by asking the cooperating teacher why they are teaching. The rest of the course's tactics and techniques were fine, as I went through a process of getting to know the school's dimensions.</p>
 
-<p style="font-size:0.9rem; color:#666;"><strong>Date:</strong> January 20, 2024</p>
+<p style="font-size:0.9rem; color:#666;"><strong>Written on:</strong> January 20, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
