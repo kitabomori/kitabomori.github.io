@@ -2,12 +2,12 @@
 layout: post
 title_en: "Practicum III Lesson Plan 8"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Angles taught through the 5E model — engaging, exploring with protractors, explaining, elaborating with real-world examples, and evaluating."
+description_en: "Angles taught through the 5E model — engaging, exploring, explaining, elaborating, and evaluating."
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -43,9 +43,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Textbook of Mathematics-VII, Sindh Textbook Board, Jamshoro.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Wednesday, March 8, 2023</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> March 8, 2023</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: building vocabulary through the 5E model — word webs, group definitions, and using new words correctly in sentences.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-9/" style="color:#009F93; font-weight:600;">Next: Practicum III Lesson Plan 9 &rarr;</a></p>
