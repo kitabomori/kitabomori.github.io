@@ -7,7 +7,7 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Co-teacher N takes the lead on adding fractions, earning strong feedback on classroom control and a note to work on volume and vocabulary."
+description_en: "Co-teacher N takes the lead on adding fractions, lacks classroom control, and needs to work on volume and vocabulary."
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -21,7 +21,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <ul><li>develop mathematical curiosity when solving problems.</li><li>become confident in using mathematics to analyse and solve problems both in school and in real-life situations.</li><li>develop the knowledge, skills, and attitudes necessary to pursue further studies in mathematics.</li></ul>
 
-<h4>2. Specific Objectives (Students' Learning Outcomes)</h4>
+<h4>2. Specific Objectives (SLOs)</h4>
 
 <p>Students will be able to:</p>
 
@@ -67,21 +67,20 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>And certainly, there were a few things that could have been improved:</p>
 
-<ul><li>Your voice was on the low side. You have to practise speaking a little louder. Yes, the number of students in this particular class was fewer — but what if there is a huge classroom with more than 30 students?</li><li>The second thing which needs some improvement is the content knowledge. You prepared the lesson well, but you could put more effort into further strengthening your concepts about the topic "fractions." One thing you can do is give a demo in front of co-teachers or ask for clarifications from someone you like, so the loopholes in the lecture can be identified on time.</li><li>Another minor thing that needs some attention is the correct use of mathematical language and symbols — like 1/2 and 1/4 being called half and a quarter, respectively, and using "=" instead of "//" for equality. The rationale is to enhance mathematical vocabulary; the wrong use of symbols by teachers would lead to the same by students, as they imitate whatever a teacher tells or presents to the class.</li></ul>
+<ul><li>Your voice was on the low side. You have to practise speaking a little louder. Yes, the number of students in this particular class was fewer, but what if there is a huge classroom with more than 30 students?</li><li>The second thing which needs some improvement is the content knowledge. You prepared the lesson well, but you could put more effort into further strengthening your concepts about the topic "fractions." One thing you can do is give a demo in front of co-teachers or ask for clarifications from someone you like, so the loopholes in the lecture can be identified on time.</li><li>Another minor thing that needs some attention is the correct use of mathematical language and symbols — like 1/2 and 1/4 being called half and a quarter, respectively, and using "=" instead of "//" for equality. The rationale is to enhance mathematical vocabulary; the wrong use of symbols by teachers would lead to the same by students, as they imitate whatever a teacher tells or presents to the class.</li></ul>
 
 <p>I hope you take this feedback constructively and that it helps you improve in the future.</p>
 
 <h4>Feedback to Co-teacher N by Co-teacher H</h4>
 
-<p>The student-teacher performed really well. She managed the class, and despite its size and crowding, she interacted with every student. She connected the previous lesson with the day's lesson.</p>
+<p>The student-teacher performed really well. She managed the class and, despite its size and crowding, interacted with every student. She connected the previous lesson with the day's lesson.</p>
 
 <p>Some areas of improvement:</p>
 
 <ul><li><strong>Audibility:</strong> She wasn't audible to everyone, and she should ensure her words flow in a rhythmic pattern so students enjoy the lesson. While teaching, she should also create some form of drama.</li><li><strong>Mathematical terms:</strong> the student-teacher should use mathematical terms, particularly in Urdu, as it is the medium of communication and their course is taught in Urdu.</li></ul>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, April 21, 2022</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> April 21, 2022</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: Reflection 3, watching from the corner of the room as co-teacher N steps in again — this time purely as an observer.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-3/" style="color:#009F93; font-weight:600;">Next: Practicum II Reflection 3 &rarr;</a></p>
