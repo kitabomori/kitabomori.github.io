@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum I Reflection 6"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-14
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,7 +19,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>If I had been the cooperating teacher, I would have planned my lesson. I would have divided the text into chunks and, accordingly, set some objectives. Students would be able to learn about Bhatai's early life and education. To obtain the objective, I would have used text outside the textbook. After the group discussion, the students would be asked to come forward and share what they have learned. This would help the teacher evaluate students' learning. Finally, a home task could be to read the poetry of Shah Abdul Latif Bhatai in the local language to connect this lesson to the upcoming lesson on Bhatai's life.</p>
 
-<p style="font-size:0.9rem; color:#666;"><strong>Date:</strong> November 10, 2021</p>
+<p style="font-size:0.9rem; color:#666;"><strong>Written on:</strong> November 10, 2021</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
