@@ -2,12 +2,12 @@
 layout: post
 title_en: "Practicum III Lesson Plan 10"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "The final Practicum-III lesson: building simple, compound, and complex sentences by identifying subjects and verbs."
+description_en: "Practicum-III final lesson: building simple, compound, and complex sentences by identifying subjects and verbs."
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -43,9 +43,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>English-VII, Sindh Textbook Board, Jamshoro.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Wednesday, March 22, 2023</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> March 22, 2023</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: on the final visit: why consistency in teaching matters, and why no lesson plan ever survives contact with a real classroom intact.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-6/" style="color:#009F93; font-weight:600;">Next: Practicum III Reflection 6 &rarr;</a></p>
