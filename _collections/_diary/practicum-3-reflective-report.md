@@ -2,18 +2,18 @@
 layout: post
 title_en: "Practicum III: Reflective Report"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Ten weeks teaching a full class at Government High School No. 1, Sukkur — the challenges of language, attention, and control, and what came out of it."
+description_en: "Ten weeks teaching a full class at Government X School, Sukkur — the challenges of language, attention, and control, and what came out of it."
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p>The Teaching Practice-III course of B.Ed-VI was the extension of Teaching Practice-I and II. In the last two practicums, we observed the different dimensions of the school, from gatekeeper to principal. We worked on developing lesson plans and delivered some lessons through co-teaching and micro-teaching.</p>
+<p>The Teaching Practice-III course of B.Ed-VI was the extension of Teaching Practice-I and II. In the last two practicums, we observed the different dimensions of the school, from gatekeeper to principal. We developed lesson plans and delivered lessons through co-teaching and micro-teaching.</p>
 
 <p>The Teaching Practice-III course required the following objectives to be achieved:</p>
 
@@ -25,7 +25,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <h4>1. Difficulty in Understanding Concepts</h4>
 
-<p>I taught mathematics and English to grade 7. The mother tongue of the students is Sindhi, and I couldn't speak it. However, the textbooks are in English. Using Urdu and English to deliver was a tough task. The language barrier made it difficult for some students to understand the concepts being taught. To address this, I tried to explain concepts in the simplest terms, which helped some students understand better. I also provided additional time and explanations during break time to ensure that every student understood the concepts.</p>
+<p>I taught mathematics and English to grade 7. The students' mother tongue is Sindhi, and I couldn't speak it. However, the textbooks are in English. Using Urdu and English to deliver was a tough task. The language barrier made it difficult for some students to understand the concepts being taught. To address this, I tried to explain the concepts in the simplest terms, which helped some students better understand. I also provided additional time and explanations during break time to ensure that every student understood the concepts.</p>
 
 <h4>2. Individual Attention</h4>
 
@@ -41,7 +41,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>From this experience, I learned that hands-on learning/activities are necessary to teach students effectively. Active learning techniques, such as group discussions, problem-solving and role-playing, are effective in keeping students engaged and promoting a deeper understanding of the subject matter.</p>
 
-<p>Furthermore, I realised that students need time to process information before moving on to the next topic. Therefore, it's essential to allocate sufficient time for students to reflect on what they have learned and ask questions. Moreover, there should not be a significant gap between one lesson and the next, to maintain continuity.</p>
+<p>Furthermore, I realised that students need time to process information before moving on to the next topic. Therefore, it's essential to allocate sufficient time for students to reflect on what they have learned and ask questions. Moreover, there should not be a significant gap between one lesson and the next to maintain continuity.</p>
 
 <h4>2. Role of a Teacher</h4>
 
@@ -53,11 +53,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>I also learned that it's impossible to implement a lesson plan in its entirety. Unexpected situations, such as disruptive behaviour or unexpected student questions, can arise and alter the original plan. Therefore, it's essential to be flexible and adaptable in teaching methods and instruction to cater to each student's individual needs.</p>
 
-<p>In conclusion, Teaching Practice III was a challenging experience. I tried to fulfil the course requirements by preparing lesson plans for each lesson and addressing the feedback from the observation sheets, plus writing a reflection on my teaching. Moreover, it provided me with some valuable insights into the teaching profession. I learned the importance of time management, lesson planning, active learning techniques and creating a positive relationship with students. Going forward, I am excited to continue learning and plan to use these insights to improve my teaching skills and become a more effective teacher.</p>
+<p>In conclusion, Teaching Practice III was a challenging experience. I tried to fulfil the course requirements by preparing lesson plans for each lesson, addressing feedback from the observation sheets, and writing a reflection on my teaching. Moreover, it provided me with some valuable insights into the teaching profession. I learned the importance of time management, lesson planning, active learning techniques and creating a positive relationship with students. Going forward, I am excited to continue learning and plan to use these insights to improve my teaching skills and become a more effective teacher.</p>
 
 <p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Course period: February 8 &ndash; March 22, 2023</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">That's the last entry from Practicum-III.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-1/" style="color:#009F93;">&uarr; Back to Practicum III, Lesson Plan 1</a></p>
