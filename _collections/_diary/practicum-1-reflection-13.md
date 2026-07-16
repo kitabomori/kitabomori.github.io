@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum I Reflection 13"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-14
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,7 +19,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Allegedly, in the premises of a school, it is the prime responsibility of a teacher to know what is going on with a particular student. The pale faces of students at times indicate that someone is bullying and victimising them. A teacher should talk to students personally, assure them that they can be a source of comfort, and that the teacher will resolve the problem.</p>
 
-<p style="font-size:0.9rem; color:#666;"><strong>Date:</strong> January 12, 2024</p>
+<p style="font-size:0.9rem; color:#666;"><strong>Written on:</strong> January 12, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
