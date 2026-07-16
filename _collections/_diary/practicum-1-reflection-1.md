@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum I Reflection 1"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-14
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -17,7 +17,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Humorously introducing himself to the class eased the classroom's tense atmosphere. The teacher's energy told the story of his passion for his profession, which encouraged the students to adopt it as well. The introduction and outline of the course help students become familiar with the course and what they will be doing in the coming days. Learning how to write reflections enhances students' skills. The teacher's energy was at its peak even at the end of the class. This did not allow the students to engage in gossip or lose their attention. But at the same time, the humorous way the questions were asked made the class fun, which I would love to be part of.</p>
 
-<p style="font-size:0.9rem; color:#666;"><strong>Date:</strong> October 16, 2021</p>
+<p style="font-size:0.9rem; color:#666;"><strong>Written on:</strong> October 16, 2021</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
