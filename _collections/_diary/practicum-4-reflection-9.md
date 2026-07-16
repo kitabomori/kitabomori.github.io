@@ -25,7 +25,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Interacting with students made me realise what Bell Hooks had said years back. An academy (school/classroom) is not a paradise where students want to be, but a teacher can create one where they can enjoy learning, which is missing in our schools. I wonder what a teacher could do to make students happy? The start could be to spend more and more time in breaks, and whenever a teacher finds an opportunity, instead of gossiping in the corners of staff rooms.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Wednesday, November 29, 2023</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> November 29, 2023</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 

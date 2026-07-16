@@ -7,15 +7,13 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Reflection on invigilating mid-term examinations at IBA Public School, Sukkur."
+description_en: "Reflection on invigilating mid-term examinations."
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
 <p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum IV consisted of ten lessons at IBA Public School, Sukkur, teaching Grade VIII-Daisy (Science) and Grade VII-Rose (English).</p>
-
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Reflection written on:</strong> Wednesday, November 1, 2023</p>
 
 <h3>Invigilation Reflection</h3>
 
@@ -25,7 +23,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>For me the examination hall has always been a time to observe and enjoy the looks, peers make while attempting a paper. As a prospective teacher this experience and the serious faces of students made me realize we (students) are fearful of exams and it is a question mark on our education system. In an examination hall it is vital to help students to feel at ease so that they would attempt the exam by taking it as a daily routine practice.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Wednesday, November 1, 2023</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> November 1, 2023</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
