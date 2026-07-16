@@ -23,5 +23,4 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: teaching diary writing through Anne Frank, and wrestling with how to make reading and literature genuinely engaging in class.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-4/" style="color:#009F93; font-weight:600;">Next: Practicum V Lesson Plan 4 &rarr;</a></p>
