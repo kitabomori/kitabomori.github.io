@@ -2,12 +2,12 @@
 layout: post
 title_en: "Practicum III Reflection 6"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "On the final visit: why consistency in teaching matters, and why no lesson plan ever survives contact with a real classroom intact."
+description_en: "Why consistency in teaching matters, and why no lesson plan ever survives contact with a real classroom intact."
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -15,7 +15,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p><em>Reflection on Lesson X</em></p>
 
-<p>During the final visit to Government High School No. 1, Sukkur, on March 22, I observed the following points:</p>
+<p>During the final visit to Government X School, Sukkur, on March 22, I observed the following points:</p>
 
 <ol><li>A teacher needs consistency in teaching methods and instructions.</li><li>It's impossible to implement a lesson plan completely.</li></ol>
 
@@ -25,9 +25,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>To sum up, for a teacher to make an impact on students' learning, there is a need for consistency in teaching methods and instruction. It helps to establish clear expectations and promotes engagement and motivation among students. At the same time, a teacher must be aware that a lesson never goes as planned and must be flexible and adaptable to meet the diverse needs of their students.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Wednesday, March 22, 2023</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> March 22, 2023</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: ten weeks teaching a full class at Government High School No. 1, Sukkur — the challenges of language, attention, and control, and what came out of it.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflective-report/" style="color:#009F93; font-weight:600;">Next: Practicum III: Reflective Report &rarr;</a></p>
