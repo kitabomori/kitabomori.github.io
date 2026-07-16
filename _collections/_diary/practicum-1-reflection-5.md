@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum I Reflection 5"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-14
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,7 +19,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Based on the irritation with this particular cooperative teacher, I learned that teaching at this school has been stuck in the past. The teacher is using methods, strategies, or early rights to teach the 21st-century mobile phone generation. The profession of teaching demands that teachers adopt current tactics and teaching styles to manage students in the current era. This experience would be a reminder for me to be an updated teacher who never stops learning how to teach.</p>
 
-<p style="font-size:0.9rem; color:#666;"><strong>Date:</strong> November 3, 2021</p>
+<p style="font-size:0.9rem; color:#666;"><strong>Written on:</strong> November 3, 2021</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
