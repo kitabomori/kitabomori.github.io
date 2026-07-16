@@ -1,0 +1,53 @@
+---
+layout: post
+title_en: "Practicum V Lesson Plan 5"
+title_ur: ""
+date: 2026-07-18
+author_en: ""
+author_ur: ""
+bio_en: ""
+bio_ur: ""
+description_en: "A Pakistan Studies lesson on the formation of the All India Muslim League, its aims, and its objectives."
+description_ur: ""
+youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+---
+
+<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Institution</td><td style="padding:4px 0;"></td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">8th Daisy &nbsp;&nbsp; Duration: 35 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Pak Study &nbsp;&nbsp; Class strength: 40</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;">Aims and Objectives of AIML</td></tr></table>
+
+<p><strong>Students will be able to:</strong></p><ul><li>describe what led to the formation of the All India Muslim League.</li><li>explain the significance of the All India Muslim League.</li></ul>
+
+<h4>2. Required Material</h4>
+
+<p>Board, marker, duster, charts.</p>
+
+<h4>3. Motivational Activity (5 minutes)</h4>
+
+<p>Ask students to reflect on the challenges faced by various communities during the 1900s.</p>
+
+<h4>4. Introductory Activity (5 minutes)</h4>
+
+<p>Briefly introduce the All India Muslim League and its formation in 1906. Discuss the political climate of India during that period and the factors leading to the League's establishment.</p>
+
+<h4>5. Activity 1 (10 minutes)</h4>
+
+<p>Divide students into small groups to discuss the aims and objectives of the All India Muslim League. Ask each group to analyse the League's aims and objectives as they relate to 1906.</p>
+
+<h4>6. Activity 2 (5 minutes)</h4>
+
+<p>Recap the key objectives of the All India Muslim League discussed in the previous activities.</p>
+
+<h4>7. Assessment Activity (5 minutes)</h4>
+
+<p>Ask questions related to the aims and objectives of the AIML to assess the students.</p>
+
+<h4>8. Reference</h4>
+
+<p><a href="https://byjus.com/free-ias-prep/this-day-in-history-dec30/" style="color:#009F93;">byjus.com &mdash; This Day in History</a></p>
+
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, March 21, 2024</p>
+
+<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
+
+<p style="margin-top:1.5rem;">Coming up: back to physics: sound amplification devices, from microphones to hearing aids, and where students actually encounter them.</p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-5/" style="color:#009F93; font-weight:600;">Next: Practicum V Reflection 5 &rarr;</a></p>
