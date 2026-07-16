@@ -285,16 +285,6 @@
   },
 
   {
-    "title_en": "Practicum I: Reflective Report",
-    "title_ur": "",
-    "url_en": "/en/diary/practicum-1-reflective-report/",
-    "url_ur": "/ur/diary/practicum-1-reflective-report/",
-    "date": "2026-07-15",
-    "type_en": "Call",
-    "type_ur": "دعوت"
-  },
-
-  {
     "title_en": "Practicum I Reflection 9",
     "title_ur": "",
     "url_en": "/en/diary/practicum-1-reflection-9/",
@@ -380,6 +370,16 @@
     "url_en": "/en/events/first-reading-circle/",
     "url_ur": "/ur/events/first-reading-circle/",
     "date": "2026-07-15",
+    "type_en": "Call",
+    "type_ur": "دعوت"
+  },
+
+  {
+    "title_en": "Practicum I: Reflective Report",
+    "title_ur": "",
+    "url_en": "/en/diary/practicum-1-reflective-report/",
+    "url_ur": "/ur/diary/practicum-1-reflective-report/",
+    "date": "2026-07-14",
     "type_en": "Call",
     "type_ur": "دعوت"
   },
