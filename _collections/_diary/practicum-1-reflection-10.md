@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum I Reflection 10"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-14
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,7 +19,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Teaching is not only about uttering a few words on a topic in front of a crowd. It is also actually seeking to understand the nature and behaviour of a child. Understanding a child's nature helps a teacher identify strengths, talents, and weaknesses, and develop a teaching style that suits the student's learning style. At the same time, it helps a teacher plan a lesson tailored to a student's intellect, making it more productive.</p>
 
-<p style="font-size:0.9rem; color:#666;"><strong>Date:</strong> December 15, 2021</p>
+<p style="font-size:0.9rem; color:#666;"><strong>Written on:</strong> December 15, 2021</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
