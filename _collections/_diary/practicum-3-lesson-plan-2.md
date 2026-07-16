@@ -2,12 +2,12 @@
 layout: post
 title_en: "Practicum III Lesson Plan 2"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Reading and discussing the poem “The Blind Boy” — building vocabulary and summarising its main idea."
+description_en: "Reading and discussing the poem 'The Blind Boy' — building vocabulary and summarising its main idea."
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -45,9 +45,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>English Sindh Textbook Board Jamshoro, Grade-VII.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Wednesday, February 15, 2023</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> February 15, 2023</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: grade 7 geometry — adjacent, complementary, and supplementary angles, built up from a brainstormed tree diagram.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-3/" style="color:#009F93; font-weight:600;">Next: Practicum III Lesson Plan 3 &rarr;</a></p>
