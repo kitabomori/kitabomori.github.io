@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum I Reflection 4"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-14
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -17,7 +17,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>The seating arrangement and layout of any class are vital in determining whether it is student-centred or teacher-centred. Class 9th-A was in the form of a grid, where three columns and six rows were given to the class as a layout. There was enough between the columns to move freely, but the rows were close to one another, so there was no room for engagement. During the lecture, the teacher remained close to the board, but when he posed a question, he moved freely around the class. Often, the teacher checked their work by going to them. When I asked the teacher about the movement, he said, "It depends upon the layout of the class and what kind of subject you are teaching". To some extent, I also believe this, but whatever subject a teacher is teaching, it is important to be present throughout the class. So that no one would feel left out. By observing the teacher's movement, I realised how important it is for a teacher to move within a class. To be a good teacher, one must develop this habit to thrive in the profession.</p>
 
-<p style="font-size:0.9rem; color:#666;"><strong>Date:</strong> October 27, 2021</p>
+<p style="font-size:0.9rem; color:#666;"><strong>Written on:</strong> October 27, 2021</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
