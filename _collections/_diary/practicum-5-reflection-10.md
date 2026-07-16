@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum V Reflection 10"
 title_ur: ""
-date: 2026-07-18
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,9 +19,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>This was our last lesson, completing the ten-lesson practicum requirement. We're not sure whether there will be another, but this was the last one for us as a pair. We don't have to share what we'd teach next, or how we'd improve the next class. The only thing left to say is that we enjoyed learning to teach, and teaching to learn. Whatever we've learned, we'll carry forward as we keep teaching and learning in the days ahead.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left; font-style:italic;">Written on: date not specified in the original document.</p>
+<p style="font-size:0.85rem; color:#666; text-align:left; font-style:italic;">Written on: ...</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: ten lessons, taught partly alone and partly in pairs, and a set of concrete recommendations for how the practicum itself could be better designed.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflective-report/" style="color:#009F93; font-weight:600;">Next: Practicum V: Reflective Report &rarr;</a></p>

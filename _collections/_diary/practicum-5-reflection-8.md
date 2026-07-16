@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum V Reflection 8"
 title_ur: ""
-date: 2026-07-18
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,9 +19,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>After consulting with the cooperating teachers, I'll plan the next mathematics class — the 9th lesson of the practicum, and likely the last one, as students will soon have their final-term exams and, hopefully, all will be promoted to the next class. I've learned a lot from teaching in pairs and from the post-conference discussions, where we talked through the pros and cons of a lesson and how to tackle classroom and outside issues related to students' learning.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, April 25, 2024</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> April 25, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: teaching angle construction from the floor of a U-shaped classroom, and connecting geometry to navigation and time dilation.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-9/" style="color:#009F93; font-weight:600;">Next: Practicum V Lesson Plan 9 &rarr;</a></p>

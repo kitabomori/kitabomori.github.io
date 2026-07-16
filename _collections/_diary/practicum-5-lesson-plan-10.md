@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum V Lesson Plan 10"
 title_ur: ""
-date: 2026-07-18
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,9 +19,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Per the accompanying reflection, the lesson opened by asking students to write what "time" meant to them on Mentimeter, then introduced the twin paradox as a way into time dilation. A second student teacher explained frames of reference for objects at rest and in motion, using a thrown ball to show how speed, time, and distance are relative, and covered the Lorentz factor before closing with the idea of time travel for passengers on a fast-moving spacecraft as a dramatic application of the concept.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left; font-style:italic;">Written on: date not specified in the original document.</p>
+<p style="font-size:0.85rem; color:#666; text-align:left; font-style:italic;">Written on: ...</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: opening the practicum with a lesson on dreams, drawing on Freud, Iqbal, Gandhi, and Martin Luther King Jr.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-10/" style="color:#009F93; font-weight:600;">Next: Practicum V Reflection 10 &rarr;</a></p>

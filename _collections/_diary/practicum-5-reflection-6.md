@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum V Reflection 6"
 title_ur: ""
-date: 2026-07-18
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,9 +19,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>I consider today's lesson an improvement over past ones, as students showed interest in the manipulatives I used to present the topic's concepts. The observer suggested moving around the class more, so the student sitting at the back would also be engaged and encouraged. Keeping the supervisor's instructions in mind, I'll develop another science lesson for Thursday, though it's not yet clear whether we'll be going to the public school or teaching here at Sukkur IBA University.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, March 28, 2024</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> March 28, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: coining “the pedagogy of perfume” after hearing a student was barred from class over a scent a teacher disliked.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-7/" style="color:#009F93; font-weight:600;">Next: Practicum V Lesson Plan 7 &rarr;</a></p>

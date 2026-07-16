@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum V Reflection 4"
 title_ur: ""
-date: 2026-07-18
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,9 +19,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Moving forward, I think lesson study could be a strategy, taking suggestions and planning lessons with my pair observer to address student disengagement. At the same time, it's tough to make the class a place to learn when we visit only once a week — we don't know what students are doing throughout the week or what they're up to in their lives. In the next class, I'll be teaching a topic from Pakistan Studies, after consulting the subject teacher.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, March 7, 2024</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong>  March 7, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: teaching the formation of the Muslim League while trying not to repeat a one-sided version of history from the author's own school days.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-5/" style="color:#009F93; font-weight:600;">Next: Practicum V Lesson Plan 5 &rarr;</a></p>

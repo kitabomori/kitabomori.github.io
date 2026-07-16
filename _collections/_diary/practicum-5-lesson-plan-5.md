@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum V Lesson Plan 5"
 title_ur: ""
-date: 2026-07-18
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -45,9 +45,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p><a href="https://byjus.com/free-ias-prep/this-day-in-history-dec30/" style="color:#009F93;">byjus.com &mdash; This Day in History</a></p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, March 21, 2024</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> March 21, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: back to physics: sound amplification devices, from microphones to hearing aids, and where students actually encounter them.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-5/" style="color:#009F93; font-weight:600;">Next: Practicum V Reflection 5 &rarr;</a></p>

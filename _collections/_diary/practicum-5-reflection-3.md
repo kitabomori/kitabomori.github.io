@@ -19,7 +19,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Since midterms at the school are ending by the end of this week, our micro-teaching sessions have ended here for now. We will be going for teaching practice, teaching individually; the topics are not yet finalised, but we aim to teach from English and physics for grade 8. While delivering our lessons, we intend not to repeat the mistake of failing to engage the whole class, ensuring the activities are engaging. We will also try to speak louder, so students don't lose interest in the lesson due to difficulty hearing the teacher's voice from the side.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, February 29, 2024</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> February 29, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 

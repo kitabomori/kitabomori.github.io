@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum V Lesson Plan 2"
 title_ur: ""
-date: 2026-07-18
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,7 +19,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Per the accompanying reflection, the lesson opened with a personal anecdote about writing a letter, connected to Plato's idea of a "missing other half" that completes a person, and framed letters as a similar means of completing a connection between people. It went on to cover the history of letters and where they have historically been used, then treated the letter as a literary form &mdash; reading short excerpts from Maulana Abul Kalam Azad's <em>Ghubar-e-Khatir</em>, one of Ghalib's letters, and a few lines from <em>Sophie's World</em>. For assessment, students were asked to identify different modern forms of letters and read a few aloud.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, February 22, 2024</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> February 22, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 

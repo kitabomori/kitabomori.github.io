@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum V Lesson Plan 3"
 title_ur: ""
-date: 2026-07-18
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -41,9 +41,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <ul><li>Richard Feynman, "Ode to a Flower" &mdash; <a href="https://www.themarginalian.org/2013/01/01/ode-to-a-flower-richard-feynman/" style="color:#009F93;">themarginalian.org</a></li><li><a href="https://www.youtube.com/watch?v=XKYUELuf49s&t=1762s" style="color:#009F93;">Supporting video</a></li></ul>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, February 29, 2024</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong>  February 29, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: teaching diary writing through an excerpt of Anne Frank's diary, then asking students to write their own entry about a new teacher's first day.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-3/" style="color:#009F93; font-weight:600;">Next: Practicum V Reflection 3 &rarr;</a></p>

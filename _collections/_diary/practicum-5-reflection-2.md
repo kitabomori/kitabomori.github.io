@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum V Reflection 2"
 title_ur: ""
-date: 2026-07-18
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -23,9 +23,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p dir="rtl" style="text-align:right;">مورخہ 29 فروری کو بھی پبلک سکول میں امتحانات ہونے کی وجہ سے ہم سکھر آئی بی اے میں ہی مائیکرو ٹیچنگ کریں گے، تو اس بار ہم اردو کے بجائے فزکس کے ایک سبق "کوانٹم فزکس" پر تدریسی خاکہ بنائیں گے، اور یہ کوشش ہوگی کہ اسٹوڈنٹ لرننگ آبجیکٹو یعنی سبق کے مقاصد کو مکمل طور پر واضح کریں اور اپنی تشخیصی سرگرمی کو بھی انہی مقاصد کے ساتھ ترتیب میں رکھیں۔</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, February 22, 2024</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> February 22, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: a second micro-teaching lesson on quantum physics, and the trade-off between covering a topic and keeping the whole class engaged.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-3/" style="color:#009F93; font-weight:600;">Next: Practicum V Lesson Plan 3 &rarr;</a></p>

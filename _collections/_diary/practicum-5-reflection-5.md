@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum V Reflection 5"
 title_ur: ""
-date: 2026-07-18
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,9 +19,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Reading this reflection, it looks like I had a perfect lesson, but I found the class disengaged and disruptive. As prospective teachers, we go to the field once a week or once a fortnight, and students take this as an opportunity to have fun and relax from the burden of routine. We don't have marks to deduct or any power to take action beyond the 40-minute class. On the next visit, we have to start from scratch. In the future, it would help if the teaching practice were designed so teaching happens continuously for a week, followed by time to reflect, then another week of teaching. The supervisor has also emphasised integrating ICT into upcoming classes, but I'm unsure how to do that yet. Next, I'll be teaching a science topic after consulting the cooperating teacher.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, March 21, 2024</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> March 21, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: a teacher pulls three students out mid-lesson without asking — and a hard look at what authority a prospective teacher actually has in someone else's classroom.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-6/" style="color:#009F93; font-weight:600;">Next: Practicum V Lesson Plan 6 &rarr;</a></p>

@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum V Reflection 1"
 title_ur: ""
-date: 2026-07-18
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -21,9 +21,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p dir="rtl" style="text-align:right;">آنے والے جمعرات کو، گو کہ ہم پبلک سکول کا رخ نہیں کر رہے اور جامعہ سکھر آئی بی اے میں ہی مائیکرو ٹیچنگ کرنے والے ہیں، تو میں اپنی ہم جماعت کے ساتھ تعاون کرتے ہوئے تدریسی خاکے کو تشکیل دوں گا اور کوشش رہے گی کہ بھرپور تیاری کے ساتھ اگلی کلاس میں آؤں۔ اور یہ امید رکھتا ہوں کہ اس تدریسی عمل میں جو کمی پیشی رہی ہیں ان کو دور کرتے ہوئے بورڈ کا زیادہ سے زیادہ استعمال کروں اور اپنی آواز کو بلند رکھتے ہوئے تدریسی عمل کو جاری رکھنے کی کوشش کروں۔</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, February 15, 2024</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> February 15, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: a revised, paired lesson on letter writing — and a first experience of teaching alongside another student teacher.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-2/" style="color:#009F93; font-weight:600;">Next: Practicum V Lesson Plan 2 &rarr;</a></p>
