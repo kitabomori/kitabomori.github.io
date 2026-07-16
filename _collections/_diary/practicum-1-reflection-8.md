@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum I Reflection 8"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-14
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,7 +19,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>To be a good teacher, it is important to understand how vital it is to engage with the whole class verbally. Verbal involvement helps manage disruptive behaviour in class, encourages participation, and makes students more engaged in the ongoing activity. The teacher's healthy, unbiased verbal engagement with students makes students accountable. Hence, it is highly recommended that the teacher involve all students in class in oral communication.</p>
 
-<p style="font-size:0.9rem; color:#666;"><strong>Date:</strong> December 1, 2021</p>
+<p style="font-size:0.9rem; color:#666;"><strong>Written on:</strong> December 1, 2021</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
