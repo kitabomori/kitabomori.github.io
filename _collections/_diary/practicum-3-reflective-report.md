@@ -55,7 +55,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>In conclusion, Teaching Practice III was a challenging experience. I tried to fulfil the course requirements by preparing lesson plans for each lesson, addressing feedback from the observation sheets, and writing a reflection on my teaching. Moreover, it provided me with some valuable insights into the teaching profession. I learned the importance of time management, lesson planning, active learning techniques and creating a positive relationship with students. Going forward, I am excited to continue learning and plan to use these insights to improve my teaching skills and become a more effective teacher.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Course period: February 8 &ndash; March 22, 2023</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> March 22, 2023</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
