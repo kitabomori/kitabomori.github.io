@@ -7,7 +7,7 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Co-teacher H is handed a grade 2 class on no notice and improvises — and still walks away with mostly positive feedback."
+description_en: "Class swipt, Co-teacher H in grade 2 class and improvised."
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -21,7 +21,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <ul><li>develop mathematical curiosity when solving problems.</li><li>become confident in using mathematics to analyse and solve problems both in school and in real-life situations.</li><li>develop the knowledge, skills, and attitudes necessary to pursue further studies in mathematics.</li></ul>
 
-<h4>2. Specific Objectives (Students' Learning Outcomes)</h4>
+<h4>2. Specific Objectives (SLOs)</h4>
 
 <p>Students will be able to:</p>
 
@@ -73,9 +73,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>I hope this feedback will help bring a little improvement.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, April 28, 2022</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> April 28, 2022</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: Reflection 4, when the whole plan changes again — a nearly empty classroom and a sudden switch to grade 3.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-4/" style="color:#009F93; font-weight:600;">Next: Practicum II Reflection 4 &rarr;</a></p>
