@@ -2,12 +2,12 @@
 layout: post
 title_en: "Practicum III Lesson Plan 5"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-16
 author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "A grade 5 speaking lesson on truthfulness, using small-group scenarios to test how students would respond to dishonesty."
+description_en: "Speaking lesson on truthfulness, using small-group scenarios to test how students would respond to dishonesty."
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -25,11 +25,11 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <h4>3. Introduction</h4>
 
-<p>The teacher will begin the lesson by asking students what they think it means to be truthful. He will discuss the importance of truthfulness in our daily lives and the consequences of lying or being dishonest by sharing a personal anecdote or story that illustrates the value of truthfulness.</p>
+<p>The teacher will begin the lesson by asking students what they think it means to be truthful. He will discuss the importance of truthfulness in our daily lives and the consequences of lying or dishonesty, sharing a personal anecdote that illustrates the value of truthfulness.</p>
 
 <h4>4. Thinking Activity</h4>
 
-<ul><li>Divide students into small groups and provide a scenario where honesty is tested, such as finding money on the ground or witnessing a friend cheat on a test.</li><li>Ask the groups to discuss and present how they would respond to the situation, emphasising the importance of truthfulness.</li><li>Encourage classmates to share their thoughts and opinions about the scenarios presented.</li></ul>
+<ul><li>Divide students into small groups and provide a scenario where honesty is tested, such as finding money on the ground or witnessing a friend cheat on a test. </li><li>Ask the groups to discuss and present how they would respond to the situation, emphasising the importance of truthfulness.</li><li>Encourage classmates to share their thoughts and opinions about the scenarios presented.</li></ul>
 
 <h4>5. Assessment</h4>
 
@@ -41,9 +41,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>English Sindh Textbook Board Jamshoro, Grade-V.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Wednesday, February 22, 2023</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> February 22, 2023</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: students wanted more hands-on activity, individual attention was hard to give, and the response wasn't quite what was hoped for.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-3/" style="color:#009F93; font-weight:600;">Next: Practicum III Reflection 3 &rarr;</a></p>
