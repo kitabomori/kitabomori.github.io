@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum I Reflection 12"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-14
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -19,7 +19,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Being an effective teacher requires a grasp of several key areas, from lesson planning to delivering it with clear instructions and effective communication. At the same time, managing and evaluating students are important areas of the teaching process. Having expertise in only one domain, i.e. content knowledge, or a specific method of teaching,  is of no use. Hence, it is the requirement of the teaching profession in the 21st century to compare all areas, from knowing the subject well to understanding students' nature.</p>
 
-<p style="font-size:0.9rem; color:#666;"><strong>Date:</strong> January 12, 2024</p>
+<p style="font-size:0.9rem; color:#666;"><strong>Written on:</strong> January 12, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
