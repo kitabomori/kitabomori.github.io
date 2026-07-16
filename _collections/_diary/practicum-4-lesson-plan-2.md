@@ -15,7 +15,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum IV consisted of ten lessons at IBA Public School, Sukkur, teaching Grade VIII-Daisy (Science) and Grade VII-Rose (English). Lesson plans 2 and 10 from the original document were embedded as scanned images and could not be recovered in full.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Lesson delivered on:</strong> Wednesday, September 27, 2023</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Lesson designed on:</strong> September 27, 2023</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;">
 <tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">VIII-Daisy</td><td style="padding:4px 12px; font-weight:600; white-space:nowrap;">Duration</td><td style="padding:4px 0;">40 Minutes</td></tr>
@@ -94,9 +94,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Science book Grade 8th</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Wednesday, September 27, 2023</p>
-
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This lesson plan has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-2/" style="color:#009F93; font-weight:600;">Next: Reflection 2 &rarr;</a></p>
+
 <p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-1/" style="color:#009F93; font-weight:600;">&larr; Previous: Reflection 1</a></p>
