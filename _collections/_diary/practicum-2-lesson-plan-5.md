@@ -51,7 +51,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p style="font-style:italic; color:#666;">There was no reflection for Lesson Plans 4 and 5, as these were planned but not taught.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, July 7, 2022</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> July 7, 2022</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
