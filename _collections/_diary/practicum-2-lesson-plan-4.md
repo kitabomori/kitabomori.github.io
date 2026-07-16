@@ -7,7 +7,7 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "A planned-but-untaught lesson introducing triangles and their types by side length, built around flashcards and a simple board activity."
+description_en: "A planned-but-untaught lesson introducing triangles"
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -53,5 +53,4 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: Lesson Plan 5, the final plan of Practicum-II — plotting irrational numbers on the real number line.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-5/" style="color:#009F93; font-weight:600;">Next: Practicum II Lesson Plan 5 &rarr;</a></p>
