@@ -7,7 +7,7 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "The first fractions lesson for grade 5, with feedback from both co-teachers on pacing, examples, and helping students who fall behind."
+description_en: "Fractions lesson for grade 5, with feedback from both co-teachers on helping students who fall behind."
 description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -77,9 +77,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>The teacher's body language and energy delivery were good, and he tried to explain every detail. If some students did not understand, he would try to explain again and again, which was a good thing.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> Thursday, March 31, 2022</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> March 31, 2022</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
-<p style="margin-top:1.5rem;">Coming up: Reflection 2, delivering a lesson for the first time and being on the receiving end of that feedback.</p>
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-2/" style="color:#009F93; font-weight:600;">Next: Practicum II Reflection 2 &rarr;</a></p>
