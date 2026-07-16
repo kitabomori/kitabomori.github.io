@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum I Reflection 7"
 title_ur: ""
-date: 2026-07-15
+date: 2026-07-14
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -17,7 +17,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>The outcome of this observation is that the students were on task only during a single activity, in this case, writing. But the rest of the class, the activities, and the instructions went in vain, as they were not helpful or effective enough to keep students on task for a major portion of the lecture. When I shared the information with the cooperating teacher, he said, "Mathematics is a subject which needs practice and practice, so this habit of note-taking is helpful to them." At the same time, it is the teacher's responsibility to engage every student in the class by paying attention and communicating clearly. To maximise learning within the class, a teacher should have strategies to motivate and engage students for every set of instructions. To be a good teacher and engage students in a way that every second is productive, a teacher needs a plan and the ability to identify what is lacking. If I were the cooperating teacher, I could have used the formative assessment to check whether the students were on task. It is also important to keep an eye on every student with appropriate movement in the class.</p>
 
-<p style="font-size:0.9rem; color:#666;"><strong>Date:</strong> November 24, 2021</p>
+<p style="font-size:0.9rem; color:#666;"><strong>Written on:</strong> November 24, 2021</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
