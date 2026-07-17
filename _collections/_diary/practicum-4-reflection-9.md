@@ -13,10 +13,6 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum IV consisted of ten lessons at IBA Public School, Sukkur, teaching Grade VIII-Daisy (Science) and Grade VII-Rose (English).</p>
-
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Reflection written on:</strong> Wednesday, November 29, 2023</p>
-
 <h3>Lesson IX Reflection</h3>
 
 <p>November 29 was the day we visited the IBA Public School, Sukkur, for the ninth time, which was supposed to be our second-last excursion of teaching practice. I developed a lesson to help students in 7th-Rose appreciate the concept of free writing after analysing my students' VARK data. I started the lesson by instructing the students on a prompt story: I began with the exposition, then the students added whatever came to mind. Moving towards free writing, I wrote three words, "adventure, mystery and laughter," on the board. Still, I instructed them to put pen to paper for 10 minutes, forgetting about punctuation, spelling, sentence structure, and the use of heavy vocabulary in their writing.</p>
