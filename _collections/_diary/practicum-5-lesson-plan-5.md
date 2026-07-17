@@ -13,6 +13,8 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong> March 21, 2024</p>
+
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Institution</td><td style="padding:4px 0;"></td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">8th Daisy &nbsp;&nbsp; Duration: 35 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Pak Study &nbsp;&nbsp; Class strength: 40</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;">Aims and Objectives of AIML</td></tr></table>
 
 <p><strong>Students will be able to:</strong></p><ul><li>describe what led to the formation of the All India Muslim League.</li><li>explain the significance of the All India Muslim League.</li></ul>
@@ -44,8 +46,6 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <h4>8. Reference</h4>
 
 <p><a href="https://byjus.com/free-ias-prep/this-day-in-history-dec30/" style="color:#009F93;">byjus.com &mdash; This Day in History</a></p>
-
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> March 21, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
