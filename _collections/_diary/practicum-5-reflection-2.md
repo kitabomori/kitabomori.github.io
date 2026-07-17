@@ -15,9 +15,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 22, 2024)</div>
 
-<p dir="rtl" style="text-align:justify; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">عاتکہ عباس (بی ایڈ - VIII)</p>
+<p dir="rtl" style="text-align:justify; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;"> (بی ایڈ - VIII)</p>
 
-<p dir="rtl" style="text-align:justify; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">نامہ بر تو ہی بتا تو نے تو دیکھے ہوں گے، کیسے ہوتے ہیں وہ خط جن کے جواب آتے ہیں</p>
+<p dir="rtl" style="text-align:center; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">نامہ بر تو ہی بتا تو نے تو دیکھے ہوں گے</p>
+<p dir="rtl" style="text-align:center; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;"> کیسے ہوتے ہیں وہ خط جن کے جواب آتے ہیں</p>
 
 <p dir="rtl" style="text-align:justify; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">مضمون اردو اور سبق خطوط، وہ بھی جن کے جواب آتے ہیں اور وہ بھی جن کے جواب نہیں لکھے گئے، پر تھا۔ پچھلے ہفتے فیصلہ ہوا تھا کہ مورخہ 22 فروری بروز جمعرات کو جامعہ سکھر آئی بی اے میں ہی مائیکرو ٹیچنگ ہوگی، جس کے لیے ہمارے معلم اور نگران (سوپروائزر) نے اکیڈمک بلاک تھری، کلاس نمبر 502، ریاضی گروپ کے لیے مخصوص کر رکھا تھا۔ اس کلاس میں ہمارے علاوہ بی ایڈ-VIII کے 14 اور طلبہ موجود تھے جن کو "خطوط نویسی، کل اور آج کے دور میں" کے بارے میں ہم نے پڑھانے کی کوشش کی۔ ہمارے پاس کل 15 منٹ تھے۔ تدریسی عمل کی ابتدا ایک خط لکھنے کے ذاتی تجربے سے کی گئی۔ اس ذاتی تجربے کو افلاطون کے "ایک انسان کو مکمل کرنے والے اس کے دوسرے نصف" کی فلاسفی سے جوڑا گیا اور اس بات کا احساس ہوا کہ خطوط بھی لوگوں کو مکمل کرنے کا ذریعہ بن سکتے ہیں۔ اس کے بعد کچھ ذاتی تجربات، خط کی تاریخ اور خط کو کہاں کہاں استعمال کیا جاتا ہے اس کے بارے میں طلبہ کو آگاہ کیا۔ اس تدریسی عمل کے اگلے حصے میں ہم نے خط کو ادب کے طور پر اور اس کی اہمیت، خصوصاً خط کو درس و تدریس کے لیے استعمال کرنے کے پہلو کو اجاگر کیا۔ ہم نے مولانا ابوالکلام آزاد کی کتاب غبار خاطر سے، غالب کے خطوط میں سے ایک خط، اور کتاب صوفی کی دنیا میں سے چند جملے طلبہ سے پڑھائے، جس سے طلبہ کی دلچسپی میں اضافہ ہوا، اور آخر میں تشخیص کے لیے طلبہ سے دورِ جدید میں خط کی مختلف اشکال اور چند خط پڑھنے کے لیے کہا۔</p>
 
