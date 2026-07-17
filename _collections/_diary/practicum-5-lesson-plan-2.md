@@ -1,17 +1,19 @@
 ---
 layout: post
 title_en: "Practicum V Lesson Plan 2"
-title_ur: "خطوط نویسی (کل اور آج کے دور میں)"
+title_ur: ""
 date: 2026-07-17
 author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "An Urdu lesson on the history and modern forms of letter writing, comparing traditional and contemporary methods."
+description_en: ""
 description_ur: "خطوط نویسی کی تاریخ اور جدید شکلوں پر ایک اردو سبق، روایتی اور عصری طریقوں کا موازنہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
+
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong> February 22, 2024</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;">
   <tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">ہشتم &nbsp;&nbsp; Duration: 40 Minutes</td></tr>
@@ -69,8 +71,6 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
   <li dir="rtl" style="text-align:right;">کتاب: غبار خاطر، ابوالکلام آزاد</li>
   <li dir="rtl" style="text-align:right;">کتاب: صوفی کی دنیا، جوشین گارڈر</li>
 </ul>
-
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> February 22, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
