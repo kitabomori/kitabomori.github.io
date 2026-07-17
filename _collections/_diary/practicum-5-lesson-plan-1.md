@@ -13,8 +13,10 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-V combined seven lessons, teaching grade VIII, with three micro-teaching lessons at Sukkur IBA University, some delivered in pairs with a second student teacher. Two lesson plans in the original document (2 and 10) were embedded as scanned images rather than text and could not be recovered in full; those pages note the gap honestly rather than guessing at the missing content.</p>
+<p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-V combined seven lessons, teaching grade VIII, with three micro-teaching lessons at the university, some delivered in pairs with a second student teacher.</p>
 
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong> February 15, 2024</p>
+  
 <p dir="rtl" style="text-align:right;">اسکول: &nbsp;&nbsp; استاد:</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">ہشتم-ڈیزی &nbsp;&nbsp; Duration: 40 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">اردو &nbsp;&nbsp; Class strength: 40</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;">انوکھا خواب</td></tr></table>
@@ -50,8 +52,6 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <h4>6. References</h4>
 
 <p dir="rtl" style="text-align:right;">اردو کتاب ہشتم جماعت</p>
-
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> February 15, 2024</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
 
