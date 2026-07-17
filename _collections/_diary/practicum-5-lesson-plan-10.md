@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum-V Lesson Plan 10 (Physics)"
+title_en: "Practicum-V Lesson Plan 10"
 title_ur: ""
 date: 2026-07-17
 author_en: ""
@@ -69,9 +69,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <h4>7. Resources</h4>
 
 <ul>
-  <li><a href="https://galileoandcuestein.phys.virginia.edu/more_stuff/Applets/Lightclock/home.html" target="_blank">https://galileoandcuestein.phys.virginia.edu/more_stuff/Applets/Lightclock/home.html</a></li>
   <li><a href="https://youtu.be/g9p9AfjVMKY?si=90TvV0Sqewp1p1yf" target="_blank">https://youtu.be/g9p9AfjVMKY?si=90TvV0Sqewp1p1yf</a></li>
-  <li><a href="https://www.youtube.com/watch?v=R3tbVJIIIsKhs" target="_blank">https://www.youtube.com/watch?v=R3tbVJIIIsKhs</a></li>
 </ul>
 
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-10/" style="color:#009F93; font-weight:600;">Next: Practicum-V Reflection 10 &rarr;</a></p>
