@@ -13,8 +13,6 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum IV consisted of ten lessons at IBA Public School, Sukkur, teaching Grade VIII-Daisy (Science) and Grade VII-Rose (English).</p>
-
 <h3>Lesson IV Reflection</h3>
 
 <p>I think things never go as we plan or want them to. It doesn't mean I didn't curate my lesson plan or enjoy teaching at the IBA Public School, Sukkur, with the students of grade 8th Daisy. There is a break and a physical training (PT) period before science class. Today, during the break, I was at the football ground with the students for a while and observed their behaviour. While in the PT period, I was in the cemented area right behind the boys' section building and played cricket with the students for the entire period. Unfortunately, my team lost the five-over cricket match. Still, the particular experience of being with students both outside (playing with the students) and inside (carrying out the lesson plan) class forced me to question what kind of prospective teacher I am and how my teaching practice is shaping my identity.</p>
