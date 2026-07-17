@@ -13,8 +13,6 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum IV consisted of ten lessons at IBA Public School, Sukkur, teaching Grade VIII-Daisy (Science) and Grade VII-Rose (English). Lesson plans 2 and 10 from the original document were embedded as scanned images and could not be recovered in full.</p>
-
 <p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Lesson designed on:</strong> September 27, 2023</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;">
