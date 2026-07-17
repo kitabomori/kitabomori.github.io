@@ -216,7 +216,7 @@ body {
     radial-gradient(circle at 94% 88%, rgba(120, 92, 48, 0.06), transparent 45%);
   border: 1px solid #DFCFA2;
   border-radius: 3px 16px 6px 18px;
-  padding: 2.25rem 2.5rem;
+  padding: 2rem;
   box-shadow: 0 6px 18px rgba(74, 56, 32, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
   position: relative;
 }
@@ -269,6 +269,57 @@ body {
   }
 }
 
+/* ---- Distinct page tints for the three practicum diary formats, so
+   a reader can tell at a glance whether they're in a lesson plan, a
+   reflection, or a reflective report. Same paper texture and folded
+   corner as the rest of the diary — only the base tone and border
+   shift. ---- */
+.post-body-lesson-plan {
+  background-color: #EAF1F6;
+  border-color: #C6D8E4;
+}
+
+.post-body-reflection {
+  background-color: #F5EEF6;
+  border-color: #DECBE0;
+}
+
+.post-body-reflective-report {
+  background-color: #EDF3E7;
+  border-color: #CBDCC0;
+}
+
+.dark .post-body-lesson-plan {
+  background-color: #1B2229;
+  border-color: #33414D;
+}
+
+.dark .post-body-reflection {
+  background-color: #241E26;
+  border-color: #453640;
+
+}
+
+.dark .post-body-reflective-report {
+  background-color: #1D231A;
+  border-color: #38402E;
+}
+
+.sepia .post-body-lesson-plan {
+  background-color: #EFE6D2;
+  border-color: #CBAF7C;
+}
+
+.sepia .post-body-reflection {
+  background-color: #F1E2DB;
+  border-color: #D9A98F;
+}
+
+.sepia .post-body-reflective-report {
+  background-color: #E6E4CB;
+  border-color: #B9B47C;
+}
+
 /* ---- Reading-time duration badge (e.g. "3:00") ---- */
 .post-reading-time {
   font-variant-numeric: tabular-nums;
@@ -285,24 +336,26 @@ body {
   color: #8A6D3B;
 }
 
-/* ---- Drop cap: first letter of the first paragraph, LTR only.
-   Nastaliq/RTL scripts don't carry this convention, so it's
-   scoped to English (and any future LTR-language) posts. ---- */
-[dir="ltr"] .post-body > p:first-of-type::first-letter {
-  float: left;
+/* ---- Opening cap: first letter of the first paragraph.
+   Kept small and restrained (not a floated, oversized drop cap) so it
+   never distorts line height. Scoped with :not([dir="rtl"]) on the
+   paragraph itself — rather than relying on the page's overall
+   direction — so a paragraph of Urdu text is never affected even when
+   it happens to be shown inside an English-direction page. Nastaliq/RTL
+   scripts don't carry this typographic convention at all. ---- */
+.post-body > p:first-of-type:not([dir="rtl"])::first-letter {
   font-family: 'Literata', serif;
-  font-weight: 600;
-  font-size: 3.6em;
-  line-height: 0.82;
-  padding: 0.03em 0.09em 0 0.02em;
-  color: #009F93;
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 1;
+  color: #9C5B3C;
 }
 
-.dark [dir="ltr"] .post-body > p:first-of-type::first-letter {
-  color: #4FD1C5;
+.dark .post-body > p:first-of-type:not([dir="rtl"])::first-letter {
+  color: #D99B7D;
 }
 
-.sepia [dir="ltr"] .post-body > p:first-of-type::first-letter {
+.sepia .post-body > p:first-of-type:not([dir="rtl"])::first-letter {
   color: #8A6D3B;
 }
 
@@ -310,7 +363,7 @@ body {
    large, quiet quotation rather than a boxed callout. ---- */
 .post-body blockquote {
   border: none;
-  margin: 2rem 0;
+  margin: 1.35rem 0;
   padding: 0 1rem 0 2.75rem;
   position: relative;
   font-family: 'Literata', serif;
@@ -398,9 +451,9 @@ body {
 }
 
 .post-nav-title {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  color: #009F93;
+  color: #1D5FBF;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -411,11 +464,11 @@ body {
 }
 
 .dark .post-nav-title {
-  color: #4FD1C5;
+  color: #7FB0FF;
 }
 
 .sepia .post-nav-title {
-  color: #8A6D3B;
+  color: #1D5FBF;
 }
 
 .post-nav-link:hover .post-nav-title {
@@ -567,7 +620,7 @@ body {
   display: block;
   width: 140px;
   height: 2px;
-  margin: 0.75rem auto 1.5rem;
+  margin: 0.75rem auto 1rem;
   background: linear-gradient(to right, transparent, #009F93 15%, #009F93 85%, transparent);
 }
 
@@ -832,7 +885,7 @@ body {
 }
 
 .post-header {
-  @apply mb-8;
+  @apply mb-5;
 }
 
 .post-title {
@@ -851,7 +904,7 @@ body {
 
 /* Audio (YouTube) link, shown right under the post title */
 .post-audio-link {
-  @apply text-sm mb-4;
+  @apply text-sm mb-2;
   text-align: center;
 }
 
@@ -860,17 +913,17 @@ body {
 }
 
 .post-audio-link a {
-  color: #000000;
+  color: #1D5FBF;
   text-decoration: underline;
   font-weight: 600;
 }
 
 .post-audio-link a:hover {
-  color: #333333;
+  color: #14417F;
 }
 
 .dark .post-audio-link a {
-  color: #4FD1C5;
+  color: #7FB0FF;
 }
 
 .post-date {
@@ -902,7 +955,39 @@ body {
   text-align: justify;
   text-indent: 0;
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 0.85em;
+}
+
+/* Reference links, resource links, and any other inline links inside
+   the body of a post read in blue — the conventional "this is a
+   link" colour — distinct from the site's teal brand colour used for
+   headings, nav, and decoration. */
+.post-body a {
+  color: #1D5FBF;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.post-body h3,
+.post-body h4 {
+  margin-top: 1.15em;
+  margin-bottom: 0.4em;
+}
+
+.post-body a:hover {
+  color: #14417F;
+}
+
+.dark .post-body a {
+  color: #7FB0FF;
+}
+
+.dark .post-body a:hover {
+  color: #A9CBFF;
+}
+
+.sepia .post-body a {
+  color: #1D5FBF;
 }
 
 /* Author + date byline at the end of the post */
