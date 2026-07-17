@@ -275,49 +275,48 @@ body {
    corner as the rest of the diary — only the base tone and border
    shift. ---- */
 .post-body-lesson-plan {
-  background-color: #EAF1F6;
-  border-color: #C6D8E4;
+  background-color: #EAF1F6 !important;
+  border-color: #C6D8E4 !important;
 }
 
 .post-body-reflection {
-  background-color: #F5EEF6;
-  border-color: #DECBE0;
+  background-color: #F5EEF6 !important;
+  border-color: #DECBE0 !important;
 }
 
 .post-body-reflective-report {
-  background-color: #EDF3E7;
-  border-color: #CBDCC0;
+  background-color: #EDF3E7 !important;
+  border-color: #CBDCC0 !important;
 }
 
 .dark .post-body-lesson-plan {
-  background-color: #1B2229;
-  border-color: #33414D;
+  background-color: #1B2229 !important;
+  border-color: #33414D !important;
 }
 
 .dark .post-body-reflection {
-  background-color: #241E26;
-  border-color: #453640;
-
+  background-color: #241E26 !important;
+  border-color: #453640 !important;
 }
 
 .dark .post-body-reflective-report {
-  background-color: #1D231A;
-  border-color: #38402E;
+  background-color: #1D231A !important;
+  border-color: #38402E !important;
 }
 
 .sepia .post-body-lesson-plan {
-  background-color: #EFE6D2;
-  border-color: #CBAF7C;
+  background-color: #EFE6D2 !important;
+  border-color: #CBAF7C !important;
 }
 
 .sepia .post-body-reflection {
-  background-color: #F1E2DB;
-  border-color: #D9A98F;
+  background-color: #F1E2DB !important;
+  border-color: #D9A98F !important;
 }
 
 .sepia .post-body-reflective-report {
-  background-color: #E6E4CB;
-  border-color: #B9B47C;
+  background-color: #E6E4CB !important;
+  border-color: #B9B47C !important;
 }
 
 /* ---- Reading-time duration badge (e.g. "3:00") ---- */
@@ -453,7 +452,7 @@ body {
 .post-nav-title {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #1D5FBF;
+  color: #1D5FBF !important;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -464,11 +463,11 @@ body {
 }
 
 .dark .post-nav-title {
-  color: #7FB0FF;
+  color: #7FB0FF !important;
 }
 
 .sepia .post-nav-title {
-  color: #1D5FBF;
+  color: #1D5FBF !important;
 }
 
 .post-nav-link:hover .post-nav-title {
@@ -913,7 +912,7 @@ body {
 }
 
 .post-audio-link a {
-  color: #1D5FBF;
+  color: #1D5FBF !important;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -923,7 +922,7 @@ body {
 }
 
 .dark .post-audio-link a {
-  color: #7FB0FF;
+  color: #7FB0FF !important;
 }
 
 .post-date {
@@ -963,7 +962,7 @@ body {
    link" colour — distinct from the site's teal brand colour used for
    headings, nav, and decoration. */
 .post-body a {
-  color: #1D5FBF;
+  color: #1D5FBF !important;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
@@ -979,7 +978,7 @@ body {
 }
 
 .dark .post-body a {
-  color: #7FB0FF;
+  color: #7FB0FF !important;
 }
 
 .dark .post-body a:hover {
@@ -987,7 +986,7 @@ body {
 }
 
 .sepia .post-body a {
-  color: #1D5FBF;
+  color: #1D5FBF !important;
 }
 
 /* Author + date byline at the end of the post */
