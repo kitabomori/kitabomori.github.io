@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum-V Lesson Plan 1"
 title_ur: ""
-date: 2026-07-16
+date: 2026-07-17
 author_en: ""
 author_ur: ""
 bio_en: ""
