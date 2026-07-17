@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Constructing angles with a ruler and compass, framed around a question of navigation: how do you find your way in an unfamiliar city?"
-description_ur: ""
+description_ur: "پیمانے اور پرکار سے زاویے بنانا، اس سوال کے تناظر میں: کسی انجان شہر میں راستہ کیسے تلاش کیا جائے؟"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -16,6 +16,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(May 2, 2024)</div>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">VIII-Daisy &nbsp;&nbsp; Duration: 40 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Mathematics &nbsp;&nbsp; Class strength: 40</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;">Construction of Angles</td></tr></table>
+
+<h4>1. Student Learning Objectives</h4>
 
 <p><strong>Students will be able to:</strong></p><ul><li>construct angles using a ruler and compass.</li><li>demonstrate proficiency in geometric construction techniques.</li></ul>
 
@@ -45,5 +47,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>AKU-EB Mathematics IX Syllabus.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-9/" style="color:#009F93; font-weight:600;">Next: Practicum-V Reflection 9 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-8/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Reflection 8</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Reflection 9 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Reflection 8</a></p>

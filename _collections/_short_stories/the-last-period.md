@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A short story about a substitute teacher, a restless class, and the last forty minutes of a school day neither of them expected to remember."
-description_ur: ""
+description_ur: "ایک متبادل استاد، ایک بے چین جماعت، اور اسکول کے دن کے آخری چالیس منٹ کی کہانی، جسے دونوں میں سے کسی نے یاد رکھنے کی توقع نہیں کی تھی۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---

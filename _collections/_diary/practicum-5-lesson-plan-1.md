@@ -8,12 +8,12 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "An Urdu lesson on the importance of dreams, opening with a summary of Dr Shahid Siddiqui's book on education as resistance."
-description_ur: ""
+description_ur: "خوابوں کی اہمیت پر اردو کا سبق، جس کا آغاز ڈاکٹر شاہد صدیقی کی کتاب — تعلیم بطور مزاحمت — کے خلاصے سے ہوتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-V combined seven lessons, teaching grade VIII, with three micro-teaching lessons at the university, some delivered in pairs with a second student teacher.</p>
+<p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-V combined seven lessons, teaching grade VIII, with three micro-teaching lessons at the university, some delivered in pairs with a second student teacher.</p>
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 15, 2024)</div>
 
@@ -54,5 +54,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p dir="rtl" style="text-align:right; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">اردو کتاب ہشتم جماعت</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-1/" style="color:#009F93; font-weight:600;">Next: Practicum-V Reflection 1 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflective-report/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV - Reflective Report</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Reflection 1 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV - Reflective Report</a></p>

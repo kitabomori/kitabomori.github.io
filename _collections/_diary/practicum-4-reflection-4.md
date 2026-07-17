@@ -7,8 +7,8 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Reflection on Lesson 4 - Amplification of Sound"
-description_ur: ""
+description_en: "A football-ground chat and a cricket match before class, and a reminder that no lesson plan survives contact with a real school day untouched."
+description_ur: "کلاس سے پہلے فٹبال گراؤنڈ پر گفتگو اور کرکٹ میچ، اور یہ یاد دہانی کہ کوئی سبقی منصوبہ حقیقی اسکول کے دن سے بے اثر نہیں نکلتا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>As bell hooks rightly said, "the academy is not paradise, but learning is a place where paradise can be created". Moving ahead, it is of utmost importance for me to develop a lesson that focuses on all domains of Bloom's taxonomy to engage students mentally, physically, and emotionally in learning. Learning can only be joyful when the teacher praises and encourages the small acts in class and in other activities. Otherwise, students would be present in the classroom, but the outer world would capture their imaginations, and they would consume their energy learning nothing.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-5/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Lesson Plan 5 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-4/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 4</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 5 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 4</a></p>

@@ -7,8 +7,8 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Reflection on Lesson 5 - Sound Propagation"
-description_ur: ""
+description_en: "Questioning the banking model of education, and whether a lesson plan can double as a moment of guidance and counselling."
+description_ur: "تعلیم کے 'بینکنگ ماڈل' پر سوالات، اور کیا سبقی منصوبہ رہنمائی اور مشاورت کا لمحہ بھی بن سکتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>In order to help the students to cope with such issues of psychological and socialization there is a need for a teacher to be a counselor. The teacher counselor would listen and help students to share their concerns and doubts in order to remain free from stress and to focus on what is going on in the classroom.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-6/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Reflection 6 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-5/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 5</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Reflection 6 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 5</a></p>

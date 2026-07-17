@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Co-teacher N takes the lead on adding fractions, lacks classroom control, and needs to work on volume and vocabulary."
-description_ur: ""
+description_ur: "کسور کی جمع پر معاون استاد این کی قیادت میں سبق، جماعت پر کنٹرول کی کمی، اور آواز اور الفاظ پر مزید کام کی ضرورت۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -81,5 +81,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <ul><li><strong>Audibility:</strong> She wasn't audible to everyone, and she should ensure her words flow in a rhythmic pattern so students enjoy the lesson. While teaching, she should also create some form of drama.</li><li><strong>Mathematical terms:</strong> the student-teacher should use mathematical terms, particularly in Urdu, as it is the medium of communication and their course is taught in Urdu.</li></ul>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-3/" style="color:#009F93; font-weight:600;">Next: Practicum-II Reflection 3 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-2/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-II Reflection 2</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 3 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 2</a></p>

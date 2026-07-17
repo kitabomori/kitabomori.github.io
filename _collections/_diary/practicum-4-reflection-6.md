@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Reflection on invigilating mid-term examinations."
-description_ur: ""
+description_ur: "وسط مدتی امتحانات میں نگرانی پر ایک تاثر۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>For me the examination hall has always been a time to observe and enjoy the looks, peers make while attempting a paper. As a prospective teacher this experience and the serious faces of students made me realize we (students) are fearful of exams and it is a question mark on our education system. In an examination hall it is vital to help students to feel at ease so that they would attempt the exam by taking it as a daily routine practice.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-6/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Lesson Plan 6 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-5/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Reflection 5</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 6 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Reflection 5</a></p>

@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Struggling to build a relationship with the class, and realising a teacher's job is to give students a reason to learn."
-description_ur: ""
+description_ur: "جماعت کے ساتھ تعلق بنانے کی جدوجہد، اور یہ احساس کہ استاد کا کام طلبہ کو سیکھنے کی وجہ فراہم کرنا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -29,5 +29,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>In conclusion, as a teacher, I need to focus not only on imparting knowledge but also on creating a positive learning environment that fosters curiosity, motivation and eagerness to learn. I believe that by building positive relationships with my students and making learning relevant, I can help them achieve their full potential.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-8/" style="color:#009F93; font-weight:600;">Next: Practicum-III Lesson Plan 8 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-7/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III Lesson Plan 7</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 8 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 7</a></p>

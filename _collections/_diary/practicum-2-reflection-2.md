@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Delivering first lesson — low attendance, overloaded content, and what the co-teachers' feedback revealed."
-description_ur: ""
+description_ur: "پہلا سبق پڑھانا — کم حاضری، مواد کی زیادتی، اور معاون اساتذہ کی رائے نے کیا ظاہر کیا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p> The identified weaknesses in my lesson delivery would be an opportunity for me to learn and improve. My energy, voice, and movement in class were all appropriate, but my performance in other areas was below average. As a result, this and future teaching and observation of co-teachers' lesson delivery will assist me.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-2/" style="color:#009F93; font-weight:600;">Next: Practicum-II Lesson Plan 2 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-1/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-II Lesson Plan 1</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 2 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 1</a></p>

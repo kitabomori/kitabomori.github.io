@@ -8,14 +8,14 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A comprehensive reflective report on the Practicum-IV teaching experience at X School, Sukkur."
-description_ur: ""
+description_ur: "ایکس اسکول، سکھر میں پریکٹیکم چہارم کے تدریسی تجربے پر ایک جامع تفکراتی رپورٹ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(December 6, 2023)</div>
 
-<p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-IV consisted of ten lessons at X School, Sukkur, teaching Grade VII and VIII.</p>
+<p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-IV consisted of ten lessons at X School, Sukkur, teaching Grade VII and VIII.</p>
 
 <p>As a teacher, the first time I met the student outside the classroom, I was a stranger to them. The second time I met on the playground, I was an instructor. The next time I was their class fellow. Being with the students at the playgrounds and having small chats here and there throughout the practicum at X School, Sukkur, made this experience a bit different from the past ones. In this reflective report, I will discuss what I did during the ten visits to the school and what I have learned.</p>
 
@@ -36,5 +36,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>In this practicum, I tried to be a friend of the students, allowing myself to be with them. A teacher's work does not end after instructing for 40 minutes; rather, it continues in a continuous connection with them through thick and thin. By this, they feel free to share and learn. When I was about to leave on the last visit, one of my students, a girl, came to the bus door and said, "Sir, you are my favourite teacher." This is what I achieved at the end of this practicum.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-1/" style="color:#009F93; font-weight:600;">Next: Practicum-V Lesson Plan 1 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-10/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 10</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 1 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 10</a></p>

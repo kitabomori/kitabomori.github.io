@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Setting rules for school visits, and why praising effort and listening to everyone takes time."
-description_ur: ""
+description_ur: "اسکول وزٹس کے لیے اصول طے کرنا، اور کوشش کی تعریف اور ہر ایک کی بات سننے میں وقت کیوں لگتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -19,5 +19,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>The work of educational institutions is not only to teach a few words; their prime responsibility is to teach moral values, ultimately making good citizens. The teacher's emphasis on the quality of praising someone's effort was the class's takeaway. It is as simple to give respect as it is to take it. We have to appreciate individuals because it motivates them to do more and better next time. Secondly, I feel making rules is as difficult as obeying them. It took almost half of the class time for twenty-five students to agree on six rules. It takes time to form rules because we have to listen to everyone and weigh the pros and cons. A class which was half teacher-centred and half student-centred benefited both. The teacher achieved their aim on time, and students also enjoyed some freedom to participate in the learning process. Moving ahead, such an atmosphere would be suitable for achieving the course's objective.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-3/" style="color:#009F93; font-weight:600;">Next: Practicum-I Reflection 3 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-1/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-I Reflection 1</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 3 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 1</a></p>

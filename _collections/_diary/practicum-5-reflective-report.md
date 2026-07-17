@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Ten lessons, taught partly alone and partly in pairs, and a set of concrete recommendations for how the practicum itself could be better designed."
-description_ur: ""
+description_ur: "دس اسباق، کچھ اکیلے اور کچھ جوڑی میں پڑھائے گئے، اور پریکٹیکم کے بہتر ڈیزائن کے لیے چند ٹھوس تجاویز۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -31,4 +31,4 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>We'd recommend planning the practicum to genuinely prepare prospective teachers for the role ahead, rather than treating it as a checklist of lessons to deliver, observations to sit through, reflections to write, and a report to summarise it all. Elementary teachers have to teach several subjects, so within a single teaching practice course, only one or two subjects should be the core focus, so prospective teachers can properly master them; planned well across all five teaching practice courses, there's ample time to eventually cover every subject. We'd also design the school visits in two phases: consecutive visits for a full week in the first half of the semester, then again in the second half — six lessons with observations and post-conference reflections happening back to back would do far more to connect one lesson to the next. In the gap between, prospective teachers would also get time to reflect and explore other options, and get more used to the actual rhythm and routine of a cooperating school. We believe the life of a prospective teacher, while practising, should resemble the real working life of a teacher and a school far more closely than it currently does.</p>
 
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-10/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Reflection 10</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Reflection 10</a></p>

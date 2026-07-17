@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A first lesson of practicum III, and the gap between planning a speaking activity and actually running one."
-description_ur: ""
+description_ur: "پریکٹیکم سوم کا پہلا سبق، اور بول چال کی سرگرمی کی منصوبہ بندی اور اسے عملی طور پر چلانے کے درمیان فرق۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>This was my very first experience teaching at a government school, and I was not familiar with the students, their level of understanding, or their English proficiency. The medium of instruction was also a barrier for me, as I tried to give instructions in Urdu to teach English, which is not their first language or medium of instruction. In the class, there was some noise, which is not bad when learning is taking place, but I think there was a lack of classroom management tactics. There is also a need to reflect on classroom management and devise a plan to run the upcoming lessons smoothly. This experience would help me in the upcoming lessons, as I am now aware of the ground realities. It is going to be tough for me to teach the students, especially English, but I have to work hard.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-2/" style="color:#009F93; font-weight:600;">Next: Practicum-III Lesson Plan 2 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-1/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III Lesson Plan 1</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 2 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 1</a></p>

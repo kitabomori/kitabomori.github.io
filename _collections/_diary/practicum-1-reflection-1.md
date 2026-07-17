@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "The first class of Practicum: a nervous room, a teacher full of energy, and a first lesson in how to write a reflection."
-description_ur: ""
+description_ur: "پریکٹیکم کی پہلی کلاس: ایک گھبرایا ہوا کمرہ، توانائی سے بھرپور استاد، اور تاثر لکھنے کا پہلا سبق۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -19,5 +19,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Humorously introducing himself to the class eased the classroom's tense atmosphere. The teacher's energy told the story of his passion for his profession, which encouraged the students to adopt it as well. The introduction and outline of the course help students become familiar with the course and what they will be doing in the coming days. Learning how to write reflections enhances students' skills. The teacher's energy was at its peak even at the end of the class. This did not allow the students to engage in gossip or lose their attention. But at the same time, the humorous way the questions were asked made the class fun, which I would love to be part of.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-2/" style="color:#009F93; font-weight:600;">Next: Practicum-I Reflection 2 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-0-introduction/" style="color:#009F93; font-weight:600;">&larr; Previous: About This Diary</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 2 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-0-introduction/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: About This Diary</a></p>

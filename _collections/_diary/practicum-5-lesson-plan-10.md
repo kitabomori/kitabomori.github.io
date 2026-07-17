@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A Physics lesson on time dilation, exploring the relativity of time through the twin paradox and Einstein's theory of relativity."
-description_ur: ""
+description_ur: "زمانی تمدد (ٹائم ڈائی لیشن) پر فزکس کا سبق، جڑواں تضاد اور آئن سٹائن کے نظریۂ اضافیت کے ذریعے وقت کی اضافیت کا جائزہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,7 +21,9 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
   <tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;">Time Dilation</td></tr>
 </table>
 
-<p style="font-weight:600; margin-top:1rem;"><strong>1. Student's Learning Outcomes</strong> — Students will be able to:</p>
+<h4>1. Student Learning Objectives</h4>
+
+<p><strong>Students will be able to:</strong></p>
 
 <ul>
   <li>I. Understand that time is relative.</li>
@@ -72,5 +74,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
   <li><a href="https://youtu.be/g9p9AfjVMKY?si=90TvV0Sqewp1p1yf" target="_blank">https://youtu.be/g9p9AfjVMKY?si=90TvV0Sqewp1p1yf</a></li>
 </ul>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-10/" style="color:#009F93; font-weight:600;">Next: Practicum-V Reflection 10 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-9/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Reflection 9</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Reflection 10 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Reflection 9</a></p>

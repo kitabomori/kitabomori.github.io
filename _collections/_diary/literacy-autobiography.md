@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A reflection on how reading, writing, and conversations shaped my identity, leading me to question the world around me."
-description_ur: ""
+description_ur: "مطالعے، تحریر اور گفتگو نے میری شناخت کو کیسے تشکیل دیا اور مجھے اپنے ارد گرد کی دنیا پر سوال اٹھانے پر کیسے آمادہ کیا، اس پر ایک تحریر۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -25,4 +25,4 @@ It has taken a lot of time and effort. All the reading, writing, and other forms
 
 To me, this raises an important question about leadership, accountability, and literacy. If a person is educated and committed to the public good, should they remain silent in the face of clear problems, or do they have a responsibility to speak up? I continue to seek an answer to this dilemma: why is constructive criticism so often perceived as a threat rather than an opportunity for improvement?
 
-<p style="margin-top:2rem; font-size:0.9rem; color:#666;"><em> This literacy autobiography was written in December 2022 as part of the Teaching Literacy course. It has since been revised and is published here in its edited form.</em></p>
+<p style="margin-top:2rem; font-size:0.85rem; color:#666;"><em> This literacy autobiography was written in December 2022 as part of the Teaching Literacy course. It has since been revised and is published here in its edited form.</em></p>

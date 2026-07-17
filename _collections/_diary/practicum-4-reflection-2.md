@@ -7,8 +7,8 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Reflection on Lesson 2 - Loudness and Decibel Scale"
-description_ur: ""
+description_en: "A lesson on sound loudness taught with a mobile decibel app, and the small fixes a lesson plan reveals once you're watching yourself teach it."
+description_ur: "موبائل ڈیسیبل ایپ کی مدد سے بلندیٔ آواز کا سبق، اور وہ چھوٹی خامیاں جو خود کو پڑھاتے دیکھنے سے سامنے آتی ہیں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>If I get a chance to teach the same topic again, I would choose the demonstration method over the inductive, as it at least helps the student to see the miracles of science instead of listening. After the demonstration, I would divide the students into different groups and lead a discussion to engage every single student.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Lesson Plan 3 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-2/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 2</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 3 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 2</a></p>

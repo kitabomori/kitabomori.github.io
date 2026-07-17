@@ -7,8 +7,8 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Reflection on Lesson 6 - Haiku Poetry"
-description_ur: ""
+description_en: "Teaching a packed girls' section for the first time, and learning how much adjustment a new classroom of 42 students demands."
+description_ur: "پہلی بار لڑکیوں کی بھری ہوئی جماعت کو پڑھانا، اور 42 طلبہ کی نئی جماعت کتنی مطابقت طلب کرتی ہے، یہ سیکھنا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>It is of great importance to me as a teacher to understand students' learning styles. Which style do they prefer to learn, or that excites them, so they will be fully engaged in learning when the teacher facilitates? Being aware of students' learning styles would enable a teacher to plan and incorporate activities into the class accordingly.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-7/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Lesson Plan 7 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-6/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 6</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 7 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 6</a></p>

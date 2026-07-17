@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A nonfiction essay breaking down everything competing for space inside a single class period, and what that means for what actually gets taught."
-description_ur: ""
+description_ur: "ایک غیر افسانوی مضمون جو ایک ہی پیریڈ کے اندر مقابلہ کرتی تمام چیزوں کا جائزہ لیتا ہے، اور یہ کہ اس کا اصل تدریس پر کیا اثر پڑتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---

@@ -61,7 +61,15 @@ layout: base
     {% endif %}
   </header>
 
-  <div class="post-body post-body-{{ page.collection }}">
+  {% assign post_format = "" %}
+  {% if page.slug contains "reflective-report" %}
+    {% assign post_format = "reflective-report" %}
+  {% elsif page.slug contains "lesson-plan" %}
+    {% assign post_format = "lesson-plan" %}
+  {% elsif page.slug contains "reflection" %}
+    {% assign post_format = "reflection" %}
+  {% endif %}
+  <div class="post-body post-body-{{ page.collection }}{% if post_format != "" %} post-body-{{ post_format }}{% endif %}">
     {{ content }}
   </div>
 

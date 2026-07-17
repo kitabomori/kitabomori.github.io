@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Tracking ten students through a maths class to see exactly when attention holds — and when it doesn't."
-description_ur: ""
+description_ur: "ریاضی کی کلاس میں دس طلبہ کا جائزہ، یہ دیکھنے کے لیے کہ توجہ کب برقرار رہتی ہے اور کب ٹوٹ جاتی ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -19,5 +19,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>The outcome of this observation is that the students were on task only during a single activity, in this case, writing. But the rest of the class, the activities, and the instructions went in vain, as they were not helpful or effective enough to keep students on task for a major portion of the lecture. When I shared the information with the cooperating teacher, he said, "Mathematics is a subject which needs practice and practice, so this habit of note-taking is helpful to them." At the same time, it is the teacher's responsibility to engage every student in the class by paying attention and communicating clearly. To maximise learning within the class, a teacher should have strategies to motivate and engage students for every set of instructions. To be a good teacher and engage students in a way that every second is productive, a teacher needs a plan and the ability to identify what is lacking. If I were the cooperating teacher, I could have used the formative assessment to check whether the students were on task. It is also important to keep an eye on every student with appropriate movement in the class.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-8/" style="color:#009F93; font-weight:600;">Next: Practicum-I Reflection 8 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-6/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-I Reflection 6</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 8 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 6</a></p>

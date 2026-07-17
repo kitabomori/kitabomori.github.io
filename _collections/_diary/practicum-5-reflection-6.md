@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A teacher pulls three students out mid-lesson without asking — and a hard look at what authority a prospective teacher actually has in someone else's classroom."
-description_ur: ""
+description_ur: "ایک استاد سبق کے دوران بغیر پوچھے تین طلبہ کو باہر لے جاتا ہے — اور ایک مستقبل کے استاد کے پاس دوسرے کی جماعت میں دراصل کتنا اختیار ہوتا ہے، اس پر گہری نظر۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>I consider today's lesson an improvement over past ones, as students showed interest in the manipulatives I used to present the topic's concepts. The observer suggested moving around the class more, so the student sitting at the back would also be engaged and encouraged. Keeping the supervisor's instructions in mind, I'll develop another science lesson for Thursday, though it's not yet clear whether we'll be going to the public school or teaching here at our university.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-7/" style="color:#009F93; font-weight:600;">Next: Practicum-V Lesson Plan 7 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-6/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Lesson Plan 6</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 7 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 6</a></p>

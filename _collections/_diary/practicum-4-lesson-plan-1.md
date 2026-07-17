@@ -8,14 +8,14 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A science lesson on periodic trends in Periods II and III, using an inductive cum detective method with a constructivist approach."
-description_ur: ""
+description_ur: "دوسرے اور تیسرے پیریڈ میں متواتر رجحانات پر سائنس کا سبق، استقرائی و تفتیشی طریقہ اور تعمیری انداز میں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(September 20, 2023)</div>
 
-<p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-IV consisted of nine lessons at X School, Sukkur, teaching Grade VII and  VIII. This also include 10 reflections and a reflectve report</p>
+<p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-IV consisted of nine lessons at X School, Sukkur, teaching Grade VII and  VIII. This also includes ten reflections and a reflective report</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;">
 <tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">VIII-Daisy</td><td style="padding:4px 12px; font-weight:600; white-space:nowrap;">Duration</td><td style="padding:4px 0;">40 Minutes</td></tr>
@@ -86,5 +86,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Science book Grade 8th and Periodic Table</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-1/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Reflection 1 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflective-report/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III: Reflective Report</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Reflection 1 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III: Reflective Report</a></p>

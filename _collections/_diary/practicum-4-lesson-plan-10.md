@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "An English lesson on revisiting free writing, using Communicative Language Teaching with a constructivist approach and the 5E model."
-description_ur: ""
+description_ur: "آزاد تحریر کے دوبارہ جائزے پر انگریزی کا سبق، ابلاغی زبان کی تدریس، تعمیری انداز اور 5E ماڈل کے ذریعے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -168,5 +168,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Writing Guide</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflective-report/" style="color:#009F93; font-weight:600;">Next: Practicum-IV - Reflective Report &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-9/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Reflection 9</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV - Reflective Report &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Reflection 9</a></p>

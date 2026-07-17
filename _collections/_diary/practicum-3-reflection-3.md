@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Students wanted more hands-on activity, and individual attention was hard to give"
-description_ur: ""
+description_ur: "طلبہ مزید عملی سرگرمیاں چاہتے تھے، اور انفرادی توجہ دینا مشکل ثابت ہوا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -29,5 +29,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Moving forward, I plan to address these observations in several ways. I will develop more hands-on activities, such as small-group tasks related to the content, to help students work together and learn from each other. Secondly, I will be more attentive and encourage students to reach out if they are struggling with any aspect of the class. Lastly, I will keep an open mind and be willing to adapt my teaching methods to best serve my students' needs.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-6/" style="color:#009F93; font-weight:600;">Next: Practicum-III Lesson Plan 6 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-5/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III Lesson Plan 5</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 6 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 5</a></p>

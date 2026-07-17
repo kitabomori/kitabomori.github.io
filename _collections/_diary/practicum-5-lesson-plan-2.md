@@ -7,7 +7,7 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: ""
+description_en: "An Urdu lesson on the art of letter-writing, opening with the teacher's own story of an apology letter to the university that never found its way to the reader."
 description_ur: "خطوط نویسی کی تاریخ اور جدید شکلوں پر ایک اردو سبق، روایتی اور عصری طریقوں کا موازنہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
@@ -70,5 +70,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
   <li dir="rtl" style="text-align:right; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">کتاب: صوفی کی دنیا، جوشین گارڈر</li>
 </ul>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-2/" style="color:#009F93; font-weight:600;">Next: Practicum-V Reflection 2 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-1/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Reflection 1</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Reflection 2 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Reflection 1</a></p>

@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Opening the practicum with a lesson on dreams, drawing on Freud, Iqbal, Gandhi, and Martin Luther King Jr."
-description_ur: ""
+description_ur: "خوابوں کے سبق سے پریکٹیکم کا آغاز، فرائیڈ، اقبال، گاندھی اور مارٹن لوتھر کنگ جونیئر کے حوالوں کے ساتھ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -24,5 +24,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p dir="rtl" style="text-align:justify; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">آنے والے جمعرات کو، گو کہ ہم پبلک سکول کا رخ نہیں کر رہے اور جامعہ سکھر آئی بی اے میں ہی مائیکرو ٹیچنگ کرنے والے ہیں، تو میں اپنی ہم جماعت کے ساتھ تعاون کرتے ہوئے تدریسی خاکے کو تشکیل دوں گا اور کوشش رہے گی کہ بھرپور تیاری کے ساتھ اگلی کلاس میں آؤں۔ اور یہ امید رکھتا ہوں کہ اس تدریسی عمل میں جو کمی پیشی رہی ہیں ان کو دور کرتے ہوئے بورڈ کا زیادہ سے زیادہ استعمال کروں اور اپنی آواز کو بلند رکھتے ہوئے تدریسی عمل کو جاری رکھنے کی کوشش کروں۔</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-2/" style="color:#009F93; font-weight:600;">Next: Practicum-V Lesson Plan 2 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-1/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Lesson Plan 1</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 2 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 1</a></p>

@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Measuring the whiteboard to arrive at a very large number, then using scientific notation to make it manageable."
-description_ur: ""
+description_ur: "وائٹ بورڈ کی پیمائش سے ایک بہت بڑا عدد حاصل کرنا، پھر اسے قابلِ فہم بنانے کے لیے سائنسی اظہار کا استعمال۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -16,6 +16,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(April 18, 2024)</div>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">VIII-Daisy &nbsp;&nbsp; Duration: 40 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Science (Physics) &nbsp;&nbsp; Class strength: 40</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;">Standard Form / Scientific Notation</td></tr></table>
+
+<h4>1. Student Learning Objectives</h4>
 
 <p><strong>Students will be able to:</strong></p><ul><li>explain the need for standard form/scientific notation (U).</li><li>utilise scientific notation in measurements (A).</li></ul>
 
@@ -43,5 +45,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Physics 9th book.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-7/" style="color:#009F93; font-weight:600;">Next: Practicum-V Reflection 7 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-6/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Reflection 6</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Reflection 7 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Reflection 6</a></p>

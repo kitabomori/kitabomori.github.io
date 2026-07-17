@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A 15-minute micro-teaching session using a flower, burnt paper, and chocolate to show quantum physics at work in an everyday sense of smell."
-description_ur: ""
+description_ur: "پھول، جلا ہوا کاغذ اور چاکلیٹ کے ذریعے پندرہ منٹ کا مائیکرو ٹیچنگ سیشن، جو روزمرہ کی سونگھنے کی حس میں کوانٹم فزکس دکھاتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -16,6 +16,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 29, 2024)</div>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">B.Ed-VIII &nbsp;&nbsp; Duration: 15 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Physics &nbsp;&nbsp; Class strength: 14</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;">Quantum Physics in Our Surrounding</td></tr></table>
+
+<h4>1. Student Learning Objectives</h4>
 
 <p><strong>Students will be able to:</strong></p><ul><li>explain the study domain of quantum physics.</li><li>analyse a few natural phenomena through the lens of quantum physics.</li></ul>
 
@@ -41,7 +43,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <h4>7. References</h4>
 
-<ul><li>Richard Feynman, "Ode to a Flower" &mdash; <a href="https://www.themarginalian.org/2013/01/01/ode-to-a-flower-richard-feynman/" style="color:#009F93;">themarginalian.org</a></li><li><a href="https://www.youtube.com/watch?v=XKYUELuf49s&t=1762s" style="color:#009F93;">Supporting video</a></li></ul>
+<ul><li>Richard Feynman, "Ode to a Flower" &mdash; <a href="https://www.themarginalian.org/2013/01/01/ode-to-a-flower-richard-feynman/" style="color:#1D5FBF; font-size:0.92rem;">themarginalian.org</a></li><li><a href="https://www.youtube.com/watch?v=XKYUELuf49s&t=1762s" style="color:#1D5FBF; font-size:0.92rem;">Supporting video</a></li></ul>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-3/" style="color:#009F93; font-weight:600;">Next: Practicum-V Reflection 3 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-2/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Reflection 2</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Reflection 3 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Reflection 2</a></p>

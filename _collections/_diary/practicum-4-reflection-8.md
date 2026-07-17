@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Reflection on Lesson 7 - The Importance of Loud Reading"
-description_ur: ""
+description_ur: "ساتویں سبق پر تاثر — بلند آواز سے پڑھنے کی اہمیت۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>It's worth noting the importance of adapting teaching methods to accommodate various learning styles and to ensure a more inclusive and effective educational experience for all students. Moreover, it sets the foundation for a classroom culture that values oral expression and communication skills. As students become more comfortable with reading aloud, this strategy not only makes the lesson more enjoyable but also contributes to a holistic, effective learning experience.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-9/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Lesson Plan 9 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-7/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 7</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 9 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 7</a></p>

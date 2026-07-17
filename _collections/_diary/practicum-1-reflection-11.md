@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A school says it has a discipline policy, but no one can produce it in writing"
-description_ur: ""
+description_ur: "اسکول کا دعویٰ ہے کہ اس کے پاس ضابطہ اخلاق موجود ہے، مگر کوئی بھی اسے تحریری شکل میں پیش نہیں کر پاتا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>A teacher's role is to be a ray of light in the darkness for learners, and school policy should provide the path. When a teacher's thoughts align with a school's policy, it fosters confidence in the teacher. Then the teacher owns the school and students, which helps to take things into their own hands. At the same time, the students act in the circle of discipline and collaborate with the teacher and peers. Hence, a learning environment develops.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-12/" style="color:#009F93; font-weight:600;">Next: Practicum-I Reflection 12 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-10/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-I Reflection 10</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-12/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 12 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 10</a></p>

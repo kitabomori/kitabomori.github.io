@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A short poem on the ordinary residue teaching leaves behind."
-description_ur: ""
+description_ur: "تدریس کے پیچھے چھوڑے جانے والے معمولی نشانات پر ایک مختصر نظم۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---

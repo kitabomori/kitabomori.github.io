@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Observing and what it teaches to sit in the corner, take notes, and resist the urge to intervene."
-description_ur: ""
+description_ur: "کونے میں بیٹھ کر نوٹس لینا اور مداخلت کی خواہش کو روکنا — مشاہدے سے کیا سیکھا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Being part of the class and observing the teaching process added valuable insights to my learning. It is crucial to have a voice that can be heard in every corner of the classroom so students can understand instructions clearly. At the same time, a teacher should have the content knowledge to answer every student's question; otherwise, students will become confused, leading to misconceptions.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-3/" style="color:#009F93; font-weight:600;">Next: Practicum-II Lesson Plan 3 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-2/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-II Lesson Plan 2</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 3 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 2</a></p>

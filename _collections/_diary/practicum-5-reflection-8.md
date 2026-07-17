@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "On the 20,000-year history of counting, and why lecture-and-drill isn't enough to make mathematics feel like a joy rather than a wall."
-description_ur: ""
+description_ur: "گنتی کی بیس ہزار سالہ تاریخ پر، اور کیوں محض لیکچر اور مشق ریاضی کو دیوار کے بجائے خوشی کا احساس دلانے کے لیے کافی نہیں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>After consulting with the cooperating teachers, I'll plan the next mathematics class — the 9th lesson of the practicum, and likely the last one, as students will soon have their final-term exams and, hopefully, all will be promoted to the next class. I've learned a lot from teaching in pairs and from the post-conference discussions, where we talked through the pros and cons of a lesson and how to tackle classroom and outside issues related to students' learning.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-9/" style="color:#009F93; font-weight:600;">Next: Practicum-V Lesson Plan 9 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-8/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Lesson Plan 8</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 9 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 8</a></p>

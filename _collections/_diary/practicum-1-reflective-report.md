@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Looking back on sixteen weeks of Practicum-I — what the visits taught me about schools, teaching, and myself."
-description_ur: ""
+description_ur: "پریکٹیکم اول کے سولہ ہفتوں پر ایک نظر — ان وزٹس نے اسکولوں، تدریس اور خود میرے بارے میں کیا سکھایا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -41,5 +41,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>There is no use becoming a teacher who is not intrinsically motivated. One thing I believe was missing throughout the practicum was the motivation and passion that students and teachers would have developed by seeing the devotion of cooperating teachers to their profession of teaching at the respective school. The school which we visited was a place where anyone with high hopes would end up in deep despair. Next time, when I get a chance to visit the school, I will be looking to develop this by asking the cooperating teacher why they are teaching. The rest of the course's tactics and techniques were fine, as I went through a process of getting to know the school's dimensions.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-1/" style="color:#009F93; font-weight:600;">Next: Practicum-II Reflection 1 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-13/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-I Reflection 13</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 1 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-13/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 13</a></p>

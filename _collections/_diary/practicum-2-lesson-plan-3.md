@@ -7,8 +7,8 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Class swipt, Co-teacher H in grade 2 class and improvised."
-description_ur: ""
+description_en: "A swapped class — stepping in for Co-teacher H's grade 2 lesson and improvising on the spot."
+description_ur: "ایک اچانک بدلی ہوئی کلاس — معاون استاد ایچ کی جماعت دوم کے سبق میں قدم رکھنا اور موقع پر بدلاؤ کرنا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -75,5 +75,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>I hope this feedback will help bring a little improvement.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-4/" style="color:#009F93; font-weight:600;">Next: Practicum-II Reflection 4 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-3/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-II Reflection 3</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 4 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 3</a></p>

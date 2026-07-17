@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Building vocabulary — word webs, group definitions, and using new words correctly in sentences."
-description_ur: ""
+description_ur: "الفاظ کا ذخیرہ بڑھانا — ورڈ ویب، گروپ میں تعریفات، اور نئے الفاظ کا جملوں میں درست استعمال۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,7 +21,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p><strong>Students will be able to:</strong></p><ul><li><strong>I.</strong> define at least five new words correctly in written and oral sentences <em>(30%)</em></li><li><strong>II.</strong> interpret the meaning of words in a reading passage <em>(35%)</em></li><li><strong>III.</strong> identify synonyms and antonyms for at least three new words <em>(35%)</em></li></ul>
 
-<p style="font-size:0.8rem; color:#888;">(R = remembering, U = understanding, A = applying, An = analysing, E = evaluating, C = creating)</p>
+<p style="font-size:0.85rem; color:#666;">(R = remembering, U = understanding, A = applying, An = analysing, E = evaluating, C = creating)</p>
 
 <h4>2. Required Material</h4>
 
@@ -41,11 +41,11 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <h4>Assessment Matrix</h4>
 
-<table style="border-collapse:collapse; margin:1rem 0; font-size:0.9rem;"><tr><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">SLOs</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Approach</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Method</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Type</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Strategy</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Tool</th></tr><tr><td style="padding:4px 10px 4px 0;">I</td><td style="padding:4px 10px 4px 0;">Inductive</td><td style="padding:4px 10px 4px 0;">Subjective</td><td style="padding:4px 10px 4px 0;">Formative</td><td style="padding:4px 10px 4px 0;">Discussion</td><td style="padding:4px 10px 4px 0;">&mdash;</td></tr><tr><td style="padding:4px 10px 4px 0;">II &amp; III</td><td style="padding:4px 10px 4px 0;">Inductive</td><td style="padding:4px 10px 4px 0;">Subjective</td><td style="padding:4px 10px 4px 0;">Formative</td><td style="padding:4px 10px 4px 0;">Reading</td><td style="padding:4px 10px 4px 0;">Text</td></tr></table>
+<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">SLOs</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Approach</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Method</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Type</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Strategy</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Tool</th></tr><tr><td style="padding:4px 10px 4px 0;">I</td><td style="padding:4px 10px 4px 0;">Inductive</td><td style="padding:4px 10px 4px 0;">Subjective</td><td style="padding:4px 10px 4px 0;">Formative</td><td style="padding:4px 10px 4px 0;">Discussion</td><td style="padding:4px 10px 4px 0;">&mdash;</td></tr><tr><td style="padding:4px 10px 4px 0;">II &amp; III</td><td style="padding:4px 10px 4px 0;">Inductive</td><td style="padding:4px 10px 4px 0;">Subjective</td><td style="padding:4px 10px 4px 0;">Formative</td><td style="padding:4px 10px 4px 0;">Reading</td><td style="padding:4px 10px 4px 0;">Text</td></tr></table>
 
 <h4>Resources</h4>
 
 <p>English-VII, Sindh Textbook Board, Jamshoro.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-5/" style="color:#009F93; font-weight:600;">Next: Practicum-III Reflection 5 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-8/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III Lesson Plan 8</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Reflection 5 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 8</a></p>

@@ -8,14 +8,14 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "English speaking practice — pairing students up to ask and answer questions about personal interests."
-description_ur: ""
+description_ur: "انگریزی بول چال کی مشق — طلبہ کو جوڑوں میں تقسیم کر کے ذاتی دلچسپیوں پر سوال و جواب۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 8, 2023)</div>
 
-<p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-III, taken in the sixth semester of the B.Ed. programme, required at least 10 full lessons taught at an assigned school, each with a lesson plan, a co-teacher’s observation sheet, and a written reflection, gathered together into a final reflective report and portfolio.</p>
+<p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-III, taken in the sixth semester of the B.Ed. programme, required at least 10 full lessons taught at an assigned school, each with a lesson plan, a co-teacher’s observation sheet, and a written reflection, gathered together into a final reflective report and portfolio.</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">VII &nbsp;&nbsp; Duration: 40 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">English &nbsp;&nbsp; Class strength: approx. 30</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Skill</td><td style="padding:4px 0;">Speaking &nbsp;&nbsp; Topic: Ask and Answer of Personal Interest</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Approach</td><td style="padding:4px 0;">Constructivism &nbsp;&nbsp; Method: Communicative Language Teaching</td></tr></table>
 
@@ -23,7 +23,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p><strong>Students will be able to:</strong></p><ul><li><strong>I.</strong> demonstrate oral communication <em>(30%)</em></li><li><strong>II.</strong> engage in more prolonged greetings <em>(35%)</em></li><li><strong>III.</strong> develop a conversation about personal interests <em>(35%)</em></li></ul>
 
-<p style="font-size:0.8rem; color:#888;">(R = remembering, U = understanding, A = applying, An = analysing, E = evaluating, C = creating)</p>
+<p style="font-size:0.85rem; color:#666;">(R = remembering, U = understanding, A = applying, An = analysing, E = evaluating, C = creating)</p>
 
 <h4>2. Required Material</h4>
 
@@ -43,11 +43,11 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <h4>6. Assessment</h4>
 
-<table style="border-collapse:collapse; margin:1rem 0; font-size:0.9rem;"><tr><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">SLOs</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Approach</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Method</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Type</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Strategy</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Tool</th></tr><tr><td style="padding:4px 10px 4px 0;">I, II &amp; III</td><td style="padding:4px 10px 4px 0;">Inductive</td><td style="padding:4px 10px 4px 0;">Subjective</td><td style="padding:4px 10px 4px 0;">Formative</td><td style="padding:4px 10px 4px 0;">Oral Activity</td><td style="padding:4px 10px 4px 0;">Questionnaire</td></tr></table>
+<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">SLOs</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Approach</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Method</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Type</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Strategy</th><th style="text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid #ccc;">Tool</th></tr><tr><td style="padding:4px 10px 4px 0;">I, II &amp; III</td><td style="padding:4px 10px 4px 0;">Inductive</td><td style="padding:4px 10px 4px 0;">Subjective</td><td style="padding:4px 10px 4px 0;">Formative</td><td style="padding:4px 10px 4px 0;">Oral Activity</td><td style="padding:4px 10px 4px 0;">Questionnaire</td></tr></table>
 
 <h4>7. Resources</h4>
 
 <p>English Sindh Textbook Board Jamshoro, Grade-VII.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-1/" style="color:#009F93; font-weight:600;">Next: Practicum-III Reflection 1 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-5/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-II Lesson Plan 5</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Reflection 1 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 5</a></p>

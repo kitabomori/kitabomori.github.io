@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Every few years a new textbook reform is announced as the fix for low reading outcomes. The evidence points somewhere else: to teachers, libraries, and the ordinary conditions of a classroom."
-description_ur: ""
+description_ur: "پاکستان کا خواندگی بحران محض نئی نصابی کتابوں سے حل نہیں ہو سکتا۔ ہر چند برس بعد نصابی اصلاحات کو کم پڑھائی کے مسئلے کا حل قرار دیا جاتا ہے، مگر شواہد کچھ اور اشارہ کرتے ہیں: اساتذہ، لائبریریوں اور جماعت کے عام حالات کی طرف۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---

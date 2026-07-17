@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Teaching diary writing through Anne Frank, and wrestling with how to make reading and literature genuinely engaging in class."
-description_ur: ""
+description_ur: "این فرینک کے ذریعے ڈائری نویسی کی تدریس، اور جماعت میں مطالعہ و ادب کو حقیقی معنوں میں دلچسپ بنانے کی جدوجہد۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Moving forward, I think lesson study could be a strategy, taking suggestions and planning lessons with my pair observer to address student disengagement. At the same time, it's tough to make the class a place to learn when we visit only once a week — we don't know what students are doing throughout the week or what they're up to in their lives. In the next class, I'll be teaching a topic from Pakistan Studies, after consulting the subject teacher.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-5/" style="color:#009F93; font-weight:600;">Next: Practicum-V Lesson Plan 5 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-4/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Lesson Plan 4</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 5 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 4</a></p>

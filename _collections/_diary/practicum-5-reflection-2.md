@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A revised, paired lesson on letter writing — and a first experience of teaching alongside another student teacher."
-description_ur: ""
+description_ur: "خط نویسی پر ایک نظرثانی شدہ، جوڑی میں پڑھایا گیا سبق — اور کسی دوسرے طالب علم استاد کے ساتھ مل کر پڑھانے کا پہلا تجربہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -26,5 +26,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p dir="rtl" style="text-align:justify; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">مورخہ 29 فروری کو بھی  سکول میں امتحانات ہونے کی وجہ سے ہم انپی جامعہ میں ہی مائیکرو ٹیچنگ کریں گے، تو اس بار ہم اردو کے بجائے فزکس کے ایک سبق "کوانٹم فزکس" پر تدریسی خاکہ بنائیں گے، اور یہ کوشش ہوگی کہ اسٹوڈنٹ لرننگ آبجیکٹو یعنی سبق کے مقاصد کو مکمل طور پر واضح کریں اور اپنی تشخیصی سرگرمی کو بھی انہی مقاصد کے ساتھ ترتیب میں رکھیں۔</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-3/" style="color:#009F93; font-weight:600;">Next: Practicum-V Lesson Plan 3 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-2/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Lesson Plan 2</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 3 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 2</a></p>

@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Scoring a cooperating teacher's performance — strong on content knowledge, weaker on planning and assessment."
-description_ur: ""
+description_ur: "ایک معاون استاد کی کارکردگی کا جائزہ — مواد پر مضبوط گرفت، مگر منصوبہ بندی اور تشخیص میں کمزوری۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Being an effective teacher requires a grasp of several key areas, from lesson planning to delivering it with clear instructions and effective communication. At the same time, managing and evaluating students are important areas of the teaching process. Having expertise in only one domain, i.e. content knowledge, or a specific method of teaching,  is of no use. Hence, it is the requirement of the teaching profession in the 21st century to compare all areas, from knowing the subject well to understanding students' nature.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-13/" style="color:#009F93; font-weight:600;">Next: Practicum-I Reflection 13 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-11/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-I Reflection 11</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-13/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 13 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-11/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 11</a></p>

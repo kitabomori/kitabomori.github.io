@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Teaching angle construction from the floor of a U-shaped classroom, and connecting geometry to navigation and time dilation."
-description_ur: ""
+description_ur: "یو کی شکل کی جماعت کے فرش سے زاویہ سازی کی تدریس، اور جیومیٹری کو راستہ تلاش کرنے اور زمانی تمدد سے جوڑنا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>I'm counting the number of lessons, and with number nine, the practicum journey comes to an end. The students of the 8th-grade Daisy and Tulip sections may have learned something new in a novel way. Still, one or two lessons remain to be delivered as micro-teaching here at our university campus. After consulting with my teaching pair, I'll create a lesson on a physics topic suitable for undergraduate students — the B.Ed (Hons) programme's last teaching practice lesson. I hope it ends on a high note.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-10/" style="color:#009F93; font-weight:600;">Next: Practicum-V Lesson Plan 10 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-9/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Lesson Plan 9</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 10 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 9</a></p>

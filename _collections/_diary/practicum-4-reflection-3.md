@@ -7,8 +7,8 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Reflection on Lesson 3 - Loudness, Amplitude and Oscilloscope"
-description_ur: ""
+description_en: "Continuing the sound unit with amplitude and a group task, and a break-time discovery: nearly every student already has a private tutor."
+description_ur: "طول موج اور گروپ ٹاسک کے ساتھ آواز کے موضوع کا تسلسل، اور وقفے میں ایک دریافت: تقریباً ہر طالب علم پہلے سے ٹیوشن پڑھ رہا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -23,5 +23,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>In the coming lessons, it will be challenging and pivotal to carry forward the good things from this lesson, such as choosing a better teaching method, appreciating every student's question, and responding to them healthily. And I believe there is a need to transgress to teach what I want the students to learn.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-4/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Lesson Plan 4 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 3</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 4 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 3</a></p>

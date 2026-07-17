@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A near-empty classroom, last-minute switch to grade 3 — and a real lesson in why lesson plans matter."
-description_ur: ""
+description_ur: "تقریباً خالی جماعت، آخری لمحے میں جماعت سوم میں تبدیلی — اور سبقی منصوبے کی اہمیت کا حقیقی سبق۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Such circumstances highlight the significance of a well-planned lesson. When a teacher has a lesson plan, they can carry out the lesson smoothly. A lesson plan specifies the lesson objectives and a variety of activities. A lesson plan tells a teacher what to teach, how to teach it, and to what extent — because you are aware of the students.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-5/" style="color:#009F93; font-weight:600;">Next: Practicum-II Reflection 5 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-3/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-II Lesson Plan 3</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 5 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 3</a></p>

@@ -7,8 +7,8 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Reflection on Lesson 9 - Free Writing"
-description_ur: ""
+description_en: "A free-writing lesson built from VARK data and a shared adventure story, on the second-last visit to X School."
+description_ur: "VARK ڈیٹا اور ایک مشترکہ ماجرائی کہانی سے تشکیل پانے والا آزاد تحریر کا سبق، ایکس اسکول کے دوسرے آخری وزٹ پر۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Interacting with students made me realise what Bell Hooks had said years back. An academy (school/classroom) is not a paradise where students want to be, but a teacher can create one where they can enjoy learning, which is missing in our schools. I wonder what a teacher could do to make students happy? The start could be to spend more and more time in breaks, and whenever a teacher finds an opportunity, instead of gossiping in the corners of staff rooms.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-10/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Lesson Plan 10 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-9/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 9</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 10 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 9</a></p>

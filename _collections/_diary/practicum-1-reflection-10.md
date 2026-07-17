@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Observing a student in maths class, a conversation about sketching, cricket, and group study."
-description_ur: ""
+description_ur: "ریاضی کی کلاس میں ایک طالب علم کا مشاہدہ، اور خاکہ نگاری، کرکٹ اور گروپ اسٹڈی پر ایک گفتگو۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Teaching is not only about uttering a few words on a topic in front of a crowd. It is also actually seeking to understand the nature and behaviour of a child. Understanding a child's nature helps a teacher identify strengths, talents, and weaknesses, and develop a teaching style that suits the student's learning style. At the same time, it helps a teacher plan a lesson tailored to a student's intellect, making it more productive.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-11/" style="color:#009F93; font-weight:600;">Next: Practicum-I Reflection 11 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-9/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-I Reflection 9</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-11/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 11 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 9</a></p>

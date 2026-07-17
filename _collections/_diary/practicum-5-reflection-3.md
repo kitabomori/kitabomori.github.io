@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A second micro-teaching lesson on quantum physics, and the trade-off between covering a topic and keeping the whole class engaged."
-description_ur: ""
+description_ur: "کوانٹم فزکس پر دوسرا مائیکرو ٹیچنگ سبق، اور موضوع مکمل کرنے اور پوری جماعت کو مصروف رکھنے کے درمیان توازن۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Since midterms at the school are ending by the end of this week, our micro-teaching sessions have ended here for now. We will be going for teaching practice, teaching individually; the topics are not yet finalised, but we aim to teach from English and physics for grade 8. While delivering our lessons, we intend not to repeat the mistake of failing to engage the whole class, ensuring the activities are engaging. We will also try to speak louder, so students don't lose interest in the lesson due to difficulty hearing the teacher's voice from the side.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-4/" style="color:#009F93; font-weight:600;">Next: Practicum-V Lesson Plan 4 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-3/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Lesson Plan 3</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 4 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 3</a></p>

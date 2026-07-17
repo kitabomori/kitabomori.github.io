@@ -7,8 +7,8 @@ author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Reflection on Lesson 1 - Periodic Trends in Periods II and III"
-description_ur: ""
+description_en: "A first real look at X School, Sukkur — testing its reputation and rules against the reality of managing thousands of students."
+description_ur: "ایکس اسکول، سکھر کا پہلا حقیقی مشاہدہ — اس کی شہرت اور اصولوں کو ہزاروں طلبہ کے انتظام کی حقیقت کے مقابل رکھنا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>When it comes to achieving the class objective, there is some doubt. Yes, I completed the lesson on time, but that doesn't mean I have transferred everything to their minds. It was my first interaction with the class. Without knowing their names, experiences, and learning styles, it was difficult to decide on a teaching method and strategy to apply. This lesson and interaction would help me to select the right approach in the upcoming classes.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-2/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Lesson Plan 2 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-1/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 1</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 2 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 1</a></p>

@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Coining “the pedagogy of perfume” after hearing a student was barred from class over a scent a teacher disliked."
-description_ur: ""
+description_ur: "'خوشبو کا تدریسی فلسفہ' کی اصطلاح، یہ سن کر کہ ایک طالب علم کو محض اس خوشبو کی وجہ سے جماعت سے روک دیا گیا جو استاد کو ناپسند تھی۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>In summary, the observer noted the value of establishing clear ground rules to minimise class disruption. Moving forward, I need to address these concerns promptly to create a more conducive learning environment and save instructional time by enhancing classroom management skills. I plan to collaborate with the cooperating teacher on the upcoming class to design a mathematics lesson aligned with the syllabus.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-8/" style="color:#009F93; font-weight:600;">Next: Practicum-V Lesson Plan 8 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-7/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Lesson Plan 7</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 8 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 7</a></p>

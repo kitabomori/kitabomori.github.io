@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Fractions lesson for grade 5, with feedback from both co-teachers on helping students who fall behind."
-description_ur: ""
+description_ur: "جماعت پنجم کے لیے کسور کا سبق، اور پیچھے رہ جانے والے طلبہ کی مدد پر دونوں معاون اساتذہ کی رائے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -79,5 +79,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>The teacher's body language and energy delivery were good, and he tried to explain every detail. If some students did not understand, he would try to explain again and again, which was a good thing.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-2/" style="color:#009F93; font-weight:600;">Next: Practicum-II Reflection 2 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-1/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-II Reflection 1</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 2 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 1</a></p>

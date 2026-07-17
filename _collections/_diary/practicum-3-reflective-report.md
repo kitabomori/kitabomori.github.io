@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Ten weeks teaching a full class at Government X School, Sukkur — the challenges of language, attention, and control, and what came out of it."
-description_ur: ""
+description_ur: "گورنمنٹ ایکس اسکول، سکھر میں مکمل جماعت کو دس ہفتے پڑھانا — زبان، توجہ اور نظم و ضبط کے چیلنجز، اور اس کا حاصل۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -57,5 +57,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>In conclusion, Teaching Practice III was a challenging experience. I tried to fulfil the course requirements by preparing lesson plans for each lesson, addressing feedback from the observation sheets, and writing a reflection on my teaching. Moreover, it provided me with some valuable insights into the teaching profession. I learned the importance of time management, lesson planning, active learning techniques and creating a positive relationship with students. Going forward, I am excited to continue learning and plan to use these insights to improve my teaching skills and become a more effective teacher.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-1/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Lesson Plan 1 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-6/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III Reflection 6</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 1 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Reflection 6</a></p>

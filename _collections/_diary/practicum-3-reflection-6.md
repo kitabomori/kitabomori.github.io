@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "Why consistency in teaching matters, and why no lesson plan ever survives contact with a real classroom intact."
-description_ur: ""
+description_ur: "تدریس میں تسلسل کیوں اہم ہے، اور کوئی بھی سبقی منصوبہ حقیقی جماعت کے سامنے جوں کا توں کیوں نہیں رہتا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -27,5 +27,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>To sum up, for a teacher to make an impact on students' learning, there is a need for consistency in teaching methods and instruction. It helps to establish clear expectations and promotes engagement and motivation among students. At the same time, a teacher must be aware that a lesson never goes as planned and must be flexible and adaptable to meet the diverse needs of their students.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflective-report/" style="color:#009F93; font-weight:600;">Next: Practicum-III: Reflective Report &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-10/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III Lesson Plan 10</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III: Reflective Report &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 10</a></p>

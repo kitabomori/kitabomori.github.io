@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A short dialogue between two teachers arguing, gently, about whether discipline or curiosity teaches a child more."
-description_ur: ""
+description_ur: "دو اساتذہ کے درمیان ایک مختصر مکالمہ، نرمی سے اس بحث پر کہ بچے کو نظم و ضبط زیادہ سکھاتا ہے یا تجسس۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---

@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "An interview with a cooperating teacher and what that reveals about staying updated in teaching."
-description_ur: ""
+description_ur: "ایک معاون استاد کے ساتھ انٹرویو، اور تدریس میں خود کو باخبر رکھنے کے بارے میں اس سے کیا معلوم ہوا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Based on the irritation with this particular cooperative teacher, I learned that teaching at this school has been stuck in the past. The teacher is using methods, strategies, or early rights to teach the 21st-century mobile phone generation. The profession of teaching demands that teachers adopt current tactics and teaching styles to manage students in the current era. This experience would be a reminder for me to be an updated teacher who never stops learning how to teach.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-6/" style="color:#009F93; font-weight:600;">Next: Practicum-I Reflection 6 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-4/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-I Reflection 4</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 6 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 4</a></p>

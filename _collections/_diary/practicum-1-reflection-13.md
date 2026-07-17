@@ -8,7 +8,7 @@ author_ur: ""
 bio_en: ""
 bio_ur: ""
 description_en: "A final visit spent understanding bullying — its causes, forms, and a teacher's responsibility to notice it."
-description_ur: ""
+description_ur: "آخری وزٹ، غنڈہ گردی (بلی اِنگ) کو سمجھنے کے لیے — اس کے اسباب، صورتیں، اور استاد کی ذمہ داری کہ وہ اسے پہچانے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,5 +21,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Allegedly, in the premises of a school, it is the prime responsibility of a teacher to know what is going on with a particular student. The pale faces of students at times indicate that someone is bullying and victimising them. A teacher should talk to students personally, assure them that they can be a source of comfort, and that the teacher will resolve the problem.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflective-report/" style="color:#009F93; font-weight:600;">Next: Practicum-I: Reflective Report &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-12/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-I Reflection 12</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I: Reflective Report &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-12/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 12</a></p>
