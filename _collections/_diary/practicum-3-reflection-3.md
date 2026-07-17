@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum III Reflection 3"
+title_en: "Practicum-III Reflection 3"
 title_ur: ""
 date: 2026-07-16
 author_en: ""
@@ -12,6 +12,8 @@ description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
+
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 22, 2023)</p>
 
 <p><em>Reflection on Lessons Four and Five</em></p>
 
@@ -27,8 +29,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Moving forward, I plan to address these observations in several ways. I will develop more hands-on activities, such as small-group tasks related to the content, to help students work together and learn from each other. Secondly, I will be more attentive and encourage students to reach out if they are struggling with any aspect of the class. Lastly, I will keep an open mind and be willing to adapt my teaching methods to best serve my students' needs.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> February 22, 2023</p>
-
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-6/" style="color:#009F93; font-weight:600;">Next: Practicum III Lesson Plan 6 &rarr;</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-6/" style="color:#009F93; font-weight:600;">Next: Practicum-III Lesson Plan 6 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-5/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III Lesson Plan 5</a></p>

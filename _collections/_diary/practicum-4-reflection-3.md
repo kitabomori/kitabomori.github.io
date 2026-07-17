@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum IV Reflection 3"
+title_en: "Practicum-IV Reflection 3"
 title_ur: ""
 date: 2026-07-16
 author_en: ""
@@ -13,6 +13,8 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(October 4, 2023)</p>
+
 <h3>Lesson Three Reflection</h3>
 
 <p>The third lesson was a continuation of the last lesson, where I taught about the loudness of sound, but this time it was about the relationship between amplitude and sound and how we measure it. There is a break before the science class, so I arrived about 20 minutes early and arranged the chairs for a group task. For some time, I mingled with students and discovered their interest in certain subjects. It was shocking to learn that almost every student had a tutor in an air-conditioned room at home, and I wondered why these students came to this school. When all the students entered the class, I let them make groups with their friends. The class was about to start when the supervising teacher came in and called a few students to the back to take a test they had missed last time. I should have stopped it from happening, but some unknown rationale overcame me, and I felt that the supervising teacher is bound by the school's strict rules, which require one to fulfil certain tasks, such as submitting test results and checking copies on time. Certain things were beyond my control, but others also caught my attention and were part of my teachings.</p>
@@ -23,9 +25,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>In the coming lessons, it will be challenging and pivotal to carry forward the good things from this lesson, such as choosing a better teaching method, appreciating every student's question, and responding to them healthily. And I believe there is a need to transgress to teach what I want the students to learn.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> October 4, 2023</p>
-
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-4/" style="color:#009F93; font-weight:600;">Next: Lesson Plan 4 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#009F93; font-weight:600;">&larr; Previous: Lesson Plan 3</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-4/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Lesson Plan 4 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 3</a></p>

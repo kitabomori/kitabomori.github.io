@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum III Lesson Plan 4"
+title_en: "Practicum-III Lesson Plan 4"
 title_ur: ""
 date: 2026-07-16
 author_en: ""
@@ -13,9 +13,13 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p dir="rtl" style="text-align:right; font-weight:600;">درسی منصوبہ: 4 &nbsp;&nbsp;</p>
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 22, 2023)</p>
+
+<p dir="rtl" style="text-align:right; font-weight:600; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">درسی منصوبہ: 4 &nbsp;&nbsp;</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Institution</td><td  style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">III &nbsp;&nbsp; Class strength: 20&ndash;30</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Ethics &nbsp;&nbsp; Topic: Cleanliness of the Environment</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Approach</td><td style="padding:4px 0;">Constructivism</td></tr></table>
+
+<h4>1. Learning Outcomes</h4>
 
 <p><strong>Students will be able to:</strong></p><ul><li><strong>I.</strong> apply the concepts of cleanliness and demonstrate proper waste disposal in their daily lives by participating in a clean-up activity <em>(100%)</em></li></ul>
 
@@ -23,11 +27,11 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <h4>2. Required Material</h4>
 
-<p dir="rtl" style="text-align:right;">بورڈ اور مارکر</p>
+<p dir="rtl" style="text-align:right; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">بورڈ اور مارکر</p>
 
 <h4>3. Introduction</h4>
 
-<p dir="rtl" style="text-align:right;">استاد اس سبق کو شروع کرتے ہوئے طلباء سے پوچھیں گے کہ وہ کیا سمجتے ہیں کہ ماحول کی صفائی کیا ہوتی ہے؟ اور پھر روزمرہ کی زندگی میں صفائی کی اہمیت پر بحث کریںگا اور اس کے اثرات کے بارے میں بتائیں گا جو ہماری صحت اور تندرستی پر اثر انداز ہوتے ہیں۔</p>
+<p dir="rtl" style="text-align:right; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">استاد اس سبق کو شروع کرتے ہوئے طلباء سے پوچھیں گے کہ وہ کیا سمجتے ہیں کہ ماحول کی صفائی کیا ہوتی ہے؟ اور پھر روزمرہ کی زندگی میں صفائی کی اہمیت پر بحث کریںگا اور اس کے اثرات کے بارے میں بتائیں گا جو ہماری صحت اور تندرستی پر اثر انداز ہوتے ہیں۔</p>
 
 <h4>4. Activity &mdash; Instructions</h4>
 
@@ -39,10 +43,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <h4>6. Resources</h4>
 
-<p dir="rtl" style="text-align:right;">اخلاقیات تیسری جماعت، سندھ ٹیکسٹ بک بورڈ جامشورو</p>
+<p dir="rtl" style="text-align:right; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">اخلاقیات تیسری جماعت، سندھ ٹیکسٹ بک بورڈ جامشورو</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> February 22, 2023</p>
-
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-5/" style="color:#009F93; font-weight:600;">Next: Practicum III Lesson Plan 5 &rarr;</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-5/" style="color:#009F93; font-weight:600;">Next: Practicum-III Lesson Plan 5 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-2/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III Reflection 2</a></p>

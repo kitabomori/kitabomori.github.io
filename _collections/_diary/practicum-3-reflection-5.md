@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum III Reflection 5"
+title_en: "Practicum-III Reflection 5"
 title_ur: ""
 date: 2026-07-16
 author_en: ""
@@ -12,6 +12,8 @@ description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
+
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(March 8, 2023)</p>
 
 <p><em>Reflection on Lessons VIII and IX</em></p>
 
@@ -27,8 +29,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>In conclusion, teaching is a continuous learning process, and today's lesson helped me to recognise the importance of reviewing the previous lesson, providing students with adequate time to process information, and incorporating active learning techniques to keep students engaged and promote deeper understanding. As a teacher, I will strive to adopt these aspects into my teaching practices and provide my students with the best possible learning experience.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> March 8, 2023</p>
-
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-10/" style="color:#009F93; font-weight:600;">Next: Practicum III Lesson Plan 10 &rarr;</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-10/" style="color:#009F93; font-weight:600;">Next: Practicum-III Lesson Plan 10 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-9/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III Lesson Plan 9</a></p>

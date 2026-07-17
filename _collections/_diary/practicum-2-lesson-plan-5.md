@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum II Lesson Plan 5"
+title_en: "Practicum-II Lesson Plan 5"
 title_ur: ""
 date: 2026-07-15
 author_en: ""
@@ -12,6 +12,8 @@ description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
+
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(July 7, 2022)</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">8th</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Mathematics &nbsp;&nbsp; Class strength: 25</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Chapter</td><td style="padding:4px 0;">Number Systems &nbsp;&nbsp; Topic: Real Number Line</td></tr></table>
 
@@ -50,9 +52,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p>At the end, the teacher would give students the number √5 to plot on the number line, to check whether they had understood the concept.</p>
 
 <p style="font-style:italic; color:#666;">There was no reflection for Lesson Plans 4 and 5, as these were planned but not taught.</p>
-
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> July 7, 2022</p>
-
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-1/" style="color:#009F93;">&uarr; Back to Practicum II, Reflection 1</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-1/" style="color:#009F93; font-weight:600;">Next: Practicum-III Lesson Plan 1 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-4/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-II Lesson Plan 4</a></p>

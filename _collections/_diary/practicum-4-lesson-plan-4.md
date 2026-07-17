@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum IV Lesson Plan 4"
+title_en: "Practicum-IV Lesson Plan 4"
 title_ur: ""
 date: 2026-07-16
 author_en: ""
@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Lesson designed on:</strong> October 11, 2023</p>
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(October 11, 2023)</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;">
 <tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">VIII-Daisy</td><td style="padding:4px 12px; font-weight:600; white-space:nowrap;">Duration</td><td style="padding:4px 0;">50 Minutes</td></tr>
@@ -25,7 +25,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p><strong>Approach:</strong> Student-Centered</p>
 <p><strong>Method:</strong> Lecture Demonstration</p>
 
-<h3>1. Student's Learning Outcomes</h3>
+<h4>1. Student's Learning Outcomes</h4>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%;">
 <tr><th style="border:1px solid #ddd; padding:8px; text-align:left;">Students will be able to:</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">R</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">U</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">A</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">A</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">E</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">C</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">Total</th></tr>
@@ -36,13 +36,13 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p><em>Note: R = Remembering, U = Understanding, A = Applying, A = Analyzing, E = Evaluating, C = Creating</em></p>
 
-<h3>2. Pedagogy Learning Outcome</h3>
+<h4>2. Pedagogy Learning Outcome</h4>
 
 <ul>
 <li>Students would be able to use amplification phenomena in real life, where there is a need to increase the sound</li>
 </ul>
 
-<h3>3. Required Material</h3>
+<h4>3. Required Material</h4>
 
 <ul>
 <li>Whiteboard</li>
@@ -51,7 +51,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <li>Sound amplification devices (microphone, megaphone, loudspeaker, hearing aid)</li>
 </ul>
 
-<h3>4. Motivation Activity</h3>
+<h4>4. Motivation Activity</h4>
 
 <p>Begin with a question:</p>
 <ul>
@@ -61,7 +61,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <li>How does sound amplification help people with hearing difficulties?</li>
 </ul>
 
-<h3>5. Demonstration of Amplification</h3>
+<h4>5. Demonstration of Amplification</h4>
 
 <ul>
 <li>Play a short audio clip or music at a low volume, and ask the students if they can hear it clearly. Discuss why it may be difficult to hear properly when the volume is low.</li>
@@ -71,14 +71,14 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <li>Highlight the benefits of sound amplification devices for individuals with hearing difficulties, emphasising the importance of inclusivity and accessibility.</li>
 </ul>
 
-<h3>6. Group Discussion</h3>
+<h4>6. Group Discussion</h4>
 
 <ul>
 <li>Hold a classroom discussion and ask the students to share examples of everyday situations where they encounter sound amplification devices.</li>
 <li>Encourage them to explain how these devices help in those situations.</li>
 </ul>
 
-<h3>7. Assessment</h3>
+<h4>7. Assessment</h4>
 
 <p>Have students complete a short quiz or worksheet to assess their understanding of the concepts discussed.</p>
 
@@ -88,15 +88,13 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <tr><td style="border:1px solid #ddd; padding:8px;">II</td><td style="border:1px solid #ddd; padding:8px;">Inductive</td><td style="border:1px solid #ddd; padding:8px;">Subjective</td><td style="border:1px solid #ddd; padding:8px;">Exit Cards</td><td style="border:1px solid #ddd; padding:8px;">Reflection</td></tr>
 </table>
 
-<h3>8. Homework Assignment (optional)</h3>
+<h4>8. Homework Assignment (optional)</h4>
 
 <p>Students would write a short paragraph about the importance of speakers.</p>
 
-<h3>9. Resources</h3>
+<h4>9. Resources</h4>
 
 <p>Science book Grade 8th</p>
 
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This lesson plan has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-4/" style="color:#009F93; font-weight:600;">Next: Reflection 4 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-3/" style="color:#009F93; font-weight:600;">&larr; Previous: Reflection 3</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-4/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Reflection 4 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-3/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Reflection 3</a></p>

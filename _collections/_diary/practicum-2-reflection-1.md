@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum II Reflection 1"
+title_en: "Practicum-II Reflection 1"
 title_ur: ""
 date: 2026-07-15
 author_en: ""
@@ -13,6 +13,8 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(March 25, 2022)</p>
+
 <p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">In Practicum-II, lessons were taught in groups of three student teachers. One teacher conducted the lesson, while the other two observed and provided feedback. Here they are referred to as co-teacher H, and co-teacher N. The actual names of the teachers and schools have been replaced by letters.</p>
 
 <p>Practicum-II was a step upon Practicum-I, which involved several visits to the X and Y Government School in Old Sukkur. During those visits, we observed and understood the roles of various aspects of the school, including the building, labs and laboratories, library, classrooms, management, teachers, the environment, and all staff who support the learning and teaching process. It also emphasises co-teaching and receiving feedback from co-teachers to further strengthen it.</p>
@@ -21,8 +23,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Visiting the school, I realised it would be very challenging to teach here. First, the school lacks necessities such as clean water and washrooms. Second, there is a scarcity of instructional aids used in the teaching and learning process. This is a huge challenge; now I must focus on no- or low-cost instructional materials to deliver a meaningful lesson. Yes, the circumstances are difficult, but that is the reality of education in our country. That's why one of my instructors used to say, "Teaching is not everyone's cup of tea.".</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left; font-style:italic;">Written on: March 25, 2022</p>
-
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-1/" style="color:#009F93; font-weight:600;">Next: Practicum II Lesson Plan 1 &rarr;</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-1/" style="color:#009F93; font-weight:600;">Next: Practicum-II Lesson Plan 1 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflective-report/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-I: Reflective Report</a></p>

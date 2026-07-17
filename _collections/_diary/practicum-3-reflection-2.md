@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum III Reflection 2"
+title_en: "Practicum-III Reflection 2"
 title_ur: ""
 date: 2026-07-16
 author_en: ""
@@ -12,6 +12,8 @@ description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
+
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 15, 2023)</p>
 
 <p><em>Reflection on Lessons Two and Three</em></p>
 
@@ -25,8 +27,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>Moving forward, it is important to address these issues to ensure that all students can benefit from the lessons. To help students who need support with prior knowledge, I planned to incorporate more review activities and assessments at the beginning of each lesson. Additionally, I will continue to adapt my language and teaching strategies to help students who are still developing their language abilities. To address class control, I will consider implementing more engaging activities and group work to keep students interested and involved in the lesson. Overall, I plan to continue reflecting on my teaching practices and make adjustments to ensure that all students can learn and succeed.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> February 15, 2023</p>
-
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-4/" style="color:#009F93; font-weight:600;">Next: Practicum III Lesson Plan 4 &rarr;</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-4/" style="color:#009F93; font-weight:600;">Next: Practicum-III Lesson Plan 4 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-3/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III Lesson Plan 3</a></p>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum III Reflection 4"
+title_en: "Practicum-III Reflection 4"
 title_ur: ""
 date: 2026-07-16
 author_en: ""
@@ -12,6 +12,8 @@ description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
+
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(March 1, 2023)</p>
 
 <p><em>Reflection on Lessons Six and Seven</em></p>
 
@@ -27,8 +29,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>In conclusion, as a teacher, I need to focus not only on imparting knowledge but also on creating a positive learning environment that fosters curiosity, motivation and eagerness to learn. I believe that by building positive relationships with my students and making learning relevant, I can help them achieve their full potential.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> March 1, 2023</p>
-
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-8/" style="color:#009F93; font-weight:600;">Next: Practicum III Lesson Plan 8 &rarr;</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-8/" style="color:#009F93; font-weight:600;">Next: Practicum-III Lesson Plan 8 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-7/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III Lesson Plan 7</a></p>

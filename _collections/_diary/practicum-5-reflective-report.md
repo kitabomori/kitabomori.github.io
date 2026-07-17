@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum V: Reflective Report"
+title_en: "Practicum-V: Reflective Report"
 title_ur: ""
 date: 2026-07-16
 author_en: ""
@@ -13,7 +13,9 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p>Over the 16 weeks of teaching practice, we were supposed to visit the school 12 to 14 times, or conduct micro-teaching at Sukkur IBA University when we didn't go to the site. In the end, only 10 lesson plans, along with observation checklists and reflections on each lesson, needed to be submitted as an e-portfolio to the course supervisor to meet the course requirements. Throughout, the blend of classroom observations and post-lesson conferences was pivotal in making our teaching effective, understanding students' behaviour, and shaping our instructional strategies to engage them.</p>
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(May 2, 2024)</p>
+
+<p>Over the 16 weeks of teaching practice, we were supposed to visit the school 12 to 14 times, or conduct micro-teaching at our university when we didn't go to the site. In the end, only 10 lesson plans, along with observation checklists and reflections on each lesson, needed to be submitted as an e-portfolio to the course supervisor to meet the course requirements. Throughout, the blend of classroom observations and post-lesson conferences was pivotal in making our teaching effective, understanding students' behaviour, and shaping our instructional strategies to engage them.</p>
 
 <p>We invested our energy in simplifying physics concepts through simple demonstrations. Selecting texts — excerpts from diaries, letters, and books — for lessons in Urdu and English also aimed to give students a sense of what kind of literature they should be reading. Telling students about the use of flowers during times of war sparked their interest while teaching history. To make mathematics, often considered the most boring subject, more engaging, we discussed its applications in daily life. Taking an interest in students' curiosities after class also showed that when a teacher appreciates them and provides relevant answers, students respect their teachers in turn.</p>
 
@@ -28,10 +30,4 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p>In the end, observing lessons and taking part in post-conferences gave us practical field insight into teaching, learning, and what actually engages students. It made us realise how different the roles of a teacher and a prospective teacher really are — and how each role demands different strategies to face its own challenges. A prospective teacher can step out of a classroom when circumstances turn unfavourable; a teacher cannot. A teacher has to stay and manage the disruption. Whether it's right to change a class into a practice-teaching session at all remains, to us, an open question.</p>
 
 <p>We'd recommend planning the practicum to genuinely prepare prospective teachers for the role ahead, rather than treating it as a checklist of lessons to deliver, observations to sit through, reflections to write, and a report to summarise it all. Elementary teachers have to teach several subjects, so within a single teaching practice course, only one or two subjects should be the core focus, so prospective teachers can properly master them; planned well across all five teaching practice courses, there's ample time to eventually cover every subject. We'd also design the school visits in two phases: consecutive visits for a full week in the first half of the semester, then again in the second half — six lessons with observations and post-conference reflections happening back to back would do far more to connect one lesson to the next. In the gap between, prospective teachers would also get time to reflect and explore other options, and get more used to the actual rhythm and routine of a cooperating school. We believe the life of a prospective teacher, while practising, should resemble the real working life of a teacher and a school far more closely than it currently does.</p>
-
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> May 2, 2024</p>
-
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:1.5rem;">That's the last entry from Practicum-V.</p>
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-1/" style="color:#009F93;">&uarr; Back to Practicum V, Lesson Plan 1</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-10/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-V Reflection 10</a></p>

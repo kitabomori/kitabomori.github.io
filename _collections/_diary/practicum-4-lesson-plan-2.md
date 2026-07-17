@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum IV Lesson Plan 2"
+title_en: "Practicum-IV Lesson Plan 2"
 title_ur: ""
 date: 2026-07-16
 author_en: ""
@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Lesson designed on:</strong> September 27, 2023</p>
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(September 27, 2023)</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;">
 <tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">VIII-Daisy</td><td style="padding:4px 12px; font-weight:600; white-space:nowrap;">Duration</td><td style="padding:4px 0;">40 Minutes</td></tr>
@@ -25,7 +25,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p><strong>Approach:</strong> Student-Centered</p>
 <p><strong>Method:</strong> Inductive cum detective</p>
 
-<h3>1. Student's Learning Outcomes</h3>
+<h4>1. Student's Learning Outcomes</h4>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%;">
 <tr><th style="border:1px solid #ddd; padding:8px; text-align:left;">Students will be able to:</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">R</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">U</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">A</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">A</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">E</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">C</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">Total</th></tr>
@@ -36,7 +36,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p><em>Note: R = Remembering, U = Understanding, A = Applying, A = Analyzing, E = Evaluating, C = Creating</em></p>
 
-<h3>2. Required Material</h3>
+<h4>2. Required Material</h4>
 
 <ul>
 <li>Whiteboard and markers</li>
@@ -44,21 +44,21 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <li>Digital/mobile decibel (sound) meter</li>
 </ul>
 
-<h3>3. Motivation Activity</h3>
+<h4>3. Motivation Activity</h4>
 
 <p>Ask a couple of students to sing a naat, song, or poem to motivate the students, and then record the sound.</p>
 
-<h3>4. Sound Exploration</h3>
+<h4>4. Sound Exploration</h4>
 
 <p>Play recorded sounds for the students, ranging from very quiet to very loud. Ask them to listen carefully and rank the sounds from quietest to loudest. Use a decibel meter app or device to measure and display the decibel levels as you play the sounds.</p>
 
 <p>After listening to the sounds, lead a group discussion. Encourage students to share their rankings and discuss why they placed certain sounds in specific positions. Guide the conversation towards the idea that loudness is subjective and can vary from person to person.</p>
 
-<h3>5. Decibel Explanation</h3>
+<h4>5. Decibel Explanation</h4>
 
 <p>Explain the concept of decibels as a unit of measurement for loudness. Discuss the decibel scale and how it relates to our perception of sound. Use the whiteboard to draw a simple graph showing how decibel levels increase as sounds get louder.</p>
 
-<h3>6. Decibel Detectives Game</h3>
+<h4>6. Decibel Detectives Game</h4>
 
 <p>Divide the class into small groups and give each group a worksheet with questions on loudness and decibels. In this game, students are "Decibel Detectives" and need to solve the questions by listening to different sounds and estimating their loudness in decibels.</p>
 
@@ -68,7 +68,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <li>What would you rate the loudness of a whisper in decibels?</li>
 </ul>
 
-<h3>7. Conclusion</h3>
+<h4>7. Conclusion</h4>
 
 <ul>
 <li>Summarise the key points about loudness and decibels.</li>
@@ -76,7 +76,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <li>Discuss the importance of protecting our hearing by understanding loudness levels.</li>
 </ul>
 
-<h3>8. Assessment</h3>
+<h4>8. Assessment</h4>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%;">
 <tr><th style="border:1px solid #ddd; padding:8px;">SLOs</th><th style="border:1px solid #ddd; padding:8px;">Method</th><th style="border:1px solid #ddd; padding:8px;">Type</th><th style="border:1px solid #ddd; padding:8px;">Tool</th><th style="border:1px solid #ddd; padding:8px;">Strategy</th></tr>
@@ -84,16 +84,13 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <tr><td style="border:1px solid #ddd; padding:8px;">II</td><td style="border:1px solid #ddd; padding:8px;">Deductive</td><td style="border:1px solid #ddd; padding:8px;">Objective</td><td style="border:1px solid #ddd; padding:8px;">Worksheet</td><td style="border:1px solid #ddd; padding:8px;">Game</td></tr>
 </table>
 
-<h3>9. Homework Assignment (optional)</h3>
+<h4>9. Homework Assignment (optional)</h4>
 
 <p>Students would research the decibel levels of common sounds and categorise them in a table.</p>
 
-<h3>10. Resources</h3>
+<h4>10. Resources</h4>
 
 <p>Science book Grade 8th</p>
 
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This lesson plan has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-2/" style="color:#009F93; font-weight:600;">Next: Reflection 2 &rarr;</a></p>
-
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-1/" style="color:#009F93; font-weight:600;">&larr; Previous: Reflection 1</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-2/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Reflection 2 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-1/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Reflection 1</a></p>

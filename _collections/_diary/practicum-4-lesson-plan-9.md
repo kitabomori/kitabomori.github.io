@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum IV Lesson Plan 9"
+title_en: "Practicum-IV Lesson Plan 9"
 title_ur: ""
 date: 2026-07-16
 author_en: ""
@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Lesson designed on:</strong> November 29, 2023</p>
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(November 29, 2023)</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;">
 <tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">VII-Rose</td><td style="padding:4px 12px; font-weight:600; white-space:nowrap;">Duration</td><td style="padding:4px 0;">40 Minutes</td></tr>
@@ -25,7 +25,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p><strong>Approach:</strong> Student Centred</p>
 <p><strong>Method:</strong> Communicative Language Teaching</p>
 
-<h3>1. Student's Learning Outcomes</h3>
+<h4>1. Student's Learning Outcomes</h4>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%;">
 <tr><th style="border:1px solid #ddd; padding:8px; text-align:left;">Students will be able to:</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">R</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">U</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">A</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">A</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">E</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">C</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">Total</th></tr>
@@ -36,20 +36,20 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p><em>Note: R = Remembering, U = Understanding, A = Applying, A = Analyzing, E = Evaluating, C = Creating</em></p>
 
-<h3>2. Pedagogy Learning Outcome</h3>
+<h4>2. Pedagogy Learning Outcome</h4>
 
 <ul>
 <li>Students would have a better understanding of free writing as a tool for self-expression and creativity.</li>
 </ul>
 
-<h3>3. Required Material</h3>
+<h4>3. Required Material</h4>
 
 <ul>
 <li>Whiteboard and Marker</li>
 <li>Duster</li>
 </ul>
 
-<h3>4. 5E Plan</h3>
+<h4>4. 5E Plan</h4>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%;">
 <tr><td style="border:1px solid #ddd; padding:8px; font-weight:600;">Engagement</td></tr>
@@ -96,7 +96,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 </td></tr>
 </table>
 
-<h3>5. Assessment Matrix</h3>
+<h4>5. Assessment Matrix</h4>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%;">
 <tr><th style="border:1px solid #ddd; padding:8px;">SLOs</th><th style="border:1px solid #ddd; padding:8px;">Method</th><th style="border:1px solid #ddd; padding:8px;">Type</th><th style="border:1px solid #ddd; padding:8px;">Tool</th><th style="border:1px solid #ddd; padding:8px;">Strategy</th></tr>
@@ -104,11 +104,9 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <tr><td style="border:1px solid #ddd; padding:8px;">II</td><td style="border:1px solid #ddd; padding:8px;">Deductive</td><td style="border:1px solid #ddd; padding:8px;">Subjective</td><td style="border:1px solid #ddd; padding:8px;">Exit Ticket</td><td style="border:1px solid #ddd; padding:8px;">Writing</td></tr>
 </table>
 
-<h3>6. Resources</h3>
+<h4>6. Resources</h4>
 
 <p>Writing Guide</p>
 
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This lesson plan has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-9/" style="color:#009F93; font-weight:600;">Next: Reflection 9 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-8/" style="color:#009F93; font-weight:600;">&larr; Previous: Lesson Plan 8</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-9/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Reflection 9 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-8/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 8</a></p>

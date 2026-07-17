@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum IV Reflection 2"
+title_en: "Practicum-IV Reflection 2"
 title_ur: ""
 date: 2026-07-16
 author_en: ""
@@ -13,6 +13,8 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(September 27, 2023)</p>
+
 <h3>Lesson Two Reflection</h3>
 
 <p>I had planned to teach about sound loudness and how to measure it using a mobile sound meter app. The observation sheet and the supervising teacher's comments are encouraging, as they indicate some improvement over the previous lesson. I maintained the board and wrote the lesson topic, but I still forgot to write the subtopic. I planned to assess the learning using a worksheet, but due to time constraints/mismanagement, I went to the students individually and in pairs to ask questions orally. To sum it all up, the class went smoothly, but there are a few observations/shortcomings that are important to address in the coming lessons.</p>
@@ -21,9 +23,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>If I get a chance to teach the same topic again, I would choose the demonstration method over the inductive, as it at least helps the student to see the miracles of science instead of listening. After the demonstration, I would divide the students into different groups and lead a discussion to engage every single student.</p>
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> September 27, 2023</p>
-
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#009F93; font-weight:600;">Next: Lesson Plan 3 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-2/" style="color:#009F93; font-weight:600;">&larr; Previous: Lesson Plan 2</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Lesson Plan 3 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-2/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 2</a></p>

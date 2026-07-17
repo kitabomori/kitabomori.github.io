@@ -1,6 +1,6 @@
 ---
 layout: post
-title_en: "Practicum III: Reflective Report"
+title_en: "Practicum-III: Reflective Report"
 title_ur: ""
 date: 2026-07-16
 author_en: ""
@@ -12,6 +12,8 @@ description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
+
+<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(March 22, 2023)</p>
 
 <p>The Teaching Practice-III course of B.Ed-VI was the extension of Teaching Practice-I and II. In the last two practicums, we observed the different dimensions of the school, from gatekeeper to principal. We developed lesson plans and delivered lessons through co-teaching and micro-teaching.</p>
 
@@ -54,9 +56,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p>I also learned that it's impossible to implement a lesson plan in its entirety. Unexpected situations, such as disruptive behaviour or unexpected student questions, can arise and alter the original plan. Therefore, it's essential to be flexible and adaptable in teaching methods and instruction to cater to each student's individual needs.</p>
 
 <p>In conclusion, Teaching Practice III was a challenging experience. I tried to fulfil the course requirements by preparing lesson plans for each lesson, addressing feedback from the observation sheets, and writing a reflection on my teaching. Moreover, it provided me with some valuable insights into the teaching profession. I learned the importance of time management, lesson planning, active learning techniques and creating a positive relationship with students. Going forward, I am excited to continue learning and plan to use these insights to improve my teaching skills and become a more effective teacher.</p>
-
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Written on:</strong> March 22, 2023</p>
-
-<p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:1.5rem 0;">Note: This reflection has been edited and checked for grammatical accuracy for readability using Grammarly.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-1/" style="color:#009F93;">&uarr; Back to Practicum III, Lesson Plan 1</a></p>
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-1/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Lesson Plan 1 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-6/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-III Reflection 6</a></p>
