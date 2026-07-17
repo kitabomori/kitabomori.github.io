@@ -109,4 +109,4 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p>Writing Guide</p>
 
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-9/" style="color:#009F93; font-weight:600;">Next: Practicum-IV Reflection 9 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-8/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 8</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-7/" style="color:#009F93; font-weight:600;">&larr; Previous: Practicum-IV Lesson Plan 7</a></p>
