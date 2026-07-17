@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 8, 2023)</p>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 8, 2023)</div>
 
 <p>On Feb 8, 2023, I was in the field at Government X for the first teaching practice lesson of B.Ed-VI. I had planned to improve the 7th-grade students' speaking skills by giving them time to work in groups. Before my lesson, I was with my colleague, who was teaching General Science in Sindhi, and in the presence of their own science teacher, the students were responding. I started my lesson in Urdu and tried to shift towards the English medium. Next, I divided the class into pairs and groups of three students and instructed them to introduce themselves to each other in English. The class lasted 40 minutes, and at the end, some students came to the front of the class and tried their best to utter a few sentences in English.</p>
 

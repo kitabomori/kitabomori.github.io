@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(October 20, 2021)</p>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(October 20, 2021)</div>
 
 <p>For one final time before the school visit, we gathered in the smart classroom for Sir S's(practicum supervisor) last set of instructions. He helped us understand what to observe and how to observe it at school. Before leaving, one of the fellows collected the reflection of the previous class. It took almost 20 minutes to reach there, and it took a while to find the Government X School in old Sukkur. The principal welcomed us and joined us for a group picture. One of the school's helpers helped us navigate the school. Before the break, we visited and observed the library, science lab, and computer lab, and finally the administration office and the surrounding area of the school building. During the break, I spoke with students about the school. Right after the break, we were paired up and sent to observe the classroom. I ended up being inside X-A, where the instructor was teaching physics in Sindhi. I took notes about the class. When the period ended, we left for the campus.</p>
 

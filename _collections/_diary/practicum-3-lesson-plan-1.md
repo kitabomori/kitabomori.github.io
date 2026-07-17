@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 8, 2023)</p>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 8, 2023)</div>
 
 <p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-III, taken in the sixth semester of the B.Ed. programme, required at least 10 full lessons taught at an assigned school, each with a lesson plan, a co-teacher’s observation sheet, and a written reflection, gathered together into a final reflective report and portfolio.</p>
 

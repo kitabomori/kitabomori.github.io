@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(September 20, 2023)</p>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(September 20, 2023)</div>
 
 <p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-IV consisted of ten lessons at X School, Sukkur, teaching Grade VIII (Science) and Grade VII (English).</p>
 

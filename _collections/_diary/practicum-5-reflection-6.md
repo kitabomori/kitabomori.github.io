@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(March 28, 2024)</p>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(March 28, 2024)</div>
 
 <p>Would it be right to say that the March 28 lesson simply adds one more to the target of ten lessons for the teaching practice course? No. Yes. Why am I counting the lessons? Is it because I am fed up with the interference of the school's teachers while I am teaching, or does the school culture simply not support my philosophy and pedagogy? Either way, it worries me as a prospective teacher, and I need to find an answer. Today, when I started my lesson, one of the school teachers came into the class, picked three students, and gave them a task to decorate the soft board at the back of the class, without informing me. I couldn't let it go, and I expressed my concern about that action. The teacher said, "It is very important, sir." I told her that learning is more important than an act that disturbs it. She then went out, took permission from the coordinator, and handed her grade 8 class, Tulip, to me. I am happy that the students in this section responded well and learned something from my lesson.</p>
 

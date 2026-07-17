@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(November 3, 2021)</p>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(November 3, 2021)</div>
 
 <p>This time around, our task was to interview our cooperative teacher. After reviewing the observation sheet, my colleagues and I agreed on a few questions the teacher asked. From the cooperative teacher's reaction when we asked him about his previous time, he seemed to be trying to escape the interview. But, under continuous pressure, he reluctantly agreed to give some of his valuable time to our learning. The interview focused on classroom management.</p>
 

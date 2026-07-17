@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 15, 2024)</p>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(February 15, 2024)</div>
 
 <p dir="rtl" style="text-align:justify; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">(بی ایڈ - VIII)</p>
 

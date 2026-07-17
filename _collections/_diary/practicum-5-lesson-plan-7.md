@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<p style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(April 18, 2024)</p>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(April 18, 2024)</div>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">VIII-Daisy &nbsp;&nbsp; Duration: 40 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Science (Physics) &nbsp;&nbsp; Class strength: 40</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;">Standard Form / Scientific Notation</td></tr></table>
 
