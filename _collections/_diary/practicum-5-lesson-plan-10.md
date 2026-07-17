@@ -2,7 +2,7 @@
 layout: post
 title_en: "Practicum V Lesson Plan 3 (Physics)"
 title_ur: ""
-date: 2026-07-16
+date: 2026-07-17
 author_en: ""
 author_ur: ""
 bio_en: ""
@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/watch?v=R3tbVJIIIsKhs"
 youtube_ur: "https://www.youtube.com/watch?v=R3tbVJIIIsKhs"
 ---
 
-<p style="font-size:0.85rem; color:#666; text-align:left;"><strong>Lesson Designed on:</strong> May 10, 2024</p>
+<p style="font-size:0.85rem; color:#666; text-align:left;"><strong> May 10, 2024</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;">
   <tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">B.Ed-VIII &nbsp;&nbsp; Duration: 15 Minutes</td></tr>
