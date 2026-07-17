@@ -12,7 +12,6 @@ description_ur: ""
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
-
 <h3>Lesson I Reflection</h3>
 
 <p>I have seen and witnessed the reputation of Public School Sukkur. For some, its popularity is linked to Sukkur IBA University, as it was founded in two classrooms of a public school. As a prospective teacher, I had kept all the theories and what education is all about. When I visited the School for the first time, the discussed rules and regulations forced me to frame a picture of the school that focused solely on managing thousands of students as followers. The second visit to the school, where I delivered the first lesson, went a bit better. Grade 8-Daisy has a class of 33 students, and there is plenty of space to move freely among them.</p>
