@@ -15,7 +15,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(September 20, 2023)</div>
 
-<p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-IV consisted of ten lessons at X School, Sukkur, teaching Grade VIII (Science) and Grade VII (English).</p>
+<p style="margin:1.5rem 0; padding:1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-IV consisted of nine lessons at X School, Sukkur, teaching Grade VII and  VIII. This also include 10 reflections and a reflectve report</p>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;">
 <tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">VIII-Daisy</td><td style="padding:4px 12px; font-weight:600; white-space:nowrap;">Duration</td><td style="padding:4px 0;">40 Minutes</td></tr>
