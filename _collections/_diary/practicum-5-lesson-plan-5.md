@@ -15,7 +15,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(March 21, 2024)</div>
 
-<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Institution</td><td style="padding:4px 0;"></td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">8th Daisy &nbsp;&nbsp; Duration: 35 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Pak Study &nbsp;&nbsp; Class strength: 40</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;">Aims and Objectives of AIML</td></tr></table>
+<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 0;"></td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">8th Daisy &nbsp;&nbsp; Duration: 35 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Pak Study &nbsp;&nbsp; Class strength: 40</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;">Aims and Objectives of AIML</td></tr></table>
 
 <p><strong>Students will be able to:</strong></p><ul><li>describe what led to the formation of the All India Muslim League.</li><li>explain the significance of the All India Muslim League.</li></ul>
 
