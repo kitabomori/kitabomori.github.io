@@ -14,46 +14,68 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(April 21, 2022)</div>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;"></div>
 
-<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">5th &nbsp;&nbsp; Time: 30 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Mathematics &nbsp;&nbsp; Class strength: 25</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Chapter 3</td><td style="padding:4px 0;">Fraction (کسور) &nbsp;&nbsp; Topic: Addition of Fraction</td></tr></table>
+<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Grade</td>
+    <td style="padding:6px 12px; border:1px solid #333;">5<sup>th</sup></td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Time</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">30 Minutes</td>
+  </tr>
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Subject</td>
+    <td style="padding:6px 12px; border:1px solid #333;">Mathematics</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Class strength</td>
+    <td style="padding:6px 12px; border:1px solid #333;">25</td>
+  </tr>
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Chapter 3</td>
+    <td style="padding:6px 12px; border:1px solid #333;">Fraction <span dir="rtl">(کسور)</span></td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Topic</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Addition of Fraction</td>
+  </tr>
+</table>
 
 <h4>1. General Objectives</h4>
-
 <p>Students will be able to:</p>
+<ul>
+  <li>develop mathematical curiosity when solving problems.</li>
+  <li>become confident in using mathematics to analyse and solve problems both in school and in real-life situations.</li>
+  <li>develop the knowledge, skills, and attitudes necessary to pursue further studies in mathematics.</li>
+</ul>
 
-<ul><li>develop mathematical curiosity when solving problems.</li><li>become confident in using mathematics to analyse and solve problems both in school and in real-life situations.</li><li>develop the knowledge, skills, and attitudes necessary to pursue further studies in mathematics.</li></ul>
-
-<h4>2. Specific Objectives (SLOs)</h4>
-
+<h4>2. Specific Objectives (Students Learning Outcomes)</h4>
 <p>Students will be able to:</p>
+<ul>
+  <li>Identify fractions having the same and different denominators.</li>
+  <li>Add and subtract fractions with the same and different denominators.</li>
+  <li>Solve questions given on page number 37 i.e. exercise 3.1.</li>
+</ul>
 
-<ul><li>identify fractions having the same and different denominators.</li><li>add and subtract fractions with the same and different denominators.</li><li>solve questions given on page number 37, i.e. exercise 3.1.</li></ul>
+<h4>3. Materials & Resources</h4>
+<p>Blackboard, different colour chalks, textbook, different charts to represent fractions.</p>
 
-<h4>3. Materials &amp; Resources</h4>
+<h4>4. Introduction (5 Minutes)</h4>
+<p>The teacher will greet the students and before going to the topic s/he will inquire about their daily chores and activities. Furthermore, the teacher will ask questions from the students to recall what they had studied about fractions in their last class. This activity will help them to connect their today's lesson with the previous one. A few questions the teacher will ask the students while greeting are as follows:</p>
+<ol>
+  <li>How are you doing these days?</li>
+  <li>How are you spending your Ramadan?</li>
+  <li>Do you remember the fraction we studied in the last class?</li>
+  <li>Can any of you tell us what is a fraction?</li>
+</ol>
 
-<p>Blackboard, different coloured chalks, a textbook, and different charts to represent fractions.</p>
+<h4>5. Lesson (15 Minutes)</h4>
+<p>After recalling and checking the homework the teacher will start teaching about adding fractions of the same denominators. In the last class, we had already built their understanding and concept of fractions having the same denominators. As the students understand and can solve questions related to the same denominators, we will move to fractions having different denominators.</p>
 
-<h4>4. Introduction (5 minutes)</h4>
-
-<p>The teacher will greet the students and, before going to the topic, inquire about their daily chores and activities. Furthermore, the teacher will ask students questions to recall what they studied about fractions in their last class. This activity will help them connect today's lesson with the previous one. A few questions the teacher will ask the students while greeting are as follows:</p>
-
-<ul><li>How are you doing these days?</li><li>How are you spending your Ramadan?</li><li>Do you remember the fraction we studied in the last class?</li><li>Can any of you tell us what a fraction is?</li></ul>
-
-<h4>5. Lesson (15 minutes)</h4>
-
-<p>After reviewing and checking the homework, the teacher will begin teaching adding fractions with the same denominators. In the last class, we had already built their understanding of fractions with the same denominators. Once the students understand and can solve questions with the same denominators, we will move to fractions with different denominators.</p>
-
-<h4>6. Discussion and Questions (8 minutes)</h4>
-
-<p>As the teacher explains the concepts of addition and subtraction, the students will now be asked about any confusion. This time, the practice method will be used to explain the concepts. We have co-teachers present. They will assist students, even individually, when needed, with the questions in exercise 3.1 on page 37.</p>
+<h4>6. Discussion and Questions (8 Minutes)</h4>
+<p>As the teacher explains the concept of addition and subtraction, now the students will be asked about their confusion. This time practice method will be used to explain the concepts. We have co-teachers present. They will assist students even when needed individually to solve questions of exercise 3.1 on page 37.</p>
 
 <h4>7. Assessment</h4>
-
-<p>The teacher will assess the students and reflect upon their teaching method. The teacher, with the assistance of a co-teacher, will observe students as they solve assessment questions.</p>
+<p>The teacher will assess the students and reflect upon their teaching method. The teacher with the assistance of a co-teacher will observe the students solving questions that will be an assessment.</p>
 
 <h4>8. Homework (2 minutes)</h4>
-
-<p>The students will be assigned to solve part of exercise 3.1, and they shall be instructed to mark the question they couldn't solve.</p>
+<p>The students will be assigned to solve part exercise 3.1. And they shall be instructed to mark the question they weren't able to solve.</p>
 
 <p style="font-style:italic; color:#666;">Note: Co-teacher N delivered the lesson.</p>
 
