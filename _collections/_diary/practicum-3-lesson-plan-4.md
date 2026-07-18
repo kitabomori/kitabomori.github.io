@@ -17,12 +17,13 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p dir="rtl" style="text-align:center; font-weight:600; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">درسی منصوبہ: 4 &nbsp;&nbsp;</p>
 
-<table dir="rtl" style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; text-align:right;">
-  <tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">جماعت</td> <td style="padding:4px 0;">تیسری &nbsp;&nbsp; مدت: ۴۰ منٹ</td></tr><tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">مضمون</td> <td style="padding:4px 0;">اخلاقیات &nbsp;&nbsp; کلاس کی تعداد: 20-30</td></tr> <tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">موضوع</td> <td style="padding:4px 0;">ماحول کی صفائی </td></tr></table><td style="padding:4px 12px 4px 0; font-weight:600; whitespace:nowrap;">Approach</td><td style="padding:4px 0;">Constructivism</td></tr></table>
+<table dir="rtl" style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; text-align:right;"><tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">جماعت</td> <td style="padding:4px 0;">تیسری &nbsp;&nbsp; مدت: ۴۰ منٹ</td></tr><tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">مضمون</td> <td style="padding:4px 0;">اخلاقیات &nbsp;&nbsp; کلاس کی تعداد: 20-30</td></tr> <tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">موضوع</td> <td style="padding:4px 0;">ماحول کی صفائی </td><td style="padding:4px 12px 4px 0; font-weight:600; whitespace:nowrap;">Approach</td><td style="padding:4px 0;">Constructivism</td></tr></table>
 
-<h4 dir="rtl" style="text-align:right; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">1. طلباء کے سیکھنے کے نتائج </h4>
+<h4 dir="rtl" style="text-align:right; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">1. طلبہ کے سیکھنے کے مقاصد </h4>
 
-<p><strong>Students will be able to:</strong></p><ul><li><strong>I.</strong> apply the concepts of cleanliness and demonstrate proper waste disposal in their daily lives by participating in a clean-up activity <em>(100%)</em></li></ul>
+<p dir="rtl" style="text-align:right; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">طلباء اس قابل ہو جانیں گے:</p>
+
+<p><strong>Students will be able to:</strong></p><ul><li><strong>I.</strong> "صفائی ستھرائی کے تصورات پر عمل کرنا اور صفائی کی مہم میں حصہ لے کر اپنی روزمرہ کی زندگی میں کوڑے کرکٹ کو ٹھکانے لگانے کے درست طریقے کا عملی مظاہرہ کرنا <em>(100%)</em></li></ul>
 
 <p style="font-size:0.85rem; color:#666;">(R = remembering, U = understanding, A = applying, An = analysing, E = evaluating, C = creating)</p>
 
