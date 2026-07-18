@@ -61,6 +61,8 @@ html {
 body {
   background-color: var(--reading-bg);
   color: var(--reading-text);
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Long-form copy: comfortable size, generous leading, capped
@@ -275,48 +277,203 @@ body {
    corner as the rest of the diary — only the base tone and border
    shift. ---- */
 .post-body-lesson-plan {
-  background-color: #EAF1F6 !important;
-  border-color: #C6D8E4 !important;
+  background-color: #DCE8F5 !important;
+  border-color: #8EB4DC !important;
 }
 
 .post-body-reflection {
-  background-color: #F5EEF6 !important;
-  border-color: #DECBE0 !important;
+  background-color: #F0DCEE !important;
+  border-color: #C989C2 !important;
 }
 
 .post-body-reflective-report {
-  background-color: #EDF3E7 !important;
-  border-color: #CBDCC0 !important;
+  background-color: #DCEDD0 !important;
+  border-color: #8FBB6E !important;
 }
 
 .dark .post-body-lesson-plan {
-  background-color: #1B2229 !important;
-  border-color: #33414D !important;
+  background-color: #17242F !important;
+  border-color: #3C6690 !important;
 }
 
 .dark .post-body-reflection {
-  background-color: #241E26 !important;
-  border-color: #453640 !important;
+  background-color: #2A1C29 !important;
+  border-color: #6E3E68 !important;
 }
 
 .dark .post-body-reflective-report {
-  background-color: #1D231A !important;
-  border-color: #38402E !important;
+  background-color: #1B2716 !important;
+  border-color: #4A6B34 !important;
 }
 
 .sepia .post-body-lesson-plan {
-  background-color: #EFE6D2 !important;
-  border-color: #CBAF7C !important;
+  background-color: #E3E8CC !important;
+  border-color: #7FA0C4 !important;
 }
 
 .sepia .post-body-reflection {
-  background-color: #F1E2DB !important;
-  border-color: #D9A98F !important;
+  background-color: #EAD4E3 !important;
+  border-color: #B36DA8 !important;
 }
 
 .sepia .post-body-reflective-report {
-  background-color: #E6E4CB !important;
-  border-color: #B9B47C !important;
+  background-color: #D9E4B8 !important;
+  border-color: #7FA050 !important;
+}
+
+/* ---- One distinct paper tint per collection, so every section of
+   the site (Articles, Reviews, Letters, Events, and each strand of
+   Creative Writing) reads as its own visually distinct "room", the
+   same way the three diary formats do above. Light / dark / sepia
+   variants for each, same texture, only the tone shifts. ---- */
+.post-body-articles {
+  background-color: #F7EEDA !important;
+  border-color: #D9C48A !important;
+}
+
+.post-body-reviews {
+  background-color: #FBEAE1 !important;
+  border-color: #E8B79C !important;
+}
+
+.post-body-letters {
+  background-color: #EAEBF7 !important;
+  border-color: #C3C6E8 !important;
+}
+
+.post-body-events {
+  background-color: #FBF6DD !important;
+  border-color: #E3D68A !important;
+}
+
+.post-body-short_stories {
+  background-color: #F9EDF0 !important;
+  border-color: #E3B9C4 !important;
+}
+
+.post-body-poetry {
+  background-color: #F1EAF7 !important;
+  border-color: #D2B8E8 !important;
+}
+
+.post-body-dialogues {
+  background-color: #E9F5F0 !important;
+  border-color: #B7DED0 !important;
+}
+
+.post-body-satire {
+  background-color: #FBF0DE !important;
+  border-color: #E0B978 !important;
+}
+
+.post-body-nonfiction {
+  background-color: #EAF0EC !important;
+  border-color: #C3D6C9 !important;
+}
+
+.post-body-reflections {
+  background-color: #F3ECE7 !important;
+  border-color: #D9C2B4 !important;
+}
+
+.dark .post-body-articles {
+  background-color: #26221A !important;
+  border-color: #4A4128 !important;
+}
+
+.dark .post-body-reviews {
+  background-color: #271E1A !important;
+  border-color: #4E3527 !important;
+}
+
+.dark .post-body-letters {
+  background-color: #1D1F29 !important;
+  border-color: #363A4E !important;
+}
+
+.dark .post-body-events {
+  background-color: #26241A !important;
+  border-color: #4C4728 !important;
+}
+
+.dark .post-body-short_stories {
+  background-color: #271E22 !important;
+  border-color: #4C3540 !important;
+}
+
+.dark .post-body-poetry {
+  background-color: #221E29 !important;
+  border-color: #40354E !important;
+}
+
+.dark .post-body-dialogues {
+  background-color: #1B2622 !important;
+  border-color: #33493F !important;
+}
+
+.dark .post-body-satire {
+  background-color: #262018 !important;
+  border-color: #4E3F22 !important;
+}
+
+.dark .post-body-nonfiction {
+  background-color: #1C2320 !important;
+  border-color: #37423D !important;
+}
+
+.dark .post-body-reflections {
+  background-color: #241F1B !important;
+  border-color: #493A2E !important;
+}
+
+.sepia .post-body-articles {
+  background-color: #F0E6C4 !important;
+  border-color: #C7A959 !important;
+}
+
+.sepia .post-body-reviews {
+  background-color: #F3DECB !important;
+  border-color: #CE9865 !important;
+}
+
+.sepia .post-body-letters {
+  background-color: #E4E2D0 !important;
+  border-color: #A9AC7D !important;
+}
+
+.sepia .post-body-events {
+  background-color: #F0E6B4 !important;
+  border-color: #C7B84E !important;
+}
+
+.sepia .post-body-short_stories {
+  background-color: #F1DEE1 !important;
+  border-color: #CB9AA3 !important;
+}
+
+.sepia .post-body-poetry {
+  background-color: #E9DCEF !important;
+  border-color: #B084C4 !important;
+}
+
+.sepia .post-body-dialogues {
+  background-color: #DCE9DE !important;
+  border-color: #8FBB99 !important;
+}
+
+.sepia .post-body-satire {
+  background-color: #F0E0B4 !important;
+  border-color: #C7A24E !important;
+}
+
+.sepia .post-body-nonfiction {
+  background-color: #DCE4D9 !important;
+  border-color: #93AC93 !important;
+}
+
+.sepia .post-body-reflections {
+  background-color: #E9DCCF !important;
+  border-color: #B6926F !important;
 }
 
 /* ---- Reading-time duration badge (e.g. "3:00") ---- */
@@ -341,8 +498,10 @@ body {
    paragraph itself — rather than relying on the page's overall
    direction — so a paragraph of Urdu text is never affected even when
    it happens to be shown inside an English-direction page. Nastaliq/RTL
-   scripts don't carry this typographic convention at all. ---- */
-.post-body > p:first-of-type:not([dir="rtl"])::first-letter {
+   scripts don't carry this typographic convention at all. Also excluded
+   from lesson plans (:not(.post-body-lesson-plan)) — lesson plans open
+   with a date/table, not prose, so a styled first letter doesn't fit. ---- */
+.post-body:not(.post-body-lesson-plan) > p:first-of-type:not([dir="rtl"])::first-letter {
   font-family: 'Literata', serif;
   font-weight: 700;
   font-size: 1.6em;
@@ -350,11 +509,11 @@ body {
   color: #9C5B3C;
 }
 
-.dark .post-body > p:first-of-type:not([dir="rtl"])::first-letter {
+.dark .post-body:not(.post-body-lesson-plan) > p:first-of-type:not([dir="rtl"])::first-letter {
   color: #D99B7D;
 }
 
-.sepia .post-body > p:first-of-type:not([dir="rtl"])::first-letter {
+.sepia .post-body:not(.post-body-lesson-plan) > p:first-of-type:not([dir="rtl"])::first-letter {
   color: #8A6D3B;
 }
 
