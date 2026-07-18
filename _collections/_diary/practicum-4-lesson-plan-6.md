@@ -15,78 +15,142 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(November 15, 2023)</div>
 
-<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;">
-<tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">VII-Rose</td><td style="padding:4px 12px; font-weight:600; white-space:nowrap;">Duration</td><td style="padding:4px 0;">50 Minutes</td></tr>
-<tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">English</td><td style="padding:4px 12px; font-weight:600; white-space:nowrap;">Class Strength</td><td style="padding:4px 0;">48</td></tr>
-<tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;" colspan="3">Haiku</td></tr>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;"></div>
+
+<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Grade</td>
+    <td style="padding:6px 12px; border:1px solid #333;">VII</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Duration</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">50 Minutes</td>
+  </tr>
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Subject</td>
+    <td style="padding:6px 12px; border:1px solid #333;">English</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Class strength</td>
+    <td style="padding:6px 12px; border:1px solid #333;">48</td>
+  </tr>
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Topic</td>
+    <td style="padding:6px 12px; border:1px solid #333;" colspan="3">Haiku</td>
+  </tr>
 </table>
 
-<p><strong>Philosophy:</strong> Constructivism</p>
-<p><strong>Approach:</strong> Student-Centered</p>
-<p><strong>Method:</strong> Communicative Language Teaching</p>
+<p style="margin-top:0.5rem;"><strong>Philosophy:</strong> Constructivism &nbsp;&nbsp; <strong>Approach:</strong> Student-Centered &nbsp;&nbsp; <strong>Method:</strong> Communicative Language Teaching</p>
 
-<h4>1. Student's Learning Outcomes</h4>
+<h4>1. Students' Learning Outcomes</h4>
 
-<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%;">
-<tr><th style="border:1px solid #ddd; padding:8px; text-align:left;">Students will be able to:</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">R</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">U</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">A</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">A</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">E</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">C</th><th style="border:1px solid #ddd; padding:8px; text-align:center;">Total</th></tr>
-<tr><td style="border:1px solid #ddd; padding:8px;">I. Explain what Haiku is</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">-</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">50%</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">-</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">-</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">-</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">-</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">50%</td></tr>
-<tr><td style="border:1px solid #ddd; padding:8px;">II. Compose a simple Haiku poem</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">-</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">-</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">-</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">-</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">-</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">50%</td><td style="border:1px solid #ddd; padding:8px; text-align:center;">50%</td></tr>
-<tr><td style="border:1px solid #ddd; padding:8px; font-weight:600;" colspan="7">Total</td><td style="border:1px solid #ddd; padding:8px; text-align:center; font-weight:600;">100%</td></tr>
+<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
+  <tr>
+    <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">Students will be able to:</th>
+    <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">R</th>
+    <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">U</th>
+    <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">A</th>
+    <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">An</th>
+    <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">E</th>
+    <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">C</th>
+    <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">Total</th>
+  </tr>
+  <tr>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:left;">I. Explain what Haiku is</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center;">-</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center; font-weight:600;">50%</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center;">-</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center;">-</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center;">-</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center;">-</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center; font-weight:600;">50%</td>
+  </tr>
+  <tr>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:left;">II. Compose a simple Haiku poem</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center;">-</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center;">-</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center;">-</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center;">-</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center;">-</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center; font-weight:600;">50%</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center; font-weight:600;">50%</td>
+  </tr>
+  <tr>
+    <td colspan="7" style="padding:6px 10px; border:1px solid #333; text-align:right; font-weight:600;">Total</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:center; font-weight:600;">100%</td>
+  </tr>
 </table>
 
-<p><em>Note: R = Remembering, U = Understanding, A = Applying, A = Analyzing, E = Evaluating, C = Creating</em></p>
+<p style="font-size:0.85rem; color:#666;">R = remembering, U = understanding, A = applying, An = analysing, E = evaluating, C = creating</p>
 
 <h4>2. Pedagogy Learning Outcome</h4>
-
 <ul>
-<li>Students would be able to use the knowledge of haiku to write haiku poems about nature, social issues and topics of personal interests to create awareness.</li>
+  <li>Students would be able to use the knowledge of haiku to write haiku poems about nature, social issues and topics of personal interests to create awareness.</li>
 </ul>
 
 <h4>3. Required Material</h4>
-
 <ul>
-<li>Whiteboard and Marker</li>
-<li>Duster</li>
-<li>Reading Material</li>
-<li>Worksheets</li>
+  <li>Whiteboard and Marker</li>
+  <li>Duster</li>
+  <li>Reading Material</li>
+  <li>Worksheets</li>
 </ul>
 
 <h4>4. KWL Plan</h4>
-
-<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%;">
-<tr><th style="border:1px solid #ddd; padding:8px; width:33%;">Know<br><small><em>(Previous Knowledge)</em></small></th><th style="border:1px solid #ddd; padding:8px; width:33%;">Want to Know<br><small><em>(Teaching Strategy)</em></small></th><th style="border:1px solid #ddd; padding:8px; width:33%;">Learned<br><small><em>(Assessment)</em></small></th></tr>
-<tr><td style="border:1px solid #ddd; padding:8px;">
-<ul>
-<li>What is poetry?</li>
-<li>Why is poetry written?</li>
-<li>Types of poetry.</li>
-</ul>
-</td><td style="border:1px solid #ddd; padding:8px;">
-<ul>
-<li>The teacher would provide a short reading comprehension to understand Haiku.</li>
-<li>Students would discuss the reading in groups.</li>
-<li>Next, students would share their understanding with the whole class.</li>
-<li>Time to practice writing a Haiku poem and providing peer feedback.</li>
-</ul>
-</td><td style="border:1px solid #ddd; padding:8px;">
-<ul>
-<li>Would be able to tell what Haiku is.</li>
-<li>Its structure</li>
-<li>Benefits of poetry (Haiku)</li>
-</ul>
-</td></tr>
+<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
+  <tr>
+    <th style="padding:6px 12px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">Know</th>
+    <th style="padding:6px 12px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">Want to Know</th>
+    <th style="padding:6px 12px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">Learned</th>
+  </tr>
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; vertical-align:top;">
+      <ul>
+        <li>What is poetry?</li>
+        <li>Why is poetry written?</li>
+        <li>Types of poetry.</li>
+      </ul>
+    </td>
+    <td style="padding:6px 12px; border:1px solid #333; vertical-align:top;">
+      <ul>
+        <li>The teacher would provide a short reading comprehension to understand Haiku.</li>
+        <li>Students would discuss the reading in groups.</li>
+        <li>Next, students would share their understanding with the whole class.</li>
+        <li>Time to practice writing a Haiku poem and providing peer feedback.</li>
+      </ul>
+    </td>
+    <td style="padding:6px 12px; border:1px solid #333; vertical-align:top;">
+      <ul>
+        <li>Would be able to tell what Haiku is.</li>
+        <li>Its structure</li>
+        <li>Benefits of poetry (Haiku)</li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
 <h4>5. Assessment</h4>
-
-<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%;">
-<tr><th style="border:1px solid #ddd; padding:8px;">SLOs</th><th style="border:1px solid #ddd; padding:8px;">Method</th><th style="border:1px solid #ddd; padding:8px;">Type</th><th style="border:1px solid #ddd; padding:8px;">Tool</th><th style="border:1px solid #ddd; padding:8px;">Strategy</th></tr>
-<tr><td style="border:1px solid #ddd; padding:8px;">I</td><td style="border:1px solid #ddd; padding:8px;">Deductive</td><td style="border:1px solid #ddd; padding:8px;">Objective</td><td style="border:1px solid #ddd; padding:8px;">-</td><td style="border:1px solid #ddd; padding:8px;">Oral</td></tr>
-<tr><td style="border:1px solid #ddd; padding:8px;">II</td><td style="border:1px solid #ddd; padding:8px;">Inductive</td><td style="border:1px solid #ddd; padding:8px;">Subjective</td><td style="border:1px solid #ddd; padding:8px;">Worksheet</td><td style="border:1px solid #ddd; padding:8px;">Writing</td></tr>
+<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
+  <tr>
+    <th style="padding:6px 12px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">SLOs</th>
+    <th style="padding:6px 12px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">Method</th>
+    <th style="padding:6px 12px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">Type</th>
+    <th style="padding:6px 12px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">Tool</th>
+    <th style="padding:6px 12px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">Strategy</th>
+  </tr>
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; text-align:center;">I</td>
+    <td style="padding:6px 12px; border:1px solid #333; text-align:center;">Deductive</td>
+    <td style="padding:6px 12px; border:1px solid #333; text-align:center;">Objective</td>
+    <td style="padding:6px 12px; border:1px solid #333; text-align:center;">---</td>
+    <td style="padding:6px 12px; border:1px solid #333; text-align:center;">Oral</td>
+  </tr>
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; text-align:center;">II</td>
+    <td style="padding:6px 12px; border:1px solid #333; text-align:center;">Inductive</td>
+    <td style="padding:6px 12px; border:1px solid #333; text-align:center;">Subjective</td>
+    <td style="padding:6px 12px; border:1px solid #333; text-align:center;">Worksheet</td>
+    <td style="padding:6px 12px; border:1px solid #333; text-align:center;">Writing</td>
+  </tr>
 </table>
 
 <h4>6. Resources</h4>
-
 <p>English Book Grade 7th</p>
 
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Reflection 7 &rarr;</a></p>
