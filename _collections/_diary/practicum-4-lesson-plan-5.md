@@ -91,7 +91,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%;">
 <tr><th style="border:1px solid #ddd; padding:8px;">SLOs</th><th style="border:1px solid #ddd; padding:8px;">Method</th><th style="border:1px solid #ddd; padding:8px;">Type</th><th style="border:1px solid #ddd; padding:8px;">Tool</th><th style="border:1px solid #ddd; padding:8px;">Strategy</th></tr>
-<tr><td style="border:1px solid #ddd; padding:8px;">I</td><td style="border:1px solid #ddd; padding:8px;">Deductive</td><td style="border:1px solid #ddd; padding:8px;">Objective</td><td style="border:1px solid #ddd; padding:8px;">Worksheet</td><td style="border:1px solid #ddd; padding:8px;">Quiz</td></tr>
+<tr><td style="border:1px solid #ddd; padding:8px;">I</td><td style="border:1px solid #ddd; padding:8px;">Deductive</td><td style="border:1px solid #ddd; padding:8px;">Objective</td><td style="border:1px solid #ddd; padding:8px;">Worksheet</td><td style="border:1px solid #ddd; padding:8px;">Quizz</td></tr>
 <tr><td style="border:1px solid #ddd; padding:8px;">II</td><td style="border:1px solid #ddd; padding:8px;">Inductive</td><td style="border:1px solid #ddd; padding:8px;">Subjective</td><td style="border:1px solid #ddd; padding:8px;">Exit Cards</td><td style="border:1px solid #ddd; padding:8px;">Reflection</td></tr>
 </table>
 
