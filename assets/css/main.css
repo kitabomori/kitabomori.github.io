@@ -65,6 +65,86 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+/* ---- Table of contents: only appears (via toc.js) on posts with
+   3+ h3/h4 section headings, most commonly lesson plans. Small,
+   quiet, and placed right above the post body so a reader — or a
+   teacher re-using the plan — can jump straight to a section
+   instead of scrolling blind through a long page. ---- */
+.post-toc {
+  max-width: 42rem;
+  margin: 0 auto 1.5rem;
+  padding: 0.9rem 1.1rem;
+  background-color: #FBF3DE;
+  border: 1px solid #E4D2A0;
+  border-left: 3px solid #009F93;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+[dir="rtl"] .post-toc {
+  border-left: 1px solid #E4D2A0;
+  border-right: 3px solid #009F93;
+  text-align: right;
+}
+
+.post-toc-label {
+  font-weight: 600;
+  color: #6B5A33;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+  margin: 0 0 0.5rem;
+}
+
+.post-toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.post-toc-list a {
+  color: #009F93;
+  text-decoration: none;
+}
+
+.post-toc-list a:hover {
+  text-decoration: underline;
+}
+
+.dark .post-toc {
+  background-color: #221F1B;
+  border-color: #3A362E;
+  border-left-color: #4FD1C5;
+}
+
+[dir="rtl"].dark .post-toc,
+.dark [dir="rtl"] .post-toc {
+  border-right-color: #4FD1C5;
+}
+
+.dark .post-toc-label {
+  color: #A99A73;
+}
+
+.dark .post-toc-list a {
+  color: #4FD1C5;
+}
+
+.sepia .post-toc {
+  background-color: #F7EFDC;
+  border-color: #DCC9A3;
+}
+
+/* Section headings become jump targets; offset the scroll position
+   so a fixed/sticky header (if one is ever added) wouldn't cover
+   the heading — harmless no-op otherwise. */
+.post-body h3[id],
+.post-body h4[id] {
+  scroll-margin-top: 1.5rem;
+}
+
 /* Long-form copy: comfortable size, generous leading, capped
    measure (line length) — all standard reading-comfort levers. */
 .page-content,
@@ -1039,7 +1119,7 @@ body {
 
 /* ---- Post layout ---- */
 .post-container {
-  @apply max-w-3xl mx-auto px-4 py-10;
+  @apply max-w-2xl mx-auto px-4 py-10;
 }
 
 .post-header {

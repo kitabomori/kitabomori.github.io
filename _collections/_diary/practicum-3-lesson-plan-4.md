@@ -18,7 +18,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p dir="rtl" style="text-align:center; font-weight:600; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">درسی منصوبہ: 4 &nbsp;&nbsp;</p>
 
 <table dir="rtl" style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; text-align:right;">
-  <tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">جماعت</td> <td style="padding:4px 0;">تیسری &nbsp;&nbsp; مدت: ۴۰ منٹ</td></tr><tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">مضمون</td> <td style="padding:4px 0;">اخلاقیات &nbsp;&nbsp; کلاس کی تعداد: 20-30</td></tr> <tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">موضوع</td> <td style="padding:4px 0;">ماحول کی صفائی </td></tr></table><td style="padding:4px 12px 4px 0; font-weight:600; whitespace:nowrap;">Approach</td><td style="padding:4px 0;">Constructivism</td></tr></table>
+  <tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">جماعت</td> <td style="padding:4px 0;">تیسری &nbsp;&nbsp; مدت: ۴۰ منٹ</td></tr><tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">مضمون</td> <td style="padding:4px 0;">اخلاقیات &nbsp;&nbsp; کلاس کی تعداد: 20-30</td></tr> <tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">موضوع</td> <td style="padding:4px 0;">ماحول کی صفائی</td></tr><tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">طریقہ کار</td> <td style="padding:4px 0;">تعمیریت (Constructivism)</td></tr></table>
 
 <h4 dir="rtl" style="text-align:right; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">1. طلباء کے سیکھنے کے نتائج </h4>
 
