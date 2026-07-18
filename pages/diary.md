@@ -15,10 +15,18 @@ permalink: /diary/
   {% endif %}
 </p>
 
-<div class="card-grid">
+<div class="card-grid card-grid-diary">
   {% assign sorted_items = site.diary | sort: "date" | reverse %}
   {% for item in sorted_items %}
-  <div class="content-card">
+  {% assign item_format = "" %}
+  {% if item.url contains "reflective-report" %}
+    {% assign item_format = "reflective-report" %}
+  {% elsif item.url contains "lesson-plan" %}
+    {% assign item_format = "lesson-plan" %}
+  {% elsif item.url contains "reflection" %}
+    {% assign item_format = "reflection" %}
+  {% endif %}
+  <div class="content-card{% if item_format != "" %} content-card-{{ item_format }}{% endif %}">
     <h2 class="card-title">
       <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}">
         {% if site.lang == 'ur' %}{{ item.title_ur }}{% else %}{{ item.title_en }}{% endif %}

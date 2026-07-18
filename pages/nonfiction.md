@@ -13,7 +13,7 @@ permalink: /creative-writing/nonfiction/
 <p class="collection-intro">Essays and narrative nonfiction grounded in real experience, research, and observation.</p>
 {% endif %}
 
-<div class="card-grid">
+<div class="card-grid card-grid-nonfiction">
   {% assign sorted_items = site.nonfiction | sort: "date" | reverse %}
   {% for item in sorted_items %}
   <div class="content-card">

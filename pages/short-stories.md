@@ -13,7 +13,7 @@ permalink: /creative-writing/short-stories/
 <p class="collection-intro">Short fiction and imaginative storytelling.</p>
 {% endif %}
 
-<div class="card-grid">
+<div class="card-grid card-grid-short_stories">
   {% assign sorted_items = site.short_stories | sort: "date" | reverse %}
   {% for item in sorted_items %}
   <div class="content-card">

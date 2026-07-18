@@ -7,7 +7,7 @@ description_ur: "تجربے اور تحقیق پر مبنی رائے جس میں
 permalink: /articles/
 ---
 
-<div class="card-grid">
+<div class="card-grid card-grid-articles">
   {% assign sorted_items = site.articles | sort: "date" | reverse %}
   {% for item in sorted_items %}
   <div class="content-card">

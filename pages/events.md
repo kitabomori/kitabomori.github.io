@@ -13,7 +13,7 @@ permalink: /events/
 <p class="collection-intro">Upcoming and past Kitabomori events, reading circles, and workshops.</p>
 {% endif %}
 
-<div class="card-grid">
+<div class="card-grid card-grid-events">
   {% assign sorted_items = site.events | sort: "date" | reverse %}
   {% for item in sorted_items %}
   <div class="content-card">

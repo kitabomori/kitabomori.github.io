@@ -7,7 +7,7 @@ description_ur: "اساتذہ، طلباء اور محققین کی طرف سے 
 permalink: /letters/
 ---
 
-<div class="card-grid">
+<div class="card-grid card-grid-letters">
   {% assign sorted_items = site.letters | sort: "date" | reverse %}
   {% for item in sorted_items %}
   <div class="content-card">

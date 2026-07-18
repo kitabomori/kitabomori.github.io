@@ -13,7 +13,7 @@ permalink: /creative-writing/reflection/
 <p class="collection-intro">Personal, thoughtful pieces of reflection on reading, education, and everyday life.</p>
 {% endif %}
 
-<div class="card-grid">
+<div class="card-grid card-grid-reflections">
   {% assign sorted_items = site.reflections | sort: "date" | reverse %}
   {% for item in sorted_items %}
   <div class="content-card">

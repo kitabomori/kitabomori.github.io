@@ -13,7 +13,7 @@ permalink: /creative-writing/satire/
 <p class="collection-intro">Wit and exaggeration turned toward education and society.</p>
 {% endif %}
 
-<div class="card-grid">
+<div class="card-grid card-grid-satire">
   {% assign sorted_items = site.satire | sort: "date" | reverse %}
   {% for item in sorted_items %}
   <div class="content-card">

@@ -13,7 +13,7 @@ permalink: /creative-writing/dialogues/
 <p class="collection-intro">Conversations, real or imagined, that dramatize a question worth sitting with.</p>
 {% endif %}
 
-<div class="card-grid">
+<div class="card-grid card-grid-dialogues">
   {% assign sorted_items = site.dialogues | sort: "date" | reverse %}
   {% for item in sorted_items %}
   <div class="content-card">

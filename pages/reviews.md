@@ -13,7 +13,7 @@ permalink: /reviews/
 <p class="collection-intro">Critical reviews of books on education, literacy, and research.</p>
 {% endif %}
 
-<div class="card-grid">
+<div class="card-grid card-grid-reviews">
   {% assign sorted_items = site.reviews | sort: "date" | reverse %}
   {% for item in sorted_items %}
   <div class="content-card">

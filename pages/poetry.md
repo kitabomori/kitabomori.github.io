@@ -13,7 +13,7 @@ permalink: /creative-writing/poetry/
 <p class="collection-intro">Verse that gives shape to feeling and observation.</p>
 {% endif %}
 
-<div class="card-grid">
+<div class="card-grid card-grid-poetry">
   {% assign sorted_items = site.poetry | sort: "date" | reverse %}
   {% for item in sorted_items %}
   <div class="content-card">
