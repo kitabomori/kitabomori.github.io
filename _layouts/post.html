@@ -69,7 +69,6 @@ layout: base
   {% elsif page.slug contains "reflection" %}
     {% assign post_format = "reflection" %}
   {% endif %}
-  <div id="post-toc"></div>
   <div class="post-body post-body-{{ page.collection }}{% if post_format != "" %} post-body-{{ post_format }}{% endif %}">
     {{ content }}
   </div>
