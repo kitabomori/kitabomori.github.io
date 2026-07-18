@@ -23,7 +23,8 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p dir="rtl" style="text-align:right; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">طلباء اس قابل ہو جانیں گے:</p>
 
-<p><strong>Students will be able to:</strong></p><ul><li><strong>I.</strong> "صفائی ستھرائی کے تصورات پر عمل کرنا اور صفائی کی مہم میں حصہ لے کر اپنی روزمرہ کی زندگی میں کوڑے کرکٹ کو ٹھکانے لگانے کے درست طریقے کا عملی مظاہرہ کرنا <em>(100%)</em></li></ul>
+<p dir="rtl" style="text-align:right; font-family:'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;">صفائی ستھرائی کے تصورات پر عمل کرنا اور صفائی کی مہم میں حصہ لے کر اپنی روزمرہ کی زندگی میں کوڑے کرکٹ کو ٹھکانے لگانے کے درست طریقے کا عملی مظاہرہ کرنا</p>
+
 
 <p style="font-size:0.85rem; color:#666;">(R = remembering, U = understanding, A = applying, An = analysing, E = evaluating, C = creating)</p>
 
