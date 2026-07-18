@@ -15,31 +15,41 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(May 10, 2024)</div>
 
-<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;">
-  <tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">B.Ed-VIII &nbsp;&nbsp; Duration: 15 Minutes</td></tr>
-  <tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Physics &nbsp;&nbsp; Class strength: 16</td></tr>
-  <tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;">Time Dilation</td></tr>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;"></div>
+
+<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Grade</td>
+    <td style="padding:6px 12px; border:1px solid #333;">B.Ed-VIII</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Duration</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">15 Minutes</td>
+  </tr>
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Subject</td>
+    <td style="padding:6px 12px; border:1px solid #333;">Physics</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Class strength</td>
+    <td style="padding:6px 12px; border:1px solid #333;">16</td>
+  </tr>
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Topic</td>
+    <td style="padding:6px 12px; border:1px solid #333;" colspan="3">Time Dilation</td>
+  </tr>
 </table>
 
 <h4>1. Student Learning Objectives</h4>
-
 <p><strong>Students will be able to:</strong></p>
-
 <ul>
   <li>I. Understand that time is relative.</li>
   <li>II. Apply the concept of time dilation in different scenarios.</li>
 </ul>
 
 <h4>2. Required Material</h4>
-
 <ul>
   <li>Whiteboard, duster, markers or chalk, ruler, computer, projector, a ball</li>
 </ul>
 
 <h4>3. Motivation Activity (2 Minutes)</h4>
-
 <p>Begin by asking the students to reflect on the concept of time. Pose questions like:</p>
-
 <ul>
   <li>What is time for you?</li>
   <li>How do you perceive time?</li>
@@ -47,7 +57,6 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 </ul>
 
 <h4>4. Introductory Activity (3 Minutes)</h4>
-
 <ul>
   <li>Introduce the twin paradox as a thought experiment to illustrate time dilation.</li>
   <li>Explain the scenario where one twin travels at near the speed of light while the other stays on Earth.</li>
@@ -55,7 +64,6 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 </ul>
 
 <h4>5. Activity 2 (6 Minutes)</h4>
-
 <ul>
   <li>Define time dilation as the difference in elapsed time measured by two observers due to a relative difference in velocity or gravitational potential between them.</li>
   <li>Explain the basics of Einstein's theory of relativity and how it challenges our traditional understanding of time.</li>
@@ -63,13 +71,11 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 </ul>
 
 <h4>6. Assessment Activity (4 Minutes)</h4>
-
 <ul>
   <li>Evaluate students' understanding by asking them to explain the concept of time dilation and its potential uses.</li>
 </ul>
 
 <h4>7. Resources</h4>
-
 <ul>
   <li><a href="https://youtu.be/g9p9AfjVMKY?si=90TvV0Sqewp1p1yf" target="_blank">https://youtu.be/g9p9AfjVMKY?si=90TvV0Sqewp1p1yf</a></li>
 </ul>

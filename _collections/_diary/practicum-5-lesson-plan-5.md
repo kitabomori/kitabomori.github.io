@@ -15,37 +15,66 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(March 21, 2024)</div>
 
-<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem;"><tr><td style="padding:4px 0;"></td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Grade</td><td style="padding:4px 0;">8th &nbsp;&nbsp; Duration: 35 Minutes</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Subject</td><td style="padding:4px 0;">Pak Study &nbsp;&nbsp; Class strength: 40</td></tr><tr><td style="padding:4px 12px 4px 0; font-weight:600; white-space:nowrap;">Topic</td><td style="padding:4px 0;">Aims and Objectives of AIML</td></tr></table>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;"></div>
 
-<h4>1. Student Learning Objectives</h4>
+<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Grade</td>
+    <td style="padding:6px 12px; border:1px solid #333;">8th</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Duration</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">35 Minutes</td>
+  </tr>
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Subject</td>
+    <td style="padding:6px 12px; border:1px solid #333;">Pak Study</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Class strength</td>
+    <td style="padding:6px 12px; border:1px solid #333;">40</td>
+  </tr>
+  <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Topic</td>
+    <td style="padding:6px 12px; border:1px solid #333;" colspan="3">Aims and Objectives of AIML</td>
+  </tr>
+</table>
 
-<p><strong>Students will be able to:</strong></p><ul><li>describe what led to the formation of the All India Muslim League.</li><li>explain the significance of the All India Muslim League.</li></ul>
+<h4>1. Student Learning Outcomes</h4>
+<p>Students will be able to:</p>
+<ul>
+  <li>Describe what led to the formation of the All-India Muslim League.</li>
+  <li>Explain the significance of the All-India Muslim League.</li>
+</ul>
 
 <h4>2. Required Material</h4>
-
-<p>Board, marker, duster, charts.</p>
+<p>Board, marker, duster, charts</p>
 
 <h4>3. Motivational Activity (5 minutes)</h4>
-
 <p>Ask students to reflect on the challenges faced by various communities during the 1900s.</p>
 
 <h4>4. Introductory Activity (5 minutes)</h4>
-
-<p>Briefly introduce the All India Muslim League and its formation in 1906. Discuss the political climate of India during that period and the factors leading to the League's establishment.</p>
+<ul>
+  <li>Briefly introduce the All-India Muslim League and its formation in 1906.</li>
+  <li>Discuss the political climate of India during that period and the factors leading to the establishment of the League.</li>
+</ul>
 
 <h4>5. Activity 1 (10 minutes)</h4>
-
-<p>Divide students into small groups to discuss the aims and objectives of the All India Muslim League. Ask each group to analyse the League's aims and objectives as they relate to 1906.</p>
+<ul>
+  <li>Divide students into small groups and provide them with time and your insights to discuss the aims and objectives of the All-India Muslim League.</li>
+  <li>Ask each group to analyse the aims and objectives of the League related to 1906.</li>
+</ul>
 
 <h4>6. Activity 2 (5 minutes)</h4>
-
-<p>Recap the key objectives of the All India Muslim League discussed in the previous activities.</p>
+<ul>
+  <li>Recap the key objectives of the All-India Muslim League discussed in the previous activities.</li>
+</ul>
 
 <h4>7. Assessment Activity (5 minutes)</h4>
-
-<p>Ask questions related to the aims and objectives of the AIML to assess the students.</p>
+<ul>
+  <li>Ask related questions to the aims and objectives of the AIML to assess the students</li>
+</ul>
 
 <h4>8. Reference</h4>
+<ul>
+  <li><a href="https://byjus.com/free-ias-prep/this-day-in-history-dec30/#:~:text=The%20objectives%20of%20the%20league,of%20India%20among%20the%2">https://byjus.com/free-ias-prep/this-day-in-history-dec30/</a></li>
+</ul>
 
 <p><a href="https://byjus.com/free-ias-prep/this-day-in-history-dec30/" style="color:#1D5FBF; font-size:0.92rem;">byjus.com &mdash; This Day in History</a></p>
 
