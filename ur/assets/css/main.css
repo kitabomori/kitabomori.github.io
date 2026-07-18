@@ -1235,14 +1235,6 @@ body {
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6;
 }
 
-.section-card {
-  @apply border border-gray-200 rounded-lg p-5;
-}
-
-.dark .section-card {
-  @apply border-gray-700;
-}
-
 .section-card h2 {
   @apply text-lg font-semibold mb-2;
 }
@@ -1259,14 +1251,6 @@ body {
 /* ---- Content cards (collection list pages) ---- */
 .card-grid {
   @apply grid grid-cols-1 gap-6 mt-6;
-}
-
-.content-card {
-  @apply border border-gray-200 rounded-lg p-5;
-}
-
-.dark .content-card {
-  @apply border-gray-700;
 }
 
 .card-title {
@@ -1423,41 +1407,98 @@ body {
   margin-top: 2rem;
 }
 
-/* Card */
 .section-card {
-  border: 1px solid #d9d9d9;
-  border-radius: 8px;
-  padding: 1.5rem;
-  background: #FFFFFF;
-  text-align: center;
+  --accent: #009F93;
+  position: relative;
+  text-align: left;
+  border: 1px solid #E4D9BC;
+  border-top: none;
+  border-radius: 4px 4px 10px 10px;
+  padding: 1.6rem 1.5rem 1.35rem;
+  background-color: #FDF8EC;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 26px, rgba(120, 92, 48, 0.05) 27px, transparent 28px);
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+}
+
+.section-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 4px 4px 0 0;
+  background: var(--accent);
 }
 
 .dark .section-card {
-  background: #242320;
-  border-color: #3E3B34;
+  background-color: #221F1B;
+  background-image: none;
+  border-color: #3A362E;
 }
 
-/* Card title */
-.section-card h2 {
-  text-align: center;
-  margin-bottom: 0.8rem;
+.section-card-articles  { --accent: #C79A3E; }
+.section-card-reviews   { --accent: #D9754A; }
+.section-card-creative  { --accent: #A25FC7; }
+.section-card-letters   { --accent: #5A63C7; }
+.section-card-diary     { --accent: #3C8CBF; }
+.section-card-events    { --accent: #B8A521; }
+
+/* ---- Content cards (collection listing pages): same textured,
+   accented treatment as the homepage cards, one accent per
+   collection so a reader recognizes which section they're browsing
+   at a glance. Diary cards get the finer-grained lesson-plan /
+   reflection / reflective-report accent instead, matching the tint
+   used on the posts themselves. ---- */
+.content-card {
+  --accent: #009F93;
+  position: relative;
+  border: 1px solid #E4D9BC;
+  border-top: none;
+  border-radius: 4px 4px 10px 10px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  background-color: #FDF8EC;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 26px, rgba(120, 92, 48, 0.05) 27px, transparent 28px);
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+  transition: transform 0.35s ease-out, box-shadow 0.35s ease-out;
 }
 
-.section-card h2 a {
-  color: #009F93;
-  text-decoration: none;
-  font-weight: 600;
+.content-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 4px 4px 0 0;
+  background: var(--accent);
 }
 
-.section-card h2 a:hover {
-  text-decoration: underline;
+.content-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px -14px rgba(43, 42, 38, 0.25);
 }
 
-/* Card description */
-.section-card p {
-  text-align: center;
-  line-height: 1.6;
+.dark .content-card {
+  background-color: #221F1B;
+  background-image: none;
+  border-color: #3A362E;
 }
+
+.card-grid-articles      .content-card { --accent: #C79A3E; }
+.card-grid-reviews       .content-card { --accent: #D9754A; }
+.card-grid-letters       .content-card { --accent: #5A63C7; }
+.card-grid-events        .content-card { --accent: #B8A521; }
+.card-grid-short_stories .content-card { --accent: #C77FA0; }
+.card-grid-poetry        .content-card { --accent: #A25FC7; }
+.card-grid-dialogues     .content-card { --accent: #3EAF8C; }
+.card-grid-satire        .content-card { --accent: #C7883E; }
+.card-grid-nonfiction    .content-card { --accent: #5FA35F; }
+.card-grid-reflections   .content-card { --accent: #B08E6E; }
+.card-grid-diary         .content-card { --accent: #7A6A4F; }
+.card-grid-diary .content-card-lesson-plan       { --accent: #3C6690; }
+.card-grid-diary .content-card-reflection        { --accent: #8E4F8A; }
+.card-grid-diary .content-card-reflective-report { --accent: #4A6B34; }
 
 /* Links in intro paragraph */
 .home-welcome a {
@@ -1468,4 +1509,80 @@ body {
 
 .home-welcome a:hover {
   text-decoration: underline;
+}
+
+/* ---- Decorative chapter-style divider: a classic old-book flourish
+   (line — quill — line) marking the transition from the hero
+   introduction to the section cards. ---- */
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem auto 1.75rem;
+  max-width: 420px;
+}
+
+.section-divider .divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #C7A959, transparent);
+}
+
+.section-divider .divider-line:first-child {
+  background: linear-gradient(to left, transparent, #C7A959, transparent);
+}
+
+.section-divider .divider-icon {
+  width: 20px;
+  height: 20px;
+  fill: #C7A959;
+  flex-shrink: 0;
+}
+
+.dark .section-divider .divider-line,
+.dark .section-divider .divider-line:first-child {
+  background: linear-gradient(to right, transparent, #8A6D3B, transparent);
+}
+
+.dark .section-divider .divider-icon {
+  fill: #8A6D3B;
+}
+
+/* ---- Highlight chip: wraps the "submission guidelines" / "submit
+   your work" phrases on the homepage in a soft paper-toned pill so
+   the call-to-action actually reads as one, instead of disappearing
+   into the paragraph as plain text. ---- */
+.highlight {
+  display: inline-block;
+  background-color: #FBF3DE;
+  border: 1px solid #E4D2A0;
+  border-radius: 999px;
+  padding: 0.05rem 0.75rem;
+}
+
+.dark .highlight {
+  background-color: #2A251C;
+  border-color: #4A4128;
+}
+
+.highlight a {
+  text-decoration: none !important;
+}
+
+/* ---- Footer CTA buttons: Submission / Guidelines rendered as real
+   pill buttons (outlined, filling on hover) rather than plain white
+   text links lost against the teal footer band. ---- */
+.footer-cta {
+  display: inline-block;
+  padding: 0.45rem 1.25rem;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.footer-cta:hover {
+  background-color: #FFFFFF;
+  color: #009F93 !important;
 }
