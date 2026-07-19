@@ -39,31 +39,31 @@ permalink: /
       <div class="section-card section-card-articles">
         <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-papers"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/ur/articles/">مضامین</a></h2>
-        <p>تجربے اور تحقیق پر مبنی رائے جس میں عملی تجاویز شامل ہیں۔</p>
+        <p>تجربے اور تحقیق پر مبنی رائے ۔</p>
       </div>
 
       <div class="section-card section-card-reviews">
         <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-book-star"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/ur/reviews/">جائزے</a></h2>
-        <p>تعلیم، خواندگی اور تحقیق سے متعلق کتابوں کے تنقیدی جائزے۔</p>
+        <p>تعلیم، خواندگی، اور ادب کی کتابوں پر تنقیدی تبصرے۔</p>
       </div>
 
       <div class="section-card section-card-creative">
         <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-pen-nib"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/ur/creative-writing/">تخلیقی تحریر</a></h2>
-        <p>مختصر کہانیاں، شاعری، عکاسی، مکالمے، طنزیہ تحریر، اور نان فکشن۔</p>
+        <p>مختصر کہانیوں، شاعری، تأملات، مکالموں، طنز و مزاح، اور نثری ادب کے ذریعے زندگی کا کھوج۔</p>
       </div>
 
       <div class="section-card section-card-letters">
         <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-letter"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/ur/letters/">خطوط</a></h2>
-        <p>اساتذہ، طلباء اور محققین کی طرف سے ذاتی خطوط۔</p>
+        <p>خطوط جو ناممکن گفتگوؤں کو لفظ دیتے ہیں۔</p>
       </div>
 
       <div class="section-card section-card-diary">
         <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-journal"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/ur/diary/">تدریسی ڈائری</a></h2>
-        <p>تدریسی نوٹس، اسائنمنٹس، حکمتِ عملیوں اور تعلیمی وسائل کا مجموعہ۔</p>
+        <p>تعلیم و تدریس کو تقویت دینے والا مواد۔</p>
       </div>
 
       <div class="section-card section-card-events">
@@ -108,25 +108,25 @@ permalink: /
       <div class="section-card section-card-reviews">
         <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-book-star"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/en/reviews/">Reviews</a></h2>
-        <p>Critical reviews of books on education, literacy, and research.</p>
+        <p>Critical reviews of books on education, literacy, and literature.</p>
       </div>
 
       <div class="section-card section-card-creative">
         <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-pen-nib"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/en/creative-writing/">Creative Writing</a></h2>
-        <p>Short Stories, Poetry, Reflection, Dialogues, Satire, and Nonfiction.</p>
+        <p> Exploring life through Short Stories, Poetry, Reflection, Dialogues, Satire, and Nonfiction.</p>
       </div>
 
       <div class="section-card section-card-letters">
         <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-letter"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/en/letters/">Letters</a></h2>
-        <p>letters that experiendare converatin s.</p>
+        <p>Letters that imagine impossible conversations.</p>
       </div>
 
       <div class="section-card section-card-diary">
         <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-journal"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/en/diary/">Teaching Diary</a></h2>
-        <p>Teaching notes, assignments, strategies, and educational resources.</p>
+        <p>Resources that enrich teaching and learning.</p>
       </div>
 
       <div class="section-card section-card-events">
