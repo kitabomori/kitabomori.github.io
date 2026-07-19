@@ -18,7 +18,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
   <tr>
     <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Grade</td>
-    <td style="padding:6px 12px; border:1px solid #333;">VII-B</td>
+    <td style="padding:6px 12px; border:1px solid #333;">VII</td>
     <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Duration</td>
     <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">40 Minutes</td>
   </tr>

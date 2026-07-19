@@ -82,7 +82,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
     <td style="padding:6px 10px; border:1px solid #333; text-align:left; font-weight:600;">35%</td>
   </tr>
   <tr>
-    <td colspan="7" style="padding:6px 10px; border:1px solid #333; text-align:right; font-weight:600;">Total</td>
+    <td colspan="7" style="padding:6px 10px; border:1px solid #333; text-align:left; font-weight:600;">Total</td>
     <td style="padding:6px 10px; border:1px solid #333; text-align:center; font-weight:600;">100%</td>
   </tr>
 </table>
