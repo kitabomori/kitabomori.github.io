@@ -36,27 +36,28 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <h4>1. طلباء کے سیکھنے کے مقاصد</h4>
 
+<!-- ========== FIXED TABLE – original column order kept (objective left, metrics right) ========== -->
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
   <thead>
     <tr>
+      <th style="padding:10px 12px; border:1px solid #333; background:#f2f4f8; text-align:right; font-weight:600;">طلباء اس قابل ہو جانیں گے</th>
       <th style="padding:10px 12px; border:1px solid #333; background:#f2f4f8; text-align:center; font-weight:600;">C</th>
       <th style="padding:10px 12px; border:1px solid #333; background:#f2f4f8; text-align:center; font-weight:600;">E</th>
       <th style="padding:10px 12px; border:1px solid #333; background:#f2f4f8; text-align:center; font-weight:600;">A</th>
       <th style="padding:10px 12px; border:1px solid #333; background:#f2f4f8; text-align:center; font-weight:600;">U</th>
       <th style="padding:10px 12px; border:1px solid #333; background:#f2f4f8; text-align:center; font-weight:600;">R</th>
       <th style="padding:10px 12px; border:1px solid #333; background:#f2f4f8; text-align:center; font-weight:600;">Total</th>
-      <th style="padding:10px 12px; border:1px solid #333; background:#f2f4f8; text-align:right; font-weight:600;">طلباء اس قابل ہو جانیں گے</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="padding:10px 12px; border:1px solid #333; text-align:center; color:#777;">—</td>
-      <td style="padding:10px 12px; border:1px solid #333; text-align:center; color:#777;">—</td>
-      <td style="padding:10px 12px; border:1px solid #333; text-align:center; color:#777;">—</td>
-      <td style="padding:10px 12px; border:1px solid #333; text-align:center; font-weight:700; color:#0b5e2e;">100%</td>
-      <td style="padding:10px 12px; border:1px solid #333; text-align:center; color:#777;">—</td>
-      <td style="padding:10px 12px; border:1px solid #333; text-align:center; font-weight:700; color:#0b5e2e;">100%</td>
       <td style="padding:10px 12px; border:1px solid #333; text-align:right; line-height:1.6;">1. صفائی ستھرائی کے تصورات پر عمل کرنا اور صفائی کی مہم میں حصہ لے کر اپنی روزمرہ کی زندگی میں کوڑے کرکٹ کو ٹھکانے لگانے کے درست طریقے کا عملی مظاہرہ کرنا</td>
+      <td style="padding:10px 12px; border:1px solid #333; text-align:center; color:#777;">—</td>
+      <td style="padding:10px 12px; border:1px solid #333; text-align:center; color:#777;">—</td>
+      <td style="padding:10px 12px; border:1px solid #333; text-align:center; color:#777;">—</td>
+      <td style="padding:10px 12px; border:1px solid #333; text-align:center; font-weight:700; color:#0b5e2e;">100%</td>
+      <td style="padding:10px 12px; border:1px solid #333; text-align:center; color:#777;">—</td>
+      <td style="padding:10px 12px; border:1px solid #333; text-align:center; font-weight:700; color:#0b5e2e;">100%</td>
     </tr>
   </tbody>
 </table>
@@ -67,7 +68,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p>بورڈ اور مارکر</p>
 
 <h4>3. تعارف</h4>
-<p>استاد اس سبق کو شروع کرتے ہوئے طلباء سے پوچھیں گے کہ وہ کیا سمجھتے ہیں کہ ماحول کی صفائی کیا ہوتی ہے؟ اور پھر روزمرہ کی زندگی میں صفائی کی اہمیت پر بحث کریں گا اور اس کے اثرات کے بارے میں بتائیں گے جو ہماری صحت اور تندرستی پر اثر انداز ہوتے ہیں۔</p>
+<p>استاد اس سبق کو شروع کرتے ہوئے طلباء سے پوچھیں گے کہ وہ کیا سمجھتے ہیں کہ ماحول کی صفائی کیا ہوتی ہے؟ اور پھر روزمرہ کی زندگی میں صفائی کی اہمیت پر بحث کریں گے اور اس کے اثرات کے بارے میں بتائیں گے جو ہماری صحت اور تندرستی پر اثر انداز ہوتے ہیں۔</p>
 
 <h4>4. سبق کی کارروائیاں</h4>
 <p><strong>ہدایات:</strong></p>
