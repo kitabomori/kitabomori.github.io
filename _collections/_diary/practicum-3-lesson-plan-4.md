@@ -19,16 +19,16 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
   <tr>
-    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">تیسری</td>
-    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">جماعت</td>
+  <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">جماعت</td> 
+   <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">تیسری</td>
+      <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">مضمون</td>
     <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">اخلاقیات</td>
-    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">مضمون</td>
   </tr>
   <tr>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">طلباء کی تعداد</td>   
     <td style="padding:6px 12px; border:1px solid #333; text-align:center;">20-30</td>
-    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">طلباء کی تعداد</td>
-    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">ماحول کی صفائی</td>
     <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">موضوع</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">ماحول کی صفائی</td>
   </tr>
 </table>
 
@@ -45,7 +45,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
     <th style="padding:6px 8px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">A</th>
     <th style="padding:6px 8px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">E</th>
     <th style="padding:6px 8px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">C</th>
-    <th style="padding:6px 8px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">طلباء اس قابل ہو جانیں گے</th>
+    <th style="padding:6px 8px; border:1px solid #333; background:#f5f5f5; text-align:right; font-weight:600;">طلباء اس قابل ہو جانیں گے</th>
   </tr>
   <tr>
     <td style="padding:6px 8px; border:1px solid #333; text-align:center; font-weight:600;">100%</td>
