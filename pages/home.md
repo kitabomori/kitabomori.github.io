@@ -18,7 +18,7 @@ permalink: /
     <div class="page-decor page-decor-hero decor-open-book-pen" aria-hidden="true">
       <svg class="decor-svg"><use href="#icon-open-book-pen"></use></svg>
     </div>
-    <h1 class="home-heading">کتابومری میں خوش آمدید</h1>
+    <h1 class="home-heading">کتابومری </h1>
     <p class="home-tagline">پڑھیں۔ لکھیں۔ تبدیلی لائیں۔</p>
     <p>
       شینا زبان میں "کتاب" کا مطلب ہے کتاب، اور "موری" کا مطلب ہے گفتگو۔ ہم انہیں یکجا کرتے ہیں تاکہ کچھ بڑا تخلیق کیا جا سکے: ایک ایسا پلیٹ فارم جہاں پڑھنا اور لکھنا سماجی تبدیلی کی قوت بن جائیں۔
@@ -81,7 +81,7 @@ permalink: /
     <div class="page-decor page-decor-hero decor-open-book-pen" aria-hidden="true">
       <svg class="decor-svg"><use href="#icon-open-book-pen"></use></svg>
     </div>
-    <h1 class="home-heading">Welcome to Kitabomori</h1>
+    <h1 class="home-heading">Kitabomori</h1>
     <p class="home-tagline">Read. Write. Transform</p>
     <p>
       In Shina, kitab means "book" and mori means "conversation." We bring them together to create something bigger: a platform where reading and writing become forces for social change.
@@ -102,7 +102,7 @@ permalink: /
       <div class="section-card section-card-articles">
         <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-papers"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/en/articles/">Articles</a></h2>
-        <p>Opinion grounded in experience and research, with actionable recommendations.</p>
+        <p>Opinion grounded in experience and research.</p>
       </div>
 
       <div class="section-card section-card-reviews">
@@ -120,7 +120,7 @@ permalink: /
       <div class="section-card section-card-letters">
         <div class="card-icon" aria-hidden="true"><svg class="decor-svg-sm"><use href="#icon-letter"></use></svg></div>
         <h2><a href="{{ site.baseurl }}/en/letters/">Letters</a></h2>
-        <p>Personal letters from teachers, students, and researchers.</p>
+        <p>letters that experiendare converatin s.</p>
       </div>
 
       <div class="section-card section-card-diary">
