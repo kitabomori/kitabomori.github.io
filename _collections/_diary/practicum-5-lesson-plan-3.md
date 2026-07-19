@@ -75,12 +75,6 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 </ul>
 <ul><li>Richard Feynman, "Ode to a Flower" &mdash; <a href="https://www.themarginalian.org/2013/01/01/ode-to-a-flower-richard-feynman/" style="color:#1D5FBF; font-size:0.92rem;">themarginalian.org</a></li><li><a href="https://www.youtube.com/watch?v=XKYUELuf49s&t=1762s" style="color:#1D5FBF; font-size:0.92rem;">Supporting video</a></li></ul>
 
-<h4>6. حوالہ جات</h4>
-<ul style="list-style: none; padding-right: 0; margin-top: 0.5rem;">
-   <li style="margin-bottom: 0.5rem;"><strong>Ref 2:</strong> Richard Feynman, "Ode to a Flower" — <a href="https://www.themarginalian.org/2013/01/01/ode-to-a-flower-richard-feynman/" style="color:#1D5FBF; font-size:0.92rem;">themarginalian.org</a></li>
-  <li style="margin-bottom: 0.5rem;"><strong>Ref 3:</strong> <a href="https://www.youtube.com/watch?v=XKYUELuf49s&t=1762s" style="color:#1D5FBF; font-size:0.92rem;">Supporting video (YouTube)</a></li>
-</ul>
-
 </div>
 
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Reflection 3 &rarr;</a></p>
