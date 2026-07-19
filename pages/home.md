@@ -2,14 +2,6 @@
 layout: base
 title_en: "Home"
 title_ur: "مرکزی صفحہ"
-description_en: "Kitabomori – Promoting reading and writing culture"
-description_ur: "کتابومری – پڑھنے اور لکھنے کے کلچر کو فروغ دینا"
-permalink: /
----
----
-layout: base
-title_en: "Home"
-title_ur: "مرکزی صفحہ"
 description_en: "Kitabomori – read,  write.transform"
 description_ur: "کتابومری – پڑھیں۔ لکھیں۔ تبدیلی لائیں"
 permalink: /
