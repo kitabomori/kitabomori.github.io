@@ -21,7 +21,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
     <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Grade</td>
     <td style="padding:6px 12px; border:1px solid #333;">5<sup>th</sup></td>
     <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Time</td>
-    <td style="padding:6px 12px; border:1px solid #333;">— Minutes</td>
+    <td style="padding:6px 12px; border:1px solid #333;">40 Minutes</td>
   </tr>
   <tr>
     <td style="padding:6px 12px; border:1px solid #333; font-weight:600;">Subject</td>

@@ -42,11 +42,11 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
   <tr>
-    <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">Students will be able to:</th>
+    <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:left; font-weight:600;">Students will be able to:</th>
     <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">R</th>
     <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">U</th>
     <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">A</th>
-    <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">An</th>
+    <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">A</th>
     <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">E</th>
     <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">C</th>
     <th style="padding:6px 10px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">Total</th>
@@ -79,7 +79,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
     <td style="padding:6px 10px; border:1px solid #333; text-align:center;">—</td>
     <td style="padding:6px 10px; border:1px solid #333; text-align:center;">—</td>
     <td style="padding:6px 10px; border:1px solid #333; text-align:center;">—</td>
-    <td style="padding:6px 10px; border:1px solid #333; text-align:center; font-weight:600;">35%</td>
+    <td style="padding:6px 10px; border:1px solid #333; text-align:left; font-weight:600;">35%</td>
   </tr>
   <tr>
     <td colspan="7" style="padding:6px 10px; border:1px solid #333; text-align:right; font-weight:600;">Total</td>
@@ -87,7 +87,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
   </tr>
 </table>
 
-<p style="font-size:0.85rem; color:#666;">R = remembering, U = understanding, A = applying, An = analysing, E = evaluating, C = creating</p>
+<p style="font-size:0.85rem; color:#666;">R = remembering, U = understanding, A = applying, A = analysing, E = evaluating, C = creating</p>
 
 <h4>2. Required Material</h4>
 <p>Board (white/black), chalk/marker, duster</p>
