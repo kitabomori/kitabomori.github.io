@@ -15,8 +15,6 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">February 22, 2024</div>
 
-<p dir="rtl" style="text-align:center;"> (بی ایڈ - VIII)</p>
-
 <p dir="rtl" style="text-align:center;">نامہ بر تو ہی بتا تو نے تو دیکھے ہوں گے</p>
 <p dir="rtl" style="text-align:center;">کیسے ہوتے ہیں وہ خط جن کے جواب آتے ہیں</p>
 
