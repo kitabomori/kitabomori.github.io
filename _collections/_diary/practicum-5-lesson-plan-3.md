@@ -72,15 +72,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <ul>
 
 <ul style="list-style: none; padding-left: 0;">
-  <li><a href="https://www.themarginalian.org/2013/01/01/ode-to-a-flower-richard-feynman/" style="color:#1D5FBF;">Ref 1</a></li>
-  <li><a href="https://www.youtube.com/watch?v=XKYUELuf49s&t=1762s" style="color:#1D5FBF;">Ref 2</a></li>
+  <li><a href="https://www.themarginalian.org/2013/01/01/ode-to-a-flower-richard-feynman/" style="color:#1D5FBF;">Ode to a Flower</a></li>
+  <li><a href="https://www.youtube.com/watch?v=XKYUELuf49s&t=1762s" style="color:#1D5FBF;">The Secret Of Quantum Physics</a></li>
   <!-- Add Ref 3 here if you have a third reference -->
 </ul>
-
-  <li><a href="https://www.themarginalian.org/2013/01/01/ode-to-a-flower-richard-feynman/">https://www.themarginalian.org/2013/01/01/ode-to-a-flower-richard-feynman/</a></li>
-  <li><a href="https://www.youtube.com/watch?v=XKYUELuf49s&t=1762s">https://www.youtube.com/watch?v=XKYUELuf49s&t=1762s</a></li>
-</ul>
-<ul><li>Richard Feynman, "Ode to a Flower" &mdash; <a href="https://www.themarginalian.org/2013/01/01/ode-to-a-flower-richard-feynman/" style="color:#1D5FBF; font-size:0.92rem;">themarginalian.org</a></li><li><a href="https://www.youtube.com/watch?v=XKYUELuf49s&t=1762s" style="color:#1D5FBF; font-size:0.92rem;">Supporting video</a></li></ul>
 
 </div>
 
