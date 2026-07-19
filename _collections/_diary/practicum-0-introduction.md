@@ -17,9 +17,13 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">This diary collects the lesson plans, reflections, and reflective reports I wrote across five practicums between 2021 and 2024, while training to become a teacher. I'm publishing it as an honest record of that process, mistakes and all, in the hope that it's useful to other student teachers, to the teachers who supervised and taught alongside me, and to anyone curious about what learning to teach actually looks like day to day. The names of schools, students, and colleagues have been anonymised or replaced with initials throughout.</p>
 
+<p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-I was introduction to teaching  and consisted of 13 reflections about setting oneself to look at how o teach and several visits to X School, Sukkur.</p>
+
 <p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">In Practicum-II, lessons were taught in groups of three student teachers. One teacher conducted the lesson, while the other two observed and provided feedback. Here they are referred to as co-teacher H, and co-teacher N. The actual names of the teachers and schools have been replaced by letters.</p>
 
 <p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-III, taken in the sixth semester of the B.Ed. programme, required at least 10 full lessons taught at an assigned school, each with a lesson plan, a co-teacher’s observation sheet, and a written reflection, gathered together into a final reflective report and portfolio.</p>
+
+<p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-IV consisted of ten lessons at X School, Sukkur, teaching Grade VII and VIII.</p>
 
 <p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-V combined seven lessons, teaching grade VIII, with three micro-teaching lessons at the university, some delivered in pairs with a second student teacher.</p>
 
