@@ -335,17 +335,17 @@ body {
 }
 
 /* ---- Responsive tables: keep wide lesson-plan tables from breaking
-   mobile layout. The tables are hand-authored with fixed padding and
-   several columns, so on narrow screens they'd otherwise force the
-   whole page to scroll horizontally. Wrapping the table itself in a
-   horizontally scrollable box keeps the table's own content intact
-   (nothing reflows or truncates) while stopping it from pushing the
-   page out of the viewport. ---- */
-.post-body table {
-  display: block;
-  max-width: 100%;
+   mobile layout. Earlier this used `table { display: block; }` to
+   make the table itself scrollable, but overriding a table's outer
+   display away from `table` breaks the browser's column-width
+   distribution — width:100% tables would leave a blank phantom
+   column on the right instead of sizing their real columns to fill
+   it. Scrolling the *container* instead keeps the table's native
+   layout (and column alignment across rows) intact, while still
+   preventing a wide table from pushing the page itself off-screen
+   on narrow viewports. ---- */
+.post-body {
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 @media (max-width: 640px) {

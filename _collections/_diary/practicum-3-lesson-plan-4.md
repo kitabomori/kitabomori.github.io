@@ -48,7 +48,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
     <th style="padding:6px 8px; border:1px solid #333; background:#f5f5f5; text-align:center; font-weight:600;">طلباء اس قابل ہو جانیں گے</th>
   </tr>
   <tr>
-    <td style="padding:6px 8px; border:1px solid #333; text-align:center;"></td>
+    <td style="padding:6px 8px; border:1px solid #333; text-align:center; font-weight:600;">100%</td>
     <td style="padding:6px 8px; border:1px solid #333; text-align:center;">—</td>
     <td style="padding:6px 8px; border:1px solid #333; text-align:center;">—</td>
     <td style="padding:6px 8px; border:1px solid #333; text-align:center; font-weight:600;">100%</td>
@@ -56,16 +56,6 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
     <td style="padding:6px 8px; border:1px solid #333; text-align:center;">—</td>
     <td style="padding:6px 8px; border:1px solid #333; text-align:center;">—</td>
     <td style="padding:6px 8px; border:1px solid #333; text-align:right;">1. صفائی ستھرائی کے تصورات پر عمل کرنا اور صفائی کی مہم میں حصہ لے کر اپنی روزمرہ کی زندگی میں کوڑے کرکٹ کو ٹھکانے لگانے کے درست طریقے کا عملی مظاہرہ کرنا</td>
-  </tr>
-  <tr>
-    <td style="padding:6px 8px; border:1px solid #333; text-align:center; font-weight:600;">100%</td>
-    <td style="padding:6px 8px; border:1px solid #333; text-align:center;"></td>
-    <td style="padding:6px 8px; border:1px solid #333; text-align:center;"></td>
-    <td style="padding:6px 8px; border:1px solid #333; text-align:center;"></td>
-    <td style="padding:6px 8px; border:1px solid #333; text-align:center;"></td>
-    <td style="padding:6px 8px; border:1px solid #333; text-align:center;"></td>
-    <td style="padding:6px 8px; border:1px solid #333; text-align:center;"></td>
-    <td style="padding:6px 8px; border:1px solid #333; text-align:center;"></td>
   </tr>
 </table>
 
