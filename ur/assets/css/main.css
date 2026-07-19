@@ -316,6 +316,54 @@ body {
   border-color: #B36DA8 !important;
 }
 
+/* ---- Lesson-plan tables: white background ----
+   The lesson-plan post body has a colour tint (#DCE8F5 in light mode,
+   darker variants in dark/sepia). Tables inside it have no background
+   of their own, so they inherit that tint — hard to read against
+   shaded cells (e.g. the header row's own light-grey background).
+   Force a plain white table surface with dark text so the data reads
+   clearly regardless of the surrounding post tint or colour mode. ---- */
+.post-body-lesson-plan table,
+.post-body-lesson-plan table th,
+.post-body-lesson-plan table td {
+  background-color: #FFFFFF;
+  color: #2B2A26;
+}
+
+.post-body-lesson-plan table th {
+  background-color: #F5F5F5;
+}
+
+/* ---- Responsive tables: keep wide lesson-plan tables from breaking
+   mobile layout. The tables are hand-authored with fixed padding and
+   several columns, so on narrow screens they'd otherwise force the
+   whole page to scroll horizontally. Wrapping the table itself in a
+   horizontally scrollable box keeps the table's own content intact
+   (nothing reflows or truncates) while stopping it from pushing the
+   page out of the viewport. ---- */
+.post-body table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 640px) {
+  .post-body table {
+    font-size: 0.85rem;
+  }
+}
+
+/* ---- Urdu / Nastaliq typography ----
+   Single source of truth for Urdu type: anything marked dir="rtl"
+   gets the Nastaliq typeface. font-family is an inherited CSS
+   property, so this cascades to every descendant (paragraphs, list
+   items, table cells, etc.) automatically — individual elements no
+   longer need to repeat the font-family declaration themselves. ---- */
+[dir="rtl"] {
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;
+}
+
 .sepia .post-body-reflective-report {
   background-color: #D9E4B8 !important;
   border-color: #7FA050 !important;
