@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://kitabomori.github.io/ur/articles/yet-to-publish/</loc>
-<lastmod>2026-06-20T00:00:00+00:00</lastmod>
-</url>
-<url>
 <loc>https://kitabomori.github.io/ur/calls/call-for-submissions/</loc>
 <lastmod>2026-06-01T00:00:00+00:00</lastmod>
 </url>
@@ -349,20 +345,8 @@
 <lastmod>2026-07-17T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>https://kitabomori.github.io/ur/events/first-reading-circle/</loc>
-<lastmod>2026-07-15T00:00:00+00:00</lastmod>
-</url>
-<url>
 <loc>https://kitabomori.github.io/ur/letters/letter-to-teacher/</loc>
 <lastmod>2026-06-24T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://kitabomori.github.io/ur/creative-writing/nonfiction/what-forty-minutes-actually-holds/</loc>
-<lastmod>2026-06-22T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://kitabomori.github.io/ur/creative-writing/poetry/chalk-dust/</loc>
-<lastmod>2026-06-10T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://kitabomori.github.io/ur/creative-writing/reflection/mery-gawong-ma-koi-libray-bhi-thi/</loc>
@@ -375,10 +359,6 @@
 <url>
 <loc>https://kitabomori.github.io/ur/creative-writing/satire/the-right-way-to-shit-on/</loc>
 <lastmod>2022-03-05T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://kitabomori.github.io/ur/creative-writing/short-stories/the-last-period/</loc>
-<lastmod>2026-06-15T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://kitabomori.github.io/ur/articles/</loc>
@@ -436,6 +416,6 @@
 </url>
 <url>
 <loc>https://kitabomori.github.io/ur/google9c30cc0cd18db47c.html</loc>
-<lastmod>2026-07-19T17:25:34+00:00</lastmod>
+<lastmod>2026-07-19T17:28:51+00:00</lastmod>
 </url>
 </urlset>
