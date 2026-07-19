@@ -6,6 +6,14 @@ description_en: "Kitabomori – Promoting reading and writing culture"
 description_ur: "کتابومری – پڑھنے اور لکھنے کے کلچر کو فروغ دینا"
 permalink: /
 ---
+---
+layout: base
+title_en: "Home"
+title_ur: "مرکزی صفحہ"
+description_en: "Kitabomori – read,  write.transform"
+description_ur: "کتابومری – پڑھیں۔ لکھیں۔ تبدیلی لائیں"
+permalink: /
+---
 
 <!-- News ticker – Home page only -->
 {% include ticker.html %}
@@ -19,12 +27,15 @@ permalink: /
       <svg class="decor-svg"><use href="#icon-open-book-pen"></use></svg>
     </div>
     <h1 class="home-heading">کتابومری میں خوش آمدید</h1>
-    <p class="home-tagline">تنقیدی مطالعے اور تحریر کے کلچر کو فروغ دیتے ہوئے معاشرے میں تبدیلی لانا۔</p>
+    <p class="home-tagline">پڑھیں۔ لکھیں۔ تبدیلی لائیں۔</p>
     <p>
-      شینا زبان میں "کتاب" کا مطلب ہے کتاب، اور "موری" کا مطلب ہے گفتگو۔ اسی لیے یہ پہل مطالعے اور تحریر کو فروغ دیتی ہے اور تعلیم، ثقافت، زبان اور انسانی تجربے سے جڑی ہر بات پر گفتگو کو جنم دیتی ہے۔ اس کا مقصد سمجھ بوجھ کے لیے فکر انگیز مکالمے کی حوصلہ افزائی کرنا ہے۔ یہاں آپ کو مضامین، جائزے، تخلیقی تحریر اور خطوط ملیں گے۔
+      شینا زبان میں "کتاب" کا مطلب ہے کتاب، اور "موری" کا مطلب ہے گفتگو۔ ہم انہیں یکجا کرتے ہیں تاکہ کچھ بڑا تخلیق کیا جا سکے: ایک ایسا پلیٹ فارم جہاں پڑھنا اور لکھنا سماجی تبدیلی کی قوت بن جائیں۔
     </p>
     <p>
-      کتابومری ایک رضاکارانہ تعلیمی اشاعتی پلیٹ فارم ہے جو محققین، طلباء، اساتذہ، پالیسی سازوں اور عام قارئین کے لیے بنایا گیا ہے۔ اگر آپ اپنی تحریر شیئر کرنا چاہتے ہیں تو ہماری <span class="highlight"><a href="{{ site.baseurl }}/ur/guidelines/">ہدایات</a></span> پڑھیں اور <span class="highlight"><a href="{{ site.baseurl }}/ur/submission/">تحریر جمع کروائیں</a></span>۔
+      کتابومری ایک رضاکارانہ تعلیمی اور معاشرتی اشاعتی پلیٹ فارم ہے جو طلباء، اساتذہ، محققین اور عام قارئین کے لیے ہے۔ ہم ایسے مضامین شائع کرتے ہیں جو روایتی سوچ کو چیلنج کرتے ہیں، ایسے جائزے جو خیالات پر سوال اٹھاتے ہیں، تخلیقی تحریر جو دل کو چھوتی اور سوچنے پر مجبور کرتی ہے، خطوط جو دلوں اور ذہنوں کو جوڑتے ہیں، ایک تدریسی ڈائری جو جماعتوں کی حقیقت کو بیان کرتی ہے، اور تقریبات جو برادری کو مضبوط بناتی ہیں۔
+    </p>
+    <p>
+      ہمارا ماننا ہے کہ فکر انگیز گفتگو سمجھ بوجھ کو جنم دیتی ہے، اور سمجھ بوجھ عمل کی راہ ہموار کرتی ہے۔ اگر آپ بھی اسی سوچ کے حامل ہیں تو ہم آپ کو ہمارا مواد پڑھنے اور اپنی تحریر شامل کرنے کی دعوت دیتے ہیں۔ ہماری <span class="highlight"><a href="{{ site.baseurl }}/ur/guidelines/">ہدایات</a></span> پڑھیں اور <span class="highlight"><a href="{{ site.baseurl }}/ur/submission/">اپنی تحریر جمع کروائیں</a></span> تاکہ ہم مل کر تنقیدی فکر کا کلچر، ایک گفتگو کے ذریعے، تعمیر کر سکیں۔
     </p>
   </section>
 
@@ -81,11 +92,13 @@ permalink: /
     <h1 class="home-heading">Welcome to Kitabomori</h1>
     <p class="home-tagline">Read. Write. Transform</p>
     <p>
-In Shina, kitab means "book" and mori means "conversation." We bring them together to create something bigger: a platform where reading and writing become forces for social change.
+      In Shina, kitab means "book" and mori means "conversation." We bring them together to create something bigger: a platform where reading and writing become forces for social change.
     </p>
-Kitabomori is a volunteer-driven educational publishing space for researchers, students, teachers, policymakers, and the public. We publish articles that challenge the status quo, reviews that interrogate ideas, creative writing that moves and provokes, letters that connect hearts and minds, a teaching diary that documents the reality of classrooms, and events that build community.
-  <p>
-We believe that thoughtful discussion leads to understanding, and understanding leads to action. If you share that belief, we invite you to explore our content—and to contribute your own. Read our  <span class="highlight"><a href="{{ site.baseurl }}/en/guidelines/">submission guidelines</a></span> and <span class="highlight"><a href="{{ site.baseurl }}/en/submission/">send us your </a></span>work to help us build a culture of critical thought, one conversation at a time.
+    <p>
+      Kitabomori is a volunteer-driven educational and society-related publishing space for students, teachers, researchers, and the general public. We publish articles that challenge the status quo, reviews that interrogate ideas, creative writing that moves and provokes, letters that connect hearts and minds, a teaching diary that documents the reality of classrooms, and events that build community.
+    </p>
+    <p>
+      We believe that thoughtful discussion leads to understanding, and understanding leads to action. If you share that belief, we invite you to explore our content—and to contribute your own. Read our <span class="highlight"><a href="{{ site.baseurl }}/en/guidelines/">submission guidelines</a></span> and <span class="highlight"><a href="{{ site.baseurl }}/en/submission/">send us your work</a></span> to help us build a culture of critical thought, one conversation at a time.
     </p>
   </section>
 
