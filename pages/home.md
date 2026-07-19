@@ -85,8 +85,7 @@ In Shina, kitab means "book" and mori means "conversation." We bring them togeth
     </p>
 Kitabomori is a volunteer-driven educational publishing space for researchers, students, teachers, policymakers, and the public. We publish articles that challenge the status quo, reviews that interrogate ideas, creative writing that moves and provokes, letters that connect hearts and minds, a teaching diary that documents the reality of classrooms, and events that build community.
   <p>
-    <p>
- We believe that thoughtful discussion leads to understanding, and understanding leads to action. If you share that belief, we invite you to explore our content—and to contribute your own. Read our  <span class="highlight"><a href="{{ site.baseurl }}/en/guidelines/">submission guidelines</a></span> and<span class="highlight"><a href="{{ site.baseurl }}/en/submission/">send us your </a></span>work and help us build a culture of critical thought, one conversation at a time.
+We believe that thoughtful discussion leads to understanding, and understanding leads to action. If you share that belief, we invite you to explore our content—and to contribute your own. Read our  <span class="highlight"><a href="{{ site.baseurl }}/en/guidelines/">submission guidelines</a></span> and <span class="highlight"><a href="{{ site.baseurl }}/en/submission/">send us your </a></span>work to help us build a culture of critical thought, one conversation at a time.
     </p>
   </section>
 
