@@ -13,8 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(September 27, 2023)</div>
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;"></div>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">September 27, 2023</div>
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
   <tr>

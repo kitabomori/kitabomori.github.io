@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(September 20, 2023)</div>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">September 20, 2023</div>
 
 <p>I have seen and witnessed the reputation of X School, Sukkur. For some, its popularity is linked to a well-known local university, as that university was founded in two classrooms of a public school. As a prospective teacher, I had kept all the theories and what education is all about. When I visited the School for the first time, the discussed rules and regulations forced me to frame a picture of the school that focused solely on managing thousands of students as followers. The second visit to the school, where I delivered the first lesson, went a bit better. Grade 8-Daisy has a class of 33 students, and there is plenty of space to move freely among them.</p>
 

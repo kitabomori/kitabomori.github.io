@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(January 12, 2024)</div>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">January 12, 2024</div>
 
 <p>On January 12, we conducted the last school visit at the Government X in Old Sukkur. The objective of being in the field was to understand the building, its causes, several of its forms, and to highlight it in the context of the school. The observation sheet provided helped to gather data from the school premises.</p>
 

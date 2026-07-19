@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(January 12, 2024)</div>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">January 12, 2024</div>
 
 <p>Today's school visit was an observation of the lesson plan, during which I evaluated the cooperating teacher's performance. Keeping the objective in mind, I entered class 4th-A, where Sir A (a teacher)was teaching mathematics as usual. The provided observation sheet included several performance indicators, including lesson planning, subject competency, communication skills, classroom and time management, learning environment, interpersonal skills, and assessment.</p>
 

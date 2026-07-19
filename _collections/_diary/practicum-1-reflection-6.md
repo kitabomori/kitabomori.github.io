@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(November 10, 2021)</div>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">November 10, 2021</div>
 
 <p>Observation to design a lesson plan was the objective of today's school visit. Till the time we reached the classroom, the cooperative teacher had already started the lesson. We observed the lesson, and the teacher was teaching a text from the English book about "Shah Abdul Latif Bhitai". He was using the blackboard to write the key points while reading the text aloud. In the next phase, the cooperative teacher asked students about Bhitai's background, name, early life and education, and finally about Bhitai's spiritual growth. A couple of students answered, repeating what was written in the provided textbook, like parrots. The homework was to write a short paragraph about one aspect of Bhitai's life. After the class, when we asked the cooperative teacher about his lesson plan for the topic, "to see how successful he has been in achieving the objective of the class."</p>
 

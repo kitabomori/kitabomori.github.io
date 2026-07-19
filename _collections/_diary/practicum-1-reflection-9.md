@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(December 8, 2021)</div>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">December 8, 2021</div>
 
 <p>This was the seventh visit to the Government X school, Old Sukkur. This time, the task was to conduct an interview with a student. During the break, I asked A(a student) for his time. With full zeal and zest, A started his lunch time for my learning. In the interview, I asked about his background, his family and siblings, his early education, the language he spoke, the subject he liked most, his favourite teacher, his hobbies, and, finally, his friend circle.</p>
 

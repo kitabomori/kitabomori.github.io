@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(November 29, 2023)</div>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">November 29, 2023</div>
 
 <p>November 29 was the day we visited X School, Sukkur, for the ninth time, which was supposed to be our second-last excursion of teaching practice. I developed a lesson to help students in 7th-Xappreciate the concept of free writing after analysing my students' VARK data. I started the lesson by instructing the students on a prompt story: I began with the exposition, then the students added whatever came to mind. Moving towards free writing, I wrote three words, "adventure, mystery and laughter," on the board. Still, I instructed them to put pen to paper for 10 minutes, forgetting about punctuation, spelling, sentence structure, and the use of heavy vocabulary in their writing.</p>
 

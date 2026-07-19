@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(October 25, 2023)</div>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">October 25, 2023</div>
 
 <p>The usual day-to-day lesson plan of our teaching practice seems outdated to me, as it focuses only on the banking model of education, where the more knowledgeable person (teacher) deposits a chunk of information in students' minds without creating knowledge or accounting for the factors that influence the learning process. In one of the counselling and guidance courses at my university, I came to understand the importance of counselling. So today I was questioning whether my students need any kind of counseling or a bit of help here and there that could help them to act as active learners and to be ready to learn something new. So before taking the class of 8th-Daisy, I sat with a couple of students and had a conversation in the break. I was looking at what could be the possible reasons that are barriers to the learning process of students. In that sense today was sort of another day for me at the field as I came to know about the psychology of students and the stresses they are having.</p>
 

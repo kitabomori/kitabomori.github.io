@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(December 15, 2021)</div>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">December 15, 2021</div>
 
 <p>The title of the observation sheet's discipline procedures and policies prompted me to find out whether the Government X School, Old Sukkur, has a discipline policy. The administration's standardisation answer was "Yes", but they were unable to provide any written documentation. This scenario raised several questions for me. How does a school deal with and prevent any disciplinary mishaps in the first place? And secondly, who has the absolute authority to decide the fate of those who misbehave? Next, I asked the cooperating teacher, who provides guidelines for managing discipline and other issues when there are no written policies. The cooperation teacher said, "The headmaster has the authority to take any action when such mishaps occur, and to a certain extent, inside the classroom, a teacher has the power to bring things under control."</p>
 

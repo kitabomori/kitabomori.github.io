@@ -13,7 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">(March 25, 2022)</div>
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">March 25, 2022</div>
 
 <p>Practicum-II was a step upon Practicum-I, which involved several visits to the X and Y Government School in Old Sukkur. During those visits, we observed and understood the roles of various aspects of the school, including the building, labs and laboratories, library, classrooms, management, teachers, the environment, and all staff who support the learning and teaching process. It also emphasises co-teaching and receiving feedback from co-teachers to further strengthen it.</p>
 
