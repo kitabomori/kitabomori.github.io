@@ -15,26 +15,22 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">February 22, 2024</div>
 
+<div dir="rtl">
 
-<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333; direction:rtl;">
+<table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
   <tr>
-    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">ھشتم</td>
-    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">جماعت</td>
-    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">فزکس</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">جماعت</td> 
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">بی ایڈ-VIII</td>
     <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">مضمون</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">اردو</td>
   </tr>
   <tr>
-    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">15</td>
-    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">منٹ</td>
-    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">آسلیسکوپ اور لہریں</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">طلباء کی تعداد</td>   
+    <td style="padding:6px 12px; border:1px solid #333; text-align:center;">28</td>
     <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">موضوع</td>
+    <td style="padding:6px 12px; border:1px solid #333; font-weight:600; text-align:center;">خطوط نویسی (کل اور آج کے دور میں)</td>
   </tr>
 </table>
-
-<img src="media/image1.png" alt="Lesson Plan II - Image 1" style="max-width:100%; margin:1rem 0;">
-<img src="media/image2.png" alt="Lesson Plan II - Image 2" style="max-width:100%; margin:1rem 0;">
-
-<table dir="rtl" style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; text-align:right;"><tr> <td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">جماعت</td>  <td style="padding:4px 0;">ہشتم &nbsp;&nbsp; مدت: ۴۰ منٹ</td></tr> <tr><td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">مضمون</td>  <td style="padding:4px 0;">اردو &nbsp;&nbsp; کلاس کی تعداد: ۴۰</td> </tr> <tr> <td style="padding:4px 0 4px 12px; font-weight:600; white-space:nowrap;">موضوع</td><td style="padding:4px 0;">خطوط نویسی (کل اور آج کے دور میں)</td>  </tr></table>
 
 <h4 dir="rtl" style="text-align:right;">1. طلبہ کے سیکھنے کے مقاصد </h4>
 
