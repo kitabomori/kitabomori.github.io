@@ -641,22 +641,18 @@
          KitaboMori and still counts as a normal embedded YouTube view.
          If youtube_id is missing or empty, nothing is shown. -->
     
-    <!-- Fallback: no youtube_id set yet for this post. Keep showing the
-         old "listen on YouTube" link (youtube_en / youtube_ur, or the
-         site-wide channel link) so nothing breaks for posts that
-         haven't been migrated to an embedded player yet. -->
-    
-    
-    
-    
-    <p class="post-audio-link">
-      <a href="https://https://youtu.be/Uql9oyyzclM" target="_blank" rel="noopener">
-        
-          یوٹیوب پر آڈیو کے لیے کلک کریں
-        
-      </a>
-    </p>
-    
+    <div class="post-video-embed">
+      <div class="post-video-embed-frame">
+        <iframe
+          src="https://www.youtube.com/embed/Uql9oyyzclM?rel=0&modestbranding=1"
+          title="The_right_way_to_shit_on"
+          loading="lazy"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
     
   </header>
 
