@@ -1162,6 +1162,7 @@ body {
 @supports (aspect-ratio: 16 / 9) {
   .post-video-embed-frame {
     padding-top: 0;
+    height: auto;
   }
 }
 
