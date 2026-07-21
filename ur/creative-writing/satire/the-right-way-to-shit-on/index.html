@@ -634,20 +634,29 @@
 
     <span class="post-title-divider" aria-hidden="true"></span>
 
-    <!-- Audio link (YouTube). Each post/language can set its own link via
-         youtube_en / youtube_ur in front matter; if a post hasn't set one
-         yet, it falls back to the site-wide YouTube channel link. -->
+    <!-- Embedded YouTube audio/video player. Each post can set
+         youtube_id (just the 11-character video ID, e.g. "dQw4w9WgXcQ")
+         in its front matter. When present, the official YouTube iframe
+         embed is shown directly on the page — playback stays on
+         KitaboMori and still counts as a normal embedded YouTube view.
+         If youtube_id is missing or empty, nothing is shown. -->
+    
+    <!-- Fallback: no youtube_id set yet for this post. Keep showing the
+         old "listen on YouTube" link (youtube_en / youtube_ur, or the
+         site-wide channel link) so nothing breaks for posts that
+         haven't been migrated to an embedded player yet. -->
     
     
     
     
     <p class="post-audio-link">
-      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener">
+      <a href="https://https://youtu.be/Uql9oyyzclM" target="_blank" rel="noopener">
         
           یوٹیوب پر آڈیو کے لیے کلک کریں
         
       </a>
     </p>
+    
     
   </header>
 
