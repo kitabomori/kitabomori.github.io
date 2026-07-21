@@ -1,0 +1,1644 @@
+/* ============================================================
+   main.css – Tailwind CSS input file for Kitabomori.
+   PostCSS/Tailwind processes this file during build.
+   Custom component styles follow the @tailwind directives.
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   READING-FRIENDLY BASE PALETTE
+   Warm, low-glare tones instead of pure white/black: reduces eye
+   strain on long-form reading. Body copy uses Literata (a serif
+   built for on-screen reading); headings/UI keep the brand teal.
+   ============================================================ */
+:root {
+  --reading-bg: #FBF8F2;      /* warm paper, not stark white */
+  --reading-text: #2B2A26;    /* soft near-black, not pure #000 */
+  --reading-muted: #5C5A54;   /* muted warm grey for meta text */
+}
+
+.dark {
+  --reading-bg: #1B1A17;      /* warm near-black, not cold #111 */
+  --reading-text: #E9E4D8;    /* warm off-white, not stark white */
+  --reading-muted: #B4AFA2;
+}
+
+/* Sepia: a third reading mode, closer to aged paper — many reading
+   apps offer this and it suits a literary journal well. */
+.sepia {
+  --reading-bg: #F1E7D0;
+  --reading-text: #000000;
+  --reading-muted: #7A6952;
+}
+
+.sepia .post-body,
+.sepia .content-card,
+.sepia .section-card {
+  background: #F7EFDC;
+  border-color: #DCC9A3;
+}
+
+.sepia .reading-progress {
+  background: linear-gradient(to right, #8A6D3B, #009F93);
+}
+
+.sepia .ticker-bar {
+  background-color: #E8DAB8 !important;
+}
+
+.sepia .post-meta-bottom,
+.sepia .post-author-bio {
+  border-top-color: #DCC9A3;
+}
+
+html {
+  background-color: var(--reading-bg);
+}
+
+body {
+  background-color: var(--reading-bg);
+  color: var(--reading-text);
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Long-form copy: comfortable size, generous leading, capped
+   measure (line length) — all standard reading-comfort levers. */
+.page-content,
+.post-body {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+}
+
+.post-body p {
+  color: var(--reading-text);
+}
+
+/* ============================================================
+   CUSTOM COMPONENT STYLES
+   ============================================================ */
+
+/* ============================================================
+   MOTION SYSTEM — calm, literary, not "tech startup".
+   Slow (500–700ms), ease-out, small scale/translate ranges.
+   Everything here is inert until motion.js adds .reveal /
+   .reveal-visible classes, or is skipped under
+   prefers-reduced-motion (see @media block at the end).
+   ============================================================ */
+
+/* ---- Scroll reveal: cards, paragraphs, blockquotes ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gentle stagger for card grids — delay increases per card so a
+   row/grid settles in rather than popping all at once. */
+.section-cards .reveal:nth-child(1), .card-grid .reveal:nth-child(1) { transition-delay: 0ms;   }
+.section-cards .reveal:nth-child(2), .card-grid .reveal:nth-child(2) { transition-delay: 90ms;  }
+.section-cards .reveal:nth-child(3), .card-grid .reveal:nth-child(3) { transition-delay: 180ms; }
+.section-cards .reveal:nth-child(4), .card-grid .reveal:nth-child(4) { transition-delay: 270ms; }
+.section-cards .reveal:nth-child(5), .card-grid .reveal:nth-child(5) { transition-delay: 360ms; }
+.section-cards .reveal:nth-child(6), .card-grid .reveal:nth-child(6) { transition-delay: 450ms; }
+
+/* ---- Card hover: lift, soften shadow, underline grows in ---- */
+.content-card,
+.section-card {
+  transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+}
+
+.content-card:hover,
+.section-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 16px 32px -16px rgba(43, 42, 38, 0.22);
+}
+
+.dark .content-card:hover,
+.dark .section-card:hover {
+  box-shadow: 0 16px 32px -16px rgba(0, 0, 0, 0.5);
+}
+
+.card-title a,
+.section-card h2 a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1.5px;
+  transition: background-size 0.4s ease-out;
+  padding-bottom: 1px;
+}
+
+.card-title a:hover,
+.section-card h2 a:hover {
+  text-decoration: none;
+  background-size: 100% 1.5px;
+}
+
+/* ---- Reading progress bar (post pages) ---- */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(to right, #009F93, #00C851);
+  z-index: 9999;
+  transition: width 0.15s linear;
+}
+
+.dark .reading-progress {
+  background: linear-gradient(to right, #4FD1C5, #00C851);
+}
+
+/* ---- Hero: fade + slide up on load, once ---- */
+.home-welcome {
+  animation: hero-fade-up 0.75s ease-out both;
+}
+
+@keyframes hero-fade-up {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero icon breathes gently rather than bobbing, per brand feel */
+.page-decor-hero .decor-svg {
+  animation: decor-hero-breathe 5s ease-in-out infinite;
+}
+
+@keyframes decor-hero-breathe {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50%      { transform: translateY(-4px) scale(1.025); }
+}
+
+/* ---- Poetry: a slow vertical line grows in beside the poem ---- */
+.post-body-poetry {
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+.post-body-poetry::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #009F93 15%, #009F93 85%, transparent);
+  transform: scaleY(0);
+  transform-origin: top;
+  animation: grow-line 1.5s ease-out 0.2s forwards;
+}
+
+.dark .post-body-poetry::before {
+  background: linear-gradient(to bottom, transparent, #4FD1C5 15%, #4FD1C5 85%, transparent);
+}
+
+@keyframes grow-line {
+  to { transform: scaleY(1); }
+}
+
+/* ---- Classic Paper Frame — the writing itself sits on a page,
+   styled to feel like an old diary entry: aged paper tone, faint
+   ruled lines, a folded page corner, and a touch of tilt. ---- */
+.post-body {
+  background-color: #FBF3DE;
+  background-image:
+    repeating-linear-gradient(to bottom, transparent 0, transparent 30px, rgba(120, 92, 48, 0.09) 31px, transparent 32px),
+    radial-gradient(circle at 6% 10%, rgba(120, 92, 48, 0.07), transparent 40%),
+    radial-gradient(circle at 94% 88%, rgba(120, 92, 48, 0.06), transparent 45%);
+  border: 1px solid #DFCFA2;
+  border-radius: 3px 16px 6px 18px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(74, 56, 32, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  position: relative;
+}
+
+/* Folded top-right corner, like a well-thumbed diary page */
+.post-body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 32px 32px 0;
+  border-color: transparent #EADFBC transparent transparent;
+  filter: drop-shadow(-1px 1px 2px rgba(74, 56, 32, 0.25));
+}
+
+[dir="rtl"] .post-body::after {
+  right: auto;
+  left: 0;
+  border-width: 0 0 32px 32px;
+  border-color: transparent transparent transparent #EADFBC;
+  filter: drop-shadow(1px 1px 2px rgba(74, 56, 32, 0.25));
+}
+
+.dark .post-body {
+  background-color: #221F1B;
+  background-image: none;
+  border-color: #3A362E;
+  box-shadow: none;
+}
+
+.dark .post-body::after {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .post-body {
+    padding: 1.5rem 1.25rem;
+    border-radius: 10px;
+  }
+
+  .post-body::after {
+    border-width: 0 22px 22px 0;
+  }
+
+  [dir="rtl"] .post-body::after {
+    border-width: 0 0 22px 22px;
+  }
+}
+
+/* ---- Distinct page tints for the three practicum diary formats, so
+   a reader can tell at a glance whether they're in a lesson plan, a
+   reflection, or a reflective report. Same paper texture and folded
+   corner as the rest of the diary — only the base tone and border
+   shift. ---- */
+.post-body-lesson-plan {
+  background-color: #DCE8F5 !important;
+  border-color: #8EB4DC !important;
+}
+
+.post-body-reflection {
+  background-color: #F0DCEE !important;
+  border-color: #C989C2 !important;
+}
+
+.post-body-reflective-report {
+  background-color: #DCEDD0 !important;
+  border-color: #8FBB6E !important;
+}
+
+.dark .post-body-lesson-plan {
+  background-color: #17242F !important;
+  border-color: #3C6690 !important;
+}
+
+.dark .post-body-reflection {
+  background-color: #2A1C29 !important;
+  border-color: #6E3E68 !important;
+}
+
+.dark .post-body-reflective-report {
+  background-color: #1B2716 !important;
+  border-color: #4A6B34 !important;
+}
+
+.sepia .post-body-lesson-plan {
+  background-color: #E3E8CC !important;
+  border-color: #7FA0C4 !important;
+}
+
+.sepia .post-body-reflection {
+  background-color: #EAD4E3 !important;
+  border-color: #B36DA8 !important;
+}
+
+/* ---- Lesson-plan tables: white background ----
+   The lesson-plan post body has a colour tint (#DCE8F5 in light mode,
+   darker variants in dark/sepia). Tables inside it have no background
+   of their own, so they inherit that tint — hard to read against
+   shaded cells (e.g. the header row's own light-grey background).
+   Force a plain white table surface with dark text so the data reads
+   clearly regardless of the surrounding post tint or colour mode. ---- */
+.post-body-lesson-plan table,
+.post-body-lesson-plan table th,
+.post-body-lesson-plan table td {
+  background-color: #FFFFFF;
+  color: #2B2A26;
+}
+
+.post-body-lesson-plan table th {
+  background-color: #F5F5F5;
+}
+
+/* ---- Responsive tables: keep wide lesson-plan tables from breaking
+   mobile layout. Earlier this used `table { display: block; }` to
+   make the table itself scrollable, but overriding a table's outer
+   display away from `table` breaks the browser's column-width
+   distribution — width:100% tables would leave a blank phantom
+   column on the right instead of sizing their real columns to fill
+   it. Scrolling the *container* instead keeps the table's native
+   layout (and column alignment across rows) intact, while still
+   preventing a wide table from pushing the page itself off-screen
+   on narrow viewports. ---- */
+.post-body {
+  overflow-x: auto;
+}
+
+@media (max-width: 640px) {
+  .post-body table {
+    font-size: 0.85rem;
+  }
+}
+
+/* ---- Urdu / Nastaliq typography ----
+   Single source of truth for Urdu type: anything marked dir="rtl"
+   gets the Nastaliq typeface. font-family is an inherited CSS
+   property, so this cascades to every descendant (paragraphs, list
+   items, table cells, etc.) automatically — individual elements no
+   longer need to repeat the font-family declaration themselves. ---- */
+[dir="rtl"] {
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;
+}
+
+.sepia .post-body-reflective-report {
+  background-color: #D9E4B8 !important;
+  border-color: #7FA050 !important;
+}
+
+/* ---- One distinct paper tint per collection, so every section of
+   the site (Articles, Reviews, Letters, Events, and each strand of
+   Creative Writing) reads as its own visually distinct "room", the
+   same way the three diary formats do above. Light / dark / sepia
+   variants for each, same texture, only the tone shifts. ---- */
+.post-body-articles {
+  background-color: #F7EEDA !important;
+  border-color: #D9C48A !important;
+}
+
+.post-body-reviews {
+  background-color: #FBEAE1 !important;
+  border-color: #E8B79C !important;
+}
+
+.post-body-letters {
+  background-color: #EAEBF7 !important;
+  border-color: #C3C6E8 !important;
+}
+
+.post-body-events {
+  background-color: #FBF6DD !important;
+  border-color: #E3D68A !important;
+}
+
+.post-body-short_stories {
+  background-color: #F9EDF0 !important;
+  border-color: #E3B9C4 !important;
+}
+
+.post-body-poetry {
+  background-color: #F1EAF7 !important;
+  border-color: #D2B8E8 !important;
+}
+
+.post-body-dialogues {
+  background-color: #E9F5F0 !important;
+  border-color: #B7DED0 !important;
+}
+
+.post-body-satire {
+  background-color: #FBF0DE !important;
+  border-color: #E0B978 !important;
+}
+
+.post-body-nonfiction {
+  background-color: #EAF0EC !important;
+  border-color: #C3D6C9 !important;
+}
+
+.post-body-reflections {
+  background-color: #F3ECE7 !important;
+  border-color: #D9C2B4 !important;
+}
+
+.dark .post-body-articles {
+  background-color: #26221A !important;
+  border-color: #4A4128 !important;
+}
+
+.dark .post-body-reviews {
+  background-color: #271E1A !important;
+  border-color: #4E3527 !important;
+}
+
+.dark .post-body-letters {
+  background-color: #1D1F29 !important;
+  border-color: #363A4E !important;
+}
+
+.dark .post-body-events {
+  background-color: #26241A !important;
+  border-color: #4C4728 !important;
+}
+
+.dark .post-body-short_stories {
+  background-color: #271E22 !important;
+  border-color: #4C3540 !important;
+}
+
+.dark .post-body-poetry {
+  background-color: #221E29 !important;
+  border-color: #40354E !important;
+}
+
+.dark .post-body-dialogues {
+  background-color: #1B2622 !important;
+  border-color: #33493F !important;
+}
+
+.dark .post-body-satire {
+  background-color: #262018 !important;
+  border-color: #4E3F22 !important;
+}
+
+.dark .post-body-nonfiction {
+  background-color: #1C2320 !important;
+  border-color: #37423D !important;
+}
+
+.dark .post-body-reflections {
+  background-color: #241F1B !important;
+  border-color: #493A2E !important;
+}
+
+.sepia .post-body-articles {
+  background-color: #F0E6C4 !important;
+  border-color: #C7A959 !important;
+}
+
+.sepia .post-body-reviews {
+  background-color: #F3DECB !important;
+  border-color: #CE9865 !important;
+}
+
+.sepia .post-body-letters {
+  background-color: #E4E2D0 !important;
+  border-color: #A9AC7D !important;
+}
+
+.sepia .post-body-events {
+  background-color: #F0E6B4 !important;
+  border-color: #C7B84E !important;
+}
+
+.sepia .post-body-short_stories {
+  background-color: #F1DEE1 !important;
+  border-color: #CB9AA3 !important;
+}
+
+.sepia .post-body-poetry {
+  background-color: #E9DCEF !important;
+  border-color: #B084C4 !important;
+}
+
+.sepia .post-body-dialogues {
+  background-color: #DCE9DE !important;
+  border-color: #8FBB99 !important;
+}
+
+.sepia .post-body-satire {
+  background-color: #F0E0B4 !important;
+  border-color: #C7A24E !important;
+}
+
+.sepia .post-body-nonfiction {
+  background-color: #DCE4D9 !important;
+  border-color: #93AC93 !important;
+}
+
+.sepia .post-body-reflections {
+  background-color: #E9DCCF !important;
+  border-color: #B6926F !important;
+}
+
+/* ---- Reading-time duration badge (e.g. "3:00") ---- */
+.post-reading-time {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  color: #009F93;
+  font-weight: 600;
+}
+
+.dark .post-reading-time {
+  color: #4FD1C5;
+}
+
+.sepia .post-reading-time {
+  color: #8A6D3B;
+}
+
+/* ---- Opening cap: first letter of the first paragraph.
+   Kept small and restrained (not a floated, oversized drop cap) so it
+   never distorts line height. Scoped with :not([dir="rtl"]) on the
+   paragraph itself — rather than relying on the page's overall
+   direction — so a paragraph of Urdu text is never affected even when
+   it happens to be shown inside an English-direction page. Nastaliq/RTL
+   scripts don't carry this typographic convention at all. Also excluded
+   from lesson plans (:not(.post-body-lesson-plan)) — lesson plans open
+   with a date/table, not prose, so a styled first letter doesn't fit. ---- */
+.post-body:not(.post-body-lesson-plan) > p:first-of-type:not([dir="rtl"])::first-letter {
+  font-family: 'Literata', serif;
+  font-weight: 700;
+  font-size: 1.6em;
+  line-height: 1;
+  color: #9C5B3C;
+}
+
+.dark .post-body:not(.post-body-lesson-plan) > p:first-of-type:not([dir="rtl"])::first-letter {
+  color: #D99B7D;
+}
+
+.sepia .post-body:not(.post-body-lesson-plan) > p:first-of-type:not([dir="rtl"])::first-letter {
+  color: #8A6D3B;
+}
+
+/* ---- Pull quotes: any blockquote in the writing becomes a
+   large, quiet quotation rather than a boxed callout. ---- */
+.post-body blockquote {
+  border: none;
+  margin: 1.35rem 0;
+  padding: 0 1rem 0 2.75rem;
+  position: relative;
+  font-family: 'Literata', serif;
+  font-style: italic;
+  font-size: 1.3em;
+  line-height: 1.6;
+  color: var(--reading-text);
+  opacity: 0.92;
+}
+
+.post-body blockquote::before {
+  content: "\201C";
+  position: absolute;
+  left: 0;
+  top: -0.15em;
+  font-size: 2.6em;
+  font-style: normal;
+  font-family: Georgia, serif;
+  color: #009F93;
+  opacity: 0.5;
+  line-height: 1;
+}
+
+.dark .post-body blockquote::before {
+  color: #4FD1C5;
+}
+
+.sepia .post-body blockquote::before {
+  color: #8A6D3B;
+}
+
+[dir="rtl"] .post-body blockquote {
+  padding: 0 2.75rem 0 1rem;
+}
+
+[dir="rtl"] .post-body blockquote::before {
+  content: "\201D";
+  left: auto;
+  right: 0;
+}
+
+/* ---- Prev / next navigation between pieces in a collection ---- */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.dark .post-nav {
+  border-top-color: #374151;
+}
+
+.sepia .post-nav {
+  border-top-color: #DCC9A3;
+}
+
+.post-nav-link {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-nav-link.post-nav-next {
+  text-align: right;
+  align-items: flex-end;
+}
+
+[dir="rtl"] .post-nav-link.post-nav-next {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.post-nav-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--reading-muted);
+}
+
+.post-nav-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1D5FBF !important;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1.5px;
+  transition: background-size 0.35s ease-out;
+  padding-bottom: 1px;
+  overflow-wrap: anywhere;
+}
+
+.dark .post-nav-title {
+  color: #7FB0FF !important;
+}
+
+.sepia .post-nav-title {
+  color: #1D5FBF !important;
+}
+
+.post-nav-link:hover .post-nav-title {
+  background-size: 100% 1.5px;
+}
+
+@media (max-width: 480px) {
+  .post-nav {
+    flex-direction: column;
+  }
+  .post-nav-link.post-nav-next {
+    text-align: left;
+    align-items: flex-start;
+  }
+  [dir="rtl"] .post-nav-link.post-nav-next {
+    text-align: right;
+    align-items: flex-end;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .home-welcome,
+  .page-decor-hero .decor-svg,
+  .post-body-poetry::before {
+    animation: none;
+  }
+  .post-body-poetry::before {
+    transform: scaleY(1);
+  }
+  .content-card:hover,
+  .section-card:hover {
+    transform: none;
+  }
+}
+
+/* ============================================================
+   DECORATIVE PAGE ICONS
+   Small line-art SVGs (book / pen / papers / etc.) that hint at
+   each page's content. Defined once as symbols in icons-sprite.svg
+   and referenced here via <use>. Pure CSS, no images to load.
+   ============================================================ */
+.page-decor {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+  width: 56px;
+  height: 56px;
+  color: #009F93;
+}
+
+.dark .page-decor {
+  color: #4FD1C5;
+}
+
+.decor-svg,
+.decor-svg-sm {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+  animation: decor-float 4.5s ease-in-out infinite;
+}
+
+/* Smaller icon variant used inside post headers and home cards */
+.page-decor-post {
+  width: 44px;
+  height: 44px;
+}
+
+.card-icon {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto 0.6rem;
+  color: #009F93;
+}
+
+.dark .card-icon {
+  color: #4FD1C5;
+}
+
+/* Larger hero illustration on the home page */
+.page-decor-hero {
+  width: 110px;
+  height: 88px;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes decor-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+
+/* Pen / quill icons get a subtle writing-motion wiggle instead of
+   a plain float, since a straight up-down bob looks odd on a nib. */
+.decor-quill .decor-svg,
+.decor-pen-nib .decor-svg {
+  animation: decor-write 3.2s ease-in-out infinite;
+  transform-origin: 70% 85%;
+}
+
+@keyframes decor-write {
+  0%, 100% { transform: rotate(-6deg); }
+  50%      { transform: rotate(6deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .decor-svg,
+  .decor-svg-sm,
+  .page-decor-hero .decor-svg,
+  .decor-quill .decor-svg,
+  .decor-pen-nib .decor-svg {
+    animation: none;
+  }
+}
+
+/* ---- Post margin content: ornamental rule (right). Fixed
+   position, only shown once there's enough gutter width to hold
+   it without crowding the post itself. ---- */
+.post-side {
+  display: none;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+}
+
+@media (min-width: 1200px) {
+  .post-side {
+    display: flex;
+  }
+}
+
+.post-side-right {
+  right: 2.5rem;
+}
+
+.post-side-left {
+  left: 2.5rem;
+}
+
+/* Horizontal echo of the same motif, placed under the post title. */
+.post-title-divider {
+  position: relative;
+  display: block;
+  width: 140px;
+  height: 2px;
+  margin: 0.75rem auto 1rem;
+  background: linear-gradient(to right, transparent, #009F93 15%, #009F93 85%, transparent);
+}
+
+.post-title-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #009F93;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.dark .post-title-divider {
+  background: linear-gradient(to right, transparent, #4FD1C5 15%, #4FD1C5 85%, transparent);
+}
+
+.dark .post-title-divider::before {
+  background: #4FD1C5;
+}
+
+.sepia .post-title-divider {
+  background: linear-gradient(to right, transparent, #8A6D3B 15%, #8A6D3B 85%, transparent);
+}
+
+.sepia .post-title-divider::before {
+  background: #8A6D3B;
+}
+
+/* Purely decorative vertical rule, echoing the same gradient-line
+   + diamond motif already used beside poetry pieces. */
+.post-ornament {
+  position: relative;
+  display: block;
+  width: 2px;
+  height: 220px;
+  background: linear-gradient(to bottom, transparent, #009F93 15%, #009F93 85%, transparent);
+}
+
+.post-ornament::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #009F93;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.dark .post-ornament {
+  background: linear-gradient(to bottom, transparent, #4FD1C5 15%, #4FD1C5 85%, transparent);
+}
+
+.dark .post-ornament::before {
+  background: #4FD1C5;
+}
+
+.sepia .post-ornament {
+  background: linear-gradient(to bottom, transparent, #8A6D3B 15%, #8A6D3B 85%, transparent);
+}
+
+.sepia .post-ornament::before {
+  background: #8A6D3B;
+}
+
+/* ---- Header ---- */
+.site-header {
+  @apply w-full sticky top-0 z-50 shadow-sm;
+}
+
+.header-inner {
+  @apply max-w-7xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-2;
+}
+
+.site-title {
+  @apply text-xl font-bold tracking-tight;
+}
+
+.nav-toggle {
+  @apply md:hidden;
+}
+
+.main-nav {
+  @apply hidden md:block w-full md:w-auto;
+}
+
+.main-nav.open {
+  @apply block;
+}
+
+.main-nav ul {
+  @apply flex flex-col md:flex-row flex-wrap gap-x-4 gap-y-1 mt-2 md:mt-0 list-none p-0 m-0;
+}
+
+.main-nav ul li a {
+  @apply text-sm font-medium hover:underline;
+}
+
+.header-controls {
+  @apply flex items-center gap-2 flex-shrink-0;
+}
+
+/* Borderless header controls (language switch, theme toggle):
+   no box, underline on hover/focus for click affordance. */
+.header-control-btn {
+  @apply text-sm font-semibold tracking-wide bg-transparent border-none cursor-pointer;
+  text-underline-offset: 3px;
+}
+.header-control-btn:hover,
+.header-control-btn:focus-visible {
+  text-decoration: underline;
+}
+
+/* Borderless ticker pause/resume control, same affordance pattern. */
+.ticker-pause-btn {
+  @apply text-xs font-semibold bg-transparent border-none cursor-pointer flex-shrink-0;
+  text-underline-offset: 3px;
+}
+.ticker-pause-btn:hover,
+.ticker-pause-btn:focus-visible {
+  text-decoration: underline;
+}
+
+/* ---- Dropdown submenu (Creative Writing) ---- */
+.nav-item-has-children {
+  @apply relative;
+}
+
+.nav-parent-row {
+  @apply flex items-center gap-1;
+}
+
+.submenu-toggle {
+  @apply md:hidden;
+}
+
+/* Desktop: caret always shown, submenu revealed only on click */
+@media (min-width: 768px) {
+  .submenu-toggle {
+    display: inline-block;
+  }
+
+  .submenu {
+    @apply hidden absolute left-0 top-full min-w-[190px] flex-col gap-0 list-none m-0 p-2 z-50 rounded-b shadow-md;
+    background-color: #009F93;
+  }
+
+  [dir="rtl"] .submenu {
+    @apply left-auto right-0;
+  }
+
+  .nav-item-has-children.submenu-open .submenu {
+    @apply flex;
+  }
+
+  .submenu li a {
+    @apply block py-1.5 px-2 text-sm rounded hover:bg-white/10 hover:underline;
+  }
+}
+
+/* Mobile: submenu is a simple indented accordion list */
+@media (max-width: 767px) {
+  .submenu {
+    @apply hidden flex-col list-none m-0 p-0 pl-4 gap-1;
+  }
+
+  [dir="rtl"] .submenu {
+    @apply pl-0 pr-4;
+  }
+
+  .nav-item-has-children.submenu-open .submenu {
+    @apply flex mt-1;
+  }
+
+  .submenu li a {
+    @apply block text-sm py-1;
+  }
+}
+
+/* ---- Ticker ---- */
+.ticker-bar {
+  @apply flex items-center overflow-hidden py-2;
+}
+
+.dark .ticker-bar {
+  background-color: #1a1a1a !important;
+}
+
+.ticker-label {
+  @apply text-sm font-semibold flex-shrink-0;
+}
+
+.ticker-overflow {
+  @apply flex-1 overflow-hidden;
+}
+
+.ticker-track {
+  @apply flex whitespace-nowrap;
+  animation: ticker-scroll 35s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.ticker-track.paused {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+  }
+}
+
+/* RTL: reverse scroll direction */
+[dir="rtl"] .ticker-track {
+  animation-direction: reverse;
+}
+
+.ticker-item {
+  @apply text-sm font-medium;
+}
+
+/* Nastaliq glyphs are tall and extend below the normal line box, so the
+   default tight line-height clips them against the ticker's
+   overflow-hidden wrapper — give RTL extra vertical room. */
+[dir="rtl"] .ticker-bar {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+[dir="rtl"] .ticker-item {
+  line-height: 2.2;
+  display: inline-block;
+}
+
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ---- Page layout ---- */
+.page-container {
+  @apply max-w-3xl mx-auto px-4 py-10;
+}
+
+.page-title {
+  @apply text-2xl font-bold mb-6;
+  color: #009F93;
+}
+
+.page-content {
+  @apply prose prose-lg max-w-none;
+}
+
+/* ---- Post layout ---- */
+.post-container {
+  @apply max-w-3xl mx-auto px-4 py-10;
+}
+
+.post-header {
+  @apply mb-5;
+}
+
+.post-title {
+  @apply text-2xl font-bold mb-2;
+  color: #009F93;
+  text-align: center;
+}
+
+/* Nastaliq glyphs are tall and extend well below the normal line box,
+   so the default line-height/margin isn't enough clearance before the
+   audio link below — without this the two visually overlap in Urdu. */
+[dir="rtl"] .post-title {
+  line-height: 2.4;
+  margin-bottom: 1rem;
+}
+
+/* Audio (YouTube) link, shown right under the post title */
+.post-audio-link {
+  @apply text-sm mb-2;
+  text-align: center;
+}
+
+[dir="rtl"] .post-audio-link {
+  margin-top: 0.5rem;
+}
+
+.post-audio-link a {
+  color: #1D5FBF !important;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.post-audio-link a:hover {
+  color: #14417F;
+}
+
+.dark .post-audio-link a {
+  color: #7FB0FF !important;
+}
+
+/* ---- Embedded YouTube player ----
+   Responsive 16:9 wrapper using the aspect-ratio trick (padding-top
+   hack retained as a fallback for older browsers). Fills the width of
+   the post column at every breakpoint, and matches the rounded-corner,
+   soft-shadow card look already used elsewhere on the site. */
+.post-video-embed {
+  @apply mb-6;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-video-embed-frame {
+  position: relative;
+  width: 100%;
+  /* 16:9 aspect ratio */
+  aspect-ratio: 16 / 9;
+  padding-top: 56.25%; /* fallback for browsers without aspect-ratio support */
+  height: 0;
+  overflow: hidden;
+  border-radius: 4px 4px 10px 10px;
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+  background: #000;
+}
+
+/* When aspect-ratio is supported, undo the padding-top hack so the
+   two techniques don't stack and double the height. */
+@supports (aspect-ratio: 16 / 9) {
+  .post-video-embed-frame {
+    padding-top: 0;
+  }
+}
+
+.post-video-embed-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.dark .post-video-embed-frame {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.post-date {
+  @apply text-sm text-gray-500 mb-2;
+  text-align: left;
+}
+
+.post-description {
+  @apply text-base text-gray-600 italic mb-4;
+  text-align: center;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[dir="rtl"] .post-date {
+  text-align: right;
+}
+
+.dark .post-description {
+  @apply text-gray-400;
+}
+
+.post-body {
+  @apply prose prose-lg max-w-none;
+}
+
+.post-body p {
+  text-align: justify;
+  text-indent: 0;
+  margin-top: 0;
+  margin-bottom: 0.85em;
+}
+
+/* Reference links, resource links, and any other inline links inside
+   the body of a post read in blue — the conventional "this is a
+   link" colour — distinct from the site's teal brand colour used for
+   headings, nav, and decoration. */
+.post-body a {
+  color: #1D5FBF !important;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.post-body h3,
+.post-body h4 {
+  margin-top: 1.15em;
+  margin-bottom: 0.4em;
+}
+
+.post-body a:hover {
+  color: #14417F;
+}
+
+.dark .post-body a {
+  color: #7FB0FF !important;
+}
+
+.dark .post-body a:hover {
+  color: #A9CBFF;
+}
+
+.sepia .post-body a {
+  color: #1D5FBF !important;
+}
+
+/* Author + date byline at the end of the post */
+.post-meta-bottom {
+  text-align: right;
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+  color: #555555;
+  font-size: 0.9rem;
+}
+
+.dark .post-meta-bottom {
+  border-top-color: #374151;
+  color: #9ca3af;
+}
+
+[dir="rtl"] .post-meta-bottom {
+  text-align: left;
+}
+
+/* Author biography block, shown after the byline when provided */
+.post-author-bio {
+  @apply mt-3 pt-3 text-sm;
+  border-top: 1px dashed #d0d0d0;
+  text-align: left;
+}
+
+[dir="rtl"] .post-author-bio {
+  text-align: right;
+}
+
+.post-author-bio-name {
+  @apply font-semibold mb-1;
+  color: #009F93;
+}
+
+.post-author-bio-text {
+  color: #555555;
+}
+
+.dark .post-author-bio {
+  border-top-color: #374151;
+}
+
+.dark .post-author-bio-text {
+  @apply text-gray-400;
+}
+
+.post-back {
+  @apply mt-10 text-sm;
+}
+
+.post-back a {
+  color: #009F93;
+}
+
+.post-back-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #009F93;
+  font: inherit;
+}
+
+/* ---- Home page ---- */
+.home-welcome {
+  @apply mb-12;
+}
+
+.home-heading {
+  @apply text-3xl font-bold mb-2;
+  color: #009F93;
+}
+
+.home-tagline {
+  @apply text-lg text-gray-600 mb-6 italic;
+}
+
+.dark .home-tagline {
+  @apply text-gray-400;
+}
+
+/* ---- Section cards (home) ---- */
+.section-cards {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6;
+}
+
+.section-card h2 {
+  @apply text-lg font-semibold mb-2;
+}
+
+.section-card h2 a {
+  color: #009F93;
+  text-decoration: none;
+}
+
+.section-card h2 a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Content cards (collection list pages) ---- */
+.card-grid {
+  @apply grid grid-cols-1 gap-6 mt-6;
+}
+
+.card-title {
+  @apply text-lg font-semibold mb-1;
+}
+
+.card-title a {
+  color: #009F93;
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+.card-date {
+  @apply text-xs text-gray-500 mb-2;
+}
+
+.card-excerpt {
+  @apply text-sm text-gray-700 mb-3;
+}
+
+.dark .card-excerpt {
+  @apply text-gray-300;
+}
+
+.card-read-more {
+  @apply text-sm font-medium;
+  color: #009F93;
+}
+
+.collection-intro {
+  @apply text-base text-gray-600 mb-6 italic;
+}
+
+.dark .collection-intro {
+  @apply text-gray-400;
+}
+
+/* ---- Search ---- */
+.search-result {
+  @apply py-3 border-b border-gray-200;
+}
+
+.dark .search-result {
+  @apply border-gray-700;
+}
+
+.search-result a {
+  color: #009F93;
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  @apply mt-16 pt-10 pb-6;
+}
+
+.footer-inner {
+  @apply max-w-4xl mx-auto px-4 flex flex-col items-center text-center gap-3;
+}
+
+.footer-row {
+  @apply text-sm flex flex-wrap items-center justify-center gap-x-2 gap-y-1;
+}
+
+.footer-row a {
+  @apply hover:underline whitespace-nowrap;
+}
+
+.footer-label {
+  @apply opacity-80 mr-1;
+}
+
+.footer-copy {
+  @apply text-xs opacity-70 mt-3;
+}
+
+/* ---- Contact ---- */
+.contact-note {
+  @apply mt-4 text-sm text-gray-500 italic;
+}
+
+/* ---- Dark mode base overrides ---- */
+.dark body {
+  background-color: var(--reading-bg);
+  color: var(--reading-text);
+}
+
+.dark .page-content,
+.dark .post-body {
+  @apply prose-invert;
+}
+
+.dark a {
+  color: #00c8b0;
+}
+
+/* ---- RTL prose ---- */
+[dir="rtl"] .page-content,
+[dir="rtl"] .post-body {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .post-back {
+  text-align: right;
+}
+/* ============================================================
+   HOME PAGE ALIGNMENT OVERRIDES
+   ============================================================ */
+
+/* Main container */
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Welcome section */
+.home-welcome {
+  text-align: center;
+}
+
+.home-heading {
+  text-align: center;
+  color: #009F93;
+}
+
+.home-tagline {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.dark .home-tagline {
+  color: #9ca3af;
+}
+
+/* Intro paragraph */
+.home-welcome p {
+  max-width: 850px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Cards layout */
+.section-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.section-card {
+  --accent: #009F93;
+  position: relative;
+  text-align: left;
+  border: 1px solid #E4D9BC;
+  border-top: none;
+  border-radius: 4px 4px 10px 10px;
+  padding: 1.6rem 1.5rem 1.35rem;
+  background-color: #FDF8EC;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 26px, rgba(120, 92, 48, 0.05) 27px, transparent 28px);
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+}
+
+.section-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 4px 4px 0 0;
+  background: var(--accent);
+}
+
+.dark .section-card {
+  background-color: #221F1B;
+  background-image: none;
+  border-color: #3A362E;
+}
+
+.section-card-articles  { --accent: #C79A3E; }
+.section-card-reviews   { --accent: #D9754A; }
+.section-card-creative  { --accent: #A25FC7; }
+.section-card-letters   { --accent: #5A63C7; }
+.section-card-diary     { --accent: #3C8CBF; }
+.section-card-events    { --accent: #B8A521; }
+
+/* ---- Content cards (collection listing pages): same textured,
+   accented treatment as the homepage cards, one accent per
+   collection so a reader recognizes which section they're browsing
+   at a glance. Diary cards get the finer-grained lesson-plan /
+   reflection / reflective-report accent instead, matching the tint
+   used on the posts themselves. ---- */
+.content-card {
+  --accent: #009F93;
+  position: relative;
+  border: 1px solid #E4D9BC;
+  border-top: none;
+  border-radius: 4px 4px 10px 10px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  background-color: #FDF8EC;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 26px, rgba(120, 92, 48, 0.05) 27px, transparent 28px);
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+  transition: transform 0.35s ease-out, box-shadow 0.35s ease-out;
+}
+
+.content-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 4px 4px 0 0;
+  background: var(--accent);
+}
+
+.content-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px -14px rgba(43, 42, 38, 0.25);
+}
+
+.dark .content-card {
+  background-color: #221F1B;
+  background-image: none;
+  border-color: #3A362E;
+}
+
+.card-grid-articles      .content-card { --accent: #C79A3E; }
+.card-grid-reviews       .content-card { --accent: #D9754A; }
+.card-grid-letters       .content-card { --accent: #5A63C7; }
+.card-grid-events        .content-card { --accent: #B8A521; }
+.card-grid-short_stories .content-card { --accent: #C77FA0; }
+.card-grid-poetry        .content-card { --accent: #A25FC7; }
+.card-grid-dialogues     .content-card { --accent: #3EAF8C; }
+.card-grid-satire        .content-card { --accent: #C7883E; }
+.card-grid-nonfiction    .content-card { --accent: #5FA35F; }
+.card-grid-reflections   .content-card { --accent: #B08E6E; }
+.card-grid-diary         .content-card { --accent: #7A6A4F; }
+.card-grid-diary .content-card-lesson-plan       { --accent: #3C6690; }
+.card-grid-diary .content-card-reflection        { --accent: #8E4F8A; }
+.card-grid-diary .content-card-reflective-report { --accent: #4A6B34; }
+
+/* Links in intro paragraph */
+.home-welcome a {
+  color: #009F93;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-welcome a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Decorative chapter-style divider: a classic old-book flourish
+   (line — quill — line) marking the transition from the hero
+   introduction to the section cards. ---- */
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem auto 1.75rem;
+  max-width: 420px;
+}
+
+.section-divider .divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #C7A959, transparent);
+}
+
+.section-divider .divider-line:first-child {
+  background: linear-gradient(to left, transparent, #C7A959, transparent);
+}
+
+.section-divider .divider-icon {
+  width: 20px;
+  height: 20px;
+  fill: #C7A959;
+  flex-shrink: 0;
+}
+
+.dark .section-divider .divider-line,
+.dark .section-divider .divider-line:first-child {
+  background: linear-gradient(to right, transparent, #8A6D3B, transparent);
+}
+
+.dark .section-divider .divider-icon {
+  fill: #8A6D3B;
+}
