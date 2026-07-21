@@ -1132,6 +1132,52 @@ body {
   color: #7FB0FF !important;
 }
 
+/* ---- Embedded YouTube player ----
+   Responsive 16:9 wrapper using the aspect-ratio trick (padding-top
+   hack retained as a fallback for older browsers). Fills the width of
+   the post column at every breakpoint, and matches the rounded-corner,
+   soft-shadow card look already used elsewhere on the site. */
+.post-video-embed {
+  @apply mb-6;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-video-embed-frame {
+  position: relative;
+  width: 100%;
+  /* 16:9 aspect ratio */
+  aspect-ratio: 16 / 9;
+  padding-top: 56.25%; /* fallback for browsers without aspect-ratio support */
+  height: 0;
+  overflow: hidden;
+  border-radius: 4px 4px 10px 10px;
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+  background: #000;
+}
+
+/* When aspect-ratio is supported, undo the padding-top hack so the
+   two techniques don't stack and double the height. */
+@supports (aspect-ratio: 16 / 9) {
+  .post-video-embed-frame {
+    padding-top: 0;
+  }
+}
+
+.post-video-embed-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.dark .post-video-embed-frame {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
 .post-date {
   @apply text-sm text-gray-500 mb-2;
   text-align: left;

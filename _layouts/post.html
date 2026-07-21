@@ -42,9 +42,30 @@ layout: base
 
     <span class="post-title-divider" aria-hidden="true"></span>
 
-    <!-- Audio link (YouTube). Each post/language can set its own link via
-         youtube_en / youtube_ur in front matter; if a post hasn't set one
-         yet, it falls back to the site-wide YouTube channel link. -->
+    <!-- Embedded YouTube audio/video player. Each post can set
+         youtube_id (just the 11-character video ID, e.g. "dQw4w9WgXcQ")
+         in its front matter. When present, the official YouTube iframe
+         embed is shown directly on the page — playback stays on
+         KitaboMori and still counts as a normal embedded YouTube view.
+         If youtube_id is missing or empty, nothing is shown. -->
+    {% if page.youtube_id and page.youtube_id != "" %}
+    <div class="post-video-embed">
+      <div class="post-video-embed-frame">
+        <iframe
+          src="https://www.youtube.com/embed/{{ page.youtube_id }}?rel=0&modestbranding=1"
+          title="{% if site.lang == 'ur' %}{{ page.title_ur | default: page.title }}{% else %}{{ page.title_en | default: page.title }}{% endif %}"
+          loading="lazy"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    {% else %}
+    <!-- Fallback: no youtube_id set yet for this post. Keep showing the
+         old "listen on YouTube" link (youtube_en / youtube_ur, or the
+         site-wide channel link) so nothing breaks for posts that
+         haven't been migrated to an embedded player yet. -->
     {% assign post_audio_link = page.youtube_en %}
     {% if site.lang == 'ur' %}{% assign post_audio_link = page.youtube_ur %}{% endif %}
     {% assign post_audio_link = post_audio_link | default: site.youtube_channel %}
@@ -58,6 +79,7 @@ layout: base
         {% endif %}
       </a>
     </p>
+    {% endif %}
     {% endif %}
   </header>
 

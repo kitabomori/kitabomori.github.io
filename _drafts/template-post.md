@@ -25,8 +25,12 @@ bio_en: ""                                 # Optional: 2-4 line author bio (Engl
 bio_ur: ""                                 # Optional: 2-4 line author bio (Urdu). Leave blank to hide.
 description_en: "A short English summary of this piece (1–2 sentences)."
 description_ur: "اس تحریر کا مختصر اردو خلاصہ (ایک یا دو جملے)۔"
-youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Replace with this post's English audio link on YouTube
-youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Replace with this post's Urdu audio link on YouTube
+youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallback link, only used if youtube_id is left blank
+youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallback link, only used if youtube_id is left blank
+youtube_id: ""                             # Preferred: just the YouTube video ID (e.g. "dQw4w9WgXcQ" from
+                                            # https://www.youtube.com/watch?v=dQw4w9WgXcQ). When set, an
+                                            # embedded YouTube player is shown on the page instead of a link.
+                                            # Leave blank to show no player (or fall back to youtube_en/youtube_ur).
 ---
 
 {% if site.lang == 'ur' %}
