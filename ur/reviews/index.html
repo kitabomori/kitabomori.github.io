@@ -103,6 +103,25 @@
 <!-- Favicon -->
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 
+<!-- ============================================================
+     PWA: manifest, icons, and theme colour.
+     manifest.webmanifest and sw.js live at the true site root
+     (https://kitabomori.github.io/) rather than under /en/ or /ur/,
+     so both language builds share one canonical copy — same pattern
+     already used for robots.txt and llms.txt. See the deploy
+     workflow's "Copy root files" step.
+     ============================================================ -->
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#009F93">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Kitabomori">
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- Registers the service worker (offline reading + installability) -->
+<script src="/assets/js/pwa-register.js" defer></script>
+
 </head>
 <body style="font-family: 'Noto Nastaliq Urdu', serif;">
 
