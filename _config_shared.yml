@@ -130,6 +130,9 @@ markdown: kramdown
 highlighter: rouge
 exclude:
   - index.html
+  - manifest.webmanifest
+  - sw.js
+  - offline.html
   - README.md
   - Gemfile
   - package.json
