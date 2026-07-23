@@ -54,7 +54,6 @@ jobs:
           cp -r assets/js _site/assets/
           if [ -f assets/favicon.svg ]; then cp assets/favicon.svg _site/assets/; fi
           if [ -d assets/img ]; then cp -r assets/img _site/assets/; fi
-          if [ -d assets/icons ]; then cp -r assets/icons _site/assets/; fi
 
       # 9. Build English site
       - name: Build English site
@@ -78,9 +77,6 @@ jobs:
           cp llms.txt _site/
           cp google9c30cc0cd18db47c.html _site/ 2>/dev/null || true
           cp a51d63ea5d5d7edbe0ca11095090ae2d.txt _site/
-          cp manifest.webmanifest _site/
-          cp sw.js _site/
-          cp offline.html _site/
 
       # 12. Deploy to GitHub Pages (gh-pages branch)
       - name: Deploy to GitHub Pages
