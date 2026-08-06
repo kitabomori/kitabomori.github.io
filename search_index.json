@@ -21,6 +21,8 @@ permalink: /search_index.json
   {
     "title_en": {{ item.title_en | jsonify }},
     "title_ur": {{ item.title_ur | jsonify }},
+    "description_en": {{ item.description_en | jsonify }},
+    "description_ur": {{ item.description_ur | jsonify }},
     "url_en": "{{ site.baseurl }}/en{{ item.url }}",
     "url_ur": "{{ site.baseurl }}/ur{{ item.url }}",
     "date": "{{ item.date | date: '%Y-%m-%d' }}",
