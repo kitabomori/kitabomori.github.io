@@ -58,41 +58,61 @@
         {% for item in ticker_top9 %}
           {% assign item_type_en = "" %}
           {% assign item_type_ur = "" %}
+          {% comment %}
+            Ticker items previously all rendered in one flat olive
+            color regardless of type. item_color now reuses the same
+            per-collection accent already defined for cards in
+            main.css, so a reader can tell at a glance (color, not
+            just the label text) whether a scrolling item is an
+            Article, a Review, a poem, etc. — and the ticker doesn't
+            read as one monotone strip.
+          {% endcomment %}
+          {% assign item_color = "#808217" %}
 
           {% if site.articles contains item %}
             {% assign item_type_en = "Article" %}
             {% assign item_type_ur = "مضمون" %}
+            {% assign item_color = "#C79A3E" %}
           {% elsif site.reviews contains item %}
             {% assign item_type_en = "Review" %}
             {% assign item_type_ur = "جائزہ" %}
+            {% assign item_color = "#D9754A" %}
           {% elsif site.short_stories contains item %}
             {% assign item_type_en = "Short Story" %}
             {% assign item_type_ur = "مختصر کہانی" %}
+            {% assign item_color = "#C77FA0" %}
           {% elsif site.poetry contains item %}
             {% assign item_type_en = "Poetry" %}
             {% assign item_type_ur = "شاعری" %}
+            {% assign item_color = "#A25FC7" %}
           {% elsif site.reflections contains item %}
             {% assign item_type_en = "Reflection" %}
             {% assign item_type_ur = "عکاسی" %}
+            {% assign item_color = "#B08E6E" %}
           {% elsif site.dialogues contains item %}
             {% assign item_type_en = "Dialogue" %}
             {% assign item_type_ur = "مکالمہ" %}
+            {% assign item_color = "#3EAF8C" %}
           {% elsif site.satire contains item %}
             {% assign item_type_en = "Satire" %}
             {% assign item_type_ur = "طنزیہ تحریر" %}
+            {% assign item_color = "#C7883E" %}
           {% elsif site.nonfiction contains item %}
             {% assign item_type_en = "Nonfiction" %}
             {% assign item_type_ur = "نان فکشن" %}
+            {% assign item_color = "#5FA35F" %}
           {% elsif site.letters contains item %}
             {% assign item_type_en = "Letter" %}
             {% assign item_type_ur = "خط" %}
+            {% assign item_color = "#5A63C7" %}
           {% elsif site.diary contains item %}
             {% assign item_type_en = "Diary" %}
             {% assign item_type_ur = "ڈائری" %}
+            {% assign item_color = "#7A6A4F" %}
           {% endif %}
 
-          <span class="ticker-item" style="color:#808217;" {% if pass == 2 %}aria-hidden="true"{% endif %}>
-            <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}" style="color:#808217; text-decoration:none;">
+          <span class="ticker-item" style="color:{{ item_color }};" {% if pass == 2 %}aria-hidden="true"{% endif %}>
+            <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}" style="color:{{ item_color }}; text-decoration:none;">
               {% if site.lang == 'ur' %}{{ item_type_ur }}{% else %}{{ item_type_en }}{% endif %}
               {% if site.lang == 'ur' %}{{ item.title_ur }}{% else %}{{ item.title_en }}{% endif %}
               &ndash;

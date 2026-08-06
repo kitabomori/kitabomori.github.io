@@ -760,15 +760,21 @@ html:not([dir="rtl"]) .post-body blockquote {
   height: 44px;
 }
 
+/* Card icon color previously hardcoded to the brand teal for every
+   section — now inherits each card's own --accent (set per section
+   in section-card-*/content-card-* below) so the homepage grid and
+   collection listings read as more distinctly colorful at a glance,
+   matching the colored top-strip already on each card. Falls back to
+   teal via --accent's own default when no section class is present. */
 .card-icon {
   width: 34px;
   height: 34px;
   margin: 0 auto 0.6rem;
-  color: #009F93;
+  color: var(--accent, #009F93);
 }
 
 .dark .card-icon {
-  color: #4FD1C5;
+  color: var(--accent, #4FD1C5);
 }
 
 /* Larger hero illustration on the home page */
@@ -1526,21 +1532,38 @@ html:not([dir="rtl"]) .post-body blockquote {
   box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
 }
 
+/* Progressive enhancement: tint each card's background with a whisper
+   of its own --accent color (kept very light so the paper texture and
+   body text contrast are unaffected) instead of every section sharing
+   one identical flat cream. Falls back to the plain cream above in
+   browsers without color-mix() support. */
+@supports (background-color: color-mix(in srgb, red, blue)) {
+  .section-card {
+    background-color: color-mix(in srgb, var(--accent) 7%, #FDF8EC);
+  }
+}
+
 .section-card::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 7px;
   border-radius: 4px 4px 0 0;
-  background: var(--accent);
+  background: linear-gradient(to right, var(--accent), #009F93);
 }
 
 .dark .section-card {
   background-color: #221F1B;
   background-image: none;
   border-color: #3A362E;
+}
+
+@supports (background-color: color-mix(in srgb, red, blue)) {
+  .dark .section-card {
+    background-color: color-mix(in srgb, var(--accent) 12%, #221F1B);
+  }
 }
 
 .section-card-articles  { --accent: #C79A3E; }
@@ -1575,9 +1598,9 @@ html:not([dir="rtl"]) .post-body blockquote {
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 7px;
   border-radius: 4px 4px 0 0;
-  background: var(--accent);
+  background: linear-gradient(to right, var(--accent), #009F93);
 }
 
 .content-card:hover {
@@ -1589,6 +1612,20 @@ html:not([dir="rtl"]) .post-body blockquote {
   background-color: #221F1B;
   background-image: none;
   border-color: #3A362E;
+}
+
+/* Same subtle per-section accent tint as .section-card on the homepage,
+   applied here so collection listing pages (Articles, Reviews, Poetry,
+   Diary, etc.) are colored consistently with the homepage grid rather
+   than sharing one flat cream for every collection. */
+@supports (background-color: color-mix(in srgb, red, blue)) {
+  .content-card {
+    background-color: color-mix(in srgb, var(--accent) 7%, #FDF8EC);
+  }
+
+  .dark .content-card {
+    background-color: color-mix(in srgb, var(--accent) 12%, #221F1B);
+  }
 }
 
 .card-grid-articles      .content-card { --accent: #C79A3E; }
