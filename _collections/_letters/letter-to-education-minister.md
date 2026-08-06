@@ -8,8 +8,8 @@ author_en: "Kitabomori"
 author_ur: "کتابومری"                              
 bio_en: ""                   
 bio_ur: ""              
-description_en: ""
-description_ur: ""
+description_en: "A call for  education reform"
+description_ur: "تعلیم میں اصلاحات کا مطالبہ"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallback link, only used if youtube_id is left blank
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallback link, only used if youtube_id is left blank
 youtube_id: "" 
