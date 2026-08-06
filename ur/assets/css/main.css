@@ -542,14 +542,17 @@ body {
 
 /* ---- Opening cap: first letter of the first paragraph.
    Kept small and restrained (not a floated, oversized drop cap) so it
-   never distorts line height. Scoped with :not([dir="rtl"]) on the
-   paragraph itself — rather than relying on the page's overall
-   direction — so a paragraph of Urdu text is never affected even when
-   it happens to be shown inside an English-direction page. Nastaliq/RTL
-   scripts don't carry this typographic convention at all. Also excluded
-   from lesson plans (:not(.post-body-lesson-plan)) — lesson plans open
-   with a date/table, not prose, so a styled first letter doesn't fit. ---- */
-.post-body:not(.post-body-lesson-plan) > p:first-of-type:not([dir="rtl"])::first-letter {
+   never distorts line height. Scoped with html:not([dir="rtl"]) —
+   the page's actual text direction, set on <html> in _layouts/base.html
+   — rather than a dir="rtl" attribute on the paragraph itself, since
+   Jekyll/kramdown never emits a dir attribute on individual <p> tags.
+   The old paragraph-level selector therefore never excluded anything,
+   and every Urdu post's opening line (often a date) was getting an
+   oversized, bold, off-color first character. Nastaliq/RTL scripts
+   don't carry this typographic convention at all. Also excluded from
+   lesson plans (:not(.post-body-lesson-plan)) — lesson plans open with
+   a date/table, not prose, so a styled first letter doesn't fit. ---- */
+html:not([dir="rtl"]) .post-body:not(.post-body-lesson-plan) > p:first-of-type::first-letter {
   font-family: 'Literata', serif;
   font-weight: 700;
   font-size: 1.6em;
@@ -557,11 +560,11 @@ body {
   color: #9C5B3C;
 }
 
-.dark .post-body:not(.post-body-lesson-plan) > p:first-of-type:not([dir="rtl"])::first-letter {
+html.dark:not([dir="rtl"]) .post-body:not(.post-body-lesson-plan) > p:first-of-type::first-letter {
   color: #D99B7D;
 }
 
-.sepia .post-body:not(.post-body-lesson-plan) > p:first-of-type:not([dir="rtl"])::first-letter {
+html.sepia:not([dir="rtl"]) .post-body:not(.post-body-lesson-plan) > p:first-of-type::first-letter {
   color: #8A6D3B;
 }
 
