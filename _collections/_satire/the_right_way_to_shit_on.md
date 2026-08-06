@@ -11,10 +11,10 @@ description_en: "A satire on education and educated."
 description_ur: "تعلیم اور تعلیم یافتہ پر ایک طنزیہ تحریر۔"
 youtube_en: "https://youtu.be/Uql9oyyzclM"
 youtube_ur: "https://youtu.be/Uql9oyyzclM"
-youtube_id: "Uql9oyyzclM"
+youtube_id: ""
 ---
 
-Every day, there is a cry from various segments and walks of life. Children want freedom from the beady eyes of parents. Students are demanding their right to quality education and freedom of expression at educational institutions. And women blaming their male counterparts for being dominant and oppressors for ages, etc. At times, congregations discuss plans to break the shackles of oppression, and male treatment catches a lot of attention
+Every day, people from all walks of life voice their concerns. Children want freedom from the beady eyes of their parents. Students are demanding their right to quality education and freedom of expression at educational institutions. And women blaming their male counterparts for being dominant and oppressors for ages, etc. At times, congregations discuss plans to break the shackles of oppression, and male treatment catches a lot of attention
 
 But recently, I came across something peculiar, which gave me goosebumps. Toilets, yes, toilets, they were and are on strike. You would say I am insane. This is true, and before any disclosure, why they are on the roads, let me tell you about the caste and creed of toilets. Mostly, we have two types of toilets in this country. One is called the traditional, or Indian, and the other is known as the western, or English, toilet. The English consider themselves more advanced than the Indians. Well, both help us compute our daily chores, where we excrete the waste we take in as food.
 
