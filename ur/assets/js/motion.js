@@ -15,11 +15,19 @@
   var reduceMotion = window.matchMedia &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---- 1. Scroll reveals ---- */
+  /* ---- 1. Scroll reveals ----
+     Cards and blockquotes get the fade/slide-up treatment. Plain <p>
+     elements inside .post-body / .page-content are intentionally left
+     out: on the site's longer pieces (essays, lesson plans, diary
+     entries) revealing almost every paragraph individually meant a
+     reader steadily scrolling through the text kept re-triggering a
+     fade on nearly every line, which read as flicker rather than the
+     intended calm, restrained motion. Blockquotes (pull quotes, used
+     sparingly) still get the effect since they're occasional accents,
+     not the running body text. */
   var revealTargets = document.querySelectorAll(
     ".content-card, .section-card, " +
-    ".post-body > p, .post-body > blockquote, " +
-    ".page-content > p, .page-content > blockquote"
+    ".post-body > blockquote, .page-content > blockquote"
   );
 
   if (revealTargets.length) {

@@ -2,12 +2,20 @@
    search.js – Client-side search for Kitabomori.
    Fetches search_index.json and filters by language + query.
    SITE_LANG and SITE_BASEURL are set inline in search.md.
+
+   Matches against title AND description (search_index.json now
+   includes description_en/description_ur) so a query only findable
+   in a post's dek still surfaces it, not just exact title matches.
+   Input is debounced so filtering runs after typing pauses instead
+   of on every keystroke.
    ============================================================ */
 
 (function () {
   var input = document.getElementById('search-input');
   var results = document.getElementById('search-results');
   var index = null;
+  var debounceTimer = null;
+  var DEBOUNCE_MS = 150;
 
   // Fetch the search index once
   fetch(SITE_BASEURL + '/' + SITE_LANG + '/search_index.json')
@@ -17,8 +25,7 @@
       results.innerHTML = '<p>Search index could not be loaded.</p>';
     });
 
-  // Listen for input
-  input.addEventListener('input', function () {
+  function runSearch() {
     var query = input.value.trim().toLowerCase();
     if (!index || query.length < 2) {
       results.innerHTML = '';
@@ -26,7 +33,10 @@
     }
     var filtered = index.filter(function (item) {
       var title = SITE_LANG === 'ur' ? item.title_ur : item.title_en;
-      return title && title.toLowerCase().indexOf(query) !== -1;
+      var description = SITE_LANG === 'ur' ? item.description_ur : item.description_en;
+      var titleMatch = title && title.toLowerCase().indexOf(query) !== -1;
+      var descriptionMatch = description && description.toLowerCase().indexOf(query) !== -1;
+      return titleMatch || descriptionMatch;
     });
 
     if (filtered.length === 0) {
@@ -43,5 +53,11 @@
     }).join('');
 
     results.innerHTML = html;
+  }
+
+  // Listen for input, debounced
+  input.addEventListener('input', function () {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(runSearch, DEBOUNCE_MS);
   });
 })();

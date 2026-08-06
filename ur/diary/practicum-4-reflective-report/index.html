@@ -86,6 +86,9 @@
 }
 </script>
 
+
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,10 +99,12 @@
   "inLanguage": "ur",
   "image": "https://kitabomori.github.io/assets/img/og-default.png",
   "url": "https://kitabomori.github.io/ur/diary/practicum-4-reflective-report/",
+  
   "author": {
     "@type": "Organization",
     "name": "Kitabomori"
   },
+  
   "publisher": {
     "@type": "Organization",
     "name": "Kitabomori",
@@ -116,14 +121,20 @@
 </script>
 
 
-<!-- Google Fonts: Literata (English) + Noto Nastaliq Urdu (Urdu)
+<!-- Google Fonts: Literata (English) or Noto Nastaliq Urdu (Urdu).
      Literata is a serif designed by Google specifically for comfortable
      on-screen long-form reading (it's the font behind Google Play Books),
      so it suits a reading-focused site better than a UI sans-serif.
+     Only the family needed for site.lang is requested — previously both
+     families loaded on every page in both languages, so an English
+     reader was also downloading the full Nastaliq family (and vice
+     versa) for a script never shown on that page.
      Loaded with display=swap for performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
 
 <!-- Tailwind CSS (compiled by PostCSS build step) -->
 <link rel="stylesheet" href="/assets/css/main.css">
@@ -676,7 +687,7 @@
 <p>In the second half, I taught grade seven girls, which was a novel experience for me, as I had never done so before. I used a VARK worksheet to collect data from the girls on their learning modes/styles during the very first interaction, and then developed the following lessons, analysing the data. One lesson was on listening, followed by reading, and the last two were on writing.</p>
 
 <figure style="margin:1.5rem 0; text-align:center;">
-  <img src="media/image1.png" alt="Grade 7th Learning Style Data" style="max-width:100%; border:1px solid #ddd; padding:4px;" />
+  <img src="media/image1.png" alt="Grade 7th Learning Style Data" loading="lazy" decoding="async" style="max-width:100%; border:1px solid #ddd; padding:4px;" />
   <figcaption style="font-size:0.85rem; color:#666; margin-top:0.5rem;">Figure 1: Grade 7th Learning Style Data</figcaption>
 </figure>
 
