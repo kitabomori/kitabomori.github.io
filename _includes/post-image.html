@@ -1,0 +1,31 @@
+{%- comment -%}
+  post-image.html – consistent, responsive image block for use inside
+  post/page bodies (kramdown content, or _collections/pages markdown).
+
+  Usage, anywhere inside a post or page's Markdown body:
+    {% include post-image.html
+       src="/assets/img/posts/practicum-5/classroom.jpg"
+       alt="Students working in small groups during the lesson"
+       caption="Grade 7 students during the group activity" %}
+
+  Params:
+    src     required. Path from the site root, starting with "/".
+            Put the actual image file under assets/img/posts/... (any
+            subfolder name is fine — see the folder convention note in
+            assets/img/posts/README.md).
+    alt     required. Accessible description of the image — never leave
+            this empty, screen readers and SEO both depend on it.
+    caption optional. Short line shown under the image.
+    width   optional. Caps the image width, e.g. width="480px".
+            Omit for a full-width (responsive) image.
+{%- endcomment -%}
+<figure class="post-figure">
+  <img src="{{ site.baseurl }}{{ include.src }}"
+       alt="{{ include.alt | default: '' | escape }}"
+       loading="lazy"
+       decoding="async"
+       {% if include.width %}style="max-width:{{ include.width }};"{% endif %}>
+  {% if include.caption %}
+  <figcaption class="post-figure-caption">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

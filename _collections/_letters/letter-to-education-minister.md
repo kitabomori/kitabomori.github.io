@@ -9,18 +9,16 @@ bio_en: ""
 bio_ur: ""              
 description_en: "A call for  education reform"
 description_ur: "تعلیم میں اصلاحات کا مطالبہ"
-youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" 
-youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallback link, only used if youtube_id is left blank
+youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallback link, only used if youtube_id is left blank
 youtube_id: "" 
 ---
 
 {% if site.lang == 'ur' %}
 
-06 اگست 2026ء
+24 اگست 2026ء
 
-آداب، 
-
-جناب وزیر تعلیم،
+آداب، جناب وزیر تعلیم،
 
 افسوس اس بات کا ہے کہ جس ملک کا آئین، 5 سے 16 سال  کے ہر بچے کو مفت اور لازمی تعلیم کا حق دیتا ہے، وہاں آج تک بہت کم لوگوں نے اس حق کو حقیقت بنانے کی سنجیدہ کوشش کی ہے۔  اگرچہ آئین نےتعلیم کو بنیادی حق قرار دیا ہے اور اس کی ذمہ داری صوبوں پر عائد کی ہے، مگر یہ آج بھی محض ایک وعدہ ہے۔
 

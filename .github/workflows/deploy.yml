@@ -47,13 +47,14 @@ jobs:
       - name: Build Tailwind CSS
         run: npx tailwindcss -i ./assets/css/main.css -o ./_site/assets/css/main.css --minify
 
-      # 8. Copy static assets (JS, favicon, images, etc.) to _site
+      # 8. Copy static assets (JS, favicon, images, presentations, etc.) to _site
       - name: Copy static assets
         run: |
           mkdir -p _site/assets
           cp -r assets/js _site/assets/
           if [ -f assets/favicon.svg ]; then cp assets/favicon.svg _site/assets/; fi
           if [ -d assets/img ]; then cp -r assets/img _site/assets/; fi
+          if [ -d assets/pptx ]; then cp -r assets/pptx _site/assets/; fi
 
       # 9. Build English site
       - name: Build English site

@@ -162,3 +162,11 @@
 
 <!-- Favicon -->
 <link rel="icon" href="{{ site.baseurl }}/assets/favicon.svg" type="image/svg+xml">
+
+<!-- Chart.js: only loaded on pages/posts that set `has_chart: true` in
+     their front matter, so the ~90 pages without a chart don't pay for
+     a library they don't use. See guidelines.md for how to add a chart
+     inside a post body once this is loaded. -->
+{% if page.has_chart %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+{% endif %}
