@@ -127,6 +127,19 @@ body {
   box-shadow: 0 16px 32px -16px color-mix(in srgb, var(--accent, #4FD1C5) 60%, rgba(0, 0, 0, 0.5));
 }
 
+/* Urdu pages: no lift/shadow-glow on hover — the translate + tinted
+   glow reads oddly against RTL layout, so cards just stay put. */
+html[dir="rtl"] .content-card:hover,
+html[dir="rtl"] .section-card:hover {
+  transform: none;
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+}
+
+html[dir="rtl"].dark .content-card:hover,
+html[dir="rtl"].dark .section-card:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
 .card-title a,
 .section-card h2 a {
   text-decoration: none;
@@ -1497,6 +1510,13 @@ html:not([dir="rtl"]) .post-body blockquote {
   box-shadow: 0 6px 16px -10px var(--accent);
 }
 
+/* Urdu pages: skip the hover shift/glow (see content-card override
+   above for the reasoning — same thing for search results). */
+html[dir="rtl"] .search-result:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .dark .search-result {
   @apply border-gray-700;
   border-left-color: var(--accent);
@@ -1739,10 +1759,8 @@ html:not([dir="rtl"]) .post-body blockquote {
   background: linear-gradient(to right, var(--accent), #009F93);
 }
 
-.content-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 14px 28px -14px rgba(43, 42, 38, 0.25);
-}
+/* Hover state lives with the other .content-card:hover rule near the
+   top of this file (keeps the accent-tinted lift in one place). */
 
 .dark .content-card {
   background-color: #221F1B;
