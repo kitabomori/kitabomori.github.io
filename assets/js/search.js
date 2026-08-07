@@ -22,6 +22,25 @@
 
   var EXCLUDED_TYPES = { 'Call': true, 'دعوت': true };
 
+  // Same accent palette already used for card-grid / section-card top
+  // strips elsewhere on the site (see main.css), keyed by the
+  // language-independent type_en so results stay color-consistent
+  // regardless of which language build is running.
+  var TYPE_ACCENTS = {
+    'Article':        '#C79A3E',
+    'Review':         '#D9754A',
+    'Letter':         '#5A63C7',
+    'Teaching Diary': '#7A6A4F',
+    'Event':          '#B8A521',
+    'Short Story':    '#C77FA0',
+    'Poetry':         '#A25FC7',
+    'Dialogue':       '#3EAF8C',
+    'Satire':         '#C7883E',
+    'Nonfiction':     '#5FA35F',
+    'Reflection':     '#B08E6E'
+  };
+  var DEFAULT_ACCENT = '#009F93';
+
   // Fetch the search index once
   fetch(SITE_BASEURL + '/' + SITE_LANG + '/search_index.json')
     .then(function (r) { return r.json(); })
@@ -39,6 +58,16 @@
 
   function escapeRegExp(str) {
     return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  // Wrap every occurrence of `query` in `text` with <mark>, HTML-escaping
+  // the rest. Used for titles, where we want the whole string (no
+  // truncation), unlike the snippet excerpt below.
+  function highlightAll(text, query) {
+    var escaped = escapeHtml(text);
+    if (!query) return escaped;
+    var re = new RegExp('(' + escapeRegExp(escapeHtml(query)) + ')', 'ig');
+    return escaped.replace(re, '<mark>$1</mark>');
   }
 
   // Build an HTML snippet of `text` centered on the first occurrence of
@@ -91,7 +120,7 @@
       var snippet = contentMatch ? buildSnippet(content, query) : '';
       if (!snippet && descriptionMatch) snippet = buildSnippet(description, query);
 
-      matches.push({ item: item, type: type, title: title, snippet: snippet });
+      matches.push({ item: item, type: type, title: title, snippet: snippet, accent: TYPE_ACCENTS[item.type_en] || DEFAULT_ACCENT });
     }
 
     if (matches.length === 0) {
@@ -101,10 +130,10 @@
 
     var html = matches.map(function (m) {
       var url = SITE_LANG === 'ur' ? m.item.url_ur : m.item.url_en;
-      var titleHtml = escapeHtml(m.title);
+      var titleHtml = highlightAll(m.title, query);
       var typeHtml = escapeHtml(m.type);
 
-      var block = '<div class="search-result">' +
+      var block = '<div class="search-result" style="--accent:' + m.accent + ';">' +
         '<a href="' + url + '">' +
           '<span class="search-result-type">' + typeHtml + '</span>' +
           '<h3 class="search-result-title">' + titleHtml + '</h3>' +
