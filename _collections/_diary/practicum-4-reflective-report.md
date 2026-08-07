@@ -25,10 +25,14 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <p>In the second half, I taught grade seven girls, which was a novel experience for me, as I had never done so before. I used a VARK worksheet to collect data from the girls on their learning modes/styles during the very first interaction, and then developed the following lessons, analysing the data. One lesson was on listening, followed by reading, and the last two were on writing.</p>
 
-<figure style="margin:1.5rem 0; text-align:center;">
-  <img src="media/image1.png" alt="Grade 7th Learning Style Data" loading="lazy" decoding="async" style="max-width:100%; border:1px solid #ddd; padding:4px;">
-  <figcaption style="font-size:0.85rem; color:#666; margin-top:0.5rem;">Figure 1: Grade 7th Learning Style Data</figcaption>
-</figure>
+<!-- TODO: image file is missing from the repo — this was broken before
+     this include existed too. Add the real photo/chart image to
+     assets/img/posts/practicum-4-reflective-report/learning-style-data.png
+     and this will render correctly. See assets/img/posts/README.md. -->
+{% include post-image.html
+   src="/assets/img/posts/practicum-4-reflective-report/learning-style-data.png"
+   alt="Grade 7th Learning Style Data"
+   caption="Figure 1: Grade 7th Learning Style Data" %}
 
 <p>I had allowed the students to eat and move around in class if there was something important to share or discuss. Students always have a craving for snacks. When there are chips in the backpack, how will a student resist and focus on learning, which is all about paying attention and interaction? This slide changed the way I used to manage classroom decor and taught me that learning can take place while eating and moving in class.</p>
 

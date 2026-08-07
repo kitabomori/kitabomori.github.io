@@ -46,3 +46,46 @@ Write your English content here.
 Separate paragraphs with a blank line.
 
 {% endif %}
+
+{% comment %}
+  -------------------------------------------------------
+  OPTIONAL: pictures, a PowerPoint deck, or a chart/graph.
+  Delete whichever of these three blocks you don't need —
+  they're here purely as copy-paste examples. Full docs live
+  in assets/img/posts/README.md and assets/pptx/README.md.
+  -------------------------------------------------------
+
+  1) A PICTURE — put the file in assets/img/posts/your-post-slug/
+     first, then:
+
+  {% include post-image.html
+     src="/assets/img/posts/your-post-slug/photo.jpg"
+     alt="Describe the image for screen readers — required"
+     caption="Optional caption shown under the image" %}
+
+  2) A POWERPOINT deck — put the .pptx in assets/pptx/ first,
+     then:
+
+  {% include pptx-embed.html
+     src="/assets/pptx/your-deck.pptx"
+     title="Your Deck Title" %}
+
+  Note: the slide preview only renders once the site is live
+  on kitabomori.github.io — it won't show on localhost. No
+  front matter flag is needed for this one.
+
+  3) A CHART/GRAPH — first add `has_chart: true` up in this
+     post's front matter (above, next to `date:`), then paste
+     something like this where you want the chart to appear:
+
+  <div class="post-chart"><canvas id="my-chart-1"></canvas></div>
+  <script>
+  new Chart(document.getElementById('my-chart-1'), {
+    type: 'bar',
+    data: {
+      labels: ['Label A', 'Label B', 'Label C'],
+      datasets: [{ label: 'What this measures', data: [10, 20, 30] }]
+    }
+  });
+  </script>
+{% endcomment %}
