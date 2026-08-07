@@ -119,12 +119,12 @@ body {
 .content-card:hover,
 .section-card:hover {
   transform: translateY(-7px);
-  box-shadow: 0 16px 32px -16px rgba(43, 42, 38, 0.22);
+  box-shadow: 0 16px 32px -16px color-mix(in srgb, var(--accent, #009F93) 55%, rgba(43, 42, 38, 0.22));
 }
 
 .dark .content-card:hover,
 .dark .section-card:hover {
-  box-shadow: 0 16px 32px -16px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 16px 32px -16px color-mix(in srgb, var(--accent, #4FD1C5) 60%, rgba(0, 0, 0, 0.5));
 }
 
 .card-title a,
@@ -1405,11 +1405,21 @@ html:not([dir="rtl"]) .post-body blockquote {
 
 /* ---- Search ---- */
 .search-result {
-  @apply py-3 border-b border-gray-200;
+  --accent: #009F93;
+  @apply py-3 pl-3 mb-2 border-b border-gray-200;
+  border-left: 4px solid var(--accent);
+  border-radius: 3px;
+  transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.search-result:hover {
+  transform: translateX(3px);
+  box-shadow: 0 6px 16px -10px var(--accent);
 }
 
 .dark .search-result {
   @apply border-gray-700;
+  border-left-color: var(--accent);
 }
 
 .search-result a {
@@ -1418,11 +1428,17 @@ html:not([dir="rtl"]) .post-body blockquote {
 }
 
 .search-result-type {
-  @apply block text-xs uppercase tracking-wide text-gray-500 mb-1;
+  display: inline-block;
+  @apply text-xs font-semibold uppercase tracking-wide mb-1;
+  padding: 2px 9px;
+  border-radius: 999px;
+  color: var(--accent);
+  background-color: color-mix(in srgb, var(--accent) 16%, #FFFFFF);
 }
 
 .dark .search-result-type {
-  @apply text-gray-400;
+  background-color: color-mix(in srgb, var(--accent) 30%, #1B1A17);
+  color: color-mix(in srgb, var(--accent) 70%, #FFFFFF);
 }
 
 .search-result-title {
@@ -1442,14 +1458,16 @@ html:not([dir="rtl"]) .post-body blockquote {
   @apply text-gray-400;
 }
 
-.search-result-snippet mark {
+.search-result-snippet mark,
+.search-result-title mark {
   background-color: #FDE68A;
   color: inherit;
   padding: 0 2px;
   border-radius: 2px;
 }
 
-.dark .search-result-snippet mark {
+.dark .search-result-snippet mark,
+.dark .search-result-title mark {
   background-color: #92400E;
   color: #FEF3C7;
 }
