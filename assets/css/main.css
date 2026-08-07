@@ -762,7 +762,7 @@ html:not([dir="rtl"]) .post-body blockquote {
 
 /* Card icon color previously hardcoded to the brand teal for every
    section — now inherits each card's own --accent (set per section
-   in section-card-*/content-card-* below) so the homepage grid and
+   in section-card-* and content-card-* below) so the homepage grid and
    collection listings read as more distinctly colorful at a glance,
    matching the colored top-strip already on each card. Falls back to
    teal via --accent's own default when no section class is present. */
