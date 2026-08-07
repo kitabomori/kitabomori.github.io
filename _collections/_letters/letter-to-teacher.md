@@ -17,7 +17,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 24 جون 2026ء
 
-آداب،
+آداب!
 
 استاد محترم،
 
