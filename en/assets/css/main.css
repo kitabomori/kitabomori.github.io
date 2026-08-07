@@ -1196,6 +1196,86 @@ html:not([dir="rtl"]) .post-body blockquote {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
+/* ---- In-post images (see _includes/post-image.html) ----
+   Responsive, centered figure with a light border and soft shadow —
+   echoes the card look used elsewhere, with room for a caption. */
+.post-figure {
+  @apply my-6;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.post-figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #E5DFD0;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+}
+
+.dark .post-figure img {
+  border-color: #3A362E;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.post-figure-caption {
+  @apply text-sm mt-2;
+  color: var(--reading-muted);
+  font-style: italic;
+}
+
+/* ---- Embedded PowerPoint (see _includes/pptx-embed.html) ----
+   Same responsive card treatment as the YouTube embed, at a wider
+   4:3-ish ratio that suits slides better than 16:9 video. */
+.post-pptx-embed {
+  @apply mb-2;
+  max-width: 46rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-pptx-embed iframe {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 0;
+  border-radius: 4px 4px 10px 10px;
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+  background: #F3F0E6;
+}
+
+.dark .post-pptx-embed iframe {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.post-pptx-fallback {
+  @apply text-sm text-center mt-2 mb-6;
+}
+
+.post-pptx-fallback a {
+  color: #009F93;
+}
+
+/* ---- In-post charts/graphs (Chart.js, loaded conditionally — see
+   head.html's `page.has_chart` check and the docs in guidelines.md).
+   A card-style container so a <canvas> sits on a clean, bordered
+   background regardless of chart colors chosen per-post. */
+.post-chart {
+  @apply my-6 p-4;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: color-mix(in srgb, #009F93 5%, #FDF8EC);
+  border: 1px solid #E5DFD0;
+  border-radius: 6px;
+}
+
+.dark .post-chart {
+  background: color-mix(in srgb, #4FD1C5 8%, #221F1B);
+  border-color: #3A362E;
+}
+
 .post-date {
   @apply text-sm text-gray-500 mb-2;
   text-align: left;
