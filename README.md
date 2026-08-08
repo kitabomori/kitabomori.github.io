@@ -177,11 +177,40 @@ You do not need to do anything else.
 
 | Colour | Hex | Used for |
 |--------|-----|---------|
-| Teal | `#009F93` | Header, footer, nav, buttons, headings, links |
+| Teal | `#009F93` | Header, footer, nav, buttons, brand default, links |
 | White | `#FFFFFF` | Page backgrounds, cards, light mode |
 | Ticker text | `#aab52d` | Homepage scrolling ticker text |
 
-No other accent colours are used anywhere on the site.
+**Section accent colours** — each collection has its own accent, used for post titles, side-rail ornaments, pull-quotes, and card hover glow (`--accent` custom property, set via `[data-section="…"]` in `main.css`):
+
+| Section | Hex | Notes |
+|---------|-----|-------|
+| Articles | `#C79A3E` | amber / gold |
+| Reviews | `#4C7EA6` | steel blue |
+| Creative Writing | `#C77FA0` | dusty pink |
+| Letters | `#6E9B5E` | sage green |
+| Teaching Diary | `#009F93` | teal (site default) |
+| Events | `#D9714A` | coral |
+
+Homepage section cards (`.section-card-*` in `main.css`) use a second, separate accent set for the same six sections — this was already the case before this round of changes and is left as-is.
+
+**Lesson Plan posts are explicitly excluded** from section-accent colouring (title, rail ornaments) by design — see the scope comment at the top of `_layouts/post.html`. Don't remove that exclusion when editing.
+
+---
+
+## Aesthetic pass (design notes for future edits)
+
+A round of visual changes was made to address readability/visibility feedback: side-margin decoration, title typography, and colour hierarchy. Summary, so future edits don't fight these:
+
+- **Display font added:** `Fraunces` (Google Font) is now loaded on English pages alongside `Literata`, and used *only* for headings/titles — site title, post title, page title, home hero heading, section-card headings, card titles. Body copy stays `Literata`. Urdu pages are untouched (still `Noto Nastaliq Urdu` throughout, via the existing `html:not([dir="rtl"])` scoping pattern already used elsewhere in `main.css`). Configured in `tailwind.config.js` (`fontFamily.display`) and loaded in `_includes/head.html`.
+- **Post titles now use the section accent colour** instead of a fixed teal (`.post-title` in `main.css`), also bumped from `text-2xl` to `text-3xl`/`text-4xl`. This required adding `data-section="{{ accent_group }}"` to the `<article>` tag in `_layouts/post.html` for non–Lesson-Plan posts, so `var(--accent)` is available to the title. Page titles (`.page-title`) and the home hero heading (`.home-heading`) got the same font/size treatment but keep the fixed teal — they aren't tied to one section.
+- **Side rails (`.post-side`) now appear from 1024px instead of 1200px** — the old breakpoint hid them from most 13"–15" laptop screens entirely. A narrower rail variant (shorter line, smaller icons) applies from 1024–1279px so it never crowds the reading column; the original spacing/size returns at 1280px+.
+- **Each rail now shows two icons**, not one: the existing lamp plus a new small `icon-leaf` symbol (added to `_includes/icons-sprite.svg`, same stroke-based line-art style as the rest of the set) further down the line, plus a very faint radial colour wash behind the whole rail in the section's accent. All in `.post-ornament*` rules in `main.css`.
+- **Homepage hero now has a large, very low-opacity watermark** of the existing book/pen logo mark behind the welcome text (`.home-watermark`), added once per language block in `pages/home.md`. Purely decorative (`aria-hidden`), doesn't affect layout or reading flow.
+- **Sepia mode's body text softened** from pure `#000000` to a warm dark ink `#241C10`, matching the "no stark black/white" principle already used for light/dark mode in the same `:root` block.
+- **The "Classic Paper Frame" post-body treatment** (aged-paper texture, folded corner, per-section paper tints in `.post-body*` rules) was reviewed and left untouched — it already does what a "frame the reading column" change would have asked for, in more detail than a from-scratch version would.
+
+If you add a new collection/section in future, remember to give it an entry in **both** accent tables above (`[data-section="…"]` for post pages, `.section-card-*`/`.content-card-*` for cards) or it'll silently fall back to teal.
 
 ---
 

@@ -151,7 +151,12 @@
 {% if site.lang == 'ur' %}
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
 {% else %}
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<!-- Literata for body copy, plus Fraunces as a heavier display serif
+     for titles/headings only (site title, post/page titles, home
+     hero, section-card headings) — see .post-title etc. in main.css.
+     Urdu pages don't load this; Nastaliq stays the only display face
+     there. -->
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
 {% endif %}
 
 <!-- Tailwind CSS (compiled by PostCSS build step) -->

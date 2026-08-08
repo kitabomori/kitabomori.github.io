@@ -26,6 +26,11 @@ module.exports = {
       fontFamily: {
         sans: ['Literata', 'serif'],
         urdu: ['"Noto Nastaliq Urdu"', 'serif'],
+        // Display face for titles/headings only (English pages) — a
+        // heavier, more editorial serif than the body copy, so titles
+        // read as a masthead rather than just bold body text. Body
+        // copy and Urdu are untouched.
+        display: ['Fraunces', 'Literata', 'serif'],
       },
     },
   },

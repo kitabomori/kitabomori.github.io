@@ -51,19 +51,29 @@ layout: base
   <span class="post-ornament"></span>
 </aside>
 {% else %}
+<!-- Each rail now carries two icons on the line — the lamp (centre)
+     plus a small leaf lower down — so the margin reads as a little
+     more than a single dot on very tall screens. Both tinted with
+     the section's --accent, set via data-section as before. -->
 <aside class="post-side post-side-left" data-section="{{ accent_group }}" aria-hidden="true">
   <span class="post-ornament post-ornament-accent">
     <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+    <svg class="post-ornament-icon post-ornament-icon-secondary"><use href="#icon-leaf"></use></svg>
   </span>
 </aside>
 <aside class="post-side post-side-right" data-section="{{ accent_group }}" aria-hidden="true">
   <span class="post-ornament post-ornament-accent">
     <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+    <svg class="post-ornament-icon post-ornament-icon-secondary"><use href="#icon-leaf"></use></svg>
   </span>
 </aside>
 {% endif %}
 
-<article class="post-container">
+<!-- data-section on the article itself (Lesson Plans excluded, per the
+     scope note above) lets the post title pick up the same section
+     accent color as the rails/pull-quotes via var(--accent) in
+     main.css, instead of every post title being the same fixed teal. -->
+<article class="post-container"{% unless post_is_lesson_plan %} data-section="{{ accent_group }}"{% endunless %}>
 
   <header class="post-header">
     {% include post-decor.html %}
