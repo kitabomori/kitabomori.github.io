@@ -607,14 +607,27 @@
      ============================================================ -->
 
 <!-- Margin content either side of the post, for wide screens only
-     (see .post-side in main.css) — purely decorative vertical rules,
-     echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
+     (see .post-side in main.css) — a small line-art doodle on one
+     side and a short original line on the other, picked
+     deterministically per post from _data/margin_quotes.yml (same
+     post always shows the same pairing, no JS/randomness involved).
+     Purely decorative, so screen readers skip both asides. -->
+
+
+
+
+
+
+
 <aside class="post-side post-side-left" aria-hidden="true">
+  <svg class="post-side-doodle"><use href="#icon-journal"></use></svg>
   <span class="post-ornament"></span>
 </aside>
 <aside class="post-side post-side-right" aria-hidden="true">
   <span class="post-ornament"></span>
+  <p class="post-side-quote">
+    A classroom is a garden that grows in silence.
+  </p>
 </aside>
 
 <article class="post-container">

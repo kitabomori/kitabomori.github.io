@@ -825,14 +825,17 @@ html:not([dir="rtl"]) .post-body blockquote {
   }
 }
 
-/* ---- Post margin content: ornamental rule (right). Fixed
-   position, only shown once there's enough gutter width to hold
-   it without crowding the post itself. ---- */
+/* ---- Post margin content: a small doodle + a short line, either
+   side of the post. Fixed position, only shown once there's enough
+   gutter width to hold it without crowding the post itself. ---- */
 .post-side {
   display: none;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   z-index: 30;
 }
 
@@ -844,10 +847,43 @@ html:not([dir="rtl"]) .post-body blockquote {
 
 .post-side-right {
   right: 2.5rem;
+  width: 130px;
 }
 
 .post-side-left {
   left: 2.5rem;
+}
+
+.post-side-doodle {
+  width: 30px;
+  height: 30px;
+  color: #009F93;
+  opacity: 0.55;
+}
+
+.dark .post-side-doodle {
+  color: #4FD1C5;
+}
+
+.sepia .post-side-doodle {
+  color: #8A6D3B;
+}
+
+.post-side-quote {
+  font-family: 'Literata', Georgia, serif;
+  font-style: italic;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--reading-muted);
+  opacity: 0.85;
+  margin: 0;
+}
+
+html[dir="rtl"] .post-side-quote {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  font-size: 0.95rem;
+  line-height: 2;
 }
 
 /* Horizontal echo of the same motif, placed under the post title. */
