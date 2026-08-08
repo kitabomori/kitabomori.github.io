@@ -7,14 +7,27 @@ layout: base
      ============================================================ -->
 
 <!-- Margin content either side of the post, for wide screens only
-     (see .post-side in main.css) — purely decorative vertical rules,
-     echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
+     (see .post-side in main.css) — a small line-art doodle on one
+     side and a short original line on the other, picked
+     deterministically per post from _data/margin_quotes.yml (same
+     post always shows the same pairing, no JS/randomness involved).
+     Purely decorative, so screen readers skip both asides. -->
+{% assign margin_quotes = site.data.margin_quotes %}
+{% assign seed = page.url | size %}
+{% assign seed_div = seed | divided_by: margin_quotes.size %}
+{% assign seed_base = seed_div | times: margin_quotes.size %}
+{% assign margin_index = seed | minus: seed_base %}
+{% assign margin_pick = margin_quotes[margin_index] %}
+
 <aside class="post-side post-side-left" aria-hidden="true">
+  <svg class="post-side-doodle"><use href="#{{ margin_pick.icon }}"></use></svg>
   <span class="post-ornament"></span>
 </aside>
 <aside class="post-side post-side-right" aria-hidden="true">
   <span class="post-ornament"></span>
+  <p class="post-side-quote">
+    {% if site.lang == 'ur' %}{{ margin_pick.text_ur }}{% else %}{{ margin_pick.text_en }}{% endif %}
+  </p>
 </aside>
 
 <article class="post-container">
