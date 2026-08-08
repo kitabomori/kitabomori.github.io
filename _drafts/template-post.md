@@ -31,6 +31,10 @@ youtube_id: ""                             # Preferred: just the YouTube video I
                                             # https://www.youtube.com/watch?v=dQw4w9WgXcQ). When set, an
                                             # embedded YouTube player is shown on the page instead of a link.
                                             # Leave blank to show no player (or fall back to youtube_en/youtube_ur).
+pull_quote_en: ""                          # Optional: pin the exact pull-quote sentence shown on the page
+pull_quote_ur: ""                          # (English/Urdu). Leave both blank and the site will automatically
+                                            # pick the strongest sentence from the post itself; set these once
+                                            # you've read the auto-picked one and want to override it.
 ---
 
 {% if site.lang == 'ur' %}
