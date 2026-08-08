@@ -30,7 +30,11 @@
    apps offer this and it suits a literary journal well. */
 .sepia {
   --reading-bg: #F1E7D0;
-  --reading-text: #000000;
+  /* Was pure #000000 — softened to a warm dark ink to match the "no
+     stark black/white" principle already used for light/dark mode
+     above. Contrast against #F1E7D0 is still comfortably above
+     WCAG AA for body text. */
+  --reading-text: #241C10;
   --reading-muted: #7A6952;
 }
 
@@ -919,18 +923,43 @@ html:not([dir="rtl"]) .post-body blockquote {
   z-index: 30;
 }
 
-@media (min-width: 1200px) {
+/* Was min-width: 1200px — that hid the rails from most 13"-15"
+   laptops (1366×768, 1280×800 etc. all fall short once browser
+   chrome is counted), so the majority of desktop readers never saw
+   this decoration at all. Lowered to 1024px, with a slightly
+   narrower/closer-in variant below 1280px so the rail never
+   crowds the reading column on the smaller end of that range. */
+@media (min-width: 1024px) {
   .post-side {
     display: flex;
   }
 }
 
 .post-side-right {
-  right: 2.5rem;
+  right: 1rem;
 }
 
 .post-side-left {
-  left: 2.5rem;
+  left: 1rem;
+}
+
+@media (min-width: 1280px) {
+  .post-side-right {
+    right: 2.5rem;
+  }
+  .post-side-left {
+    left: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .post-ornament {
+    height: 160px;
+  }
+  .post-ornament-icon {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 /* Horizontal echo of the same motif, placed under the post title. */
@@ -1052,6 +1081,41 @@ html:not([dir="rtl"]) .post-body blockquote {
   background: var(--reading-bg, #221F1B);
 }
 
+/* Second icon on the rail (a small leaf), offset further down the
+   line from the centered lamp so the margin reads as more than one
+   lone dot. Smaller and quieter than the lamp — no background disc,
+   just the accent-tinted line-art itself. */
+.post-ornament-icon-secondary {
+  top: calc(50% + 78px);
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  background: none;
+  opacity: 0.6;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .post-ornament-icon-secondary {
+    top: calc(50% + 56px);
+  }
+}
+
+/* Very faint radial wash behind the whole rail, in the section's own
+   accent colour, so the margin itself carries a hint of colour
+   rather than being flat page background right up to the thin line. */
+.post-ornament-accent::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse at center, color-mix(in srgb, var(--accent, #009F93) 14%, transparent) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+
 /* ---- Header ---- */
 .site-header {
   @apply w-full sticky top-0 z-50 shadow-sm;
@@ -1063,6 +1127,10 @@ html:not([dir="rtl"]) .post-body blockquote {
 
 .site-title {
   @apply text-xl font-bold tracking-tight;
+}
+
+html:not([dir="rtl"]) .site-title {
+  font-family: 'Fraunces', 'Literata', serif;
 }
 
 .nav-toggle {
@@ -1235,8 +1303,13 @@ html:not([dir="rtl"]) .post-body blockquote {
 }
 
 .page-title {
-  @apply text-2xl font-bold mb-6;
+  @apply text-3xl font-semibold mb-6;
   color: #009F93;
+  letter-spacing: -0.01em;
+}
+
+html:not([dir="rtl"]) .page-title {
+  font-family: 'Fraunces', 'Literata', serif;
 }
 
 .page-content {
@@ -1253,9 +1326,23 @@ html:not([dir="rtl"]) .post-body blockquote {
 }
 
 .post-title {
-  @apply text-2xl font-bold mb-2;
-  color: #009F93;
+  @apply text-3xl md:text-4xl font-semibold mb-2;
+  /* Was fixed teal on every post — now inherits the section's own
+     accent (set via data-section on the <article>, in post.html),
+     so an Article title reads amber, a Letter sage green, etc.
+     Falls back to teal when no section context is present (e.g.
+     Lesson Plan posts, which intentionally opt out — see post.html). */
+  color: var(--accent, #009F93);
   text-align: center;
+  letter-spacing: -0.01em;
+}
+
+/* Display serif for titles only — Literata stays the body-copy face.
+   Scoped to LTR so Urdu titles keep rendering in Noto Nastaliq Urdu
+   (set on [dir="rtl"] elsewhere in this file) rather than falling
+   back to a Latin font with no Nastaliq glyphs. */
+html:not([dir="rtl"]) .post-title {
+  font-family: 'Fraunces', 'Literata', serif;
 }
 
 /* Nastaliq glyphs are tall and extend well below the normal line box,
@@ -1557,11 +1644,56 @@ html:not([dir="rtl"]) .post-body blockquote {
 /* ---- Home page ---- */
 .home-welcome {
   @apply mb-12;
+  position: relative;
+}
+
+/* Oversized, very low-opacity echo of the header/hero icon sitting
+   behind the welcome copy — fills the empty space around the hero
+   text with something more than a flat background, without
+   competing with the actual copy for attention. Purely decorative;
+   aria-hidden and non-interactive. */
+.home-watermark {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 260px;
+  height: 260px;
+  color: var(--accent, #009F93);
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dark .home-watermark {
+  opacity: 0.07;
+}
+
+.sepia .home-watermark {
+  opacity: 0.09;
+}
+
+@media (max-width: 640px) {
+  .home-watermark {
+    width: 160px;
+    height: 160px;
+    top: -0.5rem;
+    right: -0.5rem;
+  }
+}
+
+.home-welcome > *:not(.home-watermark) {
+  position: relative;
+  z-index: 1;
 }
 
 .home-heading {
-  @apply text-3xl font-bold mb-2;
+  @apply text-4xl md:text-5xl font-semibold mb-2;
   color: #009F93;
+  letter-spacing: -0.01em;
+}
+
+html:not([dir="rtl"]) .home-heading {
+  font-family: 'Fraunces', 'Literata', serif;
 }
 
 .home-tagline {
@@ -1581,6 +1713,10 @@ html:not([dir="rtl"]) .post-body blockquote {
   @apply text-lg font-semibold mb-2;
 }
 
+html:not([dir="rtl"]) .section-card h2 {
+  font-family: 'Fraunces', 'Literata', serif;
+}
+
 .section-card h2 a {
   color: #009F93;
   text-decoration: none;
@@ -1597,6 +1733,10 @@ html:not([dir="rtl"]) .post-body blockquote {
 
 .card-title {
   @apply text-lg font-semibold mb-1;
+}
+
+html:not([dir="rtl"]) .card-title {
+  font-family: 'Fraunces', 'Literata', serif;
 }
 
 .card-title a {

@@ -172,6 +172,16 @@
       </g>
     </symbol>
 
+    <!-- Single leaf — secondary rail ornament, paired below the lamp
+         icon on post pages to give the side margins a bit more life.
+         Same stroke style/weight as the rest of the set. -->
+    <symbol id="icon-leaf" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 76 C22 70 14 48 20 24 C44 18 66 26 72 48 C76 63 62 74 45 76 Z"/>
+        <path d="M45 76 C40 58 34 40 20 24" opacity="0.55"/>
+      </g>
+    </symbol>
+
     <!-- Papers / document stack — Articles -->
     <symbol id="icon-papers" viewBox="0 0 90 90">
       <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -645,19 +655,29 @@
      Everything else: the line now carries the site's new lamp motif,
      tinted with the section's accent color. -->
 
+<!-- Each rail now carries two icons on the line — the lamp (centre)
+     plus a small leaf lower down — so the margin reads as a little
+     more than a single dot on very tall screens. Both tinted with
+     the section's --accent, set via data-section as before. -->
 <aside class="post-side post-side-left" data-section="reviews" aria-hidden="true">
   <span class="post-ornament post-ornament-accent">
     <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+    <svg class="post-ornament-icon post-ornament-icon-secondary"><use href="#icon-leaf"></use></svg>
   </span>
 </aside>
 <aside class="post-side post-side-right" data-section="reviews" aria-hidden="true">
   <span class="post-ornament post-ornament-accent">
     <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+    <svg class="post-ornament-icon post-ornament-icon-secondary"><use href="#icon-leaf"></use></svg>
   </span>
 </aside>
 
 
-<article class="post-container">
+<!-- data-section on the article itself (Lesson Plans excluded, per the
+     scope note above) lets the post title pick up the same section
+     accent color as the rails/pull-quotes via var(--accent) in
+     main.css, instead of every post title being the same fixed teal. -->
+<article class="post-container" data-section="reviews">
 
   <header class="post-header">
     <!-- ============================================================
