@@ -329,22 +329,6 @@
       </g>
     </symbol>
 
-    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
-         for the post side rails (see .post-side / .rail-lamp in
-         main.css). Distinct from the per-section header icons above;
-         reused everywhere, tinted per section via --accent, echoing
-         "the light of learning" imagery rather than repeating the
-         book/leaf/ink-drop/pen-nib language already used elsewhere
-         on the site. -->
-    <symbol id="icon-lamp" viewBox="0 0 90 90">
-      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
-        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
-        <path d="M45 74 L45 82 M36 82 H54"/>
-        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
-      </g>
-    </symbol>
-
   </defs>
 </svg>
 
@@ -622,40 +606,16 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
-<!-- Section accent group + Lesson Plan detection, computed once up
-     front so both the side rails (below) and the post body / pull-quote
-     (further down) agree on the same value.
-     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
-     contains "lesson-plan") are explicitly out of scope for the whole
-     redesign — this scope restriction is intentional and must not be
-     removed or narrowed. They keep the original plain teal rail
-     untouched below. -->
-
-
-
-
-
-
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter.
-     Lesson Plans: left exactly as before (plain teal diamond, no
-     section accent, no lamp icon) — see scope note above.
-     Everything else: the line now carries the site's new lamp motif,
-     tinted with the section's accent color. -->
-
-<aside class="post-side post-side-left" data-section="creative" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+     placement in the DOM doesn't matter. -->
+<aside class="post-side post-side-left" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-<aside class="post-side post-side-right" data-section="creative" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+<aside class="post-side post-side-right" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-
 
 <article class="post-container">
 
@@ -719,13 +679,9 @@
 
   
   
-  <div class="post-body post-body-reflections" data-section="creative">
+  <div class="post-body post-body-reflections">
     
-<p>چند روز پہلے میری یونیورسٹی میں بک فیئر کا انعقاد ہوا۔ میں ایک دوست کے ساتھ وہاں گیا اور دل چاہا کہ چند کتابیں خرید لوں، مگر جیب میں موجود رقم کتابوں کی قیمتوں کے سامنے بہت کم تھی۔ اس لمحے پہلی بار شدت سے احساس ہوا کہ ایک طالب علم اگر کتاب خریدنے کی استطاعت نہ رکھتا ہو تو اس سے بڑھ کر علمی محرومی شاید کوئی اور نہیں۔ میں نے خود کو تسلی دی کہ کتابیں نہ سہی، یونیورسٹی کی لائبریری سے پڑھ لوں گا، لیکن فوراً یاد آیا کہ تعلیم مکمل ہونے میں چند ہی دن باقی ہیں اور اس لائبریری تک رسائی بھی ختم ہونے والی ہے۔</p><aside class="pull-quote" dir="rtl" data-section="creative" aria-label="اقتباس">
-  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
-  <blockquote class="pull-quote-text">اب جبکہ میں خود تدریس کی تعلیم حاصل کر چکا ہوں، مجھے محسوس ہوتا ہے کہ صرف “محنت کرو”</blockquote>
-</aside>
-
+<p>چند روز پہلے میری یونیورسٹی میں بک فیئر کا انعقاد ہوا۔ میں ایک دوست کے ساتھ وہاں گیا اور دل چاہا کہ چند کتابیں خرید لوں، مگر جیب میں موجود رقم کتابوں کی قیمتوں کے سامنے بہت کم تھی۔ اس لمحے پہلی بار شدت سے احساس ہوا کہ ایک طالب علم اگر کتاب خریدنے کی استطاعت نہ رکھتا ہو تو اس سے بڑھ کر علمی محرومی شاید کوئی اور نہیں۔ میں نے خود کو تسلی دی کہ کتابیں نہ سہی، یونیورسٹی کی لائبریری سے پڑھ لوں گا، لیکن فوراً یاد آیا کہ تعلیم مکمل ہونے میں چند ہی دن باقی ہیں اور اس لائبریری تک رسائی بھی ختم ہونے والی ہے۔</p>
 
 <p>صرف کتابوں کا موجود ہونا کافی نہیں ہوتا، انہیں پڑھنے کا شوق بھی ہونا چاہیے، اور یہ شوق جتنی کم عمری میں پیدا ہو، اتنا ہی بہتر ہے۔ مجھے یہ بات نسبتاً دیر سے سمجھ آئی کہ نصابی کتابوں سے باہر بھی ایک وسیع دنیا آباد ہے، جو انسان کو صرف معلومات نہیں دیتی بلکہ سوچنا، سوال کرنا اور زندگی کو مختلف زاویوں سے دیکھنا بھی سکھاتی ہے۔</p>
 

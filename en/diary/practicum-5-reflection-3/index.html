@@ -329,22 +329,6 @@
       </g>
     </symbol>
 
-    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
-         for the post side rails (see .post-side / .rail-lamp in
-         main.css). Distinct from the per-section header icons above;
-         reused everywhere, tinted per section via --accent, echoing
-         "the light of learning" imagery rather than repeating the
-         book/leaf/ink-drop/pen-nib language already used elsewhere
-         on the site. -->
-    <symbol id="icon-lamp" viewBox="0 0 90 90">
-      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
-        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
-        <path d="M45 74 L45 82 M36 82 H54"/>
-        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
-      </g>
-    </symbol>
-
   </defs>
 </svg>
 
@@ -622,40 +606,16 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
-<!-- Section accent group + Lesson Plan detection, computed once up
-     front so both the side rails (below) and the post body / pull-quote
-     (further down) agree on the same value.
-     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
-     contains "lesson-plan") are explicitly out of scope for the whole
-     redesign — this scope restriction is intentional and must not be
-     removed or narrowed. They keep the original plain teal rail
-     untouched below. -->
-
-
-
-
-
-
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter.
-     Lesson Plans: left exactly as before (plain teal diamond, no
-     section accent, no lamp icon) — see scope note above.
-     Everything else: the line now carries the site's new lamp motif,
-     tinted with the section's accent color. -->
-
-<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+     placement in the DOM doesn't matter. -->
+<aside class="post-side post-side-left" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+<aside class="post-side post-side-right" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-
 
 <article class="post-container">
 
@@ -719,14 +679,10 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+  <div class="post-body post-body-diary post-body-reflection">
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">February 29, 2024</div>
 
-<p>In the second microteaching lesson today at our university, we taught a physics topic titled "quantum physics in our surroundings" to the students of B.Ed-VIII. We started our lesson with a short video explaining the concepts of the micro and macro worlds. Then we went on to draw a brief historical sketch of quantum physics, which began with the indivisible atoms of Democritus and ended with the discovery of the Higgs boson, a fundamental particle responsible for particle mass. To help students understand the importance of quantum physics in our daily lives, we illustrated this by asking students to smell burnt paper, a flower, and chewing gum, showing that even through our sense of smell, quantum physics is involved. For assessment, students were asked some questions, with explanations given to queries about the application of quantum physics, to bring the microteaching to an end.</p><aside class="pull-quote" dir="ltr" data-section="diary" aria-label="Pull quote">
-  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
-  <blockquote class="pull-quote-text">In the second microteaching lesson today at our university, we taught a physics topic titled &quot;quantum physics in our surroundings&quot;</blockquote>
-</aside>
-
+<p>In the second microteaching lesson today at our university, we taught a physics topic titled "quantum physics in our surroundings" to the students of B.Ed-VIII. We started our lesson with a short video explaining the concepts of the micro and macro worlds. Then we went on to draw a brief historical sketch of quantum physics, which began with the indivisible atoms of Democritus and ended with the discovery of the Higgs boson, a fundamental particle responsible for particle mass. To help students understand the importance of quantum physics in our daily lives, we illustrated this by asking students to smell burnt paper, a flower, and chewing gum, showing that even through our sense of smell, quantum physics is involved. For assessment, students were asked some questions, with explanations given to queries about the application of quantum physics, to bring the microteaching to an end.</p>
 
 <p>The purpose of our teaching was to help students understand the term ‘quantum physics’ through a simple example often overlooked. As students listened to this somewhat complicated term with patient equanimity, we felt that if concepts like this were explained by relating them to habitual affairs, we could make physics more interesting and easier to understand. However, while performing an activity in which we had to give students material to observe, we couldn't engage the whole class. The concern is that we failed to do so when we had an opportunity to engage more students. Apart from this, students could not remain on the same page, as our slow voice disengaged them now and then.</p>
 

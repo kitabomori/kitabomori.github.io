@@ -329,22 +329,6 @@
       </g>
     </symbol>
 
-    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
-         for the post side rails (see .post-side / .rail-lamp in
-         main.css). Distinct from the per-section header icons above;
-         reused everywhere, tinted per section via --accent, echoing
-         "the light of learning" imagery rather than repeating the
-         book/leaf/ink-drop/pen-nib language already used elsewhere
-         on the site. -->
-    <symbol id="icon-lamp" viewBox="0 0 90 90">
-      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
-        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
-        <path d="M45 74 L45 82 M36 82 H54"/>
-        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
-      </g>
-    </symbol>
-
   </defs>
 </svg>
 
@@ -622,40 +606,16 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
-<!-- Section accent group + Lesson Plan detection, computed once up
-     front so both the side rails (below) and the post body / pull-quote
-     (further down) agree on the same value.
-     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
-     contains "lesson-plan") are explicitly out of scope for the whole
-     redesign — this scope restriction is intentional and must not be
-     removed or narrowed. They keep the original plain teal rail
-     untouched below. -->
-
-
-
-
-
-
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter.
-     Lesson Plans: left exactly as before (plain teal diamond, no
-     section accent, no lamp icon) — see scope note above.
-     Everything else: the line now carries the site's new lamp motif,
-     tinted with the section's accent color. -->
-
-<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+     placement in the DOM doesn't matter. -->
+<aside class="post-side post-side-left" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+<aside class="post-side post-side-right" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-
 
 <article class="post-container">
 
@@ -719,14 +679,10 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+  <div class="post-body post-body-diary post-body-reflection">
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">November 10, 2021</div>
 
-<p>Observation to design a lesson plan was the objective of today's school visit. Till the time we reached the classroom, the cooperative teacher had already started the lesson. We observed the lesson, and the teacher was teaching a text from the English book about "Shah Abdul Latif Bhitai". He was using the blackboard to write the key points while reading the text aloud. In the next phase, the cooperative teacher asked students about Bhitai's background, name, early life and education, and finally about Bhitai's spiritual growth. A couple of students answered, repeating what was written in the provided textbook, like parrots. The homework was to write a short paragraph about one aspect of Bhitai's life. After the class, when we asked the cooperative teacher about his lesson plan for the topic, "to see how successful he has been in achieving the objective of the class."</p><aside class="pull-quote" dir="ltr" data-section="diary" aria-label="Pull quote">
-  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
-  <blockquote class="pull-quote-text">He said, &quot;I have enough experience to walk into a class and teach whatever the topic for the day is&quot;.</blockquote>
-</aside>
-
+<p>Observation to design a lesson plan was the objective of today's school visit. Till the time we reached the classroom, the cooperative teacher had already started the lesson. We observed the lesson, and the teacher was teaching a text from the English book about "Shah Abdul Latif Bhitai". He was using the blackboard to write the key points while reading the text aloud. In the next phase, the cooperative teacher asked students about Bhitai's background, name, early life and education, and finally about Bhitai's spiritual growth. A couple of students answered, repeating what was written in the provided textbook, like parrots. The homework was to write a short paragraph about one aspect of Bhitai's life. After the class, when we asked the cooperative teacher about his lesson plan for the topic, "to see how successful he has been in achieving the objective of the class."</p>
 
 <p>It was very shocking to hear the cooperative teacher say he had not been planning any lessons for the last several years. To answer the question, how do you teach a particular topic? He said, "I have enough experience to walk into a class and teach whatever the topic for the day is". At the same time, he emphasised the importance of the lesson plan for moving a lesson systematically. Knowing the importance of something and still doing nothing is a formidable crime. A lesson plan helps us focus on specific areas by allocating appropriate time to each segment. It helps us move at a learner-directed pace to achieve the lesson objective. At the beginning, it helps prepare students to learn something new, and at the end, it shows up and evaluates how much they have learned.</p>
 

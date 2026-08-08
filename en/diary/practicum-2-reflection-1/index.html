@@ -329,22 +329,6 @@
       </g>
     </symbol>
 
-    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
-         for the post side rails (see .post-side / .rail-lamp in
-         main.css). Distinct from the per-section header icons above;
-         reused everywhere, tinted per section via --accent, echoing
-         "the light of learning" imagery rather than repeating the
-         book/leaf/ink-drop/pen-nib language already used elsewhere
-         on the site. -->
-    <symbol id="icon-lamp" viewBox="0 0 90 90">
-      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
-        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
-        <path d="M45 74 L45 82 M36 82 H54"/>
-        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
-      </g>
-    </symbol>
-
   </defs>
 </svg>
 
@@ -622,40 +606,16 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
-<!-- Section accent group + Lesson Plan detection, computed once up
-     front so both the side rails (below) and the post body / pull-quote
-     (further down) agree on the same value.
-     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
-     contains "lesson-plan") are explicitly out of scope for the whole
-     redesign — this scope restriction is intentional and must not be
-     removed or narrowed. They keep the original plain teal rail
-     untouched below. -->
-
-
-
-
-
-
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter.
-     Lesson Plans: left exactly as before (plain teal diamond, no
-     section accent, no lamp icon) — see scope note above.
-     Everything else: the line now carries the site's new lamp motif,
-     tinted with the section's accent color. -->
-
-<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+     placement in the DOM doesn't matter. -->
+<aside class="post-side post-side-left" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+<aside class="post-side post-side-right" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-
 
 <article class="post-container">
 
@@ -719,14 +679,10 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+  <div class="post-body post-body-diary post-body-reflection">
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">March 25, 2022</div>
 
-<p>Practicum-II was a step upon Practicum-I, which involved several visits to the X and Y Government School in Old Sukkur. During those visits, we observed and understood the roles of various aspects of the school, including the building, labs and laboratories, library, classrooms, management, teachers, the environment, and all staff who support the learning and teaching process. It also emphasises co-teaching and receiving feedback from co-teachers to further strengthen it.</p><aside class="pull-quote" dir="ltr" data-section="diary" aria-label="Pull quote">
-  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
-  <blockquote class="pull-quote-text">That&#39;s why one of my instructors used to say, &quot;Teaching is not everyone&#39;s cup of tea.&quot;.</blockquote>
-</aside>
-
+<p>Practicum-II was a step upon Practicum-I, which involved several visits to the X and Y Government School in Old Sukkur. During those visits, we observed and understood the roles of various aspects of the school, including the building, labs and laboratories, library, classrooms, management, teachers, the environment, and all staff who support the learning and teaching process. It also emphasises co-teaching and receiving feedback from co-teachers to further strengthen it.</p>
 
 <p>The Practicum supervisor taught us how to plan and implement a lesson in the first two sessions. Then we visited two schools selected by the Department of Education to plan lessons, learn about the students, and identify facilities that could be used during co-teaching. Both were primary schools, but one was Urdu-medium and the other was Sindhi-medium. The supervisor divided the student-teachers into groups based on whether they wanted to teach in an Urdu- or Sindhi-medium school. I end up at an Urdu-medium school with some other students. We went to the assigned grade 5th class, per the supervisor's instructions and with the permission of the school principal. For a while, I observed the teacher's teaching style and gained insight into her methods and students. During the break, I talked with the teacher about the students and the school. Finally, as a group, we decided to teach mathematics in the coming weeks and asked the teacher for a copy of the textbook.</p>
 

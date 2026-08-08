@@ -329,22 +329,6 @@
       </g>
     </symbol>
 
-    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
-         for the post side rails (see .post-side / .rail-lamp in
-         main.css). Distinct from the per-section header icons above;
-         reused everywhere, tinted per section via --accent, echoing
-         "the light of learning" imagery rather than repeating the
-         book/leaf/ink-drop/pen-nib language already used elsewhere
-         on the site. -->
-    <symbol id="icon-lamp" viewBox="0 0 90 90">
-      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
-        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
-        <path d="M45 74 L45 82 M36 82 H54"/>
-        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
-      </g>
-    </symbol>
-
   </defs>
 </svg>
 
@@ -622,40 +606,16 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
-<!-- Section accent group + Lesson Plan detection, computed once up
-     front so both the side rails (below) and the post body / pull-quote
-     (further down) agree on the same value.
-     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
-     contains "lesson-plan") are explicitly out of scope for the whole
-     redesign — this scope restriction is intentional and must not be
-     removed or narrowed. They keep the original plain teal rail
-     untouched below. -->
-
-
-
-
-
-
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter.
-     Lesson Plans: left exactly as before (plain teal diamond, no
-     section accent, no lamp icon) — see scope note above.
-     Everything else: the line now carries the site's new lamp motif,
-     tinted with the section's accent color. -->
-
-<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+     placement in the DOM doesn't matter. -->
+<aside class="post-side post-side-left" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+<aside class="post-side post-side-right" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-
 
 <article class="post-container">
 
@@ -719,14 +679,10 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+  <div class="post-body post-body-diary post-body-reflection">
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">November 22, 2023</div>
 
-<p>The continuum from one lesson to the next is what I like most about the 22nd November visit to X School, Sukkur. Last week, I engaged the students in a reading activity to find out their learning styles. Based on the collected data, I planned to go with reading aloud and listening drills this time. Before the class, I spoke with the coordinator and learned that it is against school policy to help prospective teachers provide the printouts. The coordinator gave me an undue favour by providing me with excerpts from the novel "Sophie's World," which turned out to be one of his favourite books. Fortunately, the photocopying machine was not working, and I got the prints from outside the school. Anyhow, it was concerning to me whether the actual teachers of the school needed some printed material, and if the machine is not working, it would halt the learning process.</p><aside class="pull-quote" dir="rtl" data-section="diary" aria-label="اقتباس">
-  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
-  <blockquote class="pull-quote-text">واپس جائیں: مرکزی صفحہ · مضامین · جائزے · تخلیقی تحریر · خطوط · تدریسی ڈائری · تقریبات</blockquote>
-</aside>
-
+<p>The continuum from one lesson to the next is what I like most about the 22nd November visit to X School, Sukkur. Last week, I engaged the students in a reading activity to find out their learning styles. Based on the collected data, I planned to go with reading aloud and listening drills this time. Before the class, I spoke with the coordinator and learned that it is against school policy to help prospective teachers provide the printouts. The coordinator gave me an undue favour by providing me with excerpts from the novel "Sophie's World," which turned out to be one of his favourite books. Fortunately, the photocopying machine was not working, and I got the prints from outside the school. Anyhow, it was concerning to me whether the actual teachers of the school needed some printed material, and if the machine is not working, it would halt the learning process.</p>
 
 <p>Many things made me feel happy about this lesson. Initiating the class by simply writing the title of "Sophie's World" on the board and inviting students to wonder about the story was an effective strategy. What I witnessed was that the students were curious and offered various answers. The diverse and large responses made the class interactive, where students not only demonstrated their prior knowledge but also indicated whether they were reading stories. The addition of an audio recording of the novel added a dynamic element to the lesson. The combination of auditory input with the simultaneous tasks of listening and reading engaged multiple senses. This multisensory approach not only catered to different learning styles in the classroom but also reinforced the content. And finally, the discussion on the importance of loud reading is a valuable addition to the lesson. The act of reading aloud, for example, encouraged students to make mistakes as they became fluent in the target language. This practice aids in comprehension and fosters a deeper understanding of the text.</p>
 

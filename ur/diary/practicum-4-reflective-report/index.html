@@ -329,22 +329,6 @@
       </g>
     </symbol>
 
-    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
-         for the post side rails (see .post-side / .rail-lamp in
-         main.css). Distinct from the per-section header icons above;
-         reused everywhere, tinted per section via --accent, echoing
-         "the light of learning" imagery rather than repeating the
-         book/leaf/ink-drop/pen-nib language already used elsewhere
-         on the site. -->
-    <symbol id="icon-lamp" viewBox="0 0 90 90">
-      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
-        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
-        <path d="M45 74 L45 82 M36 82 H54"/>
-        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
-      </g>
-    </symbol>
-
   </defs>
 </svg>
 
@@ -622,40 +606,16 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
-<!-- Section accent group + Lesson Plan detection, computed once up
-     front so both the side rails (below) and the post body / pull-quote
-     (further down) agree on the same value.
-     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
-     contains "lesson-plan") are explicitly out of scope for the whole
-     redesign — this scope restriction is intentional and must not be
-     removed or narrowed. They keep the original plain teal rail
-     untouched below. -->
-
-
-
-
-
-
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter.
-     Lesson Plans: left exactly as before (plain teal diamond, no
-     section accent, no lamp icon) — see scope note above.
-     Everything else: the line now carries the site's new lamp motif,
-     tinted with the section's accent color. -->
-
-<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+     placement in the DOM doesn't matter. -->
+<aside class="post-side post-side-left" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+<aside class="post-side post-side-right" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-
 
 <article class="post-container">
 
@@ -719,14 +679,10 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflective-report" data-section="diary">
+  <div class="post-body post-body-diary post-body-reflective-report">
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">December 6, 2023</div>
 
-<p>As a teacher, the first time I met the student outside the classroom, I was a stranger to them. The second time I met on the playground, I was an instructor. The next time I was their class fellow. Being with the students at the playgrounds and having small chats here and there throughout the practicum at X School, Sukkur, made this experience a bit different from the past ones. In this reflective report, I will discuss what I did during the ten visits to the school and what I have learned.</p><aside class="pull-quote" dir="rtl" data-section="diary" aria-label="اقتباس">
-  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
-  <blockquote class="pull-quote-text">واپس جائیں: مرکزی صفحہ · مضامین · جائزے · تخلیقی تحریر · خطوط · تدریسی ڈائری · تقریبات</blockquote>
-</aside>
-
+<p>As a teacher, the first time I met the student outside the classroom, I was a stranger to them. The second time I met on the playground, I was an instructor. The next time I was their class fellow. Being with the students at the playgrounds and having small chats here and there throughout the practicum at X School, Sukkur, made this experience a bit different from the past ones. In this reflective report, I will discuss what I did during the ten visits to the school and what I have learned.</p>
 
 <p>There were a couple of experiences during the first few visits to the school that prompted me to go against the odds. The initial interactions with the school administration gave me goosebumps, as I, along with my colleagues, was instructed to follow the school's rules, like prisoners in a jail. Imagine you are at a place with more than 2,000 people who came to interact and learn from one another for 6 hours. You are advised to follow the rules that halt learning. Would teachers be able to work if they had no agency? Secondly, teachers are the drivers and facilitators of learning. What I had found was that teachers at this particular school were exhausted while checking student homework copies, developing lesson plans, and giving reports to school administration and parents about students' progress. This also made them stay in the staffroom throughout the school hours. And I doubt there was any concept of collegiality among teachers to share and learn from one another's experiences. It is a question to ask management: how would they take off some of the teachers' burden so they could spend more time with students, beyond the 40-minute class?</p>
 

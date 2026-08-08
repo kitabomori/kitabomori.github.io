@@ -329,22 +329,6 @@
       </g>
     </symbol>
 
-    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
-         for the post side rails (see .post-side / .rail-lamp in
-         main.css). Distinct from the per-section header icons above;
-         reused everywhere, tinted per section via --accent, echoing
-         "the light of learning" imagery rather than repeating the
-         book/leaf/ink-drop/pen-nib language already used elsewhere
-         on the site. -->
-    <symbol id="icon-lamp" viewBox="0 0 90 90">
-      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
-        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
-        <path d="M45 74 L45 82 M36 82 H54"/>
-        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
-      </g>
-    </symbol>
-
   </defs>
 </svg>
 
@@ -622,40 +606,16 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
-<!-- Section accent group + Lesson Plan detection, computed once up
-     front so both the side rails (below) and the post body / pull-quote
-     (further down) agree on the same value.
-     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
-     contains "lesson-plan") are explicitly out of scope for the whole
-     redesign — this scope restriction is intentional and must not be
-     removed or narrowed. They keep the original plain teal rail
-     untouched below. -->
-
-
-
-
-
-
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter.
-     Lesson Plans: left exactly as before (plain teal diamond, no
-     section accent, no lamp icon) — see scope note above.
-     Everything else: the line now carries the site's new lamp motif,
-     tinted with the section's accent color. -->
-
-<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+     placement in the DOM doesn't matter. -->
+<aside class="post-side post-side-left" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
+<aside class="post-side post-side-right" aria-hidden="true">
+  <span class="post-ornament"></span>
 </aside>
-
 
 <article class="post-container">
 
@@ -719,14 +679,10 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+  <div class="post-body post-body-diary post-body-reflection">
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">October 4, 2023</div>
 
-<p>The third lesson was a continuation of the last lesson, where I taught about the loudness of sound, but this time it was about the relationship between amplitude and sound and how we measure it. There is a break before the science class, so I arrived about 20 minutes early and arranged the chairs for a group task. For some time, I mingled with students and discovered their interest in certain subjects. It was shocking to learn that almost every student had a tutor in an air-conditioned room at home, and I wondered why these students came to this school. When all the students entered the class, I let them make groups with their friends. The class was about to start when the supervising teacher came in and called a few students to the back to take a test they had missed last time. I should have stopped it from happening, but some unknown rationale overcame me, and I felt that the supervising teacher is bound by the school's strict rules, which require one to fulfil certain tasks, such as submitting test results and checking copies on time. Certain things were beyond my control, but others also caught my attention and were part of my teachings.</p><aside class="pull-quote" dir="ltr" data-section="diary" aria-label="Pull quote">
-  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
-  <blockquote class="pull-quote-text">Today&#39;s lesson involved students in groups, and I believe they learned the concepts, but I don&#39;t have data to prove it.</blockquote>
-</aside>
-
+<p>The third lesson was a continuation of the last lesson, where I taught about the loudness of sound, but this time it was about the relationship between amplitude and sound and how we measure it. There is a break before the science class, so I arrived about 20 minutes early and arranged the chairs for a group task. For some time, I mingled with students and discovered their interest in certain subjects. It was shocking to learn that almost every student had a tutor in an air-conditioned room at home, and I wondered why these students came to this school. When all the students entered the class, I let them make groups with their friends. The class was about to start when the supervising teacher came in and called a few students to the back to take a test they had missed last time. I should have stopped it from happening, but some unknown rationale overcame me, and I felt that the supervising teacher is bound by the school's strict rules, which require one to fulfil certain tasks, such as submitting test results and checking copies on time. Certain things were beyond my control, but others also caught my attention and were part of my teachings.</p>
 
 <p>The very first thing that went my way was the teaching method, which made me understand the importance of selecting a suitable method for teaching a particular topic. The selected lecture demonstration method, with the addition of group work for the topic, was better than last time. Science demands that phenomena/concepts be explained in ways students can see, touch, and imagine. The lecture-demonstration method helped me provide the basic information before the demonstration. I did not focus solely on telling the students what amplitude is; I involved the students in forming a wave using a thread and a tuning fork, and then had them explain its characteristics by reading the provided text in the books on their own. Secondly, I was surprised by the number of questions the students asked me during their group work. Previously, there were very few questions from the students, and I don't know why. But one possible reason could be whether a teacher appreciates questions and provides answers. At the same time, increasing the number of questions is related to the attention a teacher gives to each student because of smaller group sizes, as compared to the whole class.</p>
 
