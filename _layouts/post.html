@@ -6,62 +6,16 @@ layout: base
      Shows title, date, description, and body content.
      ============================================================ -->
 
-<!-- Section accent group + Lesson Plan detection, computed once up
-     front so both the side rails (below) and the post body / pull-quote
-     (further down) agree on the same value.
-     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
-     contains "lesson-plan") are explicitly out of scope for the whole
-     redesign — this scope restriction is intentional and must not be
-     removed or narrowed. They keep the original plain teal rail
-     untouched below. -->
-{% assign post_is_lesson_plan = false %}
-{% if page.collection == "diary" and page.slug contains "lesson-plan" %}
-  {% assign post_is_lesson_plan = true %}
-{% endif %}
-
-{% assign accent_group = "diary" %}
-{% case page.collection %}
-  {% when "articles" %}
-    {% assign accent_group = "articles" %}
-  {% when "reviews" %}
-    {% assign accent_group = "reviews" %}
-  {% when "letters" %}
-    {% assign accent_group = "letters" %}
-  {% when "events" %}
-    {% assign accent_group = "events" %}
-  {% when "short_stories", "poetry", "dialogues", "satire", "nonfiction", "reflections" %}
-    {% assign accent_group = "creative" %}
-  {% when "diary" %}
-    {% assign accent_group = "diary" %}
-{% endcase %}
-
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter.
-     Lesson Plans: left exactly as before (plain teal diamond, no
-     section accent, no lamp icon) — see scope note above.
-     Everything else: the line now carries the site's new lamp motif,
-     tinted with the section's accent color. -->
-{% if post_is_lesson_plan %}
+     placement in the DOM doesn't matter. -->
 <aside class="post-side post-side-left" aria-hidden="true">
   <span class="post-ornament"></span>
 </aside>
 <aside class="post-side post-side-right" aria-hidden="true">
   <span class="post-ornament"></span>
 </aside>
-{% else %}
-<aside class="post-side post-side-left" data-section="{{ accent_group }}" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
-</aside>
-<aside class="post-side post-side-right" data-section="{{ accent_group }}" aria-hidden="true">
-  <span class="post-ornament post-ornament-accent">
-    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
-  </span>
-</aside>
-{% endif %}
 
 <article class="post-container">
 
@@ -137,7 +91,7 @@ layout: base
   {% elsif page.slug contains "reflection" %}
     {% assign post_format = "reflection" %}
   {% endif %}
-  <div class="post-body post-body-{{ page.collection }}{% if post_format != "" %} post-body-{{ post_format }}{% endif %}"{% unless post_is_lesson_plan %} data-section="{{ accent_group }}"{% endunless %}>
+  <div class="post-body post-body-{{ page.collection }}{% if post_format != "" %} post-body-{{ post_format }}{% endif %}">
     {{ content }}
   </div>
 
