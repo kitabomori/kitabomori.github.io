@@ -1,7 +1,7 @@
 ---
 layout: post
 title_en: "The Three Questions"
-title_ur: ""
+title_ur: "تین سوال"
 date: 2026-07-01
 author_en: ""
 author_ur: ""
