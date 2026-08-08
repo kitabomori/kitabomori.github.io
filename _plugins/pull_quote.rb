@@ -1,8 +1,7 @@
 # ==============================================================
 # pull_quote.rb – auto-extracts a "crux" pull-quote sentence from
-# each post and splices it into the rendered HTML, roughly at the
-# midpoint of the post (see splice_into_region below) — not tucked
-# up near the top after just 2-3 paragraphs.
+# each post and splices it into the rendered HTML right at the top,
+# before the first paragraph, so it reads as a lede.
 #
 # SCOPE: Lesson Plan posts (Teaching Diary entries whose slug
 # contains "lesson-plan") are never touched by this plugin — no
@@ -254,24 +253,14 @@ module Kitabomori
       HTML
     end
 
-    # Inserts quote_html after the paragraph closest to the middle of
-    # the post, so roughly half the prose sits above the quote and
-    # half below — not tucked up near the top after just 2-3
-    # paragraphs. For an N-paragraph post, that's after paragraph
-    # floor(N/2): a 5-paragraph post gets it after paragraph 2 (2
-    # before, 3 after); a 6-paragraph post gets it after paragraph 3
-    # (3 before, 3 after). A single-paragraph post has nowhere else
-    # to put it, so it goes right after that one paragraph.
-    # `region` here is only ever the isolated post-body substring
-    # (see process, above) — never the full page.
+    # Inserts quote_html right before the first prose paragraph, so it
+    # reads as a lede — the reader sees the quote first, then the
+    # post. `region` here is only ever the isolated post-body
+    # substring (see process, above) — never the full page.
     def splice_into_region(region, paragraphs, quote_html)
       return region if paragraphs.empty?
 
-      n = paragraphs.length
-      before_count = [n / 2, 1].max
-      index = before_count - 1
-      insert_at = paragraphs[index][:finish]
-
+      insert_at = paragraphs[0][:start]
       region[0...insert_at] + quote_html + region[insert_at..-1]
     end
   end
