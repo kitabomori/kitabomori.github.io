@@ -15,9 +15,6 @@ permalink: /
   {% if site.lang == 'ur' %}
 
   <section class="home-welcome">
-    <div class="home-watermark" aria-hidden="true">
-      <svg width="100%" height="100%"><use href="#icon-open-book-pen"></use></svg>
-    </div>
     <div class="page-decor page-decor-hero decor-open-book-pen" aria-hidden="true">
       <svg class="decor-svg"><use href="#icon-open-book-pen"></use></svg>
     </div>
@@ -81,9 +78,6 @@ permalink: /
   {% else %}
 
   <section class="home-welcome">
-    <div class="home-watermark" aria-hidden="true">
-      <svg width="100%" height="100%"><use href="#icon-open-book-pen"></use></svg>
-    </div>
     <div class="page-decor page-decor-hero decor-open-book-pen" aria-hidden="true">
       <svg class="decor-svg"><use href="#icon-open-book-pen"></use></svg>
     </div>
