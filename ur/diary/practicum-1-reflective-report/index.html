@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,10 +719,14 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflective-report">
+  <div class="post-body post-body-diary post-body-reflective-report" data-section="diary">
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">January 20, 2024</div>
 
-<p>The third semester of B.Ed.-III started in October 2021. With other courses, Practicum-I was also part of the semester. The practicum course is unique in that it aims to provide prospective teachers with experience by exposing them to the school environment through weekly visits. It also has specific objectives, such as identifying connections between teaching theory and practice. The other rationales are: to collaborate with peers, cooperating teachers, school staff, and the practicum supervisor; and to develop professional relationships by observing elements of the school from the gatekeeper to the principal. Most of the lot was to invite, accept and utilise feedback from the cooperating teacher, supervisor and peers for learning.</p>
+<p>The third semester of B.Ed.-III started in October 2021. With other courses, Practicum-I was also part of the semester. The practicum course is unique in that it aims to provide prospective teachers with experience by exposing them to the school environment through weekly visits. It also has specific objectives, such as identifying connections between teaching theory and practice. The other rationales are: to collaborate with peers, cooperating teachers, school staff, and the practicum supervisor; and to develop professional relationships by observing elements of the school from the gatekeeper to the principal. Most of the lot was to invite, accept and utilise feedback from the cooperating teacher, supervisor and peers for learning.</p><aside class="pull-quote" dir="rtl" data-section="diary" aria-label="اقتباس">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">واپس جائیں: مرکزی صفحہ · مضامین · جائزے · تخلیقی تحریر · خطوط · تدریسی ڈائری · تقریبات</blockquote>
+</aside>
+
 
 <p>To achieve the objectives, the practicum was completed in 16 weeks. The supervisor allocated the first two weeks to discuss what the practicum is all about, what we (student teachers) are going to do in the coming weeks and to teach us how to write a good reflection. Then, for the following 10 weeks, we visited the Government X School in Old Sukkur, each time with an observation sheet listing a different objective to be achieved. Every visit added small chunks to my knowledge, and the supervisor asked every student to write a reflection to confirm whether they were learning and showing any signs of improvement. At the same time, the remaining three weeks were dedicated to reflecting on and presenting the learnings in three seminar presentations. And the last part of the lot was to write a reflective report summarising everything that happened in the semester.</p>
 
