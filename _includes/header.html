@@ -19,10 +19,11 @@
       {% if site.lang == 'ur' %}کتابومری{% else %}Kitabomori{% endif %}
     </a>
 
-    <!-- Mobile nav toggle (plain text, no icon) -->
-    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation"
+    <!-- Mobile nav toggle: borderless, matches the other header
+         controls (underline on hover/focus, no boxed outline). -->
+    <button class="nav-toggle header-control-btn" onclick="toggleNav()" aria-label="Toggle navigation"
             aria-expanded="false" aria-controls="main-nav"
-            style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:4px 10px; cursor:pointer; font-size:0.85rem;">
+            style="color:#FFFFFF; padding:3px 6px;">
       {% if site.lang == 'ur' %}مینو{% else %}Menu{% endif %}
     </button>
 
@@ -79,6 +80,14 @@
               title="{% if site.lang == 'ur' %}تھیم تبدیل کریں (روشن / سیپیا / تاریک){% else %}Cycle theme (Light / Sepia / Dark){% endif %}"
               style="color:#FFFFFF; padding:3px 6px; margin-{% if site.lang == 'ur' %}right{% else %}left{% endif %}:6px;">
         {% if site.lang == 'ur' %}سیپیا{% else %}Sepia{% endif %}
+      </button>
+
+      <!-- Font-size toggle: cycles the whole page's text size,
+           default -> large -> larger (see textsize.js / main.css). -->
+      <button onclick="toggleTextSize()" id="textsize-btn" class="header-control-btn"
+              title="{% if site.lang == 'ur' %}تحریر کا حجم تبدیل کریں{% else %}Change text size{% endif %}"
+              style="color:#FFFFFF; padding:3px 6px; margin-{% if site.lang == 'ur' %}right{% else %}left{% endif %}:6px;">
+        Aa
       </button>
 
     </div><!-- /.header-controls -->
@@ -171,4 +180,32 @@
       updateThemeLabel(mode);
     }
   });
+
+  /* --------------------------------------------------------
+     Sticky header: add a "compact" state once the page has
+     scrolled past a small threshold, so long posts don't give up
+     as much vertical space to the header while still keeping nav/
+     search/theme controls reachable without scrolling back up.
+  -------------------------------------------------------- */
+  (function () {
+    var header = document.querySelector('.site-header');
+    if (!header) return;
+    var ticking = false;
+    var THRESHOLD = 40;
+
+    function update() {
+      var scrolled = (window.scrollY || document.documentElement.scrollTop) > THRESHOLD;
+      header.classList.toggle('header-scrolled', scrolled);
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    update();
+  })();
 </script>

@@ -12,7 +12,11 @@
        Border:     1px bottom in #009F93
        Heading:    ##00A693
 
-     ANIMATION: CSS-only marquee. Pauses on hover.
+     ANIMATION: CSS-only marquee. Pauses on hover (mouse) and on
+     focus-within (keyboard) — no separate pause button; readers who
+     can't hover/focus (e.g. touchscreen without a pointer) still get
+     the full text via aria-live-free plain links, since every item is
+     a real, tabbable <a>, not purely decorative motion.
      RTL: animation-direction reversed for dir="rtl" pages.
      No icons, no emoji, plain text only.
      ============================================================ -->
@@ -41,13 +45,6 @@
   <span class="ticker-label" style="color:#009F93; font-weight:600; padding:0 12px; white-space:nowrap;">
     {% if site.lang == 'ur' %}تازہ ترین{% else %}Latest{% endif %}
   </span>
-
-  <!-- Pause/resume control for accessibility (WCAG 2.2.2) -->
-  <button class="ticker-pause ticker-pause-btn" onclick="document.querySelector('.ticker-track').classList.toggle('paused')"
-          aria-label="{% if site.lang == 'ur' %}سکرول روکیں یا جاری رکھیں{% else %}Pause or resume scrolling{% endif %}"
-          style="color:#009F93; padding:2px 6px; margin-right:8px;">
-    {% if site.lang == 'ur' %}⏸{% else %}Pause{% endif %}
-  </button>
 
   <!-- Scrolling track wrapper (overflow hidden) -->
   <div class="ticker-overflow">
