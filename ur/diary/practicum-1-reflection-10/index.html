@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,18 +719,24 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflection">
+  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+    <!--KITABOMORI-POST-BODY-START-->
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">December 15, 2021</div>
 
 <p>The target of today's school visit was to observe a child. I selected A (a student) for the aforementioned objective. The moment I fixed my gaze on A, he was engaged in an activity with his friend next to him. He looked like a healthy child, with an average height and a sound body. Whenever the cooperating teacher gave instructions, he tried to listen and write at the same time, which I doubt he was giving the teacher partial attention. In between, A borrowed a notebook from a guy in front of him. At the last moment of the mathematics class, when the teacher asked a question, A asked his friend for help. 35 minutes were not sufficient for me to determine Arshad's strengths and talents. So, during the break, I interviewed him.</p>
 
-<p>After conversing with A, I developed a clear image of him. According to him, he would prefer group study to the traditional lecture method. In group learning with peers, there is no language barrier and no restriction on formal behaviour. A loves to sketch, but unfortunately, no one will appreciate him now. He also loves to play cricket and other outdoor sports. He is from a lower-middle-class background and studied in government schools where teachers didn't focus on individual students' skills and learning styles.</p>
+<p>After conversing with A, I developed a clear image of him. According to him, he would prefer group study to the traditional lecture method. In group learning with peers, there is no language barrier and no restriction on formal behaviour. A loves to sketch, but unfortunately, no one will appreciate him now. He also loves to play cricket and other outdoor sports. He is from a lower-middle-class background and studied in government schools where teachers didn't focus on individual students' skills and learning styles.</p><aside class="pull-quote pull-quote-fallback" dir="rtl" data-section="diary" aria-label="اقتباس">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">ریاضی کی کلاس میں ایک طالب علم کا مشاہدہ، اور خاکہ نگاری، کرکٹ اور گروپ اسٹڈی پر ایک گفتگو۔</blockquote>
+</aside>
+
 
 <p>Teaching is not only about uttering a few words on a topic in front of a crowd. It is also actually seeking to understand the nature and behaviour of a child. Understanding a child's nature helps a teacher identify strengths, talents, and weaknesses, and develop a teaching style that suits the student's learning style. At the same time, it helps a teacher plan a lesson tailored to a student's intellect, making it more productive.</p>
 
 <p style="margin-top:0.75rem;"><a href="/ur/diary/practicum-1-reflection-11/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 11 &rarr;</a></p>
 <p style="margin-top:0.5rem;"><a href="/ur/diary/practicum-1-reflection-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 9</a></p>
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

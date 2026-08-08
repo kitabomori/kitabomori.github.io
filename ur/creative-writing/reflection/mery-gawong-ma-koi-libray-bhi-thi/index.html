@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="creative" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="creative" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,7 +719,8 @@
 
   
   
-  <div class="post-body post-body-reflections">
+  <div class="post-body post-body-reflections" data-section="creative">
+    <!--KITABOMORI-POST-BODY-START-->
     
 <p>چند روز پہلے میری یونیورسٹی میں بک فیئر کا انعقاد ہوا۔ میں ایک دوست کے ساتھ وہاں گیا اور دل چاہا کہ چند کتابیں خرید لوں، مگر جیب میں موجود رقم کتابوں کی قیمتوں کے سامنے بہت کم تھی۔ اس لمحے پہلی بار شدت سے احساس ہوا کہ ایک طالب علم اگر کتاب خریدنے کی استطاعت نہ رکھتا ہو تو اس سے بڑھ کر علمی محرومی شاید کوئی اور نہیں۔ میں نے خود کو تسلی دی کہ کتابیں نہ سہی، یونیورسٹی کی لائبریری سے پڑھ لوں گا، لیکن فوراً یاد آیا کہ تعلیم مکمل ہونے میں چند ہی دن باقی ہیں اور اس لائبریری تک رسائی بھی ختم ہونے والی ہے۔</p>
 
@@ -687,7 +728,11 @@
 
 <p>بچپن سے میں ایک ہی نصیحت سنتا آیا ہوں: “محنت کرو اور پڑھو۔” وقت بدل گیا، مگر والدین اور اساتذہ کی یہ نصیحت آج بھی ویسی ہی ہے۔ اب جبکہ میں خود تدریس کی تعلیم حاصل کر چکا ہوں، مجھے محسوس ہوتا ہے کہ صرف “محنت کرو” کہنا کافی نہیں ہوتا، بلکہ ہم مثالوں سے زیادہ سیکھتے ہیں۔ مسلسل لیکچر دینے کے بجائے اگر بچوں کو کتابوں تک رسائی، ایک اچھا ماحول اور پڑھنے والے لوگ مل جائیں تو شاید وہ خود ہی پڑھائی کی طرف راغب ہو جائیں۔</p>
 
-<p>میرے ذہن میں اس کی کئی مثالیں محفوظ ہیں۔ میرے ایک کزن، جو میرے نائٹ اسکول کے استاد بھی تھے، انتہائی سخت مزاج تھے۔ ان کے سامنے بچے کھیلنا تو دور، اونچی آواز میں بات کرنے سے بھی گھبراتے تھے۔ ان کی سختی شاید نظم و ضبط قائم رکھتی تھی، مگر محبت سے سیکھنے کا ماحول کبھی   پیدا نہیں کیا۔</p>
+<p>میرے ذہن میں اس کی کئی مثالیں محفوظ ہیں۔ میرے ایک کزن، جو میرے نائٹ اسکول کے استاد بھی تھے، انتہائی سخت مزاج تھے۔ ان کے سامنے بچے کھیلنا تو دور، اونچی آواز میں بات کرنے سے بھی گھبراتے تھے۔ ان کی سختی شاید نظم و ضبط قائم رکھتی تھی، مگر محبت سے سیکھنے کا ماحول کبھی   پیدا نہیں کیا۔</p><aside class="pull-quote" dir="rtl" data-section="creative" aria-label="اقتباس">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">اب جبکہ میں خود تدریس کی تعلیم حاصل کر چکا ہوں، مجھے محسوس ہوتا ہے کہ صرف “محنت کرو”</blockquote>
+</aside>
+
 
 <p>یہ بات سچ ہے کہ اسی نائٹ اسکول میں ایک چھوٹی سی لائبریری بھی تھی۔ ایک کمرے پر مشتمل اس لائبریری کو میرے چاچا کے چند  ہم عمر دوست چلاتے تھے۔ میں اس وقت اتنا چھوٹا تھا کہ یہ بھی نہیں جانتا تھا کہ لائبریری کیا ہوتی ہے، مگر  بار بار وہاں جانے کو دل چاہتا تھا اور میں ایک دو مرتبہ ہی اندر جا سکا۔ پھر وقت بدلا۔ لائبریری چلانے والے روزگار کی تلاش میں شہر چلے گئے، اور ان کے ساتھ ہی وہ لائبریری بھی ہمیشہ کے لیے بند ہو گئی۔ اب تو شاید  کسی کو یاد بھی نہیں ہمارے گاؤں میں کوئی  لائبریری بھی تھی۔ اس کے بعد جماعت ہشتم تک میں نے نصابی کتابوں کے علاوہ کوئی ایسی کتاب نہیں دیکھی جسے شوق سے پڑھ سکوں۔</p>
 
@@ -698,6 +743,7 @@
 <p>آج  میں محسوس کرتا ہوں کتابوں کی طرف میرا رجحان کسی نصیحت نے نہیں بلکہ ایک استاد، ایک لائبریری اور ایک مناسب ماحول نے راغب کیا۔ کاش آج بھی میرے گاؤں میں کوئی لائبریری ہوتی۔ ایک ایسی جگہ جہاں بچے  سوال کرنے اور اپنے خیالات کو وسعت دینے کے لیے کتابیں پڑھتے۔ جہاں شام کے وقت نوجوان علم، ادب اور تاریخ کی صحبت اختیار کرتے۔ جہاں بزرگ اپنی زندگی کے تجربات نئی نسل تک منتقل کرتے اور نئی نسل کتابوں سے حاصل ہونے والی بصیرت کے ساتھ اپنے مستقبل کی تعمیر کرتی۔ شاید پھر ہمارے گاؤں کی گفتگو صرف روزمرہ مسائل تک محدود نہ رہتی بلکہ خیالات، امکانات اور تبدیلی کے گرد گھومتی۔</p>
 
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,12 +719,17 @@
 
   
   
-  <div class="post-body post-body-diary">
+  <div class="post-body post-body-diary" data-section="diary">
+    <!--KITABOMORI-POST-BODY-START-->
     <p>The teaching literacy course has given me a whole new perspective on literacy, enabling me to interpret it in new ways. Literacy is an umbrella term that encompasses knowledge of practically everything, from oneself to others, from one’s family to strangers and from one’s well-being to inspiring individuals to revolt against oppressive powers. Hence, the acknowledged definition of literacy, the ability to read and write, has become more important for me than before. Reading provides awareness, food for thought, and highlights society’s wrongdoings. While writing is the most effective way to organise ideas, communicate with clarity, and express your perspective with confidence for greater impact.</p>
 
 <p>Every single activity begins somewhere; unfortunately, my memory does not help me recall how I started reading and writing. Formal schooling has taught me to memorise some letters in Urdu and English, which I suppose is not writing or reading, but a prerequisite. Until grade eight, I may have had positions in class, but I did not achieve literacy. Then there was a new school, a novel environment, and, in particular, a unique English teacher who made me realise why reading and writing are important. Often, the teacher would ask, “What are you reading nowadays?” If you come up with a book name, he would ask about a particular character and certain settings. It was impossible to tell a lie, as the teacher had been a student at the same school and had probably gone through all the novels and the library’s literature section. To be on the safe side, I started my first-ever book, “The Young Adventures and the Hollow Tree” by Enid Blyton. The children’s book was in hardcover, and it took me more than a month to finish the two hundred odd pages.</p>
 
-<p>The following year, another English teacher motivated and fostered a love of reading by saying that readers are leaders and by discussing leaders who were avid readers. Most of my classmates regularly borrow and lend books. A few of the mates used to read 40 to 50 pages an hour. I wish I had been able to read consistently to develop my language skills. Still, something is better than nothing. At the end of my college year, I had developed a sense of reading for pleasure, and that is still with me.</p>
+<p>The following year, another English teacher motivated and fostered a love of reading by saying that readers are leaders and by discussing leaders who were avid readers. Most of my classmates regularly borrow and lend books. A few of the mates used to read 40 to 50 pages an hour. I wish I had been able to read consistently to develop my language skills. Still, something is better than nothing. At the end of my college year, I had developed a sense of reading for pleasure, and that is still with me.</p><aside class="pull-quote" dir="rtl" data-section="diary" aria-label="اقتباس">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">by Enid Blyton. The children’s book was in hardcover, and it took me more than a month to finish the two hundred odd pages.</blockquote>
+</aside>
+
 
 <p>When I started university, reading came to a halt, and I focused on writing. The English content courses, one and two, mainly focus on writing flawlessly by emphasising grammar and punctuation, but I got nowhere. The English content three-course again focused on reading, and soon I realised that without reading, writing cannot be improved. That is where I make some conscious efforts to read for writing and to write. Near the end of the course, I wrote a satire titled “The Right Way to Shit on…” which questioned the education system that individuals reach to universities, but still don’t develop the sense of how to use toilets. I presented the satire in class, and I am still proud of it today.</p>
 
@@ -694,6 +739,7 @@
 
 <p style="margin-top:2rem; font-size:0.85rem; color:#666;"><em> This literacy autobiography was written in December 2022 as part of the Teaching Literacy course. It has since been revised and is published here in its edited form.</em></p>
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

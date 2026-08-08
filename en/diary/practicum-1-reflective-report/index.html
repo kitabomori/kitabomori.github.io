@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,7 +719,8 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflective-report">
+  <div class="post-body post-body-diary post-body-reflective-report" data-section="diary">
+    <!--KITABOMORI-POST-BODY-START-->
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">January 20, 2024</div>
 
 <p>The third semester of B.Ed.-III started in October 2021. With other courses, Practicum-I was also part of the semester. The practicum course is unique in that it aims to provide prospective teachers with experience by exposing them to the school environment through weekly visits. It also has specific objectives, such as identifying connections between teaching theory and practice. The other rationales are: to collaborate with peers, cooperating teachers, school staff, and the practicum supervisor; and to develop professional relationships by observing elements of the school from the gatekeeper to the principal. Most of the lot was to invite, accept and utilise feedback from the cooperating teacher, supervisor and peers for learning.</p>
@@ -694,7 +735,11 @@
 
 <p>Throughout the allocated weeks, I met with every possible person available at the school. At the end of the day, this experience of conversing and reflecting on the practicum's objectives, based on the observation sheet, helped me achieve them. When someone achieves their goals, they feel satisfied with the work they are doing, and that gives them the confidence to go beyond the set boundaries. In the first phase of five weeks, when things were shaky, unclear and incomprehensible, I felt the practicum was useless practice. The second five weeks were when I understood the rationale behind the practicum-I course, and the reasons became clear: one has to develop certain skills and qualities by observing the cooperating teachers and the school. So, from then on, I felt quite satisfied with the rest of the semester. I enjoyed sharing what I had come across with fellows and tried to learn from them as well.</p>
 
-<p>In reverse-chronological order, the practicum is a huge success for me, as I am meeting the set targets. The seminars helped me give deep thought to what I was doing throughout the school visit. Looking back, especially during the practicum's initial phase, I was going nowhere. It was the time when I thought this whole practicum course was a mere time pass and a useless thing. As time went on, things became clear, and I understood the objectives of the practicum. Presenting the experience to the whole class gave me the indication that I had observed the required things and learned from them.</p>
+<p>In reverse-chronological order, the practicum is a huge success for me, as I am meeting the set targets. The seminars helped me give deep thought to what I was doing throughout the school visit. Looking back, especially during the practicum's initial phase, I was going nowhere. It was the time when I thought this whole practicum course was a mere time pass and a useless thing. As time went on, things became clear, and I understood the objectives of the practicum. Presenting the experience to the whole class gave me the indication that I had observed the required things and learned from them.</p><aside class="pull-quote" dir="ltr" data-section="diary" aria-label="Pull quote">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">The rest of the course&#39;s tactics and techniques were fine, as I went through a process of getting to know the school&#39;s dimensions.</blockquote>
+</aside>
+
 
 <p>The whole semester was a tremendous opportunity to develop certain skills and to reveal some of the strengths and shortcomings in my personality. I realised I can remain focused on the task at hand and handle pressure. The other thing is, when responsibility is given to me, I believe I can offer my best by being cooperative and remaining impartial whenever there is a need of mine. My colleagues shared the areas of concern in my personality with me. It seemed strange to me to present the fact or opinion that I do not value or listen to others' opinions. On the other hand, I do not celebrate small achievements, but the accumulation of small memories and little successes leads to big events.</p>
 
@@ -711,6 +756,7 @@
 <p style="margin-top:0.75rem;"><a href="/en/diary/practicum-2-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 1 &rarr;</a></p>
 <p style="margin-top:0.5rem;"><a href="/en/diary/practicum-1-reflection-13/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 13</a></p>
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

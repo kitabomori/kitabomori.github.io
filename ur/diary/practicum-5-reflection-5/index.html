@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,18 +719,24 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflection">
+  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+    <!--KITABOMORI-POST-BODY-START-->
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">March 21, 2024</div>
 
 <p>Today, I tried to teach about the social and political factors that led to the formation of the All India Muslim League, as well as its aims and objectives. The 8th-Daisy students had quite good knowledge of the 1906 subcontinent, which helped me pace my lesson. I summarised the Muhammadan Educational Conference of December 1906, and the roles of Nawab Samiullah, Khan Bahadur, Nawab Waqar ul Mulk, and Syed Amir Ali in calling for a separate political party for Muslims. Sir Syed Ahmed had advised Muslims to stay away from politics until his death; still, the positive response to the Simla Delegation of 1906 regarding separate electorates, the establishment of Aligarh College as a university, and the partition of Bengal were among the causes that prompted Muslims to participate in politics. The new party aimed to promote loyalty among Muslims toward the British government, to protect Muslims' political interests, to present their needs and aspirations to the government, to remove misconceptions, and to foster cooperation with other communities.</p>
 
-<p>Teaching Pakistan Studies is always challenging, and it's not a neutral task. A good teacher has the responsibility to bring all perspectives of the various communities involved in an event into the discussion. In a religiously homogeneous class, one can teach a topic easily, but that isn't always the case. Presenting a single narrative may hurt students of other beliefs. Teaching this topic, "aims and objectives of AIML," made me remember my own 9th-class days, where my Pakistan Studies teacher portrayed Hindus of the subcontinent as trying to sabotage the interests of Muslims. But today in my class, there were Hindu students too, and as a teacher, I don't want to do the same and hurt the religious sentiments of my students. To some extent, I was successful in achieving my lesson's objective through the lecture method today. However, I still agree with the observer's suggestion that handouts should be provided in class, or in advance, to engage and enhance learning.</p>
+<p>Teaching Pakistan Studies is always challenging, and it's not a neutral task. A good teacher has the responsibility to bring all perspectives of the various communities involved in an event into the discussion. In a religiously homogeneous class, one can teach a topic easily, but that isn't always the case. Presenting a single narrative may hurt students of other beliefs. Teaching this topic, "aims and objectives of AIML," made me remember my own 9th-class days, where my Pakistan Studies teacher portrayed Hindus of the subcontinent as trying to sabotage the interests of Muslims. But today in my class, there were Hindu students too, and as a teacher, I don't want to do the same and hurt the religious sentiments of my students. To some extent, I was successful in achieving my lesson's objective through the lecture method today. However, I still agree with the observer's suggestion that handouts should be provided in class, or in advance, to engage and enhance learning.</p><aside class="pull-quote" dir="rtl" data-section="diary" aria-label="اقتباس">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">Next: Practicum-V Lesson Plan 6 &amp;rarr;</blockquote>
+</aside>
+
 
 <p>Reading this reflection, it looks like I had a perfect lesson, but I found the class disengaged and disruptive. As prospective teachers, we go to the field once a week or once a fortnight, and students take this as an opportunity to have fun and relax from the burden of routine. We don't have marks to deduct or any power to take action beyond the 40-minute class. On the next visit, we have to start from scratch. In the future, it would help if the teaching practice were designed so teaching happens continuously for a week, followed by time to reflect, then another week of teaching. The supervisor has also emphasised integrating ICT into upcoming classes, but I'm unsure how to do that yet. Next, I'll be teaching a science topic after consulting the cooperating teacher.</p>
 
 <p style="margin-top:0.75rem;"><a href="/ur/diary/practicum-5-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 6 &rarr;</a></p>
 <p style="margin-top:0.5rem;"><a href="/ur/diary/practicum-5-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 5</a></p>
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

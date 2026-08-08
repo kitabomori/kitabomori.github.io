@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,7 +719,8 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflection">
+  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+    <!--KITABOMORI-POST-BODY-START-->
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">February 22, 2023</div>
 
 <p><em>Reflection on Lessons Four and Five</em></p>
@@ -690,7 +731,11 @@
 
 <p>Firstly, it became evident that students wanted more hands-on activities to engage with the content. This indicates that traditional teaching methods may not be enough for some students to retain information. They were not as engaged or motivated during the lesson. Thus, I need to think more creatively and design more interactive, engaging activities that cater to students' diverse learning styles. The hands-on approach increases students' academic achievement and understanding of scientific concepts by using objects, which may make abstract knowledge more concrete and clearer. Through a hands-on approach, students can engage with real-life illustrations and observe the effects of changes in different variables (O. Ekwueme et al., 2015).</p>
 
-<p>Secondly, I noticed that it is challenging to pay attention to individual needs. Given the large class size, it may be difficult to address each student's specific learning needs. However, it is crucial to identify struggling students and offer them support where possible. I can achieve this by providing an additional lesson to supplement the class lessons.</p>
+<p>Secondly, I noticed that it is challenging to pay attention to individual needs. Given the large class size, it may be difficult to address each student's specific learning needs. However, it is crucial to identify struggling students and offer them support where possible. I can achieve this by providing an additional lesson to supplement the class lessons.</p><aside class="pull-quote" dir="ltr" data-section="diary" aria-label="Pull quote">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">Lastly, I will keep an open mind and be willing to adapt my teaching methods to best serve my students&#39; needs.</blockquote>
+</aside>
+
 
 <p>Lastly, I did not get the response I was expecting from the students. This could be due to various factors, including the difficulty level of the content or the teaching method I used. I need to examine the teaching methods I have been using and evaluate their effectiveness. I can also use feedback from my co-teacher to refine the lesson plan and teaching approach.</p>
 
@@ -699,6 +744,7 @@
 <p style="margin-top:0.75rem;"><a href="/en/diary/practicum-3-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 6 &rarr;</a></p>
 <p style="margin-top:0.5rem;"><a href="/en/diary/practicum-3-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 5</a></p>
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

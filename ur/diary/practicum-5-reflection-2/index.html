@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,13 +719,18 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflection">
+  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+    <!--KITABOMORI-POST-BODY-START-->
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">February 22, 2024</div>
 
 <p dir="rtl" style="text-align:center;">نامہ بر تو ہی بتا تو نے تو دیکھے ہوں گے</p>
 <p dir="rtl" style="text-align:center;">کیسے ہوتے ہیں وہ خط جن کے جواب آتے ہیں</p>
 
-<p dir="rtl" style="text-align:justify;">مضمون اردو اور سبق خطوط، وہ بھی جن کے جواب آتے ہیں اور وہ بھی جن کے جواب نہیں لکھے گئے، پر تھا۔ پچھلے ہفتے فیصلہ ہوا تھا کہ مورخہ 22 فروری بروز جمعرات کو جامعہ سکھر آئی بی اے میں ہی مائیکرو ٹیچنگ ہوگی، جس کے لیے ہمارے معلم اور نگران (سوپروائزر) نے اکیڈمک بلاک تھری، کلاس نمبر 502، ریاضی گروپ کے لیے مخصوص کر رکھا تھا۔ اس کلاس میں ہمارے علاوہ بی ایڈ-VIII کے 14 اور طلبہ موجود تھے جن کو "خطوط نویسی، کل اور آج کے دور میں" کے بارے میں ہم نے پڑھانے کی کوشش کی۔ ہمارے پاس کل 15 منٹ تھے۔ تدریسی عمل کی ابتدا ایک خط لکھنے کے ذاتی تجربے سے کی گئی۔ اس ذاتی تجربے کو افلاطون کے "ایک انسان کو مکمل کرنے والے اس کے دوسرے نصف" کی فلاسفی سے جوڑا گیا اور اس بات کا احساس ہوا کہ خطوط بھی لوگوں کو مکمل کرنے کا ذریعہ بن سکتے ہیں۔ اس کے بعد کچھ ذاتی تجربات، خط کی تاریخ اور خط کو کہاں کہاں استعمال کیا جاتا ہے اس کے بارے میں طلبہ کو آگاہ کیا۔ اس تدریسی عمل کے اگلے حصے میں ہم نے خط کو ادب کے طور پر اور اس کی اہمیت، خصوصاً خط کو درس و تدریس کے لیے استعمال کرنے کے پہلو کو اجاگر کیا۔ ہم نے مولانا ابوالکلام آزاد کی کتاب غبار خاطر سے، غالب کے خطوط میں سے ایک خط، اور کتاب صوفی کی دنیا میں سے چند جملے طلبہ سے پڑھائے، جس سے طلبہ کی دلچسپی میں اضافہ ہوا، اور آخر میں تشخیص کے لیے طلبہ سے دورِ جدید میں خط کی مختلف اشکال اور چند خط پڑھنے کے لیے کہا۔</p>
+<p dir="rtl" style="text-align:justify;">مضمون اردو اور سبق خطوط، وہ بھی جن کے جواب آتے ہیں اور وہ بھی جن کے جواب نہیں لکھے گئے، پر تھا۔ پچھلے ہفتے فیصلہ ہوا تھا کہ مورخہ 22 فروری بروز جمعرات کو جامعہ سکھر آئی بی اے میں ہی مائیکرو ٹیچنگ ہوگی، جس کے لیے ہمارے معلم اور نگران (سوپروائزر) نے اکیڈمک بلاک تھری، کلاس نمبر 502، ریاضی گروپ کے لیے مخصوص کر رکھا تھا۔ اس کلاس میں ہمارے علاوہ بی ایڈ-VIII کے 14 اور طلبہ موجود تھے جن کو "خطوط نویسی، کل اور آج کے دور میں" کے بارے میں ہم نے پڑھانے کی کوشش کی۔ ہمارے پاس کل 15 منٹ تھے۔ تدریسی عمل کی ابتدا ایک خط لکھنے کے ذاتی تجربے سے کی گئی۔ اس ذاتی تجربے کو افلاطون کے "ایک انسان کو مکمل کرنے والے اس کے دوسرے نصف" کی فلاسفی سے جوڑا گیا اور اس بات کا احساس ہوا کہ خطوط بھی لوگوں کو مکمل کرنے کا ذریعہ بن سکتے ہیں۔ اس کے بعد کچھ ذاتی تجربات، خط کی تاریخ اور خط کو کہاں کہاں استعمال کیا جاتا ہے اس کے بارے میں طلبہ کو آگاہ کیا۔ اس تدریسی عمل کے اگلے حصے میں ہم نے خط کو ادب کے طور پر اور اس کی اہمیت، خصوصاً خط کو درس و تدریس کے لیے استعمال کرنے کے پہلو کو اجاگر کیا۔ ہم نے مولانا ابوالکلام آزاد کی کتاب غبار خاطر سے، غالب کے خطوط میں سے ایک خط، اور کتاب صوفی کی دنیا میں سے چند جملے طلبہ سے پڑھائے، جس سے طلبہ کی دلچسپی میں اضافہ ہوا، اور آخر میں تشخیص کے لیے طلبہ سے دورِ جدید میں خط کی مختلف اشکال اور چند خط پڑھنے کے لیے کہا۔</p><aside class="pull-quote" dir="rtl" data-section="diary" aria-label="اقتباس">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">اس ذاتی تجربے کو افلاطون کے &quot;ایک انسان کو مکمل کرنے والے اس کے دوسرے نصف&quot;</blockquote>
+</aside>
+
 
 <p dir="rtl" style="text-align:justify;">ادب، خصوصاً خط کی اہمیت کو سمجھانے کے لیے 15 منٹ کا تدریسی عمل بہت کم ہے، لیکن اس موضوع کے لیے بھرپور تیاری اور طلبہ کی پرتجسس آنکھیں اس بات کا پتہ دے رہی تھیں کہ خطوط آج کل کے الیکٹرانک دور میں بھی بے بہا اہمیت کے حامل ہیں۔ لیکن ہمارا مشاہدہ کرنے والے دوستوں نے کہا کہ ہم اپنے سبق کے مقاصد کو مکمل طور پر واضح نہیں کر پائے، اور اس کے علاوہ ہماری تشخیصی سرگرمی بھی ہمارے سبق کے مقاصد کے ساتھ ربط میں نہیں تھی۔ دوسری جانب پہلی مرتبہ جوڑوں میں تدریس کرنا ہم دونوں کے لیے ایک نیا اور عمدہ تجربہ رہا۔ ایک ساتھ تدریسی خاکہ بنانا اور اسے ایک اچھے انداز میں انجام دینا اس بات کی تائید کرتا ہے کہ درس و تدریس کا عمل اگر باہمی مشاورت سے کیا جائے تو زیادہ اچھا عمل بن سکتا ہے، جس سے تعلیم کے معیار کو مزید بہتر بنانے میں مدد مل سکتی ہے۔</p>
 
@@ -694,6 +739,7 @@
 <p style="margin-top:0.75rem;"><a href="/ur/diary/practicum-5-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 3 &rarr;</a></p>
 <p style="margin-top:0.5rem;"><a href="/ur/diary/practicum-5-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 2</a></p>
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

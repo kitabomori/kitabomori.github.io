@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,16 +719,22 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflection">
+  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+    <!--KITABOMORI-POST-BODY-START-->
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">October 16, 2021</div>
 
 <p>In the very first class of Practicum, each Bed 3rd-semester student, as usual, felt uncomfortable before a new course. When the instructor entered the class, a few students rose from their seats in respect, and most remained seated. The teacher was full of energy, and he greeted with zeal and zest. Soon, students settled down, and for a split second, silence filled the classroom. Next, the teacher arranged a chair for himself at the Centre and began to introduce himself. Then it was time for the students to introduce themselves, and the instructor fired in some humorous questions, but the answers provoked the teacher to ask more. The very next moment, everyone was on their feet, laughing and screaming. As the intro section ended, the teacher used the projector to introduce the course and its outline. At the same time, the course outline demanded a lot of work ahead. Following that, the teacher highlighted the standards of teachers. Finally, the instructor taught how to write a reflection and assigned a reflection in class.</p>
 
-<p>Humorously introducing himself to the class eased the classroom's tense atmosphere. The teacher's energy told the story of his passion for his profession, which encouraged the students to adopt it as well. The introduction and outline of the course help students become familiar with the course and what they will be doing in the coming days. Learning how to write reflections enhances students' skills. The teacher's energy was at its peak even at the end of the class. This did not allow the students to engage in gossip or lose their attention. But at the same time, the humorous way the questions were asked made the class fun, which I would love to be part of.</p>
+<p>Humorously introducing himself to the class eased the classroom's tense atmosphere. The teacher's energy told the story of his passion for his profession, which encouraged the students to adopt it as well. The introduction and outline of the course help students become familiar with the course and what they will be doing in the coming days. Learning how to write reflections enhances students' skills. The teacher's energy was at its peak even at the end of the class. This did not allow the students to engage in gossip or lose their attention. But at the same time, the humorous way the questions were asked made the class fun, which I would love to be part of.</p><aside class="pull-quote pull-quote-fallback" dir="rtl" data-section="diary" aria-label="اقتباس">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">پریکٹیکم کی پہلی کلاس: ایک گھبرایا ہوا کمرہ، توانائی سے بھرپور استاد، اور تاثر لکھنے کا پہلا سبق۔</blockquote>
+</aside>
+
 
 <p style="margin-top:0.75rem;"><a href="/ur/diary/practicum-1-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 2 &rarr;</a></p>
 <p style="margin-top:0.5rem;"><a href="/ur/diary/practicum-0-introduction/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: About This Diary</a></p>
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

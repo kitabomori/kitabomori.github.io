@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="letters" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="letters" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,7 +719,8 @@
 
   
   
-  <div class="post-body post-body-letters">
+  <div class="post-body post-body-letters" data-section="letters">
+    <!--KITABOMORI-POST-BODY-START-->
     
 <p>24 جون 2026ء</p>
 
@@ -689,7 +730,11 @@
 
 <p>توقع ہے آپ اپنی مصروفیات میں خیریت سے ہوں گے، اور آگے بھی تدریس کا سفر ہمیشہ کی طرح فکر اور امید کے ساتھ جاری رہے گا۔</p>
 
-<p>میں نے کئی بار انگریزی میں آپ سمیت کئی افراد کو خط لکھا، مگر ہر بار میری بات اس تَنَاظُر میں نہیں سمجھی گئی جس نیت سے لکھی گئی تھی۔ اسی لیے اس بار اردو میں کوشش کر رہا ہوں۔</p>
+<p>میں نے کئی بار انگریزی میں آپ سمیت کئی افراد کو خط لکھا، مگر ہر بار میری بات اس تَنَاظُر میں نہیں سمجھی گئی جس نیت سے لکھی گئی تھی۔ اسی لیے اس بار اردو میں کوشش کر رہا ہوں۔</p><aside class="pull-quote" dir="rtl" data-section="letters" aria-label="اقتباس">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">اُس دن آپ نے کہا تھا: “تبدیلی آہستہ آتی ہے۔ دیکھو!، آپ میں سے کتنے اپنے علاقوں میں جا کر وہاں چیزیں بہتر کرنے کی کوشش کریں گے۔”</blockquote>
+</aside>
+
 
 <p>گزرے دو سالوں میں کلاس سے باہر گفتگو کا موقع کم ہی ملا۔ آپ سے آخری ملاقات میرے چند دوستوں کے ہمراہ اُس وقت ہوئی جب ڈاکٹر شاہد صدیقی ہمارے جامعہ آئے تھے۔ اُس دن آپ نے کہا تھا: “تبدیلی آہستہ آتی ہے۔ دیکھو!، آپ میں سے کتنے اپنے علاقوں میں جا کر وہاں چیزیں بہتر کرنے کی کوشش کریں گے۔” اس جملے نے مجھے یہ یقین دلایا تھا کہ تبدیلی ہمیشہ بڑے عہدوں سے نہیں، عام لوگوں سے بھی جنم لیتی ہے۔</p>
 
@@ -704,6 +749,7 @@
 <p>محترم استاد، میری مؤدبانہ گزارش ہے کہ صرف کلاس روم تک سوال کو محدود نہ رکھیں۔ وائس چانسلر یا کسی بھی انتظامی ذمہ داری پر فائز ہو، کلاس سے باہر بھی طلبہ کی بات سنیں، ان کے سوالات کو اہمیت دیں، اور ان کے مسائل کو سمجھنے کی کوشش کریں۔ ہمارے تعلیمی ادارے اس وقت مضبوط ہوں گے جب مکالمہ اور سوال کو فروغ دیا جائے گا۔</p>
 
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

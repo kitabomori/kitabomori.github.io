@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,18 +719,24 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflection">
+  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+    <!--KITABOMORI-POST-BODY-START-->
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">May 6, 2022</div>
 
 <p>During our visit to the Government X School, Old Sukkur, last week, the school's administration informed us that classes would end this week and that the students would undergo exams to be promoted to the next class. This time, we went to the school not to teach but to observe how exams are conducted in government schools. When we arrived at school around 10 a.m., a paper was already underway, and we learned that another paper would follow after a short break once the current one was completed. The second paper of the day began shortly after. The assigned teacher in each classroom was responsible for providing answer sheets and question papers, and for recording student attendance. While the paper was in progress, the manager of this school and three others encountered a very stern lady, later identified as the Taluka Officer. She had come to observe the examination process and was annoyed by our presence at the school. I was taking a copy of the exam paper with the teacher's permission when I ran into the manager, who told me I couldn't have it. He reported this incident to our supervisor. After that, I tried to get involved in the examination process, but I felt like I was a hindrance, and the students seemed to be having some trouble because of my presence in the class. So I came out of the class and observed the old school building, built under British rule to teach women skills, which was later converted into a school.</p>
 
-<p>Tests and exams are assessment tools, and students are evaluated based on their performance on them. According to my observations, the exam being held at this school was not up to standard. For example, there were two papers for primary school students in one day — how do students prepare for two papers? This only adds pressure to the students. Second, there were no separate answer sheets and question papers for primary school students. Even university students are confused about how much to write on an answer sheet, so imagine how a student in grade two or three would decide how much to write. Finally, there was no light at school, and the temperature was approaching 50 degrees. In such conditions, it would be very difficult for a student to perform to their potential.</p>
+<p>Tests and exams are assessment tools, and students are evaluated based on their performance on them. According to my observations, the exam being held at this school was not up to standard. For example, there were two papers for primary school students in one day — how do students prepare for two papers? This only adds pressure to the students. Second, there were no separate answer sheets and question papers for primary school students. Even university students are confused about how much to write on an answer sheet, so imagine how a student in grade two or three would decide how much to write. Finally, there was no light at school, and the temperature was approaching 50 degrees. In such conditions, it would be very difficult for a student to perform to their potential.</p><aside class="pull-quote" dir="rtl" data-section="diary" aria-label="اقتباس">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">Next: Practicum-II Lesson Plan 4 &amp;rarr;</blockquote>
+</aside>
+
 
 <p>Exams and tests help students improve. When taking an exam becomes merely a formality, it hurts the student. Exams should be conducted in a way that does not cause students to fear them, and the process should be as smooth as possible.</p>
 
 <p style="margin-top:0.75rem;"><a href="/ur/diary/practicum-2-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 4 &rarr;</a></p>
 <p style="margin-top:0.5rem;"><a href="/ur/diary/practicum-2-reflection-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 4</a></p>
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

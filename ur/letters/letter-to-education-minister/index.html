@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="letters" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="letters" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,7 +719,8 @@
 
   
   
-  <div class="post-body post-body-letters">
+  <div class="post-body post-body-letters" data-section="letters">
+    <!--KITABOMORI-POST-BODY-START-->
     
 <p>06 اگست 2026ء</p>
 
@@ -691,7 +732,11 @@
 
 <p>محترم استاد، اب آپ گلگت کی قانون ساز اسمبلی کے رکن بھی ہیں۔ یہ تعلیم سے وابستہ ہر شخص کے لیے خوش ائین  بات ہے۔ تاہم اصل خوشی اس دن ہوگی جب آپ معیاری اور مساوی سرکاری نظامِ تعلیم کے لیے اسمبلی میں مؤثر آواز بلند کریں گے۔  اس خط کا متن یہی ہے کہ گلگت کی 25 لاکھ آبادی مساویانہ سرکاری نظامِ تعلیم کی مستحق ہے۔</p>
 
-<p>بعض لوگ یہ سوال اٹھا سکتے ہیں کہ گلگت کا سیاسی اور سماجی خد و خال کم و بیش وہی ہے جو پاکستان کے دوسرے حصوں کا ہے اور یہ نظامِ تعلیم لگ بھگ ناممکن سا خواب ہے۔ اگر تعلیم پر سیاست نہ کی جائےاور سنجیدہ کوشش کی جائے تو یہ خواب حقیقت بن سکتا ہے۔ دنیا بھر میں اس طرح کی کئی مثالیں موجود ہیں۔ فن لینڈ میں سارے اسکول ایک جیسے ہیں، جبکہ سری لنکا میں 1980 کی دہائی کے بعد کوئی نیا پرائیویٹ اسکول کھولنے کی اجازت ہی نہیں دی گئی ہے۔</p>
+<p>بعض لوگ یہ سوال اٹھا سکتے ہیں کہ گلگت کا سیاسی اور سماجی خد و خال کم و بیش وہی ہے جو پاکستان کے دوسرے حصوں کا ہے اور یہ نظامِ تعلیم لگ بھگ ناممکن سا خواب ہے۔ اگر تعلیم پر سیاست نہ کی جائےاور سنجیدہ کوشش کی جائے تو یہ خواب حقیقت بن سکتا ہے۔ دنیا بھر میں اس طرح کی کئی مثالیں موجود ہیں۔ فن لینڈ میں سارے اسکول ایک جیسے ہیں، جبکہ سری لنکا میں 1980 کی دہائی کے بعد کوئی نیا پرائیویٹ اسکول کھولنے کی اجازت ہی نہیں دی گئی ہے۔</p><aside class="pull-quote" dir="rtl" data-section="letters" aria-label="اقتباس">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">استاد جی، اگر گلگت کے تعلیمی نظام میں اصلاح کرنا ہے تو سب سے پہلے”نو مور پرائیویٹ اسکول“</blockquote>
+</aside>
+
 
 <p>دوسری جانب، گلگت کی ہر گلی میں اتنے پرائیویٹ اسکول ہیں کہ یونیفارم کے لیے کپڑوں کے ر نگ کم پڑ گئے ہیں۔ اخر کیوں گورنمنٹ نے ہر ایک کو اسکول کھلنے اجازت دی ہے اور ان اسکولوں میں تعلیمی معیار کو کس طرح یقینی بنایا جاتا ہے؟</p>
 
@@ -706,6 +751,7 @@
 <p>اب اسکول میں ٹیچرز تو آ گئے ہیں، لیکن اس کے بعد کمیونٹی انگیجمنٹ(commmunity engagement) اور وسائل(resourses) کی بروقت فراہمی بھی ضروری بنائی جائے۔ اگلا سوال یہ ہے کہ اسکول میں کیا پڑھایا جائے؟ اس کامکمل جواب پھر کبھی۔ مختصراً یہ کہ وہی جو وقت کا تقاضا ہے اور ساتھ میں ہمیں اپنے ماضی کے بارے میں پتہ ہونا چاہیے، جو ہمیں حال میں رہنے کے قابل بنائے اور کل کے تمام سیاسی، سماجی اور موسمیاتی مسائل کو حل کرنے کے لیے تیار کر سکے۔ اور اگر ابھی تیار نہ ہو سکے تو موسمیاتی تبدیلی اور خطے کے سیاسی صورتحال کی وجہ سےشاید گلگت کل رہائش کے قابل ہی نہیں رہے گا۔۔۔</p>
 
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

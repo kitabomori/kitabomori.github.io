@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="reviews" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="reviews" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,12 +719,17 @@
 
   
   
-  <div class="post-body post-body-reviews">
+  <div class="post-body post-body-reviews" data-section="reviews">
+    <!--KITABOMORI-POST-BODY-START-->
     <p>Lev Nikolayevich Tolstoy (1828-1910) believed that novels serve as tools for psychological education and reform, helping us understand one another, especially those who may seem unappealing at first glance. As the master of realistic fiction, he wrote acclaimed works such as “War and Peace,” “Anna Karenina,” and the novella “The Death of Ivan Ilyich,” which is considered one of his finest. His idea of nonviolent resistance, as expressed in “The Kingdom of God Is Within You,” has profoundly influenced 20th-century figures, including Mahatma Gandhi and Martin Luther King Jr. In “The Three Questions,” part of the compilation “What Men Live By and Other Tales,” Tolstoy offers deep, insightful perspectives on various aspects of human life.</p>
 
 <p>One day, a king realised that the answers to three simple questions could lead to success in every task he undertook. To encourage participation, he announced a reward for the correct answers. People from all walks of life offered various responses: for “What is the right time to begin anything?” answers ranged from calendars and schedules to magicians. Similarly, responses to “Who are the right people to listen to and whom should we avoid?” varied widely. Some suggested listening to counsellors, doctors, and experts in their respective fields. Lastly, for “What are the most important things to do?”, no satisfactory answers were found.</p>
 
-<p>When no one received the reward, the king sought the wisdom of a hermit who lived simply in the wilderness. Upon encountering the hermit, the king repeated his questions, but the hermit was busy digging. By the afternoon, the king still had not received any answers. Just then, an injured man came running toward them. The king promptly tended to the man’s injuries. The following morning, the injured man apologised and revealed that he had intended to seek revenge against the king, which had led to his injury at the hands of his guards. The king forgave him and restored his property.</p>
+<p>When no one received the reward, the king sought the wisdom of a hermit who lived simply in the wilderness. Upon encountering the hermit, the king repeated his questions, but the hermit was busy digging. By the afternoon, the king still had not received any answers. Just then, an injured man came running toward them. The king promptly tended to the man’s injuries. The following morning, the injured man apologised and revealed that he had intended to seek revenge against the king, which had led to his injury at the hands of his guards. The king forgave him and restored his property.</p><aside class="pull-quote" dir="rtl" data-section="reviews" aria-label="اقتباس">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">answers ranged from calendars and schedules to magicians. Similarly, responses to “Who are the right people to listen to and whom should we avoid?”</blockquote>
+</aside>
+
 
 <p>As the king prepared to leave without answers, the hermit said, “You have already been answered. When I was digging yesterday, you helped me, and that was the most important time. I was the most important man, and doing good for me was the most important business. Then, when the injured man came, attending to him became the most important task, or else he could have died. He was the most important man at that moment, and what you did for him was the most important action.”</p>
 
@@ -693,6 +738,7 @@
 <p>By applying the philosophy of the three questions, we can lead lives free of hassle and depression. For instance, consider students in a class. If they occupy their minds with distractions outside class, such as social media and gossip, they learn little and end up blaming external factors for their struggles. Their priority should be the teacher, their classmates, and the topic at hand.</p>
 
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

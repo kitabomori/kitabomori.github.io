@@ -329,6 +329,22 @@
       </g>
     </symbol>
 
+    <!-- Small oil lamp (chirag) with a lit flame — new site-wide motif
+         for the post side rails (see .post-side / .rail-lamp in
+         main.css). Distinct from the per-section header icons above;
+         reused everywhere, tinted per section via --accent, echoing
+         "the light of learning" imagery rather than repeating the
+         book/leaf/ink-drop/pen-nib language already used elsewhere
+         on the site. -->
+    <symbol id="icon-lamp" viewBox="0 0 90 90">
+      <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M45 40 C33 40 25 48 25 58 C25 68 34 74 45 74 C56 74 65 68 65 58 C65 48 57 40 45 40 Z" opacity="0.55"/>
+        <path d="M45 40 C39 40 34 44 34 50 C34 58 40 62 45 66 C50 62 56 58 56 50 C56 44 51 40 45 40 Z"/>
+        <path d="M45 74 L45 82 M36 82 H54"/>
+        <path d="M45 32 C42 26 44 20 45 16 C46 20 48 26 45 32 Z" opacity="0.8"/>
+      </g>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -606,16 +622,40 @@
      Shows title, date, description, and body content.
      ============================================================ -->
 
+<!-- Section accent group + Lesson Plan detection, computed once up
+     front so both the side rails (below) and the post body / pull-quote
+     (further down) agree on the same value.
+     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
+     contains "lesson-plan") are explicitly out of scope for the whole
+     redesign — this scope restriction is intentional and must not be
+     removed or narrowed. They keep the original plain teal rail
+     untouched below. -->
+
+
+
+
+
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter. -->
-<aside class="post-side post-side-left" aria-hidden="true">
-  <span class="post-ornament"></span>
+     placement in the DOM doesn't matter.
+     Lesson Plans: left exactly as before (plain teal diamond, no
+     section accent, no lamp icon) — see scope note above.
+     Everything else: the line now carries the site's new lamp motif,
+     tinted with the section's accent color. -->
+
+<aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
-<aside class="post-side post-side-right" aria-hidden="true">
-  <span class="post-ornament"></span>
+<aside class="post-side post-side-right" data-section="diary" aria-hidden="true">
+  <span class="post-ornament post-ornament-accent">
+    <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
+  </span>
 </aside>
+
 
 <article class="post-container">
 
@@ -679,7 +719,8 @@
 
   
   
-  <div class="post-body post-body-diary post-body-reflective-report">
+  <div class="post-body post-body-diary post-body-reflective-report" data-section="diary">
+    <!--KITABOMORI-POST-BODY-START-->
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">May 31, 2024</div>
 
 <p>Over the 16 weeks of teaching practice, we were supposed to visit the school 12 to 14 times, or conduct micro-teaching at our university when we didn't go to the site. In the end, only 10 lesson plans, along with observation checklists and reflections on each lesson, needed to be submitted as an e-portfolio to the course supervisor to meet the course requirements. Throughout, the blend of classroom observations and post-lesson conferences was pivotal in making our teaching effective, understanding students' behaviour, and shaping our instructional strategies to engage them.</p>
@@ -688,7 +729,11 @@
 
 <p>Throughout the bachelor's degree programme, there were several practicum courses, and this one marked the end of school visits to learn to teach and put into practice what we had learned. Each practicum taught us many things and improved our teaching, but this one was peculiar for several reasons that also made it enjoyable. First, we went to class in pairs, with one of us teaching and the other observing — a different experience from previous practicums, where cooperating teachers observed with little interest in or understanding of how prospective teachers should be observed. We observed each other and offered suggestions to improve our mishaps, considering both the circumstances and the theories we'd learned. The post-conference was also a novel experience, where we discussed the strengths and weaknesses of the lesson just taught, and shared difficulties with the course supervisor to explore possible solutions.</p>
 
-<p>Despite that, observation has its limitations. We were required to observe based on a provided checklist that doesn't account for a class's circumstances or a student teacher's philosophy. For instance, the checklist demands a variety of strategies within a lesson, but doing so in a class of 40 students creates nothing but havoc — we witnessed it firsthand. We held to a philosophy of engaging students in meaningful learning, without fixating on completing every planned activity on time, but the checklist would regard such lessons as ineffective and incomplete. Lesson plans should explicitly state a teacher's teaching philosophy, and be judged with classroom circumstances in mind.</p>
+<p>Despite that, observation has its limitations. We were required to observe based on a provided checklist that doesn't account for a class's circumstances or a student teacher's philosophy. For instance, the checklist demands a variety of strategies within a lesson, but doing so in a class of 40 students creates nothing but havoc — we witnessed it firsthand. We held to a philosophy of engaging students in meaningful learning, without fixating on completing every planned activity on time, but the checklist would regard such lessons as ineffective and incomplete. Lesson plans should explicitly state a teacher's teaching philosophy, and be judged with classroom circumstances in mind.</p><aside class="pull-quote" dir="ltr" data-section="diary" aria-label="Pull quote">
+  <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
+  <blockquote class="pull-quote-text">Lesson plans should explicitly state a teacher&#39;s teaching philosophy, and be judged with classroom circumstances in mind.</blockquote>
+</aside>
+
 
 <p>We also noticed, in observing classes and cooperating teachers, that the cooperating school ran on its own set of beliefs and rules — we're not sure if they're part of any school policy document, but we witnessed a couple of disruptive incidents that limited a teacher's authority. When someone interferes with a class's proceedings, whether the principal or a teacher, it's unacceptable to us. It disrupts the class, students lose attention, and it becomes very difficult to bring them back to the topic. It also amounts to treating a teacher as though they have no worth or value in the very room that is meant to be their playfield.</p>
 
@@ -700,6 +745,7 @@
 
 <p style="margin-top:0.5rem;"><a href="/en/diary/practicum-5-reflection-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Reflection 10</a></p>
 
+    <!--KITABOMORI-POST-BODY-END-->
   </div>
 
   <!-- Author and date, shown at the end of the piece -->
