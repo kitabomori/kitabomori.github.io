@@ -1221,8 +1221,11 @@ html:not([dir="rtl"]) .post-body blockquote {
 }
 
 .post-figure img {
+  display: block;
   max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #E5DFD0;
   border-radius: 6px;
   box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
@@ -1287,6 +1290,12 @@ html:not([dir="rtl"]) .post-body blockquote {
 .dark .post-chart {
   background: color-mix(in srgb, #4FD1C5 8%, #221F1B);
   border-color: #3A362E;
+}
+
+.post-chart canvas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .post-date {
