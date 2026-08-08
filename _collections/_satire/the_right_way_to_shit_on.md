@@ -11,7 +11,7 @@ description_en: "A satire on education and educated."
 description_ur: "تعلیم اور تعلیم یافتہ پر ایک طنزیہ تحریر۔"
 youtube_en: "https://youtu.be/Uql9oyyzclM"
 youtube_ur: "https://youtu.be/Uql9oyyzclM"
-youtube_id: "Uql9oyyzclM"
+youtube_id: ""
 ---
 
 Every day, people from all walks of life voice their concerns. Children want freedom from the beady eyes of their parents. Students are demanding their right to quality education and freedom of expression at educational institutions. And women blaming their male counterparts for being dominant and oppressors for ages, etc. At times, congregations discuss plans to break the shackles of oppression, and male treatment catches a lot of attention.
