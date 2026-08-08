@@ -1,8 +1,7 @@
 # ==============================================================
 # pull_quote.rb – auto-extracts a "crux" pull-quote sentence from
-# each post and splices it into the rendered HTML, roughly at the
-# midpoint of the post (see splice_into_output below) — not tucked
-# up near the top after just 2-3 paragraphs.
+# each post and splices it into the rendered HTML, after the first
+# 2-3 prose paragraphs (or at the top, for short posts).
 #
 # SCOPE: Lesson Plan posts (Teaching Diary entries whose slug
 # contains "lesson-plan") are never touched by this plugin — no
@@ -226,21 +225,23 @@ module Kitabomori
       HTML
     end
 
-    # Inserts quote_html after the paragraph closest to the middle of
-    # the post, so roughly half the prose sits above the quote and
-    # half below — not tucked up near the top after just 2-3
-    # paragraphs. For an N-paragraph post, that's after paragraph
-    # floor(N/2): a 4-paragraph post gets it after paragraph 2 (2
-    # before, 2 after); a 7-paragraph post gets it after paragraph 3
-    # (3 before, 4 after). A single-paragraph post has nowhere else
-    # to put it, so it goes right after that one paragraph.
+    # Inserts quote_html right after the 3rd prose paragraph (posts
+    # with 4+ paragraphs), after the 2nd (posts with exactly 3), or
+    # right before the first paragraph (posts with 1-2 paragraphs —
+    # too short to justify a mid-body break, so the quote reads as a
+    # lede instead). This is the graceful-degradation path for short
+    # posts called for in the brief.
     def splice_into_output(html, paragraphs, quote_html)
       return html if paragraphs.empty?
 
-      n = paragraphs.length
-      before_count = [n / 2, 1].max
-      index = before_count - 1
-      insert_at = paragraphs[index][:finish]
+      insert_at =
+        if paragraphs.length >= 4
+          paragraphs[2][:finish]
+        elsif paragraphs.length == 3
+          paragraphs[1][:finish]
+        else
+          paragraphs[0][:start]
+        end
 
       html[0...insert_at] + quote_html + html[insert_at..-1]
     end
