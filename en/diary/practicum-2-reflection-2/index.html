@@ -146,6 +146,7 @@
 
 <!-- Theme script: runs before paint to prevent flash of wrong colour scheme -->
 <script src="/assets/js/theme.js"></script>
+<script src="/assets/js/textsize.js"></script>
 
 <!-- Favicon -->
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
@@ -360,6 +361,44 @@
       </g>
     </symbol>
 
+    <!-- ============================================================
+         Social/footer icons – simple, recognizable line-art pictograms
+         (not exact brand wordmarks), same currentColor convention as
+         the rest of the sprite so they inherit the footer's white.
+         viewBox 0 0 24 24 (standard icon grid) rather than 0 0 90 90,
+         since these are simpler glyphs than the section icons above.
+         ============================================================ -->
+
+    <!-- Facebook -->
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+      <path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3z"
+            fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- Instagram -->
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <circle cx="17.3" cy="6.7" r="1.15" fill="currentColor" stroke="none"/>
+    </symbol>
+
+    <!-- X (formerly Twitter) -->
+    <symbol id="icon-x" viewBox="0 0 24 24">
+      <path d="M4 4 L20 20 M20 4 L4 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- YouTube -->
+    <symbol id="icon-youtube" viewBox="0 0 24 24">
+      <rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="M10 9 L16 12 L10 15 Z" fill="currentColor" stroke="none"/>
+    </symbol>
+
+    <!-- Link (chain) — used by the "Copy link" control on posts -->
+    <symbol id="icon-link" viewBox="0 0 24 24">
+      <path d="M10 14a5 5 0 0 0 7.07 0l2-2a5 5 0 0 0-7.07-7.07l-1 1" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M14 10a5 5 0 0 0-7.07 0l-2 2a5 5 0 0 0 7.07 7.07l1-1" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+
   </defs>
 </svg>
 
@@ -385,10 +424,11 @@
       Kitabomori
     </a>
 
-    <!-- Mobile nav toggle (plain text, no icon) -->
-    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation"
+    <!-- Mobile nav toggle: borderless, matches the other header
+         controls (underline on hover/focus, no boxed outline). -->
+    <button class="nav-toggle header-control-btn" onclick="toggleNav()" aria-label="Toggle navigation"
             aria-expanded="false" aria-controls="main-nav"
-            style="color:#FFFFFF; background:none; border:1px solid #FFFFFF; padding:4px 10px; cursor:pointer; font-size:0.85rem;">
+            style="color:#FFFFFF; padding:3px 6px;">
       Menu
     </button>
 
@@ -538,6 +578,14 @@
         Sepia
       </button>
 
+      <!-- Font-size toggle: cycles the whole page's text size,
+           default -> large -> larger (see textsize.js / main.css). -->
+      <button onclick="toggleTextSize()" id="textsize-btn" class="header-control-btn"
+              title="Change text size"
+              style="color:#FFFFFF; padding:3px 6px; margin-left:6px;">
+        Aa
+      </button>
+
     </div><!-- /.header-controls -->
   </div><!-- /.header-inner -->
 </header>
@@ -628,6 +676,34 @@
       updateThemeLabel(mode);
     }
   });
+
+  /* --------------------------------------------------------
+     Sticky header: add a "compact" state once the page has
+     scrolled past a small threshold, so long posts don't give up
+     as much vertical space to the header while still keeping nav/
+     search/theme controls reachable without scrolling back up.
+  -------------------------------------------------------- */
+  (function () {
+    var header = document.querySelector('.site-header');
+    if (!header) return;
+    var ticking = false;
+    var THRESHOLD = 40;
+
+    function update() {
+      var scrolled = (window.scrollY || document.documentElement.scrollTop) > THRESHOLD;
+      header.classList.toggle('header-scrolled', scrolled);
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    update();
+  })();
 </script>
 
 
@@ -659,6 +735,13 @@
      section accent, no lamp icon) — see scope note above.
      Everything else: the line now carries the site's new lamp motif,
      tinted with the section's accent color. -->
+<!-- Reading progress bar: fixed strip at the very top of the
+     viewport, filled by reading-progress.js as the reader scrolls
+     through the post body. Uses the section's own accent color. -->
+<div class="reading-progress-track" data-section="diary" aria-hidden="true">
+  <div class="reading-progress-fill" id="reading-progress-fill"></div>
+</div>
+
 
 <!-- Each rail now carries two icons on the line — the lamp (centre)
      plus a small leaf lower down — so the margin reads as a little
@@ -686,6 +769,31 @@
 
   <header class="post-header">
     <!-- ============================================================
+     post-breadcrumb.html – Home › Section trail shown above the
+     post title, so readers always know where they are and have a
+     one-click way back to the section listing (not just browser
+     back). Current post title is intentionally not repeated here —
+     it's right underneath as the <h1>.
+     Included from _layouts/post.html. Expects `accent_group` to
+     already be assigned (see post.html).
+     ============================================================ -->
+
+
+
+
+
+
+<nav class="post-breadcrumb" aria-label="Breadcrumb">
+  <a href="/en/">
+    Home
+  </a>
+  <span class="post-breadcrumb-sep" aria-hidden="true">&rsaquo;</span>
+  <a href="/en/diary/">
+    Teaching Diary
+  </a>
+</nav>
+
+    <!-- ============================================================
      post-decor.html – picks a decorative line-art icon for the
      current post based on its collection.
      Included from _layouts/post.html.
@@ -704,15 +812,11 @@
       
     </h1>
 
-    <!-- Description / dek: the short one- or two-line summary already
-         written for every post's front matter (description_en /
-         description_ur) — previously used only for the invisible SEO
-         meta tag, now also shown to readers as a subtitle. -->
-    
-    
-    
-    <p class="post-description">Delivering first lesson — low attendance, overloaded content, and what the co-teachers' feedback revealed.</p>
-    
+    <!-- Description / dek intentionally not rendered here — the
+         description_en / description_ur front matter is still used
+         for the invisible SEO meta tag and social share preview
+         (see head.html), it's just no longer shown to readers as a
+         visible subtitle under the title. -->
 
     <span class="post-title-divider" aria-hidden="true"></span>
 
@@ -789,36 +893,86 @@
     
 
     
-    <nav class="post-nav" aria-label="More from this collection">
+    
+    
+    
+    <nav class="post-nav" data-section="diary" aria-label="More from this collection">
       
       <a class="post-nav-link post-nav-prev" href="/en">
-        <span class="post-nav-label">Older</span>
-        <span class="post-nav-title">
-          
+        <svg class="post-nav-icon" aria-hidden="true"><use href="#icon-journal"></use></svg>
+        <span class="post-nav-text">
+          <span class="post-nav-label">Older</span>
+          <span class="post-nav-title">
+            
+          </span>
         </span>
       </a>
       
 
       
       <a class="post-nav-link post-nav-next" href="/en">
-        <span class="post-nav-label">Newer</span>
-        <span class="post-nav-title">
-          
+        <span class="post-nav-text">
+          <span class="post-nav-label">Newer</span>
+          <span class="post-nav-title">
+            
+          </span>
         </span>
+        <svg class="post-nav-icon" aria-hidden="true"><use href="#icon-journal"></use></svg>
       </a>
       
     </nav>
     
   
 
-  <!-- Back link -->
+  <!-- Back link + copy-link -->
   <p class="post-back">
     <button onclick="history.back()" class="post-back-btn">
       &larr; Go back
     </button>
+    <button type="button" class="post-copy-link-btn" onclick="kitabomoriCopyLink(this)">
+      <svg class="post-copy-link-icon" aria-hidden="true"><use href="#icon-link"></use></svg>
+      <span class="post-copy-link-label" data-default="Copy link" data-copied="Copied!">
+        Copy link
+      </span>
+    </button>
   </p>
 
 </article>
+
+<script src="/assets/js/reading-progress.js" defer></script>
+<script>
+  /* Copies the current page URL to the clipboard and briefly swaps
+     the button label to a confirmation, then swaps it back. */
+  function kitabomoriCopyLink(btn) {
+    var label = btn.querySelector('.post-copy-link-label');
+    var url = window.location.href;
+
+    function showCopied() {
+      if (!label) return;
+      label.textContent = label.getAttribute('data-copied');
+      btn.classList.add('post-copy-link-btn-done');
+      setTimeout(function () {
+        label.textContent = label.getAttribute('data-default');
+        btn.classList.remove('post-copy-link-btn-done');
+      }, 2000);
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(showCopied, showCopied);
+    } else {
+      // Fallback for browsers without the Clipboard API
+      var temp = document.createElement('textarea');
+      temp.value = url;
+      temp.style.position = 'fixed';
+      temp.style.opacity = '0';
+      document.body.appendChild(temp);
+      temp.select();
+      try { document.execCommand('copy'); } catch (e) { /* no-op */ }
+      document.body.removeChild(temp);
+      showCopied();
+    }
+  }
+</script>
 
   </main>
 
@@ -826,7 +980,8 @@
      footer.html – site-wide footer
      Centered, stacked layout: nav links, submission/guidelines,
      social row, email, privacy policy, copyright.
-     Background: #009F93, Text: #FFFFFF. No icons anywhere.
+     Background: #009F93, Text: #FFFFFF. Social row uses the
+     platform logos from icons-sprite.svg.
      ============================================================ -->
 <footer class="site-footer" style="background-color:#009F93; color:#FFFFFF;">
   <div class="footer-inner">
@@ -878,12 +1033,24 @@
     </p>
 
     <!-- Row 3: Social -->
-    <p class="footer-row">
+    <p class="footer-row footer-social-row">
       <span class="footer-label">Follow us:</span>
-      <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" style="color:#FFFFFF;">Facebook</a> ·
-      <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" style="color:#FFFFFF;">Instagram</a> ·
-      <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" style="color:#FFFFFF;">X</a> ·
-      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener" style="color:#FFFFFF;">YouTube</a>
+      <a href="https://www.facebook.com/profile.php?id=61591317160832" target="_blank" rel="noopener" class="footer-social-link" style="color:#FFFFFF;">
+        <svg class="footer-social-icon" aria-hidden="true"><use href="#icon-facebook"></use></svg>
+        <span>Facebook</span>
+      </a>
+      <a href="https://www.instagram.com/kitabomori/" target="_blank" rel="noopener" class="footer-social-link" style="color:#FFFFFF;">
+        <svg class="footer-social-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg>
+        <span>Instagram</span>
+      </a>
+      <a href="https://x.com/Kitabomori" target="_blank" rel="noopener" class="footer-social-link" style="color:#FFFFFF;">
+        <svg class="footer-social-icon" aria-hidden="true"><use href="#icon-x"></use></svg>
+        <span>X</span>
+      </a>
+      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener" class="footer-social-link" style="color:#FFFFFF;">
+        <svg class="footer-social-icon" aria-hidden="true"><use href="#icon-youtube"></use></svg>
+        <span>YouTube</span>
+      </a>
     </p>
 
     <!-- Row 4: Email -->

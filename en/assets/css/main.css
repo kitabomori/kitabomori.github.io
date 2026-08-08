@@ -744,19 +744,46 @@ html:not([dir="rtl"]) .post-body blockquote {
   flex: 1 1 0;
   min-width: 0;
   display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
+  align-items: center;
+  gap: 0.6rem;
   text-decoration: none;
   color: inherit;
 }
 
+.post-nav-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+/* Section icon riding along with the neighbouring post's title,
+   tinted with the same --accent as the rest of the post (see
+   data-section on .post-nav) so it's immediately clear which
+   section Older/Newer will take you to. */
+.post-nav-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: var(--accent, #009F93);
+  opacity: 0.85;
+}
+
 .post-nav-link.post-nav-next {
   text-align: right;
+  flex-direction: row-reverse;
+}
+
+.post-nav-link.post-nav-next .post-nav-text {
   align-items: flex-end;
 }
 
 [dir="rtl"] .post-nav-link.post-nav-next {
   text-align: left;
+  flex-direction: row;
+}
+
+[dir="rtl"] .post-nav-link.post-nav-next .post-nav-text {
   align-items: flex-start;
 }
 
@@ -770,7 +797,7 @@ html:not([dir="rtl"]) .post-body blockquote {
 .post-nav-title {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #1D5FBF !important;
+  color: var(--accent, #1D5FBF) !important;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -778,14 +805,6 @@ html:not([dir="rtl"]) .post-body blockquote {
   transition: background-size 0.35s ease-out;
   padding-bottom: 1px;
   overflow-wrap: anywhere;
-}
-
-.dark .post-nav-title {
-  color: #7FB0FF !important;
-}
-
-.sepia .post-nav-title {
-  color: #1D5FBF !important;
 }
 
 .post-nav-link:hover .post-nav-title {
@@ -798,10 +817,16 @@ html:not([dir="rtl"]) .post-body blockquote {
   }
   .post-nav-link.post-nav-next {
     text-align: left;
+    flex-direction: row;
+  }
+  .post-nav-link.post-nav-next .post-nav-text {
     align-items: flex-start;
   }
   [dir="rtl"] .post-nav-link.post-nav-next {
     text-align: right;
+    flex-direction: row-reverse;
+  }
+  [dir="rtl"] .post-nav-link.post-nav-next .post-nav-text {
     align-items: flex-end;
   }
 }
@@ -1036,6 +1061,149 @@ html:not([dir="rtl"]) .post-body blockquote {
   background: #8A6D3B;
 }
 
+/* ---- Footer social row: platform logo + label ---- */
+.footer-social-row {
+  @apply flex flex-wrap items-center justify-center gap-x-4 gap-y-2;
+}
+
+.footer-social-link {
+  @apply inline-flex items-center gap-1.5 no-underline;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus-visible {
+  text-decoration: underline;
+}
+
+.footer-social-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* ---- Reading progress bar (post pages only) ---- */
+.reading-progress-track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 60; /* above the sticky header (z-50) */
+  background: transparent;
+}
+
+.reading-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent, #009F93);
+  transition: width 0.1s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reading-progress-fill {
+    transition: none;
+  }
+}
+
+/* ---- Breadcrumb trail above the post title ---- */
+.post-breadcrumb {
+  @apply text-sm mb-3;
+  text-align: center;
+  color: var(--reading-muted);
+}
+
+.post-breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-breadcrumb a:hover,
+.post-breadcrumb a:focus-visible {
+  text-decoration: underline;
+  color: var(--accent, #009F93);
+}
+
+.post-breadcrumb-sep {
+  margin: 0 0.4em;
+  opacity: 0.6;
+}
+
+[dir="rtl"] .post-breadcrumb-sep {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+/* ---- Copy-link button, sits beside the "Go back" button ---- */
+.post-back {
+  @apply flex flex-wrap items-center justify-center gap-3;
+}
+
+.post-copy-link-btn {
+  @apply inline-flex items-center gap-1.5 text-sm bg-transparent cursor-pointer;
+  border: 1px solid var(--reading-muted);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  color: inherit;
+}
+
+.post-copy-link-btn:hover,
+.post-copy-link-btn:focus-visible {
+  border-color: var(--accent, #009F93);
+  color: var(--accent, #009F93);
+}
+
+.post-copy-link-btn-done {
+  border-color: var(--accent, #009F93) !important;
+  color: var(--accent, #009F93) !important;
+}
+
+.post-copy-link-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+/* ---- Font-size control (header) ----
+   Cycles the whole document's root font-size: default -> large ->
+   larger. Everything else is set in rem, so this scales the whole
+   reading experience proportionally without a separate stylesheet. */
+html.text-size-lg {
+  font-size: 112.5%;
+}
+
+html.text-size-xl {
+  font-size: 125%;
+}
+
+/* ---- Sticky header: compact state after scrolling ----
+   Toggled by motion.js once the page scrolls past a small
+   threshold; a few px less padding and a smaller site title so
+   the header takes up less room during long reads, while staying
+   in place for quick access to nav/search/theme controls. */
+.site-header {
+  transition: padding 0.2s ease;
+}
+
+.site-header.header-scrolled .header-inner {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
+
+.site-header.header-scrolled .site-title {
+  font-size: 1.05rem;
+}
+
+.site-header.header-scrolled .site-title svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header {
+    transition: none;
+  }
+}
+
 /* ---- Section accent variable ----
    One --accent value per section, set on [data-section] via the
    attribute selectors below. Everything that should pick up the
@@ -1044,12 +1212,20 @@ html:not([dir="rtl"]) .post-body blockquote {
    no per-element color rules needed elsewhere. Lesson Plan posts never
    get a data-section attribute, so they always fall through to the
    plain teal default above and are visually untouched. */
-[data-section="articles"] { --accent: #C79A3E; } /* amber / gold */
-[data-section="reviews"]  { --accent: #4C7EA6; } /* steel blue */
-[data-section="creative"] { --accent: #C77FA0; } /* dusty pink */
-[data-section="letters"]  { --accent: #6E9B5E; } /* sage green */
-[data-section="diary"]    { --accent: #009F93; } /* teal (primary) */
-[data-section="events"]   { --accent: #D9714A; } /* coral */
+[data-section="articles"]      { --accent: #C79A3E; } /* amber / gold */
+[data-section="reviews"]       { --accent: #4C7EA6; } /* steel blue */
+[data-section="letters"]       { --accent: #6E9B5E; } /* sage green */
+[data-section="diary"]         { --accent: #009F93; } /* teal (primary) */
+[data-section="events"]        { --accent: #D9714A; } /* coral */
+/* Creative Writing used to share one pink accent across all six
+   strands; each now gets its own colour so every one of the site's
+   9 writing sections reads as visually distinct. */
+[data-section="short_stories"] { --accent: #C77FA0; } /* dusty rose */
+[data-section="poetry"]        { --accent: #8F5FC2; } /* violet */
+[data-section="reflections"]   { --accent: #A67C52; } /* warm taupe */
+[data-section="dialogues"]     { --accent: #2E9B6B; } /* jade green */
+[data-section="satire"]        { --accent: #B8622E; } /* rust / burnt orange */
+[data-section="nonfiction"]    { --accent: #7A9B4E; } /* olive green */
 
 /* ---- Rail lamp icon: the accented variant of .post-ornament, used
    for every post except Lesson Plans (see post.html). Same line +
@@ -1168,16 +1344,6 @@ html:not([dir="rtl"]) .site-title {
   text-decoration: underline;
 }
 
-/* Borderless ticker pause/resume control, same affordance pattern. */
-.ticker-pause-btn {
-  @apply text-xs font-semibold bg-transparent border-none cursor-pointer flex-shrink-0;
-  text-underline-offset: 3px;
-}
-.ticker-pause-btn:hover,
-.ticker-pause-btn:focus-visible {
-  text-decoration: underline;
-}
-
 /* ---- Dropdown submenu (Creative Writing) ---- */
 .nav-item-has-children {
   @apply relative;
@@ -1256,11 +1422,8 @@ html:not([dir="rtl"]) .site-title {
   animation: ticker-scroll 35s linear infinite;
 }
 
-.ticker-track:hover {
-  animation-play-state: paused;
-}
-
-.ticker-track.paused {
+.ticker-track:hover,
+.ticker-track:focus-within {
   animation-play-state: paused;
 }
 
@@ -1894,11 +2057,24 @@ html[dir="rtl"] .search-result:hover {
   color: #00c8b0;
 }
 
-/* ---- RTL prose ---- */
+/* ---- RTL prose ----
+   Urdu pages already read right-to-left (text-align: right below);
+   paragraph text is additionally justified so both edges line up,
+   with text-align-last: right so a short final line doesn't get
+   awkwardly stretched — it just settles back to the right, matching
+   the reading direction. Scoped to <p> (not headings/lists/blockquotes,
+   which have their own alignment) so justification only applies to
+   running prose. */
 [dir="rtl"] .page-content,
 [dir="rtl"] .post-body {
   direction: rtl;
   text-align: right;
+}
+
+[dir="rtl"] .page-content p,
+[dir="rtl"] .post-body p {
+  text-align: justify;
+  text-align-last: right;
 }
 
 [dir="rtl"] .post-back {
