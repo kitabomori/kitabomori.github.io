@@ -94,6 +94,42 @@ module Kitabomori
       ACCENT_GROUPS[collection] || "diary"
     end
 
+    # Arabic-script Unicode ranges (covers Urdu's script — Urdu doesn't
+    # have its own Unicode block, it uses Arabic + Arabic Presentation
+    # Forms). Used to detect the *actual* language of a pull-quote's
+    # text, independent of which language build (site.config["lang"])
+    # is currently being rendered.
+    ARABIC_SCRIPT = /[\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF]/.freeze
+
+    # Returns true/false for a quote that's clearly one script or the
+    # other, or nil if the text has no meaningful script signal (e.g.
+    # empty, punctuation/numbers only) — callers fall back to the
+    # site-wide build direction in that case.
+    #
+    # WHY THIS EXISTS: a post can live in the English collection
+    # (title_en set, no Urdu translation) while its own body — and
+    # therefore its pull_quote_en override or its auto-extracted quote
+    # sentence — is written entirely in Urdu (e.g. Teaching Diary
+    # entries transcribed from Urdu-medium lessons). Before this
+    # check, the pull-quote's dir/font were decided purely from
+    # site.config["direction"] (the *build's* language), so an Urdu
+    # quote rendered on the English build got dir="ltr" and fell back
+    # to the Literata (Latin-only) typeface via the plain
+    # `.pull-quote-text` CSS rule — invisible/garbled glyphs, since
+    # Literata has no Arabic/Urdu characters, instead of the Nastaliq
+    # typeface main.css already reserves for `.pull-quote[dir="rtl"]`.
+    # Detecting the quote's own script and overriding the build
+    # direction with it fixes that for this post and any future one,
+    # without touching the (already-correct) rest of the site's
+    # language handling.
+    def rtl_script?(text)
+      s = text.to_s
+      arabic = s.scan(ARABIC_SCRIPT).length
+      latin = s.scan(/[A-Za-z]/).length
+      return nil if arabic.zero? && latin.zero?
+      arabic > latin
+    end
+
     def process(doc, site)
       return unless doc.respond_to?(:output) && doc.output.is_a?(String) && !doc.output.empty?
       return if lesson_plan?(doc)
@@ -143,7 +179,14 @@ module Kitabomori
 
       return if quote_text.nil? || quote_text.empty?
 
-      quote_html = render_quote_html(quote_text, is_rtl, accent_group, source)
+      # Decide the quote's own direction/font from what the quote text
+      # actually is, not from which language build is currently being
+      # rendered — see rtl_script? above for why this matters (Urdu
+      # quotes surfacing on the English build, and vice versa).
+      detected_rtl = rtl_script?(quote_text)
+      effective_rtl = detected_rtl.nil? ? is_rtl : detected_rtl
+
+      quote_html = render_quote_html(quote_text, effective_rtl, accent_group, source)
       new_region = splice_into_region(region, paragraphs, quote_html)
 
       doc.output = doc.output[0...region_start] + new_region + doc.output[body_end..-1]
