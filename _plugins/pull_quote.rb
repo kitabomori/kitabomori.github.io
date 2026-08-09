@@ -64,12 +64,12 @@ module Kitabomori
       "reviews"       => "reviews",
       "letters"       => "letters",
       "events"        => "events",
-      "short_stories" => "creative",
-      "poetry"        => "creative",
-      "dialogues"     => "creative",
-      "satire"        => "creative",
-      "nonfiction"    => "creative",
-      "reflections"   => "creative",
+      "short_stories" => "short_stories",
+      "poetry"        => "poetry",
+      "dialogues"     => "dialogues",
+      "satire"        => "satire",
+      "nonfiction"    => "nonfiction",
+      "reflections"   => "reflections",
       "diary"         => "diary"
     }.freeze
 
