@@ -1068,16 +1068,17 @@ html:not([dir="rtl"]) .post-body blockquote {
 
 .footer-social-link {
   @apply inline-flex items-center gap-1.5 no-underline;
+  padding: 4px;
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus-visible {
-  text-decoration: underline;
+  opacity: 0.75;
 }
 
 .footer-social-icon {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
 }
 
@@ -1135,25 +1136,22 @@ html:not([dir="rtl"]) .post-body blockquote {
 
 /* ---- Copy-link button, sits beside the "Go back" button ---- */
 .post-back {
-  @apply flex flex-wrap items-center justify-center gap-3;
+  @apply flex flex-wrap items-center justify-center gap-6;
 }
 
 .post-copy-link-btn {
   @apply inline-flex items-center gap-1.5 text-sm bg-transparent cursor-pointer;
-  border: 1px solid var(--reading-muted);
-  border-radius: 999px;
-  padding: 0.35rem 0.9rem;
-  color: inherit;
+  border: none;
+  padding: 0;
+  color: #009F93;
 }
 
 .post-copy-link-btn:hover,
 .post-copy-link-btn:focus-visible {
-  border-color: var(--accent, #009F93);
-  color: var(--accent, #009F93);
+  text-decoration: underline;
 }
 
 .post-copy-link-btn-done {
-  border-color: var(--accent, #009F93) !important;
   color: var(--accent, #009F93) !important;
 }
 
@@ -2101,6 +2099,16 @@ html[dir="rtl"] .search-result:hover {
   color: #009F93;
 }
 
+/* Urdu Nastaliq letterforms (esp. the trailing "ی" in کتابومری)
+   dip well below the normal baseline — the small mb-2 gap that
+   works for the Latin heading isn't enough room here and the tail
+   was overlapping the tagline underneath it. Extra bottom space
+   and a taller line-height give the descender room to breathe. */
+[dir="rtl"] .home-heading {
+  line-height: 1.9;
+  margin-bottom: 1.25rem;
+}
+
 .home-tagline {
   text-align: center;
   font-style: italic;
@@ -2118,6 +2126,18 @@ html[dir="rtl"] .search-result:hover {
   margin: 0 auto 2rem;
   text-align: center;
   line-height: 1.8;
+}
+
+/* Urdu: paragraph copy reads right-to-left, so it starts from the
+   right and justifies both edges (matching post/page body text),
+   instead of being centered like the English version's short
+   hero copy. text-align-last keeps a short final line settled at
+   the right rather than stretched. */
+[dir="rtl"] .home-welcome p {
+  text-align: justify;
+  text-align-last: right;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Cards layout */
