@@ -72,8 +72,6 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <h4>8. Reference</h4>
 <ul>
-  <li><a href="https://byjus.com/free-ias-prep/this-day-in-history-dec30/#:~:text=The%20objectives%20of%20the%20league,of%20India%20among%20the%2">https://byjus.com/free-ias-prep/this-day-in-history-dec30/</a></li>
-</ul>
 
 <p><a href="https://byjus.com/free-ias-prep/this-day-in-history-dec30/" style="color:#1D5FBF; font-size:0.92rem;">byjus.com &mdash; This Day in History</a></p>
 
