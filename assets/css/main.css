@@ -15,7 +15,7 @@
    built for on-screen reading); headings/UI keep the brand teal.
    ============================================================ */
 :root {
-  --reading-bg: #FBF8F2;      /* warm paper, not stark white */
+  --reading-bg: #FAFAF7;      /* near-white, faint warmth only */
   --reading-text: #2B2A26;    /* soft near-black, not pure #000 */
   --reading-muted: #5C5A54;   /* muted warm grey for meta text */
 }
@@ -228,15 +228,15 @@ html[dir="rtl"].dark .section-card:hover {
    styled to feel like an old diary entry: aged paper tone, faint
    ruled lines, and a touch of tilt. ---- */
 .post-body {
-  background-color: #FBF3DE;
+  background-color: #FCFBF7;
   background-image:
-    repeating-linear-gradient(to bottom, transparent 0, transparent 30px, rgba(120, 92, 48, 0.09) 31px, transparent 32px),
-    radial-gradient(circle at 6% 10%, rgba(120, 92, 48, 0.07), transparent 40%),
-    radial-gradient(circle at 94% 88%, rgba(120, 92, 48, 0.06), transparent 45%);
-  border: 1px solid #DFCFA2;
+    repeating-linear-gradient(to bottom, transparent 0, transparent 30px, rgba(120, 92, 48, 0.04) 31px, transparent 32px),
+    radial-gradient(circle at 6% 10%, rgba(120, 92, 48, 0.03), transparent 40%),
+    radial-gradient(circle at 94% 88%, rgba(120, 92, 48, 0.03), transparent 45%);
+  border: 1px solid #E4DCC5;
   border-radius: 3px 16px 6px 18px;
   padding: 2rem;
-  box-shadow: 0 6px 18px rgba(74, 56, 32, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 14px rgba(74, 56, 32, 0.10), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
   position: relative;
 }
 
@@ -260,18 +260,18 @@ html[dir="rtl"].dark .section-card:hover {
    corner as the rest of the diary — only the base tone and border
    shift. ---- */
 .post-body-lesson-plan {
-  background-color: #DCE8F5 !important;
-  border-color: #8EB4DC !important;
+  background-color: #FCFBF7 !important;
+  border-color: #5E85AC !important;
 }
 
 .post-body-reflection {
-  background-color: #F0DCEE !important;
-  border-color: #C989C2 !important;
+  background-color: #FCFBF7 !important;
+  border-color: #A66B9E !important;
 }
 
 .post-body-reflective-report {
-  background-color: #DCEDD0 !important;
-  border-color: #8FBB6E !important;
+  background-color: #FCFBF7 !important;
+  border-color: #6E9350 !important;
 }
 
 .dark .post-body-lesson-plan {
@@ -374,53 +374,53 @@ html[dir="rtl"].dark .section-card:hover {
    set leaned too muddy/beige-on-beige) while keeping each tone
    paired with its section's own --accent color from earlier. ---- */
 .post-body-articles {
-  background-color: #FBF3DC !important;
-  border-color: #E3C878 !important;
+  background-color: #FCFBF7 !important;
+  border-color: #B8863E !important;
 }
 
 .post-body-reviews {
-  background-color: #E8F1F8 !important;
-  border-color: #A8C9DE !important;
+  background-color: #FCFBF7 !important;
+  border-color: #3F6E93 !important;
 }
 
 .post-body-letters {
-  background-color: #EEF5E9 !important;
-  border-color: #B9D9A6 !important;
+  background-color: #FCFBF7 !important;
+  border-color: #6B8F5A !important;
 }
 
 .post-body-events {
-  background-color: #FDEEE7 !important;
-  border-color: #F0B79A !important;
+  background-color: #FCFBF7 !important;
+  border-color: #C1633C !important;
 }
 
 .post-body-short_stories {
-  background-color: #FBEDF3 !important;
-  border-color: #EFBBD3 !important;
+  background-color: #FCFBF7 !important;
+  border-color: #B06B8A !important;
 }
 
 .post-body-poetry {
-  background-color: #F3EBFA !important;
-  border-color: #D6B8ED !important;
+  background-color: #FCFBF7 !important;
+  border-color: #7A5AA6 !important;
 }
 
 .post-body-dialogues {
-  background-color: #E8F7F0 !important;
-  border-color: #A3DFC0 !important;
+  background-color: #FCFBF7 !important;
+  border-color: #26805A !important;
 }
 
 .post-body-satire {
-  background-color: #FBEEE2 !important;
-  border-color: #E8B78C !important;
+  background-color: #FCFBF7 !important;
+  border-color: #9C5527 !important;
 }
 
 .post-body-nonfiction {
-  background-color: #F0F5E6 !important;
-  border-color: #C4D9A0 !important;
+  background-color: #FCFBF7 !important;
+  border-color: #6B8642 !important;
 }
 
 .post-body-reflections {
-  background-color: #F6EEE4 !important;
-  border-color: #DDBB93 !important;
+  background-color: #FCFBF7 !important;
+  border-color: #8F6A45 !important;
 }
 
 .dark .post-body-articles {
@@ -552,7 +552,7 @@ html[dir="rtl"].dark .section-card:hover {
    instead of ruled lines, double rule under the header. */
 .post-body-articles {
   border-radius: 4px;
-  background-image: radial-gradient(color-mix(in srgb, var(--accent) 22%, transparent) 1px, transparent 1.5px);
+  background-image: radial-gradient(color-mix(in srgb, var(--accent) 12%, transparent) 1px, transparent 1.5px);
   background-size: 13px 13px;
   border-bottom-style: double;
   border-bottom-width: 6px;
@@ -574,7 +574,7 @@ html[dir="rtl"].dark .section-card:hover {
   height: 0;
   border-style: solid;
   border-width: 0 34px 34px 0;
-  border-color: transparent color-mix(in srgb, var(--accent) 35%, transparent) transparent transparent;
+  border-color: transparent color-mix(in srgb, var(--accent) 22%, transparent) transparent transparent;
   border-top-right-radius: 26px;
   pointer-events: none;
 }
@@ -583,7 +583,7 @@ html[dir="rtl"] .post-body-reviews::before {
   right: auto;
   left: 0;
   border-width: 0 0 34px 34px;
-  border-color: transparent transparent transparent color-mix(in srgb, var(--accent) 35%, transparent);
+  border-color: transparent transparent transparent color-mix(in srgb, var(--accent) 22%, transparent);
   border-top-right-radius: 0;
   border-top-left-radius: 26px;
 }
@@ -594,7 +594,7 @@ html[dir="rtl"] .post-body-reviews::before {
   border-radius: 14px;
   border-style: double;
   border-width: 6px;
-  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 22px, color-mix(in srgb, var(--accent) 10%, transparent) 23px, transparent 24px);
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 22px, color-mix(in srgb, var(--accent) 6%, transparent) 23px, transparent 24px);
 }
 
 /* Events — a ticket stub: bold flat border plus a dashed perforation
@@ -602,7 +602,7 @@ html[dir="rtl"] .post-body-reviews::before {
 .post-body-events {
   border-radius: 6px;
   border-width: 2px;
-  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 30px, color-mix(in srgb, var(--accent) 8%, transparent) 31px, transparent 32px);
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 30px, color-mix(in srgb, var(--accent) 5%, transparent) 31px, transparent 32px);
 }
 
 .post-body-events::before,
@@ -612,8 +612,8 @@ html[dir="rtl"] .post-body-reviews::before {
   top: 50%;
   width: 16px;
   height: 16px;
-  background: var(--reading-bg, #FBF8F2);
-  border: 2px solid color-mix(in srgb, var(--accent) 55%, #DFCFA2);
+  background: var(--reading-bg, #FAFAF7);
+  border: 2px solid color-mix(in srgb, var(--accent) 40%, #E4DCC5);
   border-radius: 50%;
   transform: translateY(-50%);
   pointer-events: none;
@@ -626,7 +626,7 @@ html[dir="rtl"] .post-body-reviews::before {
    right, a faint page-curl shadow tucked into the corner. */
 .post-body-short_stories {
   border-radius: 44px 6px 44px 6px;
-  background-image: radial-gradient(circle at 96% 94%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 42%);
+  background-image: radial-gradient(circle at 96% 94%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 42%);
 }
 
 /* Poetry — kept minimal so the existing grow-in side rule stays the
@@ -652,7 +652,7 @@ html[dir="rtl"] .post-body-reviews::before {
   height: 0;
   border-style: solid;
   border-width: 14px 14px 0 0;
-  border-color: color-mix(in srgb, var(--accent) 45%, transparent) transparent transparent transparent;
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent) transparent transparent transparent;
   pointer-events: none;
 }
 
@@ -660,7 +660,7 @@ html[dir="rtl"] .post-body-dialogues::after {
   left: auto;
   right: 20px;
   border-width: 14px 0 0 14px;
-  border-color: color-mix(in srgb, var(--accent) 45%, transparent) transparent transparent transparent;
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent) transparent transparent transparent;
 }
 
 /* Satire — a playful, slightly crooked note with a dashed border and
@@ -680,8 +680,8 @@ html[dir="rtl"] .post-body-dialogues::after {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: color-mix(in srgb, var(--accent) 70%, transparent);
-  opacity: 0.5;
+  background: color-mix(in srgb, var(--accent) 50%, transparent);
+  opacity: 0.4;
   transform: rotate(12deg);
   pointer-events: none;
 }
@@ -696,15 +696,15 @@ html[dir="rtl"] .post-body-satire::after {
 .post-body-nonfiction {
   border-radius: 4px;
   background-image:
-    repeating-linear-gradient(to bottom, transparent 0, transparent 23px, color-mix(in srgb, var(--accent) 10%, transparent) 24px, transparent 25px),
-    repeating-linear-gradient(to right, transparent 0, transparent 23px, color-mix(in srgb, var(--accent) 10%, transparent) 24px, transparent 25px);
+    repeating-linear-gradient(to bottom, transparent 0, transparent 23px, color-mix(in srgb, var(--accent) 6%, transparent) 24px, transparent 25px),
+    repeating-linear-gradient(to right, transparent 0, transparent 23px, color-mix(in srgb, var(--accent) 6%, transparent) 24px, transparent 25px);
 }
 
 /* Reflections — a mirror: soft rounded top corners, sharp bottom
    corners, and a faint centred glow suggesting a looking-glass. */
 .post-body-reflections {
   border-radius: 34px 34px 4px 4px;
-  background-image: radial-gradient(ellipse at 50% 38%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 60%);
+  background-image: radial-gradient(ellipse at 50% 38%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 60%);
 }
 
 /* ---- Diary sub-formats: same shape treatment as their siblings
@@ -717,15 +717,15 @@ html[dir="rtl"] .post-body-satire::after {
   border-top-style: double;
   border-top-width: 6px;
   background-image:
-    repeating-linear-gradient(to bottom, transparent 0, transparent 19px, color-mix(in srgb, #8EB4DC 12%, transparent) 20px, transparent 21px),
-    repeating-linear-gradient(to right, transparent 0, transparent 19px, color-mix(in srgb, #8EB4DC 12%, transparent) 20px, transparent 21px);
+    repeating-linear-gradient(to bottom, transparent 0, transparent 19px, color-mix(in srgb, #5E85AC 7%, transparent) 20px, transparent 21px),
+    repeating-linear-gradient(to right, transparent 0, transparent 19px, color-mix(in srgb, #5E85AC 7%, transparent) 20px, transparent 21px);
 }
 
 /* Reflections (diary format) — a journal: soft uniform rounding,
    quiet dot texture rather than ruled lines. */
 .post-body-reflection {
   border-radius: 26px;
-  background-image: radial-gradient(color-mix(in srgb, #C989C2 20%, transparent) 1px, transparent 1.5px);
+  background-image: radial-gradient(color-mix(in srgb, #A66B9E 12%, transparent) 1px, transparent 1.5px);
   background-size: 14px 14px;
 }
 
@@ -733,11 +733,11 @@ html[dir="rtl"] .post-body-satire::after {
    binder-margin stripe down the leading edge. */
 .post-body-reflective-report {
   border-radius: 4px;
-  box-shadow: inset 7px 0 0 0 color-mix(in srgb, #8FBB6E 70%, transparent), 0 6px 18px rgba(74, 56, 32, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  box-shadow: inset 7px 0 0 0 color-mix(in srgb, #6E9350 60%, transparent), 0 6px 18px rgba(74, 56, 32, 0.10), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
 }
 
 html[dir="rtl"] .post-body-reflective-report {
-  box-shadow: inset -7px 0 0 0 color-mix(in srgb, #8FBB6E 70%, transparent), 0 6px 18px rgba(74, 56, 32, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  box-shadow: inset -7px 0 0 0 color-mix(in srgb, #6E9350 60%, transparent), 0 6px 18px rgba(74, 56, 32, 0.10), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
 }
 
 .dark .post-body-reflective-report {
@@ -1405,21 +1405,25 @@ html.text-size-xl {
    references var(--accent, #009F93) and inherits it automatically —
    no per-element color rules needed elsewhere. Lesson Plan posts never
    get a data-section attribute, so they always fall through to the
-   plain teal default above and are visually untouched. */
-[data-section="articles"]      { --accent: #C79A3E; } /* amber / gold */
-[data-section="reviews"]       { --accent: #4C7EA6; } /* steel blue */
-[data-section="letters"]       { --accent: #6E9B5E; } /* sage green */
-[data-section="diary"]         { --accent: #009F93; } /* teal (primary) */
-[data-section="events"]        { --accent: #D9714A; } /* coral */
+   plain teal default above and are visually untouched.
+   Palette refreshed (Aug 2026): softened/muted versions of the
+   original set, paired with near-white post backgrounds — color now
+   lives in borders, rails, and small accents rather than a full
+   colored paper wash, for a calmer, more reading-first page. */
+[data-section="articles"]      { --accent: #B8863E; } /* muted amber / gold */
+[data-section="reviews"]       { --accent: #3F6E93; } /* muted steel blue */
+[data-section="letters"]       { --accent: #6B8F5A; } /* muted sage green */
+[data-section="diary"]         { --accent: #157567; } /* muted teal */
+[data-section="events"]        { --accent: #C1633C; } /* muted terracotta */
 /* Creative Writing used to share one pink accent across all six
    strands; each now gets its own colour so every one of the site's
    9 writing sections reads as visually distinct. */
-[data-section="short_stories"] { --accent: #C77FA0; } /* dusty rose */
-[data-section="poetry"]        { --accent: #8F5FC2; } /* violet */
-[data-section="reflections"]   { --accent: #A67C52; } /* warm taupe */
-[data-section="dialogues"]     { --accent: #2E9B6B; } /* jade green */
-[data-section="satire"]        { --accent: #B8622E; } /* rust / burnt orange */
-[data-section="nonfiction"]    { --accent: #7A9B4E; } /* olive green */
+[data-section="short_stories"] { --accent: #B06B8A; } /* muted dusty rose */
+[data-section="poetry"]        { --accent: #7A5AA6; } /* muted violet */
+[data-section="reflections"]   { --accent: #8F6A45; } /* muted warm taupe */
+[data-section="dialogues"]     { --accent: #26805A; } /* muted jade green */
+[data-section="satire"]        { --accent: #9C5527; } /* muted rust / burnt orange */
+[data-section="nonfiction"]    { --accent: #6B8642; } /* muted olive green */
 
 /* ---- Rail lamp icon: the accented variant of .post-ornament, used
    for every post except Lesson Plans (see post.html). Same line +
@@ -1441,7 +1445,7 @@ html.text-size-xl {
   height: 22px;
   transform: translate(-50%, -50%);
   color: var(--accent, #009F93);
-  background: var(--reading-bg, #FDF8EC);
+  background: var(--reading-bg, #FAFAF7);
   border-radius: 50%;
   padding: 3px;
   opacity: 0.85;
@@ -1854,8 +1858,8 @@ html:not([dir="rtl"]) .post-title {
   max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
-  background: color-mix(in srgb, #009F93 5%, #FDF8EC);
-  border: 1px solid #E5DFD0;
+  background: color-mix(in srgb, #157567 5%, #FCFBF7);
+  border: 1px solid #E4DCC5;
   border-radius: 6px;
 }
 
@@ -2341,16 +2345,16 @@ html[dir="rtl"] .search-result:hover {
 }
 
 .section-card {
-  --accent: #009F93;
+  --accent: #157567;
   position: relative;
   text-align: left;
-  border: 1px solid #E4D9BC;
+  border: 1px solid #E4DCC5;
   border-top: none;
   border-radius: 4px 4px 10px 10px;
   padding: 1.6rem 1.5rem 1.35rem;
-  background-color: #FDF8EC;
-  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 26px, rgba(120, 92, 48, 0.05) 27px, transparent 28px);
-  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+  background-color: #FCFBF7;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 26px, rgba(120, 92, 48, 0.025) 27px, transparent 28px);
+  box-shadow: 0 2px 8px rgba(74, 56, 32, 0.05);
 }
 
 /* Progressive enhancement: tint each card's background with a whisper
@@ -2360,7 +2364,7 @@ html[dir="rtl"] .search-result:hover {
    browsers without color-mix() support. */
 @supports (background-color: color-mix(in srgb, red, blue)) {
   .section-card {
-    background-color: color-mix(in srgb, var(--accent) 7%, #FDF8EC);
+    background-color: color-mix(in srgb, var(--accent) 5%, #FCFBF7);
   }
 }
 
@@ -2387,12 +2391,12 @@ html[dir="rtl"] .search-result:hover {
   }
 }
 
-.section-card-articles  { --accent: #C79A3E; }
-.section-card-reviews   { --accent: #D9754A; }
-.section-card-creative  { --accent: #A25FC7; }
-.section-card-letters   { --accent: #5A63C7; }
-.section-card-diary     { --accent: #3C8CBF; }
-.section-card-events    { --accent: #B8A521; }
+.section-card-articles  { --accent: #B8863E; }
+.section-card-reviews   { --accent: #3F6E93; }
+.section-card-creative  { --accent: #7A5AA6; }
+.section-card-letters   { --accent: #6B8F5A; }
+.section-card-diary     { --accent: #157567; }
+.section-card-events    { --accent: #C1633C; }
 
 /* Urdu: the short blurb under each of the homepage's 9 section
    cards is running prose (unlike the centered hero copy above it),
@@ -2410,15 +2414,15 @@ html[dir="rtl"] .search-result:hover {
    reflection / reflective-report accent instead, matching the tint
    used on the posts themselves. ---- */
 .content-card {
-  --accent: #009F93;
+  --accent: #157567;
   position: relative;
-  border: 1px solid #E4D9BC;
+  border: 1px solid #E4DCC5;
   border-top: none;
   border-radius: 4px 4px 10px 10px;
   padding: 1.5rem 1.5rem 1.25rem;
-  background-color: #FDF8EC;
-  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 26px, rgba(120, 92, 48, 0.05) 27px, transparent 28px);
-  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+  background-color: #FCFBF7;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 26px, rgba(120, 92, 48, 0.025) 27px, transparent 28px);
+  box-shadow: 0 2px 8px rgba(74, 56, 32, 0.05);
   transition: transform 0.35s ease-out, box-shadow 0.35s ease-out;
 }
 
@@ -2448,7 +2452,7 @@ html[dir="rtl"] .search-result:hover {
    than sharing one flat cream for every collection. */
 @supports (background-color: color-mix(in srgb, red, blue)) {
   .content-card {
-    background-color: color-mix(in srgb, var(--accent) 7%, #FDF8EC);
+    background-color: color-mix(in srgb, var(--accent) 5%, #FCFBF7);
   }
 
   .dark .content-card {
@@ -2456,20 +2460,20 @@ html[dir="rtl"] .search-result:hover {
   }
 }
 
-.card-grid-articles      .content-card { --accent: #C79A3E; }
-.card-grid-reviews       .content-card { --accent: #D9754A; }
-.card-grid-letters       .content-card { --accent: #5A63C7; }
-.card-grid-events        .content-card { --accent: #B8A521; }
-.card-grid-short_stories .content-card { --accent: #C77FA0; }
-.card-grid-poetry        .content-card { --accent: #A25FC7; }
-.card-grid-dialogues     .content-card { --accent: #3EAF8C; }
-.card-grid-satire        .content-card { --accent: #C7883E; }
-.card-grid-nonfiction    .content-card { --accent: #5FA35F; }
-.card-grid-reflections   .content-card { --accent: #B08E6E; }
-.card-grid-diary         .content-card { --accent: #7A6A4F; }
-.card-grid-diary .content-card-lesson-plan       { --accent: #3C6690; }
-.card-grid-diary .content-card-reflection        { --accent: #8E4F8A; }
-.card-grid-diary .content-card-reflective-report { --accent: #4A6B34; }
+.card-grid-articles      .content-card { --accent: #B8863E; }
+.card-grid-reviews       .content-card { --accent: #3F6E93; }
+.card-grid-letters       .content-card { --accent: #6B8F5A; }
+.card-grid-events        .content-card { --accent: #C1633C; }
+.card-grid-short_stories .content-card { --accent: #B06B8A; }
+.card-grid-poetry        .content-card { --accent: #7A5AA6; }
+.card-grid-dialogues     .content-card { --accent: #26805A; }
+.card-grid-satire        .content-card { --accent: #9C5527; }
+.card-grid-nonfiction    .content-card { --accent: #6B8642; }
+.card-grid-reflections   .content-card { --accent: #8F6A45; }
+.card-grid-diary         .content-card { --accent: #157567; }
+.card-grid-diary .content-card-lesson-plan       { --accent: #5E85AC; }
+.card-grid-diary .content-card-reflection        { --accent: #A66B9E; }
+.card-grid-diary .content-card-reflective-report { --accent: #6E9350; }
 
 /* Links in intro paragraph */
 .home-welcome a {
