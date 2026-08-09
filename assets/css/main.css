@@ -344,7 +344,20 @@ html[dir="rtl"].dark .section-card:hover {
    items, table cells, etc.) automatically — individual elements no
    longer need to repeat the font-family declaration themselves. ---- */
 [dir="rtl"] {
-  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;
+  font-family: 'Jameel Noori Nastaliq', serif;
+}
+
+/* Word/phrase-level language overrides — the only two fonts on this
+   site are Literata (English) and Jameel Noori Nastaliq (Urdu). These
+   let an author wrap a snippet in <span lang="ur"> inside an English
+   post, or <span lang="en"> inside an Urdu post, so mixed-language
+   text still renders in the correct one of the two, regardless of
+   which page/direction it sits in. */
+:lang(ur) {
+  font-family: 'Jameel Noori Nastaliq', serif;
+}
+:lang(en) {
+  font-family: 'Literata', serif;
 }
 
 .sepia .post-body-reflective-report {
@@ -794,7 +807,7 @@ html[dir="rtl"].dark .post-body-reflective-report {
   position: absolute;
   top: -0.6rem;
   left: 0.6rem;
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Literata', serif;
   font-size: 4.5rem;
   line-height: 1;
   color: var(--accent, #009F93);
@@ -806,7 +819,7 @@ html[dir="rtl"].dark .post-body-reflective-report {
 .pull-quote[dir="rtl"] .pull-quote-glyph {
   left: auto;
   right: 0.6rem;
-  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;
+  font-family: 'Jameel Noori Nastaliq', serif;
 }
 
 .pull-quote-text {
@@ -821,7 +834,7 @@ html[dir="rtl"].dark .post-body-reflective-report {
 }
 
 .pull-quote[dir="rtl"] .pull-quote-text {
-  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;
+  font-family: 'Jameel Noori Nastaliq', serif;
   font-style: normal;
   font-weight: 400;
   line-height: 2;
@@ -855,7 +868,7 @@ html[dir="rtl"].dark .post-body-reflective-report {
 /* ---- Pull quotes: any blockquote in the writing becomes a
    large, quiet quotation rather than a boxed callout.
    font-family is scoped to html:not([dir="rtl"]) so Urdu blockquotes
-   keep inheriting Noto Nastaliq Urdu (set on [dir="rtl"] near the top
+   keep inheriting Jameel Noori Nastaliq (set on [dir="rtl"] near the top
    of this file) instead of being forced into the Latin serif Literata,
    which doesn't have Nastaliq glyphs and would render Urdu text with
    the browser's fallback font instead of the Urdu typeface. ---- */
@@ -882,7 +895,7 @@ html:not([dir="rtl"]) .post-body blockquote {
   top: -0.15em;
   font-size: 2.6em;
   font-style: normal;
-  font-family: Georgia, serif;
+  font-family: 'Literata', serif;
   color: #009F93;
   opacity: 0.5;
   line-height: 1;
@@ -1487,7 +1500,7 @@ html.text-size-xl {
 }
 
 html:not([dir="rtl"]) .site-title {
-  font-family: 'Fraunces', 'Literata', serif;
+  font-family: 'Literata', serif;
 }
 
 .nav-toggle {
@@ -1653,7 +1666,7 @@ html:not([dir="rtl"]) .site-title {
 }
 
 html:not([dir="rtl"]) .page-title {
-  font-family: 'Fraunces', 'Literata', serif;
+  font-family: 'Literata', serif;
 }
 
 .page-content {
@@ -1682,11 +1695,11 @@ html:not([dir="rtl"]) .page-title {
 }
 
 /* Display serif for titles only — Literata stays the body-copy face.
-   Scoped to LTR so Urdu titles keep rendering in Noto Nastaliq Urdu
+   Scoped to LTR so Urdu titles keep rendering in Jameel Noori Nastaliq
    (set on [dir="rtl"] elsewhere in this file) rather than falling
    back to a Latin font with no Nastaliq glyphs. */
 html:not([dir="rtl"]) .post-title {
-  font-family: 'Fraunces', 'Literata', serif;
+  font-family: 'Literata', serif;
 }
 
 /* Nastaliq glyphs are tall and extend well below the normal line box,
@@ -2037,7 +2050,7 @@ html:not([dir="rtl"]) .post-title {
 }
 
 html:not([dir="rtl"]) .home-heading {
-  font-family: 'Fraunces', 'Literata', serif;
+  font-family: 'Literata', serif;
 }
 
 .home-tagline {
@@ -2058,7 +2071,7 @@ html:not([dir="rtl"]) .home-heading {
 }
 
 html:not([dir="rtl"]) .section-card h2 {
-  font-family: 'Fraunces', 'Literata', serif;
+  font-family: 'Literata', serif;
 }
 
 .section-card h2 a {
@@ -2080,7 +2093,7 @@ html:not([dir="rtl"]) .section-card h2 {
 }
 
 html:not([dir="rtl"]) .card-title {
-  font-family: 'Fraunces', 'Literata', serif;
+  font-family: 'Literata', serif;
 }
 
 .card-title a {

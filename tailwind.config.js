@@ -24,13 +24,12 @@ module.exports = {
         },
       },
       fontFamily: {
+        // Only two fonts on the whole site: Literata for every English
+        // word, Jameel Noori Nastaliq for every Urdu word. No display
+        // face, no fallbacks to other Latin/Nastaliq fonts.
         sans: ['Literata', 'serif'],
-        urdu: ['"Noto Nastaliq Urdu"', 'serif'],
-        // Display face for titles/headings only (English pages) — a
-        // heavier, more editorial serif than the body copy, so titles
-        // read as a masthead rather than just bold body text. Body
-        // copy and Urdu are untouched.
-        display: ['Fraunces', 'Literata', 'serif'],
+        urdu: ['"Jameel Noori Nastaliq"', 'serif'],
+        display: ['Literata', 'serif'],
       },
     },
   },

@@ -1,6 +1,6 @@
 lang: ur
 direction: rtl
-body_font: "'Noto Nastaliq Urdu', serif"
+body_font: "'Jameel Noori Nastaliq', serif"
 
 # See the matching comment in _config_en.yml — same fix, /ur subpath.
 url: "https://kitabomori.github.io/ur"
