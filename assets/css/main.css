@@ -812,7 +812,7 @@ html[dir="rtl"].dark .post-body-reflective-report {
 .pull-quote-text {
   position: relative;
   margin: 0;
-  font-family: 'Literata', serif;
+  font-family: inherit;
   font-style: italic;
   font-weight: 500;
   font-size: 1.6em;
@@ -821,7 +821,6 @@ html[dir="rtl"].dark .post-body-reflective-report {
 }
 
 .pull-quote[dir="rtl"] .pull-quote-text {
-  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;
   font-style: normal;
   font-weight: 400;
   line-height: 2;
@@ -854,25 +853,19 @@ html[dir="rtl"].dark .post-body-reflective-report {
 
 /* ---- Pull quotes: any blockquote in the writing becomes a
    large, quiet quotation rather than a boxed callout.
-   font-family is scoped to html:not([dir="rtl"]) so Urdu blockquotes
-   keep inheriting Noto Nastaliq Urdu (set on [dir="rtl"] near the top
-   of this file) instead of being forced into the Latin serif Literata,
-   which doesn't have Nastaliq glyphs and would render Urdu text with
-   the browser's fallback font instead of the Urdu typeface. ---- */
+   font-family inherits from the post body so quotes stay in the same
+   typeface as surrounding prose (including RTL Nastaliq pages). ---- */
 .post-body blockquote {
   border: none;
   margin: 1.35rem 0;
   padding: 0 1rem 0 2.75rem;
   position: relative;
+  font-family: inherit;
   font-style: italic;
   font-size: 1.3em;
   line-height: 1.6;
   color: var(--reading-text);
   opacity: 0.92;
-}
-
-html:not([dir="rtl"]) .post-body blockquote {
-  font-family: 'Literata', serif;
 }
 
 .post-body blockquote::before {
