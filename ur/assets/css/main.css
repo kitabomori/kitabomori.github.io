@@ -510,6 +510,16 @@ html[dir="rtl"].dark .section-card:hover {
   border-color: #A67C52 !important;
 }
 
+/* Extra-strong, unmistakable section-color signal: a solid accent
+   bar across the top edge of the post frame, on top of the paper
+   tint above. Selector specificity ([data-section] + class) beats
+   the tint rules' plain class selector on purpose, so this always
+   wins regardless of source order. Lesson Plan posts never carry
+   data-section (see post.html), so they're naturally unaffected. */
+.post-body[data-section] {
+  border-top: 6px solid var(--accent, #009F93) !important;
+}
+
 /* ---- Reading-time duration badge (e.g. "3:00") ---- */
 .post-reading-time {
   font-variant-numeric: tabular-nums;
@@ -554,6 +564,20 @@ html.sepia:not([dir="rtl"]) .post-body:not(.post-body-lesson-plan) > p:first-of-
   color: #8A6D3B;
 }
 
+/* Belt-and-suspenders: explicitly neutralize the drop cap for Urdu
+   posts. The rule above is already scoped to html:not([dir="rtl"]),
+   but Nastaliq script doesn't carry this typographic convention at
+   all — a lone enlarged first character (e.g. "ن" isolated from the
+   rest of "نامہ") reads as broken, not stylish — so this makes the
+   exclusion explicit rather than relying only on the negation above. */
+[dir="rtl"] .post-body > p:first-of-type::first-letter {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
 /* ---- Auto-extracted pull quote ("crux" sentence) ----
    Injected server-side by _plugins/pull_quote.rb, after the first
    2-3 prose paragraphs (or, for short posts, right at the top of the
@@ -592,7 +616,7 @@ html.sepia:not([dir="rtl"]) .post-body:not(.post-body-lesson-plan) > p:first-of-
 .pull-quote[dir="rtl"] .pull-quote-glyph {
   left: auto;
   right: 0.6rem;
-  font-family: 'Noto Nastaliq Urdu', serif;
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;
 }
 
 .pull-quote-text {
@@ -607,8 +631,9 @@ html.sepia:not([dir="rtl"]) .post-body:not(.post-body-lesson-plan) > p:first-of-
 }
 
 .pull-quote[dir="rtl"] .pull-quote-text {
-  font-family: 'Noto Nastaliq Urdu', serif;
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaliq', serif;
   font-style: normal;
+  font-weight: 400;
   line-height: 2;
 }
 
@@ -758,7 +783,6 @@ html:not([dir="rtl"]) .post-body blockquote {
 
 .post-nav-label {
   font-size: 0.75rem;
-  text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--reading-muted);
 }
@@ -2097,16 +2121,12 @@ html[dir="rtl"] .search-result:hover {
   line-height: 1.8;
 }
 
-/* Urdu: paragraph copy reads right-to-left, so it starts from the
-   right and justifies both edges (matching post/page body text),
-   instead of being centered like the English version's short
-   hero copy. text-align-last keeps a short final line settled at
-   the right rather than stretched. */
+/* Urdu: the "what Kitabomori is" hero copy stays centered (short,
+   welcoming, headline-style paragraphs) — unlike the running prose
+   in posts/pages, this reads better centered under the centered
+   heading/tagline above it. */
 [dir="rtl"] .home-welcome p {
-  text-align: justify;
-  text-align-last: right;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 
 /* Cards layout */
@@ -2170,6 +2190,15 @@ html[dir="rtl"] .search-result:hover {
 .section-card-letters   { --accent: #5A63C7; }
 .section-card-diary     { --accent: #3C8CBF; }
 .section-card-events    { --accent: #B8A521; }
+
+/* Urdu: the short blurb under each of the homepage's 9 section
+   cards is running prose (unlike the centered hero copy above it),
+   so it starts from the right and justifies both edges, matching
+   the same treatment given to post/page body paragraphs. */
+[dir="rtl"] .section-card p {
+  text-align: justify;
+  text-align-last: right;
+}
 
 /* ---- Content cards (collection listing pages): same textured,
    accented treatment as the homepage cards, one accent per
