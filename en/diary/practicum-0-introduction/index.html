@@ -140,23 +140,31 @@
      third font anywhere.
 
      Literata comes from Google Fonts. Jameel Noori Nastaliq is NOT on
-     Google Fonts — it's a freeware desktop font, so it must be
-     self-hosted: drop the font file at
-     /assets/fonts/JameelNooriNastaliq.woff2 (or .ttf) for the
-     @font-face below to pick it up. Until that file is added, Urdu
-     text will fall back to the browser's default serif. -->
+     Google Fonts — it's a freeware desktop font, so it's loaded here
+     from OnlineWebFonts' CDN (db.onlinewebfonts.com), which hosts a
+     web-ready build (woff2/woff/ttf) of this exact font under CC BY
+     4.0 with required attribution — see the credit comment in the
+     @font-face block below and the matching note in the footer. This
+     works immediately with no file upload required. For a production
+     site that wants full control (no third-party CDN dependency),
+     swap this for a self-hosted copy: replace the src urls below with
+     local paths under /assets/fonts/, once you have a copy you're
+     licensed to redistribute. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 
-<!-- Self-hosted: Jameel Noori Nastaliq. Add the actual font file at
-     the path below (woff2 preferred; ttf works too, just change the
-     format() and src accordingly). -->
+<!-- Jameel Noori Nastaliq, served via OnlineWebFonts CDN.
+     Credit required by license: Font made from onlinewebfonts.com,
+     licensed CC BY 4.0 — https://www.onlinewebfonts.com/fonts -->
 <style>
 @font-face {
   font-family: 'Jameel Noori Nastaliq';
-  src: url('/assets/fonts/JameelNooriNastaliq.woff2') format('woff2'),
-       url('/assets/fonts/JameelNooriNastaliq.ttf') format('truetype');
+  src: url('https://db.onlinewebfonts.com/t/0f64bc9fbd20b8f7ddb4ea11756cbbb7.eot');
+  src: url('https://db.onlinewebfonts.com/t/0f64bc9fbd20b8f7ddb4ea11756cbbb7.eot?#iefix') format('embedded-opentype'),
+       url('https://db.onlinewebfonts.com/t/0f64bc9fbd20b8f7ddb4ea11756cbbb7.woff2') format('woff2'),
+       url('https://db.onlinewebfonts.com/t/0f64bc9fbd20b8f7ddb4ea11756cbbb7.woff') format('woff'),
+       url('https://db.onlinewebfonts.com/t/0f64bc9fbd20b8f7ddb4ea11756cbbb7.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1097,6 +1105,17 @@
       
         All rights reserved. A volunteer educational publishing initiative.
       
+    </p>
+
+    <!-- Row 7: Font credit — required attribution for the Jameel Noori
+         Nastaliq web font, served via OnlineWebFonts under CC BY 4.0.
+         See the matching comment in _includes/head.html. -->
+    <p class="footer-copy" style="font-size: 0.75rem; opacity: 0.85;">
+      
+        Urdu font "Jameel Noori Nastaliq" from
+      
+      <a href="https://www.onlinewebfonts.com/fonts" target="_blank" rel="noopener" style="color:#FFFFFF;">onlinewebfonts.com</a>,
+      licensed CC BY 4.0.
     </p>
 
   </div><!-- /.footer-inner -->
