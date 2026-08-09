@@ -1,14 +1,14 @@
 ---
 layout: post
-title_en: "Review: The Three Questions"
-title_ur: ""
+title_en: "The Three Questions"
+title_ur: "تین سوال"
 date: 2026-07-01
 author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "Tolstoy's short story: a king's search for the right time, the right people, and the right task."
-description_ur: "ٹالسٹائی کی مختصر کہانی : ایک بادشاہ کی صحیح وقت، صحیح لوگوں اور صحیح کام کی تلاش۔"
+description_en: "A search for the right time, people, and right task."
+description_ur: " صحیح وقت، لوگوں اور  کام کی تلاش۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
