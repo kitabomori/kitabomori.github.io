@@ -1,14 +1,14 @@
 ---
 layout: post
-title_en: "The Three Questions"
-title_ur: "تین سوال"
+title_en: "Review: The Three Questions"
+title_ur: ""
 date: 2026-07-01
 author_en: ""
 author_ur: ""
 bio_en: ""
 bio_ur: ""
-description_en: "A search for the right time, the right people, and the right task."
-description_ur: "صحیح وقت، صحیح لوگوں اور صحیح کام کی تلاش۔"
+description_en: "Tolstoy's short story: a king's search for the right time, the right people, and the right task."
+description_ur: "ٹالسٹائی کی مختصر کہانی : ایک بادشاہ کی صحیح وقت، صحیح لوگوں اور صحیح کام کی تلاش۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
@@ -21,7 +21,7 @@ When no one received the reward, the king sought the wisdom of a hermit who live
 
 As the king prepared to leave without answers, the hermit said, "You have already been answered. When I was digging yesterday, you helped me, and that was the most important time. I was the most important man, and doing good for me was the most important business. Then, when the injured man came, attending to him became the most important task, or else he could have died. He was the most important man at that moment, and what you did for him was the most important action."
 
-Tolstoy firmly believed that literature and the arts could be used for psychological education and reform. The story of the three questions reflects his beliefs and thoughts. If we focus on living in the present, value those around us, and prioritise our actions, we can overcome many obstacles. Tolstoy summarises his argument: "Remember, there is only one time that is important—' now.' It is the most crucial time because it is the only time when we have any power. The most necessary person is the one you are with, as no one knows whether they will ever have to engage with anyone else. And the most important affair is to do good for that person because man was sent into this life for that purpose." A century later, Paulo Coelho echoed these sentiments in "The Alchemist," stating, “I don’t live in either my past or my future. I’m interested only in the present. If you can always concentrate on the present, you’ll be a happy man. Life will be a party for you, a grand festival.”
+Tolstoy firmly believed that literature and the arts could be used for psychological education and reform. The story of the three questions reflects his beliefs and thoughts. If we focus on living in the present, value those around us, and prioritise our actions, we can overcome many obstacles. Tolstoy summarises his argument: "Remember, there is only one time that is important—' now.' It is the most crucial time because it is the only time when we have any power. The most necessary person is the one you are with, as no one knows if they will ever have to engage with another. And the most important affair is to do good for that person because man was sent into this life for that purpose." A century later, Paulo Coelho echoed these sentiments in "The Alchemist," stating, “I don’t live in either my past or my future. I’m interested only in the present. If you can always concentrate on the present, you’ll be a happy man. Life will be a party for you, a grand festival.”
 
 By applying the philosophy of the three questions, we can lead lives free of hassle and depression. For instance, consider students in a class. If they occupy their minds with distractions outside class, such as social media and gossip, they learn little and end up blaming external factors for their struggles. Their priority should be the teacher, their classmates, and the topic at hand.
 

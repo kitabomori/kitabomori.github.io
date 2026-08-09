@@ -28,13 +28,6 @@ permalink: /events/
     {% if item_desc and item_desc != "" %}
     <p class="card-excerpt">{{ item_desc }}</p>
     {% endif %}
-    <p class="card-excerpt">
-      {% if site.lang == 'ur' %}
-        {{ item.description_ur }}
-      {% else %}
-        {{ item.description_en }}
-      {% endif %}
-    </p>
     <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}" class="card-read-more">
       {% if site.lang == 'ur' %}مزید پڑھیں &rarr;{% else %}Read more &rarr;{% endif %}
     </a>
