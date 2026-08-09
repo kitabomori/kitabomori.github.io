@@ -226,7 +226,7 @@ html[dir="rtl"].dark .section-card:hover {
 
 /* ---- Classic Paper Frame — the writing itself sits on a page,
    styled to feel like an old diary entry: aged paper tone, faint
-   ruled lines, a folded page corner, and a touch of tilt. ---- */
+   ruled lines, and a touch of tilt. ---- */
 .post-body {
   background-color: #FBF3DE;
   background-image:
@@ -240,28 +240,6 @@ html[dir="rtl"].dark .section-card:hover {
   position: relative;
 }
 
-/* Folded top-right corner, like a well-thumbed diary page */
-.post-body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 32px 32px 0;
-  border-color: transparent #EADFBC transparent transparent;
-  filter: drop-shadow(-1px 1px 2px rgba(74, 56, 32, 0.25));
-}
-
-[dir="rtl"] .post-body::after {
-  right: auto;
-  left: 0;
-  border-width: 0 0 32px 32px;
-  border-color: transparent transparent transparent #EADFBC;
-  filter: drop-shadow(1px 1px 2px rgba(74, 56, 32, 0.25));
-}
-
 .dark .post-body {
   background-color: #221F1B;
   background-image: none;
@@ -269,22 +247,10 @@ html[dir="rtl"].dark .section-card:hover {
   box-shadow: none;
 }
 
-.dark .post-body::after {
-  display: none;
-}
-
 @media (max-width: 640px) {
   .post-body {
     padding: 1.5rem 1.25rem;
     border-radius: 10px;
-  }
-
-  .post-body::after {
-    border-width: 0 22px 22px 0;
-  }
-
-  [dir="rtl"] .post-body::after {
-    border-width: 0 0 22px 22px;
   }
 }
 
@@ -390,155 +356,158 @@ html[dir="rtl"].dark .section-card:hover {
    the site (Articles, Reviews, Letters, Events, and each strand of
    Creative Writing) reads as its own visually distinct "room", the
    same way the three diary formats do above. Light / dark / sepia
-   variants for each, same texture, only the tone shifts. ---- */
+   variants for each, same texture, only the tone shifts.
+   Palette refreshed to brighter, more saturated pastels (the old
+   set leaned too muddy/beige-on-beige) while keeping each tone
+   paired with its section's own --accent color from earlier. ---- */
 .post-body-articles {
-  background-color: #F7EEDA !important;
-  border-color: #D9C48A !important;
+  background-color: #FBF3DC !important;
+  border-color: #E3C878 !important;
 }
 
 .post-body-reviews {
-  background-color: #FBEAE1 !important;
-  border-color: #E8B79C !important;
+  background-color: #E8F1F8 !important;
+  border-color: #A8C9DE !important;
 }
 
 .post-body-letters {
-  background-color: #EAEBF7 !important;
-  border-color: #C3C6E8 !important;
+  background-color: #EEF5E9 !important;
+  border-color: #B9D9A6 !important;
 }
 
 .post-body-events {
-  background-color: #FBF6DD !important;
-  border-color: #E3D68A !important;
+  background-color: #FDEEE7 !important;
+  border-color: #F0B79A !important;
 }
 
 .post-body-short_stories {
-  background-color: #F9EDF0 !important;
-  border-color: #E3B9C4 !important;
+  background-color: #FBEDF3 !important;
+  border-color: #EFBBD3 !important;
 }
 
 .post-body-poetry {
-  background-color: #F1EAF7 !important;
-  border-color: #D2B8E8 !important;
+  background-color: #F3EBFA !important;
+  border-color: #D6B8ED !important;
 }
 
 .post-body-dialogues {
-  background-color: #E9F5F0 !important;
-  border-color: #B7DED0 !important;
+  background-color: #E8F7F0 !important;
+  border-color: #A3DFC0 !important;
 }
 
 .post-body-satire {
-  background-color: #FBF0DE !important;
-  border-color: #E0B978 !important;
+  background-color: #FBEEE2 !important;
+  border-color: #E8B78C !important;
 }
 
 .post-body-nonfiction {
-  background-color: #EAF0EC !important;
-  border-color: #C3D6C9 !important;
+  background-color: #F0F5E6 !important;
+  border-color: #C4D9A0 !important;
 }
 
 .post-body-reflections {
-  background-color: #F3ECE7 !important;
-  border-color: #D9C2B4 !important;
+  background-color: #F6EEE4 !important;
+  border-color: #DDBB93 !important;
 }
 
 .dark .post-body-articles {
-  background-color: #26221A !important;
-  border-color: #4A4128 !important;
+  background-color: #2A2419 !important;
+  border-color: #5C4E28 !important;
 }
 
 .dark .post-body-reviews {
-  background-color: #271E1A !important;
-  border-color: #4E3527 !important;
+  background-color: #1B242C !important;
+  border-color: #3A5670 !important;
 }
 
 .dark .post-body-letters {
-  background-color: #1D1F29 !important;
-  border-color: #363A4E !important;
+  background-color: #1E241B !important;
+  border-color: #3E5433 !important;
 }
 
 .dark .post-body-events {
-  background-color: #26241A !important;
-  border-color: #4C4728 !important;
+  background-color: #2A2019 !important;
+  border-color: #6B4632 !important;
 }
 
 .dark .post-body-short_stories {
-  background-color: #271E22 !important;
-  border-color: #4C3540 !important;
+  background-color: #271E24 !important;
+  border-color: #5A3B4C !important;
 }
 
 .dark .post-body-poetry {
-  background-color: #221E29 !important;
-  border-color: #40354E !important;
+  background-color: #221C2A !important;
+  border-color: #4A3560 !important;
 }
 
 .dark .post-body-dialogues {
-  background-color: #1B2622 !important;
-  border-color: #33493F !important;
+  background-color: #1A2620 !important;
+  border-color: #2E5642 !important;
 }
 
 .dark .post-body-satire {
-  background-color: #262018 !important;
-  border-color: #4E3F22 !important;
+  background-color: #271F17 !important;
+  border-color: #5C4227 !important;
 }
 
 .dark .post-body-nonfiction {
-  background-color: #1C2320 !important;
-  border-color: #37423D !important;
+  background-color: #1E241A !important;
+  border-color: #435C34 !important;
 }
 
 .dark .post-body-reflections {
-  background-color: #241F1B !important;
-  border-color: #493A2E !important;
+  background-color: #241E19 !important;
+  border-color: #5C4530 !important;
 }
 
 .sepia .post-body-articles {
-  background-color: #F0E6C4 !important;
-  border-color: #C7A959 !important;
-}
-
-.sepia .post-body-reviews {
-  background-color: #F3DECB !important;
-  border-color: #CE9865 !important;
-}
-
-.sepia .post-body-letters {
-  background-color: #E4E2D0 !important;
-  border-color: #A9AC7D !important;
-}
-
-.sepia .post-body-events {
-  background-color: #F0E6B4 !important;
-  border-color: #C7B84E !important;
-}
-
-.sepia .post-body-short_stories {
-  background-color: #F1DEE1 !important;
-  border-color: #CB9AA3 !important;
-}
-
-.sepia .post-body-poetry {
-  background-color: #E9DCEF !important;
-  border-color: #B084C4 !important;
-}
-
-.sepia .post-body-dialogues {
-  background-color: #DCE9DE !important;
-  border-color: #8FBB99 !important;
-}
-
-.sepia .post-body-satire {
-  background-color: #F0E0B4 !important;
+  background-color: #F0E4C0 !important;
   border-color: #C7A24E !important;
 }
 
+.sepia .post-body-reviews {
+  background-color: #DCE6EE !important;
+  border-color: #6E96B8 !important;
+}
+
+.sepia .post-body-letters {
+  background-color: #E2ECD8 !important;
+  border-color: #7FAA5E !important;
+}
+
+.sepia .post-body-events {
+  background-color: #F2DFCE !important;
+  border-color: #D98F5E !important;
+}
+
+.sepia .post-body-short_stories {
+  background-color: #F0DCE6 !important;
+  border-color: #C77FA0 !important;
+}
+
+.sepia .post-body-poetry {
+  background-color: #E8DAF0 !important;
+  border-color: #9B6BC7 !important;
+}
+
+.sepia .post-body-dialogues {
+  background-color: #D8ECE0 !important;
+  border-color: #4FA98A !important;
+}
+
+.sepia .post-body-satire {
+  background-color: #F0DCC4 !important;
+  border-color: #C98A3E !important;
+}
+
 .sepia .post-body-nonfiction {
-  background-color: #DCE4D9 !important;
-  border-color: #93AC93 !important;
+  background-color: #DFE8D2 !important;
+  border-color: #6B9B6E !important;
 }
 
 .sepia .post-body-reflections {
-  background-color: #E9DCCF !important;
-  border-color: #B6926F !important;
+  background-color: #EDE0D0 !important;
+  border-color: #A67C52 !important;
 }
 
 /* ---- Reading-time duration badge (e.g. "3:00") ---- */
