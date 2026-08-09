@@ -85,25 +85,27 @@
 </script>
 
 
-<!-- Google Fonts: Literata (English) or Noto Nastaliq Urdu (Urdu).
-     Literata is a serif designed by Google specifically for comfortable
-     on-screen long-form reading (it's the font behind Google Play Books),
-     so it suits a reading-focused site better than a UI sans-serif.
-     Only the family needed for site.lang is requested — previously both
-     families loaded on every page in both languages, so an English
-     reader was also downloading the full Nastaliq family (and vice
-     versa) for a script never shown on that page.
-     Loaded with display=swap for performance -->
+<!-- Google Fonts: Literata + Fraunces (Latin body/display serif) AND
+     Noto Nastaliq Urdu, loaded together on EVERY page regardless of
+     site.lang.
+     Previously only the family matching site.lang was requested,
+     which seemed efficient but was wrong for this site: a great deal
+     of content is mixed-language or Urdu-only prose that still
+     renders on the English (site.lang == 'en') build — e.g. Teaching
+     Diary posts written entirely in Urdu with no English translation,
+     Urdu pull-quotes/blockquotes auto-extracted inside otherwise
+     English pages, and Urdu proper nouns/titles quoted inline. All of
+     that text is correctly marked up with dir="rtl" and gets
+     font-family: 'Noto Nastaliq Urdu' from main.css — but if the
+     English build never downloaded that font file, the browser had
+     nothing to render it with and silently fell back to a generic
+     serif, so Urdu text on English pages looked wrong. Loading both
+     families everywhere guarantees every Urdu word — heading, quote,
+     or body text — actually gets set in Nastaliq, on every page.
+     Loaded with display=swap for performance. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- Literata for body copy, plus Fraunces as a heavier display serif
-     for titles/headings only (site title, post/page titles, home
-     hero, section-card headings) — see .post-title etc. in main.css.
-     Urdu pages don't load this; Nastaliq stays the only display face
-     there. -->
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
 
 <!-- Tailwind CSS (compiled by PostCSS build step) -->
 <link rel="stylesheet" href="/assets/css/main.css">

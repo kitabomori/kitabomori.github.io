@@ -121,25 +121,27 @@
 </script>
 
 
-<!-- Google Fonts: Literata (English) or Noto Nastaliq Urdu (Urdu).
-     Literata is a serif designed by Google specifically for comfortable
-     on-screen long-form reading (it's the font behind Google Play Books),
-     so it suits a reading-focused site better than a UI sans-serif.
-     Only the family needed for site.lang is requested — previously both
-     families loaded on every page in both languages, so an English
-     reader was also downloading the full Nastaliq family (and vice
-     versa) for a script never shown on that page.
-     Loaded with display=swap for performance -->
+<!-- Google Fonts: Literata + Fraunces (Latin body/display serif) AND
+     Noto Nastaliq Urdu, loaded together on EVERY page regardless of
+     site.lang.
+     Previously only the family matching site.lang was requested,
+     which seemed efficient but was wrong for this site: a great deal
+     of content is mixed-language or Urdu-only prose that still
+     renders on the English (site.lang == 'en') build — e.g. Teaching
+     Diary posts written entirely in Urdu with no English translation,
+     Urdu pull-quotes/blockquotes auto-extracted inside otherwise
+     English pages, and Urdu proper nouns/titles quoted inline. All of
+     that text is correctly marked up with dir="rtl" and gets
+     font-family: 'Noto Nastaliq Urdu' from main.css — but if the
+     English build never downloaded that font file, the browser had
+     nothing to render it with and silently fell back to a generic
+     serif, so Urdu text on English pages looked wrong. Loading both
+     families everywhere guarantees every Urdu word — heading, quote,
+     or body text — actually gets set in Nastaliq, on every page.
+     Loaded with display=swap for performance. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- Literata for body copy, plus Fraunces as a heavier display serif
-     for titles/headings only (site title, post/page titles, home
-     hero, section-card headings) — see .post-title etc. in main.css.
-     Urdu pages don't load this; Nastaliq stays the only display face
-     there. -->
-<link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
 
 <!-- Tailwind CSS (compiled by PostCSS build step) -->
 <link rel="stylesheet" href="/assets/css/main.css">
@@ -852,9 +854,9 @@
     <!--KITABOMORI-POST-BODY-START-->
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">February 15, 2024</div>
 
-<aside class="pull-quote" dir="ltr" data-section="diary" aria-label="Pull quote">
+<aside class="pull-quote pull-quote-fallback" dir="ltr" data-section="diary" aria-label="Pull quote">
   <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
-  <blockquote class="pull-quote-text">Next: Practicum-V Lesson Plan 2 &amp;rarr;</blockquote>
+  <blockquote class="pull-quote-text">Opening the practicum with a lesson on dreams, drawing on Freud, Iqbal, Gandhi, and Martin Luther King Jr.</blockquote>
 </aside>
 <p dir="rtl" style="text-align:justify;">15 فروری بروز جمعرات کو میں ٹیچنگ پریکٹیکم-V کا پہلا درس و تدریسی عمل یعنی سبق پڑھانے کے لیے جماعت ہشتم، بوائز ڈیزی سیکشن میں موجود تھا۔ درسی منصوبے کے مطابق مجھے سبق "انوکھا خواب" پڑھانا تھا لیکن اس جانب آنے سے پہلے میں نے کلاس میں ڈاکٹر شاہد صدیقی کی کتاب "آدھے ادھورے خواب" کا خلاصہ پیش کیا اور یہ واضح کرنے کی کوشش کی کہ انسان دو قسم کے خواب دیکھتا ہے۔ بقول سگمنڈ فرائیڈ ایک خواب وہ ہوتے ہیں جو نیند یعنی غفلت میں دیکھتے ہیں۔ یہ خواب ہماری پوری نہ ہونے والی خواہشات کو چند تصاویر اور خاکے کی صورت دیتے ہیں، اور دوسرے وہ جو ہمیں نیند میں بھی جگائے رکھنے کی وجہ بنتے ہیں۔ جیسے کہ اس کتاب میں ڈاکٹر شاہد صدیقی اپنی عمر بھر کی کاوش، تعلیم کو بہتر بنانے اور اسے مزاحمت کا ایک ذریعہ سمجھتے ہیں، اور اس کتاب کے ذریعے وہ یہ خواب دوسروں تک منتقل کر رہے ہیں تاکہ وہ ایک دن حقیقت بنے۔ خیر کچھ خواب ادھورے ہی رہتے ہیں۔ بعد ازاں میں نے چند مشہور شخصیات، مثلاً علامہ محمد اقبال جنہوں نے برصغیر کے مسلمانوں کو پاکستان کا خواب دکھایا، کرم چند موہن داس گاندھی، جنہوں نے ہندوستان میں ذات پات اور عدم مساوات کی صدیوں سے چلی آ رہی روش کو ہمیشہ کے لئے ختم کرنے کی ٹھان لی تھی، اور مارٹن لوتھر کنگ جونیئر کی 1963 کی مشہور زمانہ تقریر "آئی ہیو آ ڈریم" اور اس خواب کا حوالہ دیا جس میں وہ امریکہ میں مقیم افریقی-امریکیوں کو ملک کے برابر کے شہری بنانے کی کوشش کر رہے تھے۔</p>
 

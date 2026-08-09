@@ -121,20 +121,27 @@
 </script>
 
 
-<!-- Google Fonts: Literata (English) or Noto Nastaliq Urdu (Urdu).
-     Literata is a serif designed by Google specifically for comfortable
-     on-screen long-form reading (it's the font behind Google Play Books),
-     so it suits a reading-focused site better than a UI sans-serif.
-     Only the family needed for site.lang is requested — previously both
-     families loaded on every page in both languages, so an English
-     reader was also downloading the full Nastaliq family (and vice
-     versa) for a script never shown on that page.
-     Loaded with display=swap for performance -->
+<!-- Google Fonts: Literata + Fraunces (Latin body/display serif) AND
+     Noto Nastaliq Urdu, loaded together on EVERY page regardless of
+     site.lang.
+     Previously only the family matching site.lang was requested,
+     which seemed efficient but was wrong for this site: a great deal
+     of content is mixed-language or Urdu-only prose that still
+     renders on the English (site.lang == 'en') build — e.g. Teaching
+     Diary posts written entirely in Urdu with no English translation,
+     Urdu pull-quotes/blockquotes auto-extracted inside otherwise
+     English pages, and Urdu proper nouns/titles quoted inline. All of
+     that text is correctly marked up with dir="rtl" and gets
+     font-family: 'Noto Nastaliq Urdu' from main.css — but if the
+     English build never downloaded that font file, the browser had
+     nothing to render it with and silently fell back to a generic
+     serif, so Urdu text on English pages looked wrong. Loading both
+     families everywhere guarantees every Urdu word — heading, quote,
+     or body text — actually gets set in Nastaliq, on every page.
+     Loaded with display=swap for performance. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
 
 <!-- Tailwind CSS (compiled by PostCSS build step) -->
 <link rel="stylesheet" href="/assets/css/main.css">
@@ -847,9 +854,9 @@
     <!--KITABOMORI-POST-BODY-START-->
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">May 2, 2024</div>
 
-<aside class="pull-quote" dir="rtl" data-section="diary" aria-label="اقتباس">
+<aside class="pull-quote pull-quote-fallback" dir="rtl" data-section="diary" aria-label="اقتباس">
   <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
-  <blockquote class="pull-quote-text">Next: Practicum-V Lesson Plan 10 &amp;rarr;</blockquote>
+  <blockquote class="pull-quote-text">یو کی شکل کی جماعت کے فرش سے زاویہ سازی کی تدریس، اور جیومیٹری کو راستہ تلاش کرنے اور زمانی تمدد سے جوڑنا۔</blockquote>
 </aside>
 <p>Imagine you are new to Karachi, in Saddar, and want to meet someone in Gulshan-e-Hadeed. You don't know the directions — what would you do then? This was the thought-provoking start to my visit on May 2, 2024. I had developed a lesson on constructing angles that are multiples of 15, using a compass and ruler. I changed the class seating arrangement, with the cooperating teacher's help, into a U shape. Instead of writing on the board, I used my rough copy to draw angles and diagrams while sitting on the floor, as there were around 20 students in the class. I then discussed the importance of angles in navigation and touched on time dilation. In the end, I asked students to draw various angles in their copies and explain, in their own words, the process of constructing an angle.</p>
 
