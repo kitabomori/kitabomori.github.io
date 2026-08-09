@@ -76,7 +76,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <h4>7. Resources</h4>
 <ul>
-  <li><a href="https://youtu.be/g9p9AfjVMKY?si=90TvV0Sqewp1p1yf" target="_blank">https://youtu.be/g9p9AfjVMKY?si=90TvV0Sqewp1p1yf</a></li>
+  <li><a href="https://youtu.be/g9p9AfjVMKY?si=90TvV0Sqewp1p1yf" target="_blank">Time Dilation</a></li>
 </ul>
 
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Reflection 10 &rarr;</a></p>
