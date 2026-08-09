@@ -520,6 +520,238 @@ html[dir="rtl"].dark .section-card:hover {
   border-top: 6px solid var(--accent, #009F93) !important;
 }
 
+/* ============================================================
+   PER-SECTION SHAPE & TEXTURE — each collection previously only
+   differed from the others by background/border colour; every post
+   page was otherwise the exact same rounded, ruled-paper box. These
+   rules give each section its own silhouette, surface texture, and
+   small decorative touch, built from var(--accent) (defined per
+   [data-section] above) so they automatically stay in sync with each
+   section's colour and need no separate dark/sepia variants of their
+   own. Dark mode already strips background-image/box-shadow site-wide
+   via the higher-specificity ".dark .post-body" reset earlier in this
+   file, so textures/shadows below quietly drop out there by design —
+   only shape (border-radius/border-style) and the small accent
+   pseudo-elements carry through into dark mode, which keeps dark mode
+   calm while still reading as visually distinct per section. ---- */
+
+/* Articles — newsprint: crisp corners, a fine halftone dot texture
+   instead of ruled lines, double rule under the header. */
+.post-body-articles {
+  border-radius: 4px;
+  background-image: radial-gradient(color-mix(in srgb, var(--accent) 22%, transparent) 1px, transparent 1.5px);
+  background-size: 13px 13px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+}
+
+/* Reviews — a torn/folded notecard: asymmetric corners plus a small
+   folded-corner triangle top-right, like a bookmark tab. */
+.post-body-reviews {
+  border-radius: 2px 26px 2px 26px;
+  background-image: none;
+}
+
+.post-body-reviews::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 34px 34px 0;
+  border-color: transparent color-mix(in srgb, var(--accent) 35%, transparent) transparent transparent;
+  border-top-right-radius: 26px;
+  pointer-events: none;
+}
+
+html[dir="rtl"] .post-body-reviews::before {
+  right: auto;
+  left: 0;
+  border-width: 0 0 34px 34px;
+  border-color: transparent transparent transparent color-mix(in srgb, var(--accent) 35%, transparent);
+  border-top-right-radius: 0;
+  border-top-left-radius: 26px;
+}
+
+/* Letters — stationery: uniform rounded corners, a ridged double
+   border instead of a single hairline, tighter ruled lines. */
+.post-body-letters {
+  border-radius: 14px;
+  border-style: double;
+  border-width: 6px;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 22px, color-mix(in srgb, var(--accent) 10%, transparent) 23px, transparent 24px);
+}
+
+/* Events — a ticket stub: bold flat border plus a dashed perforation
+   line with circular notches cut from each side, like a tear-off. */
+.post-body-events {
+  border-radius: 6px;
+  border-width: 2px;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 30px, color-mix(in srgb, var(--accent) 8%, transparent) 31px, transparent 32px);
+}
+
+.post-body-events::before,
+.post-body-events::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  background: var(--reading-bg, #FBF8F2);
+  border: 2px solid color-mix(in srgb, var(--accent) 55%, #DFCFA2);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.post-body-events::before { left: 6px; }
+.post-body-events::after { right: 6px; }
+
+/* Short Stories — an open book page: big soft curl top-left/bottom-
+   right, a faint page-curl shadow tucked into the corner. */
+.post-body-short_stories {
+  border-radius: 44px 6px 44px 6px;
+  background-image: radial-gradient(circle at 96% 94%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 42%);
+}
+
+/* Poetry — kept minimal so the existing grow-in side rule stays the
+   focal point: soft uniform corners, no competing texture. */
+.post-body-poetry {
+  border-radius: 10px 10px 10px 10px;
+  background-image: none;
+}
+
+/* Dialogues — a speech bubble: fully rounded corners plus a small
+   tail pseudo-element, like two people mid-conversation. */
+.post-body-dialogues {
+  border-radius: 26px;
+  background-image: none;
+}
+
+.post-body-dialogues::after {
+  content: "";
+  position: absolute;
+  bottom: 14px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 14px 14px 0 0;
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent) transparent transparent transparent;
+  pointer-events: none;
+}
+
+html[dir="rtl"] .post-body-dialogues::after {
+  left: auto;
+  right: 20px;
+  border-width: 14px 0 0 14px;
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent) transparent transparent transparent;
+}
+
+/* Satire — a playful, slightly crooked note with a dashed border and
+   a small stamp-like circle, like it was pinned up in a hurry. */
+.post-body-satire {
+  border-radius: 8px;
+  border-style: dashed;
+  transform: rotate(-0.5deg);
+  background-image: none;
+}
+
+.post-body-satire::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 70%, transparent);
+  opacity: 0.5;
+  transform: rotate(12deg);
+  pointer-events: none;
+}
+
+html[dir="rtl"] .post-body-satire::after {
+  right: auto;
+  left: 22px;
+}
+
+/* Nonfiction — graph/grid paper: clean crossed ruling instead of a
+   single-axis ruled line, sharp corners. */
+.post-body-nonfiction {
+  border-radius: 4px;
+  background-image:
+    repeating-linear-gradient(to bottom, transparent 0, transparent 23px, color-mix(in srgb, var(--accent) 10%, transparent) 24px, transparent 25px),
+    repeating-linear-gradient(to right, transparent 0, transparent 23px, color-mix(in srgb, var(--accent) 10%, transparent) 24px, transparent 25px);
+}
+
+/* Reflections — a mirror: soft rounded top corners, sharp bottom
+   corners, and a faint centred glow suggesting a looking-glass. */
+.post-body-reflections {
+  border-radius: 34px 34px 4px 4px;
+  background-image: radial-gradient(ellipse at 50% 38%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 60%);
+}
+
+/* ---- Diary sub-formats: same shape treatment as their siblings
+   above, applied on top of the existing colour tints. ---- */
+
+/* Lesson plans — a worksheet: tight grid ruling, sharp corners, a
+   heavier double top rule like a printed handout. */
+.post-body-lesson-plan {
+  border-radius: 4px;
+  border-top-style: double;
+  border-top-width: 6px;
+  background-image:
+    repeating-linear-gradient(to bottom, transparent 0, transparent 19px, color-mix(in srgb, #8EB4DC 12%, transparent) 20px, transparent 21px),
+    repeating-linear-gradient(to right, transparent 0, transparent 19px, color-mix(in srgb, #8EB4DC 12%, transparent) 20px, transparent 21px);
+}
+
+/* Reflections (diary format) — a journal: soft uniform rounding,
+   quiet dot texture rather than ruled lines. */
+.post-body-reflection {
+  border-radius: 26px;
+  background-image: radial-gradient(color-mix(in srgb, #C989C2 20%, transparent) 1px, transparent 1.5px);
+  background-size: 14px 14px;
+}
+
+/* Reflective reports — a bound report: sharp corners plus a thick
+   binder-margin stripe down the leading edge. */
+.post-body-reflective-report {
+  border-radius: 4px;
+  box-shadow: inset 7px 0 0 0 color-mix(in srgb, #8FBB6E 70%, transparent), 0 6px 18px rgba(74, 56, 32, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+html[dir="rtl"] .post-body-reflective-report {
+  box-shadow: inset -7px 0 0 0 color-mix(in srgb, #8FBB6E 70%, transparent), 0 6px 18px rgba(74, 56, 32, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.dark .post-body-reflective-report {
+  box-shadow: inset 7px 0 0 0 color-mix(in srgb, #4A6B34 70%, transparent);
+}
+
+html[dir="rtl"].dark .post-body-reflective-report {
+  box-shadow: inset -7px 0 0 0 color-mix(in srgb, #4A6B34 70%, transparent);
+}
+
+@media (max-width: 640px) {
+  /* Corner/tail decorations are sized for a full-width desktop frame;
+     on narrow screens they overwhelm the box, so they're hidden and
+     the section stays identifiable by colour + shape alone. */
+  .post-body-reviews::before,
+  .post-body-events::before,
+  .post-body-events::after,
+  .post-body-dialogues::after,
+  .post-body-satire::after {
+    display: none;
+  }
+
+  .post-body-satire {
+    transform: none;
+  }
+}
+
 /* ---- Reading-time duration badge (e.g. "3:00") ---- */
 .post-reading-time {
   font-variant-numeric: tabular-nums;
@@ -534,48 +766,6 @@ html[dir="rtl"].dark .section-card:hover {
 
 .sepia .post-reading-time {
   color: #8A6D3B;
-}
-
-/* ---- Opening cap: first letter of the first paragraph.
-   Kept small and restrained (not a floated, oversized drop cap) so it
-   never distorts line height. Scoped with html:not([dir="rtl"]) —
-   the page's actual text direction, set on <html> in _layouts/base.html
-   — rather than a dir="rtl" attribute on the paragraph itself, since
-   Jekyll/kramdown never emits a dir attribute on individual <p> tags.
-   The old paragraph-level selector therefore never excluded anything,
-   and every Urdu post's opening line (often a date) was getting an
-   oversized, bold, off-color first character. Nastaliq/RTL scripts
-   don't carry this typographic convention at all. Also excluded from
-   lesson plans (:not(.post-body-lesson-plan)) — lesson plans open with
-   a date/table, not prose, so a styled first letter doesn't fit. ---- */
-html:not([dir="rtl"]) .post-body:not(.post-body-lesson-plan) > p:first-of-type::first-letter {
-  font-family: 'Literata', serif;
-  font-weight: 700;
-  font-size: 1.6em;
-  line-height: 1;
-  color: #9C5B3C;
-}
-
-html.dark:not([dir="rtl"]) .post-body:not(.post-body-lesson-plan) > p:first-of-type::first-letter {
-  color: #D99B7D;
-}
-
-html.sepia:not([dir="rtl"]) .post-body:not(.post-body-lesson-plan) > p:first-of-type::first-letter {
-  color: #8A6D3B;
-}
-
-/* Belt-and-suspenders: explicitly neutralize the drop cap for Urdu
-   posts. The rule above is already scoped to html:not([dir="rtl"]),
-   but Nastaliq script doesn't carry this typographic convention at
-   all — a lone enlarged first character (e.g. "ن" isolated from the
-   rest of "نامہ") reads as broken, not stylish — so this makes the
-   exclusion explicit rather than relying only on the negation above. */
-[dir="rtl"] .post-body > p:first-of-type::first-letter {
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
 }
 
 /* ---- Auto-extracted pull quote ("crux" sentence) ----

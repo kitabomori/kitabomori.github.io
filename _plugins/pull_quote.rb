@@ -157,15 +157,35 @@ module Kitabomori
     # metadata blocks (a bare date, a lesson-plan-style table row)
     # never appear as <p> in the output, so they're naturally excluded
     # without any extra filtering.
+    #
+    # Also excludes link-only paragraphs — a <p> whose entire content
+    # is a single <a>...</a> and nothing else. Many post bodies (esp.
+    # Teaching Diary entries) hand-write their own "Next: ..."/
+    # "Previous: ..." navigation links directly in the markdown, as
+    # plain <p> tags sitting inside the marked post-body region. Those
+    # are UI chrome, not prose, but without this check they were
+    # scanned as candidate sentences like any other paragraph — and
+    # because that nav text is always in English regardless of the
+    # post's own language, an all-Urdu post could end up with an
+    # English "Next: Practicum-V Lesson Plan 2 →" as its extracted
+    # pull-quote. Skipping link-only paragraphs here fixes that for
+    # every post, not just the one it was first noticed on.
     def prose_paragraph_spans(html)
       spans = []
-      html.to_enum(:scan, /<p\b[^>]*>.*?<\/p>/mi).each do
+      html.to_enum(:scan, /<p\b[^>]*>(.*?)<\/p>/mi).each do
         m = Regexp.last_match
+        next if link_only_paragraph?(m[1])
         text = strip_tags(m[0])
         next if text.strip.empty?
         spans << { text: text, start: m.begin(0), finish: m.end(0) }
       end
       spans
+    end
+
+    def link_only_paragraph?(inner_html)
+      trimmed = inner_html.to_s.strip
+      return false if trimmed.empty?
+      !!(trimmed =~ /\A<a\b[^>]*>.*<\/a>\z/mi)
     end
 
     def strip_tags(html)
