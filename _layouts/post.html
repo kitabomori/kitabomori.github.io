@@ -45,6 +45,94 @@ layout: base
     {% assign accent_group = "diary" %}
 {% endcase %}
 
+<!-- Post "format" for Teaching Diary entries — lesson-plan / reflection /
+     reflective-report, detected from the slug. Computed here (rather
+     than down by post-body, where it used to live) because the hero
+     badge/colour below need it too. Its one other use, further down
+     (post-body-{{ post_format }}), is unaffected by moving it earlier. -->
+{% assign post_format = "" %}
+{% if page.slug contains "reflective-report" %}
+  {% assign post_format = "reflective-report" %}
+{% elsif page.slug contains "lesson-plan" %}
+  {% assign post_format = "lesson-plan" %}
+{% elsif page.slug contains "reflection" %}
+  {% assign post_format = "reflection" %}
+{% endif %}
+
+<!-- Hero badge label (EN/UR) + hero accent colour, used by the new
+     post-hero header below. This now applies to EVERY post, including
+     Lesson Plans — the scope note above/in pull_quote.rb still holds
+     for everything else about Lesson Plans (rails, pull-quotes, body
+     tint all stay exactly as before), the header treatment is the one
+     deliberate exception.
+     Diary entries get their own colour per sub-format (lesson plan /
+     reflection / reflective report) so the header itself signals which
+     kind of entry it is; every other collection reuses its existing
+     --accent colour (see [data-section] in main.css) so the hero
+     always matches the rest of that post (rail, pull-quote, nav). -->
+{% assign badge_en = "Diary Entry" %}
+{% assign badge_ur = "ڈائری اندراج" %}
+{% assign hero_accent = "#009F93" %}
+{% case accent_group %}
+  {% when "articles" %}
+    {% assign badge_en = "Article" %}
+    {% assign badge_ur = "مضمون" %}
+    {% assign hero_accent = "#C79A3E" %}
+  {% when "reviews" %}
+    {% assign badge_en = "Review" %}
+    {% assign badge_ur = "جائزہ" %}
+    {% assign hero_accent = "#4C7EA6" %}
+  {% when "letters" %}
+    {% assign badge_en = "Letter" %}
+    {% assign badge_ur = "خط" %}
+    {% assign hero_accent = "#6E9B5E" %}
+  {% when "events" %}
+    {% assign badge_en = "Event" %}
+    {% assign badge_ur = "تقریب" %}
+    {% assign hero_accent = "#D9714A" %}
+  {% when "short_stories" %}
+    {% assign badge_en = "Short Story" %}
+    {% assign badge_ur = "مختصر کہانی" %}
+    {% assign hero_accent = "#C77FA0" %}
+  {% when "poetry" %}
+    {% assign badge_en = "Poem" %}
+    {% assign badge_ur = "نظم" %}
+    {% assign hero_accent = "#8F5FC2" %}
+  {% when "reflections" %}
+    {% assign badge_en = "Reflection" %}
+    {% assign badge_ur = "عکاسی" %}
+    {% assign hero_accent = "#A67C52" %}
+  {% when "dialogues" %}
+    {% assign badge_en = "Dialogue" %}
+    {% assign badge_ur = "مکالمہ" %}
+    {% assign hero_accent = "#2E9B6B" %}
+  {% when "satire" %}
+    {% assign badge_en = "Satire" %}
+    {% assign badge_ur = "طنز" %}
+    {% assign hero_accent = "#B8622E" %}
+  {% when "nonfiction" %}
+    {% assign badge_en = "Nonfiction" %}
+    {% assign badge_ur = "نان فکشن" %}
+    {% assign hero_accent = "#7A9B4E" %}
+{% endcase %}
+
+{% if page.collection == "diary" %}
+  {% case post_format %}
+    {% when "lesson-plan" %}
+      {% assign badge_en = "Lesson Plan" %}
+      {% assign badge_ur = "سبقی منصوبہ" %}
+      {% assign hero_accent = "#35618C" %}
+    {% when "reflection" %}
+      {% assign badge_en = "Reflection" %}
+      {% assign badge_ur = "تاثر" %}
+      {% assign hero_accent = "#8A5878" %}
+    {% when "reflective-report" %}
+      {% assign badge_en = "Reflective Report" %}
+      {% assign badge_ur = "تفکراتی رپورٹ" %}
+      {% assign hero_accent = "#3F6B3E" %}
+  {% endcase %}
+{% endif %}
+
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
@@ -87,14 +175,24 @@ layout: base
 {% endif %}
 
 <!-- data-section on the article itself (Lesson Plans excluded, per the
-     scope note above) lets the post title pick up the same section
-     accent color as the rails/pull-quotes via var(--accent) in
-     main.css, instead of every post title being the same fixed teal. -->
+     scope note above) lets the rails/pull-quotes/nav pick up the
+     section's own accent color via var(--accent) in main.css. The
+     post title itself no longer uses this — its color is fixed (see
+     .post-title in main.css); the hero badge/wash above it is what
+     signals the section/format now, using its own --hero-accent (set
+     inline on .post-hero, computed above, and unaffected by whether
+     data-section is present here — this is why Lesson Plans still
+     get a hero even though they opt out of data-section). -->
 <article class="post-container"{% unless post_is_lesson_plan %} data-section="{{ accent_group }}"{% endunless %}>
 
-  <header class="post-header">
+  <header class="post-hero" style="--hero-accent: {{ hero_accent }};">
     {% include post-breadcrumb.html %}
-    {% include post-decor.html %}
+
+    <span class="post-badge">
+      {% if site.lang == 'ur' %}{{ badge_ur }}{% else %}{{ badge_en }}{% endif %}
+    </span>
+
+    <p class="post-date-line">{% include localized-date.html date=page.date %}</p>
 
     <h1 class="post-title">
       {% if site.lang == 'ur' %}
@@ -109,8 +207,6 @@ layout: base
          for the invisible SEO meta tag and social share preview
          (see head.html), it's just no longer shown to readers as a
          visible subtitle under the title. -->
-
-    <span class="post-title-divider" aria-hidden="true"></span>
 
     <!-- Embedded YouTube audio/video player. Each post can set
          youtube_id (just the 11-character video ID, e.g. "dQw4w9WgXcQ")
@@ -153,14 +249,6 @@ layout: base
     {% endif %}
   </header>
 
-  {% assign post_format = "" %}
-  {% if page.slug contains "reflective-report" %}
-    {% assign post_format = "reflective-report" %}
-  {% elsif page.slug contains "lesson-plan" %}
-    {% assign post_format = "lesson-plan" %}
-  {% elsif page.slug contains "reflection" %}
-    {% assign post_format = "reflection" %}
-  {% endif %}
   <div class="post-body post-body-{{ page.collection }}{% if post_format != "" %} post-body-{{ post_format }}{% endif %}"{% unless post_is_lesson_plan %} data-section="{{ accent_group }}"{% endunless %}>
     <!--KITABOMORI-POST-BODY-START-->
     {{ content }}
