@@ -340,10 +340,19 @@ html[dir="rtl"].dark .section-card:hover {
 /* ---- Urdu / Nastaliq typography ----
    Single source of truth for Urdu type: anything marked dir="rtl"
    gets the Nastaliq typeface. font-family is an inherited CSS
-   property, so this cascades to every descendant (paragraphs, list
-   items, table cells, etc.) automatically — individual elements no
-   longer need to repeat the font-family declaration themselves. ---- */
-[dir="rtl"] {
+   property, so in principle this alone cascades to every descendant
+   (paragraphs, list items, table cells, etc.) automatically.
+   The explicit "[dir="rtl"] *" line below is deliberately redundant
+   with that inheritance — it re-asserts the same font-family on
+   every descendant directly, rather than relying solely on the
+   cascade. This matters for elements like <table>/<td> nested a few
+   levels inside a dir="rtl" wrapper: inheritance alone is correct
+   per spec, but stating it directly on every descendant removes any
+   dependency on nothing upstream re-setting font-family, now or in
+   a future edit. Belt-and-suspenders, not a fix for a bug found in
+   this rule — just removing any remaining doubt. ---- */
+[dir="rtl"],
+[dir="rtl"] * {
   font-family: 'Jameel Noori Nastaliq', serif;
 }
 

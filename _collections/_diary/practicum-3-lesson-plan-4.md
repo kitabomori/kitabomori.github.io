@@ -15,7 +15,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 
 <div dir="rtl" style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">February 22, 2023</div>
 
-<div dir="rtl">
+<div dir="rtl" lang="ur">
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
   <tr>
