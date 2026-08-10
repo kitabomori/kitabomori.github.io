@@ -757,32 +757,6 @@
 
 
 
-<!-- Post "format" for Teaching Diary entries — lesson-plan / reflection /
-     reflective-report, detected from the slug. Computed here (rather
-     than down by post-body, where it used to live) because the hero
-     badge/colour below need it too. Its one other use, further down
-     (post-body-), is unaffected by moving it earlier. -->
-
-
-
-<!-- Hero badge label (EN/UR) + hero accent colour, used by the new
-     post-hero header below. This now applies to EVERY post, including
-     Lesson Plans — the scope note above/in pull_quote.rb still holds
-     for everything else about Lesson Plans (rails, pull-quotes, body
-     tint all stay exactly as before), the header treatment is the one
-     deliberate exception.
-     Diary entries get their own colour per sub-format (lesson plan /
-     reflection / reflective report) so the header itself signals which
-     kind of entry it is; every other collection reuses its existing
-     --accent colour (see [data-section] in main.css) so the hero
-     always matches the rest of that post (rail, pull-quote, nav). -->
-
-
-
-
-
-
-
 <!-- Margin content either side of the post, for wide screens only
      (see .post-side in main.css) — purely decorative vertical rules,
      echoing the site's brand-teal accent. Fixed-position, so
@@ -818,17 +792,12 @@
 
 
 <!-- data-section on the article itself (Lesson Plans excluded, per the
-     scope note above) lets the rails/pull-quotes/nav pick up the
-     section's own accent color via var(--accent) in main.css. The
-     post title itself no longer uses this — its color is fixed (see
-     .post-title in main.css); the hero badge/wash above it is what
-     signals the section/format now, using its own --hero-accent (set
-     inline on .post-hero, computed above, and unaffected by whether
-     data-section is present here — this is why Lesson Plans still
-     get a hero even though they opt out of data-section). -->
+     scope note above) lets the post title pick up the same section
+     accent color as the rails/pull-quotes via var(--accent) in
+     main.css, instead of every post title being the same fixed teal. -->
 <article class="post-container" data-section="diary">
 
-  <header class="post-hero" style="--hero-accent: #8A5878;">
+  <header class="post-header">
     <!-- ============================================================
      post-breadcrumb.html – Home › Section trail shown above the
      post title, so readers always know where they are and have a
@@ -854,12 +823,18 @@
   </a>
 </nav>
 
+    <!-- ============================================================
+     post-decor.html – picks a decorative line-art icon for the
+     current post based on its collection.
+     Included from _layouts/post.html.
+     ============================================================ -->
 
-    <span class="post-badge">
-      Reflection
-    </span>
 
-    <p class="post-date-line">14 July 2026</p>
+
+<div class="page-decor page-decor-post decor-journal" aria-hidden="true">
+  <svg class="decor-svg"><use href="#icon-journal"></use></svg>
+</div>
+
 
     <h1 class="post-title">
       
@@ -872,6 +847,8 @@
          for the invisible SEO meta tag and social share preview
          (see head.html), it's just no longer shown to readers as a
          visible subtitle under the title. -->
+
+    <span class="post-title-divider" aria-hidden="true"></span>
 
     <!-- Embedded YouTube audio/video player. Each post can set
          youtube_id (just the 11-character video ID, e.g. "dQw4w9WgXcQ")
@@ -899,6 +876,8 @@
     
   </header>
 
+  
+  
   <div class="post-body post-body-diary post-body-reflection" data-section="diary">
     <!--KITABOMORI-POST-BODY-START-->
     <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">December 15, 2021</div>

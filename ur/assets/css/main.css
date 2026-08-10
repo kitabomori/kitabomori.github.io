@@ -800,25 +800,15 @@ html[dir="rtl"].dark .post-body-reflective-report {
 .pull-quote {
   position: relative;
   margin: 2rem auto;
-  padding: 0.9rem 1.5rem 0.9rem 3rem;
+  padding: 0.5rem 1.5rem 0.5rem 3rem;
   max-width: 40rem;
   border-left: 3px solid var(--accent, #009F93);
-  /* Soft tint + rounded trailing corners, matching the hero's own
-     wash/badge treatment above, so the pull-quote reads as part of
-     the same design language rather than a plain rule-and-italic. */
-  background: color-mix(in srgb, var(--accent, #009F93) 6%, transparent);
-  border-radius: 0 10px 10px 0;
-}
-
-.dark .pull-quote {
-  background: transparent;
 }
 
 .pull-quote[dir="rtl"] {
-  padding: 0.9rem 3rem 0.9rem 1.5rem;
+  padding: 0.5rem 3rem 0.5rem 1.5rem;
   border-left: none;
   border-right: 3px solid var(--accent, #009F93);
-  border-radius: 10px 0 0 10px;
   text-align: right;
 }
 
@@ -945,10 +935,7 @@ html:not([dir="rtl"]) .post-body blockquote {
   gap: 1.5rem;
   margin-top: 2.5rem;
   padding-top: 1.5rem;
-  /* Tinted with the post's own accent (falls back to plain grey when
-     --accent isn't set) instead of a flat grey rule, to match the new
-     hero/pull-quote treatment. */
-  border-top: 1px solid color-mix(in srgb, var(--accent, #d9d4c6) 25%, transparent);
+  border-top: 1px solid #e0e0e0;
 }
 
 .dark .post-nav {
@@ -1327,11 +1314,7 @@ html:not([dir="rtl"]) .post-body blockquote {
 /* ---- Breadcrumb trail above the post title ---- */
 .post-breadcrumb {
   @apply text-sm mb-3;
-  /* Was centered under the old centered title; the hero (post.html)
-     now left/right-aligns its whole column instead, so this just
-     inherits that via text-align: inherit rather than forcing its
-     own center. */
-  text-align: inherit;
+  text-align: center;
   color: var(--reading-muted);
 }
 
@@ -1708,93 +1691,16 @@ html:not([dir="rtl"]) .page-title {
   @apply mb-5;
 }
 
-/* ============================================================
-   POST HERO — badge + date + title on a soft color-washed panel,
-   with a solid accent bar down the leading edge. Replaces the old
-   plain centered title. Color comes from --hero-accent, set inline
-   per-post in post.html (post_format-aware for Teaching Diary
-   entries, accent_group-based for everything else) — this variable
-   is independent of --accent/[data-section], so the hero renders
-   correctly even on Lesson Plan posts, which never get a
-   [data-section] (see the scope note on .post-container in
-   post.html: everything about Lesson Plans other than this hero
-   stays exactly as it was). ============================================================ */
-.post-hero {
-  position: relative;
-  margin: 0 0 1.75rem;
-  padding: 2.25rem 2rem 1.5rem;
-  border-radius: 16px;
-  text-align: left;
-  overflow: hidden;
-  background-image: linear-gradient(180deg, color-mix(in srgb, var(--hero-accent, #009F93) 9%, transparent) 0%, transparent 78%);
-  box-shadow: 0 1px 2px rgba(30, 25, 15, 0.05);
-}
-
-[dir="rtl"] .post-hero {
-  text-align: right;
-}
-
-.post-hero::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 1.5rem;
-  bottom: 1.5rem;
-  width: 6px;
-  border-radius: 4px;
-  background: var(--hero-accent, #009F93);
-}
-
-[dir="rtl"] .post-hero::before {
-  left: auto;
-  right: 0;
-}
-
-.dark .post-hero {
-  background-image: none;
-  box-shadow: none;
-}
-
-.post-badge {
-  display: inline-block;
-  background: var(--hero-accent, #009F93);
-  color: #fff;
-  font-family: system-ui, sans-serif;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.45rem 1rem;
-  border-radius: 999px;
-  margin: 0 0 0.9rem;
-}
-
-.post-date-line {
-  font-family: system-ui, sans-serif;
-  font-size: 0.8rem;
-  color: var(--reading-muted);
-  margin: 0 0 0.5rem;
-}
-
-@media (max-width: 640px) {
-  .post-hero {
-    padding: 1.75rem 1.25rem 1.25rem;
-  }
-}
-
 .post-title {
   @apply text-3xl md:text-4xl font-semibold mb-2;
-  /* Previously inherited the section's --accent color; now the hero
-     badge + color wash (see .post-hero below) carry that signal
-     instead, so the title itself stays a fixed, calm ink color and
-     reads the same on every post regardless of section. */
-  color: var(--reading-text);
-  text-align: left;
+  /* Was fixed teal on every post — now inherits the section's own
+     accent (set via data-section on the <article>, in post.html),
+     so an Article title reads amber, a Letter sage green, etc.
+     Falls back to teal when no section context is present (e.g.
+     Lesson Plan posts, which intentionally opt out — see post.html). */
+  color: var(--accent, #009F93);
+  text-align: center;
   letter-spacing: -0.01em;
-}
-
-[dir="rtl"] .post-title {
-  text-align: right;
 }
 
 /* Display serif for titles only — Literata stays the body-copy face.
