@@ -13,8 +13,6 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">February 15, 2023</div>
-
 <p><em>Reflection on Lessons Two and Three</em></p>
 
 <p>I had planned to teach mathematics and English to grade 7 students at Government X, Sukkur, during the visit on Feb 15. During the lesson, I noticed that many students struggled to understand basic concepts, particularly in mathematics. Additionally, I faced challenges maintaining class control, as some students were not fully engaged and were disruptive at times, wanting to go to the washroom or drink water, which took time to settle. I did not achieve the class objectives because I focused on teaching the basics of the maths topic, which is required to move forward, and I ran out of time for the assessment. Teaching the first lesson of mathematics was difficult, but when I taught the second lesson in English, the students cooperated well.</p>
