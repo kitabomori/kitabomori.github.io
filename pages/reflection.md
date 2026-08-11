@@ -7,6 +7,12 @@ description_ur: "مطالعے، تعلیم اور روزمرہ زندگی پر �
 permalink: /creative-writing/reflection/
 ---
 
+{% if site.lang == 'ur' %}
+<p class="collection-intro">مطالعے، تعلیم اور روزمرہ زندگی پر ذاتی اور فکر انگیز عکاسی۔</p>
+{% else %}
+<p class="collection-intro">Personal, thoughtful pieces of reflection on reading, education, and everyday life.</p>
+{% endif %}
+
 <div class="card-grid card-grid-reflections">
   {% assign sorted_items = site.reflections | sort: "date" | reverse %}
   {% for item in sorted_items %}

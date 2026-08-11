@@ -7,6 +7,12 @@ description_ur: "مختصر کہانیاں، شاعری، عکاسی، مکال�
 permalink: /creative-writing/
 ---
 
+{% if site.lang == 'ur' %}
+<p class="collection-intro">تخلیقی تحریر کے چھ حصے — مختصر کہانیاں، شاعری، عکاسی، مکالمے، طنزیہ تحریر، اور نان فکشن — انسانی تجربے کو مختلف زاویوں سے دیکھنے کی کوشش ہیں۔</p>
+{% else %}
+<p class="collection-intro">Creative Writing on Kitabomori has six parts — Short Stories, Poetry, Reflection, Dialogues, Satire, and Nonfiction — each exploring the human experience from a different angle.</p>
+{% endif %}
+
 <div class="section-cards">
 
   <div class="section-card">

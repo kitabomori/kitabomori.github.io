@@ -13,6 +13,8 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">February 22, 2024</div>
+
 <p dir="rtl" lang="ur" style="text-align:center;">نامہ بر تو ہی بتا تو نے تو دیکھے ہوں گے</p>
 <p dir="rtl" lang="ur" style="text-align:center;">کیسے ہوتے ہیں وہ خط جن کے جواب آتے ہیں</p>
 
@@ -21,3 +23,6 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p dir="rtl" lang="ur" style="text-align:justify;">ادب، خصوصاً خط کی اہمیت کو سمجھانے کے لیے 15 منٹ کا تدریسی عمل بہت کم ہے، لیکن اس موضوع کے لیے بھرپور تیاری اور طلبہ کی پرتجسس آنکھیں اس بات کا پتہ دے رہی تھیں کہ خطوط آج کل کے الیکٹرانک دور میں بھی بے بہا اہمیت کے حامل ہیں۔ لیکن ہمارا مشاہدہ کرنے والے دوستوں نے کہا کہ ہم اپنے سبق کے مقاصد کو مکمل طور پر واضح نہیں کر پائے، اور اس کے علاوہ ہماری تشخیصی سرگرمی بھی ہمارے سبق کے مقاصد کے ساتھ ربط میں نہیں تھی۔ دوسری جانب پہلی مرتبہ جوڑوں میں تدریس کرنا ہم دونوں کے لیے ایک نیا اور عمدہ تجربہ رہا۔ ایک ساتھ تدریسی خاکہ بنانا اور اسے ایک اچھے انداز میں انجام دینا اس بات کی تائید کرتا ہے کہ درس و تدریس کا عمل اگر باہمی مشاورت سے کیا جائے تو زیادہ اچھا عمل بن سکتا ہے، جس سے تعلیم کے معیار کو مزید بہتر بنانے میں مدد مل سکتی ہے۔</p>
 
 <p dir="rtl" lang="ur" style="text-align:justify;">مورخہ 29 فروری کو بھی  سکول میں امتحانات ہونے کی وجہ سے ہم انپی جامعہ میں ہی مائیکرو ٹیچنگ کریں گے، تو اس بار ہم اردو کے بجائے فزکس کے ایک سبق "کوانٹم فزکس" پر تدریسی خاکہ بنائیں گے، اور یہ کوشش ہوگی کہ اسٹوڈنٹ لرننگ آبجیکٹو یعنی سبق کے مقاصد کو مکمل طور پر واضح کریں اور اپنی تشخیصی سرگرمی کو بھی انہی مقاصد کے ساتھ ترتیب میں رکھیں۔</p>
+
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 3 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 2</a></p>

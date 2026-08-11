@@ -13,6 +13,8 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">February 22, 2023</div>
+
 <p><em>Reflection on Lessons Four and Five</em></p>
 
 <p>As I reflect on the recent lessons I taught on Feb 22, I observed that:</p>
@@ -26,3 +28,6 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p>Lastly, I did not get the response I was expecting from the students. This could be due to various factors, including the difficulty level of the content or the teaching method I used. I need to examine the teaching methods I have been using and evaluate their effectiveness. I can also use feedback from my co-teacher to refine the lesson plan and teaching approach.</p>
 
 <p>Moving forward, I plan to address these observations in several ways. I will develop more hands-on activities, such as small-group tasks related to the content, to help students work together and learn from each other. Secondly, I will be more attentive and encourage students to reach out if they are struggling with any aspect of the class. Lastly, I will keep an open mind and be willing to adapt my teaching methods to best serve my students' needs.</p>
+
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 6 &rarr;</a></p>
+<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 5</a></p>

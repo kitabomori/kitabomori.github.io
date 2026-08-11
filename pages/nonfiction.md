@@ -7,6 +7,12 @@ description_ur: "حقیقی تجربے، تحقیق اور مشاہدے پر م�
 permalink: /creative-writing/nonfiction/
 ---
 
+{% if site.lang == 'ur' %}
+<p class="collection-intro">حقیقی تجربے، تحقیق اور مشاہدے پر مبنی مضامین اور بیانیہ نان فکشن۔</p>
+{% else %}
+<p class="collection-intro">Essays and narrative nonfiction grounded in real experience, research, and observation.</p>
+{% endif %}
+
 <div class="card-grid card-grid-nonfiction">
   {% assign sorted_items = site.nonfiction | sort: "date" | reverse %}
   {% for item in sorted_items %}

@@ -28,3 +28,5 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">Practicum-V combined seven lessons, teaching grade VIII, with three micro-teaching lessons at the university, some delivered in pairs with a second student teacher.</p>
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:0.9rem 0;">Note: The lesson plans, reflections, and reflective reports throughout this diary have been lightly edited and checked for grammatical accuracy for readability using Grammarly, ahead of publishing.</p>
+
+<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 1 &rarr;</a></p>

@@ -7,6 +7,14 @@ description_ur: "میرے چار سالہ اساتذہ تربیتی سفر کے 
 permalink: /diary/
 ---
 
+<p class="collection-intro">
+  {% if site.lang == 'ur' %}
+    میرے چار سالہ اساتذہ تربیتی سفر کے دوران جمع کیے گئے تدریسی نوٹس، اسائنمنٹس، عملی حکمتِ عملیوں، سبق کے خیالات، عکاسیوں اور تعلیمی وسائل کا مجموعہ۔
+  {% else %}
+    This is a collection of teaching notes, assignments, practical strategies, lesson ideas, reflections, and educational resources gathered throughout my four-year teacher education journey.
+  {% endif %}
+</p>
+
 <div class="card-grid card-grid-diary">
   {% assign sorted_items = site.diary | sort: "date" | reverse %}
   {% for item in sorted_items %}

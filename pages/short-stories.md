@@ -7,6 +7,12 @@ description_ur: "کتابومری کمیونٹی کی جانب سے مختصر �
 permalink: /creative-writing/short-stories/
 ---
 
+{% if site.lang == 'ur' %}
+<p class="collection-intro">تخیل پر مبنی مختصر کہانیاں اور افسانے۔</p>
+{% else %}
+<p class="collection-intro">Short fiction and imaginative storytelling.</p>
+{% endif %}
+
 <div class="card-grid card-grid-short_stories">
   {% assign sorted_items = site.short_stories | sort: "date" | reverse %}
   {% for item in sorted_items %}

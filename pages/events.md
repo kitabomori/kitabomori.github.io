@@ -7,6 +7,12 @@ description_ur: "ریڈنگ سرکل، ورکشاپس اور کتابومری ک
 permalink: /events/
 ---
 
+{% if site.lang == 'ur' %}
+<p class="collection-intro">کتابومری کی آنے والی اور گزشتہ تقریبات، ریڈنگ سرکل اور ورکشاپس۔</p>
+{% else %}
+<p class="collection-intro">Upcoming and past Kitabomori events, reading circles, and workshops.</p>
+{% endif %}
+
 <div class="card-grid card-grid-events">
   {% assign sorted_items = site.events | sort: "date" | reverse %}
   {% for item in sorted_items %}
