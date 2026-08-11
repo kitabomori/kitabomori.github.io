@@ -705,19 +705,8 @@
     <!-- ============================================================
      page.html – layout for standard content pages.
      Wraps content in a centred container with page-title heading.
-
-     Section accent: mirrors the accent_group pattern used in
-     post.html (see that file for the fuller explanation). Computed
-     here from page.permalink so listing pages like /articles/ or
-     /letters/ pick up the same section color as the posts inside
-     them, via the shared [data-section="..."] --accent rules in
-     main.css. Pages with no clear single section (home, guidelines,
-     submission, search, privacy, events) fall back to brand teal.
      ============================================================ -->
-
-
-
-<div class="page-container" data-section="nonfiction">
+<div class="page-container">
 
   <!-- ============================================================
      page-decor.html – picks a decorative line-art icon for the
@@ -738,24 +727,11 @@
     
   </h1>
 
-  <span class="post-title-divider" aria-hidden="true"></span>
-
-  <!-- Description / dek, sourced once here from the page's own
-       description_en / description_ur front matter, so every
-       listing page shows it consistently — instead of some pages
-       (Reviews, Events, Diary...) hand-rolling their own intro
-       paragraph in the body while others (Articles, Letters) show
-       nothing at all. Individual pages no longer need their own
-       collection-intro paragraph; remove it from the body if one
-       is still there. -->
-  
-  
-  
-  <p class="page-subtitle">Essays and narrative nonfiction grounded in real experience, research, and observation.</p>
-  
-
   <div class="page-content">
-    <div class="card-grid card-grid-nonfiction">
+    
+<p class="collection-intro">Essays and narrative nonfiction grounded in real experience, research, and observation.</p>
+
+<div class="card-grid card-grid-nonfiction">
   
   
 </div>
