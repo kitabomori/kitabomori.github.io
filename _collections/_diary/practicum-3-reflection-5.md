@@ -13,8 +13,6 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">March 8, 2023</div>
-
 <p><em>Reflection on Lessons VIII and IX</em></p>
 
 <p>During the ninth visit to Government High School No. 1, Sukkur, I observed three important aspects of teaching and learning:</p>

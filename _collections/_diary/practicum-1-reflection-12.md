@@ -13,8 +13,6 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">January 12, 2024</div>
-
 <p>Today's school visit was an observation of the lesson plan, during which I evaluated the cooperating teacher's performance. Keeping the objective in mind, I entered class 4th-A, where Sir A (a teacher)was teaching mathematics as usual. The provided observation sheet included several performance indicators, including lesson planning, subject competency, communication skills, classroom and time management, learning environment, interpersonal skills, and assessment.</p>
 
 <p>The aforementioned broader areas of performance induction were further divided into several subcategories. Mr A scored 68 points out of 100 on the provided rating scale, which is in the range of a good teacher. He performed well in several areas, but in lesson planning, classroom management, and assessment, he was not up to the mark. The cooperating teacher had a strong grasp of content knowledge, with over 20 years of experience. With updated lesson planning and innovative teaching methods, he can increase engagement and improve student participation in class.</p>

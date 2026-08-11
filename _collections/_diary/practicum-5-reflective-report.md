@@ -13,8 +13,6 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">May 31, 2024</div>
-
 <p>Over the 16 weeks of teaching practice, we were supposed to visit the school 12 to 14 times, or conduct micro-teaching at our university when we didn't go to the site. In the end, only 10 lesson plans, along with observation checklists and reflections on each lesson, needed to be submitted as an e-portfolio to the course supervisor to meet the course requirements. Throughout, the blend of classroom observations and post-lesson conferences was pivotal in making our teaching effective, understanding students' behaviour, and shaping our instructional strategies to engage them.</p>
 
 <p>We invested our energy in simplifying physics concepts through simple demonstrations. Selecting texts — excerpts from diaries, letters, and books — for lessons in Urdu and English also aimed to give students a sense of what kind of literature they should be reading. Telling students about the use of flowers during times of war sparked their interest while teaching history. To make mathematics, often considered the most boring subject, more engaging, we discussed its applications in daily life. Taking an interest in students' curiosities after class also showed that when a teacher appreciates them and provides relevant answers, students respect their teachers in turn.</p>
