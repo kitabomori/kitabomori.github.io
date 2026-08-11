@@ -13,6 +13,8 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
+<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">April 22, 2022</div>
+
 <p>We returned to the field for the third time for co-teaching. This time, it was co-teacher N's turn to teach, and my job was to sit in the classroom corner and observe without disturbing the class. The co-teacher began the lesson by attempting to connect it to the previous lesson. The lesson was then immediately started and continued as planned. I was trying to keep one eye on the co-teacher and the other on the students and how they were responding to the teacher's instruction. Throughout the process, I took notes on the co-teacher's strengths and weaknesses. Following the class, I discussed my observations with the co-teacher and offered some suggestions for improvement.</p>
 
 <p>Sitting in a corner to observe students and a teacher may seem like an easy job. Still, it takes a lot of effort not to intervene and interrupt others' work, because when you are outside the frame, you get to see a different picture. I tried to suggest something to the co-teacher a few times, but my attempts were futile. Another thing I realised was how difficult it is for students to bear when a teacher is unprepared for the lesson, lacks content knowledge, or is draconian. Because the goal of a class is to educate students, learning will not occur if the environment is unsuitable. At the same time, it is extremely difficult to engage students in the ongoing discussion when the teacher lacks motivation or has a low voice.</p>

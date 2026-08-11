@@ -18,8 +18,7 @@ layout: post
 
 title_en: "Your English Title Here"       # Replace with your English title
 title_ur: "یہاں اردو عنوان لکھیں"          # Replace with your Urdu title
-date: 2026-01-01                           # Replace with today's date: YYYY-MM-DD. Shown once, at the
-                                            # bottom of the post — not repeated at the top.
+date: 2026-01-01                           # Replace with today's date: YYYY-MM-DD
 author_en: ""                              # Optional: author name (English)
 author_ur: ""                              # Optional: author name (Urdu)
 bio_en: ""                                 # Optional: 2-4 line author bio (English). Leave blank to hide.
@@ -30,12 +29,8 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallba
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallback link, only used if youtube_id is left blank
 youtube_id: ""                             # Preferred: just the YouTube video ID (e.g. "dQw4w9WgXcQ" from
                                             # https://www.youtube.com/watch?v=dQw4w9WgXcQ). When set, an
-                                            # embedded YouTube player is shown, centred, ABOVE the post title
-                                            # instead of a link. Leave blank to show no player (or fall back
-                                            # to youtube_en/youtube_ur, also shown above the title).
-                                            # LESSON PLANS: if this file's name contains "lesson-plan", no
-                                            # YouTube embed or link will ever be shown, no matter what you put
-                                            # here — leave all three youtube_* fields blank for lesson plans.
+                                            # embedded YouTube player is shown on the page instead of a link.
+                                            # Leave blank to show no player (or fall back to youtube_en/youtube_ur).
 pull_quote_en: ""                          # Optional: pin the exact pull-quote sentence shown on the page
 pull_quote_ur: ""                          # (English/Urdu). Leave both blank and the site will automatically
                                             # pick the strongest sentence from the post itself; set these once
@@ -55,13 +50,6 @@ Write your English content here.
 Separate paragraphs with a blank line.
 
 {% endif %}
-
-{% comment %}
-  Don't type a date (e.g. a right-aligned "<div>...date...</div>") into
-  the content above. The `date:` field in the front matter already
-  shows automatically at the bottom of the post — adding one here just
-  duplicates it.
-{% endcomment %}
 
 {% comment %}
   -------------------------------------------------------
