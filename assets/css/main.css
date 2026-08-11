@@ -536,8 +536,8 @@ html[dir="rtl"].dark .section-card:hover {
    bar across the top edge of the post frame, on top of the paper
    tint above. Selector specificity ([data-section] + class) beats
    the tint rules' plain class selector on purpose, so this always
-   wins regardless of source order. Lesson Plan posts never carry
-   data-section (see post.html), so they're naturally unaffected. */
+   wins regardless of source order. Every post now carries
+   data-section, lesson plans included (see post.html). */
 .post-body[data-section] {
   border-top: 6px solid var(--accent, #009F93) !important;
 }
@@ -1691,13 +1691,70 @@ html:not([dir="rtl"]) .page-title {
   @apply mb-5;
 }
 
+/* ---- Merged card: title lives inside the same card as the body now
+   (see post.html). The corner date (.post-card-date, absolutely
+   positioned) sits at the same height the breadcrumb would otherwise
+   start at, so give the header just enough top clearance to sit below
+   the date line instead of visually colliding with it. ---- */
+.post-body .post-header {
+  margin-top: 1.75rem;
+}
+
+@media (max-width: 640px) {
+  .post-body .post-header {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Small corner date stamp, echoing the sample cards' top-corner date.
+   .post-body already has position:relative, so this anchors to the
+   card itself rather than the page. */
+.post-card-date {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.4rem;
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--reading-muted);
+  font-family: 'Literata', serif;
+}
+
+[dir="rtl"] .post-card-date {
+  right: auto;
+  left: 1.4rem;
+  font-family: 'Jameel Noori Nastaliq', serif;
+}
+
+@media (max-width: 640px) {
+  .post-card-date {
+    top: 0.85rem;
+    right: 1rem;
+    font-size: 0.72rem;
+  }
+  [dir="rtl"] .post-card-date {
+    left: 1rem;
+  }
+}
+
+/* Post header's decor icon and breadcrumb now sit inside the tinted
+   card — tint the icon with the section's own accent instead of the
+   fixed teal used for page-level decor icons elsewhere on the site. */
+.post-body[data-section] .page-decor-post {
+  color: var(--accent, #009F93);
+}
+
+.dark .post-body[data-section] .page-decor-post {
+  color: var(--accent, #4FD1C5);
+}
+
 .post-title {
   @apply text-3xl md:text-4xl font-semibold mb-2;
   /* Was fixed teal on every post — now inherits the section's own
-     accent (set via data-section on the <article>, in post.html),
-     so an Article title reads amber, a Letter sage green, etc.
-     Falls back to teal when no section context is present (e.g.
-     Lesson Plan posts, which intentionally opt out — see post.html). */
+     accent (set via data-section on the <article> and the merged
+     .post-body card, in post.html), so an Article title reads amber,
+     a Letter sage green, a Lesson Plan teal (as part of the diary
+     group), etc. Falls back to teal when no section context is
+     present. */
   color: var(--accent, #009F93);
   text-align: center;
   letter-spacing: -0.01em;
