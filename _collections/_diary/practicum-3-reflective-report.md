@@ -13,8 +13,6 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">April 22, 2023</div>
-
 <p>The Teaching Practice-III course of B.Ed-VI was the extension of Teaching Practice-I and II. In the last two practicums, we observed the different dimensions of the school, from gatekeeper to principal. We developed lesson plans and delivered lessons through co-teaching and micro-teaching.</p>
 
 <p>The Teaching Practice-III course required the following objectives to be achieved:</p>

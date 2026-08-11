@@ -100,6 +100,8 @@ description_ur: "ایک جملے میں اردو خلاصہ۔"
 
 `author_en`/`author_ur` and `bio_en`/`bio_ur` are optional. If left blank, the byline falls back to just the date, and no bio block is shown — the layout stays intact either way.
 
+The date only appears once on the page, in that byline at the very bottom of the post — there is no separate date stamp at the top. This is automatic; nothing to set in the front matter.
+
 ### Step 3 – Write your content
 
 Below the front matter, write your content using this pattern:
@@ -119,6 +121,8 @@ Write your English content here.
 If you only have English content, you can write it without the Liquid tags — just put it directly in the file. The Urdu build will display it as well until a translation is added.
 
 Post titles are centred and body paragraphs are automatically justified (right-aligned reading direction for Urdu) — no extra styling is needed.
+
+If you set `youtube_id` (or the `youtube_en`/`youtube_ur` fallback link) in the front matter, it's shown centred, above the title, automatically — you don't place it in the body text. **Lesson Plan posts never show a YouTube embed or link at all**, even if those fields are filled in — leave them blank for lesson plans.
 
 ### Step 4 – Save and push
 
@@ -211,6 +215,14 @@ A round of visual changes was made to address readability/visibility feedback: s
 - **The "Classic Paper Frame" post-body treatment** (aged-paper texture, folded corner, per-section paper tints in `.post-body*` rules) was reviewed and left untouched — it already does what a "frame the reading column" change would have asked for, in more detail than a from-scratch version would.
 
 If you add a new collection/section in future, remember to give it an entry in **both** accent tables above (`[data-section="…"]` for post pages, `.section-card-*`/`.content-card-*` for cards) or it'll silently fall back to teal.
+
+**Later layout pass (dates, title size, YouTube placement):**
+
+- **Duplicate top-of-card date removed.** Posts used to show a small date stamp in the corner of the card *and* the full "By [author] — [date]" line at the bottom. Only the bottom one remains now. The `.post-card-date` element/CSS was removed from `_layouts/post.html` and `main.css` — don't re-add a second date at the top.
+- **Post title size reduced** from `text-3xl`/`text-4xl` to `text-2xl`/`text-3xl` (`.post-title` in `main.css`) — the larger size read as too big.
+- **YouTube embed/link moved above the title**, and centred, instead of below it. In `_layouts/post.html` the `post-video-embed` / `post-audio-link` block now renders before the `<h1 class="post-title">`, inside the same `<header class="post-header">`.
+- **Lesson Plan posts never show a YouTube embed or link**, full stop — the block in `_layouts/post.html` is wrapped in `{% unless post_format == "lesson-plan" %}`. Leave `youtube_id`/`youtube_en`/`youtube_ur` blank on lesson-plan posts; even if filled in, nothing will render.
+- **Old hand-typed date lines removed from post bodies.** Many Teaching Diary posts (lesson plans, reflections, reflective reports) had their own `<div style="text-align:right; ...">[date]</div>` typed directly into the body content, right after the front matter — a second date on top of the corner stamp and the bottom byline. Those were deleted from all affected files. **Don't add a date like that into the body text of a new post** — the `date:` front matter field is the only date you need; the layout displays it automatically at the bottom.
 
 ---
 
