@@ -100,6 +100,12 @@ description_ur: "ایک جملے میں اردو خلاصہ۔"
 
 `author_en`/`author_ur` and `bio_en`/`bio_ur` are optional. If left blank, the byline falls back to just the date, and no bio block is shown — the layout stays intact either way.
 
+Post date is shown only in the bottom byline (not at the top of the post card).
+
+YouTube behavior:
+- For non–lesson-plan posts: `youtube_id` shows the embedded player; if that is blank, `youtube_en` / `youtube_ur` can show a centered fallback link.
+- For lesson-plan posts: YouTube is intentionally hidden even if YouTube fields are present.
+
 ### Step 3 – Write your content
 
 Below the front matter, write your content using this pattern:
@@ -203,7 +209,7 @@ Homepage section cards (`.section-card-*` in `main.css`) use a second, separate 
 A round of visual changes was made to address readability/visibility feedback: side-margin decoration, title typography, and colour hierarchy. Summary, so future edits don't fight these:
 
 - **Display font added:** `Fraunces` (Google Font) is now loaded on English pages alongside `Literata`, and used *only* for headings/titles — site title, post title, page title, home hero heading, section-card headings, card titles. Body copy stays `Literata`. Urdu pages are untouched (still `Noto Nastaliq Urdu` throughout, via the existing `html:not([dir="rtl"])` scoping pattern already used elsewhere in `main.css`). Configured in `tailwind.config.js` (`fontFamily.display`) and loaded in `_includes/head.html`.
-- **Post titles now use the section accent colour** instead of a fixed teal (`.post-title` in `main.css`), also bumped from `text-2xl` to `text-3xl`/`text-4xl`. This required adding `data-section="{{ accent_group }}"` to the `<article>` tag in `_layouts/post.html` for non–Lesson-Plan posts, so `var(--accent)` is available to the title. Page titles (`.page-title`) and the home hero heading (`.home-heading`) got the same font/size treatment but keep the fixed teal — they aren't tied to one section.
+- **Post titles use the section accent colour** instead of a fixed teal (`.post-title` in `main.css`), with a moderated size of `text-2xl`/`text-3xl` for better balance. Page titles (`.page-title`) and the home hero heading (`.home-heading`) keep the fixed teal — they aren't tied to one section.
 - **Side rails (`.post-side`) now appear from 1024px instead of 1200px** — the old breakpoint hid them from most 13"–15" laptop screens entirely. A narrower rail variant (shorter line, smaller icons) applies from 1024–1279px so it never crowds the reading column; the original spacing/size returns at 1280px+.
 - **Each rail now shows two icons**, not one: the existing lamp plus a new small `icon-leaf` symbol (added to `_includes/icons-sprite.svg`, same stroke-based line-art style as the rest of the set) further down the line, plus a very faint radial colour wash behind the whole rail in the section's accent. All in `.post-ornament*` rules in `main.css`.
 - **Homepage hero now has a large, very low-opacity watermark** of the existing book/pen logo mark behind the welcome text (`.home-watermark`), added once per language block in `pages/home.md`. Purely decorative (`aria-hidden`), doesn't affect layout or reading flow.

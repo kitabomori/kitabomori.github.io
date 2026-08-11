@@ -89,11 +89,6 @@ layout: base
        lesson-plan designs. -->
   <div class="post-body post-body-{{ page.collection }}{% if post_format != "" %} post-body-{{ post_format }}{% endif %}" data-section="{{ accent_group }}">
 
-    <!-- Small corner date, matching the sample cards' top-corner date
-         stamp. Purely decorative — the full author/date line still
-         appears at the end of the post as before. -->
-    <p class="post-card-date">{% include localized-date.html date=page.date %}</p>
-
     <header class="post-header">
       {% include post-breadcrumb.html %}
       {% include post-decor.html %}
@@ -120,6 +115,7 @@ layout: base
            embed is shown directly on the page — playback stays on
            KitaboMori and still counts as a normal embedded YouTube view.
            If youtube_id is missing or empty, nothing is shown. -->
+      {% unless post_format == "lesson-plan" %}
       {% if page.youtube_id and page.youtube_id != "" %}
       <div class="post-video-embed">
         <div class="post-video-embed-frame">
@@ -153,6 +149,7 @@ layout: base
       </p>
       {% endif %}
       {% endif %}
+      {% endunless %}
     </header>
 
     <div class="post-body-content">
