@@ -7,12 +7,6 @@ description_ur: "حقیقی یا تخیلاتی مکالمے جو کسی اہم 
 permalink: /creative-writing/dialogues/
 ---
 
-{% if site.lang == 'ur' %}
-<p class="collection-intro">حقیقی یا تخیلاتی مکالمے جو کسی اہم سوال کو ڈرامائی انداز میں پیش کرتے ہیں۔</p>
-{% else %}
-<p class="collection-intro">Conversations, real or imagined, that dramatize a question worth sitting with.</p>
-{% endif %}
-
 <div class="card-grid card-grid-dialogues">
   {% assign sorted_items = site.dialogues | sort: "date" | reverse %}
   {% for item in sorted_items %}

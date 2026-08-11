@@ -7,12 +7,6 @@ description_ur: "تعلیم، خواندگی اور تحقیق سے متعلق �
 permalink: /reviews/
 ---
 
-{% if site.lang == 'ur' %}
-<p class="collection-intro">تعلیم، خواندگی اور تحقیق سے متعلق کتابوں کے تنقیدی جائزے۔</p>
-{% else %}
-<p class="collection-intro">Critical reviews of books on education, literacy, and research.</p>
-{% endif %}
-
 <div class="card-grid card-grid-reviews">
   {% assign sorted_items = site.reviews | sort: "date" | reverse %}
   {% for item in sorted_items %}

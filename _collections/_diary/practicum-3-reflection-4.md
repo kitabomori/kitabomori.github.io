@@ -13,8 +13,6 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">March 1, 2023</div>
-
 <p><em>Reflection on Lessons Six and Seven</em></p>
 
 <p>The important aspects of a class and teaching that caught my attention on the visit on March 1, 2023, to Government High School No. 1, Sukkur are:</p>
@@ -28,6 +26,3 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p>Finally, I have noticed a lack of curiosity among my students to learn. This is concerning, as it may hinder their academic progress and personal development. I think building positive relationships with students and getting to know them better by engaging in brief conversations about their interests and discussing ideas and concepts beyond the classroom will make them more curious to ask questions and more active in class.</p>
 
 <p>In conclusion, as a teacher, I need to focus not only on imparting knowledge but also on creating a positive learning environment that fosters curiosity, motivation and eagerness to learn. I believe that by building positive relationships with my students and making learning relevant, I can help them achieve their full potential.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 8 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 7</a></p>

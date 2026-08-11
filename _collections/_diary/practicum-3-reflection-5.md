@@ -13,8 +13,6 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">March 8, 2023</div>
-
 <p><em>Reflection on Lessons VIII and IX</em></p>
 
 <p>During the ninth visit to Government High School No. 1, Sukkur, I observed three important aspects of teaching and learning:</p>
@@ -28,6 +26,3 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 <p>Lastly, I observed that active learning techniques are effective in keeping students engaged and promoting deeper understanding. Incorporating activities such as group work, discussions, and debates can help students engage with the material, leading to a deeper understanding of the concepts. Active learning also makes the learning process more enjoyable and reduces the chance of boredom and disengagement. In addition, it allows students to learn from one another and promotes collaboration and teamwork, which are important skills for life beyond the classroom.</p>
 
 <p>In conclusion, teaching is a continuous learning process, and today's lesson helped me to recognise the importance of reviewing the previous lesson, providing students with adequate time to process information, and incorporating active learning techniques to keep students engaged and promote deeper understanding. As a teacher, I will strive to adopt these aspects into my teaching practices and provide my students with the best possible learning experience.</p>
-
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 10 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 9</a></p>

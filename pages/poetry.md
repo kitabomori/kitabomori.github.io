@@ -7,12 +7,6 @@ description_ur: "احساسات اور مشاہدات کو نظم کی زبان 
 permalink: /creative-writing/poetry/
 ---
 
-{% if site.lang == 'ur' %}
-<p class="collection-intro">احساسات اور مشاہدات کو نظم کی زبان میں بیان کرنے کی کوشش۔</p>
-{% else %}
-<p class="collection-intro">Verse that gives shape to feeling and observation.</p>
-{% endif %}
-
 <div class="card-grid card-grid-poetry">
   {% assign sorted_items = site.poetry | sort: "date" | reverse %}
   {% for item in sorted_items %}
