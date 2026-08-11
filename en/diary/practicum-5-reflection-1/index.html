@@ -741,30 +741,24 @@
     <!-- ============================================================
      post.html – layout for collection items (articles, letters, etc.)
      Shows title, date, description, and body content.
-     ============================================================ -->
 
-<!-- Section accent group + Lesson Plan detection, computed once up
-     front so both the side rails (below) and the post body / pull-quote
-     (further down) agree on the same value.
-     IMPORTANT: Lesson Plan posts (Teaching Diary entries whose slug
-     contains "lesson-plan") are explicitly out of scope for the whole
-     redesign — this scope restriction is intentional and must not be
-     removed or narrowed. They keep the original plain teal rail
-     untouched below. -->
-
-
+     Redesign note: every post type — including Teaching Diary lesson
+     plans — now shares one merged card: title, breadcrumb, decor icon,
+     divider, and the YouTube audio/video embed all live inside the
+     same tinted, bordered card as the body content, and every post
+     (lesson plans included) gets its section's own --accent color and
+     the accented lamp/leaf rail ornament. There is no more carve-out
+     for lesson plans; they're a normal member of the "diary" accent
+     group like reflections and reflective reports. ============================================================ -->
 
 
 
 
 <!-- Margin content either side of the post, for wide screens only
-     (see .post-side in main.css) — purely decorative vertical rules,
-     echoing the site's brand-teal accent. Fixed-position, so
-     placement in the DOM doesn't matter.
-     Lesson Plans: left exactly as before (plain teal diamond, no
-     section accent, no lamp icon) — see scope note above.
-     Everything else: the line now carries the site's new lamp motif,
-     tinted with the section's accent color. -->
+     (see .post-side in main.css) — purely decorative vertical rules.
+     Fixed-position, so placement in the DOM doesn't matter.
+     Every post — lesson plans included — now gets the same lamp +
+     leaf rail motif, tinted with its section's --accent color. -->
 <!-- Reading progress bar: fixed strip at the very top of the
      viewport, filled by reading-progress.js as the reader scrolls
      through the post body. Uses the section's own accent color. -->
@@ -772,11 +766,6 @@
   <div class="reading-progress-fill" id="reading-progress-fill"></div>
 </div>
 
-
-<!-- Each rail now carries two icons on the line — the lamp (centre)
-     plus a small leaf lower down — so the margin reads as a little
-     more than a single dot on very tall screens. Both tinted with
-     the section's --accent, set via data-section as before. -->
 <aside class="post-side post-side-left" data-section="diary" aria-hidden="true">
   <span class="post-ornament post-ornament-accent">
     <svg class="post-ornament-icon"><use href="#icon-lamp"></use></svg>
@@ -790,15 +779,31 @@
   </span>
 </aside>
 
-
-<!-- data-section on the article itself (Lesson Plans excluded, per the
-     scope note above) lets the post title pick up the same section
-     accent color as the rails/pull-quotes via var(--accent) in
-     main.css, instead of every post title being the same fixed teal. -->
+<!-- data-section on the article itself lets the post title pick up
+     the same section accent color as the rails/pull-quotes via
+     var(--accent) in main.css, instead of every post title being the
+     same fixed teal. Applies uniformly now — lesson plans included. -->
 <article class="post-container" data-section="diary">
 
-  <header class="post-header">
-    <!-- ============================================================
+  
+  
+
+  <!-- Merged post card: title, breadcrumb, decor icon, divider, and
+       the audio/video embed now live INSIDE the same tinted, bordered
+       card as the body copy, instead of sitting above it as plain
+       unstyled header text. One continuous card per post, styled by
+       .post-body / .post-body-{collection} / .post-body-{format} in
+       main.css, echoing the merged title+card look of the sample
+       lesson-plan designs. -->
+  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+
+    <!-- Small corner date, matching the sample cards' top-corner date
+         stamp. Purely decorative — the full author/date line still
+         appears at the end of the post as before. -->
+    <p class="post-card-date">16 July 2026</p>
+
+    <header class="post-header">
+      <!-- ============================================================
      post-breadcrumb.html – Home › Section trail shown above the
      post title, so readers always know where they are and have a
      one-click way back to the section listing (not just browser
@@ -823,7 +828,7 @@
   </a>
 </nav>
 
-    <!-- ============================================================
+      <!-- ============================================================
      post-decor.html – picks a decorative line-art icon for the
      current post based on its collection.
      Included from _layouts/post.html.
@@ -836,51 +841,49 @@
 </div>
 
 
-    <h1 class="post-title">
-      
-        Practicum-V Reflection 1
-      
-    </h1>
-
-    <!-- Description / dek intentionally not rendered here — the
-         description_en / description_ur front matter is still used
-         for the invisible SEO meta tag and social share preview
-         (see head.html), it's just no longer shown to readers as a
-         visible subtitle under the title. -->
-
-    <span class="post-title-divider" aria-hidden="true"></span>
-
-    <!-- Embedded YouTube audio/video player. Each post can set
-         youtube_id (just the 11-character video ID, e.g. "dQw4w9WgXcQ")
-         in its front matter. When present, the official YouTube iframe
-         embed is shown directly on the page — playback stays on
-         KitaboMori and still counts as a normal embedded YouTube view.
-         If youtube_id is missing or empty, nothing is shown. -->
-    
-    <!-- Fallback: no youtube_id set yet for this post. Keep showing the
-         old "listen on YouTube" link (youtube_en / youtube_ur, or the
-         site-wide channel link) so nothing breaks for posts that
-         haven't been migrated to an embedded player yet. -->
-    
-    
-    
-    
-    <p class="post-audio-link">
-      <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener">
+      <h1 class="post-title">
         
-          Click for audio on YouTube
+          Practicum-V Reflection 1
         
-      </a>
-    </p>
-    
-    
-  </header>
+      </h1>
 
-  
-  
-  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
-    <!--KITABOMORI-POST-BODY-START-->
-    <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">February 15, 2024</div>
+      <!-- Description / dek intentionally not rendered here — the
+           description_en / description_ur front matter is still used
+           for the invisible SEO meta tag and social share preview
+           (see head.html), it's just no longer shown to readers as a
+           visible subtitle under the title. -->
+
+      <span class="post-title-divider" aria-hidden="true"></span>
+
+      <!-- Embedded YouTube audio/video player. Each post can set
+           youtube_id (just the 11-character video ID, e.g. "dQw4w9WgXcQ")
+           in its front matter. When present, the official YouTube iframe
+           embed is shown directly on the page — playback stays on
+           KitaboMori and still counts as a normal embedded YouTube view.
+           If youtube_id is missing or empty, nothing is shown. -->
+      
+      <!-- Fallback: no youtube_id set yet for this post. Keep showing the
+           old "listen on YouTube" link (youtube_en / youtube_ur, or the
+           site-wide channel link) so nothing breaks for posts that
+           haven't been migrated to an embedded player yet. -->
+      
+      
+      
+      
+      <p class="post-audio-link">
+        <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener">
+          
+            Click for audio on YouTube
+          
+        </a>
+      </p>
+      
+      
+    </header>
+
+    <div class="post-body-content">
+      <!--KITABOMORI-POST-BODY-START-->
+      <div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">February 15, 2024</div>
 
 <aside class="pull-quote" dir="rtl" data-section="diary" aria-label="اقتباس">
   <span class="pull-quote-glyph" aria-hidden="true">&#8221;</span>
@@ -895,7 +898,8 @@
 <p style="margin-top:0.75rem;"><a href="/en/diary/practicum-5-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 2 &rarr;</a></p>
 <p style="margin-top:0.5rem;"><a href="/en/diary/practicum-5-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 1</a></p>
 
-    <!--KITABOMORI-POST-BODY-END-->
+      <!--KITABOMORI-POST-BODY-END-->
+    </div>
   </div>
 
   <!-- Author and date, shown at the end of the piece -->
