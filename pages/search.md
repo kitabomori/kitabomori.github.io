@@ -9,13 +9,11 @@ permalink: /search/
 
 {% if site.lang == 'ur' %}
 <p>کتابومری کے تمام مواد میں تلاش کریں۔</p>
-<label for="search-input" class="sr-only">تلاش</label>
-<input type="text" id="search-input" placeholder="یہاں لکھیں…" aria-label="تلاش"
+<input type="text" id="search-input" placeholder="یہاں لکھیں…"
        style="width:100%; padding:10px; font-size:1rem; border:1px solid #009F93; border-radius:4px; margin-bottom:20px; direction:rtl;">
 {% else %}
 <p>Search all articles, letters, reviews, and reflections on Kitabomori.</p>
-<label for="search-input" class="sr-only">Search</label>
-<input type="text" id="search-input" placeholder="Type to search…" aria-label="Search"
+<input type="text" id="search-input" placeholder="Type to search…"
        style="width:100%; padding:10px; font-size:1rem; border:1px solid #009F93; border-radius:4px; margin-bottom:20px;">
 {% endif %}
 
