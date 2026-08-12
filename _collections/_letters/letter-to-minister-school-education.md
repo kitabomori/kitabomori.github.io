@@ -2,7 +2,7 @@
 layout: post
 title_en: "Letter to Minister School Education"  
 title_ur: "وزیرِ اسکول ایجوکیشن کو خط"          
-date: 2026-08-06                           
+date: 2026-08-12                           
 author_en: "Kitabomori"                    
 author_ur: "کتابومری"                              
 bio_en: ""                   
