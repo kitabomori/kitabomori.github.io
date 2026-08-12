@@ -788,23 +788,14 @@
   
   
 
-  <!-- Merged post card: title, breadcrumb, decor icon, and the
-       audio/video embed all live INSIDE the same tinted, bordered
-       card as the body copy, instead of sitting above it as plain
-       unstyled header text. One continuous card per post, styled by
-       .post-body / .post-body-{collection} / .post-body-{format} in
-       main.css, echoing the merged title+card look of the sample
-       lesson-plan designs.
-
-       The posting date is intentionally NOT shown here at the top of
-       the card — it only appears once, at the end of the post (see
-       .post-meta-bottom below), so there's a single source of truth
-       for "when was this posted" rather than a duplicate date at the
-       top and bottom. -->
-  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
-
-    <header class="post-header">
-      <!-- ============================================================
+  <!-- Plain header strip, OUTSIDE the tinted/bordered post card below:
+       breadcrumb, decor icon, and the YouTube embed/link. No card,
+       no border, no per-section tint — sits directly on the page
+       background and uses the site's one main teal brand color for
+       every post, regardless of section. Centred, and always above
+       the post title (which is the first thing inside the card). -->
+  <div class="post-meta-top">
+    <!-- ============================================================
      post-breadcrumb.html – Home › Section trail shown above the
      post title, so readers always know where they are and have a
      one-click way back to the section listing (not just browser
@@ -829,7 +820,7 @@
   </a>
 </nav>
 
-      <!-- ============================================================
+    <!-- ============================================================
      post-decor.html – picks a decorative line-art icon for the
      current post based on its collection.
      Included from _layouts/post.html.
@@ -842,42 +833,58 @@
 </div>
 
 
-      <!-- Embedded YouTube audio/video player — centred, and shown
-           ABOVE the post title (not below it). Each post can set
-           youtube_id (just the 11-character video ID, e.g.
-           "dQw4w9WgXcQ") in its front matter. When present, the
-           official YouTube iframe embed is shown directly on the
-           page — playback stays on KitaboMori and still counts as a
-           normal embedded YouTube view. If youtube_id is missing or
-           empty, nothing is shown (or the youtube_en/youtube_ur
-           fallback link is used instead, if set).
+    <!-- Embedded YouTube audio/video player. Each post can set
+         youtube_id (just the 11-character video ID, e.g.
+         "dQw4w9WgXcQ") in its front matter. When present, the
+         official YouTube iframe embed is shown directly on the
+         page — playback stays on KitaboMori and still counts as a
+         normal embedded YouTube view. If youtube_id is missing or
+         empty, nothing is shown (or the youtube_en/youtube_ur
+         fallback link is used instead, if set).
 
-           Lesson Plan posts NEVER show a YouTube embed or link, by
-           design — regardless of what youtube_id / youtube_en /
-           youtube_ur are set to in that post's front matter. This is
-           deliberate: don't remove the {% unless post_format == "lesson-plan" %}
-           guard below when editing this template. -->
+         Lesson Plan posts NEVER show a YouTube embed or link, by
+         design — regardless of what youtube_id / youtube_en /
+         youtube_ur are set to in that post's front matter. This is
+         deliberate: don't remove the {% unless post_format == "lesson-plan" %}
+         guard below when editing this template. -->
+    
       
-        
-        <!-- Fallback: no youtube_id set yet for this post. Keep showing the
-             old "listen on YouTube" link (youtube_en / youtube_ur, or the
-             site-wide channel link) so nothing breaks for posts that
-             haven't been migrated to an embedded player yet. -->
-        
-        
-        
-        
-        <p class="post-audio-link">
-          <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener">
-            
-              یوٹیوب پر آڈیو کے لیے کلک کریں
-            
-          </a>
-        </p>
-        
-        
+      <!-- Fallback: no youtube_id set yet for this post. Keep showing the
+           old "listen on YouTube" link (youtube_en / youtube_ur, or the
+           site-wide channel link) so nothing breaks for posts that
+           haven't been migrated to an embedded player yet. -->
       
+      
+      
+      
+      <p class="post-audio-link">
+        <a href="https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg" target="_blank" rel="noopener">
+          
+            یوٹیوب پر آڈیو کے لیے کلک کریں
+          
+        </a>
+      </p>
+      
+      
+    
+  </div>
 
+  <!-- Post card: title + divider + body copy live inside this tinted,
+       bordered card, styled by .post-body / .post-body-{collection} /
+       .post-body-{format} in main.css. The breadcrumb / decor icon /
+       YouTube embed sit OUTSIDE it, above, in .post-meta-top (see
+       above) — plain, uncoloured-by-section, so they read as
+       consistent site chrome rather than part of the post's own
+       "paper".
+
+       The posting date is intentionally NOT shown here at the top of
+       the card — it only appears once, at the end of the post (see
+       .post-meta-bottom below), so there's a single source of truth
+       for "when was this posted" rather than a duplicate date at the
+       top and bottom. -->
+  <div class="post-body post-body-diary post-body-reflection" data-section="diary">
+
+    <header class="post-header">
       <h1 class="post-title">
         
           Practicum 5 Reflection 7
