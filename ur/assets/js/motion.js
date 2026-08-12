@@ -1,13 +1,17 @@
 /* ============================================================
    motion.js – calm, literary motion for Kitabomori.
    No animation library: plain IntersectionObserver + CSS classes.
-   Two jobs:
-   1. Fade/slide content up into view as the reader scrolls to it
-      (cards, paragraphs, blockquotes).
-   2. Draw a thin reading-progress bar at the top while reading
-      a post.
-   Respects prefers-reduced-motion: reveals show immediately and
-   the progress bar is skipped entirely.
+   One job: fade/slide content up into view as the reader scrolls
+   to it (cards, paragraphs, blockquotes).
+   Respects prefers-reduced-motion: reveals show immediately.
+
+   (The reading-progress bar at the top of post pages is handled
+   entirely by reading-progress.js against the .reading-progress-track
+   / .reading-progress-fill markup in post.html — it used to also be
+   built here a second time, which put two independently-computed
+   progress bars on screen at once and made the top of every post
+   page flicker/vibrate as they fought each other on scroll. Don't
+   re-add a second implementation here.)
    ============================================================ */
 (function () {
   "use strict";
@@ -52,29 +56,6 @@
         { threshold: 0.12, rootMargin: "0px 0px -10% 0px" }
       );
       revealTargets.forEach(function (el) { io.observe(el); });
-    }
-  }
-
-  /* ---- 2. Reading progress bar (post pages only) ---- */
-  if (!reduceMotion) {
-    var postBody = document.querySelector(".post-body");
-    if (postBody) {
-      var bar = document.createElement("div");
-      bar.className = "reading-progress";
-      document.body.appendChild(bar);
-
-      var updateProgress = function () {
-        var rect = postBody.getBoundingClientRect();
-        var docTop = rect.top + window.scrollY;
-        var span = postBody.offsetHeight - window.innerHeight * 0.5;
-        var scrolled = window.scrollY - docTop + window.innerHeight * 0.5;
-        var pct = span > 0 ? Math.min(Math.max(scrolled / span, 0), 1) : 0;
-        bar.style.width = (pct * 100) + "%";
-      };
-
-      window.addEventListener("scroll", updateProgress, { passive: true });
-      window.addEventListener("resize", updateProgress);
-      updateProgress();
     }
   }
 })();
