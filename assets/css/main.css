@@ -1697,15 +1697,40 @@ html:not([dir="rtl"]) .page-title {
   margin-top: 0;
 }
 
-/* Post header's decor icon and breadcrumb now sit inside the tinted
-   card — tint the icon with the section's own accent instead of the
-   fixed teal used for page-level decor icons elsewhere on the site. */
-.post-body[data-section] .page-decor-post {
-  color: var(--accent, #009F93);
+/* ---- Plain header strip above the post card ----
+   Breadcrumb, decor icon, and YouTube embed/link now live OUTSIDE
+   the tinted/bordered post card (see .post-meta-top in post.html),
+   sitting directly on the page background instead of inside the
+   section-tinted "paper". No border, no background, no per-section
+   accent — always the site's one main teal brand color, the same on
+   every post regardless of section, and centred. */
+.post-meta-top {
+  @apply mb-5;
+  text-align: center;
 }
 
-.dark .post-body[data-section] .page-decor-post {
-  color: var(--accent, #4FD1C5);
+.post-meta-top .post-breadcrumb,
+.post-meta-top .page-decor-post {
+  color: #009F93;
+}
+
+.dark .post-meta-top .post-breadcrumb,
+.dark .post-meta-top .page-decor-post {
+  color: #4FD1C5;
+}
+
+/* Breadcrumb links here are always the fixed site teal, on hover too —
+   not the section's --accent (the ancestor <article> still carries
+   data-section for the title inside the card below, but this strip
+   is deliberately section-agnostic). */
+.post-meta-top .post-breadcrumb a:hover,
+.post-meta-top .post-breadcrumb a:focus-visible {
+  color: #009F93;
+}
+
+.dark .post-meta-top .post-breadcrumb a:hover,
+.dark .post-meta-top .post-breadcrumb a:focus-visible {
+  color: #4FD1C5;
 }
 
 .post-title {
@@ -1746,17 +1771,17 @@ html:not([dir="rtl"]) .post-title {
 }
 
 .post-audio-link a {
-  color: #1D5FBF !important;
+  color: #009F93 !important;
   text-decoration: underline;
   font-weight: 600;
 }
 
 .post-audio-link a:hover {
-  color: #14417F;
+  color: #007A70;
 }
 
 .dark .post-audio-link a {
-  color: #7FB0FF !important;
+  color: #4FD1C5 !important;
 }
 
 /* ---- Embedded YouTube player ----
