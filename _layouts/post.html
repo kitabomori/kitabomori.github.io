@@ -80,23 +80,75 @@ layout: base
     {% assign post_format = "reflection" %}
   {% endif %}
 
-  <!-- Merged post card: title, breadcrumb, decor icon, divider, and
-       the audio/video embed now live INSIDE the same tinted, bordered
+  <!-- Merged post card: title, breadcrumb, decor icon, and the
+       audio/video embed all live INSIDE the same tinted, bordered
        card as the body copy, instead of sitting above it as plain
        unstyled header text. One continuous card per post, styled by
        .post-body / .post-body-{collection} / .post-body-{format} in
        main.css, echoing the merged title+card look of the sample
-       lesson-plan designs. -->
-  <div class="post-body post-body-{{ page.collection }}{% if post_format != "" %} post-body-{{ post_format }}{% endif %}" data-section="{{ accent_group }}">
+       lesson-plan designs.
 
-    <!-- Small corner date, matching the sample cards' top-corner date
-         stamp. Purely decorative — the full author/date line still
-         appears at the end of the post as before. -->
-    <p class="post-card-date">{% include localized-date.html date=page.date %}</p>
+       The posting date is intentionally NOT shown here at the top of
+       the card — it only appears once, at the end of the post (see
+       .post-meta-bottom below), so there's a single source of truth
+       for "when was this posted" rather than a duplicate date at the
+       top and bottom. -->
+  <div class="post-body post-body-{{ page.collection }}{% if post_format != "" %} post-body-{{ post_format }}{% endif %}" data-section="{{ accent_group }}">
 
     <header class="post-header">
       {% include post-breadcrumb.html %}
       {% include post-decor.html %}
+
+      <!-- Embedded YouTube audio/video player — centred, and shown
+           ABOVE the post title (not below it). Each post can set
+           youtube_id (just the 11-character video ID, e.g.
+           "dQw4w9WgXcQ") in its front matter. When present, the
+           official YouTube iframe embed is shown directly on the
+           page — playback stays on KitaboMori and still counts as a
+           normal embedded YouTube view. If youtube_id is missing or
+           empty, nothing is shown (or the youtube_en/youtube_ur
+           fallback link is used instead, if set).
+
+           Lesson Plan posts NEVER show a YouTube embed or link, by
+           design — regardless of what youtube_id / youtube_en /
+           youtube_ur are set to in that post's front matter. This is
+           deliberate: don't remove the {% raw %}{% unless post_format == "lesson-plan" %}{% endraw %}
+           guard below when editing this template. -->
+      {% unless post_format == "lesson-plan" %}
+        {% if page.youtube_id and page.youtube_id != "" %}
+        <div class="post-video-embed">
+          <div class="post-video-embed-frame">
+            <iframe
+              src="https://www.youtube.com/embed/{{ page.youtube_id }}?rel=0&modestbranding=1"
+              title="{% if site.lang == 'ur' %}{{ page.title_ur | default: page.title }}{% else %}{{ page.title_en | default: page.title }}{% endif %}"
+              loading="lazy"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        {% else %}
+        <!-- Fallback: no youtube_id set yet for this post. Keep showing the
+             old "listen on YouTube" link (youtube_en / youtube_ur, or the
+             site-wide channel link) so nothing breaks for posts that
+             haven't been migrated to an embedded player yet. -->
+        {% assign post_audio_link = page.youtube_en %}
+        {% if site.lang == 'ur' %}{% assign post_audio_link = page.youtube_ur %}{% endif %}
+        {% assign post_audio_link = post_audio_link | default: site.youtube_channel %}
+        {% if post_audio_link and post_audio_link != "" %}
+        <p class="post-audio-link">
+          <a href="{{ post_audio_link }}" target="_blank" rel="noopener">
+            {% if site.lang == 'ur' %}
+              یوٹیوب پر آڈیو کے لیے کلک کریں
+            {% else %}
+              Click for audio on YouTube
+            {% endif %}
+          </a>
+        </p>
+        {% endif %}
+        {% endif %}
+      {% endunless %}
 
       <h1 class="post-title">
         {% if site.lang == 'ur' %}
@@ -113,46 +165,6 @@ layout: base
            visible subtitle under the title. -->
 
       <span class="post-title-divider" aria-hidden="true"></span>
-
-      <!-- Embedded YouTube audio/video player. Each post can set
-           youtube_id (just the 11-character video ID, e.g. "dQw4w9WgXcQ")
-           in its front matter. When present, the official YouTube iframe
-           embed is shown directly on the page — playback stays on
-           KitaboMori and still counts as a normal embedded YouTube view.
-           If youtube_id is missing or empty, nothing is shown. -->
-      {% if page.youtube_id and page.youtube_id != "" %}
-      <div class="post-video-embed">
-        <div class="post-video-embed-frame">
-          <iframe
-            src="https://www.youtube.com/embed/{{ page.youtube_id }}?rel=0&modestbranding=1"
-            title="{% if site.lang == 'ur' %}{{ page.title_ur | default: page.title }}{% else %}{{ page.title_en | default: page.title }}{% endif %}"
-            loading="lazy"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-      {% else %}
-      <!-- Fallback: no youtube_id set yet for this post. Keep showing the
-           old "listen on YouTube" link (youtube_en / youtube_ur, or the
-           site-wide channel link) so nothing breaks for posts that
-           haven't been migrated to an embedded player yet. -->
-      {% assign post_audio_link = page.youtube_en %}
-      {% if site.lang == 'ur' %}{% assign post_audio_link = page.youtube_ur %}{% endif %}
-      {% assign post_audio_link = post_audio_link | default: site.youtube_channel %}
-      {% if post_audio_link and post_audio_link != "" %}
-      <p class="post-audio-link">
-        <a href="{{ post_audio_link }}" target="_blank" rel="noopener">
-          {% if site.lang == 'ur' %}
-            یوٹیوب پر آڈیو کے لیے کلک کریں
-          {% else %}
-            Click for audio on YouTube
-          {% endif %}
-        </a>
-      </p>
-      {% endif %}
-      {% endif %}
     </header>
 
     <div class="post-body-content">

@@ -13,8 +13,6 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 ---
 
-<div style="text-align:right; font-size:0.85rem; color:#666; margin:0 0 1rem 0;">March 22, 2023</div>
-
 <p><em>Reflection on Lesson X</em></p>
 
 <p>During the final visit to Government X School, Sukkur, on March 22, I observed the following points:</p>

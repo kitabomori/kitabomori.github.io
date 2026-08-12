@@ -19,6 +19,9 @@ layout: post
 title_en: "Your English Title Here"       # Replace with your English title
 title_ur: "یہاں اردو عنوان لکھیں"          # Replace with your Urdu title
 date: 2026-01-01                           # Replace with today's date: YYYY-MM-DD
+                                            # This is the ONLY place the date needs to be set. It shows once,
+                                            # automatically, at the very end of the post — do not also type a
+                                            # date at the top of your content below.
 author_en: ""                              # Optional: author name (English)
 author_ur: ""                              # Optional: author name (Urdu)
 bio_en: ""                                 # Optional: 2-4 line author bio (English). Leave blank to hide.
@@ -29,8 +32,12 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallba
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallback link, only used if youtube_id is left blank
 youtube_id: ""                             # Preferred: just the YouTube video ID (e.g. "dQw4w9WgXcQ" from
                                             # https://www.youtube.com/watch?v=dQw4w9WgXcQ). When set, an
-                                            # embedded YouTube player is shown on the page instead of a link.
+                                            # embedded YouTube player is shown, centred, ABOVE the title.
                                             # Leave blank to show no player (or fall back to youtube_en/youtube_ur).
+                                            # NOTE: if this file is a Teaching Diary Lesson Plan (filename
+                                            # contains "lesson-plan"), all three youtube_* fields above are
+                                            # ignored — Lesson Plan posts never show a YouTube embed or link,
+                                            # by design. No need to fill these in for a lesson plan.
 pull_quote_en: ""                          # Optional: pin the exact pull-quote sentence shown on the page
 pull_quote_ur: ""                          # (English/Urdu). Leave both blank and the site will automatically
                                             # pick the strongest sentence from the post itself; set these once

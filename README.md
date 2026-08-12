@@ -194,7 +194,7 @@ You do not need to do anything else.
 
 Homepage section cards (`.section-card-*` in `main.css`) use a second, separate accent set for the same six sections — this was already the case before this round of changes and is left as-is.
 
-**Lesson Plan posts are explicitly excluded** from section-accent colouring (title, rail ornaments) by design — see the scope comment at the top of `_layouts/post.html`. Don't remove that exclusion when editing.
+**Lesson Plan posts now get the same section-accent colouring** (title, rail ornaments) as every other Teaching Diary post — teal, since they're part of the "diary" accent group. There is no carve-out for them in `_layouts/post.html` any more. (They do, however, never show a YouTube embed/link — see the next section.)
 
 ---
 
@@ -211,6 +211,18 @@ A round of visual changes was made to address readability/visibility feedback: s
 - **The "Classic Paper Frame" post-body treatment** (aged-paper texture, folded corner, per-section paper tints in `.post-body*` rules) was reviewed and left untouched — it already does what a "frame the reading column" change would have asked for, in more detail than a from-scratch version would.
 
 If you add a new collection/section in future, remember to give it an entry in **both** accent tables above (`[data-section="…"]` for post pages, `.section-card-*`/`.content-card-*` for cards) or it'll silently fall back to teal.
+
+---
+
+## Merged card redesign (design notes for future edits)
+
+A second round of changes merged the post header into the body card and reworked the date/title/YouTube placement, across **every** post type — articles, reviews, letters, events, and all three Teaching Diary formats (lesson plans, reflections, reflective reports). New posts you add going forward automatically follow all of this — nothing extra needs to be set in front matter. Summary, so future edits don't fight these:
+
+- **Title merged into the body card.** The breadcrumb, decor icon, YouTube embed/link, and title now live *inside* the same tinted, bordered `.post-body` card as the body copy (in `_layouts/post.html`), instead of sitting above it as plain unstyled header text. This applies uniformly, including Lesson Plans — see the accent-colour note above.
+- **The posting date now appears exactly once**, at the very end of the post (`.post-meta-bottom`, already existed). It used to also show at the top of the card and, for Teaching Diary posts specifically, a second time again inline at the very start of the body content (a leftover hardcoded `<div style="text-align:right...">` line baked into 81 of the `_collections/_diary/*.md` files). Both of those extra copies were removed. If you're writing a new Teaching Diary post from the template, do **not** add a manual date line at the top of your content — the front-matter `date:` field is all that's needed, and it will show up automatically at the bottom.
+- **Post title size reduced** from `text-3xl`/`text-4xl` back down to `text-2xl`/`text-3xl` (`.post-title` in `main.css`) — the larger size from the previous aesthetic pass read as too big once the title moved inside the merged card.
+- **YouTube embed/link moved above the title**, and is horizontally centred (`.post-video-embed` / `.post-audio-link` in `main.css`, reordered in `_layouts/post.html`). It used to sit below the title/divider.
+- **Lesson Plan posts never show a YouTube embed or link, at all** — regardless of what `youtube_id`/`youtube_en`/`youtube_ur` are set to in that post's front matter. This is enforced by an `{% unless post_format == "lesson-plan" %}` guard around the whole YouTube block in `_layouts/post.html`. Don't remove that guard when editing. (You can still fill in those front-matter fields on a lesson plan file if you want — they're just ignored — but there's no need to.)
 
 ---
 
