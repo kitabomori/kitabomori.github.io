@@ -172,7 +172,24 @@
 
 <!-- Jameel Noori Nastaliq, served via OnlineWebFonts CDN.
      Credit required by license: Font made from onlinewebfonts.com,
-     licensed CC BY 4.0 — https://www.onlinewebfonts.com/fonts -->
+     licensed CC BY 4.0 — https://www.onlinewebfonts.com/fonts
+
+     Preconnect + preload: this font is on every page (see the note
+     above) but lives on a third-party host that nothing else on the
+     page talks to, so without these hints the browser doesn't even
+     start the DNS/TLS handshake to db.onlinewebfonts.com until it
+     parses the @font-face below — and even then, @font-face alone
+     only *registers* the font, it doesn't fetch it until something
+     on the page actually needs those glyphs. On an English page that
+     ends up rendering an Urdu post, that glyph need isn't discovered
+     until the RTL text is laid out, so the fetch starts late and the
+     Nastaliq text sits in its fallback serif for a beat before
+     swapping. Preloading the woff2 kicks that fetch off immediately,
+     in parallel with everything else, instead of waiting to be
+     discovered. -->
+<link rel="preconnect" href="https://db.onlinewebfonts.com" crossorigin>
+<link rel="preload" as="font" type="font/woff2" crossorigin
+      href="https://db.onlinewebfonts.com/t/0f64bc9fbd20b8f7ddb4ea11756cbbb7.woff2">
 <style>
 @font-face {
   font-family: 'Jameel Noori Nastaliq';
@@ -187,8 +204,14 @@
 }
 </style>
 
-<!-- Tailwind CSS (compiled by PostCSS build step) -->
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+<!-- Tailwind CSS (compiled by PostCSS build step).
+     Cache-busted with the build timestamp: GitHub's CDN (and every
+     visitor's browser) caches main.css hard by filename. Without a
+     changing query string, editing main.css and redeploying doesn't
+     reliably show up for anyone who already has the old file cached
+     — this is why CSS-only edits (like a font-size change) can look
+     like they "didn't take" even though the deploy succeeded. -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css?v={{ site.time | date: '%s' }}">
 
 <!-- Theme script: runs before paint to prevent flash of wrong colour scheme -->
 <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
