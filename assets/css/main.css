@@ -1764,7 +1764,7 @@ html:not([dir="rtl"]) .page-title {
 }
 
 .post-title {
-  @apply text-xl md:text-2xl font-semibold mb-2;
+  @apply text-xl font-semibold mb-2;
   /* Was fixed teal on every post — now inherits the section's own
      accent (set via data-section on the <article> and the merged
      .post-body card, in post.html), so an Article title reads amber,
@@ -1774,6 +1774,16 @@ html:not([dir="rtl"]) .page-title {
   color: var(--accent, #009F93);
   text-align: center;
   letter-spacing: -0.01em;
+}
+
+/* Desktop title size: was text-2xl (1.5rem/24px), trimmed down to
+   1.35rem (~21.6px) — noticeably smaller without dropping all the way
+   to the mobile text-xl (1.25rem/20px) size. Adjust this one value if
+   you want it smaller/larger still. */
+@media (min-width: 768px) {
+  .post-title {
+    font-size: 1.35rem;
+  }
 }
 
 /* Display serif for titles only — Literata stays the body-copy face.
