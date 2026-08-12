@@ -1734,7 +1734,7 @@ html:not([dir="rtl"]) .page-title {
 }
 
 .post-title {
-  @apply text-2xl md:text-3xl font-semibold mb-2;
+  @apply text-xl md:text-2xl font-semibold mb-2;
   /* Was fixed teal on every post — now inherits the section's own
      accent (set via data-section on the <article> and the merged
      .post-body card, in post.html), so an Article title reads amber,
