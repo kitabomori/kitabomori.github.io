@@ -18,6 +18,7 @@ permalink: /diary/
 <div class="card-grid card-grid-diary">
   {% assign sorted_items = site.diary | sort: "date" | reverse %}
   {% for item in sorted_items %}
+  {% if (site.lang == 'en' and item.available_en == false) or (site.lang == 'ur' and item.available_ur == false) %}{% continue %}{% endif %}
   {% assign item_format = "" %}
   {% if item.url contains "reflective-report" %}
     {% assign item_format = "reflective-report" %}

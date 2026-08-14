@@ -21,18 +21,35 @@
      No icons, no emoji, plain text only.
      ============================================================ -->
 
-<!-- Step 1: Collect all items from every ticker-eligible collection -->
+<!-- Step 1: Collect all items from every ticker-eligible collection,
+     dropping any post that isn't available in the current language
+     build (available_en: false / available_ur: false) first — a
+     where_exp filter per collection, so nothing not-yet-translated
+     ever lands in the ticker and links to a "not available yet" note
+     instead of the piece itself. -->
+{% assign lang_ok = "site.lang != 'en' or item.available_en != false" %}
+{% assign lang_ok2 = "site.lang != 'ur' or item.available_ur != false" %}
 {% assign ticker_items = "" | split: "" %}
-{% assign ticker_items = ticker_items | concat: site.articles %}
-{% assign ticker_items = ticker_items | concat: site.reviews %}
-{% assign ticker_items = ticker_items | concat: site.short_stories %}
-{% assign ticker_items = ticker_items | concat: site.poetry %}
-{% assign ticker_items = ticker_items | concat: site.reflections %}
-{% assign ticker_items = ticker_items | concat: site.dialogues %}
-{% assign ticker_items = ticker_items | concat: site.satire %}
-{% assign ticker_items = ticker_items | concat: site.nonfiction %}
-{% assign ticker_items = ticker_items | concat: site.letters %}
-{% assign ticker_items = ticker_items | concat: site.diary %}
+{% assign coll_filtered = site.articles | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.reviews | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.short_stories | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.poetry | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.reflections | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.dialogues | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.satire | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.nonfiction | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.letters | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.diary | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
 
 <!-- Step 2: Sort by date descending, take top 5 -->
 {% assign ticker_sorted = ticker_items | sort: "date" | reverse %}
