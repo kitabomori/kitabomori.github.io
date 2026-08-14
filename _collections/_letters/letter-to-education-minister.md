@@ -1,8 +1,8 @@
 ---
 layout: post
-title_en: "Letter to Minister School Education"  
-title_ur: "وزیرِ اسکول ایجوکیشن کو خط"          
-date: 2026-08-12                           
+title_en: "Letter to Education Minister"  
+title_ur: "وزیرِ تعلم کو خط"          
+date: 2026-08-14                           
 author_en: "Kitabomori"                    
 author_ur: "کتابومری"                              
 bio_en: ""                   
@@ -18,7 +18,7 @@ youtube_id: ""
 
 12 اگست 2026ء
 
-جناب وزیرِ اسکول ایجوکیشن،
+جناب وزیرِ تعلم،
 
 آداب!
 
