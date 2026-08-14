@@ -13,6 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_en: false
 ---
+{% if site.lang == 'ur' %}
 
 <p dir="rtl" lang="ur" style="text-align:center;">نامہ بر تو ہی بتا تو نے تو دیکھے ہوں گے</p>
 <p dir="rtl" lang="ur" style="text-align:center;">کیسے ہوتے ہیں وہ خط جن کے جواب آتے ہیں</p>
@@ -25,3 +26,5 @@ available_en: false
 
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 3 &rarr;</a></p>
 <p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 2</a></p>
+
+{% endif %}
