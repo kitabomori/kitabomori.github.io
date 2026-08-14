@@ -1,7 +1,7 @@
 ---
 layout: post
 title_en: "The Right Way to Shit on..."
-title_ur: ""
+title_ur: "دی رائٹ وے ٹو شٹ آن..."
 date: 2022-03-05
 author_en: ""
 author_ur: ""

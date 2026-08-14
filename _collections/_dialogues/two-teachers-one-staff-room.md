@@ -1,7 +1,7 @@
 ---
 layout: post
 title_en: "Two Teachers, One Staff Room"
-title_ur: ""
+title_ur: "ٹو ٹیچرز، ون سٹاف روم"
 date: 2026-07-01
 author_en: ""
 author_ur: ""

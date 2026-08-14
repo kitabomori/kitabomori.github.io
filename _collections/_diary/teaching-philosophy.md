@@ -1,7 +1,7 @@
 ---
 layout: post
 title_en: "My Teaching Philosophy"
-title_ur: "میرا فلسفہ تدریس"
+title_ur: "میرا تدریسی فلسفہ"
 date: 2026-07-12
 author_en: ""
 author_ur: "کتابومری"

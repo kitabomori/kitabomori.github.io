@@ -1,7 +1,7 @@
 ---
 layout: post
 title_en: "Practicum-V Lesson Plan 8"
-title_ur: ""
+title_ur: "پریکٹیکم پنجم - سبقی منصوبہ ۸"
 date: 2026-07-16
 author_en: ""
 author_ur: ""

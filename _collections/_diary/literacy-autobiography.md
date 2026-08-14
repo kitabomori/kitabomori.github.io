@@ -1,7 +1,7 @@
 ---
 layout: post
 title_en: "Literacy Autobiography"
-title_ur: ""
+title_ur: "خواندگی کی خود نوشت"
 date: 2026-07-10
 author_en: ""
 author_ur: ""

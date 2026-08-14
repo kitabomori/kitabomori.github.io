@@ -1,7 +1,7 @@
 ---
 layout: post
 title_en: "Practicum-IV - Reflective Report"
-title_ur: ""
+title_ur: "پریکٹیکم چہارم - عکاسی رپورٹ"
 date: 2026-07-16
 author_en: ""
 author_ur: ""

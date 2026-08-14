@@ -1,7 +1,7 @@
 ---
 layout: post
 title_en: "About This Diary"
-title_ur: ""
+title_ur: "اس ڈائری کے بارے میں"
 date: 2026-07-17
 author_en: ""
 author_ur: ""
