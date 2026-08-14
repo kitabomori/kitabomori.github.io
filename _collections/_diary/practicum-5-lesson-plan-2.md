@@ -13,6 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_en: false
 ---
+{% if site.lang == 'ur' %}
 
 <div dir="rtl" lang="ur">
 
@@ -85,9 +86,7 @@ available_en: false
 </ul>
 
 </div>
-
 <div class="post-body-seq-nav">
-{% if site.lang == 'ur' %}
 <p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; پچھلا: پریکٹیکم پنجم - عکاسی 1</a></p>
 <p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">اگلا: پریکٹیکم پنجم - عکاسی 2 &rarr;</a></p>
 {% else %}
