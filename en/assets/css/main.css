@@ -912,6 +912,38 @@ html:not([dir="rtl"]) .post-body blockquote {
   right: 0;
 }
 
+/* ---- Previous/Next links hand-authored inside a diary post's own
+   body content, linking to the neighbouring post in a curated
+   sequence (e.g. Lesson Plan 2 -> Lesson Plan 3). This is separate
+   from .post-nav below, which is the automatic Older/Newer nav
+   Jekyll builds from collection date order. Sits on one line:
+   Previous on the left, Next on the right; wraps on narrow screens
+   instead of overflowing. If only one of the two exists (first or
+   last post in a sequence), margin-left: auto keeps a lone "Next"
+   pinned to the right rather than collapsing to the left. ---- */
+.post-body-seq-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.post-body-seq-nav p {
+  margin: 0;
+}
+
+.post-body-seq-next {
+  margin-left: auto;
+  text-align: right;
+}
+
+[dir="rtl"] .post-body-seq-next {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
 /* ---- Prev / next navigation between pieces in a collection ---- */
 .post-nav {
   display: flex;
