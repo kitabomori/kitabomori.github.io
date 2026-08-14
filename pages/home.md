@@ -3,7 +3,7 @@ layout: base
 title_en: "Home"
 title_ur: "مرکزی صفحہ"
 description_en: "Kitabomori – read and write to act"
-description_ur: "کتابومری – پڑھیں۔ لکھیں۔ تبدیلی لائیں"
+description_ur: "کتابومری – پڑھو، لکھو، قدم اٹھاؤ۔"
 permalink: /
 ---
 
@@ -19,7 +19,7 @@ permalink: /
       <svg class="decor-svg"><use href="#icon-open-book-pen"></use></svg>
     </div>
     <h1 class="home-heading">کتابومری </h1>
-    <p class="home-tagline">پڑھیں۔ لکھیں۔ تبدیلی لائیں۔</p>
+    <p class="home-tagline">پڑھو، لکھو، قدم اٹھاؤ۔ </p>
     <p>
  شِنا زبان میں „کتاب“ کے معنی کتاب اور „موری“ کے معنی گفتگو کے ہیں۔ ہم نے ان دونوں تصورات کو یکجا کرکے ایک ایسی جگہ بنانے کی کوشش کی ہے جہاں پڑھنے اور لکھنے کے ذریعے معاشرے میں مثبت تبدیلی کی راہ ہموار ہو۔
     </p>
