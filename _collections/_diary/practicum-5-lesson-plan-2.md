@@ -13,6 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_en: false
 ---
+{% if site.lang == 'ur' %}
 
 <div dir="rtl" lang="ur">
 
@@ -85,6 +86,8 @@ available_en: false
 </ul>
 
 </div>
+
+{% else %}
 
 <div class="post-body-seq-nav">
 {% if site.lang == 'ur' %}
