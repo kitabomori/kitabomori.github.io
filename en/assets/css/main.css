@@ -2487,6 +2487,13 @@ html[dir="rtl"] .search-result:hover {
 .section-card-diary     { --accent: #3C8CBF; }
 .section-card-events    { --accent: #B8A521; }
 
+/* Urdu: cards default to text-align: left (above) for the English
+   site, but the card title/body should read right-to-left on the
+   Urdu pages like the rest of the layout. */
+[dir="rtl"] .section-card {
+  text-align: right;
+}
+
 /* Urdu: the short blurb under each of the homepage's 9 section
    cards is running prose (unlike the centered hero copy above it),
    so it starts from the right and justifies both edges, matching
