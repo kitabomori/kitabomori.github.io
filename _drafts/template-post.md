@@ -42,6 +42,21 @@ pull_quote_en: ""                          # Optional: pin the exact pull-quote 
 pull_quote_ur: ""                          # (English/Urdu). Leave both blank and the site will automatically
                                             # pick the strongest sentence from the post itself; set these once
                                             # you've read the auto-picked one and want to override it.
+# available_en: false                      # Uncomment ONLY if this post has NO English content at all (body
+                                            # is written entirely in Urdu). Hides the body on the English build
+                                            # and shows a "not available in English, switch to Urdu" note under
+                                            # the title instead. Leave commented out/omitted for normal posts.
+# available_ur: false                      # Uncomment ONLY if this post has NO Urdu content at all (body is
+                                            # written entirely in English, with no Urdu translation). Hides the
+                                            # body on the Urdu build and shows a "not available in Urdu, switch
+                                            # to English" note under the title instead. Leave commented out/
+                                            # omitted for normal posts — and for any post where the body mixes
+                                            # in a little Urdu (e.g. one glossed word) but is still readable
+                                            # as English throughout, don't set this; it's only for posts with
+                                            # NO usable English content.
+                                            #
+                                            # Never set both available_en: false and available_ur: false on the
+                                            # same post — the post would then be invisible on both builds.
 ---
 
 {% if site.lang == 'ur' %}

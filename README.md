@@ -17,8 +17,9 @@ A bilingual (English/Urdu) educational publishing website built with Jekyll, Tai
 4. [Testing locally](#testing-locally)
 5. [Deploying](#deploying)
 6. [Colour reference](#colour-reference)
-7. [Adding social links and Google Form](#adding-social-links-and-google-form)
-8. [File structure overview](#file-structure-overview)
+7. [Language availability notes (English-only / Urdu-only posts)](#language-availability-notes-english-only--urdu-only-posts)
+8. [Adding social links and Google Form](#adding-social-links-and-google-form)
+9. [File structure overview](#file-structure-overview)
 
 ---
 
@@ -100,6 +101,8 @@ description_ur: "ایک جملے میں اردو خلاصہ۔"
 
 `author_en`/`author_ur` and `bio_en`/`bio_ur` are optional. If left blank, the byline falls back to just the date, and no bio block is shown — the layout stays intact either way.
 
+If this post exists in only one language, also add `available_en: false` or `available_ur: false` — see [Language availability notes](#language-availability-notes-english-only--urdu-only-posts) below.
+
 ### Step 3 – Write your content
 
 Below the front matter, write your content using this pattern:
@@ -116,7 +119,7 @@ Write your English content here.
 {% endif %}
 ```
 
-If you only have English content, you can write it without the Liquid tags — just put it directly in the file. The Urdu build will display it as well until a translation is added.
+If you only have English content and no Urdu translation, you can write it without the Liquid tags — just put it directly in the file. Set `available_ur: false` in the front matter (see [Language availability notes](#language-availability-notes-english-only--urdu-only-posts) below) so the Urdu build shows a "switch to English" note instead of leaking untranslated English text into the Urdu site. The same applies in reverse for a post written only in Urdu — set `available_en: false`.
 
 Post titles are centred and body paragraphs are automatically justified (right-aligned reading direction for Urdu) — no extra styling is needed.
 
@@ -227,7 +230,48 @@ A second round of changes merged the post header into the body card and reworked
 
 ---
 
-## Adding social links and Google Form
+## Language availability notes (English-only / Urdu-only posts)
+
+Some posts only exist in one language — a Letter or Reflection written entirely in Urdu with no English translation, or (much more commonly) a Teaching Diary entry written entirely in English with no Urdu translation. Left alone, Jekyll would either render nothing after the title (if the body was wrapped in `{% if site.lang == 'ur' %}...{% endif %}` with no `{% else %}`) or leak the wrong-language text onto the other build (if the body had no Liquid conditional at all). Neither is good for a reader on that language's version of the site.
+
+**How it works:**
+
+- Set `available_en: false` in a post's front matter if it has **no usable English content** (body is written entirely in Urdu, e.g. wrapped in `<div dir="rtl" lang="ur">` or similar).
+- Set `available_ur: false` in a post's front matter if it has **no Urdu translation at all** (body is plain English throughout).
+- Never set both on the same post — it would be invisible on both builds.
+- Leave both unset (the normal case) for any post that's genuinely bilingual (uses `{% if site.lang == 'ur' %}...{% else %}...{% endif %}` in the body) or, e.g., mostly English with just an incidental Urdu word/gloss inline — that's still "available in English" and shouldn't be flagged.
+
+**What happens when a flag is set** (`_layouts/post.html`):
+
+1. Right under the post title, a small centred note appears **only on the build where the content is missing**:
+   - English build, `available_en: false` → *"This post isn't available in English yet. Switch to the Urdu version to read it."* — links straight to the same post's `/ur/` URL.
+   - Urdu build, `available_ur: false` → *"یہ تحریر ابھی اردو میں دستیاب نہیں ہے۔ انگریزی ورژن ملاحظہ کریں۔"* — links straight to the same post's `/en/` URL.
+   - Styled by `.post-header .post-lang-note` in `main.css` (the extra `.post-header` scoping is required — the site-wide `.post-body p { text-align: justify }` rule has higher CSS specificity than a bare `.post-lang-note` class and will silently override its centering if you ever refactor this).
+2. The post body itself is hidden on whichever build is missing it, via a guard around `{{ content }}`:
+   ```liquid
+   {% unless (site.lang == 'ur' and page.available_ur == false) or (site.lang == 'en' and page.available_en == false) %}
+   {{ content }}
+   {% endunless %}
+   ```
+   This check is symmetric on purpose — an earlier version only checked the Urdu side, which meant an `available_en: false` post's raw Urdu text would still render on the English build. If you ever touch this guard, keep both directions.
+
+**Currently flagged posts**, as a reference for the pattern:
+
+| Post | Flag | Why |
+|------|------|-----|
+| `_collections/_letters/letter-to-teacher.md` | `available_en: false` | Urdu only |
+| `_collections/_letters/letter-to-minister-school-education.md` | `available_en: false` | Urdu only |
+| `_collections/_reflections/mery-gawong-ma-koi-libray-bhi-thi.md` | `available_en: false` | Urdu only |
+| `_collections/_diary/practicum-3-lesson-plan-4.md` | `available_en: false` | Urdu only (Ethics lesson taught in Urdu) |
+| `_collections/_diary/practicum-5-lesson-plan-1.md`, `practicum-5-lesson-plan-2.md` | `available_en: false` | Urdu only |
+| `_collections/_diary/practicum-5-reflection-1.md`, `practicum-5-reflection-2.md` | `available_en: false` | Urdu only |
+| All other Teaching Diary posts (~79), the Dialogue, both Satire posts, and the Review | `available_ur: false` | English only |
+
+Three Teaching Diary lesson plans (`practicum-2-lesson-plan-1/2/3`) have a single inline Urdu gloss word (e.g. "کسور" next to "Fraction") but are otherwise English throughout — these are **not** flagged, since the lesson content itself is genuinely readable in English.
+
+When adding a new post that's only written in one language, check `_drafts/template-post.md` for the commented-out `available_en`/`available_ur` lines and uncomment the one you need.
+
+---
 
 ### Social media
 
