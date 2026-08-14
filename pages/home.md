@@ -2,7 +2,7 @@
 layout: base
 title_en: "Home"
 title_ur: "مرکزی صفحہ"
-description_en: "Kitabomori – read,  write.transform"
+description_en: "Kitabomori – read and write to act"
 description_ur: "کتابومری – پڑھیں۔ لکھیں۔ تبدیلی لائیں"
 permalink: /
 ---
@@ -82,15 +82,17 @@ permalink: /
       <svg class="decor-svg"><use href="#icon-open-book-pen"></use></svg>
     </div>
     <h1 class="home-heading">Kitabomori</h1>
-    <p class="home-tagline">Read. Write. Transform</p>
+    <p class="home-tagline">Read and write to act</p>
     <p>
-      In Shina, kitab means "book" and mori means "conversation." We bring them together to create something bigger: a platform where reading and writing become forces for social change.
+      In Shina, 'kitab' means 'book', and 'mori' means 'conversation'. We bring these two ideas together to create a space where reading and writing can foster positive change in society.
+    </p>
+Kitabomori is a volunteer-run platform for students, teachers, researchers, and everyone who enjoys learning and sharing ideas. We publish a variety of work, including articles, book reviews, creative writing, letters, teaching experiences, and much more.
+     </p>
+      <p>
+      We want to create a space where people can share their thoughts, ask questions, and learn from each other. We believe that good conversations, in the form of reading and writing, help us understand different ideas, and that understanding can lead to positive action.
     </p>
     <p>
-      Kitabomori is a volunteer-driven educational and society-related publishing space for students, teachers, researchers, and the general public. We publish articles that challenge the status quo, reviews that interrogate ideas, creative writing that moves and provokes, letters that connect hearts and minds, a teaching diary that documents the reality of classrooms, and events that build community.
-    </p>
-    <p>
-      We believe that thoughtful discussion leads to understanding, and understanding leads to action. If you share that belief, we invite you to explore our content—and to contribute your own. Read our <span class="highlight"><a href="{{ site.baseurl }}/en/guidelines/">submission guidelines</a></span> and <span class="highlight"><a href="{{ site.baseurl }}/en/submission/">send us your work</a></span> to help us build a culture of critical thought, one conversation at a time.
+     If you believe in this too, we invite you to read our work and share your own. Please read our <span class="highlight"><a href="{{ site.baseurl }}/en/guidelines/">submission guidelines</a></span> and <span class="highlight"><a href="{{ site.baseurl }}/en/submission/">send us your work.</a></span> Together, we can build a community that values learning, thinking, and meaningful conversations.
     </p>
   </section>
 
