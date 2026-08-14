@@ -11,6 +11,7 @@ description_en: "A letter to a teacher on education, change, and the courage to 
 description_ur: "تعلیم، تبدیلی، اور آواز اٹھانے کی ہمت پر ایک خط۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_en: false
 ---
 
 {% if site.lang == 'ur' %}

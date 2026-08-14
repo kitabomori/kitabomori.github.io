@@ -172,6 +172,26 @@ layout: base
            visible subtitle under the title. -->
 
       <span class="post-title-divider" aria-hidden="true"></span>
+
+      <!-- Language-availability note: some posts only exist in one
+           language (see available_en / available_ur in front matter).
+           When the current build's language is missing, show a note
+           right under the title linking to the same post's URL in
+           the other language build instead of leaving the reader on
+           an empty page. Symmetric both ways, though today only
+           available_en: false is used (a few Urdu-only Letters and
+           one Reflection). -->
+      {% if site.lang == 'en' and page.available_en == false %}
+      <p class="post-lang-note">
+        This post isn't available in English yet.
+        <a href="{{ site.baseurl }}/ur{{ page.url }}">Switch to the Urdu version</a> to read it.
+      </p>
+      {% elsif site.lang == 'ur' and page.available_ur == false %}
+      <p class="post-lang-note" dir="rtl">
+        یہ تحریر ابھی اردو میں دستیاب نہیں ہے۔
+        <a href="{{ site.baseurl }}/en{{ page.url }}">انگریزی ورژن ملاحظہ کریں</a>۔
+      </p>
+      {% endif %}
     </header>
 
     <div class="post-body-content">

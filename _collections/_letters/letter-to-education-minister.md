@@ -14,6 +14,7 @@ pull_quote_ur: "استاد جی، اگر گلگت کے تعلیمی نظام م�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallback link, only used if youtube_id is left blank
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallback link, only used if youtube_id is left blank
 youtube_id: "" 
+available_en: false
 ---
 
 {% if site.lang == 'ur' %}
