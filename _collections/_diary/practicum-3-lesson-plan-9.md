@@ -1,7 +1,7 @@
 ---
 layout: post
 title_en: "Practicum-III Lesson Plan 9"
-title_ur: "پریکٹیکم سوم - سبقی منصوبہ ۹"
+title_ur: "پریکٹیکم سوم - سبقی منصوبہ 9"
 date: 2026-07-16
 author_en: ""
 author_ur: ""

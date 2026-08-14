@@ -1,7 +1,7 @@
 ---
 layout: post
 title_en: "Practicum-IV Lesson Plan 6"
-title_ur: "پریکٹیکم چہارم - سبقی منصوبہ ۶"
+title_ur: "پریکٹیکم چہارم - سبقی منصوبہ 6"
 date: 2026-07-16
 author_en: ""
 author_ur: ""

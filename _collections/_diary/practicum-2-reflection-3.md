@@ -1,7 +1,7 @@
 ---
 layout: post
 title_en: "Practicum-II Reflection 3"
-title_ur: "پریکٹیکم دوم - عکاسی ۳"
+title_ur: "پریکٹیکم دوم - عکاسی 3"
 date: 2026-07-15
 author_en: ""
 author_ur: ""

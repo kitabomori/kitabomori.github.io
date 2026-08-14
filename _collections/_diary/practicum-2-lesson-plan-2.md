@@ -1,7 +1,7 @@
 ---
 layout: post
 title_en: "Practicum-II Lesson Plan 2"
-title_ur: "پریکٹیکم دوم - سبقی منصوبہ ۲"
+title_ur: "پریکٹیکم دوم - سبقی منصوبہ 2"
 date: 2026-07-15
 author_en: ""
 author_ur: ""
