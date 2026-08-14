@@ -159,7 +159,7 @@
      reliably show up for anyone who already has the old file cached
      — this is why CSS-only edits (like a font-size change) can look
      like they "didn't take" even though the deploy succeeded. -->
-<link rel="stylesheet" href="/assets/css/main.css?v=1786740627">
+<link rel="stylesheet" href="/assets/css/main.css?v=1786741305">
 
 <!-- Theme script: runs before paint to prevent flash of wrong colour scheme -->
 <script src="/assets/js/theme.js"></script>
@@ -753,7 +753,12 @@
      No icons, no emoji, plain text only.
      ============================================================ -->
 
-<!-- Step 1: Collect all items from every ticker-eligible collection -->
+<!-- Step 1: Collect all items from every ticker-eligible collection,
+     dropping any post that isn't available in the current language
+     build (available_en: false / available_ur: false) first — a
+     where_exp filter per collection, so nothing not-yet-translated
+     ever lands in the ticker and links to a "not available yet" note
+     instead of the piece itself. -->
 
 <!-- Step 2: Sort by date descending, take top 5 -->
 
@@ -780,23 +785,6 @@
           
 
           <span class="ticker-item" style="color:#808217;">
-            <a href="/en/letters/letter-to-education-minister/" style="color:#808217; text-decoration:none;">
-              
-              Letter to Education Minister
-              &ndash;
-              14 August 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;">
             <a href="/en/creative-writing/satire/a-letter-of-gratitude/" style="color:#808217; text-decoration:none;">
               
               A Letter of Gratitude
@@ -814,43 +802,9 @@
           
 
           <span class="ticker-item" style="color:#808217;">
-            <a href="/en/diary/practicum-5-lesson-plan-2/" style="color:#808217; text-decoration:none;">
-              
-              Practicum-V Lesson Plan 2
-              &ndash;
-              17 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;">
             <a href="/en/diary/practicum-5-lesson-plan-10/" style="color:#808217; text-decoration:none;">
               
               Practicum-V Lesson Plan 10
-              &ndash;
-              17 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;">
-            <a href="/en/diary/practicum-5-lesson-plan-1/" style="color:#808217; text-decoration:none;">
-              
-              Practicum-V Lesson Plan 1
               &ndash;
               17 July 2026
             </a>
@@ -1035,43 +989,9 @@
           
 
           <span class="ticker-item" style="color:#808217;">
-            <a href="/en/diary/practicum-5-reflection-2/" style="color:#808217; text-decoration:none;">
-              
-              Practicum-V Reflection 2
-              &ndash;
-              16 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;">
             <a href="/en/diary/practicum-5-reflection-10/" style="color:#808217; text-decoration:none;">
               
               Practicum-V Reflection 10
-              &ndash;
-              16 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;">
-            <a href="/en/diary/practicum-5-reflection-1/" style="color:#808217; text-decoration:none;">
-              
-              Practicum-V Reflection 1
               &ndash;
               16 July 2026
             </a>
@@ -1715,23 +1635,6 @@
           
 
           <span class="ticker-item" style="color:#808217;">
-            <a href="/en/diary/practicum-3-lesson-plan-4/" style="color:#808217; text-decoration:none;">
-              
-              Practicum-III Lesson Plan 4
-              &ndash;
-              16 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;">
             <a href="/en/diary/practicum-3-lesson-plan-3/" style="color:#808217; text-decoration:none;">
               
               Practicum-III Lesson Plan 3
@@ -2242,23 +2145,6 @@
           
 
           <span class="ticker-item" style="color:#808217;">
-            <a href="/en/creative-writing/reflection/mery-gawong-ma-koi-libray-bhi-thi/" style="color:#808217; text-decoration:none;">
-              
-              There was a library in My Village
-              &ndash;
-              03 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;">
             <a href="/en/creative-writing/dialogues/two-teachers-one-staff-room/" style="color:#808217; text-decoration:none;">
               
               Two Teachers, One Staff Room
@@ -2281,23 +2167,6 @@
               The Three Questions
               &ndash;
               01 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;">
-            <a href="/en/letters/letter-to-teacher/" style="color:#808217; text-decoration:none;">
-              
-              To my Teacher
-              &ndash;
-              24 June 2026
             </a>
             &nbsp;&nbsp;|&nbsp;&nbsp;
           </span>
@@ -2329,23 +2198,6 @@
           
 
           <span class="ticker-item" style="color:#808217;" aria-hidden="true">
-            <a href="/en/letters/letter-to-education-minister/" style="color:#808217; text-decoration:none;">
-              
-              Letter to Education Minister
-              &ndash;
-              14 August 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;" aria-hidden="true">
             <a href="/en/creative-writing/satire/a-letter-of-gratitude/" style="color:#808217; text-decoration:none;">
               
               A Letter of Gratitude
@@ -2363,43 +2215,9 @@
           
 
           <span class="ticker-item" style="color:#808217;" aria-hidden="true">
-            <a href="/en/diary/practicum-5-lesson-plan-2/" style="color:#808217; text-decoration:none;">
-              
-              Practicum-V Lesson Plan 2
-              &ndash;
-              17 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;" aria-hidden="true">
             <a href="/en/diary/practicum-5-lesson-plan-10/" style="color:#808217; text-decoration:none;">
               
               Practicum-V Lesson Plan 10
-              &ndash;
-              17 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;" aria-hidden="true">
-            <a href="/en/diary/practicum-5-lesson-plan-1/" style="color:#808217; text-decoration:none;">
-              
-              Practicum-V Lesson Plan 1
               &ndash;
               17 July 2026
             </a>
@@ -2584,43 +2402,9 @@
           
 
           <span class="ticker-item" style="color:#808217;" aria-hidden="true">
-            <a href="/en/diary/practicum-5-reflection-2/" style="color:#808217; text-decoration:none;">
-              
-              Practicum-V Reflection 2
-              &ndash;
-              16 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;" aria-hidden="true">
             <a href="/en/diary/practicum-5-reflection-10/" style="color:#808217; text-decoration:none;">
               
               Practicum-V Reflection 10
-              &ndash;
-              16 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;" aria-hidden="true">
-            <a href="/en/diary/practicum-5-reflection-1/" style="color:#808217; text-decoration:none;">
-              
-              Practicum-V Reflection 1
               &ndash;
               16 July 2026
             </a>
@@ -3264,23 +3048,6 @@
           
 
           <span class="ticker-item" style="color:#808217;" aria-hidden="true">
-            <a href="/en/diary/practicum-3-lesson-plan-4/" style="color:#808217; text-decoration:none;">
-              
-              Practicum-III Lesson Plan 4
-              &ndash;
-              16 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;" aria-hidden="true">
             <a href="/en/diary/practicum-3-lesson-plan-3/" style="color:#808217; text-decoration:none;">
               
               Practicum-III Lesson Plan 3
@@ -3791,23 +3558,6 @@
           
 
           <span class="ticker-item" style="color:#808217;" aria-hidden="true">
-            <a href="/en/creative-writing/reflection/mery-gawong-ma-koi-libray-bhi-thi/" style="color:#808217; text-decoration:none;">
-              
-              There was a library in My Village
-              &ndash;
-              03 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;" aria-hidden="true">
             <a href="/en/creative-writing/dialogues/two-teachers-one-staff-room/" style="color:#808217; text-decoration:none;">
               
               Two Teachers, One Staff Room
@@ -3830,23 +3580,6 @@
               The Three Questions
               &ndash;
               01 July 2026
-            </a>
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-          </span>
-        
-          
-          
-          
-          
-
-          
-
-          <span class="ticker-item" style="color:#808217;" aria-hidden="true">
-            <a href="/en/letters/letter-to-teacher/" style="color:#808217; text-decoration:none;">
-              
-              To my Teacher
-              &ndash;
-              24 June 2026
             </a>
             &nbsp;&nbsp;|&nbsp;&nbsp;
           </span>
