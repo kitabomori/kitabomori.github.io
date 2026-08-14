@@ -13,6 +13,7 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_en: false
 ---
+{% if site.lang == 'ur' %}
 
 <div dir="rtl" lang="ur">
 
@@ -70,6 +71,8 @@ available_en: false
 <p>اردو کتاب ہشتم جماعت</p>
 
 </div>
+
+{% endif %}
 
 <p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Reflection 1 &rarr;</a></p>
 <p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV - Reflective Report</a></p>
