@@ -13,7 +13,6 @@ youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 ---
-{% if site.lang == 'ur' %}
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
   <tr>
@@ -77,8 +76,6 @@ available_ur: false
 <ul>
   <li><a href="https://youtu.be/g9p9AfjVMKY?si=90TvV0Sqewp1p1yf" target="_blank">Time Dilation</a></li>
 </ul>
-
-{% else %}
 
 <div class="post-body-seq-nav">
 <p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Reflection 9</a></p>
