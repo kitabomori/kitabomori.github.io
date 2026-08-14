@@ -87,9 +87,10 @@ permalink: /
     <p>
       In Shina, 'kitab' means 'book', and 'mori' means 'conversation'. We bring these two ideas together to create a space where reading and writing can foster positive change in society.
     </p>
+    </p>
 Kitabomori is a volunteer-run platform for students, teachers, researchers, and everyone who enjoys learning and sharing ideas. We publish a variety of work, including articles, book reviews, creative writing, letters, teaching experiences, and much more. We want to create a space where people can share their thoughts, ask questions, and learn from each other. We believe that good conversations, in the form of reading and writing, help us understand different ideas, and that understanding can lead to positive action.
     </p>
-    <p>
+    </p>
      If you believe in this too, we invite you to read our work and share your own. Please read our <span class="highlight"><a href="{{ site.baseurl }}/en/guidelines/">submission guidelines</a></span> and <span class="highlight"><a href="{{ site.baseurl }}/en/submission/">send us your work.</a></span> Together, we can build a community that values learning, thinking, and meaningful conversations.
     </p>
   </section>
