@@ -11,7 +11,7 @@ description_en: "A revised, paired lesson on letter writing — and a first expe
 description_ur: "خط نویسی پر ایک نظرثانی شدہ، جوڑی میں پڑھایا گیا سبق — اور کسی دوسرے طالب علم استاد کے ساتھ مل کر پڑھانے کا پہلا تجربہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
-available_ur: false
+available_en: false
 ---
 
 <p dir="rtl" lang="ur" style="text-align:center;">نامہ بر تو ہی بتا تو نے تو دیکھے ہوں گے</p>

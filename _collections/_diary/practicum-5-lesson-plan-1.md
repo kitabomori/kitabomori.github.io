@@ -11,7 +11,7 @@ description_en: "An Urdu lesson on the importance of dreams, opening with a summ
 description_ur: "خوابوں کی اہمیت پر اردو کا سبق، جس کا آغاز ڈاکٹر شاہد صدیقی کی کتاب — تعلیم بطور مزاحمت — کے خلاصے سے ہوتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
-available_ur: false
+available_en: false
 ---
 
 <div dir="rtl" lang="ur">
