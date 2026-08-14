@@ -2373,6 +2373,46 @@ html[dir="rtl"] .search-result:hover {
 [dir="rtl"] .post-back {
   text-align: right;
 }
+
+/* Diary, Dialogues, Reviews, and Satire posts have no separate Urdu
+   body translation — the body content is always in English, even
+   when viewed on a /ur/ page (only the title/description are
+   translated). Without this, the RTL rules above would flip that
+   English prose to right-to-left with a right-aligned last line,
+   which reads wrong for English text. Keep these four collections'
+   body copy left-to-right and justified-left regardless of the
+   page's overall RTL direction. */
+[dir="rtl"] .post-body-diary,
+[dir="rtl"] .post-body-dialogues,
+[dir="rtl"] .post-body-reviews,
+[dir="rtl"] .post-body-satire {
+  direction: ltr;
+  text-align: left;
+}
+
+[dir="rtl"] .post-body-diary p,
+[dir="rtl"] .post-body-dialogues p,
+[dir="rtl"] .post-body-reviews p,
+[dir="rtl"] .post-body-satire p {
+  text-align: justify;
+  text-align-last: left;
+}
+
+[dir="rtl"] .post-body-diary blockquote,
+[dir="rtl"] .post-body-dialogues blockquote,
+[dir="rtl"] .post-body-reviews blockquote,
+[dir="rtl"] .post-body-satire blockquote {
+  padding: 0 1rem 0 2.75rem;
+}
+
+[dir="rtl"] .post-body-diary blockquote::before,
+[dir="rtl"] .post-body-dialogues blockquote::before,
+[dir="rtl"] .post-body-reviews blockquote::before,
+[dir="rtl"] .post-body-satire blockquote::before {
+  content: "\201C";
+  left: 0;
+  right: auto;
+}
 /* ============================================================
    HOME PAGE ALIGNMENT OVERRIDES
    ============================================================ */
