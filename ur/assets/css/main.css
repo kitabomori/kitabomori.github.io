@@ -1803,6 +1803,26 @@ html:not([dir="rtl"]) .post-title {
   margin-bottom: 1rem;
 }
 
+/* Language-availability note — shown under the title when a post
+   has no content in the current build's language (see
+   available_en / available_ur handling in post.html). Small, italic,
+   and set apart from the post's own prose so it reads as site chrome
+   rather than part of the piece. */
+.post-lang-note {
+  @apply text-sm italic mb-4;
+  text-align: center;
+  color: #7A6A45;
+}
+
+.post-lang-note a {
+  color: #009F93 !important;
+  text-decoration: underline;
+}
+
+.dark .post-lang-note {
+  color: #c9b98a;
+}
+
 /* Audio (YouTube) link — shown centred, ABOVE the post title (see
    post.html). Lesson Plan posts never render this at all. */
 .post-audio-link {

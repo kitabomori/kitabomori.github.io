@@ -195,7 +195,7 @@
      reliably show up for anyone who already has the old file cached
      — this is why CSS-only edits (like a font-size change) can look
      like they "didn't take" even though the deploy succeeded. -->
-<link rel="stylesheet" href="/assets/css/main.css?v=1786735861">
+<link rel="stylesheet" href="/assets/css/main.css?v=1786737275">
 
 <!-- Theme script: runs before paint to prevent flash of wrong colour scheme -->
 <script src="/assets/js/theme.js"></script>
@@ -906,6 +906,16 @@
            visible subtitle under the title. -->
 
       <span class="post-title-divider" aria-hidden="true"></span>
+
+      <!-- Language-availability note: some posts only exist in one
+           language (see available_en / available_ur in front matter).
+           When the current build's language is missing, show a note
+           right under the title linking to the same post's URL in
+           the other language build instead of leaving the reader on
+           an empty page. Symmetric both ways, though today only
+           available_en: false is used (a few Urdu-only Letters and
+           one Reflection). -->
+      
     </header>
 
     <div class="post-body-content">
