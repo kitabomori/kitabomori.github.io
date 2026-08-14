@@ -21,13 +21,14 @@ permalink: /
     <h1 class="home-heading">کتابومری </h1>
     <p class="home-tagline">پڑھیں۔ لکھیں۔ تبدیلی لائیں۔</p>
     <p>
-      شینا زبان میں "کتاب" کا مطلب ہے کتاب، اور "موری" کا مطلب ہے گفتگو۔ ہم انہیں یکجا کرتے ہیں تاکہ کچھ بڑا تخلیق کیا جا سکے: ایک ایسا پلیٹ فارم جہاں پڑھنا اور لکھنا سماجی تبدیلی کی قوت بن جائیں۔
+ شِنا زبان میں „کتاب“ کے معنی کتاب اور „موری“ کے معنی گفتگو کے ہیں۔ ہم نے ان دونوں تصورات کو یکجا کرکے ایک ایسی جگہ بنانے کی کوشش کی ہے جہاں پڑھنے اور لکھنے کے ذریعے معاشرے میں مثبت تبدیلی کی راہ ہموار ہو۔
     </p>
     <p>
-      کتابومری ایک رضاکارانہ تعلیمی اور معاشرتی اشاعتی پلیٹ فارم ہے جو طلباء، اساتذہ، محققین اور عام قارئین کے لیے ہے۔ ہم ایسے مضامین شائع کرتے ہیں جو روایتی سوچ کو چیلنج کرتے ہیں، ایسے جائزے جو خیالات پر سوال اٹھاتے ہیں، تخلیقی تحریر جو دل کو چھوتی اور سوچنے پر مجبور کرتی ہے، خطوط جو دلوں اور ذہنوں کو جوڑتے ہیں، ایک تدریسی ڈائری جو جماعتوں کی حقیقت کو بیان کرتی ہے، اور تقریبات جو برادری کو مضبوط بناتی ہیں۔
+ کتاب موری رضاکاروں کے زیرِ انتظام چلنے والا ایک پلیٹ فارم ہے، جو طلبہ، اساتذہ، محققین اور ہر اُس شخص کے لیے ہے جو سیکھنے اور اپنے خیالات دوسروں کے ساتھ بانٹنے کا شوق رکھتا ہے۔ یہاں ہم مختلف موضوعات اور اصناف پر مبنی تحریریں شائع کرتے ہیں، جن میں مضامین، کتابوں پر تبصرے، تخلیقی تحریریں، خطوط، تدریسی تجربات اور بہت کچھ شامل ہے۔ ہم ایک ایسی فضا قائم کرنا چاہتے ہیں جہاں لوگ اپنے خیالات کا اظہار کر سکیں، سوال اٹھا سکیں اور ایک دوسرے سے سیکھ سکیں۔ ہمارا ماننا ہے کہ پڑھنے اور لکھنے کے ذریعے ہونے والی بامعنی گفتگو ہمیں مختلف خیالات اور نقطۂ ہائے نظر کو بہتر طور پر سمجھنے میں مدد دیتی ہے، اور یہی سمجھ بوجھ معاشرے میں مثبت عملی تبدیلی کا باعث بن سکتی ہے۔
     </p>
+  </p> 
+اگر آپ بھی اس خیال سے اتفاق کرتے ہیں تو ہم آپ کو دعوت دیتے ہیں کہ ہماری تحریریں پڑھیں اور اپنی تحریریں بھی ہمارے ساتھ شیئر کریں۔ تحریریں بھیجنے کےلیے ہماری <span class="highlight"><a href="{{ site.baseurl }}/ur/guidelines/">ہدایات</a></span> پڑھیں اور <span class="highlight"><a href="{{ site.baseurl }}/ur/submission/">اپنی تحریر جمع کروائیں</a></span> تاکہ ہم مل کر ایسی کمیونٹی تشکیل دیں جہاں سیکھنے، سوچنے اور بامعنی گفتگو کو اہمیت حاصل ہو۔ 
     <p>
-      ہمارا ماننا ہے کہ فکر انگیز گفتگو سمجھ بوجھ کو جنم دیتی ہے، اور سمجھ بوجھ عمل کی راہ ہموار کرتی ہے۔ اگر آپ بھی اسی سوچ کے حامل ہیں تو ہم آپ کو ہمارا مواد پڑھنے اور اپنی تحریر شامل کرنے کی دعوت دیتے ہیں۔ ہماری <span class="highlight"><a href="{{ site.baseurl }}/ur/guidelines/">ہدایات</a></span> پڑھیں اور <span class="highlight"><a href="{{ site.baseurl }}/ur/submission/">اپنی تحریر جمع کروائیں</a></span> تاکہ ہم مل کر تنقیدی فکر کا کلچر، ایک گفتگو کے ذریعے، تعمیر کر سکیں۔
     </p>
   </section>
 
@@ -86,10 +87,7 @@ permalink: /
     <p>
       In Shina, 'kitab' means 'book', and 'mori' means 'conversation'. We bring these two ideas together to create a space where reading and writing can foster positive change in society.
     </p>
-Kitabomori is a volunteer-run platform for students, teachers, researchers, and everyone who enjoys learning and sharing ideas. We publish a variety of work, including articles, book reviews, creative writing, letters, teaching experiences, and much more.
-     </p>
-      <p>
-      We want to create a space where people can share their thoughts, ask questions, and learn from each other. We believe that good conversations, in the form of reading and writing, help us understand different ideas, and that understanding can lead to positive action.
+Kitabomori is a volunteer-run platform for students, teachers, researchers, and everyone who enjoys learning and sharing ideas. We publish a variety of work, including articles, book reviews, creative writing, letters, teaching experiences, and much more. We want to create a space where people can share their thoughts, ask questions, and learn from each other. We believe that good conversations, in the form of reading and writing, help us understand different ideas, and that understanding can lead to positive action.
     </p>
     <p>
      If you believe in this too, we invite you to read our work and share your own. Please read our <span class="highlight"><a href="{{ site.baseurl }}/en/guidelines/">submission guidelines</a></span> and <span class="highlight"><a href="{{ site.baseurl }}/en/submission/">send us your work.</a></span> Together, we can build a community that values learning, thinking, and meaningful conversations.
