@@ -79,5 +79,7 @@ available_ur: false
   <li>What is the name of the triangle which has three equal sides?</li>
 </ul>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 5 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 5</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 5</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 5 &rarr;</a></p>
+</div>

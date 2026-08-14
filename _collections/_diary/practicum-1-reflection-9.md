@@ -20,5 +20,7 @@ available_ur: false
 
 <p>Interviewing a student is one way to learn about a particular student. Once a teacher knows a student, they can build a good relationship with them. At the same time, knowing students helps a teacher plan the lesson according to their intellect and capacity to achieve the lesson's objective.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 10 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 8</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 8</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 10 &rarr;</a></p>
+</div>

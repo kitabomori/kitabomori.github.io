@@ -20,5 +20,7 @@ available_ur: false
 
 <p>This was our last lesson, completing the ten-lesson practicum requirement. We're not sure whether there will be another, but this was the last one for us as a pair. We don't have to share what we'd teach next, or how we'd improve the next class. The only thing left to say is that we enjoyed learning to teach, and teaching to learn. Whatever we've learned, we'll carry forward as we keep teaching and learning in the days ahead.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V: Reflective Report &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 10</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 10</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V: Reflective Report &rarr;</a></p>
+</div>

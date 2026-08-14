@@ -20,5 +20,7 @@ available_ur: false
 
 <p>After consulting with the cooperating teachers, I'll plan the next mathematics class — the 9th lesson of the practicum, and likely the last one, as students will soon have their final-term exams and, hopefully, all will be promoted to the next class. I've learned a lot from teaching in pairs and from the post-conference discussions, where we talked through the pros and cons of a lesson and how to tackle classroom and outside issues related to students' learning.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 9 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 8</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 8</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 9 &rarr;</a></p>
+</div>

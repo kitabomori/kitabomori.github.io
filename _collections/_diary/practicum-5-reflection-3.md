@@ -20,5 +20,7 @@ available_ur: false
 
 <p>Since midterms at the school are ending by the end of this week, our micro-teaching sessions have ended here for now. We will be going for teaching practice, teaching individually; the topics are not yet finalised, but we aim to teach from English and physics for grade 8. While delivering our lessons, we intend not to repeat the mistake of failing to engage the whole class, ensuring the activities are engaging. We will also try to speak louder, so students don't lose interest in the lesson due to difficulty hearing the teacher's voice from the side.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 4 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 3</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 3</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 4 &rarr;</a></p>
+</div>

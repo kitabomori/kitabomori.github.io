@@ -22,5 +22,12 @@ available_en: false
 
 <p dir="rtl" lang="ur" style="text-align:justify;">آنے والے جمعرات کو، گو کہ ہم سکول کا رخ نہیں کر رہے اور جامعہ میں ہی مائیکرو ٹیچنگ کرنے والے ہیں، تو میں اپنی ہم جماعت کے ساتھ تعاون کرتے ہوئے تدریسی خاکے کو تشکیل دوں گا اور کوشش رہے گی کہ بھرپور تیاری کے ساتھ اگلی کلاس میں آؤں۔ اور یہ امید رکھتا ہوں کہ اس تدریسی عمل میں جو کمی پیشی رہی ہیں ان کو دور کرتے ہوئے بورڈ کا زیادہ سے زیادہ استعمال کروں اور اپنی آواز کو بلند رکھتے ہوئے تدریسی عمل کو جاری رکھنے کی کوشش کروں۔</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 2 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 1</a></p>
+<div class="post-body-seq-nav">
+{% if site.lang == 'ur' %}
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; پچھلا: پریکٹیکم پنجم - سبقی منصوبہ 1</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">اگلا: پریکٹیکم پنجم - سبقی منصوبہ 2 &rarr;</a></p>
+{% else %}
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 1</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 2 &rarr;</a></p>
+{% endif %}
+</div>

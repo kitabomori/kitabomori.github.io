@@ -28,5 +28,7 @@ available_ur: false
 
 <p>In conclusion, as a teacher, I need to focus not only on imparting knowledge but also on creating a positive learning environment that fosters curiosity, motivation and eagerness to learn. I believe that by building positive relationships with my students and making learning relevant, I can help them achieve their full potential.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 8 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 7</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 7</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 8 &rarr;</a></p>
+</div>

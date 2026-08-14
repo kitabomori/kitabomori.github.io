@@ -22,5 +22,7 @@ available_ur: false
 
 <p>In the coming lessons, it will be challenging and pivotal to carry forward the good things from this lesson, such as choosing a better teaching method, appreciating every student's question, and responding to them healthily. And I believe there is a need to transgress to teach what I want the students to learn.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 4 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 3</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 3</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 4 &rarr;</a></p>
+</div>

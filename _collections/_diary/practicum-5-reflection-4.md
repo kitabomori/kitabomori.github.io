@@ -20,5 +20,7 @@ available_ur: false
 
 <p>Moving forward, I think lesson study could be a strategy, taking suggestions and planning lessons with my pair observer to address student disengagement. At the same time, it's tough to make the class a place to learn when we visit only once a week — we don't know what students are doing throughout the week or what they're up to in their lives. In the next class, I'll be teaching a topic from Pakistan Studies, after consulting the subject teacher.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 5 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 4</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 4</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 5 &rarr;</a></p>
+</div>

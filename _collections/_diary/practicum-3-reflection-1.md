@@ -20,5 +20,7 @@ available_ur: false
 
 <p>This was my very first experience teaching at a government school, and I was not familiar with the students, their level of understanding, or their English proficiency. The medium of instruction was also a barrier for me, as I tried to give instructions in Urdu to teach English, which is not their first language or medium of instruction. In the class, there was some noise, which is not bad when learning is taking place, but I think there was a lack of classroom management tactics. There is also a need to reflect on classroom management and devise a plan to run the upcoming lessons smoothly. This experience would help me in the upcoming lessons, as I am now aware of the ground realities. It is going to be tough for me to teach the students, especially English, but I have to work hard.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 2 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 1</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 1</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 2 &rarr;</a></p>
+</div>

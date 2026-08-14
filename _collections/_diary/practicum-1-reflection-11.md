@@ -20,5 +20,7 @@ available_ur: false
 
 <p>A teacher's role is to be a ray of light in the darkness for learners, and school policy should provide the path. When a teacher's thoughts align with a school's policy, it fosters confidence in the teacher. Then the teacher owns the school and students, which helps to take things into their own hands. At the same time, the students act in the circle of discipline and collaborate with the teacher and peers. Hence, a learning environment develops.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-12/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 12 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 10</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 10</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-12/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 12 &rarr;</a></p>
+</div>

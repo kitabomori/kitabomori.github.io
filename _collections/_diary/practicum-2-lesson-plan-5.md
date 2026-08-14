@@ -74,5 +74,7 @@ available_ur: false
 
 <p style="font-style:italic; color:#666;">There was no reflection for Lesson Plans 4 and 5, as these were planned but not taught.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 1 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 4</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 4</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 1 &rarr;</a></p>
+</div>

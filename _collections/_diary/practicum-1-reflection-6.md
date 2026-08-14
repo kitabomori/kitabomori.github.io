@@ -20,5 +20,7 @@ available_ur: false
 
 <p>If I had been the cooperating teacher, I would have planned my lesson. I would have divided the text into chunks and, accordingly, set some objectives. Students would be able to learn about Bhatai's early life and education. To obtain the objective, I would have used text outside the textbook. After the group discussion, the students would be asked to come forward and share what they have learned. This would help the teacher evaluate students' learning. Finally, a home task could be to read the poetry of Shah Abdul Latif Bhatai in the local language to connect this lesson to the upcoming lesson on Bhatai's life.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 7 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 5</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 5</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 7 &rarr;</a></p>
+</div>

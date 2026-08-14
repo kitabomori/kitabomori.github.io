@@ -20,5 +20,7 @@ available_ur: false
 
 <p>Allegedly, in the premises of a school, it is the prime responsibility of a teacher to know what is going on with a particular student. The pale faces of students at times indicate that someone is bullying and victimising them. A teacher should talk to students personally, assure them that they can be a source of comfort, and that the teacher will resolve the problem.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I: Reflective Report &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-12/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 12</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-12/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 12</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I: Reflective Report &rarr;</a></p>
+</div>

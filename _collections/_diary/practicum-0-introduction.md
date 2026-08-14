@@ -30,4 +30,6 @@ available_ur: false
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:0.9rem 0;">Note: The lesson plans, reflections, and reflective reports throughout this diary have been lightly edited and checked for grammatical accuracy for readability using Grammarly, ahead of publishing.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 1 &rarr;</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 1 &rarr;</a></p>
+</div>

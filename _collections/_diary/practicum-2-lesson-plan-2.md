@@ -101,5 +101,7 @@ available_ur: false
 
 <ul><li><strong>Audibility:</strong> She wasn't audible to everyone, and she should ensure her words flow in a rhythmic pattern so students enjoy the lesson. While teaching, she should also create some form of drama.</li><li><strong>Mathematical terms:</strong> the student-teacher should use mathematical terms, particularly in Urdu, as it is the medium of communication and their course is taught in Urdu.</li></ul>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 3 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 2</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 2</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 3 &rarr;</a></p>
+</div>

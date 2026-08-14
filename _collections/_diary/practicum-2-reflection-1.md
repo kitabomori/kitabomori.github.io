@@ -20,5 +20,7 @@ available_ur: false
 
 <p>Visiting the school, I realised it would be very challenging to teach here. First, the school lacks necessities such as clean water and washrooms. Second, there is a scarcity of instructional aids used in the teaching and learning process. This is a huge challenge; now I must focus on no- or low-cost instructional materials to deliver a meaningful lesson. Yes, the circumstances are difficult, but that is the reality of education in our country. That's why one of my instructors used to say, "Teaching is not everyone's cup of tea.".</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 1 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I: Reflective Report</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I: Reflective Report</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 1 &rarr;</a></p>
+</div>

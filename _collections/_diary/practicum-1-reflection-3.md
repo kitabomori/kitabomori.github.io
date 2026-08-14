@@ -18,5 +18,7 @@ available_ur: false
 
 <p>Overall, the school has all the necessary resources to run properly. The library has sufficient text and story books with enough space to accommodate a class, which would help to become self-learners. A science lab, possibly with all the required apparatus, from chemicals to microscopes, from models to specimens, could help the students to learn by doing. Computer labs, on the other hand, could be handy for connecting students with the vast knowledge of the world outside schools through the internet. In every institution, the administration serves as the nucleus, monitoring the school's progress. At the same time, it is responsible for providing and managing resources for teachers and students. In the coming days, as part of the observation at the school, I am keen to understand the school's functioning and whether the administration, teachers, principal, and students are supporting each other in the learning process.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 4 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 2</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 2</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 4 &rarr;</a></p>
+</div>

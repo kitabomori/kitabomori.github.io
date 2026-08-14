@@ -20,5 +20,7 @@ available_ur: false
 
 <p>When it comes to achieving the class objective, there is some doubt. Yes, I completed the lesson on time, but that doesn't mean I have transferred everything to their minds. It was my first interaction with the class. Without knowing their names, experiences, and learning styles, it was difficult to decide on a teaching method and strategy to apply. This lesson and interaction would help me to select the right approach in the upcoming classes.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 2 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 1</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 1</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 2 &rarr;</a></p>
+</div>

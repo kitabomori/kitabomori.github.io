@@ -26,5 +26,7 @@ available_ur: false
 
 <p>Moving forward, it is important to address these issues to ensure that all students can benefit from the lessons. To help students who need support with prior knowledge, I planned to incorporate more review activities and assessments at the beginning of each lesson. Additionally, I will continue to adapt my language and teaching strategies to help students who are still developing their language abilities. To address class control, I will consider implementing more engaging activities and group work to keep students interested and involved in the lesson. Overall, I plan to continue reflecting on my teaching practices and make adjustments to ensure that all students can learn and succeed.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 4 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 3</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 3</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 4 &rarr;</a></p>
+</div>

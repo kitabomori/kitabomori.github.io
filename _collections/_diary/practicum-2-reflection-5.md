@@ -20,5 +20,7 @@ available_ur: false
 
 <p>Exams and tests help students improve. When taking an exam becomes merely a formality, it hurts the student. Exams should be conducted in a way that does not cause students to fear them, and the process should be as smooth as possible.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 4 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 4</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 4</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 4 &rarr;</a></p>
+</div>

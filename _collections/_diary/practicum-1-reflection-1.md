@@ -18,5 +18,7 @@ available_ur: false
 
 <p>Humorously introducing himself to the class eased the classroom's tense atmosphere. The teacher's energy told the story of his passion for his profession, which encouraged the students to adopt it as well. The introduction and outline of the course help students become familiar with the course and what they will be doing in the coming days. Learning how to write reflections enhances students' skills. The teacher's energy was at its peak even at the end of the class. This did not allow the students to engage in gossip or lose their attention. But at the same time, the humorous way the questions were asked made the class fun, which I would love to be part of.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 2 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-0-introduction/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: About This Diary</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-0-introduction/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: About This Diary</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 2 &rarr;</a></p>
+</div>

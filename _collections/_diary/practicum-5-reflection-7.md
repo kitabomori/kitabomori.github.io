@@ -20,5 +20,7 @@ available_ur: false
 
 <p>In summary, the observer noted the value of establishing clear ground rules to minimise class disruption. Moving forward, I need to address these concerns promptly to create a more conducive learning environment and save instructional time by enhancing classroom management skills. I plan to collaborate with the cooperating teacher on the upcoming class to design a mathematics lesson aligned with the syllabus.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 8 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 7</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 7</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 8 &rarr;</a></p>
+</div>

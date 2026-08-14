@@ -20,5 +20,7 @@ available_ur: false
 
 <p>It is of great importance to me as a teacher to understand students' learning styles. Which style do they prefer to learn, or that excites them, so they will be fully engaged in learning when the teacher facilitates? Being aware of students' learning styles would enable a teacher to plan and incorporate activities into the class accordingly.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 7 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 6</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 6</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 7 &rarr;</a></p>
+</div>

@@ -20,5 +20,7 @@ available_ur: false
 
 <p>If I get a chance to teach the same topic again, I would choose the demonstration method over the inductive, as it at least helps the student to see the miracles of science instead of listening. After the demonstration, I would divide the students into different groups and lead a discussion to engage every single student.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 3 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 2</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 2</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 3 &rarr;</a></p>
+</div>

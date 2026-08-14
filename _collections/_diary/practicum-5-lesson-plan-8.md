@@ -73,5 +73,7 @@ available_ur: false
   <li>Mathematics 9th book</li>
 </ul>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Reflection 8 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Reflection 7</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Reflection 7</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Reflection 8 &rarr;</a></p>
+</div>

@@ -152,5 +152,7 @@ available_ur: false
 <h4>4. References/Material</h4>
 <p>Textbook of Mathematics-VII, Sindh Textbook Board, Jamshoro</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 7 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Reflection 3</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Reflection 3</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 7 &rarr;</a></p>
+</div>

@@ -100,6 +100,23 @@ Separate paragraphs with a blank line.
   on kitabomori.github.io — it won't show on localhost. No
   front matter flag is needed for this one.
 
+  DIARY SEQUENCE NAV — if this post is part of a curated diary
+  sequence (e.g. Lesson Plan 2 -> Lesson Plan 3), link to the
+  neighbouring post(s) at the end of the body with this block,
+  NOT with two separate <p> tags. The CSS (.post-body-seq-nav in
+  main.css) lays Previous/Next out on one line, wrapping on
+  narrow screens; a lone Next (first post) or Previous (last
+  post) is fine — just drop the line you don't need:
+
+  <div class="post-body-seq-nav">
+  <p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/PREV-SLUG/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: PREV TITLE</a></p>
+  <p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/NEXT-SLUG/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: NEXT TITLE &rarr;</a></p>
+  </div>
+
+  This is separate from the automatic Older/Newer nav that
+  already appears at the bottom of every post — this one is for
+  the curated within-sequence order, not date order.
+
   3) A CHART/GRAPH — first add `has_chart: true` up in this
      post's front matter (above, next to `date:`), then paste
      something like this where you want the chart to appear:

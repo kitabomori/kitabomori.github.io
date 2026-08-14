@@ -20,5 +20,7 @@ available_ur: false
 
 <p>Being part of the class and observing the teaching process added valuable insights to my learning. It is crucial to have a voice that can be heard in every corner of the classroom so students can understand instructions clearly. At the same time, a teacher should have the content knowledge to answer every student's question; otherwise, students will become confused, leading to misconceptions.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 3 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 2</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 2</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 3 &rarr;</a></p>
+</div>

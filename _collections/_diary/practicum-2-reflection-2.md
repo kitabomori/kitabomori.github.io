@@ -20,5 +20,7 @@ available_ur: false
 
 <p> The identified weaknesses in my lesson delivery would be an opportunity for me to learn and improve. My energy, voice, and movement in class were all appropriate, but my performance in other areas was below average. As a result, this and future teaching and observation of co-teachers' lesson delivery will assist me.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 2 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 1</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 1</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 2 &rarr;</a></p>
+</div>

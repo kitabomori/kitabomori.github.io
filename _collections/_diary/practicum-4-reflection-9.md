@@ -20,5 +20,7 @@ available_ur: false
 
 <p>Interacting with students made me realise what bell hooks had said years back. An academy (school/classroom) is not a paradise where students want to be, but a teacher can create one where they can enjoy learning, which is missing in our schools. I wonder what a teacher could do to make students happy? The start could be to spend more and more time in breaks, and whenever a teacher finds an opportunity, instead of gossiping in the corners of staff rooms.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 10 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 9</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 9</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 10 &rarr;</a></p>
+</div>

@@ -141,5 +141,7 @@ available_ur: false
 <h4>4. Resources</h4>
 <p>English-VII, Sindh Textbook Board, Jamshoro</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Reflection 4 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 6</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 6</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Reflection 4 &rarr;</a></p>
+</div>

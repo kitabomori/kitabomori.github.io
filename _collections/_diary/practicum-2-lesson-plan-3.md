@@ -91,5 +91,7 @@ available_ur: false
 
 <p>I hope this feedback will help bring a little improvement.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 4 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 3</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 3</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 4 &rarr;</a></p>
+</div>

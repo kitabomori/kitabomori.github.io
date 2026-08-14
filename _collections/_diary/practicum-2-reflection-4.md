@@ -20,5 +20,7 @@ available_ur: false
 
 <p>Such circumstances highlight the significance of a well-planned lesson. When a teacher has a lesson plan, they can carry out the lesson smoothly. A lesson plan specifies the lesson objectives and a variety of activities. A lesson plan tells a teacher what to teach, how to teach it, and to what extent — because you are aware of the students.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 5 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 3</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 3</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 5 &rarr;</a></p>
+</div>

@@ -18,5 +18,7 @@ available_ur: false
 
 <p>The seating arrangement and layout of any class are vital in determining whether it is student-centred or teacher-centred. Class 9th-A was in the form of a grid, where three columns and six rows were given to the class as a layout. There was enough between the columns to move freely, but the rows were close to one another, so there was no room for engagement. During the lecture, the teacher remained close to the board, but when he posed a question, he moved freely around the class. Often, the teacher checked their work by going to them. When I asked the teacher about the movement, he said, "It depends upon the layout of the class and what kind of subject you are teaching". To some extent, I also believe this, but whatever subject a teacher is teaching, it is important to be present throughout the class. So that no one would feel left out. By observing the teacher's movement, I realised how important it is for a teacher to move within a class. To be a good teacher, one must develop this habit to thrive in the profession.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 5 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 3</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 3</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 5 &rarr;</a></p>
+</div>

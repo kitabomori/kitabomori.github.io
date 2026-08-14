@@ -20,5 +20,7 @@ available_ur: false
 
 <p>As bell hooks rightly said, "the academy is not paradise, but learning is a place where paradise can be created". Moving ahead, it is of utmost importance for me to develop a lesson that focuses on all domains of Bloom's taxonomy to engage students mentally, physically, and emotionally in learning. Learning can only be joyful when the teacher praises and encourages the small acts in class and in other activities. Otherwise, students would be present in the classroom, but the outer world would capture their imaginations, and they would consume their energy learning nothing.</p>
 
-<p style="margin-top:0.75rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 5 &rarr;</a></p>
-<p style="margin-top:0.5rem;"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 4</a></p>
+<div class="post-body-seq-nav">
+<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 4</a></p>
+<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 5 &rarr;</a></p>
+</div>
