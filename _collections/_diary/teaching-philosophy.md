@@ -11,6 +11,7 @@ description_en: "On the teacher as gardener: facilitating a student's innate pot
 description_ur: "استاد بطور مالی: طالب علم کی سیکھنے، بڑھنے اور خدمت کرنے کی فطری صلاحیت کو پروان چڑھانا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 Imagine a rose plant cutting, buried two-thirds of it in a bed to grow a new one. In the bed, various flowers are already growing, probably not of the same colour and shape. The bed has all the necessary minerals, along with exposure to sunlight and a constant supply of water. There is also a gardener who, once in a while, only sees the cutting. With time, would the cutting grow into a plant, forming roots and shoots? It's complicated to answer. Weeds would grow, preventing sunlight from reaching the cutting, and it would ultimately die out, losing its capacity to grow into a plant. In a second case, when a good gardener starts to nurture the cutting and the already-grown flower, facilitating the natural process by removing weeds and protecting it from being eaten by sheep or other animals. The rose cutting, one day, would fully grow into a plant and add its own beauty and fragrance, along with other flowers, to the garden.

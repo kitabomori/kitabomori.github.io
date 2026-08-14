@@ -11,6 +11,7 @@ description_en: "Fractions lesson for grade 5, with feedback from both co-teache
 description_ur: "جماعت پنجم کے لیے کسور کا سبق، اور پیچھے رہ جانے والے طلبہ کی مدد پر دونوں معاون اساتذہ کی رائے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

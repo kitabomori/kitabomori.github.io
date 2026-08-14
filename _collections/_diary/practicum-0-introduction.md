@@ -11,6 +11,7 @@ description_en: "What a practicum is, and why this diary of lesson plans, reflec
 description_ur: "پریکٹیکم کیا ہوتا ہے، اور سبقی منصوبوں، تاثرات اور تفکراتی رپورٹس پر مشتمل یہ ڈائری کیوں شائع کی جا رہی ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">A practicum is a period of supervised teaching practice built into a B.Ed. (Bachelor of Education) degree. Rather than only studying theories of teaching, student teachers spend time in real classrooms: observing experienced teachers, planning and delivering their own lessons, receiving feedback from supervisors and peers, and writing reflections on what happened and what they would do differently next time. Over the course of a degree, several practicums build on one another, moving from short observation visits toward longer, more independent stretches of teaching.</p>

@@ -11,6 +11,7 @@ description_en: "An interview with a cooperating teacher and what that reveals a
 description_ur: "ایک معاون استاد کے ساتھ انٹرویو، اور تدریس میں خود کو باخبر رکھنے کے بارے میں اس سے کیا معلوم ہوا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>This time around, our task was to interview our cooperative teacher. After reviewing the observation sheet, my colleagues and I agreed on a few questions the teacher asked. From the cooperative teacher's reaction when we asked him about his previous time, he seemed to be trying to escape the interview. But, under continuous pressure, he reluctantly agreed to give some of his valuable time to our learning. The interview focused on classroom management.</p>

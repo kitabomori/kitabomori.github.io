@@ -11,6 +11,7 @@ description_en: "Observing a student in maths class, a conversation about sketch
 description_ur: "ریاضی کی کلاس میں ایک طالب علم کا مشاہدہ، اور خاکہ نگاری، کرکٹ اور گروپ اسٹڈی پر ایک گفتگو۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>The target of today's school visit was to observe a child. I selected A (a student) for the aforementioned objective. The moment I fixed my gaze on A, he was engaged in an activity with his friend next to him. He looked like a healthy child, with an average height and a sound body. Whenever the cooperating teacher gave instructions, he tried to listen and write at the same time, which I doubt he was giving the teacher partial attention. In between, A borrowed a notebook from a guy in front of him. At the last moment of the mathematics class, when the teacher asked a question, A asked his friend for help. 35 minutes were not sufficient for me to determine Arshad's strengths and talents. So, during the break, I interviewed him.</p>

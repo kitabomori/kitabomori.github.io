@@ -11,6 +11,7 @@ description_en: "A short dialogue between two teachers arguing, gently, about wh
 description_ur: "دو اساتذہ کے درمیان ایک مختصر مکالمہ، نرمی سے اس بحث پر کہ بچے کو نظم و ضبط زیادہ سکھاتا ہے یا تجسس۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 **SAJIDA:** You let them talk over each other for ten minutes and call it a lesson.

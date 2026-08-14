@@ -11,6 +11,7 @@ description_en: "Teaching diary writing through Anne Frank, and wrestling with h
 description_ur: "این فرینک کے ذریعے ڈائری نویسی کی تدریس، اور جماعت میں مطالعہ و ادب کو حقیقی معنوں میں دلچسپ بنانے کی جدوجہد۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>If Anne Frank had written this reflection in her Diary-Kitty, she might have written: "Years seem to have passed between my last visit and my March 7, 2024, visit, because so much has happened in between..." Anne is not here, but I did get help from her diary to teach 8th-Daisy about diary writing, which is part of their final-term syllabus. While preparing the lesson, I tried to use a personal diary entry, but unfortunately, I did not keep one — and now I think it is worth keeping at least a digital one. I also reached out to fellow prospective teachers to see if they could help, and one shared a diary entry, but it was not for grade VIII. In the lesson, I used a few entries from Anne Frank's diary, which she wrote from 14 June 1942 to 1 August 1944, at the peak of World War II. I distributed the entries in groups, and the students tried to understand what she had written. It caused a bit of disturbance, so I shifted to the lecture method — reading an entry and using the board to discuss the characteristics of diary writing. Finally, in groups, I asked the students why it is worth writing a diary.</p>

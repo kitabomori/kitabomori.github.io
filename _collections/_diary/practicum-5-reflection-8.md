@@ -11,6 +11,7 @@ description_en: "On the 20,000-year history of counting, and why lecture-and-dri
 description_ur: "گنتی کی بیس ہزار سالہ تاریخ پر، اور کیوں محض لیکچر اور مشق ریاضی کو دیوار کے بجائے خوشی کا احساس دلانے کے لیے کافی نہیں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>Mathematics is complex because we have a set of complex numbers. Is it, though? Out of curiosity, I tried to find the origin of mathematics. The first signs of it are often in the form of counting — "numbers" date back more than 20,000 years, recorded on bones, stones, and cave walls. Isn't it amazing that we count everything from the width of galaxies to the vibration of caesium atoms' electrons to set a second as a standard for measuring time? To begin teaching "number sets," I wrote a sequence of numbers on the whiteboard to determine how many numbers exist between two numbers, for the 8th-Tulip section on the 25th of April. Then I talked briefly about how counting numbers came into being. To address our growing needs and understand the complexity of the universe, we set out to discover more and more numbers by adding "0" to the front of a set of numbers, using "+" and "−" signs, and dividing one number by another. The addition of numbers was also discussed, and students were offered a reward for solving a challenging addition problem.</p>

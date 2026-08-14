@@ -11,6 +11,7 @@ description_en: "Observing and what it teaches to sit in the corner, take notes,
 description_ur: "کونے میں بیٹھ کر نوٹس لینا اور مداخلت کی خواہش کو روکنا — مشاہدے سے کیا سیکھا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>We returned to the field for the third time for co-teaching. This time, it was co-teacher N's turn to teach, and my job was to sit in the classroom corner and observe without disturbing the class. The co-teacher began the lesson by attempting to connect it to the previous lesson. The lesson was then immediately started and continued as planned. I was trying to keep one eye on the co-teacher and the other on the students and how they were responding to the teacher's instruction. Throughout the process, I took notes on the co-teacher's strengths and weaknesses. Following the class, I discussed my observations with the co-teacher and offered some suggestions for improvement.</p>

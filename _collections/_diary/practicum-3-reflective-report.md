@@ -11,6 +11,7 @@ description_en: "Ten weeks teaching a full class at Government X School, Sukkur 
 description_ur: "گورنمنٹ ایکس اسکول، سکھر میں مکمل جماعت کو دس ہفتے پڑھانا — زبان، توجہ اور نظم و ضبط کے چیلنجز، اور اس کا حاصل۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>The Teaching Practice-III course of B.Ed-VI was the extension of Teaching Practice-I and II. In the last two practicums, we observed the different dimensions of the school, from gatekeeper to principal. We developed lesson plans and delivered lessons through co-teaching and micro-teaching.</p>

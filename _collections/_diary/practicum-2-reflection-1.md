@@ -11,6 +11,7 @@ description_en: "Practicum-II, a choice between an Urdu- and Sindhi-medium schoo
 description_ur: "پریکٹیکم دوم، اردو اور سندھی ذریعہ تعلیم اسکول کے درمیان انتخاب، اور مشترکہ تدریس کی منصوبہ بندی۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>Practicum-II was a step upon Practicum-I, which involved several visits to the X and Y Government School in Old Sukkur. During those visits, we observed and understood the roles of various aspects of the school, including the building, labs and laboratories, library, classrooms, management, teachers, the environment, and all staff who support the learning and teaching process. It also emphasises co-teaching and receiving feedback from co-teachers to further strengthen it.</p>

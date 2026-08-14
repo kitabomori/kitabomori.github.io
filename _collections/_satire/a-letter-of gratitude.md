@@ -16,6 +16,7 @@ pull_quote_en: ""                          # Optional: pin the exact pull-quote 
 pull_quote_ur: ""                          # (English/Urdu). Leave both blank and the site will automatically
                                             # pick the strongest sentence from the post itself; set these once
                                             # you've read the auto-picked one and want to override it.
+available_ur: false
 ---
 April 15, 2024
 

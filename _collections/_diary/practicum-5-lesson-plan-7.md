@@ -11,6 +11,7 @@ description_en: "Measuring the whiteboard to arrive at a very large number, then
 description_ur: "وائٹ بورڈ کی پیمائش سے ایک بہت بڑا عدد حاصل کرنا، پھر اسے قابلِ فہم بنانے کے لیے سائنسی اظہار کا استعمال۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

@@ -196,7 +196,9 @@ layout: base
 
     <div class="post-body-content">
       <!--KITABOMORI-POST-BODY-START-->
+      {% unless site.lang == 'ur' and page.available_ur == false %}
       {{ content }}
+      {% endunless %}
       <!--KITABOMORI-POST-BODY-END-->
     </div>
   </div>

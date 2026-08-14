@@ -11,6 +11,7 @@ description_en: "A school says it has a discipline policy, but no one can produc
 description_ur: "اسکول کا دعویٰ ہے کہ اس کے پاس ضابطہ اخلاق موجود ہے، مگر کوئی بھی اسے تحریری شکل میں پیش نہیں کر پاتا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>The title of the observation sheet's discipline procedures and policies prompted me to find out whether the Government X School, Old Sukkur, has a discipline policy. The administration's standardisation answer was "Yes", but they were unable to provide any written documentation. This scenario raised several questions for me. How does a school deal with and prevent any disciplinary mishaps in the first place? And secondly, who has the absolute authority to decide the fate of those who misbehave? Next, I asked the cooperating teacher, who provides guidelines for managing discipline and other issues when there are no written policies. The cooperation teacher said, "The headmaster has the authority to take any action when such mishaps occur, and to a certain extent, inside the classroom, a teacher has the power to bring things under control."</p>

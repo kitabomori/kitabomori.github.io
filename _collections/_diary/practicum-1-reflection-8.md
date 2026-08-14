@@ -11,6 +11,7 @@ description_en: "How questions, tone, and verbal instructions shape whether stud
 description_ur: "سوالات، لہجہ اور زبانی ہدایات کس طرح طے کرتے ہیں کہ طلبہ خود کو خیال رکھا ہوا محسوس کریں یا الگ تھلگ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>The goal of today's school visit was to observe how frequently a teacher uses the verbal involvement strategy in class and to understand its implications for the lesson. When I entered classroom 9th-A, the cooperation was a bit late, which gave me some time to quickly review the observation sheet for taking notes. When the teacher arrived, he greeted everyone and then asked a student from the front row for the mathematics textbook. Next, he started writing a question about logarithmic addition on the board. While solving that question, the cooperating teacher asked some students what the next step would be to ensure they remained on task. Now and then, the cooperating teacher asked several general and specific questions and gave oral instructions to engage the students.</p>

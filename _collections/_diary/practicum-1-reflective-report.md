@@ -11,6 +11,7 @@ description_en: "Looking back on sixteen weeks of Practicum-I — what the visit
 description_ur: "پریکٹیکم اول کے سولہ ہفتوں پر ایک نظر — ان وزٹس نے اسکولوں، تدریس اور خود میرے بارے میں کیا سکھایا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>The third semester of B.Ed.-III started in October 2021. With other courses, Practicum-I was also part of the semester. The practicum course is unique in that it aims to provide prospective teachers with experience by exposing them to the school environment through weekly visits. It also has specific objectives, such as identifying connections between teaching theory and practice. The other rationales are: to collaborate with peers, cooperating teachers, school staff, and the practicum supervisor; and to develop professional relationships by observing elements of the school from the gatekeeper to the principal. Most of the lot was to invite, accept and utilise feedback from the cooperating teacher, supervisor and peers for learning.</p>

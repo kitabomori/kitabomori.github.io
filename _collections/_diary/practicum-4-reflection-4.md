@@ -11,6 +11,7 @@ description_en: "A football-ground chat and a cricket match before class, and a 
 description_ur: "کلاس سے پہلے فٹبال گراؤنڈ پر گفتگو اور کرکٹ میچ، اور یہ یاد دہانی کہ کوئی سبقی منصوبہ حقیقی اسکول کے دن سے بے اثر نہیں نکلتا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>I think things never go as we plan or want them to. It doesn't mean I didn't curate my lesson plan or enjoy teaching at X School, Sukkur, with the students of grade 8th. There is a break and a physical training (PT) period before science class. Today, during the break, I was at the football ground with the students for a while and observed their behaviour. While in the PT period, I was in the cemented area right behind the boys' section building and played cricket with the students for the entire period. Unfortunately, my team lost the five-over cricket match. Still, the particular experience of being with students both outside (playing with the students) and inside (carrying out the lesson plan) class forced me to question what kind of prospective teacher I am and how my teaching practice is shaping my identity.</p>

@@ -11,6 +11,7 @@ description_en: "A Physics lesson on time dilation, exploring the relativity of 
 description_ur: "زمانی تمدد (ٹائم ڈائی لیشن) پر فزکس کا سبق، جڑواں تضاد اور آئن سٹائن کے نظریۂ اضافیت کے ذریعے وقت کی اضافیت کا جائزہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

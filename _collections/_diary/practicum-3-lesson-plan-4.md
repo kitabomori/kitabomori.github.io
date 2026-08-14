@@ -11,6 +11,7 @@ description_en: "An Ethics lesson taught in Urdu — a hands-on clean-up activit
 description_ur: "اردو میں پڑھایا گیا اخلاقیات کا سبق — صاف ستھرے ماحول کی اہمیت سکھانے کے لیے عملی صفائی کی سرگرمی۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <div dir="rtl" lang="ur">

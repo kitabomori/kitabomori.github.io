@@ -11,6 +11,7 @@ description_en: "An English lesson on the importance of loud reading, using Comm
 description_ur: "بلند آواز سے پڑھنے کی اہمیت پر انگریزی کا سبق، ابلاغی زبان کی تدریس اور تعمیری انداز میں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

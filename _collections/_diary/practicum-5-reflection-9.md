@@ -11,6 +11,7 @@ description_en: "Teaching angle construction from the floor of a U-shaped classr
 description_ur: "یو کی شکل کی جماعت کے فرش سے زاویہ سازی کی تدریس، اور جیومیٹری کو راستہ تلاش کرنے اور زمانی تمدد سے جوڑنا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>Imagine you are new to Karachi, in Saddar, and want to meet someone in Gulshan-e-Hadeed. You don't know the directions — what would you do then? This was the thought-provoking start to my visit on May 2, 2024. I had developed a lesson on constructing angles that are multiples of 15, using a compass and ruler. I changed the class seating arrangement, with the cooperating teacher's help, into a U shape. Instead of writing on the board, I used my rough copy to draw angles and diagrams while sitting on the floor, as there were around 20 students in the class. I then discussed the importance of angles in navigation and touched on time dilation. In the end, I asked students to draw various angles in their copies and explain, in their own words, the process of constructing an angle.</p>

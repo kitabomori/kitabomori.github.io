@@ -11,6 +11,7 @@ description_en: "Teaching a packed girls' section for the first time, and learni
 description_ur: "پہلی بار لڑکیوں کی بھری ہوئی جماعت کو پڑھانا، اور 42 طلبہ کی نئی جماعت کتنی مطابقت طلب کرتی ہے، یہ سیکھنا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>It takes time for a teacher to adjust to new situations, both to teach and to learn from students. It became even more difficult when a teacher did not know the students' learning styles. Today, at X School, Sukkur, I was in the 7th-X section, packed with 42 female students. Not having experience teaching girls in previous practicums was a challenge for me. As usual, I stopped by the class during break time to interact with the students, but most were outside having lunch. I chatted with a few students and got to know them. The English lesson was based on a VARK reading activity that had students explore their preferred learning styles.</p>

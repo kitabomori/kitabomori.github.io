@@ -11,6 +11,7 @@ description_en: "Reading and discussing the poem 'The Blind Boy' — building vo
 description_ur: "نظم 'دی بلائنڈ بوائے' کا مطالعہ اور تبادلۂ خیال — الفاظ کا ذخیرہ بڑھانا اور مرکزی خیال کا خلاصہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

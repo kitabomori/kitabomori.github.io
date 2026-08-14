@@ -11,6 +11,7 @@ description_en: "Reflection on Lesson 7 - The Importance of Loud Reading"
 description_ur: "ساتویں سبق پر تاثر — بلند آواز سے پڑھنے کی اہمیت۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>The continuum from one lesson to the next is what I like most about the 22nd November visit to X School, Sukkur. Last week, I engaged the students in a reading activity to find out their learning styles. Based on the collected data, I planned to go with reading aloud and listening drills this time. Before the class, I spoke with the coordinator and learned that it is against school policy to help prospective teachers provide the printouts. The coordinator gave me an undue favour by providing me with excerpts from the novel "Sophie's World," which turned out to be one of his favourite books. Fortunately, the photocopying machine was not working, and I got the prints from outside the school. Anyhow, it was concerning to me whether the actual teachers of the school needed some printed material, and if the machine is not working, it would halt the learning process.</p>

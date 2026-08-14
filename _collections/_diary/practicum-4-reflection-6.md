@@ -11,6 +11,7 @@ description_en: "Reflection on invigilating mid-term examinations."
 description_ur: "وسط مدتی امتحانات میں نگرانی پر ایک تاثر۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>The visit of 1st November to X School, Sukkur, was a bit different from the past visits, where we had to deliver a lesson and then reflect on our teaching and how we manage the class. This time there were mid term exams and we were supposed to invigilate one of the classes. The coordinator on my wish sent me and my colleague to the girls 7th-X section, where the students had already started to attempt their mathematics paper. Following the due procedure of not disturbing the students I silently entered the examination hall which looked very intense with an invigilator and 48 students in it. I think the addition of two as for invigilation kind of made the examination hall environment more severe for the students.</p>

@@ -11,6 +11,7 @@ description_en: "Grade 7 geometry — adjacent, complementary, and supplementary
 description_ur: "جماعت ہفتم کی جیومیٹری — ملحقہ، متمم اور معاون زاویے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

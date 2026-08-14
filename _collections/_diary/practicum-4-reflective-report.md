@@ -11,6 +11,7 @@ description_en: "A comprehensive reflective report on the Practicum-IV teaching 
 description_ur: "ایکس اسکول، سکھر میں پریکٹیکم چہارم کے تدریسی تجربے پر ایک جامع تفکراتی رپورٹ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>As a teacher, the first time I met the student outside the classroom, I was a stranger to them. The second time I met on the playground, I was an instructor. The next time I was their class fellow. Being with the students at the playgrounds and having small chats here and there throughout the practicum at X School, Sukkur, made this experience a bit different from the past ones. In this reflective report, I will discuss what I did during the ten visits to the school and what I have learned.</p>

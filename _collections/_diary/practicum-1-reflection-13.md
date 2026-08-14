@@ -11,6 +11,7 @@ description_en: "A final visit spent understanding bullying — its causes, form
 description_ur: "آخری وزٹ، غنڈہ گردی (بلی اِنگ) کو سمجھنے کے لیے — اس کے اسباب، صورتیں، اور استاد کی ذمہ داری کہ وہ اسے پہچانے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>On January 12, we conducted the last school visit at the Government X in Old Sukkur. The objective of being in the field was to understand the building, its causes, several of its forms, and to highlight it in the context of the school. The observation sheet provided helped to gather data from the school premises.</p>

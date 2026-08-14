@@ -11,6 +11,7 @@ description_en: "A lesson on sound loudness taught with a mobile decibel app, an
 description_ur: "موبائل ڈیسیبل ایپ کی مدد سے بلندیٔ آواز کا سبق، اور وہ چھوٹی خامیاں جو خود کو پڑھاتے دیکھنے سے سامنے آتی ہیں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>I had planned to teach about sound loudness and how to measure it using a mobile sound meter app. The observation sheet and the supervising teacher's comments are encouraging, as they indicate some improvement over the previous lesson. I maintained the board and wrote the lesson topic, but I still forgot to write the subtopic. I planned to assess the learning using a worksheet, but due to time constraints/mismanagement, I went to the students individually and in pairs to ask questions orally. To sum it all up, the class went smoothly, but there are a few observations/shortcomings that are important to address in the coming lessons.</p>

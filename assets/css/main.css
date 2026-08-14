@@ -1808,18 +1808,18 @@ html:not([dir="rtl"]) .post-title {
    available_en / available_ur handling in post.html). Small, italic,
    and set apart from the post's own prose so it reads as site chrome
    rather than part of the piece. */
-.post-lang-note {
+.post-header .post-lang-note {
   @apply text-sm italic mb-4;
   text-align: center;
   color: #7A6A45;
 }
 
-.post-lang-note a {
+.post-header .post-lang-note a {
   color: #009F93 !important;
   text-decoration: underline;
 }
 
-.dark .post-lang-note {
+.dark .post-header .post-lang-note {
   color: #c9b98a;
 }
 

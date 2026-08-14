@@ -11,6 +11,7 @@ description_en: "Classifying numbers into sets — natural, whole, integer, rati
 description_ur: "اعداد کی درجہ بندی — طبعی، صحیح، عدد صحیح، ناطق اور غیر ناطق — اور دو اعداد کے درمیان لامحدود اعداد کا تصور۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

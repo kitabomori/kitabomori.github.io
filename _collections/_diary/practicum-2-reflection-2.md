@@ -11,6 +11,7 @@ description_en: "Delivering first lesson — low attendance, overloaded content,
 description_ur: "پہلا سبق پڑھانا — کم حاضری، مواد کی زیادتی، اور معاون اساتذہ کی رائے نے کیا ظاہر کیا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>We visited the Government X School on March 3rd, 2022. In the classroom, the cooperating teacher was already in the middle of a math lesson. We waited for her to complete the lesson. It was my turn to deliver the lesson plan, but I was not fully prepared, as it always happens on the very first lesson. The class had 25 students, but only 14 attended. Initially, I tried to engage the students by inquiring about their daily routine. Then, while distributing some apples, I divided them into parts and asked different questions. This activity was planned to draw the students' attention to the topic "fractions." The class was over in the blink of an eye. During the lesson, the co-teachers observed my delivery and provided valuable feedback.</p>

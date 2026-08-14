@@ -11,6 +11,7 @@ description_en: "Struggling to build a relationship with the class, and realisin
 description_ur: "جماعت کے ساتھ تعلق بنانے کی جدوجہد، اور یہ احساس کہ استاد کا کام طلبہ کو سیکھنے کی وجہ فراہم کرنا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p><em>Reflection on Lessons Six and Seven</em></p>

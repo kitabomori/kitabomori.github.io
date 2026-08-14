@@ -11,6 +11,7 @@ description_en: "Teaching the formation of the Muslim League while trying not to
 description_ur: "مسلم لیگ کے قیام کی تدریس، اور اپنے اسکول کے زمانے کی یک طرفہ تاریخ کو دہرانے سے بچنے کی کوشش۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>Today, I tried to teach about the social and political factors that led to the formation of the All India Muslim League, as well as its aims and objectives. The 8th-Daisy students had quite good knowledge of the 1906 subcontinent, which helped me pace my lesson. I summarised the Muhammadan Educational Conference of December 1906, and the roles of Nawab Samiullah, Khan Bahadur, Nawab Waqar ul Mulk, and Syed Amir Ali in calling for a separate political party for Muslims. Sir Syed Ahmed had advised Muslims to stay away from politics until his death; still, the positive response to the Simla Delegation of 1906 regarding separate electorates, the establishment of Aligarh College as a university, and the partition of Bengal were among the causes that prompted Muslims to participate in politics. The new party aimed to promote loyalty among Muslims toward the British government, to protect Muslims' political interests, to present their needs and aspirations to the government, to remove misconceptions, and to foster cooperation with other communities.</p>

@@ -11,6 +11,7 @@ description_en: "Setting rules for school visits, and why praising effort and li
 description_ur: "اسکول وزٹس کے لیے اصول طے کرنا، اور کوشش کی تعریف اور ہر ایک کی بات سننے میں وقت کیوں لگتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>The second practicum class of the 3rd semester was held on the 13th of October in the Smart classroom of the Knowledge Centre. All the students were busy giving the final touch to the reflection of the previous class when the teacher arrived. He greeted and placed the utmost importance on one aspect of morality in his opening remarks. He gave particular attention to acknowledging and appreciating an individual's efforts and contributions, particularly those of a teacher. Next, the teacher continued his lecture on writing a reflection, which he left in the last class. In the next section of the class, the teacher invited all the students to set some rules for the upcoming school visits. In this regard, students initially had to come up with five rules, each limited to 5 words. Next, it was to filter out the rules by avoiding negative phrases. Finally, we agreed on six rules with the instructor's help.</p>

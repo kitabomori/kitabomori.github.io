@@ -11,6 +11,7 @@ description_en: "Building vocabulary — word webs, group definitions, and using
 description_ur: "الفاظ کا ذخیرہ بڑھانا — ورڈ ویب، گروپ میں تعریفات، اور نئے الفاظ کا جملوں میں درست استعمال۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

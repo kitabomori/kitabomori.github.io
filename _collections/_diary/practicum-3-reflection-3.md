@@ -11,6 +11,7 @@ description_en: "Students wanted more hands-on activity, and individual attentio
 description_ur: "طلبہ مزید عملی سرگرمیاں چاہتے تھے، اور انفرادی توجہ دینا مشکل ثابت ہوا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p><em>Reflection on Lessons Four and Five</em></p>

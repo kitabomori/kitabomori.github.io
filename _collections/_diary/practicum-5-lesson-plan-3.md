@@ -11,6 +11,7 @@ description_en: "A 15-minute micro-teaching session using a flower, burnt paper,
 description_ur: "پھول، جلا ہوا کاغذ اور چاکلیٹ کے ذریعے پندرہ منٹ کا مائیکرو ٹیچنگ سیشن، جو روزمرہ کی سونگھنے کی حس میں کوانٹم فزکس دکھاتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

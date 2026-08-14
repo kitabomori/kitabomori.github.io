@@ -11,6 +11,7 @@ description_en: "A science lesson on periodic trends in Periods II and III, usin
 description_ur: "دوسرے اور تیسرے پیریڈ میں متواتر رجحانات پر سائنس کا سبق، استقرائی و تفتیشی طریقہ اور تعمیری انداز میں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

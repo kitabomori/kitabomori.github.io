@@ -11,6 +11,7 @@ description_en: "Back to physics: sound amplification devices, from microphones 
 description_ur: "دوبارہ فزکس کی طرف: آواز کو تقویت دینے والے آلات، مائیکروفون سے لے کر سماعتی آلات تک، اور طلبہ انہیں روزمرہ میں کہاں دیکھتے ہیں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

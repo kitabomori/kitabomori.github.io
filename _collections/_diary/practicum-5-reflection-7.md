@@ -11,6 +11,7 @@ description_en: "Coining “the pedagogy of perfume” after hearing a student w
 description_ur: "'خوشبو کا تدریسی فلسفہ' کی اصطلاح، یہ سن کر کہ ایک طالب علم کو محض اس خوشبو کی وجہ سے جماعت سے روک دیا گیا جو استاد کو ناپسند تھی۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>Imagine you are a teacher and one of your students is roaming outside the classroom. When you inquire, would it not be hilarious to hear that a teacher has not let a student sit in class because she did not like the perfume he was wearing? Unfortunately, this is a real incident. Laughing and wondering about it, I entered 8th-X to deliver my seventh lesson on April 18. I started by asking students to help me measure the dimensions of the whiteboard in centimetres and calculate the area in square centimetres. We reached a very large number, and I wondered how we could condense it or make it easier to handle. The students are sharp, and they quickly grasped the concept of scientific notation; I also discussed its rules. I tried to explain astronomical units and a light year, and compared the masses of protons and electrons to give a sense of how big and small the numbers we deal with in the world outside the classroom really are. Finally, I taught the students how to calculate someone's age in seconds, and to assess them, I asked them to write the previously calculated age (238,567,680 seconds) in standard form.</p>

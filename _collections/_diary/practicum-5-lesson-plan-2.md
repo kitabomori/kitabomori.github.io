@@ -11,6 +11,7 @@ description_en: "An Urdu lesson on the art of letter-writing, opening with the t
 description_ur: "خطوط نویسی کی تاریخ اور جدید شکلوں پر ایک اردو سبق، روایتی اور عصری طریقوں کا موازنہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <div dir="rtl" lang="ur">

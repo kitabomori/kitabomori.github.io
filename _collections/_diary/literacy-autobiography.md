@@ -11,6 +11,7 @@ description_en: "A reflection on how reading, writing, and conversations shaped 
 description_ur: "مطالعے، تحریر اور گفتگو نے میری شناخت کو کیسے تشکیل دیا اور مجھے اپنے ارد گرد کی دنیا پر سوال اٹھانے پر کیسے آمادہ کیا، اس پر ایک تحریر۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 The teaching literacy course has given me a whole new perspective on literacy, enabling me to interpret it in new ways. Literacy is an umbrella term that encompasses knowledge of practically everything, from oneself to others, from one's family to strangers and from one's well-being to inspiring individuals to revolt against oppressive powers. Hence, the acknowledged definition of literacy, the ability to read and write, has become more important for me than before. Reading provides awareness, food for thought, and highlights society's wrongdoings. While writing is the most effective way to organise ideas, communicate with clarity, and express your perspective with confidence for greater impact.

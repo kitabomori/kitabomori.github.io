@@ -11,6 +11,7 @@ description_en: "Observing how a teacher moves in a classroom and what that move
 description_ur: "استاد جماعت میں کیسے حرکت کرتا ہے، اور یہ حرکت طلبہ کی دلچسپی پر کیسے اثر ڈالتی ہے، اس کا مشاہدہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>On the 27th of October, we were in the field for another observation. This time, we aimed to observe a teacher's classroom movement and its impact on learning. When I entered class 9th-A, the teacher had already started the lesson for the day. I found a place at the back of the class and began observing the teacher. The time limit for observing the teacher's movement was about 20 minutes. I took my time observing and noting his movements. It was roughly 15 minutes into the period when the time was up. After the class, I asked the teacher about the importance of a teacher's movement in class.</p>

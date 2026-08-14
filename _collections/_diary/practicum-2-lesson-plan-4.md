@@ -11,6 +11,7 @@ description_en: "A planned-but-untaught lesson introducing triangles"
 description_ur: "مثلث کا تعارف کروانے کے لیے تیار کردہ سبق، جو پڑھایا نہ جا سکا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

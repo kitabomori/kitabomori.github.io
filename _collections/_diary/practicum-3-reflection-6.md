@@ -11,6 +11,7 @@ description_en: "Why consistency in teaching matters, and why no lesson plan eve
 description_ur: "تدریس میں تسلسل کیوں اہم ہے، اور کوئی بھی سبقی منصوبہ حقیقی جماعت کے سامنے جوں کا توں کیوں نہیں رہتا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p><em>Reflection on Lesson X</em></p>

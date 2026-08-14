@@ -11,6 +11,7 @@ description_en: "Tracking ten students through a maths class to see exactly when
 description_ur: "ریاضی کی کلاس میں دس طلبہ کا جائزہ، یہ دیکھنے کے لیے کہ توجہ کب برقرار رہتی ہے اور کب ٹوٹ جاتی ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
 ---
 
 <p>This was the fifth visit to the Government X School, Old Sukkur, to inspect and record when and why students pay attention in the classroom. It was mathematics class, as usual, according to the school's timetable. Following the instructions on the provided observation sheet, I excluded 10 students from the 31 present in the class and began monitoring their movements. The very first set of instructions from the cooperating teacher was to write down a solved question from the board and give it time. And most of the students under consideration for the observation paid close attention. In the next set of instructions, when the teacher was solving a question on the board, only 4 of 10 remained focused, while others were busy with various activities. In response to the third and final set of instructions, in which the teacher gave students a question to solve, only half of the students observed putting effort into solving it.</p>
