@@ -11,6 +11,9 @@ description_en: "Looking back on sixteen weeks of Practicum-I — what the visit
 description_ur: "پریکٹیکم اول کے سولہ ہفتوں پر ایک نظر — ان وزٹس نے اسکولوں، تدریس اور خود میرے بارے میں کیا سکھایا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-13/"
 seq_prev_title: "Practicum-I Reflection 13"

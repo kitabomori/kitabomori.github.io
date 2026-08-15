@@ -11,6 +11,9 @@ description_en: "Struggling to build a relationship with the class, and realisin
 description_ur: "جماعت کے ساتھ تعلق بنانے کی جدوجہد، اور یہ احساس کہ استاد کا کام طلبہ کو سیکھنے کی وجہ فراہم کرنا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-3-lesson-plan-7/"
 seq_prev_title: "Practicum-III Lesson Plan 7"

@@ -11,6 +11,9 @@ description_en: "Why gaps between lessons hurt retention and why students need t
 description_ur: "اسباق کے درمیان وقفے یادداشت کو کیوں نقصان پہنچاتے ہیں، اور آگے بڑھنے سے پہلے طلبہ کو سوچنے کے لیے وقت کیوں درکار ہوتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-3-lesson-plan-9/"
 seq_prev_title: "Practicum-III Lesson Plan 9"

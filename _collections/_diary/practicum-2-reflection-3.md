@@ -11,6 +11,9 @@ description_en: "Observing and what it teaches to sit in the corner, take notes,
 description_ur: "کونے میں بیٹھ کر نوٹس لینا اور مداخلت کی خواہش کو روکنا — مشاہدے سے کیا سیکھا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-2-lesson-plan-2/"
 seq_prev_title: "Practicum-II Lesson Plan 2"

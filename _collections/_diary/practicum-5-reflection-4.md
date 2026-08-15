@@ -11,6 +11,9 @@ description_en: "Teaching diary writing through Anne Frank, and wrestling with h
 description_ur: "این فرینک کے ذریعے ڈائری نویسی کی تدریس، اور جماعت میں مطالعہ و ادب کو حقیقی معنوں میں دلچسپ بنانے کی جدوجہد۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-4/"
 seq_prev_title: "Practicum-V Lesson Plan 4"

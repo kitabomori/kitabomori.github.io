@@ -11,6 +11,9 @@ description_en: "Tracking ten students through a maths class to see exactly when
 description_ur: "ریاضی کی کلاس میں دس طلبہ کا جائزہ، یہ دیکھنے کے لیے کہ توجہ کب برقرار رہتی ہے اور کب ٹوٹ جاتی ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-6/"
 seq_prev_title: "Practicum-I Reflection 6"

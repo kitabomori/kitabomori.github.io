@@ -11,6 +11,9 @@ description_en: "An English lesson on the importance of loud reading, using Comm
 description_ur: "بلند آواز سے پڑھنے کی اہمیت پر انگریزی کا سبق، ابلاغی زبان کی تدریس اور تعمیری انداز میں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-4-reflection-7/"
 seq_prev_title: "Practicum-IV Reflection 7"

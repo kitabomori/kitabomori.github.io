@@ -11,6 +11,9 @@ description_en: "A comprehensive reflective report on the Practicum-IV teaching 
 description_ur: "ایکس اسکول، سکھر میں پریکٹیکم چہارم کے تدریسی تجربے پر ایک جامع تفکراتی رپورٹ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-4-lesson-plan-10/"
 seq_prev_title: "Practicum-IV Lesson Plan 10"

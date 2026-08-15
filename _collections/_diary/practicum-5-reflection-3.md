@@ -11,6 +11,9 @@ description_en: "A second micro-teaching lesson on quantum physics, and the trad
 description_ur: "کوانٹم فزکس پر دوسرا مائیکرو ٹیچنگ سبق، اور موضوع مکمل کرنے اور پوری جماعت کو مصروف رکھنے کے درمیان توازن۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-3/"
 seq_prev_title: "Practicum-V Lesson Plan 3"

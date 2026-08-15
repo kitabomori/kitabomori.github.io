@@ -11,6 +11,9 @@ description_en: "A teacher pulls three students out mid-lesson without asking �
 description_ur: "ایک استاد سبق کے دوران بغیر پوچھے تین طلبہ کو باہر لے جاتا ہے — اور ایک مستقبل کے استاد کے پاس دوسرے کی جماعت میں دراصل کتنا اختیار ہوتا ہے، اس پر گہری نظر۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-6/"
 seq_prev_title: "Practicum-V Lesson Plan 6"

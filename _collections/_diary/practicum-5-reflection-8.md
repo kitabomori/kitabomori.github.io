@@ -11,6 +11,9 @@ description_en: "On the 20,000-year history of counting, and why lecture-and-dri
 description_ur: "گنتی کی بیس ہزار سالہ تاریخ پر، اور کیوں محض لیکچر اور مشق ریاضی کو دیوار کے بجائے خوشی کا احساس دلانے کے لیے کافی نہیں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-8/"
 seq_prev_title: "Practicum-V Lesson Plan 8"

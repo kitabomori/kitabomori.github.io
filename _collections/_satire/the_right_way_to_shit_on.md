@@ -11,6 +11,8 @@ description_en: "A satire on education and educated."
 description_ur: "تعلیم اور تعلیم یافتہ پر ایک طنزیہ تحریر۔"
 youtube_en: "https://youtu.be/Uql9oyyzclM"
 youtube_ur: "https://youtu.be/Uql9oyyzclM"
+pull_quote_en: ""
+pull_quote_ur: ""
 youtube_id: ""
 available_ur: false
 ---

@@ -11,6 +11,9 @@ description_en: "Constructing angles with a ruler and compass, framed around a q
 description_ur: "پیمانے اور پرکار سے زاویے بنانا، اس سوال کے تناظر میں: کسی انجان شہر میں راستہ کیسے تلاش کیا جائے؟"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-reflection-8/"
 seq_prev_title: "Practicum-V Reflection 8"

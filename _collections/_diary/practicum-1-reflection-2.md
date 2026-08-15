@@ -11,6 +11,9 @@ description_en: "Setting rules for school visits, and why praising effort and li
 description_ur: "اسکول وزٹس کے لیے اصول طے کرنا، اور کوشش کی تعریف اور ہر ایک کی بات سننے میں وقت کیوں لگتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-1/"
 seq_prev_title: "Practicum-I Reflection 1"

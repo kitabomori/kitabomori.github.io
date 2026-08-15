@@ -11,6 +11,9 @@ description_en: "A Physics lesson on time dilation, exploring the relativity of 
 description_ur: "زمانی تمدد (ٹائم ڈائی لیشن) پر فزکس کا سبق، جڑواں تضاد اور آئن سٹائن کے نظریۂ اضافیت کے ذریعے وقت کی اضافیت کا جائزہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-reflection-9/"
 seq_prev_title: "Practicum-V Reflection 9"

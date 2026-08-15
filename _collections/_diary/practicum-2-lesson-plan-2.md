@@ -11,6 +11,9 @@ description_en: "Co-teacher N takes the lead on adding fractions, lacks classroo
 description_ur: "کسور کی جمع پر معاون استاد این کی قیادت میں سبق، جماعت پر کنٹرول کی کمی، اور آواز اور الفاظ پر مزید کام کی ضرورت۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-2-reflection-2/"
 seq_prev_title: "Practicum-II Reflection 2"

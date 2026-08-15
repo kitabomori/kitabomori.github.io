@@ -11,6 +11,9 @@ description_en: "Practicum-II, a choice between an Urdu- and Sindhi-medium schoo
 description_ur: "پریکٹیکم دوم، اردو اور سندھی ذریعہ تعلیم اسکول کے درمیان انتخاب، اور مشترکہ تدریس کی منصوبہ بندی۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflective-report/"
 seq_prev_title: "Practicum-I: Reflective Report"

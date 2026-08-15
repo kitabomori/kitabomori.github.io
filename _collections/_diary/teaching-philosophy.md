@@ -11,6 +11,9 @@ description_en: "On the teacher as gardener: facilitating a student's innate pot
 description_ur: "استاد بطور مالی: طالب علم کی سیکھنے، بڑھنے اور خدمت کرنے کی فطری صلاحیت کو پروان چڑھانا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 ---
 

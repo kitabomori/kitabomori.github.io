@@ -11,6 +11,9 @@ description_en: "An English lesson on free writing, using Communicative Language
 description_ur: "آزاد تحریر پر انگریزی کا سبق، ابلاغی زبان کی تدریس، تعمیری انداز اور 5E ماڈل کے ذریعے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-4-lesson-plan-7/"
 seq_prev_title: "Practicum-IV Lesson Plan 7"

@@ -11,6 +11,9 @@ description_en: "The final lesson of the practicum: time dilation, the twin para
 description_ur: "پریکٹیکم کا آخری سبق: زمانی تمدد، جڑواں تضاد، اور اختتام پر مکمل نمبروں کے ساتھ ایک شاندار اختتام۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-10/"
 seq_prev_title: "Practicum-V Lesson Plan 10"

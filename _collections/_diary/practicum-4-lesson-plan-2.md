@@ -11,6 +11,9 @@ description_en: "A science lesson on loudness and the decibel scale, using an in
 description_ur: "بلندیٔ آواز اور ڈیسیبل پیمانے پر سائنس کا سبق، استقرائی و تفتیشی طریقہ اور تعمیری انداز میں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-4-reflection-1/"
 seq_prev_title: "Practicum-IV Reflection 1"

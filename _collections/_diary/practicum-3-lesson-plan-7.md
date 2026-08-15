@@ -11,6 +11,9 @@ description_en: "A writing lesson built around 'The Blind Boy' — interpreting 
 description_ur: "'دی بلائنڈ بوائے' پر مبنی تحریری سبق — مشکل الفاظ کی تشریح اور نظم کا تحریری خلاصہ لکھنا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-3-lesson-plan-6/"
 seq_prev_title: "Practicum-III Lesson Plan 6"

@@ -11,6 +11,9 @@ description_en: "What a practicum is, and why this diary of lesson plans, reflec
 description_ur: "پریکٹیکم کیا ہوتا ہے، اور سبقی منصوبوں، تاثرات اور تفکراتی رپورٹس پر مشتمل یہ ڈائری کیوں شائع کی جا رہی ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_next_url: "/diary/practicum-1-reflection-1/"
 seq_next_title: "Practicum-I Reflection 1"

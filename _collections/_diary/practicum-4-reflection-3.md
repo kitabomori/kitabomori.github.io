@@ -11,6 +11,9 @@ description_en: "Continuing the sound unit with amplitude and a group task, and 
 description_ur: "طول موج اور گروپ ٹاسک کے ساتھ آواز کے موضوع کا تسلسل، اور وقفے میں ایک دریافت: تقریباً ہر طالب علم پہلے سے ٹیوشن پڑھ رہا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-4-lesson-plan-3/"
 seq_prev_title: "Practicum-IV Lesson Plan 3"

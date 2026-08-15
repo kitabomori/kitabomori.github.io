@@ -11,6 +11,9 @@ description_en: "Back to back lesson — a rough start in maths, and what constr
 description_ur: "لگاتار دو سبق — ریاضی میں ایک مشکل آغاز، اور تعمیریت (کنسٹرکٹیوازم) ایک سبق سے کیا تقاضا کرتی ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-3-lesson-plan-3/"
 seq_prev_title: "Practicum-III Lesson Plan 3"

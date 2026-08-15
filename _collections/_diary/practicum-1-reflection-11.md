@@ -11,6 +11,9 @@ description_en: "A school says it has a discipline policy, but no one can produc
 description_ur: "اسکول کا دعویٰ ہے کہ اس کے پاس ضابطہ اخلاق موجود ہے، مگر کوئی بھی اسے تحریری شکل میں پیش نہیں کر پاتا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-10/"
 seq_prev_title: "Practicum-I Reflection 10"

@@ -11,6 +11,9 @@ description_en: "Observing a student in maths class, a conversation about sketch
 description_ur: "ریاضی کی کلاس میں ایک طالب علم کا مشاہدہ، اور خاکہ نگاری، کرکٹ اور گروپ اسٹڈی پر ایک گفتگو۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-9/"
 seq_prev_title: "Practicum-I Reflection 9"

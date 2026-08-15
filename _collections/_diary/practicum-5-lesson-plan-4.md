@@ -11,6 +11,9 @@ description_en: "Teaching diary writing through an excerpt of Anne Frank's diary
 description_ur: "این فرینک کی ڈائری کے اقتباس کے ذریعے ڈائری نویسی کی تدریس، پھر طلبہ سے نئے استاد کے پہلے دن پر اپنی تحریر لکھوانا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-reflection-3/"
 seq_prev_title: "Practicum-V Reflection 3"

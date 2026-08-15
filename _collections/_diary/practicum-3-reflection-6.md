@@ -11,6 +11,9 @@ description_en: "Why consistency in teaching matters, and why no lesson plan eve
 description_ur: "تدریس میں تسلسل کیوں اہم ہے، اور کوئی بھی سبقی منصوبہ حقیقی جماعت کے سامنے جوں کا توں کیوں نہیں رہتا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-3-lesson-plan-10/"
 seq_prev_title: "Practicum-III Lesson Plan 10"

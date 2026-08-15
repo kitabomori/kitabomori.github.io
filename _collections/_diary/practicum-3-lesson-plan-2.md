@@ -11,6 +11,9 @@ description_en: "Reading and discussing the poem 'The Blind Boy' — building vo
 description_ur: "نظم 'دی بلائنڈ بوائے' کا مطالعہ اور تبادلۂ خیال — الفاظ کا ذخیرہ بڑھانا اور مرکزی خیال کا خلاصہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-3-reflection-1/"
 seq_prev_title: "Practicum-III Reflection 1"

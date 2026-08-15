@@ -11,6 +11,9 @@ description_en: "A near-empty classroom, last-minute switch to grade 3 — and a
 description_ur: "تقریباً خالی جماعت، آخری لمحے میں جماعت سوم میں تبدیلی — اور سبقی منصوبے کی اہمیت کا حقیقی سبق۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-2-lesson-plan-3/"
 seq_prev_title: "Practicum-II Lesson Plan 3"

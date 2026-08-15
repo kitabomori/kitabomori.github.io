@@ -11,6 +11,9 @@ description_en: "A science lesson on loudness, amplitude, and oscilloscopes, usi
 description_ur: "بلندیٔ آواز، طول موج اور آسیلوسکوپ پر سائنس کا سبق، لیکچر و مظاہرے کے طریقے اور تعمیری انداز میں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-4-reflection-2/"
 seq_prev_title: "Practicum-IV Reflection 2"

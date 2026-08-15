@@ -11,6 +11,9 @@ description_en: "English speaking practice — pairing students up to ask and an
 description_ur: "انگریزی بول چال کی مشق — طلبہ کو جوڑوں میں تقسیم کر کے ذاتی دلچسپیوں پر سوال و جواب۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-2-lesson-plan-5/"
 seq_prev_title: "Practicum-II Lesson Plan 5"

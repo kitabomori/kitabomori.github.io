@@ -11,6 +11,9 @@ description_en: "Teaching the formation of the Muslim League while trying not to
 description_ur: "مسلم لیگ کے قیام کی تدریس، اور اپنے اسکول کے زمانے کی یک طرفہ تاریخ کو دہرانے سے بچنے کی کوشش۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-5/"
 seq_prev_title: "Practicum-V Lesson Plan 5"

@@ -11,6 +11,9 @@ description_en: "Delivering first lesson — low attendance, overloaded content,
 description_ur: "پہلا سبق پڑھانا — کم حاضری، مواد کی زیادتی، اور معاون اساتذہ کی رائے نے کیا ظاہر کیا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-2-lesson-plan-1/"
 seq_prev_title: "Practicum-II Lesson Plan 1"

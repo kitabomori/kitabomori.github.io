@@ -11,6 +11,9 @@ description_en: "A science lesson on periodic trends in Periods II and III, usin
 description_ur: "دوسرے اور تیسرے پیریڈ میں متواتر رجحانات پر سائنس کا سبق، استقرائی و تفتیشی طریقہ اور تعمیری انداز میں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-3-reflective-report/"
 seq_prev_title: "Practicum-III: Reflective Report"

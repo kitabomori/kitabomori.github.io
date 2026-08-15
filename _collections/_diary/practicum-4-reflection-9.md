@@ -11,6 +11,9 @@ description_en: "A free-writing lesson built from VARK data and a shared adventu
 description_ur: "VARK ڈیٹا اور ایک مشترکہ ماجرائی کہانی سے تشکیل پانے والا آزاد تحریر کا سبق، ایکس اسکول کے دوسرے آخری وزٹ پر۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-4-lesson-plan-9/"
 seq_prev_title: "Practicum-IV Lesson Plan 9"

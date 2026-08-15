@@ -11,6 +11,9 @@ description_en: "Building vocabulary — word webs, group definitions, and using
 description_ur: "الفاظ کا ذخیرہ بڑھانا — ورڈ ویب، گروپ میں تعریفات، اور نئے الفاظ کا جملوں میں درست استعمال۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-3-lesson-plan-8/"
 seq_prev_title: "Practicum-III Lesson Plan 8"

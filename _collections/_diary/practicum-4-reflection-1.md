@@ -11,6 +11,9 @@ description_en: "A first real look at X School, Sukkur — testing its reputatio
 description_ur: "ایکس اسکول، سکھر کا پہلا حقیقی مشاہدہ — اس کی شہرت اور اصولوں کو ہزاروں طلبہ کے انتظام کی حقیقت کے مقابل رکھنا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-4-lesson-plan-1/"
 seq_prev_title: "Practicum-IV Lesson Plan 1"

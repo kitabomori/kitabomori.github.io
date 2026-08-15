@@ -11,6 +11,9 @@ description_en: "Back to physics: sound amplification devices, from microphones 
 description_ur: "دوبارہ فزکس کی طرف: آواز کو تقویت دینے والے آلات، مائیکروفون سے لے کر سماعتی آلات تک، اور طلبہ انہیں روزمرہ میں کہاں دیکھتے ہیں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-reflection-5/"
 seq_prev_title: "Practicum-V Reflection 5"

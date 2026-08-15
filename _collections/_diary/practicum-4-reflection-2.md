@@ -11,6 +11,9 @@ description_en: "A lesson on sound loudness taught with a mobile decibel app, an
 description_ur: "موبائل ڈیسیبل ایپ کی مدد سے بلندیٔ آواز کا سبق، اور وہ چھوٹی خامیاں جو خود کو پڑھاتے دیکھنے سے سامنے آتی ہیں۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-4-lesson-plan-2/"
 seq_prev_title: "Practicum-IV Lesson Plan 2"

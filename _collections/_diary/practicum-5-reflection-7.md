@@ -11,6 +11,9 @@ description_en: "Coining “the pedagogy of perfume” after hearing a student w
 description_ur: "'خوشبو کا تدریسی فلسفہ' کی اصطلاح، یہ سن کر کہ ایک طالب علم کو محض اس خوشبو کی وجہ سے جماعت سے روک دیا گیا جو استاد کو ناپسند تھی۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-7/"
 seq_prev_title: "Practicum-V Lesson Plan 7"

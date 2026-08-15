@@ -11,6 +11,9 @@ description_en: "A football-ground chat and a cricket match before class, and a 
 description_ur: "کلاس سے پہلے فٹبال گراؤنڈ پر گفتگو اور کرکٹ میچ، اور یہ یاد دہانی کہ کوئی سبقی منصوبہ حقیقی اسکول کے دن سے بے اثر نہیں نکلتا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-4-lesson-plan-4/"
 seq_prev_title: "Practicum-IV Lesson Plan 4"

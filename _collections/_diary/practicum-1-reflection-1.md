@@ -11,6 +11,9 @@ description_en: "The first class of Practicum: a nervous room, a teacher full of
 description_ur: "پریکٹیکم کی پہلی کلاس: ایک گھبرایا ہوا کمرہ، توانائی سے بھرپور استاد، اور تاثر لکھنے کا پہلا سبق۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-0-introduction/"
 seq_prev_title: "About This Diary"

@@ -11,6 +11,9 @@ description_en: "A reflection on how reading, writing, and conversations shaped 
 description_ur: "مطالعے، تحریر اور گفتگو نے میری شناخت کو کیسے تشکیل دیا اور مجھے اپنے ارد گرد کی دنیا پر سوال اٹھانے پر کیسے آمادہ کیا، اس پر ایک تحریر۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 ---
 

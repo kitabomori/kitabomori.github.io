@@ -13,6 +13,7 @@ description_en: "Opening the practicum with a lesson on dreams, drawing on Freud
 description_ur: "خوابوں کے سبق سے پریکٹیکم کا آغاز، فرائیڈ، اقبال، گاندھی اور مارٹن لوتھر کنگ جونیئر کے حوالوں کے ساتھ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
 available_en: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-1/"
 seq_prev_title_en: "Practicum-V Lesson Plan 1"

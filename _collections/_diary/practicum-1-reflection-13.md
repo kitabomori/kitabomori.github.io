@@ -11,6 +11,9 @@ description_en: "A final visit spent understanding bullying — its causes, form
 description_ur: "آخری وزٹ، غنڈہ گردی (بلی اِنگ) کو سمجھنے کے لیے — اس کے اسباب، صورتیں، اور استاد کی ذمہ داری کہ وہ اسے پہچانے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-12/"
 seq_prev_title: "Practicum-I Reflection 12"

@@ -11,6 +11,9 @@ description_en: "Angles taught through the 5E model — engaging, exploring, exp
 description_ur: "5E ماڈل کے ذریعے زاویوں کی تدریس — دلچسپی پیدا کرنا، دریافت، وضاحت، تفصیل اور تشخیص۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-3-reflection-4/"
 seq_prev_title: "Practicum-III Reflection 4"

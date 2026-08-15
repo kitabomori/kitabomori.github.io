@@ -11,6 +11,9 @@ description_en: "Questioning the banking model of education, and whether a lesso
 description_ur: "تعلیم کے 'بینکنگ ماڈل' پر سوالات، اور کیا سبقی منصوبہ رہنمائی اور مشاورت کا لمحہ بھی بن سکتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-4-lesson-plan-5/"
 seq_prev_title: "Practicum-IV Lesson Plan 5"

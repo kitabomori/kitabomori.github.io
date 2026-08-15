@@ -11,6 +11,9 @@ description_en: "Speaking lesson on truthfulness, using small-group scenarios to
 description_ur: "سچائی پر مبنی بول چال کا سبق، چھوٹے گروپوں میں منظرناموں کے ذریعے یہ جانچنا کہ طلبہ بددیانتی پر کیسا ردعمل دیں گے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-3-lesson-plan-4/"
 seq_prev_title: "Practicum-III Lesson Plan 4"

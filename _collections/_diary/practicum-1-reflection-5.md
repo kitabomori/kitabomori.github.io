@@ -11,6 +11,9 @@ description_en: "An interview with a cooperating teacher and what that reveals a
 description_ur: "ایک معاون استاد کے ساتھ انٹرویو، اور تدریس میں خود کو باخبر رکھنے کے بارے میں اس سے کیا معلوم ہوا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-4/"
 seq_prev_title: "Practicum-I Reflection 4"

@@ -11,6 +11,9 @@ description_en: "Fractions lesson for grade 5, with feedback from both co-teache
 description_ur: "جماعت پنجم کے لیے کسور کا سبق، اور پیچھے رہ جانے والے طلبہ کی مدد پر دونوں معاون اساتذہ کی رائے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-2-reflection-1/"
 seq_prev_title: "Practicum-II Reflection 1"

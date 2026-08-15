@@ -11,6 +11,9 @@ description_en: "Kitabomori invites researchers, teachers, students, and policym
 description_ur: "کتابومری محققین، اساتذہ، طلباء اور پالیسی سازوں کو مضامین، خطوط، جائزے اور تخلیقی تحریر جمع کرانے کی دعوت دیتا ہے۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 ---
 
 {% if site.lang == 'ur' %}

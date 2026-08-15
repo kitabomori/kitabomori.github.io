@@ -11,6 +11,9 @@ description_en: "Please switch to the Urdu version of the website to read."
 description_ur: "فیض آباد کی پرانی لائبری کی یاد میں"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_en: false
 ---
 

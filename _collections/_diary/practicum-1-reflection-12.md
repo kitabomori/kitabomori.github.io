@@ -11,6 +11,9 @@ description_en: "Scoring a cooperating teacher's performance — strong on conte
 description_ur: "ایک معاون استاد کی کارکردگی کا جائزہ — مواد پر مضبوط گرفت، مگر منصوبہ بندی اور تشخیص میں کمزوری۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-11/"
 seq_prev_title: "Practicum-I Reflection 11"

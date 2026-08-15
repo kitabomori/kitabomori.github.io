@@ -11,6 +11,9 @@ description_en: "An Urdu lesson on the art of letter-writing, opening with the t
 description_ur: "خطوط نویسی کی تاریخ اور جدید شکلوں پر ایک اردو سبق، روایتی اور عصری طریقوں کا موازنہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_en: false
 seq_prev_url: "/diary/practicum-5-reflection-1/"
 seq_prev_title_en: "Practicum-V Reflection 1"

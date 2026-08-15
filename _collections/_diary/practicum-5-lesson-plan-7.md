@@ -11,6 +11,9 @@ description_en: "Measuring the whiteboard to arrive at a very large number, then
 description_ur: "وائٹ بورڈ کی پیمائش سے ایک بہت بڑا عدد حاصل کرنا، پھر اسے قابلِ فہم بنانے کے لیے سائنسی اظہار کا استعمال۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-reflection-6/"
 seq_prev_title: "Practicum-V Reflection 6"

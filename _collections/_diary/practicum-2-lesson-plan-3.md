@@ -11,6 +11,9 @@ description_en: "A swapped class — stepping in for Co-teacher H's grade 2 less
 description_ur: "ایک اچانک بدلی ہوئی کلاس — معاون استاد ایچ کی جماعت دوم کے سبق میں قدم رکھنا اور موقع پر بدلاؤ کرنا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-2-reflection-3/"
 seq_prev_title: "Practicum-II Reflection 3"

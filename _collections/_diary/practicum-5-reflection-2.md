@@ -11,6 +11,9 @@ description_en: "A revised, paired lesson on letter writing — and a first expe
 description_ur: "خط نویسی پر ایک نظرثانی شدہ، جوڑی میں پڑھایا گیا سبق — اور کسی دوسرے طالب علم استاد کے ساتھ مل کر پڑھانے کا پہلا تجربہ۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_en: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-2/"
 seq_prev_title_en: "Practicum-V Lesson Plan 2"

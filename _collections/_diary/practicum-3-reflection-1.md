@@ -11,6 +11,9 @@ description_en: "A first lesson of practicum III, and the gap between planning a
 description_ur: "پریکٹیکم سوم کا پہلا سبق، اور بول چال کی سرگرمی کی منصوبہ بندی اور اسے عملی طور پر چلانے کے درمیان فرق۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-3-lesson-plan-1/"
 seq_prev_title: "Practicum-III Lesson Plan 1"

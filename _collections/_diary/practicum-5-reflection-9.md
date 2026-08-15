@@ -11,6 +11,9 @@ description_en: "Teaching angle construction from the floor of a U-shaped classr
 description_ur: "یو کی شکل کی جماعت کے فرش سے زاویہ سازی کی تدریس، اور جیومیٹری کو راستہ تلاش کرنے اور زمانی تمدد سے جوڑنا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-9/"
 seq_prev_title: "Practicum-V Lesson Plan 9"

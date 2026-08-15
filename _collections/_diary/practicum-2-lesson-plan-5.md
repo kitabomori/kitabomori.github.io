@@ -11,6 +11,9 @@ description_en: "Practicum-II final lesson plan: introducing grade 8 students to
 description_ur: "پریکٹیکم دوم کا آخری سبقی منصوبہ: جماعت ہشتم کے طلبہ کو غیر ناطق اعداد کی نقشہ بندی سے متعارف کروانا۔"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_id: ""
+pull_quote_en: ""
+pull_quote_ur: ""
 available_ur: false
 seq_prev_url: "/diary/practicum-2-lesson-plan-4/"
 seq_prev_title: "Practicum-II Lesson Plan 4"
