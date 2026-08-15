@@ -10,8 +10,6 @@ permalink: /articles/
 <div class="card-grid card-grid-articles">
   {% assign sorted_items = site.articles | sort: "date" | reverse %}
   {% for item in sorted_items %}
-  {% if site.lang == 'en' and item.available_en == false %}{% continue %}{% endif %}
-  {% if site.lang == 'ur' and item.available_ur == false %}{% continue %}{% endif %}
   <div class="content-card">
     <h2 class="card-title">
       <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}">
