@@ -16,7 +16,8 @@ permalink: /events/
 <div class="card-grid card-grid-events">
   {% assign sorted_items = site.events | sort: "date" | reverse %}
   {% for item in sorted_items %}
-  {% if (site.lang == 'en' and item.available_en == false) or (site.lang == 'ur' and item.available_ur == false) %}{% continue %}{% endif %}
+  {% if site.lang == 'en' and item.available_en == false %}{% continue %}{% endif %}
+  {% if site.lang == 'ur' and item.available_ur == false %}{% continue %}{% endif %}
   <div class="content-card">
     <h2 class="card-title">
       <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}">

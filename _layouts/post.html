@@ -196,7 +196,14 @@ layout: base
 
     <div class="post-body-content">
       <!--KITABOMORI-POST-BODY-START-->
-      {% unless (site.lang == 'ur' and page.available_ur == false) or (site.lang == 'en' and page.available_en == false) %}
+      <!-- Liquid tags can't use parentheses to group and/or (they're
+           invalid characters in a Liquid tag and silently break it) —
+           so this is written as two single-condition checks into a
+           flag, not "(a and b) or (c and d)" in one unless. -->
+      {% assign post_body_hidden = false %}
+      {% if site.lang == 'ur' and page.available_ur == false %}{% assign post_body_hidden = true %}{% endif %}
+      {% if site.lang == 'en' and page.available_en == false %}{% assign post_body_hidden = true %}{% endif %}
+      {% unless post_body_hidden %}
       {{ content }}
       {% endunless %}
       <!--KITABOMORI-POST-BODY-END-->
