@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-2-lesson-plan-2/"
 seq_prev_title: "Practicum-II Lesson Plan 2"
+seq_prev_title_ur: "پریکٹیکم دوم - سبقی منصوبہ 2"
 seq_next_url: "/diary/practicum-2-lesson-plan-3/"
 seq_next_title: "Practicum-II Lesson Plan 3"
+seq_next_title_ur: "پریکٹیکم دوم - سبقی منصوبہ 3"
 ---
 
 <p>We returned to the field for the third time for co-teaching. This time, it was co-teacher N's turn to teach, and my job was to sit in the classroom corner and observe without disturbing the class. The co-teacher began the lesson by attempting to connect it to the previous lesson. The lesson was then immediately started and continued as planned. I was trying to keep one eye on the co-teacher and the other on the students and how they were responding to the teacher's instruction. Throughout the process, I took notes on the co-teacher's strengths and weaknesses. Following the class, I discussed my observations with the co-teacher and offered some suggestions for improvement.</p>

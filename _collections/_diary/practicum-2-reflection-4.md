@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-2-lesson-plan-3/"
 seq_prev_title: "Practicum-II Lesson Plan 3"
+seq_prev_title_ur: "پریکٹیکم دوم - سبقی منصوبہ 3"
 seq_next_url: "/diary/practicum-2-reflection-5/"
 seq_next_title: "Practicum-II Reflection 5"
+seq_next_title_ur: "پریکٹیکم دوم - عکاسی 5"
 ---
 
 <p>This was our fourth visit to the X Government Primary School, Old Sukkur, and only one student from grade five was present when we arrived. According to the cooperative teacher, students are absent due to Ramadan and the extreme heat. It was co-teacher H's turn to deliver the lesson planned for grade 5, but things had changed for her like a nightmare when the cooperating teacher, after consulting with the head teacher, led us to a third-grade class instead. She began by telling the students about herself, and then each student introduced themselves. After asking the students about a table of single-digit numbers, the teacher began teaching counting numbers and some basic addition and subtraction. As we had to engage the students for three periods, the teacher eventually involved them in the poems by bringing them to the front of the class.</p>

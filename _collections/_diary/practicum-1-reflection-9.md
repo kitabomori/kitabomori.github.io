@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-8/"
 seq_prev_title: "Practicum-I Reflection 8"
+seq_prev_title_ur: "پریکٹیکم اول - عکاسی 8"
 seq_next_url: "/diary/practicum-1-reflection-10/"
 seq_next_title: "Practicum-I Reflection 10"
+seq_next_title_ur: "پریکٹیکم اول - عکاسی 10"
 ---
 
 <p>This was the seventh visit to the Government X school, Old Sukkur. This time, the task was to conduct an interview with a student. During the break, I asked A(a student) for his time. With full zeal and zest, A started his lunch time for my learning. In the interview, I asked about his background, his family and siblings, his early education, the language he spoke, the subject he liked most, his favourite teacher, his hobbies, and, finally, his friend circle.</p>

@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-4-lesson-plan-3/"
 seq_prev_title: "Practicum-IV Lesson Plan 3"
+seq_prev_title_ur: "پریکٹیکم چہارم - سبقی منصوبہ 3"
 seq_next_url: "/diary/practicum-4-lesson-plan-4/"
 seq_next_title: "Practicum-IV Lesson Plan 4"
+seq_next_title_ur: "پریکٹیکم چہارم - سبقی منصوبہ 4"
 ---
 
 <p>The third lesson was a continuation of the last lesson, where I taught about the loudness of sound, but this time it was about the relationship between amplitude and sound and how we measure it. There is a break before the science class, so I arrived about 20 minutes early and arranged the chairs for a group task. For some time, I mingled with students and discovered their interest in certain subjects. It was shocking to learn that almost every student had a tutor in an air-conditioned room at home, and I wondered why these students came to this school. When all the students entered the class, I let them make groups with their friends. The class was about to start when the supervising teacher came in and called a few students to the back to take a test they had missed last time. I should have stopped it from happening, but some unknown rationale overcame me, and I felt that the supervising teacher is bound by the school's strict rules, which require one to fulfil certain tasks, such as submitting test results and checking copies on time. Certain things were beyond my control, but others also caught my attention and were part of my teachings.</p>

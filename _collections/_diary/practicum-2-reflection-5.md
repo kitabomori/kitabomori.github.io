@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-2-reflection-4/"
 seq_prev_title: "Practicum-II Reflection 4"
+seq_prev_title_ur: "پریکٹیکم دوم - عکاسی 4"
 seq_next_url: "/diary/practicum-2-lesson-plan-4/"
 seq_next_title: "Practicum-II Lesson Plan 4"
+seq_next_title_ur: "پریکٹیکم دوم - سبقی منصوبہ 4"
 ---
 
 <p>During our visit to the Government X School, Old Sukkur, last week, the school's administration informed us that classes would end this week and that the students would undergo exams to be promoted to the next class. This time, we went to the school not to teach but to observe how exams are conducted in government schools. When we arrived at school around 10 a.m., a paper was already underway, and we learned that another paper would follow after a short break once the current one was completed. The second paper of the day began shortly after. The assigned teacher in each classroom was responsible for providing answer sheets and question papers, and for recording student attendance. While the paper was in progress, the manager of this school and three others encountered a very stern lady, later identified as the Taluka Officer. She had come to observe the examination process and was annoyed by our presence at the school. I was taking a copy of the exam paper with the teacher's permission when I ran into the manager, who told me I couldn't have it. He reported this incident to our supervisor. After that, I tried to get involved in the examination process, but I felt like I was a hindrance, and the students seemed to be having some trouble because of my presence in the class. So I came out of the class and observed the old school building, built under British rule to teach women skills, which was later converted into a school.</p>

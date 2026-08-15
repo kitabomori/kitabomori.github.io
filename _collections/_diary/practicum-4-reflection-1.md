@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-4-lesson-plan-1/"
 seq_prev_title: "Practicum-IV Lesson Plan 1"
+seq_prev_title_ur: "پریکٹیکم چہارم - سبقی منصوبہ 1"
 seq_next_url: "/diary/practicum-4-lesson-plan-2/"
 seq_next_title: "Practicum-IV Lesson Plan 2"
+seq_next_title_ur: "پریکٹیکم چہارم - سبقی منصوبہ 2"
 ---
 
 <p>I have seen and witnessed the reputation of X School, Sukkur. For some, its popularity is linked to a well-known local university, as that university was founded in two classrooms of a public school. As a prospective teacher, I had kept all the theories and what education is all about. When I visited the School for the first time, the discussed rules and regulations forced me to frame a picture of the school that focused solely on managing thousands of students as followers. The second visit to the school, where I delivered the first lesson, went a bit better. Grade 8-Daisy has a class of 33 students, and there is plenty of space to move freely among them.</p>

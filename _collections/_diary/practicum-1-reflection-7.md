@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-6/"
 seq_prev_title: "Practicum-I Reflection 6"
+seq_prev_title_ur: "پریکٹیکم اول - عکاسی 6"
 seq_next_url: "/diary/practicum-1-reflection-8/"
 seq_next_title: "Practicum-I Reflection 8"
+seq_next_title_ur: "پریکٹیکم اول - عکاسی 8"
 ---
 
 <p>This was the fifth visit to the Government X School, Old Sukkur, to inspect and record when and why students pay attention in the classroom. It was mathematics class, as usual, according to the school's timetable. Following the instructions on the provided observation sheet, I excluded 10 students from the 31 present in the class and began monitoring their movements. The very first set of instructions from the cooperating teacher was to write down a solved question from the board and give it time. And most of the students under consideration for the observation paid close attention. In the next set of instructions, when the teacher was solving a question on the board, only 4 of 10 remained focused, while others were busy with various activities. In response to the third and final set of instructions, in which the teacher gave students a question to solve, only half of the students observed putting effort into solving it.</p>

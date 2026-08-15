@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-10/"
 seq_prev_title: "Practicum-V Lesson Plan 10"
+seq_prev_title_ur: "پریکٹیکم پنجم - سبقی منصوبہ 10"
 seq_next_url: "/diary/practicum-5-reflective-report/"
 seq_next_title: "Practicum-V: Reflective Report"
+seq_next_title_ur: "پریکٹیکم پنجم - عکاسی رپورٹ"
 ---
 
 <p>Have you ever thought about what time is? For some, it's an illusion; for some, an invention to sell clocks; but for some, it's an elephant, and we're blind, with very limited knowledge, throwing our observations at only the part of the elephant we have access to — only the part we can take hold of. I asked, "What is time for you?" and had students in B.Ed-VIII write their responses on Mentimeter to start the lesson on "time dilation" in physics. I put forward the twin paradox and the phenomenon of time dilation that explains it. With this, the second student teacher explained the frame of reference for observing objects at rest and in motion. He threw a ball to help students understand how speed, time, and distance are relative, and how the Lorentz factor proves it. He then shared the possibility of time travel for passengers on a fast-moving spacecraft as a dramatic application of time dilation, and closed the lesson there.</p>

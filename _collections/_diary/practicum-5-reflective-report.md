@@ -14,6 +14,7 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-5-reflection-10/"
 seq_prev_title: "Practicum-V Reflection 10"
+seq_prev_title_ur: "پریکٹیکم پنجم - عکاسی 10"
 ---
 
 <p>Over the 16 weeks of teaching practice, we were supposed to visit the school 12 to 14 times, or conduct micro-teaching at our university when we didn't go to the site. In the end, only 10 lesson plans, along with observation checklists and reflections on each lesson, needed to be submitted as an e-portfolio to the course supervisor to meet the course requirements. Throughout, the blend of classroom observations and post-lesson conferences was pivotal in making our teaching effective, understanding students' behaviour, and shaping our instructional strategies to engage them.</p>

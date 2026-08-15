@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-4-lesson-plan-2/"
 seq_prev_title: "Practicum-IV Lesson Plan 2"
+seq_prev_title_ur: "پریکٹیکم چہارم - سبقی منصوبہ 2"
 seq_next_url: "/diary/practicum-4-lesson-plan-3/"
 seq_next_title: "Practicum-IV Lesson Plan 3"
+seq_next_title_ur: "پریکٹیکم چہارم - سبقی منصوبہ 3"
 ---
 
 <p>I had planned to teach about sound loudness and how to measure it using a mobile sound meter app. The observation sheet and the supervising teacher's comments are encouraging, as they indicate some improvement over the previous lesson. I maintained the board and wrote the lesson topic, but I still forgot to write the subtopic. I planned to assess the learning using a worksheet, but due to time constraints/mismanagement, I went to the students individually and in pairs to ask questions orally. To sum it all up, the class went smoothly, but there are a few observations/shortcomings that are important to address in the coming lessons.</p>

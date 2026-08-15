@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-7/"
 seq_prev_title: "Practicum-V Lesson Plan 7"
+seq_prev_title_ur: "پریکٹیکم پنجم - سبقی منصوبہ 7"
 seq_next_url: "/diary/practicum-5-lesson-plan-8/"
 seq_next_title: "Practicum-V Lesson Plan 8"
+seq_next_title_ur: "پریکٹیکم پنجم - سبقی منصوبہ 8"
 ---
 
 <p>Imagine you are a teacher and one of your students is roaming outside the classroom. When you inquire, would it not be hilarious to hear that a teacher has not let a student sit in class because she did not like the perfume he was wearing? Unfortunately, this is a real incident. Laughing and wondering about it, I entered 8th-X to deliver my seventh lesson on April 18. I started by asking students to help me measure the dimensions of the whiteboard in centimetres and calculate the area in square centimetres. We reached a very large number, and I wondered how we could condense it or make it easier to handle. The students are sharp, and they quickly grasped the concept of scientific notation; I also discussed its rules. I tried to explain astronomical units and a light year, and compared the masses of protons and electrons to give a sense of how big and small the numbers we deal with in the world outside the classroom really are. Finally, I taught the students how to calculate someone's age in seconds, and to assess them, I asked them to write the previously calculated age (238,567,680 seconds) in standard form.</p>

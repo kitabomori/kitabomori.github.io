@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-13/"
 seq_prev_title: "Practicum-I Reflection 13"
+seq_prev_title_ur: "پریکٹیکم اول - عکاسی 13"
 seq_next_url: "/diary/practicum-2-reflection-1/"
 seq_next_title: "Practicum-II Reflection 1"
+seq_next_title_ur: "پریکٹیکم دوم - عکاسی 1"
 ---
 
 <p>The third semester of B.Ed.-III started in October 2021. With other courses, Practicum-I was also part of the semester. The practicum course is unique in that it aims to provide prospective teachers with experience by exposing them to the school environment through weekly visits. It also has specific objectives, such as identifying connections between teaching theory and practice. The other rationales are: to collaborate with peers, cooperating teachers, school staff, and the practicum supervisor; and to develop professional relationships by observing elements of the school from the gatekeeper to the principal. Most of the lot was to invite, accept and utilise feedback from the cooperating teacher, supervisor and peers for learning.</p>

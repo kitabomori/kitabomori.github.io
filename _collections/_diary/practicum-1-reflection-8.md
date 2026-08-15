@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-7/"
 seq_prev_title: "Practicum-I Reflection 7"
+seq_prev_title_ur: "پریکٹیکم اول - عکاسی 7"
 seq_next_url: "/diary/practicum-1-reflection-9/"
 seq_next_title: "Practicum-I Reflection 9"
+seq_next_title_ur: "پریکٹیکم اول - عکاسی 9"
 ---
 
 <p>The goal of today's school visit was to observe how frequently a teacher uses the verbal involvement strategy in class and to understand its implications for the lesson. When I entered classroom 9th-A, the cooperation was a bit late, which gave me some time to quickly review the observation sheet for taking notes. When the teacher arrived, he greeted everyone and then asked a student from the front row for the mathematics textbook. Next, he started writing a question about logarithmic addition on the board. While solving that question, the cooperating teacher asked some students what the next step would be to ensure they remained on task. Now and then, the cooperating teacher asked several general and specific questions and gave oral instructions to engage the students.</p>

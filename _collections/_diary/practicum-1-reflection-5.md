@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-4/"
 seq_prev_title: "Practicum-I Reflection 4"
+seq_prev_title_ur: "پریکٹیکم اول - عکاسی 4"
 seq_next_url: "/diary/practicum-1-reflection-6/"
 seq_next_title: "Practicum-I Reflection 6"
+seq_next_title_ur: "پریکٹیکم اول - عکاسی 6"
 ---
 
 <p>This time around, our task was to interview our cooperative teacher. After reviewing the observation sheet, my colleagues and I agreed on a few questions the teacher asked. From the cooperative teacher's reaction when we asked him about his previous time, he seemed to be trying to escape the interview. But, under continuous pressure, he reluctantly agreed to give some of his valuable time to our learning. The interview focused on classroom management.</p>

@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-3-lesson-plan-9/"
 seq_prev_title: "Practicum-III Lesson Plan 9"
+seq_prev_title_ur: "پریکٹیکم سوم - سبقی منصوبہ 9"
 seq_next_url: "/diary/practicum-3-lesson-plan-10/"
 seq_next_title: "Practicum-III Lesson Plan 10"
+seq_next_title_ur: "پریکٹیکم سوم - سبقی منصوبہ 10"
 ---
 
 <p><em>Reflection on Lessons VIII and IX</em></p>

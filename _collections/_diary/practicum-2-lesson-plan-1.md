@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-2-reflection-1/"
 seq_prev_title: "Practicum-II Reflection 1"
+seq_prev_title_ur: "پریکٹیکم دوم - عکاسی 1"
 seq_next_url: "/diary/practicum-2-reflection-2/"
 seq_next_title: "Practicum-II Reflection 2"
+seq_next_title_ur: "پریکٹیکم دوم - عکاسی 2"
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">

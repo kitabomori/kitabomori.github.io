@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-3-reflection-6/"
 seq_prev_title: "Practicum-III Reflection 6"
+seq_prev_title_ur: "پریکٹیکم سوم - عکاسی 6"
 seq_next_url: "/diary/practicum-4-lesson-plan-1/"
 seq_next_title: "Practicum-IV Lesson Plan 1"
+seq_next_title_ur: "پریکٹیکم چہارم - سبقی منصوبہ 1"
 ---
 
 <p>The Teaching Practice-III course of B.Ed-VI was the extension of Teaching Practice-I and II. In the last two practicums, we observed the different dimensions of the school, from gatekeeper to principal. We developed lesson plans and delivered lessons through co-teaching and micro-teaching.</p>

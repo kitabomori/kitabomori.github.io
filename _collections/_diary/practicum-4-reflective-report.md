@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-4-lesson-plan-10/"
 seq_prev_title: "Practicum-IV Lesson Plan 10"
+seq_prev_title_ur: "پریکٹیکم چہارم - سبقی منصوبہ 10"
 seq_next_url: "/diary/practicum-5-lesson-plan-1/"
 seq_next_title: "Practicum-V Lesson Plan 1"
+seq_next_title_ur: "پریکٹیکم پنجم - سبقی منصوبہ 1"
 ---
 
 <p>As a teacher, the first time I met the student outside the classroom, I was a stranger to them. The second time I met on the playground, I was an instructor. The next time I was their class fellow. Being with the students at the playgrounds and having small chats here and there throughout the practicum at X School, Sukkur, made this experience a bit different from the past ones. In this reflective report, I will discuss what I did during the ten visits to the school and what I have learned.</p>

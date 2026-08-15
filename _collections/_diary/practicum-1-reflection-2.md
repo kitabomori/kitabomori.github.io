@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-1/"
 seq_prev_title: "Practicum-I Reflection 1"
+seq_prev_title_ur: "پریکٹیکم اول - عکاسی 1"
 seq_next_url: "/diary/practicum-1-reflection-3/"
 seq_next_title: "Practicum-I Reflection 3"
+seq_next_title_ur: "پریکٹیکم اول - عکاسی 3"
 ---
 
 <p>The second practicum class of the 3rd semester was held on the 13th of October in the Smart classroom of the Knowledge Centre. All the students were busy giving the final touch to the reflection of the previous class when the teacher arrived. He greeted and placed the utmost importance on one aspect of morality in his opening remarks. He gave particular attention to acknowledging and appreciating an individual's efforts and contributions, particularly those of a teacher. Next, the teacher continued his lecture on writing a reflection, which he left in the last class. In the next section of the class, the teacher invited all the students to set some rules for the upcoming school visits. In this regard, students initially had to come up with five rules, each limited to 5 words. Next, it was to filter out the rules by avoiding negative phrases. Finally, we agreed on six rules with the instructor's help.</p>

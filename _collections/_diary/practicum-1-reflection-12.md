@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-11/"
 seq_prev_title: "Practicum-I Reflection 11"
+seq_prev_title_ur: "پریکٹیکم اول - عکاسی 11"
 seq_next_url: "/diary/practicum-1-reflection-13/"
 seq_next_title: "Practicum-I Reflection 13"
+seq_next_title_ur: "پریکٹیکم اول - عکاسی 13"
 ---
 
 <p>Today's school visit was an observation of the lesson plan, during which I evaluated the cooperating teacher's performance. Keeping the objective in mind, I entered class 4th-A, where Sir A (a teacher)was teaching mathematics as usual. The provided observation sheet included several performance indicators, including lesson planning, subject competency, communication skills, classroom and time management, learning environment, interpersonal skills, and assessment.</p>

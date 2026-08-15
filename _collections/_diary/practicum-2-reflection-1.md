@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflective-report/"
 seq_prev_title: "Practicum-I: Reflective Report"
+seq_prev_title_ur: "پریکٹیکم اول - عکاسی رپورٹ"
 seq_next_url: "/diary/practicum-2-lesson-plan-1/"
 seq_next_title: "Practicum-II Lesson Plan 1"
+seq_next_title_ur: "پریکٹیکم دوم - سبقی منصوبہ 1"
 ---
 
 <p>Practicum-II was a step upon Practicum-I, which involved several visits to the X and Y Government School in Old Sukkur. During those visits, we observed and understood the roles of various aspects of the school, including the building, labs and laboratories, library, classrooms, management, teachers, the environment, and all staff who support the learning and teaching process. It also emphasises co-teaching and receiving feedback from co-teachers to further strengthen it.</p>

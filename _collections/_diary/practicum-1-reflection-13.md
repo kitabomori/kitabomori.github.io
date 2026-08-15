@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-12/"
 seq_prev_title: "Practicum-I Reflection 12"
+seq_prev_title_ur: "پریکٹیکم اول - عکاسی 12"
 seq_next_url: "/diary/practicum-1-reflective-report/"
 seq_next_title: "Practicum-I: Reflective Report"
+seq_next_title_ur: "پریکٹیکم اول - عکاسی رپورٹ"
 ---
 
 <p>On January 12, we conducted the last school visit at the Government X in Old Sukkur. The objective of being in the field was to understand the building, its causes, several of its forms, and to highlight it in the context of the school. The observation sheet provided helped to gather data from the school premises.</p>

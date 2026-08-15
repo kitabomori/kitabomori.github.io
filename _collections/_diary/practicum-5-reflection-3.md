@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-5-lesson-plan-3/"
 seq_prev_title: "Practicum-V Lesson Plan 3"
+seq_prev_title_ur: "پریکٹیکم پنجم - سبقی منصوبہ 3"
 seq_next_url: "/diary/practicum-5-lesson-plan-4/"
 seq_next_title: "Practicum-V Lesson Plan 4"
+seq_next_title_ur: "پریکٹیکم پنجم - سبقی منصوبہ 4"
 ---
 
 <p>In the second microteaching lesson today at our university, we taught a physics topic titled "quantum physics in our surroundings" to the students of B.Ed-VIII. We started our lesson with a short video explaining the concepts of the micro and macro worlds. Then we went on to draw a brief historical sketch of quantum physics, which began with the indivisible atoms of Democritus and ended with the discovery of the Higgs boson, a fundamental particle responsible for particle mass. To help students understand the importance of quantum physics in our daily lives, we illustrated this by asking students to smell burnt paper, a flower, and chewing gum, showing that even through our sense of smell, quantum physics is involved. For assessment, students were asked some questions, with explanations given to queries about the application of quantum physics, to bring the microteaching to an end.</p>

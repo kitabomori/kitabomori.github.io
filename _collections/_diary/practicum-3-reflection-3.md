@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-3-lesson-plan-5/"
 seq_prev_title: "Practicum-III Lesson Plan 5"
+seq_prev_title_ur: "پریکٹیکم سوم - سبقی منصوبہ 5"
 seq_next_url: "/diary/practicum-3-lesson-plan-6/"
 seq_next_title: "Practicum-III Lesson Plan 6"
+seq_next_title_ur: "پریکٹیکم سوم - سبقی منصوبہ 6"
 ---
 
 <p><em>Reflection on Lessons Four and Five</em></p>

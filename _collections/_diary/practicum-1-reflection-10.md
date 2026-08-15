@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-9/"
 seq_prev_title: "Practicum-I Reflection 9"
+seq_prev_title_ur: "پریکٹیکم اول - عکاسی 9"
 seq_next_url: "/diary/practicum-1-reflection-11/"
 seq_next_title: "Practicum-I Reflection 11"
+seq_next_title_ur: "پریکٹیکم اول - عکاسی 11"
 ---
 
 <p>The target of today's school visit was to observe a child. I selected A (a student) for the aforementioned objective. The moment I fixed my gaze on A, he was engaged in an activity with his friend next to him. He looked like a healthy child, with an average height and a sound body. Whenever the cooperating teacher gave instructions, he tried to listen and write at the same time, which I doubt he was giving the teacher partial attention. In between, A borrowed a notebook from a guy in front of him. At the last moment of the mathematics class, when the teacher asked a question, A asked his friend for help. 35 minutes were not sufficient for me to determine Arshad's strengths and talents. So, during the break, I interviewed him.</p>

@@ -14,8 +14,10 @@ youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
 seq_prev_url: "/diary/practicum-1-reflection-3/"
 seq_prev_title: "Practicum-I Reflection 3"
+seq_prev_title_ur: "پریکٹیکم اول - عکاسی 3"
 seq_next_url: "/diary/practicum-1-reflection-5/"
 seq_next_title: "Practicum-I Reflection 5"
+seq_next_title_ur: "پریکٹیکم اول - عکاسی 5"
 ---
 
 <p>On the 27th of October, we were in the field for another observation. This time, we aimed to observe a teacher's classroom movement and its impact on learning. When I entered class 9th-A, the teacher had already started the lesson for the day. I found a place at the back of the class and began observing the teacher. The time limit for observing the teacher's movement was about 20 minutes. I took my time observing and noting his movements. It was roughly 15 minutes into the period when the time was up. After the class, I asked the teacher about the importance of a teacher's movement in class.</p>
