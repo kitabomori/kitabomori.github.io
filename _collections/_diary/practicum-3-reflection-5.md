@@ -12,6 +12,10 @@ description_ur: "اسباق کے درمیان وقفے یادداشت کو کی�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-3-lesson-plan-9/"
+seq_prev_title: "Practicum-III Lesson Plan 9"
+seq_next_url: "/diary/practicum-3-lesson-plan-10/"
+seq_next_title: "Practicum-III Lesson Plan 10"
 ---
 
 <p><em>Reflection on Lessons VIII and IX</em></p>
@@ -28,7 +32,3 @@ available_ur: false
 
 <p>In conclusion, teaching is a continuous learning process, and today's lesson helped me to recognise the importance of reviewing the previous lesson, providing students with adequate time to process information, and incorporating active learning techniques to keep students engaged and promote deeper understanding. As a teacher, I will strive to adopt these aspects into my teaching practices and provide my students with the best possible learning experience.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 9</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 10 &rarr;</a></p>
-</div>

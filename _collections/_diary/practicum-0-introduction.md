@@ -12,6 +12,8 @@ description_ur: "پریکٹیکم کیا ہوتا ہے، اور سبقی منص�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_next_url: "/diary/practicum-1-reflection-1/"
+seq_next_title: "Practicum-I Reflection 1"
 ---
 
 <p style="margin:0.9rem 0; padding:0.75rem 1rem; border-left:3px solid #009F93; font-size:0.95rem;">A practicum is a period of supervised teaching practice built into a B.Ed. (Bachelor of Education) degree. Rather than only studying theories of teaching, student teachers spend time in real classrooms: observing experienced teachers, planning and delivering their own lessons, receiving feedback from supervisors and peers, and writing reflections on what happened and what they would do differently next time. Over the course of a degree, several practicums build on one another, moving from short observation visits toward longer, more independent stretches of teaching.</p>
@@ -30,6 +32,3 @@ available_ur: false
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:0.9rem 0;">Note: The lesson plans, reflections, and reflective reports throughout this diary have been lightly edited and checked for grammatical accuracy for readability using Grammarly, ahead of publishing.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 1 &rarr;</a></p>
-</div>

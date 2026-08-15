@@ -12,6 +12,10 @@ description_ur: "ایک معاون استاد کی کارکردگی کا جائ�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-1-reflection-11/"
+seq_prev_title: "Practicum-I Reflection 11"
+seq_next_url: "/diary/practicum-1-reflection-13/"
+seq_next_title: "Practicum-I Reflection 13"
 ---
 
 <p>Today's school visit was an observation of the lesson plan, during which I evaluated the cooperating teacher's performance. Keeping the objective in mind, I entered class 4th-A, where Sir A (a teacher)was teaching mathematics as usual. The provided observation sheet included several performance indicators, including lesson planning, subject competency, communication skills, classroom and time management, learning environment, interpersonal skills, and assessment.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>Being an effective teacher requires a grasp of several key areas, from lesson planning to delivering it with clear instructions and effective communication. At the same time, managing and evaluating students are important areas of the teaching process. Having expertise in only one domain, i.e. content knowledge, or a specific method of teaching,  is of no use. Hence, it is the requirement of the teaching profession in the 21st century to compare all areas, from knowing the subject well to understanding students' nature.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-11/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 11</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-13/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 13 &rarr;</a></p>
-</div>

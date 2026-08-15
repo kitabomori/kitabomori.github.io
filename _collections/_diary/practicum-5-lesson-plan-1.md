@@ -12,6 +12,12 @@ description_ur: "خوابوں کی اہمیت پر اردو کا سبق، جس �
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_en: false
+seq_prev_url: "/diary/practicum-4-reflective-report/"
+seq_prev_title_en: "Practicum-IV - Reflective Report"
+seq_prev_title_ur: "پریکٹیکم چہارم - عکاسی رپورٹ"
+seq_next_url: "/diary/practicum-5-reflection-1/"
+seq_next_title_en: "Practicum-V Reflection 1"
+seq_next_title_ur: "پریکٹیکم پنجم - عکاسی 1"
 ---
 
 <div dir="rtl" lang="ur">
@@ -71,12 +77,3 @@ available_en: false
 
 </div>
 
-<div class="post-body-seq-nav">
-{% if site.lang == 'ur' %}
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; پچھلا: پریکٹیکم چہارم - عکاسی رپورٹ</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">اگلا: پریکٹیکم پنجم - عکاسی 1 &rarr;</a></p>
-{% else %}
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV - Reflective Report</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Reflection 1 &rarr;</a></p>
-{% endif %}
-</div>

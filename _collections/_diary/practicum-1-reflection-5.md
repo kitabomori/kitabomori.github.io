@@ -12,6 +12,10 @@ description_ur: "ایک معاون استاد کے ساتھ انٹرویو، ا�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-1-reflection-4/"
+seq_prev_title: "Practicum-I Reflection 4"
+seq_next_url: "/diary/practicum-1-reflection-6/"
+seq_next_title: "Practicum-I Reflection 6"
 ---
 
 <p>This time around, our task was to interview our cooperative teacher. After reviewing the observation sheet, my colleagues and I agreed on a few questions the teacher asked. From the cooperative teacher's reaction when we asked him about his previous time, he seemed to be trying to escape the interview. But, under continuous pressure, he reluctantly agreed to give some of his valuable time to our learning. The interview focused on classroom management.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>Based on the irritation with this particular cooperative teacher, I learned that teaching at this school has been stuck in the past. The teacher is using methods, strategies, or early rights to teach the 21st-century mobile phone generation. The profession of teaching demands that teachers adopt current tactics and teaching styles to manage students in the current era. This experience would be a reminder for me to be an updated teacher who never stops learning how to teach.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 4</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 6 &rarr;</a></p>
-</div>

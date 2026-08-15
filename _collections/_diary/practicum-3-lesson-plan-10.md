@@ -12,6 +12,10 @@ description_ur: "پریکٹیکم سوم کا آخری سبق: فاعل اور �
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-3-reflection-5/"
+seq_prev_title: "Practicum-III Reflection 5"
+seq_next_url: "/diary/practicum-3-reflection-6/"
+seq_next_title: "Practicum-III Reflection 6"
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
@@ -180,7 +184,3 @@ available_ur: false
 <h4>4. Resources</h4>
 <p>English-VII, Sindh Textbook Board, Jamshoro</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Reflection 5</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Reflection 6 &rarr;</a></p>
-</div>

@@ -12,6 +12,10 @@ description_ur: "ساتویں سبق پر تاثر — بلند آواز سے پ
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-4-lesson-plan-7/"
+seq_prev_title: "Practicum-IV Lesson Plan 7"
+seq_next_url: "/diary/practicum-4-lesson-plan-9/"
+seq_next_title: "Practicum-IV Lesson Plan 9"
 ---
 
 <p>The continuum from one lesson to the next is what I like most about the 22nd November visit to X School, Sukkur. Last week, I engaged the students in a reading activity to find out their learning styles. Based on the collected data, I planned to go with reading aloud and listening drills this time. Before the class, I spoke with the coordinator and learned that it is against school policy to help prospective teachers provide the printouts. The coordinator gave me an undue favour by providing me with excerpts from the novel "Sophie's World," which turned out to be one of his favourite books. Fortunately, the photocopying machine was not working, and I got the prints from outside the school. Anyhow, it was concerning to me whether the actual teachers of the school needed some printed material, and if the machine is not working, it would halt the learning process.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>It's worth noting the importance of adapting teaching methods to accommodate various learning styles and to ensure a more inclusive and effective educational experience for all students. Moreover, it sets the foundation for a classroom culture that values oral expression and communication skills. As students become more comfortable with reading aloud, this strategy not only makes the lesson more enjoyable but also contributes to a holistic, effective learning experience.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 7</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 9 &rarr;</a></p>
-</div>

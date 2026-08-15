@@ -102,16 +102,24 @@ Separate paragraphs with a blank line.
 
   DIARY SEQUENCE NAV — if this post is part of a curated diary
   sequence (e.g. Lesson Plan 2 -> Lesson Plan 3), link to the
-  neighbouring post(s) at the end of the body with this block,
-  NOT with two separate <p> tags. The CSS (.post-body-seq-nav in
-  main.css) lays Previous/Next out on one line, wrapping on
-  narrow screens; a lone Next (first post) or Previous (last
-  post) is fine — just drop the line you don't need:
+  neighbouring post(s) with seq_prev_*/seq_next_* fields up in
+  the front matter (above, next to `date:`) — NOT with HTML in
+  the body. The layout renders these as a Previous/Next row on
+  one line, and — importantly — it renders them regardless of
+  available_en/available_ur, so the nav still works even on a
+  post whose own text only exists in one language:
 
-  <div class="post-body-seq-nav">
-  <p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/PREV-SLUG/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: PREV TITLE</a></p>
-  <p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/NEXT-SLUG/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: NEXT TITLE &rarr;</a></p>
-  </div>
+  seq_prev_url: "/diary/PREV-SLUG/"
+  seq_prev_title: "PREV TITLE"
+  seq_next_url: "/diary/NEXT-SLUG/"
+  seq_next_title: "NEXT TITLE"
+
+  Drop whichever pair you don't need (first post in a sequence
+  has no seq_prev_*, last has no seq_next_*). If the neighbouring
+  post's title should read differently in English vs Urdu, add
+  seq_prev_title_en/seq_prev_title_ur (and the _next_ equivalents)
+  instead of the plain seq_prev_title/seq_next_title — the layout
+  prefers the language-specific one when present.
 
   This is separate from the automatic Older/Newer nav that
   already appears at the bottom of every post — this one is for

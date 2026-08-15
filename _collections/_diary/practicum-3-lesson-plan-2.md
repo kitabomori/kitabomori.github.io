@@ -12,6 +12,10 @@ description_ur: "نظم 'دی بلائنڈ بوائے' کا مطالعہ اور 
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-3-reflection-1/"
+seq_prev_title: "Practicum-III Reflection 1"
+seq_next_url: "/diary/practicum-3-lesson-plan-3/"
+seq_next_title: "Practicum-III Lesson Plan 3"
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
@@ -136,7 +140,3 @@ available_ur: false
 <h4>7. Resources</h4>
 <p>English Sindh Textbook Board Jamshoro, Grade-VII</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Reflection 1</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 3 &rarr;</a></p>
-</div>

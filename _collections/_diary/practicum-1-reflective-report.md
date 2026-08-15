@@ -12,6 +12,10 @@ description_ur: "پریکٹیکم اول کے سولہ ہفتوں پر ایک ن
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-1-reflection-13/"
+seq_prev_title: "Practicum-I Reflection 13"
+seq_next_url: "/diary/practicum-2-reflection-1/"
+seq_next_title: "Practicum-II Reflection 1"
 ---
 
 <p>The third semester of B.Ed.-III started in October 2021. With other courses, Practicum-I was also part of the semester. The practicum course is unique in that it aims to provide prospective teachers with experience by exposing them to the school environment through weekly visits. It also has specific objectives, such as identifying connections between teaching theory and practice. The other rationales are: to collaborate with peers, cooperating teachers, school staff, and the practicum supervisor; and to develop professional relationships by observing elements of the school from the gatekeeper to the principal. Most of the lot was to invite, accept and utilise feedback from the cooperating teacher, supervisor and peers for learning.</p>
@@ -40,7 +44,3 @@ available_ur: false
 
 <p>There is no use becoming a teacher who is not intrinsically motivated. One thing I believe was missing throughout the practicum was the motivation and passion that students and teachers would have developed by seeing the devotion of cooperating teachers to their profession of teaching at the respective school. The school which we visited was a place where anyone with high hopes would end up in deep despair. Next time, when I get a chance to visit the school, I will be looking to develop this by asking the cooperating teacher why they are teaching. The rest of the course's tactics and techniques were fine, as I went through a process of getting to know the school's dimensions.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-13/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 13</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 1 &rarr;</a></p>
-</div>

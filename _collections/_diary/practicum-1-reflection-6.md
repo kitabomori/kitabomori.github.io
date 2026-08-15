@@ -12,6 +12,10 @@ description_ur: "ایک استاد جس نے برسوں سے کوئی سبق م�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-1-reflection-5/"
+seq_prev_title: "Practicum-I Reflection 5"
+seq_next_url: "/diary/practicum-1-reflection-7/"
+seq_next_title: "Practicum-I Reflection 7"
 ---
 
 <p>Observation to design a lesson plan was the objective of today's school visit. Till the time we reached the classroom, the cooperative teacher had already started the lesson. We observed the lesson, and the teacher was teaching a text from the English book about "Shah Abdul Latif Bhitai". He was using the blackboard to write the key points while reading the text aloud. In the next phase, the cooperative teacher asked students about Bhitai's background, name, early life and education, and finally about Bhitai's spiritual growth. A couple of students answered, repeating what was written in the provided textbook, like parrots. The homework was to write a short paragraph about one aspect of Bhitai's life. After the class, when we asked the cooperative teacher about his lesson plan for the topic, "to see how successful he has been in achieving the objective of the class."</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>If I had been the cooperating teacher, I would have planned my lesson. I would have divided the text into chunks and, accordingly, set some objectives. Students would be able to learn about Bhatai's early life and education. To obtain the objective, I would have used text outside the textbook. After the group discussion, the students would be asked to come forward and share what they have learned. This would help the teacher evaluate students' learning. Finally, a home task could be to read the poetry of Shah Abdul Latif Bhatai in the local language to connect this lesson to the upcoming lesson on Bhatai's life.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 5</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 7 &rarr;</a></p>
-</div>

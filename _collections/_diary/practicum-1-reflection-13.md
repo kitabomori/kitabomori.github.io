@@ -12,6 +12,10 @@ description_ur: "آخری وزٹ، غنڈہ گردی (بلی اِنگ) کو سم
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-1-reflection-12/"
+seq_prev_title: "Practicum-I Reflection 12"
+seq_next_url: "/diary/practicum-1-reflective-report/"
+seq_next_title: "Practicum-I: Reflective Report"
 ---
 
 <p>On January 12, we conducted the last school visit at the Government X in Old Sukkur. The objective of being in the field was to understand the building, its causes, several of its forms, and to highlight it in the context of the school. The observation sheet provided helped to gather data from the school premises.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>Allegedly, in the premises of a school, it is the prime responsibility of a teacher to know what is going on with a particular student. The pale faces of students at times indicate that someone is bullying and victimising them. A teacher should talk to students personally, assure them that they can be a source of comfort, and that the teacher will resolve the problem.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-12/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 12</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I: Reflective Report &rarr;</a></p>
-</div>

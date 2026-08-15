@@ -12,6 +12,10 @@ description_ur: "جماعت پنجم کے لیے کسور کا سبق، اور �
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-2-reflection-1/"
+seq_prev_title: "Practicum-II Reflection 1"
+seq_next_url: "/diary/practicum-2-reflection-2/"
+seq_next_title: "Practicum-II Reflection 2"
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
@@ -100,7 +104,3 @@ available_ur: false
 
 <p>The teacher's body language and energy delivery were good, and he tried to explain every detail. If some students did not understand, he would try to explain again and again, which was a good thing.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 1</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 2 &rarr;</a></p>
-</div>

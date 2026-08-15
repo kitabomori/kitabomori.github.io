@@ -12,6 +12,10 @@ description_ur: "طلبہ مزید عملی سرگرمیاں چاہتے تھے،
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-3-lesson-plan-5/"
+seq_prev_title: "Practicum-III Lesson Plan 5"
+seq_next_url: "/diary/practicum-3-lesson-plan-6/"
+seq_next_title: "Practicum-III Lesson Plan 6"
 ---
 
 <p><em>Reflection on Lessons Four and Five</em></p>
@@ -28,7 +32,3 @@ available_ur: false
 
 <p>Moving forward, I plan to address these observations in several ways. I will develop more hands-on activities, such as small-group tasks related to the content, to help students work together and learn from each other. Secondly, I will be more attentive and encourage students to reach out if they are struggling with any aspect of the class. Lastly, I will keep an open mind and be willing to adapt my teaching methods to best serve my students' needs.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 5</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 6 &rarr;</a></p>
-</div>

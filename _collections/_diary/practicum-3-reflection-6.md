@@ -12,6 +12,10 @@ description_ur: "تدریس میں تسلسل کیوں اہم ہے، اور کو
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-3-lesson-plan-10/"
+seq_prev_title: "Practicum-III Lesson Plan 10"
+seq_next_url: "/diary/practicum-3-reflective-report/"
+seq_next_title: "Practicum-III: Reflective Report"
 ---
 
 <p><em>Reflection on Lesson X</em></p>
@@ -26,7 +30,3 @@ available_ur: false
 
 <p>To sum up, for a teacher to make an impact on students' learning, there is a need for consistency in teaching methods and instruction. It helps to establish clear expectations and promotes engagement and motivation among students. At the same time, a teacher must be aware that a lesson never goes as planned and must be flexible and adaptable to meet the diverse needs of their students.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 10</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III: Reflective Report &rarr;</a></p>
-</div>

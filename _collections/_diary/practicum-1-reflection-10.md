@@ -12,6 +12,10 @@ description_ur: "ریاضی کی کلاس میں ایک طالب علم کا م�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-1-reflection-9/"
+seq_prev_title: "Practicum-I Reflection 9"
+seq_next_url: "/diary/practicum-1-reflection-11/"
+seq_next_title: "Practicum-I Reflection 11"
 ---
 
 <p>The target of today's school visit was to observe a child. I selected A (a student) for the aforementioned objective. The moment I fixed my gaze on A, he was engaged in an activity with his friend next to him. He looked like a healthy child, with an average height and a sound body. Whenever the cooperating teacher gave instructions, he tried to listen and write at the same time, which I doubt he was giving the teacher partial attention. In between, A borrowed a notebook from a guy in front of him. At the last moment of the mathematics class, when the teacher asked a question, A asked his friend for help. 35 minutes were not sufficient for me to determine Arshad's strengths and talents. So, during the break, I interviewed him.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>Teaching is not only about uttering a few words on a topic in front of a crowd. It is also actually seeking to understand the nature and behaviour of a child. Understanding a child's nature helps a teacher identify strengths, talents, and weaknesses, and develop a teaching style that suits the student's learning style. At the same time, it helps a teacher plan a lesson tailored to a student's intellect, making it more productive.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 9</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-11/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 11 &rarr;</a></p>
-</div>

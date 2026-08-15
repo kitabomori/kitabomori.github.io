@@ -12,6 +12,10 @@ description_ur: "پہلا سبق پڑھانا — کم حاضری، مواد ک�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-2-lesson-plan-1/"
+seq_prev_title: "Practicum-II Lesson Plan 1"
+seq_next_url: "/diary/practicum-2-lesson-plan-2/"
+seq_next_title: "Practicum-II Lesson Plan 2"
 ---
 
 <p>We visited the Government X School on March 3rd, 2022. In the classroom, the cooperating teacher was already in the middle of a math lesson. We waited for her to complete the lesson. It was my turn to deliver the lesson plan, but I was not fully prepared, as it always happens on the very first lesson. The class had 25 students, but only 14 attended. Initially, I tried to engage the students by inquiring about their daily routine. Then, while distributing some apples, I divided them into parts and asked different questions. This activity was planned to draw the students' attention to the topic "fractions." The class was over in the blink of an eye. During the lesson, the co-teachers observed my delivery and provided valuable feedback.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p> The identified weaknesses in my lesson delivery would be an opportunity for me to learn and improve. My energy, voice, and movement in class were all appropriate, but my performance in other areas was below average. As a result, this and future teaching and observation of co-teachers' lesson delivery will assist me.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 1</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Lesson Plan 2 &rarr;</a></p>
-</div>

@@ -12,6 +12,10 @@ description_ur: "موبائل ڈیسیبل ایپ کی مدد سے بلندیٔ 
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-4-lesson-plan-2/"
+seq_prev_title: "Practicum-IV Lesson Plan 2"
+seq_next_url: "/diary/practicum-4-lesson-plan-3/"
+seq_next_title: "Practicum-IV Lesson Plan 3"
 ---
 
 <p>I had planned to teach about sound loudness and how to measure it using a mobile sound meter app. The observation sheet and the supervising teacher's comments are encouraging, as they indicate some improvement over the previous lesson. I maintained the board and wrote the lesson topic, but I still forgot to write the subtopic. I planned to assess the learning using a worksheet, but due to time constraints/mismanagement, I went to the students individually and in pairs to ask questions orally. To sum it all up, the class went smoothly, but there are a few observations/shortcomings that are important to address in the coming lessons.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>If I get a chance to teach the same topic again, I would choose the demonstration method over the inductive, as it at least helps the student to see the miracles of science instead of listening. After the demonstration, I would divide the students into different groups and lead a discussion to engage every single student.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 2</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 3 &rarr;</a></p>
-</div>

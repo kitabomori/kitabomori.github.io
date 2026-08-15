@@ -12,6 +12,10 @@ description_ur: "کوانٹم فزکس پر دوسرا مائیکرو ٹیچنگ
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-5-lesson-plan-3/"
+seq_prev_title: "Practicum-V Lesson Plan 3"
+seq_next_url: "/diary/practicum-5-lesson-plan-4/"
+seq_next_title: "Practicum-V Lesson Plan 4"
 ---
 
 <p>In the second microteaching lesson today at our university, we taught a physics topic titled "quantum physics in our surroundings" to the students of B.Ed-VIII. We started our lesson with a short video explaining the concepts of the micro and macro worlds. Then we went on to draw a brief historical sketch of quantum physics, which began with the indivisible atoms of Democritus and ended with the discovery of the Higgs boson, a fundamental particle responsible for particle mass. To help students understand the importance of quantum physics in our daily lives, we illustrated this by asking students to smell burnt paper, a flower, and chewing gum, showing that even through our sense of smell, quantum physics is involved. For assessment, students were asked some questions, with explanations given to queries about the application of quantum physics, to bring the microteaching to an end.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>Since midterms at the school are ending by the end of this week, our micro-teaching sessions have ended here for now. We will be going for teaching practice, teaching individually; the topics are not yet finalised, but we aim to teach from English and physics for grade 8. While delivering our lessons, we intend not to repeat the mistake of failing to engage the whole class, ensuring the activities are engaging. We will also try to speak louder, so students don't lose interest in the lesson due to difficulty hearing the teacher's voice from the side.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 3</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 4 &rarr;</a></p>
-</div>

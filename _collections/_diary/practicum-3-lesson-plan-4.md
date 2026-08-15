@@ -12,6 +12,12 @@ description_ur: "اردو میں پڑھایا گیا اخلاقیات کا سب�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_en: false
+seq_prev_url: "/diary/practicum-3-reflection-2/"
+seq_prev_title_en: "Practicum-III Reflection 2"
+seq_prev_title_ur: "پریکٹیکم سوم - عکاسی 2"
+seq_next_url: "/diary/practicum-3-lesson-plan-5/"
+seq_next_title_en: "Practicum-III Lesson Plan 5"
+seq_next_title_ur: "پریکٹیکم سوم - سبقی منصوبہ 5"
 ---
 
 <div dir="rtl" lang="ur">
@@ -106,12 +112,3 @@ available_en: false
 
 </div>
 
-<div class="post-body-seq-nav">
-{% if site.lang == 'ur' %}
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; پچھلا: پریکٹیکم سوم - عکاسی 2</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">اگلا: پریکٹیکم سوم - سبقی منصوبہ 5 &rarr;</a></p>
-{% else %}
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Reflection 2</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 5 &rarr;</a></p>
-{% endif %}
-</div>

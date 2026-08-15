@@ -201,6 +201,36 @@ layout: base
       {% endunless %}
       <!--KITABOMORI-POST-BODY-END-->
     </div>
+
+    <!-- Curated within-sequence Previous/Next (e.g. Lesson Plan 2 ->
+         Lesson Plan 3), driven by seq_prev_*/seq_next_* front matter
+         rather than living in the post body. Deliberately OUTSIDE the
+         availability {% unless %} above and rendered regardless of
+         available_en/available_ur: a post's own text may only exist
+         in one language, but readers in either language should still
+         be able to step to the neighbouring post in the sequence.
+         seq_*_title_en/seq_*_title_ur override seq_*_title for the
+         current site.lang when a post needs a distinct translated
+         label (see practicum-5-reflection-1.md for an example);
+         otherwise seq_*_title is used as-is in both languages. This
+         is separate from .post-nav further down, which is the
+         automatic Older/Newer nav built from collection date order. -->
+    {% if page.seq_prev_url or page.seq_next_url %}
+    <div class="post-body-seq-nav">
+      {% if page.seq_prev_url %}
+        {% assign seq_prev_title = page.seq_prev_title %}
+        {% if site.lang == 'ur' and page.seq_prev_title_ur %}{% assign seq_prev_title = page.seq_prev_title_ur %}{% endif %}
+        {% if site.lang == 'en' and page.seq_prev_title_en %}{% assign seq_prev_title = page.seq_prev_title_en %}{% endif %}
+      <p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}{{ page.seq_prev_url }}" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; {% if site.lang == 'ur' %}پچھلا{% else %}Previous{% endif %}: {{ seq_prev_title }}</a></p>
+      {% endif %}
+      {% if page.seq_next_url %}
+        {% assign seq_next_title = page.seq_next_title %}
+        {% if site.lang == 'ur' and page.seq_next_title_ur %}{% assign seq_next_title = page.seq_next_title_ur %}{% endif %}
+        {% if site.lang == 'en' and page.seq_next_title_en %}{% assign seq_next_title = page.seq_next_title_en %}{% endif %}
+      <p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}{{ page.seq_next_url }}" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">{% if site.lang == 'ur' %}اگلا{% else %}Next{% endif %}: {{ seq_next_title }} &rarr;</a></p>
+      {% endif %}
+    </div>
+    {% endif %}
   </div>
 
   <!-- Author and date, shown at the end of the piece -->

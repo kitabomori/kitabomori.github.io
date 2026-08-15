@@ -12,6 +12,10 @@ description_ur: "بلند آواز سے پڑھنے کی اہمیت پر انگر
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-4-reflection-7/"
+seq_prev_title: "Practicum-IV Reflection 7"
+seq_next_url: "/diary/practicum-4-reflection-8/"
+seq_next_title: "Practicum-IV Reflection 8"
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
@@ -149,7 +153,3 @@ available_ur: false
 <h4>6. Resources</h4>
 <p>Sophie's World</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Reflection 7</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Reflection 8 &rarr;</a></p>
-</div>

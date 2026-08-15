@@ -12,6 +12,10 @@ description_ur: "کسور کی جمع پر معاون استاد این کی ق�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-2-reflection-2/"
+seq_prev_title: "Practicum-II Reflection 2"
+seq_next_url: "/diary/practicum-2-reflection-3/"
+seq_next_title: "Practicum-II Reflection 3"
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
@@ -101,7 +105,3 @@ available_ur: false
 
 <ul><li><strong>Audibility:</strong> She wasn't audible to everyone, and she should ensure her words flow in a rhythmic pattern so students enjoy the lesson. While teaching, she should also create some form of drama.</li><li><strong>Mathematical terms:</strong> the student-teacher should use mathematical terms, particularly in Urdu, as it is the medium of communication and their course is taught in Urdu.</li></ul>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Reflection 2</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 3 &rarr;</a></p>
-</div>

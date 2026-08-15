@@ -12,6 +12,8 @@ description_ur: "دس اسباق، کچھ اکیلے اور کچھ جوڑی می
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-5-reflection-10/"
+seq_prev_title: "Practicum-V Reflection 10"
 ---
 
 <p>Over the 16 weeks of teaching practice, we were supposed to visit the school 12 to 14 times, or conduct micro-teaching at our university when we didn't go to the site. In the end, only 10 lesson plans, along with observation checklists and reflections on each lesson, needed to be submitted as an e-portfolio to the course supervisor to meet the course requirements. Throughout, the blend of classroom observations and post-lesson conferences was pivotal in making our teaching effective, understanding students' behaviour, and shaping our instructional strategies to engage them.</p>
@@ -30,6 +32,3 @@ available_ur: false
 
 <p>We'd recommend planning the practicum to genuinely prepare prospective teachers for the role ahead, rather than treating it as a checklist of lessons to deliver, observations to sit through, reflections to write, and a report to summarise it all. Elementary teachers have to teach several subjects, so within a single teaching practice course, only one or two subjects should be the core focus, so prospective teachers can properly master them; planned well across all five teaching practice courses, there's ample time to eventually cover every subject. We'd also design the school visits in two phases: consecutive visits for a full week in the first half of the semester, then again in the second half — six lessons with observations and post-conference reflections happening back to back would do far more to connect one lesson to the next. In the gap between, prospective teachers would also get time to reflect and explore other options, and get more used to the actual rhythm and routine of a cooperating school. We believe the life of a prospective teacher, while practising, should resemble the real working life of a teacher and a school far more closely than it currently does.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-reflection-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Reflection 10</a></p>
-</div>

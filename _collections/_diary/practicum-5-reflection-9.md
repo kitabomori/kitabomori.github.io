@@ -12,6 +12,10 @@ description_ur: "یو کی شکل کی جماعت کے فرش سے زاویہ س
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-5-lesson-plan-9/"
+seq_prev_title: "Practicum-V Lesson Plan 9"
+seq_next_url: "/diary/practicum-5-lesson-plan-10/"
+seq_next_title: "Practicum-V Lesson Plan 10"
 ---
 
 <p>Imagine you are new to Karachi, in Saddar, and want to meet someone in Gulshan-e-Hadeed. You don't know the directions — what would you do then? This was the thought-provoking start to my visit on May 2, 2024. I had developed a lesson on constructing angles that are multiples of 15, using a compass and ruler. I changed the class seating arrangement, with the cooperating teacher's help, into a U shape. Instead of writing on the board, I used my rough copy to draw angles and diagrams while sitting on the floor, as there were around 20 students in the class. I then discussed the importance of angles in navigation and touched on time dilation. In the end, I asked students to draw various angles in their copies and explain, in their own words, the process of constructing an angle.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>I'm counting the number of lessons, and with number nine, the practicum journey comes to an end. The students of the 8th-grade Daisy and Tulip sections may have learned something new in a novel way. Still, one or two lessons remain to be delivered as micro-teaching here at our university campus. After consulting with my teaching pair, I'll create a lesson on a physics topic suitable for undergraduate students — the B.Ed (Hons) programme's last teaching practice lesson. I hope it ends on a high note.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 9</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 10 &rarr;</a></p>
-</div>

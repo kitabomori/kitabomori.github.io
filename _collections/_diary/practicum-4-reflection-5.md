@@ -12,6 +12,10 @@ description_ur: "تعلیم کے 'بینکنگ ماڈل' پر سوالات، ا�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-4-lesson-plan-5/"
+seq_prev_title: "Practicum-IV Lesson Plan 5"
+seq_next_url: "/diary/practicum-4-reflection-6/"
+seq_next_title: "Practicum-IV Reflection 6"
 ---
 
 <p>The usual day-to-day lesson plan of our teaching practice seems outdated to me, as it focuses only on the banking model of education, where the more knowledgeable person (teacher) deposits a chunk of information in students' minds without creating knowledge or accounting for the factors that influence the learning process. In one of the counselling and guidance courses at my university, I came to understand the importance of counselling. So today I was questioning whether my students need any kind of counseling or a bit of help here and there that could help them to act as active learners and to be ready to learn something new. So before taking the class of 8th-Daisy, I sat with a couple of students and had a conversation in the break. I was looking at what could be the possible reasons that are barriers to the learning process of students. In that sense today was sort of another day for me at the field as I came to know about the psychology of students and the stresses they are having.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>In order to help the students to cope with such issues of psychological and socialization there is a need for a teacher to be a counselor. The teacher counselor would listen and help students to share their concerns and doubts in order to remain free from stress and to focus on what is going on in the classroom.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 5</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Reflection 6 &rarr;</a></p>
-</div>

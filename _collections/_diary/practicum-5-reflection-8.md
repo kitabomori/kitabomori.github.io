@@ -12,6 +12,10 @@ description_ur: "گنتی کی بیس ہزار سالہ تاریخ پر، اور
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-5-lesson-plan-8/"
+seq_prev_title: "Practicum-V Lesson Plan 8"
+seq_next_url: "/diary/practicum-5-lesson-plan-9/"
+seq_next_title: "Practicum-V Lesson Plan 9"
 ---
 
 <p>Mathematics is complex because we have a set of complex numbers. Is it, though? Out of curiosity, I tried to find the origin of mathematics. The first signs of it are often in the form of counting — "numbers" date back more than 20,000 years, recorded on bones, stones, and cave walls. Isn't it amazing that we count everything from the width of galaxies to the vibration of caesium atoms' electrons to set a second as a standard for measuring time? To begin teaching "number sets," I wrote a sequence of numbers on the whiteboard to determine how many numbers exist between two numbers, for the 8th-Tulip section on the 25th of April. Then I talked briefly about how counting numbers came into being. To address our growing needs and understand the complexity of the universe, we set out to discover more and more numbers by adding "0" to the front of a set of numbers, using "+" and "−" signs, and dividing one number by another. The addition of numbers was also discussed, and students were offered a reward for solving a challenging addition problem.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>After consulting with the cooperating teachers, I'll plan the next mathematics class — the 9th lesson of the practicum, and likely the last one, as students will soon have their final-term exams and, hopefully, all will be promoted to the next class. I've learned a lot from teaching in pairs and from the post-conference discussions, where we talked through the pros and cons of a lesson and how to tackle classroom and outside issues related to students' learning.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-8/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-V Lesson Plan 8</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 9 &rarr;</a></p>
-</div>

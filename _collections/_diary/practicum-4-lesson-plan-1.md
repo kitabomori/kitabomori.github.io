@@ -12,6 +12,10 @@ description_ur: "دوسرے اور تیسرے پیریڈ میں متواتر ر�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-3-reflective-report/"
+seq_prev_title: "Practicum-III: Reflective Report"
+seq_next_url: "/diary/practicum-4-reflection-1/"
+seq_next_title: "Practicum-IV Reflection 1"
 ---
 
 <table style="border-collapse:collapse; margin:1rem 0; font-size:0.95rem; width:100%; border:1px solid #333;">
@@ -135,7 +139,3 @@ available_ur: false
 <h4>8. Resources</h4>
 <p>Science book Grade 8th and Periodic Table</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-reflective-report/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III: Reflective Report</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Reflection 1 &rarr;</a></p>
-</div>

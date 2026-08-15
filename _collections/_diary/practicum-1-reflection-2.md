@@ -12,13 +12,13 @@ description_ur: "اسکول وزٹس کے لیے اصول طے کرنا، اور
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-1-reflection-1/"
+seq_prev_title: "Practicum-I Reflection 1"
+seq_next_url: "/diary/practicum-1-reflection-3/"
+seq_next_title: "Practicum-I Reflection 3"
 ---
 
 <p>The second practicum class of the 3rd semester was held on the 13th of October in the Smart classroom of the Knowledge Centre. All the students were busy giving the final touch to the reflection of the previous class when the teacher arrived. He greeted and placed the utmost importance on one aspect of morality in his opening remarks. He gave particular attention to acknowledging and appreciating an individual's efforts and contributions, particularly those of a teacher. Next, the teacher continued his lecture on writing a reflection, which he left in the last class. In the next section of the class, the teacher invited all the students to set some rules for the upcoming school visits. In this regard, students initially had to come up with five rules, each limited to 5 words. Next, it was to filter out the rules by avoiding negative phrases. Finally, we agreed on six rules with the instructor's help.</p>
 
 <p>The work of educational institutions is not only to teach a few words; their prime responsibility is to teach moral values, ultimately making good citizens. The teacher's emphasis on the quality of praising someone's effort was the class's takeaway. It is as simple to give respect as it is to take it. We have to appreciate individuals because it motivates them to do more and better next time. Secondly, I feel making rules is as difficult as obeying them. It took almost half of the class time for twenty-five students to agree on six rules. It takes time to form rules because we have to listen to everyone and weigh the pros and cons. A class which was half teacher-centred and half student-centred benefited both. The teacher achieved their aim on time, and students also enjoyed some freedom to participate in the learning process. Moving ahead, such an atmosphere would be suitable for achieving the course's objective.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 1</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 3 &rarr;</a></p>
-</div>

@@ -12,6 +12,10 @@ description_ur: "ایکس اسکول، سکھر کا پہلا حقیقی مشا�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-4-lesson-plan-1/"
+seq_prev_title: "Practicum-IV Lesson Plan 1"
+seq_next_url: "/diary/practicum-4-lesson-plan-2/"
+seq_next_title: "Practicum-IV Lesson Plan 2"
 ---
 
 <p>I have seen and witnessed the reputation of X School, Sukkur. For some, its popularity is linked to a well-known local university, as that university was founded in two classrooms of a public school. As a prospective teacher, I had kept all the theories and what education is all about. When I visited the School for the first time, the discussed rules and regulations forced me to frame a picture of the school that focused solely on managing thousands of students as followers. The second visit to the school, where I delivered the first lesson, went a bit better. Grade 8-Daisy has a class of 33 students, and there is plenty of space to move freely among them.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>When it comes to achieving the class objective, there is some doubt. Yes, I completed the lesson on time, but that doesn't mean I have transferred everything to their minds. It was my first interaction with the class. Without knowing their names, experiences, and learning styles, it was difficult to decide on a teaching method and strategy to apply. This lesson and interaction would help me to select the right approach in the upcoming classes.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 1</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 2 &rarr;</a></p>
-</div>

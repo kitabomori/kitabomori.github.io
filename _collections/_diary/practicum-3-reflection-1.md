@@ -12,6 +12,10 @@ description_ur: "پریکٹیکم سوم کا پہلا سبق، اور بول چ
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-3-lesson-plan-1/"
+seq_prev_title: "Practicum-III Lesson Plan 1"
+seq_next_url: "/diary/practicum-3-lesson-plan-2/"
+seq_next_title: "Practicum-III Lesson Plan 2"
 ---
 
 <p>On Feb 8, 2023, I was in the field at Government X for the first teaching practice lesson of B.Ed-VI. I had planned to improve the 7th-grade students' speaking skills by giving them time to work in groups. Before my lesson, I was with my colleague, who was teaching General Science in Sindhi, and in the presence of their own science teacher, the students were responding. I started my lesson in Urdu and tried to shift towards the English medium. Next, I divided the class into pairs and groups of three students and instructed them to introduce themselves to each other in English. The class lasted 40 minutes, and at the end, some students came to the front of the class and tried their best to utter a few sentences in English.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>This was my very first experience teaching at a government school, and I was not familiar with the students, their level of understanding, or their English proficiency. The medium of instruction was also a barrier for me, as I tried to give instructions in Urdu to teach English, which is not their first language or medium of instruction. In the class, there was some noise, which is not bad when learning is taking place, but I think there was a lack of classroom management tactics. There is also a need to reflect on classroom management and devise a plan to run the upcoming lessons smoothly. This experience would help me in the upcoming lessons, as I am now aware of the ground realities. It is going to be tough for me to teach the students, especially English, but I have to work hard.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 1</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-2/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 2 &rarr;</a></p>
-</div>

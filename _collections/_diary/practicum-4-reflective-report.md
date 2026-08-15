@@ -12,6 +12,10 @@ description_ur: "ایکس اسکول، سکھر میں پریکٹیکم چہار
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-4-lesson-plan-10/"
+seq_prev_title: "Practicum-IV Lesson Plan 10"
+seq_next_url: "/diary/practicum-5-lesson-plan-1/"
+seq_next_title: "Practicum-V Lesson Plan 1"
 ---
 
 <p>As a teacher, the first time I met the student outside the classroom, I was a stranger to them. The second time I met on the playground, I was an instructor. The next time I was their class fellow. Being with the students at the playgrounds and having small chats here and there throughout the practicum at X School, Sukkur, made this experience a bit different from the past ones. In this reflective report, I will discuss what I did during the ten visits to the school and what I have learned.</p>
@@ -33,7 +37,3 @@ available_ur: false
 
 <p>In this practicum, I tried to be a friend of the students, allowing myself to be with them. A teacher's work does not end after instructing for 40 minutes; rather, it continues in a continuous connection with them through thick and thin. By this, they feel free to share and learn. When I was about to leave on the last visit, one of my students, a girl, came to the bus door and said, "Sir, you are my favourite teacher." This is what I achieved at the end of this practicum.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 10</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-5-lesson-plan-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-V Lesson Plan 1 &rarr;</a></p>
-</div>

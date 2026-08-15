@@ -12,6 +12,10 @@ description_ur: "کلاس سے پہلے فٹبال گراؤنڈ پر گفتگو 
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-4-lesson-plan-4/"
+seq_prev_title: "Practicum-IV Lesson Plan 4"
+seq_next_url: "/diary/practicum-4-lesson-plan-5/"
+seq_next_title: "Practicum-IV Lesson Plan 5"
 ---
 
 <p>I think things never go as we plan or want them to. It doesn't mean I didn't curate my lesson plan or enjoy teaching at X School, Sukkur, with the students of grade 8th. There is a break and a physical training (PT) period before science class. Today, during the break, I was at the football ground with the students for a while and observed their behaviour. While in the PT period, I was in the cemented area right behind the boys' section building and played cricket with the students for the entire period. Unfortunately, my team lost the five-over cricket match. Still, the particular experience of being with students both outside (playing with the students) and inside (carrying out the lesson plan) class forced me to question what kind of prospective teacher I am and how my teaching practice is shaping my identity.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>As bell hooks rightly said, "the academy is not paradise, but learning is a place where paradise can be created". Moving ahead, it is of utmost importance for me to develop a lesson that focuses on all domains of Bloom's taxonomy to engage students mentally, physically, and emotionally in learning. Learning can only be joyful when the teacher praises and encourages the small acts in class and in other activities. Otherwise, students would be present in the classroom, but the outer world would capture their imaginations, and they would consume their energy learning nothing.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 4</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 5 &rarr;</a></p>
-</div>

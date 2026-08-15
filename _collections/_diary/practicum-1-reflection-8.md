@@ -12,6 +12,10 @@ description_ur: "سوالات، لہجہ اور زبانی ہدایات کس ط�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-1-reflection-7/"
+seq_prev_title: "Practicum-I Reflection 7"
+seq_next_url: "/diary/practicum-1-reflection-9/"
+seq_next_title: "Practicum-I Reflection 9"
 ---
 
 <p>The goal of today's school visit was to observe how frequently a teacher uses the verbal involvement strategy in class and to understand its implications for the lesson. When I entered classroom 9th-A, the cooperation was a bit late, which gave me some time to quickly review the observation sheet for taking notes. When the teacher arrived, he greeted everyone and then asked a student from the front row for the mathematics textbook. Next, he started writing a question about logarithmic addition on the board. While solving that question, the cooperating teacher asked some students what the next step would be to ensure they remained on task. Now and then, the cooperating teacher asked several general and specific questions and gave oral instructions to engage the students.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>To be a good teacher, it is important to understand how vital it is to engage with the whole class verbally. Verbal involvement helps manage disruptive behaviour in class, encourages participation, and makes students more engaged in the ongoing activity. The teacher's healthy, unbiased verbal engagement with students makes students accountable. Hence, it is highly recommended that the teacher involve all students in class in oral communication.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-I Reflection 7</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-1-reflection-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 9 &rarr;</a></p>
-</div>

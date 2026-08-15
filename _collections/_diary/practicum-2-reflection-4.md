@@ -12,6 +12,10 @@ description_ur: "تقریباً خالی جماعت، آخری لمحے میں �
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-2-lesson-plan-3/"
+seq_prev_title: "Practicum-II Lesson Plan 3"
+seq_next_url: "/diary/practicum-2-reflection-5/"
+seq_next_title: "Practicum-II Reflection 5"
 ---
 
 <p>This was our fourth visit to the X Government Primary School, Old Sukkur, and only one student from grade five was present when we arrived. According to the cooperative teacher, students are absent due to Ramadan and the extreme heat. It was co-teacher H's turn to deliver the lesson planned for grade 5, but things had changed for her like a nightmare when the cooperating teacher, after consulting with the head teacher, led us to a third-grade class instead. She began by telling the students about herself, and then each student introduced themselves. After asking the students about a table of single-digit numbers, the teacher began teaching counting numbers and some basic addition and subtraction. As we had to engage the students for three periods, the teacher eventually involved them in the poems by bringing them to the front of the class.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>Such circumstances highlight the significance of a well-planned lesson. When a teacher has a lesson plan, they can carry out the lesson smoothly. A lesson plan specifies the lesson objectives and a variety of activities. A lesson plan tells a teacher what to teach, how to teach it, and to what extent — because you are aware of the students.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-II Lesson Plan 3</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-2-reflection-5/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-II Reflection 5 &rarr;</a></p>
-</div>

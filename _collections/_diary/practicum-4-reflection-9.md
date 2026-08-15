@@ -12,6 +12,10 @@ description_ur: "VARK ڈیٹا اور ایک مشترکہ ماجرائی کہا�
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-4-lesson-plan-9/"
+seq_prev_title: "Practicum-IV Lesson Plan 9"
+seq_next_url: "/diary/practicum-4-lesson-plan-10/"
+seq_next_title: "Practicum-IV Lesson Plan 10"
 ---
 
 <p>November 29 was the day we visited X School, Sukkur, for the ninth time, which was supposed to be our second-last excursion of teaching practice. I developed a lesson to help students in 7th-Xappreciate the concept of free writing after analysing my students' VARK data. I started the lesson by instructing the students on a prompt story: I began with the exposition, then the students added whatever came to mind. Moving towards free writing, I wrote three words, "adventure, mystery and laughter," on the board. Still, I instructed them to put pen to paper for 10 minutes, forgetting about punctuation, spelling, sentence structure, and the use of heavy vocabulary in their writing.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>Interacting with students made me realise what bell hooks had said years back. An academy (school/classroom) is not a paradise where students want to be, but a teacher can create one where they can enjoy learning, which is missing in our schools. I wonder what a teacher could do to make students happy? The start could be to spend more and more time in breaks, and whenever a teacher finds an opportunity, instead of gossiping in the corners of staff rooms.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-9/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 9</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-10/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 10 &rarr;</a></p>
-</div>

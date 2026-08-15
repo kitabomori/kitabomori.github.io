@@ -12,6 +12,10 @@ description_ur: "پہلی بار لڑکیوں کی بھری ہوئی جماعت 
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-4-lesson-plan-6/"
+seq_prev_title: "Practicum-IV Lesson Plan 6"
+seq_next_url: "/diary/practicum-4-lesson-plan-7/"
+seq_next_title: "Practicum-IV Lesson Plan 7"
 ---
 
 <p>It takes time for a teacher to adjust to new situations, both to teach and to learn from students. It became even more difficult when a teacher did not know the students' learning styles. Today, at X School, Sukkur, I was in the 7th-X section, packed with 42 female students. Not having experience teaching girls in previous practicums was a challenge for me. As usual, I stopped by the class during break time to interact with the students, but most were outside having lunch. I chatted with a few students and got to know them. The English lesson was based on a VARK reading activity that had students explore their preferred learning styles.</p>
@@ -20,7 +24,3 @@ available_ur: false
 
 <p>It is of great importance to me as a teacher to understand students' learning styles. Which style do they prefer to learn, or that excites them, so they will be fully engaged in learning when the teacher facilitates? Being aware of students' learning styles would enable a teacher to plan and incorporate activities into the class accordingly.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-6/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-IV Lesson Plan 6</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-4-lesson-plan-7/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-IV Lesson Plan 7 &rarr;</a></p>
-</div>

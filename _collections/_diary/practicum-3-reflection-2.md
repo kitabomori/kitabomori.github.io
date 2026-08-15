@@ -12,6 +12,10 @@ description_ur: "لگاتار دو سبق — ریاضی میں ایک مشکل 
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
 available_ur: false
+seq_prev_url: "/diary/practicum-3-lesson-plan-3/"
+seq_prev_title: "Practicum-III Lesson Plan 3"
+seq_next_url: "/diary/practicum-3-lesson-plan-4/"
+seq_next_title: "Practicum-III Lesson Plan 4"
 ---
 
 <p><em>Reflection on Lessons Two and Three</em></p>
@@ -26,7 +30,3 @@ available_ur: false
 
 <p>Moving forward, it is important to address these issues to ensure that all students can benefit from the lessons. To help students who need support with prior knowledge, I planned to incorporate more review activities and assessments at the beginning of each lesson. Additionally, I will continue to adapt my language and teaching strategies to help students who are still developing their language abilities. To address class control, I will consider implementing more engaging activities and group work to keep students interested and involved in the lesson. Overall, I plan to continue reflecting on my teaching practices and make adjustments to ensure that all students can learn and succeed.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-prev"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-3/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">&larr; Previous: Practicum-III Lesson Plan 3</a></p>
-<p class="post-body-seq-next"><a href="{{ site.baseurl }}/{{ site.lang }}/diary/practicum-3-lesson-plan-4/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-III Lesson Plan 4 &rarr;</a></p>
-</div>
