@@ -195,7 +195,7 @@
      reliably show up for anyone who already has the old file cached
      — this is why CSS-only edits (like a font-size change) can look
      like they "didn't take" even though the deploy succeeded. -->
-<link rel="stylesheet" href="/assets/css/main.css?v=1786743048">
+<link rel="stylesheet" href="/assets/css/main.css?v=1786790772">
 
 <!-- Theme script: runs before paint to prevent flash of wrong colour scheme -->
 <script src="/assets/js/theme.js"></script>
@@ -965,13 +965,35 @@
 
 <p style="font-size:0.85rem; color:#666; font-style:italic; border-left:3px solid #009F93; padding-left:0.75rem; margin:0.9rem 0;">Note: The lesson plans, reflections, and reflective reports throughout this diary have been lightly edited and checked for grammatical accuracy for readability using Grammarly, ahead of publishing.</p>
 
-<div class="post-body-seq-nav">
-<p class="post-body-seq-next"><a href="/ur/diary/practicum-1-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">Next: Practicum-I Reflection 1 &rarr;</a></p>
-</div>
 
       
       <!--KITABOMORI-POST-BODY-END-->
     </div>
+
+    <!-- Curated within-sequence Previous/Next (e.g. Lesson Plan 2 ->
+         Lesson Plan 3), driven by seq_prev_*/seq_next_* front matter
+         rather than living in the post body. Deliberately OUTSIDE the
+         availability check above and rendered regardless of
+         available_en/available_ur: a post's own text may only exist
+         in one language, but readers in either language should still
+         be able to step to the neighbouring post in the sequence.
+         seq_*_title_en/seq_*_title_ur override seq_*_title for the
+         current site.lang when a post needs a distinct translated
+         label (see practicum-5-reflection-1.md for an example);
+         otherwise seq_*_title is used as-is in both languages. This
+         is separate from .post-nav further down, which is the
+         automatic Older/Newer nav built from collection date order. -->
+    
+    <div class="post-body-seq-nav">
+      
+      
+        
+        
+        
+      <p class="post-body-seq-next"><a href="/ur/diary/practicum-1-reflection-1/" style="color:#1D5FBF; font-weight:600; font-size:0.92rem;">اگلا: Practicum-I Reflection 1 &rarr;</a></p>
+      
+    </div>
+    
   </div>
 
   <!-- Author and date, shown at the end of the piece -->
