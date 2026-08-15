@@ -279,9 +279,11 @@ layout: base
 
   {% if current_index > -1 %}
     {% if current_index > 0 %}
-      {% assign newer_post = collection_sorted[current_index | minus: 1] %}
+      {% assign newer_index = current_index | minus: 1 %}
+      {% assign newer_post = collection_sorted[newer_index] %}
     {% endif %}
-    {% assign older_post = collection_sorted[current_index | plus: 1] %}
+    {% assign older_index = current_index | plus: 1 %}
+    {% assign older_post = collection_sorted[older_index] %}
 
     {% if newer_post or older_post %}
     {% comment %}
