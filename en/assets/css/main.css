@@ -938,10 +938,15 @@ html:not([dir="rtl"]) .post-body blockquote {
   text-align: right;
 }
 
-[dir="rtl"] .post-body-seq-next {
-  margin-left: 0;
-  margin-right: auto;
-  text-align: left;
+/* Without this, dir="rtl" flips the flex row's start/end edges, so
+   Previous (first in the DOM) would land on the right and Next on
+   the left — mirrored from the English layout. Forcing this
+   container's own direction to ltr keeps Previous physically on the
+   left and Next physically on the right in both languages; the Urdu
+   text inside each link still renders correctly right-to-left on its
+   own via the browser's normal Unicode bidi handling. */
+[dir="rtl"] .post-body-seq-nav {
+  direction: ltr;
 }
 
 /* ---- Prev / next navigation between pieces in a collection ---- */
@@ -952,6 +957,19 @@ html:not([dir="rtl"]) .post-body blockquote {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid #e0e0e0;
+}
+
+/* Same reasoning as .post-body-seq-nav above: without this, dir="rtl"
+   reverses the row's start/end edges and Older ends up on the right
+   with Newer on the left, mirrored from the English layout. Forcing
+   ltr here keeps Older on the left and Newer on the right in both
+   languages, matching the English version's layout exactly (only the
+   text itself is translated). Because direction is inherited, the
+   .post-nav-link.post-nav-next rules further down no longer need
+   separate [dir="rtl"] overrides — the plain (English-authored) rules
+   now apply correctly in Urdu too. */
+[dir="rtl"] .post-nav {
+  direction: ltr;
 }
 
 .dark .post-nav {
@@ -1000,15 +1018,6 @@ html:not([dir="rtl"]) .post-body blockquote {
   align-items: flex-end;
 }
 
-[dir="rtl"] .post-nav-link.post-nav-next {
-  text-align: left;
-  flex-direction: row;
-}
-
-[dir="rtl"] .post-nav-link.post-nav-next .post-nav-text {
-  align-items: flex-start;
-}
-
 .post-nav-label {
   font-size: 0.75rem;
   letter-spacing: 0.04em;
@@ -1042,13 +1051,6 @@ html:not([dir="rtl"]) .post-body blockquote {
   }
   .post-nav-link.post-nav-next .post-nav-text {
     align-items: flex-start;
-  }
-  [dir="rtl"] .post-nav-link.post-nav-next {
-    text-align: right;
-    flex-direction: row-reverse;
-  }
-  [dir="rtl"] .post-nav-link.post-nav-next .post-nav-text {
-    align-items: flex-end;
   }
 }
 
@@ -1840,9 +1842,10 @@ html:not([dir="rtl"]) .post-title {
    available_en / available_ur handling in post.html). Small, italic,
    and set apart from the post's own prose so it reads as site chrome
    rather than part of the piece. */
-.post-header .post-lang-note {
+.post-header .post-lang-note,
+[dir="rtl"] .post-header .post-lang-note {
   @apply text-sm italic mb-4;
-  text-align: center;
+  text-align: center !important;
   color: #7A6A45;
 }
 
