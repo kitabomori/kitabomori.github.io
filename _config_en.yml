@@ -1,0 +1,11 @@
+lang: en
+direction: ltr
+body_font: "'Literata', serif"
+
+# See the matching comment in _config_ur.yml — same fix, /en subpath.
+url: "https://kitabomori.github.io/en"
+
+title_display: "Kitabomori"
+tagline: "Kitabomori – read and write to act"
+
+destination: ./_site/en

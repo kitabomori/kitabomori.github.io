@@ -1,0 +1,2719 @@
+/* ============================================================
+   main.css – Tailwind CSS input file for Kitabomori.
+   PostCSS/Tailwind processes this file during build.
+   Custom component styles follow the @tailwind directives.
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   READING-FRIENDLY BASE PALETTE
+   Warm, low-glare tones instead of pure white/black: reduces eye
+   strain on long-form reading. Body copy uses Literata (a serif
+   built for on-screen reading); headings/UI keep the brand teal.
+   ============================================================ */
+:root {
+  --reading-bg: #FBF8F2;      /* warm paper, not stark white */
+  --reading-text: #2B2A26;    /* soft near-black, not pure #000 */
+  --reading-muted: #5C5A54;   /* muted warm grey for meta text */
+}
+
+.dark {
+  --reading-bg: #1B1A17;      /* warm near-black, not cold #111 */
+  --reading-text: #E9E4D8;    /* warm off-white, not stark white */
+  --reading-muted: #B4AFA2;
+}
+
+/* Sepia: a third reading mode, closer to aged paper — many reading
+   apps offer this and it suits a literary journal well. */
+.sepia {
+  --reading-bg: #F1E7D0;
+  /* Was pure #000000 — softened to a warm dark ink to match the "no
+     stark black/white" principle already used for light/dark mode
+     above. Contrast against #F1E7D0 is still comfortably above
+     WCAG AA for body text. */
+  --reading-text: #241C10;
+  --reading-muted: #7A6952;
+}
+
+.sepia .post-body,
+.sepia .content-card,
+.sepia .section-card {
+  background: #F7EFDC;
+  border-color: #DCC9A3;
+}
+
+.sepia .reading-progress-fill {
+  background: linear-gradient(to right, #8A6D3B, #009F93);
+}
+
+.sepia .ticker-bar {
+  background-color: #E8DAB8 !important;
+}
+
+.sepia .post-meta-bottom,
+.sepia .post-author-bio {
+  border-top-color: #DCC9A3;
+}
+
+html {
+  background-color: var(--reading-bg);
+}
+
+body {
+  background-color: var(--reading-bg);
+  color: var(--reading-text);
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Long-form copy: comfortable size, generous leading, capped
+   measure (line length) — all standard reading-comfort levers. */
+.page-content,
+.post-body {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+}
+
+.post-body p {
+  color: var(--reading-text);
+}
+
+/* ============================================================
+   CUSTOM COMPONENT STYLES
+   ============================================================ */
+
+/* ============================================================
+   MOTION SYSTEM — calm, literary, not "tech startup".
+   Slow (500–700ms), ease-out, small scale/translate ranges.
+   Everything here is inert until motion.js adds .reveal /
+   .reveal-visible classes, or is skipped under
+   prefers-reduced-motion (see @media block at the end).
+   ============================================================ */
+
+/* ---- Scroll reveal: cards, paragraphs, blockquotes ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gentle stagger for card grids — delay increases per card so a
+   row/grid settles in rather than popping all at once. */
+.section-cards .reveal:nth-child(1), .card-grid .reveal:nth-child(1) { transition-delay: 0ms;   }
+.section-cards .reveal:nth-child(2), .card-grid .reveal:nth-child(2) { transition-delay: 90ms;  }
+.section-cards .reveal:nth-child(3), .card-grid .reveal:nth-child(3) { transition-delay: 180ms; }
+.section-cards .reveal:nth-child(4), .card-grid .reveal:nth-child(4) { transition-delay: 270ms; }
+.section-cards .reveal:nth-child(5), .card-grid .reveal:nth-child(5) { transition-delay: 360ms; }
+.section-cards .reveal:nth-child(6), .card-grid .reveal:nth-child(6) { transition-delay: 450ms; }
+
+/* ---- Card hover: lift, soften shadow, underline grows in ---- */
+.content-card,
+.section-card {
+  transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+}
+
+.content-card:hover,
+.section-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 16px 32px -16px color-mix(in srgb, var(--accent, #009F93) 55%, rgba(43, 42, 38, 0.22));
+}
+
+.dark .content-card:hover,
+.dark .section-card:hover {
+  box-shadow: 0 16px 32px -16px color-mix(in srgb, var(--accent, #4FD1C5) 60%, rgba(0, 0, 0, 0.5));
+}
+
+/* Urdu pages: no lift/shadow-glow on hover — the translate + tinted
+   glow reads oddly against RTL layout, so cards just stay put. */
+html[dir="rtl"] .content-card:hover,
+html[dir="rtl"] .section-card:hover {
+  transform: none;
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+}
+
+html[dir="rtl"].dark .content-card:hover,
+html[dir="rtl"].dark .section-card:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card-title a,
+.section-card h2 a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1.5px;
+  transition: background-size 0.4s ease-out;
+  padding-bottom: 1px;
+}
+
+.card-title a:hover,
+.section-card h2 a:hover {
+  text-decoration: none;
+  background-size: 100% 1.5px;
+}
+
+/* ---- Hero: fade + slide up on load, once ---- */
+.home-welcome {
+  animation: hero-fade-up 0.75s ease-out both;
+}
+
+@keyframes hero-fade-up {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero icon breathes gently rather than bobbing, per brand feel */
+.page-decor-hero .decor-svg {
+  animation: decor-hero-breathe 5s ease-in-out infinite;
+}
+
+@keyframes decor-hero-breathe {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50%      { transform: translateY(-4px) scale(1.025); }
+}
+
+/* ---- Poetry: a slow vertical line grows in beside the poem ---- */
+.post-body-poetry {
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+.post-body-poetry::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #009F93 15%, #009F93 85%, transparent);
+  transform: scaleY(0);
+  transform-origin: top;
+  animation: grow-line 1.5s ease-out 0.2s forwards;
+}
+
+.dark .post-body-poetry::before {
+  background: linear-gradient(to bottom, transparent, #4FD1C5 15%, #4FD1C5 85%, transparent);
+}
+
+@keyframes grow-line {
+  to { transform: scaleY(1); }
+}
+
+/* ---- Classic Paper Frame — the writing itself sits on a page,
+   styled to feel like an old diary entry: aged paper tone, faint
+   ruled lines, and a touch of tilt. ---- */
+.post-body {
+  background-color: #FBF3DE;
+  background-image:
+    repeating-linear-gradient(to bottom, transparent 0, transparent 30px, rgba(120, 92, 48, 0.09) 31px, transparent 32px),
+    radial-gradient(circle at 6% 10%, rgba(120, 92, 48, 0.07), transparent 40%),
+    radial-gradient(circle at 94% 88%, rgba(120, 92, 48, 0.06), transparent 45%);
+  border: 1px solid #DFCFA2;
+  border-radius: 3px 16px 6px 18px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(74, 56, 32, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  position: relative;
+}
+
+.dark .post-body {
+  background-color: #221F1B;
+  background-image: none;
+  border-color: #3A362E;
+  box-shadow: none;
+}
+
+@media (max-width: 640px) {
+  .post-body {
+    padding: 1.5rem 1.25rem;
+    border-radius: 10px;
+  }
+}
+
+/* ---- Distinct page tints for the three practicum diary formats, so
+   a reader can tell at a glance whether they're in a lesson plan, a
+   reflection, or a reflective report. Same paper texture and folded
+   corner as the rest of the diary — only the base tone and border
+   shift. ---- */
+.post-body-lesson-plan {
+  background-color: #DCE8F5 !important;
+  border-color: #8EB4DC !important;
+}
+
+.post-body-reflection {
+  background-color: #F0DCEE !important;
+  border-color: #C989C2 !important;
+}
+
+.post-body-reflective-report {
+  background-color: #DCEDD0 !important;
+  border-color: #8FBB6E !important;
+}
+
+.dark .post-body-lesson-plan {
+  background-color: #17242F !important;
+  border-color: #3C6690 !important;
+}
+
+.dark .post-body-reflection {
+  background-color: #2A1C29 !important;
+  border-color: #6E3E68 !important;
+}
+
+.dark .post-body-reflective-report {
+  background-color: #1B2716 !important;
+  border-color: #4A6B34 !important;
+}
+
+.sepia .post-body-lesson-plan {
+  background-color: #E3E8CC !important;
+  border-color: #7FA0C4 !important;
+}
+
+.sepia .post-body-reflection {
+  background-color: #EAD4E3 !important;
+  border-color: #B36DA8 !important;
+}
+
+/* ---- Lesson-plan tables: white background ----
+   The lesson-plan post body has a colour tint (#DCE8F5 in light mode,
+   darker variants in dark/sepia). Tables inside it have no background
+   of their own, so they inherit that tint — hard to read against
+   shaded cells (e.g. the header row's own light-grey background).
+   Force a plain white table surface with dark text so the data reads
+   clearly regardless of the surrounding post tint or colour mode. ---- */
+.post-body-lesson-plan table,
+.post-body-lesson-plan table th,
+.post-body-lesson-plan table td {
+  background-color: #FFFFFF;
+  color: #2B2A26;
+}
+
+.post-body-lesson-plan table th {
+  background-color: #F5F5F5;
+}
+
+/* ---- Responsive tables: keep wide lesson-plan tables from breaking
+   mobile layout. Earlier this used `table { display: block; }` to
+   make the table itself scrollable, but overriding a table's outer
+   display away from `table` breaks the browser's column-width
+   distribution — width:100% tables would leave a blank phantom
+   column on the right instead of sizing their real columns to fill
+   it. Scrolling the *container* instead keeps the table's native
+   layout (and column alignment across rows) intact, while still
+   preventing a wide table from pushing the page itself off-screen
+   on narrow viewports. ---- */
+.post-body {
+  overflow-x: auto;
+}
+
+@media (max-width: 640px) {
+  .post-body table {
+    font-size: 0.85rem;
+  }
+}
+
+/* ---- Urdu / Nastaliq typography ----
+   Single source of truth for Urdu type: anything marked dir="rtl"
+   gets the Nastaliq typeface. font-family is an inherited CSS
+   property, so in principle this alone cascades to every descendant
+   (paragraphs, list items, table cells, etc.) automatically.
+   The explicit "[dir="rtl"] *" line below is deliberately redundant
+   with that inheritance — it re-asserts the same font-family on
+   every descendant directly, rather than relying solely on the
+   cascade. This matters for elements like <table>/<td> nested a few
+   levels inside a dir="rtl" wrapper: inheritance alone is correct
+   per spec, but stating it directly on every descendant removes any
+   dependency on nothing upstream re-setting font-family, now or in
+   a future edit. Belt-and-suspenders, not a fix for a bug found in
+   this rule — just removing any remaining doubt. ---- */
+[dir="rtl"],
+[dir="rtl"] * {
+  font-family: 'Jameel Noori Nastaliq', serif;
+}
+
+/* Word/phrase-level language overrides — the only two fonts on this
+   site are Literata (English) and Jameel Noori Nastaliq (Urdu). These
+   let an author wrap a snippet in <span lang="ur"> inside an English
+   post, or <span lang="en"> inside an Urdu post, so mixed-language
+   text still renders in the correct one of the two, regardless of
+   which page/direction it sits in. */
+:lang(ur) {
+  font-family: 'Jameel Noori Nastaliq', serif;
+}
+:lang(en) {
+  font-family: 'Literata', serif;
+}
+
+.sepia .post-body-reflective-report {
+  background-color: #D9E4B8 !important;
+  border-color: #7FA050 !important;
+}
+
+/* ---- One distinct paper tint per collection, so every section of
+   the site (Articles, Reviews, Letters, Events, and each strand of
+   Creative Writing) reads as its own visually distinct "room", the
+   same way the three diary formats do above. Light / dark / sepia
+   variants for each, same texture, only the tone shifts.
+   Palette refreshed to brighter, more saturated pastels (the old
+   set leaned too muddy/beige-on-beige) while keeping each tone
+   paired with its section's own --accent color from earlier. ---- */
+.post-body-articles {
+  background-color: #FBF3DC !important;
+  border-color: #E3C878 !important;
+}
+
+.post-body-reviews {
+  background-color: #E8F1F8 !important;
+  border-color: #A8C9DE !important;
+}
+
+.post-body-letters {
+  background-color: #EEF5E9 !important;
+  border-color: #B9D9A6 !important;
+}
+
+.post-body-events {
+  background-color: #FDEEE7 !important;
+  border-color: #F0B79A !important;
+}
+
+.post-body-short_stories {
+  background-color: #FBEDF3 !important;
+  border-color: #EFBBD3 !important;
+}
+
+.post-body-poetry {
+  background-color: #F3EBFA !important;
+  border-color: #D6B8ED !important;
+}
+
+.post-body-dialogues {
+  background-color: #E8F7F0 !important;
+  border-color: #A3DFC0 !important;
+}
+
+.post-body-satire {
+  background-color: #FBEEE2 !important;
+  border-color: #E8B78C !important;
+}
+
+.post-body-nonfiction {
+  background-color: #F0F5E6 !important;
+  border-color: #C4D9A0 !important;
+}
+
+.post-body-reflections {
+  background-color: #F6EEE4 !important;
+  border-color: #DDBB93 !important;
+}
+
+.dark .post-body-articles {
+  background-color: #2A2419 !important;
+  border-color: #5C4E28 !important;
+}
+
+.dark .post-body-reviews {
+  background-color: #1B242C !important;
+  border-color: #3A5670 !important;
+}
+
+.dark .post-body-letters {
+  background-color: #1E241B !important;
+  border-color: #3E5433 !important;
+}
+
+.dark .post-body-events {
+  background-color: #2A2019 !important;
+  border-color: #6B4632 !important;
+}
+
+.dark .post-body-short_stories {
+  background-color: #271E24 !important;
+  border-color: #5A3B4C !important;
+}
+
+.dark .post-body-poetry {
+  background-color: #221C2A !important;
+  border-color: #4A3560 !important;
+}
+
+.dark .post-body-dialogues {
+  background-color: #1A2620 !important;
+  border-color: #2E5642 !important;
+}
+
+.dark .post-body-satire {
+  background-color: #271F17 !important;
+  border-color: #5C4227 !important;
+}
+
+.dark .post-body-nonfiction {
+  background-color: #1E241A !important;
+  border-color: #435C34 !important;
+}
+
+.dark .post-body-reflections {
+  background-color: #241E19 !important;
+  border-color: #5C4530 !important;
+}
+
+.sepia .post-body-articles {
+  background-color: #F0E4C0 !important;
+  border-color: #C7A24E !important;
+}
+
+.sepia .post-body-reviews {
+  background-color: #DCE6EE !important;
+  border-color: #6E96B8 !important;
+}
+
+.sepia .post-body-letters {
+  background-color: #E2ECD8 !important;
+  border-color: #7FAA5E !important;
+}
+
+.sepia .post-body-events {
+  background-color: #F2DFCE !important;
+  border-color: #D98F5E !important;
+}
+
+.sepia .post-body-short_stories {
+  background-color: #F0DCE6 !important;
+  border-color: #C77FA0 !important;
+}
+
+.sepia .post-body-poetry {
+  background-color: #E8DAF0 !important;
+  border-color: #9B6BC7 !important;
+}
+
+.sepia .post-body-dialogues {
+  background-color: #D8ECE0 !important;
+  border-color: #4FA98A !important;
+}
+
+.sepia .post-body-satire {
+  background-color: #F0DCC4 !important;
+  border-color: #C98A3E !important;
+}
+
+.sepia .post-body-nonfiction {
+  background-color: #DFE8D2 !important;
+  border-color: #6B9B6E !important;
+}
+
+.sepia .post-body-reflections {
+  background-color: #EDE0D0 !important;
+  border-color: #A67C52 !important;
+}
+
+/* Extra-strong, unmistakable section-color signal: a solid accent
+   bar across the top edge of the post frame, on top of the paper
+   tint above. Selector specificity ([data-section] + class) beats
+   the tint rules' plain class selector on purpose, so this always
+   wins regardless of source order. Every post now carries
+   data-section, lesson plans included (see post.html). */
+.post-body[data-section] {
+  border-top: 6px solid var(--accent, #009F93) !important;
+}
+
+/* ============================================================
+   PER-SECTION SHAPE & TEXTURE — each collection previously only
+   differed from the others by background/border colour; every post
+   page was otherwise the exact same rounded, ruled-paper box. These
+   rules give each section its own silhouette, surface texture, and
+   small decorative touch, built from var(--accent) (defined per
+   [data-section] above) so they automatically stay in sync with each
+   section's colour and need no separate dark/sepia variants of their
+   own. Dark mode already strips background-image/box-shadow site-wide
+   via the higher-specificity ".dark .post-body" reset earlier in this
+   file, so textures/shadows below quietly drop out there by design —
+   only shape (border-radius/border-style) and the small accent
+   pseudo-elements carry through into dark mode, which keeps dark mode
+   calm while still reading as visually distinct per section. ---- */
+
+/* Articles — newsprint: crisp corners, a fine halftone dot texture
+   instead of ruled lines, double rule under the header. */
+.post-body-articles {
+  border-radius: 4px;
+  background-image: radial-gradient(color-mix(in srgb, var(--accent) 22%, transparent) 1px, transparent 1.5px);
+  background-size: 13px 13px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+}
+
+/* Reviews — a torn/folded notecard: asymmetric corners plus a small
+   folded-corner triangle top-right, like a bookmark tab. */
+.post-body-reviews {
+  border-radius: 2px 26px 2px 26px;
+  background-image: none;
+}
+
+.post-body-reviews::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 34px 34px 0;
+  border-color: transparent color-mix(in srgb, var(--accent) 35%, transparent) transparent transparent;
+  border-top-right-radius: 26px;
+  pointer-events: none;
+}
+
+html[dir="rtl"] .post-body-reviews::before {
+  right: auto;
+  left: 0;
+  border-width: 0 0 34px 34px;
+  border-color: transparent transparent transparent color-mix(in srgb, var(--accent) 35%, transparent);
+  border-top-right-radius: 0;
+  border-top-left-radius: 26px;
+}
+
+/* Letters — stationery: uniform rounded corners, a ridged double
+   border instead of a single hairline, tighter ruled lines. */
+.post-body-letters {
+  border-radius: 14px;
+  border-style: double;
+  border-width: 6px;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 22px, color-mix(in srgb, var(--accent) 10%, transparent) 23px, transparent 24px);
+}
+
+/* Events — a ticket stub: bold flat border plus a dashed perforation
+   line with circular notches cut from each side, like a tear-off. */
+.post-body-events {
+  border-radius: 6px;
+  border-width: 2px;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 30px, color-mix(in srgb, var(--accent) 8%, transparent) 31px, transparent 32px);
+}
+
+.post-body-events::before,
+.post-body-events::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  background: var(--reading-bg, #FBF8F2);
+  border: 2px solid color-mix(in srgb, var(--accent) 55%, #DFCFA2);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.post-body-events::before { left: 6px; }
+.post-body-events::after { right: 6px; }
+
+/* Short Stories — an open book page: big soft curl top-left/bottom-
+   right, a faint page-curl shadow tucked into the corner. */
+.post-body-short_stories {
+  border-radius: 44px 6px 44px 6px;
+  background-image: radial-gradient(circle at 96% 94%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 42%);
+}
+
+/* Poetry — kept minimal so the existing grow-in side rule stays the
+   focal point: soft uniform corners, no competing texture. */
+.post-body-poetry {
+  border-radius: 10px 10px 10px 10px;
+  background-image: none;
+}
+
+/* Dialogues — a speech bubble: fully rounded corners plus a small
+   tail pseudo-element, like two people mid-conversation. */
+.post-body-dialogues {
+  border-radius: 26px;
+  background-image: none;
+}
+
+.post-body-dialogues::after {
+  content: "";
+  position: absolute;
+  bottom: 14px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 14px 14px 0 0;
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent) transparent transparent transparent;
+  pointer-events: none;
+}
+
+html[dir="rtl"] .post-body-dialogues::after {
+  left: auto;
+  right: 20px;
+  border-width: 14px 0 0 14px;
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent) transparent transparent transparent;
+}
+
+/* Satire — a playful, slightly crooked note with a dashed border and
+   a small stamp-like circle, like it was pinned up in a hurry. */
+.post-body-satire {
+  border-radius: 8px;
+  border-style: dashed;
+  transform: rotate(-0.5deg);
+  background-image: none;
+}
+
+.post-body-satire::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 70%, transparent);
+  opacity: 0.5;
+  transform: rotate(12deg);
+  pointer-events: none;
+}
+
+html[dir="rtl"] .post-body-satire::after {
+  right: auto;
+  left: 22px;
+}
+
+/* Nonfiction — graph/grid paper: clean crossed ruling instead of a
+   single-axis ruled line, sharp corners. */
+.post-body-nonfiction {
+  border-radius: 4px;
+  background-image:
+    repeating-linear-gradient(to bottom, transparent 0, transparent 23px, color-mix(in srgb, var(--accent) 10%, transparent) 24px, transparent 25px),
+    repeating-linear-gradient(to right, transparent 0, transparent 23px, color-mix(in srgb, var(--accent) 10%, transparent) 24px, transparent 25px);
+}
+
+/* Reflections — a mirror: soft rounded top corners, sharp bottom
+   corners, and a faint centred glow suggesting a looking-glass. */
+.post-body-reflections {
+  border-radius: 34px 34px 4px 4px;
+  background-image: radial-gradient(ellipse at 50% 38%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 60%);
+}
+
+/* ---- Diary sub-formats: same shape treatment as their siblings
+   above, applied on top of the existing colour tints. ---- */
+
+/* Lesson plans — a worksheet: tight grid ruling, sharp corners, a
+   heavier double top rule like a printed handout. */
+.post-body-lesson-plan {
+  border-radius: 4px;
+  border-top-style: double;
+  border-top-width: 6px;
+  background-image:
+    repeating-linear-gradient(to bottom, transparent 0, transparent 19px, color-mix(in srgb, #8EB4DC 12%, transparent) 20px, transparent 21px),
+    repeating-linear-gradient(to right, transparent 0, transparent 19px, color-mix(in srgb, #8EB4DC 12%, transparent) 20px, transparent 21px);
+}
+
+/* Reflections (diary format) — a journal: soft uniform rounding,
+   quiet dot texture rather than ruled lines. */
+.post-body-reflection {
+  border-radius: 26px;
+  background-image: radial-gradient(color-mix(in srgb, #C989C2 20%, transparent) 1px, transparent 1.5px);
+  background-size: 14px 14px;
+}
+
+/* Reflective reports — a bound report: sharp corners plus a thick
+   binder-margin stripe down the leading edge. */
+.post-body-reflective-report {
+  border-radius: 4px;
+  box-shadow: inset 7px 0 0 0 color-mix(in srgb, #8FBB6E 70%, transparent), 0 6px 18px rgba(74, 56, 32, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+html[dir="rtl"] .post-body-reflective-report {
+  box-shadow: inset -7px 0 0 0 color-mix(in srgb, #8FBB6E 70%, transparent), 0 6px 18px rgba(74, 56, 32, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.dark .post-body-reflective-report {
+  box-shadow: inset 7px 0 0 0 color-mix(in srgb, #4A6B34 70%, transparent);
+}
+
+html[dir="rtl"].dark .post-body-reflective-report {
+  box-shadow: inset -7px 0 0 0 color-mix(in srgb, #4A6B34 70%, transparent);
+}
+
+@media (max-width: 640px) {
+  /* Corner/tail decorations are sized for a full-width desktop frame;
+     on narrow screens they overwhelm the box, so they're hidden and
+     the section stays identifiable by colour + shape alone. */
+  .post-body-reviews::before,
+  .post-body-events::before,
+  .post-body-events::after,
+  .post-body-dialogues::after,
+  .post-body-satire::after {
+    display: none;
+  }
+
+  .post-body-satire {
+    transform: none;
+  }
+}
+
+/* ---- Reading-time duration badge (e.g. "3:00") ---- */
+.post-reading-time {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  color: #009F93;
+  font-weight: 600;
+}
+
+.dark .post-reading-time {
+  color: #4FD1C5;
+}
+
+.sepia .post-reading-time {
+  color: #8A6D3B;
+}
+
+/* ---- Auto-extracted pull quote ("crux" sentence) ----
+   Injected server-side by _plugins/pull_quote.rb, after the first
+   2-3 prose paragraphs (or, for short posts, right at the top of the
+   body — see the plugin for the exact rule). Never appears on Lesson
+   Plan posts. Direction/font follow the page's own dir, so Urdu posts
+   get a right-aligned, Nastaliq-set quote rather than the LTR default;
+   nothing here assumes Latin script. */
+.pull-quote {
+  position: relative;
+  margin: 2rem auto;
+  padding: 0.5rem 1.5rem 0.5rem 3rem;
+  max-width: 40rem;
+  border-left: 3px solid var(--accent, #009F93);
+}
+
+.pull-quote[dir="rtl"] {
+  padding: 0.5rem 3rem 0.5rem 1.5rem;
+  border-left: none;
+  border-right: 3px solid var(--accent, #009F93);
+  text-align: right;
+}
+
+.pull-quote-glyph {
+  position: absolute;
+  top: -0.6rem;
+  left: 0.6rem;
+  font-family: 'Literata', serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--accent, #009F93);
+  opacity: 0.22;
+  pointer-events: none;
+  user-select: none;
+}
+
+.pull-quote[dir="rtl"] .pull-quote-glyph {
+  left: auto;
+  right: 0.6rem;
+  font-family: 'Jameel Noori Nastaliq', serif;
+}
+
+.pull-quote-text {
+  position: relative;
+  margin: 0;
+  font-family: 'Literata', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.6em;
+  line-height: 1.45;
+  color: var(--reading-text);
+}
+
+.pull-quote[dir="rtl"] .pull-quote-text {
+  font-family: 'Jameel Noori Nastaliq', serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+}
+
+/* Fallback pull-quotes (drawn from the post's own description, when
+   no strong sentence could be extracted) get the same treatment but a
+   touch quieter, so they don't read as an emphatic claim the post
+   never actually makes. */
+.pull-quote-fallback .pull-quote-text {
+  font-style: normal;
+  opacity: 0.9;
+}
+
+@media (max-width: 640px) {
+  .pull-quote {
+    padding-left: 2rem;
+    max-width: 100%;
+  }
+  .pull-quote[dir="rtl"] {
+    padding-right: 2rem;
+  }
+  .pull-quote-glyph {
+    font-size: 3rem;
+  }
+  .pull-quote-text {
+    font-size: 1.3em;
+  }
+}
+
+/* ---- Pull quotes: any blockquote in the writing becomes a
+   large, quiet quotation rather than a boxed callout.
+   font-family is scoped to html:not([dir="rtl"]) so Urdu blockquotes
+   keep inheriting Jameel Noori Nastaliq (set on [dir="rtl"] near the top
+   of this file) instead of being forced into the Latin serif Literata,
+   which doesn't have Nastaliq glyphs and would render Urdu text with
+   the browser's fallback font instead of the Urdu typeface. ---- */
+.post-body blockquote {
+  border: none;
+  margin: 1.35rem 0;
+  padding: 0 1rem 0 2.75rem;
+  position: relative;
+  font-style: italic;
+  font-size: 1.3em;
+  line-height: 1.6;
+  color: var(--reading-text);
+  opacity: 0.92;
+}
+
+html:not([dir="rtl"]) .post-body blockquote {
+  font-family: 'Literata', serif;
+}
+
+.post-body blockquote::before {
+  content: "\201C";
+  position: absolute;
+  left: 0;
+  top: -0.15em;
+  font-size: 2.6em;
+  font-style: normal;
+  font-family: 'Literata', serif;
+  color: #009F93;
+  opacity: 0.5;
+  line-height: 1;
+}
+
+.dark .post-body blockquote::before {
+  color: #4FD1C5;
+}
+
+.sepia .post-body blockquote::before {
+  color: #8A6D3B;
+}
+
+[dir="rtl"] .post-body blockquote {
+  padding: 0 2.75rem 0 1rem;
+}
+
+[dir="rtl"] .post-body blockquote::before {
+  content: "\201D";
+  left: auto;
+  right: 0;
+}
+
+/* ---- Previous/Next links hand-authored inside a diary post's own
+   body content, linking to the neighbouring post in a curated
+   sequence (e.g. Lesson Plan 2 -> Lesson Plan 3). This is separate
+   from .post-nav below, which is the automatic Older/Newer nav
+   Jekyll builds from collection date order. Sits on one line:
+   Previous on the left, Next on the right; wraps on narrow screens
+   instead of overflowing. If only one of the two exists (first or
+   last post in a sequence), margin-left: auto keeps a lone "Next"
+   pinned to the right rather than collapsing to the left. ---- */
+.post-body-seq-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.post-body-seq-nav p {
+  margin: 0;
+}
+
+.post-body-seq-next {
+  margin-left: auto;
+  text-align: right;
+}
+
+[dir="rtl"] .post-body-seq-next {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* ---- Prev / next navigation between pieces in a collection ---- */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.dark .post-nav {
+  border-top-color: #374151;
+}
+
+.sepia .post-nav {
+  border-top-color: #DCC9A3;
+}
+
+.post-nav-link {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-nav-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+/* Section icon riding along with the neighbouring post's title,
+   tinted with the same --accent as the rest of the post (see
+   data-section on .post-nav) so it's immediately clear which
+   section Older/Newer will take you to. */
+.post-nav-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: var(--accent, #009F93);
+  opacity: 0.85;
+}
+
+.post-nav-link.post-nav-next {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+.post-nav-link.post-nav-next .post-nav-text {
+  align-items: flex-end;
+}
+
+[dir="rtl"] .post-nav-link.post-nav-next {
+  text-align: left;
+  flex-direction: row;
+}
+
+[dir="rtl"] .post-nav-link.post-nav-next .post-nav-text {
+  align-items: flex-start;
+}
+
+.post-nav-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--reading-muted);
+}
+
+.post-nav-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent, #1D5FBF) !important;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1.5px;
+  transition: background-size 0.35s ease-out;
+  padding-bottom: 1px;
+  overflow-wrap: anywhere;
+}
+
+.post-nav-link:hover .post-nav-title {
+  background-size: 100% 1.5px;
+}
+
+@media (max-width: 480px) {
+  .post-nav {
+    flex-direction: column;
+  }
+  .post-nav-link.post-nav-next {
+    text-align: left;
+    flex-direction: row;
+  }
+  .post-nav-link.post-nav-next .post-nav-text {
+    align-items: flex-start;
+  }
+  [dir="rtl"] .post-nav-link.post-nav-next {
+    text-align: right;
+    flex-direction: row-reverse;
+  }
+  [dir="rtl"] .post-nav-link.post-nav-next .post-nav-text {
+    align-items: flex-end;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .home-welcome,
+  .page-decor-hero .decor-svg,
+  .post-body-poetry::before {
+    animation: none;
+  }
+  .post-body-poetry::before {
+    transform: scaleY(1);
+  }
+  .content-card:hover,
+  .section-card:hover {
+    transform: none;
+  }
+}
+
+/* ============================================================
+   DECORATIVE PAGE ICONS
+   Small line-art SVGs (book / pen / papers / etc.) that hint at
+   each page's content. Defined once as symbols in icons-sprite.svg
+   and referenced here via <use>. Pure CSS, no images to load.
+   ============================================================ */
+.page-decor {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+  width: 56px;
+  height: 56px;
+  color: #009F93;
+}
+
+.dark .page-decor {
+  color: #4FD1C5;
+}
+
+.decor-svg,
+.decor-svg-sm {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+  animation: decor-float 4.5s ease-in-out infinite;
+}
+
+/* Smaller icon variant used inside post headers and home cards */
+.page-decor-post {
+  width: 44px;
+  height: 44px;
+}
+
+/* Card icon color previously hardcoded to the brand teal for every
+   section — now inherits each card's own --accent (set per section,
+   in section-card- and content-card- variants, below) so the homepage grid and
+   collection listings read as more distinctly colorful at a glance,
+   matching the colored top-strip already on each card. Falls back to
+   teal via --accent's own default when no section class is present. */
+.card-icon {
+  width: 34px;
+  height: 34px;
+  margin: 0 auto 0.6rem;
+  color: var(--accent, #009F93);
+}
+
+.dark .card-icon {
+  color: var(--accent, #4FD1C5);
+}
+
+/* Larger hero illustration on the home page */
+.page-decor-hero {
+  width: 110px;
+  height: 88px;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes decor-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+
+/* Pen / quill icons get a subtle writing-motion wiggle instead of
+   a plain float, since a straight up-down bob looks odd on a nib. */
+.decor-quill .decor-svg,
+.decor-pen-nib .decor-svg {
+  animation: decor-write 3.2s ease-in-out infinite;
+  transform-origin: 70% 85%;
+}
+
+@keyframes decor-write {
+  0%, 100% { transform: rotate(-6deg); }
+  50%      { transform: rotate(6deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .decor-svg,
+  .decor-svg-sm,
+  .page-decor-hero .decor-svg,
+  .decor-quill .decor-svg,
+  .decor-pen-nib .decor-svg {
+    animation: none;
+  }
+}
+
+/* ---- Post margin content: ornamental rule (right). Fixed
+   position, only shown once there's enough gutter width to hold
+   it without crowding the post itself. ---- */
+.post-side {
+  display: none;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+}
+
+/* Was min-width: 1200px — that hid the rails from most 13"-15"
+   laptops (1366×768, 1280×800 etc. all fall short once browser
+   chrome is counted), so the majority of desktop readers never saw
+   this decoration at all. Lowered to 1024px, with a slightly
+   narrower/closer-in variant below 1280px so the rail never
+   crowds the reading column on the smaller end of that range. */
+@media (min-width: 1024px) {
+  .post-side {
+    display: flex;
+  }
+}
+
+.post-side-right {
+  right: 1rem;
+}
+
+.post-side-left {
+  left: 1rem;
+}
+
+@media (min-width: 1280px) {
+  .post-side-right {
+    right: 2.5rem;
+  }
+  .post-side-left {
+    left: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .post-ornament {
+    height: 160px;
+  }
+  .post-ornament-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Horizontal echo of the same motif, placed under the post title. */
+.post-title-divider {
+  position: relative;
+  display: block;
+  width: 140px;
+  height: 2px;
+  margin: 0.75rem auto 1rem;
+  background: linear-gradient(to right, transparent, #009F93 15%, #009F93 85%, transparent);
+}
+
+.post-title-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #009F93;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.dark .post-title-divider {
+  background: linear-gradient(to right, transparent, #4FD1C5 15%, #4FD1C5 85%, transparent);
+}
+
+.dark .post-title-divider::before {
+  background: #4FD1C5;
+}
+
+.sepia .post-title-divider {
+  background: linear-gradient(to right, transparent, #8A6D3B 15%, #8A6D3B 85%, transparent);
+}
+
+.sepia .post-title-divider::before {
+  background: #8A6D3B;
+}
+
+/* Purely decorative vertical rule, echoing the same gradient-line
+   + diamond motif already used beside poetry pieces. */
+.post-ornament {
+  position: relative;
+  display: block;
+  width: 2px;
+  height: 220px;
+  background: linear-gradient(to bottom, transparent, #009F93 15%, #009F93 85%, transparent);
+}
+
+.post-ornament::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #009F93;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.dark .post-ornament {
+  background: linear-gradient(to bottom, transparent, #4FD1C5 15%, #4FD1C5 85%, transparent);
+}
+
+.dark .post-ornament::before {
+  background: #4FD1C5;
+}
+
+.sepia .post-ornament {
+  background: linear-gradient(to bottom, transparent, #8A6D3B 15%, #8A6D3B 85%, transparent);
+}
+
+.sepia .post-ornament::before {
+  background: #8A6D3B;
+}
+
+/* ---- Footer social row: platform logo + label ---- */
+.footer-social-row {
+  @apply flex flex-wrap items-center justify-center gap-x-4 gap-y-2;
+}
+
+.footer-social-link {
+  @apply inline-flex items-center gap-1.5 no-underline;
+  padding: 4px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus-visible {
+  opacity: 0.75;
+}
+
+.footer-social-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+/* ---- Reading progress bar (post pages only) ---- */
+.reading-progress-track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 60; /* above the sticky header (z-50) */
+  background: transparent;
+}
+
+.reading-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent, #009F93);
+  transition: width 0.1s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reading-progress-fill {
+    transition: none;
+  }
+}
+
+/* ---- Breadcrumb trail above the post title ---- */
+.post-breadcrumb {
+  @apply text-sm mb-3;
+  text-align: center;
+  color: var(--reading-muted);
+}
+
+.post-breadcrumb a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-breadcrumb a:hover,
+.post-breadcrumb a:focus-visible {
+  text-decoration: underline;
+  color: var(--accent, #009F93);
+}
+
+.post-breadcrumb-sep {
+  margin: 0 0.4em;
+  opacity: 0.6;
+}
+
+[dir="rtl"] .post-breadcrumb-sep {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+/* ---- Copy-link button, sits beside the "Go back" button ---- */
+.post-back {
+  @apply flex flex-wrap items-center justify-center gap-6;
+}
+
+.post-copy-link-btn {
+  @apply inline-flex items-center gap-1.5 text-sm bg-transparent cursor-pointer;
+  border: none;
+  padding: 0;
+  color: #009F93;
+}
+
+.post-copy-link-btn:hover,
+.post-copy-link-btn:focus-visible {
+  text-decoration: underline;
+}
+
+.post-copy-link-btn-done {
+  color: var(--accent, #009F93) !important;
+}
+
+.post-copy-link-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+/* ---- Font-size control (header) ----
+   Cycles the whole document's root font-size: default -> large ->
+   larger. Everything else is set in rem, so this scales the whole
+   reading experience proportionally without a separate stylesheet. */
+html.text-size-lg {
+  font-size: 112.5%;
+}
+
+html.text-size-xl {
+  font-size: 125%;
+}
+
+/* ---- Sticky header: compact state after scrolling ----
+   Toggled by motion.js once the page scrolls past a small
+   threshold; a few px less padding and a smaller site title so
+   the header takes up less room during long reads, while staying
+   in place for quick access to nav/search/theme controls. */
+.site-header {
+  transition: padding 0.2s ease;
+}
+
+.site-header.header-scrolled .header-inner {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
+
+.site-header.header-scrolled .site-title {
+  font-size: 1.05rem;
+}
+
+.site-header.header-scrolled .site-title svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header {
+    transition: none;
+  }
+}
+
+/* ---- Section accent variable ----
+   One --accent value per section, set on [data-section] via the
+   attribute selectors below. Everything that should pick up the
+   section's color (rail lamp icon, pull-quote border/glyph) just
+   references var(--accent, #009F93) and inherits it automatically —
+   no per-element color rules needed elsewhere. Lesson Plan posts never
+   get a data-section attribute, so they always fall through to the
+   plain teal default above and are visually untouched. */
+[data-section="articles"]      { --accent: #C79A3E; } /* amber / gold */
+[data-section="reviews"]       { --accent: #4C7EA6; } /* steel blue */
+[data-section="letters"]       { --accent: #6E9B5E; } /* sage green */
+[data-section="diary"]         { --accent: #009F93; } /* teal (primary) */
+[data-section="events"]        { --accent: #D9714A; } /* coral */
+/* Creative Writing used to share one pink accent across all six
+   strands; each now gets its own colour so every one of the site's
+   9 writing sections reads as visually distinct. */
+[data-section="short_stories"] { --accent: #C77FA0; } /* dusty rose */
+[data-section="poetry"]        { --accent: #8F5FC2; } /* violet */
+[data-section="reflections"]   { --accent: #A67C52; } /* warm taupe */
+[data-section="dialogues"]     { --accent: #2E9B6B; } /* jade green */
+[data-section="satire"]        { --accent: #B8622E; } /* rust / burnt orange */
+[data-section="nonfiction"]    { --accent: #7A9B4E; } /* olive green */
+
+/* ---- Rail lamp icon: the accented variant of .post-ornament, used
+   for every post except Lesson Plans (see post.html). Same line +
+   diamond as the plain version, plus a small lamp glyph centered on
+   the line, tinted with the section's --accent. ---- */
+.post-ornament-accent {
+  background: linear-gradient(to bottom, transparent, var(--accent, #009F93) 15%, var(--accent, #009F93) 85%, transparent);
+}
+
+.post-ornament-accent::before {
+  background: var(--accent, #009F93);
+}
+
+.post-ornament-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+  color: var(--accent, #009F93);
+  background: var(--reading-bg, #FDF8EC);
+  border-radius: 50%;
+  padding: 3px;
+  opacity: 0.85;
+}
+
+.dark .post-ornament-icon {
+  background: var(--reading-bg, #221F1B);
+}
+
+/* Second icon on the rail (a small leaf), offset further down the
+   line from the centered lamp so the margin reads as more than one
+   lone dot. Smaller and quieter than the lamp — no background disc,
+   just the accent-tinted line-art itself. */
+.post-ornament-icon-secondary {
+  top: calc(50% + 78px);
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  background: none;
+  opacity: 0.6;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .post-ornament-icon-secondary {
+    top: calc(50% + 56px);
+  }
+}
+
+/* Very faint radial wash behind the whole rail, in the section's own
+   accent colour, so the margin itself carries a hint of colour
+   rather than being flat page background right up to the thin line. */
+.post-ornament-accent::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse at center, color-mix(in srgb, var(--accent, #009F93) 14%, transparent) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ---- Header ---- */
+.site-header {
+  @apply w-full sticky top-0 z-50 shadow-sm;
+}
+
+.header-inner {
+  @apply max-w-7xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap gap-2;
+}
+
+.site-title {
+  @apply text-xl font-bold tracking-tight;
+}
+
+html:not([dir="rtl"]) .site-title {
+  font-family: 'Literata', serif;
+}
+
+.nav-toggle {
+  @apply md:hidden;
+}
+
+.main-nav {
+  @apply hidden md:block w-full md:w-auto;
+}
+
+.main-nav.open {
+  @apply block;
+}
+
+.main-nav ul {
+  @apply flex flex-col md:flex-row flex-wrap gap-x-4 gap-y-1 mt-2 md:mt-0 list-none p-0 m-0;
+}
+
+.main-nav ul li a {
+  @apply text-sm font-medium hover:underline;
+  display: inline-block;
+  padding: 6px 4px;
+}
+.main-nav ul li a:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.header-controls {
+  @apply flex items-center gap-2 flex-shrink-0;
+}
+
+/* Borderless header controls (language switch, theme toggle):
+   no box, underline on hover/focus for click affordance. */
+.header-control-btn {
+  @apply text-sm font-semibold tracking-wide bg-transparent border-none cursor-pointer;
+  text-underline-offset: 3px;
+  padding: 8px 10px;
+  min-height: 24px;
+}
+.header-control-btn:hover,
+.header-control-btn:focus-visible {
+  text-decoration: underline;
+}
+.header-control-btn:focus-visible {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Visually hidden but still readable by screen readers (form labels
+   that would be visually redundant next to a placeholder, etc.). */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip-to-content link: hidden off-screen until keyboard-focused,
+   then jumps to the front of the page above the header. */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  background: #FFFFFF;
+  color: #00695F;
+  padding: 12px 18px;
+  font-weight: 600;
+  border-radius: 0 0 6px 0;
+  text-decoration: none;
+}
+.skip-to-content:focus {
+  left: 0;
+}
+
+/* ---- Dropdown submenu (Creative Writing) ---- */
+.nav-item-has-children {
+  @apply relative;
+}
+
+.nav-parent-row {
+  @apply flex items-center gap-1;
+}
+
+.submenu-toggle {
+  @apply md:hidden;
+}
+
+/* Desktop: caret always shown, submenu revealed only on click */
+@media (min-width: 768px) {
+  .submenu-toggle {
+    display: inline-block;
+  }
+
+  .submenu {
+    @apply hidden absolute left-0 top-full min-w-[190px] flex-col gap-0 list-none m-0 p-2 z-50 rounded-b shadow-md;
+    background-color: #009F93;
+  }
+
+  [dir="rtl"] .submenu {
+    @apply left-auto right-0;
+  }
+
+  .nav-item-has-children.submenu-open .submenu {
+    @apply flex;
+  }
+
+  .submenu li a {
+    @apply block py-1.5 px-2 text-sm rounded hover:bg-white/10 hover:underline;
+  }
+}
+
+/* Mobile: submenu is a simple indented accordion list */
+@media (max-width: 767px) {
+  .submenu {
+    @apply hidden flex-col list-none m-0 p-0 pl-4 gap-1;
+  }
+
+  [dir="rtl"] .submenu {
+    @apply pl-0 pr-4;
+  }
+
+  .nav-item-has-children.submenu-open .submenu {
+    @apply flex mt-1;
+  }
+
+  .submenu li a {
+    @apply block text-sm py-1;
+  }
+}
+
+/* ---- Ticker ---- */
+.ticker-bar {
+  @apply flex items-center overflow-hidden py-2;
+}
+
+.dark .ticker-bar {
+  background-color: #1a1a1a !important;
+}
+
+.ticker-label {
+  @apply text-sm font-semibold flex-shrink-0;
+}
+
+.ticker-overflow {
+  @apply flex-1 overflow-hidden;
+}
+
+.ticker-track {
+  @apply flex whitespace-nowrap;
+  animation: ticker-scroll 35s linear infinite;
+}
+
+.ticker-track:hover,
+.ticker-track:focus-within {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+  }
+}
+
+/* RTL: reverse scroll direction */
+[dir="rtl"] .ticker-track {
+  animation-direction: reverse;
+}
+
+.ticker-item {
+  @apply text-sm font-medium;
+}
+
+/* Nastaliq glyphs are tall and extend below the normal line box, so the
+   default tight line-height clips them against the ticker's
+   overflow-hidden wrapper — give RTL extra vertical room. */
+[dir="rtl"] .ticker-bar {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+[dir="rtl"] .ticker-item {
+  line-height: 2.2;
+  display: inline-block;
+}
+
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ---- Page layout ---- */
+.page-container {
+  @apply max-w-3xl mx-auto px-4 py-10;
+}
+
+.page-title {
+  @apply text-2xl font-semibold mb-6;
+  color: #009F93;
+  letter-spacing: -0.01em;
+}
+
+html:not([dir="rtl"]) .page-title {
+  font-family: 'Literata', serif;
+}
+
+.page-content {
+  @apply prose prose-lg max-w-none;
+}
+
+/* ---- Post layout ---- */
+.post-container {
+  @apply max-w-3xl mx-auto px-4 py-10;
+}
+
+.post-header {
+  @apply mb-5;
+}
+
+/* ---- Merged card: title lives inside the same card as the body now
+   (see post.html). ---- */
+.post-body .post-header {
+  margin-top: 0;
+}
+
+/* ---- Plain header strip above the post card ----
+   Breadcrumb, decor icon, and YouTube embed/link now live OUTSIDE
+   the tinted/bordered post card (see .post-meta-top in post.html),
+   sitting directly on the page background instead of inside the
+   section-tinted "paper". No border, no background, no per-section
+   accent — always the site's one main teal brand color, the same on
+   every post regardless of section, and centred. */
+.post-meta-top {
+  @apply mb-5;
+  text-align: center;
+}
+
+.post-meta-top .post-breadcrumb,
+.post-meta-top .page-decor-post {
+  color: #009F93;
+}
+
+.dark .post-meta-top .post-breadcrumb,
+.dark .post-meta-top .page-decor-post {
+  color: #4FD1C5;
+}
+
+/* Breadcrumb links here are always the fixed site teal, on hover too —
+   not the section's --accent (the ancestor <article> still carries
+   data-section for the title inside the card below, but this strip
+   is deliberately section-agnostic). */
+.post-meta-top .post-breadcrumb a:hover,
+.post-meta-top .post-breadcrumb a:focus-visible {
+  color: #009F93;
+}
+
+.dark .post-meta-top .post-breadcrumb a:hover,
+.dark .post-meta-top .post-breadcrumb a:focus-visible {
+  color: #4FD1C5;
+}
+
+.post-title {
+  @apply text-lg font-semibold mb-2;
+  /* Was fixed teal on every post — now inherits the section's own
+     accent (set via data-section on the <article> and the merged
+     .post-body card, in post.html), so an Article title reads amber,
+     a Letter sage green, a Lesson Plan teal (as part of the diary
+     group), etc. Falls back to teal when no section context is
+     present. */
+  color: var(--accent, #009F93);
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+/* Desktop title size: was text-2xl (1.5rem/24px), trimmed down to
+   1.35rem (~21.6px) — noticeably smaller without dropping all the way
+   to the mobile text-xl (1.25rem/20px) size. Adjust this one value if
+   you want it smaller/larger still. */
+@media (min-width: 768px) {
+  .post-title {
+    font-size: 1.35rem;
+  }
+}
+
+/* Display serif for titles only — Literata stays the body-copy face.
+   Scoped to LTR so Urdu titles keep rendering in Jameel Noori Nastaliq
+   (set on [dir="rtl"] elsewhere in this file) rather than falling
+   back to a Latin font with no Nastaliq glyphs. */
+html:not([dir="rtl"]) .post-title {
+  font-family: 'Literata', serif;
+}
+
+/* Nastaliq glyphs are tall and extend well below the normal line box,
+   so the default line-height/margin isn't enough clearance before the
+   title-divider below — without this the two visually overlap in
+   Urdu. */
+[dir="rtl"] .post-title {
+  line-height: 2.4;
+  margin-bottom: 1rem;
+}
+
+/* Language-availability note — shown under the title when a post
+   has no content in the current build's language (see
+   available_en / available_ur handling in post.html). Small, italic,
+   and set apart from the post's own prose so it reads as site chrome
+   rather than part of the piece. */
+.post-header .post-lang-note {
+  @apply text-sm italic mb-4;
+  text-align: center;
+  color: #7A6A45;
+}
+
+.post-header .post-lang-note a {
+  color: #009F93 !important;
+  text-decoration: underline;
+}
+
+.dark .post-header .post-lang-note {
+  color: #c9b98a;
+}
+
+/* Audio (YouTube) link — shown centred, ABOVE the post title (see
+   post.html). Lesson Plan posts never render this at all. */
+.post-audio-link {
+  @apply text-sm mb-2;
+  text-align: center;
+}
+
+.post-audio-link a {
+  color: #009F93 !important;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.post-audio-link a:hover {
+  color: #007A70;
+}
+
+.dark .post-audio-link a {
+  color: #4FD1C5 !important;
+}
+
+/* ---- Embedded YouTube player ----
+   Shown centred, ABOVE the post title (see post.html) — never on
+   Lesson Plan posts. Responsive 16:9 wrapper using the aspect-ratio
+   trick (padding-top hack retained as a fallback for older browsers).
+   Fills the width of the post column at every breakpoint, and
+   matches the rounded-corner, soft-shadow card look already used
+   elsewhere on the site. margin-left/right: auto centers it
+   horizontally within the (already centered) post column. */
+.post-video-embed {
+  @apply mb-6;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-video-embed-frame {
+  position: relative;
+  width: 100%;
+  /* 16:9 aspect ratio */
+  aspect-ratio: 16 / 9;
+  padding-top: 56.25%; /* fallback for browsers without aspect-ratio support */
+  height: 0;
+  overflow: hidden;
+  border-radius: 4px 4px 10px 10px;
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+  background: #000;
+}
+
+/* When aspect-ratio is supported, undo the padding-top hack so the
+   two techniques don't stack and double the height. */
+@supports (aspect-ratio: 16 / 9) {
+  .post-video-embed-frame {
+    padding-top: 0;
+    height: auto;
+  }
+}
+
+.post-video-embed-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.dark .post-video-embed-frame {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ---- In-post images (see _includes/post-image.html) ----
+   Responsive, centered figure with a light border and soft shadow —
+   echoes the card look used elsewhere, with room for a caption. */
+.post-figure {
+  @apply my-6;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.post-figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #E5DFD0;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+}
+
+.dark .post-figure img {
+  border-color: #3A362E;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.post-figure-caption {
+  @apply text-sm mt-2;
+  color: var(--reading-muted);
+  font-style: italic;
+}
+
+/* ---- Embedded PowerPoint (see _includes/pptx-embed.html) ----
+   Same responsive card treatment as the YouTube embed, at a wider
+   4:3-ish ratio that suits slides better than 16:9 video. */
+.post-pptx-embed {
+  @apply mb-2;
+  max-width: 46rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-pptx-embed iframe {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 0;
+  border-radius: 4px 4px 10px 10px;
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+  background: #F3F0E6;
+}
+
+.dark .post-pptx-embed iframe {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.post-pptx-fallback {
+  @apply text-sm text-center mt-2 mb-6;
+}
+
+.post-pptx-fallback a {
+  color: #009F93;
+}
+
+/* ---- In-post charts/graphs (Chart.js, loaded conditionally — see
+   head.html's `page.has_chart` check and the docs in guidelines.md).
+   A card-style container so a <canvas> sits on a clean, bordered
+   background regardless of chart colors chosen per-post. */
+.post-chart {
+  @apply my-6 p-4;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: color-mix(in srgb, #009F93 5%, #FDF8EC);
+  border: 1px solid #E5DFD0;
+  border-radius: 6px;
+}
+
+.dark .post-chart {
+  background: color-mix(in srgb, #4FD1C5 8%, #221F1B);
+  border-color: #3A362E;
+}
+
+.post-chart canvas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-date {
+  @apply text-sm text-gray-500 mb-2;
+  text-align: left;
+}
+
+.post-description {
+  @apply text-base text-gray-600 italic mb-4;
+  text-align: center;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[dir="rtl"] .post-date {
+  text-align: right;
+}
+
+.dark .post-description {
+  @apply text-gray-400;
+}
+
+.post-body {
+  @apply prose prose-lg max-w-none;
+}
+
+.post-body p {
+  text-align: justify;
+  text-indent: 0;
+  margin-top: 0;
+  margin-bottom: 0.85em;
+}
+
+/* Reference links, resource links, and any other inline links inside
+   the body of a post read in blue — the conventional "this is a
+   link" colour — distinct from the site's teal brand colour used for
+   headings, nav, and decoration. */
+.post-body a {
+  color: #1D5FBF !important;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.post-body h1,
+.post-body h2 {
+  font-size: 1.25em;
+}
+
+.post-body h3,
+.post-body h4 {
+  font-size: 1.05em;
+  margin-top: 1.15em;
+  margin-bottom: 0.4em;
+}
+
+.post-body a:hover {
+  color: #14417F;
+}
+
+.dark .post-body a {
+  color: #7FB0FF !important;
+}
+
+.dark .post-body a:hover {
+  color: #A9CBFF;
+}
+
+.sepia .post-body a {
+  color: #1D5FBF !important;
+}
+
+/* Author + date byline at the end of the post */
+.post-meta-bottom {
+  text-align: right;
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+  color: #555555;
+  font-size: 0.9rem;
+}
+
+.dark .post-meta-bottom {
+  border-top-color: #374151;
+  color: #9ca3af;
+}
+
+[dir="rtl"] .post-meta-bottom {
+  text-align: left;
+}
+
+/* Author biography block, shown after the byline when provided */
+.post-author-bio {
+  @apply mt-3 pt-3 text-sm;
+  border-top: 1px dashed #d0d0d0;
+  text-align: left;
+}
+
+[dir="rtl"] .post-author-bio {
+  text-align: right;
+}
+
+.post-author-bio-name {
+  @apply font-semibold mb-1;
+  color: #009F93;
+}
+
+.post-author-bio-text {
+  color: #555555;
+}
+
+.dark .post-author-bio {
+  border-top-color: #374151;
+}
+
+.dark .post-author-bio-text {
+  @apply text-gray-400;
+}
+
+.post-back {
+  @apply mt-10 text-sm;
+}
+
+.post-back a {
+  color: #009F93;
+}
+
+.post-back-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #009F93;
+  font: inherit;
+}
+
+/* ---- Home page ---- */
+.home-welcome {
+  @apply mb-12;
+  position: relative;
+}
+
+/* Oversized, very low-opacity echo of the header/hero icon sitting
+   behind the welcome copy — fills the empty space around the hero
+   text with something more than a flat background, without
+   competing with the actual copy for attention. Purely decorative;
+   aria-hidden and non-interactive. */
+.home-watermark {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 260px;
+  height: 260px;
+  color: var(--accent, #009F93);
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dark .home-watermark {
+  opacity: 0.07;
+}
+
+.sepia .home-watermark {
+  opacity: 0.09;
+}
+
+@media (max-width: 640px) {
+  .home-watermark {
+    width: 160px;
+    height: 160px;
+    top: -0.5rem;
+    right: -0.5rem;
+  }
+}
+
+.home-welcome > *:not(.home-watermark) {
+  position: relative;
+  z-index: 1;
+}
+
+.home-heading {
+  @apply text-3xl md:text-4xl font-semibold mb-2;
+  color: #009F93;
+  letter-spacing: -0.01em;
+}
+
+html:not([dir="rtl"]) .home-heading {
+  font-family: 'Literata', serif;
+}
+
+.home-tagline {
+  @apply text-lg text-gray-600 mb-6 italic;
+}
+
+.dark .home-tagline {
+  @apply text-gray-400;
+}
+
+/* ---- Section cards (home) ---- */
+.section-cards {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6;
+}
+
+.section-card h2 {
+  @apply text-base font-semibold mb-2;
+}
+
+html:not([dir="rtl"]) .section-card h2 {
+  font-family: 'Literata', serif;
+}
+
+.section-card h2 a {
+  color: #009F93;
+  text-decoration: none;
+}
+
+.section-card h2 a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Content cards (collection list pages) ---- */
+.card-grid {
+  @apply grid grid-cols-1 gap-6 mt-6;
+}
+
+.card-title {
+  @apply text-base font-semibold mb-1;
+}
+
+html:not([dir="rtl"]) .card-title {
+  font-family: 'Literata', serif;
+}
+
+.card-title a {
+  color: #009F93;
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+.card-date {
+  @apply text-xs text-gray-500 mb-2;
+}
+
+.card-excerpt {
+  @apply text-sm text-gray-700 mb-3;
+}
+
+.dark .card-excerpt {
+  @apply text-gray-300;
+}
+
+.card-read-more {
+  @apply text-sm font-medium;
+  color: #009F93;
+}
+
+.collection-intro {
+  @apply text-base text-gray-600 mb-6 italic;
+}
+
+.dark .collection-intro {
+  @apply text-gray-400;
+}
+
+/* ---- Search ---- */
+.search-result {
+  --accent: #009F93;
+  @apply py-3 pl-3 mb-2 border-b border-gray-200;
+  border-left: 4px solid var(--accent);
+  border-radius: 3px;
+  transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.search-result:hover {
+  transform: translateX(3px);
+  box-shadow: 0 6px 16px -10px var(--accent);
+}
+
+/* Urdu pages: skip the hover shift/glow (see content-card override
+   above for the reasoning — same thing for search results). */
+html[dir="rtl"] .search-result:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.dark .search-result {
+  @apply border-gray-700;
+  border-left-color: var(--accent);
+}
+
+.search-result a {
+  color: #009F93;
+  text-decoration: none;
+}
+
+.search-result-type {
+  display: inline-block;
+  @apply text-xs font-semibold uppercase tracking-wide mb-1;
+  padding: 2px 9px;
+  border-radius: 999px;
+  color: var(--accent);
+  background-color: color-mix(in srgb, var(--accent) 16%, #FFFFFF);
+}
+
+.dark .search-result-type {
+  background-color: color-mix(in srgb, var(--accent) 30%, #1B1A17);
+  color: color-mix(in srgb, var(--accent) 70%, #FFFFFF);
+}
+
+.search-result-title {
+  @apply text-base font-semibold m-0;
+  color: #009F93;
+}
+
+.search-result-title:hover {
+  text-decoration: underline;
+}
+
+.search-result-snippet {
+  @apply text-sm text-gray-600 mt-2 mb-0;
+}
+
+.dark .search-result-snippet {
+  @apply text-gray-400;
+}
+
+.search-result-snippet mark,
+.search-result-title mark {
+  background-color: #FDE68A;
+  color: inherit;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.dark .search-result-snippet mark,
+.dark .search-result-title mark {
+  background-color: #92400E;
+  color: #FEF3C7;
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  @apply mt-16 pt-10 pb-6;
+}
+
+.footer-inner {
+  @apply max-w-4xl mx-auto px-4 flex flex-col items-center text-center gap-3;
+}
+
+.footer-row {
+  @apply text-sm flex flex-wrap items-center justify-center gap-x-2 gap-y-1;
+}
+
+.footer-row a {
+  @apply hover:underline whitespace-nowrap;
+}
+
+.footer-label {
+  @apply opacity-80 mr-1;
+}
+
+.footer-copy {
+  @apply text-xs opacity-70 mt-3;
+}
+
+/* ---- Contact ---- */
+.contact-note {
+  @apply mt-4 text-sm text-gray-500 italic;
+}
+
+/* ---- Dark mode base overrides ---- */
+.dark body {
+  background-color: var(--reading-bg);
+  color: var(--reading-text);
+}
+
+.dark .page-content,
+.dark .post-body {
+  @apply prose-invert;
+}
+
+.dark a {
+  color: #00c8b0;
+}
+
+/* ---- RTL prose ----
+   Urdu pages already read right-to-left (text-align: right below);
+   paragraph text is additionally justified so both edges line up,
+   with text-align-last: right so a short final line doesn't get
+   awkwardly stretched — it just settles back to the right, matching
+   the reading direction. Scoped to <p> (not headings/lists/blockquotes,
+   which have their own alignment) so justification only applies to
+   running prose. */
+[dir="rtl"] .page-content,
+[dir="rtl"] .post-body {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .page-content p,
+[dir="rtl"] .post-body p {
+  text-align: justify;
+  text-align-last: right;
+}
+
+[dir="rtl"] .post-back {
+  text-align: right;
+}
+
+/* Diary, Dialogues, Reviews, and Satire posts have no separate Urdu
+   body translation — the body content is always in English, even
+   when viewed on a /ur/ page (only the title/description are
+   translated). Without this, the RTL rules above would flip that
+   English prose to right-to-left with a right-aligned last line,
+   which reads wrong for English text. Keep these four collections'
+   body copy left-to-right and justified-left regardless of the
+   page's overall RTL direction. */
+[dir="rtl"] .post-body-diary,
+[dir="rtl"] .post-body-dialogues,
+[dir="rtl"] .post-body-reviews,
+[dir="rtl"] .post-body-satire {
+  direction: ltr;
+  text-align: left;
+}
+
+[dir="rtl"] .post-body-diary p,
+[dir="rtl"] .post-body-dialogues p,
+[dir="rtl"] .post-body-reviews p,
+[dir="rtl"] .post-body-satire p {
+  text-align: justify;
+  text-align-last: left;
+}
+
+[dir="rtl"] .post-body-diary blockquote,
+[dir="rtl"] .post-body-dialogues blockquote,
+[dir="rtl"] .post-body-reviews blockquote,
+[dir="rtl"] .post-body-satire blockquote {
+  padding: 0 1rem 0 2.75rem;
+}
+
+[dir="rtl"] .post-body-diary blockquote::before,
+[dir="rtl"] .post-body-dialogues blockquote::before,
+[dir="rtl"] .post-body-reviews blockquote::before,
+[dir="rtl"] .post-body-satire blockquote::before {
+  content: "\201C";
+  left: 0;
+  right: auto;
+}
+/* ============================================================
+   HOME PAGE ALIGNMENT OVERRIDES
+   ============================================================ */
+
+/* Main container */
+.page-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Welcome section */
+.home-welcome {
+  text-align: center;
+}
+
+.home-heading {
+  text-align: center;
+  color: #009F93;
+}
+
+/* Urdu Nastaliq letterforms (esp. the trailing "ی" in کتابومری)
+   dip well below the normal baseline — the small mb-2 gap that
+   works for the Latin heading isn't enough room here and the tail
+   was overlapping the tagline underneath it. Extra bottom space
+   and a taller line-height give the descender room to breathe. */
+[dir="rtl"] .home-heading {
+  line-height: 1.9;
+  margin-bottom: 1.25rem;
+}
+
+.home-tagline {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.dark .home-tagline {
+  color: #9ca3af;
+}
+
+/* Intro paragraph */
+.home-welcome p {
+  max-width: 850px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Urdu: the "what Kitabomori is" hero copy stays centered (short,
+   welcoming, headline-style paragraphs) — unlike the running prose
+   in posts/pages, this reads better centered under the centered
+   heading/tagline above it. */
+[dir="rtl"] .home-welcome p {
+  text-align: center;
+}
+
+/* Cards layout */
+.section-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.section-card {
+  --accent: #009F93;
+  position: relative;
+  text-align: left;
+  border: 1px solid #E4D9BC;
+  border-top: none;
+  border-radius: 4px 4px 10px 10px;
+  padding: 1.6rem 1.5rem 1.35rem;
+  background-color: #FDF8EC;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 26px, rgba(120, 92, 48, 0.05) 27px, transparent 28px);
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+}
+
+/* Progressive enhancement: tint each card's background with a whisper
+   of its own --accent color (kept very light so the paper texture and
+   body text contrast are unaffected) instead of every section sharing
+   one identical flat cream. Falls back to the plain cream above in
+   browsers without color-mix() support. */
+@supports (background-color: color-mix(in srgb, red, blue)) {
+  .section-card {
+    background-color: color-mix(in srgb, var(--accent) 7%, #FDF8EC);
+  }
+}
+
+.section-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7px;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(to right, var(--accent), #009F93);
+}
+
+.dark .section-card {
+  background-color: #221F1B;
+  background-image: none;
+  border-color: #3A362E;
+}
+
+@supports (background-color: color-mix(in srgb, red, blue)) {
+  .dark .section-card {
+    background-color: color-mix(in srgb, var(--accent) 12%, #221F1B);
+  }
+}
+
+.section-card-articles  { --accent: #C79A3E; }
+.section-card-reviews   { --accent: #D9754A; }
+.section-card-creative  { --accent: #A25FC7; }
+.section-card-letters   { --accent: #5A63C7; }
+.section-card-diary     { --accent: #3C8CBF; }
+.section-card-events    { --accent: #B8A521; }
+
+/* Urdu: cards default to text-align: left (above) for the English
+   site, but the card title/body should read right-to-left on the
+   Urdu pages like the rest of the layout. */
+[dir="rtl"] .section-card {
+  text-align: right;
+}
+
+/* Urdu: the short blurb under each of the homepage's 9 section
+   cards is running prose (unlike the centered hero copy above it),
+   so it starts from the right and justifies both edges, matching
+   the same treatment given to post/page body paragraphs. */
+[dir="rtl"] .section-card p {
+  text-align: justify;
+  text-align-last: right;
+}
+
+/* ---- Content cards (collection listing pages): same textured,
+   accented treatment as the homepage cards, one accent per
+   collection so a reader recognizes which section they're browsing
+   at a glance. Diary cards get the finer-grained lesson-plan /
+   reflection / reflective-report accent instead, matching the tint
+   used on the posts themselves. ---- */
+.content-card {
+  --accent: #009F93;
+  position: relative;
+  border: 1px solid #E4D9BC;
+  border-top: none;
+  border-radius: 4px 4px 10px 10px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  background-color: #FDF8EC;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 26px, rgba(120, 92, 48, 0.05) 27px, transparent 28px);
+  box-shadow: 0 3px 10px rgba(74, 56, 32, 0.08);
+  transition: transform 0.35s ease-out, box-shadow 0.35s ease-out;
+}
+
+.content-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7px;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(to right, var(--accent), #009F93);
+}
+
+/* Hover state lives with the other .content-card:hover rule near the
+   top of this file (keeps the accent-tinted lift in one place). */
+
+.dark .content-card {
+  background-color: #221F1B;
+  background-image: none;
+  border-color: #3A362E;
+}
+
+/* Same subtle per-section accent tint as .section-card on the homepage,
+   applied here so collection listing pages (Articles, Reviews, Poetry,
+   Diary, etc.) are colored consistently with the homepage grid rather
+   than sharing one flat cream for every collection. */
+@supports (background-color: color-mix(in srgb, red, blue)) {
+  .content-card {
+    background-color: color-mix(in srgb, var(--accent) 7%, #FDF8EC);
+  }
+
+  .dark .content-card {
+    background-color: color-mix(in srgb, var(--accent) 12%, #221F1B);
+  }
+}
+
+.card-grid-articles      .content-card { --accent: #C79A3E; }
+.card-grid-reviews       .content-card { --accent: #D9754A; }
+.card-grid-letters       .content-card { --accent: #5A63C7; }
+.card-grid-events        .content-card { --accent: #B8A521; }
+.card-grid-short_stories .content-card { --accent: #C77FA0; }
+.card-grid-poetry        .content-card { --accent: #A25FC7; }
+.card-grid-dialogues     .content-card { --accent: #3EAF8C; }
+.card-grid-satire        .content-card { --accent: #C7883E; }
+.card-grid-nonfiction    .content-card { --accent: #5FA35F; }
+.card-grid-reflections   .content-card { --accent: #B08E6E; }
+.card-grid-diary         .content-card { --accent: #7A6A4F; }
+.card-grid-diary .content-card-lesson-plan       { --accent: #3C6690; }
+.card-grid-diary .content-card-reflection        { --accent: #8E4F8A; }
+.card-grid-diary .content-card-reflective-report { --accent: #4A6B34; }
+
+/* Links in intro paragraph */
+.home-welcome a {
+  color: #009F93;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-welcome a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Decorative chapter-style divider: a classic old-book flourish
+   (line — quill — line) marking the transition from the hero
+   introduction to the section cards. ---- */
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem auto 1.75rem;
+  max-width: 420px;
+}
+
+.section-divider .divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #C7A959, transparent);
+}
+
+.section-divider .divider-line:first-child {
+  background: linear-gradient(to left, transparent, #C7A959, transparent);
+}
+
+.section-divider .divider-icon {
+  width: 20px;
+  height: 20px;
+  fill: #C7A959;
+  flex-shrink: 0;
+}
+
+.dark .section-divider .divider-line,
+.dark .section-divider .divider-line:first-child {
+  background: linear-gradient(to right, transparent, #8A6D3B, transparent);
+}
+
+.dark .section-divider .divider-icon {
+  fill: #8A6D3B;
+}

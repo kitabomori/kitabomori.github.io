@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     base.html – root layout for all pages.
+     Sets html lang/dir, loads head, header, footer, and
+     applies body font from site config.
+     ============================================================ -->
+<html lang="{{ site.lang | default: 'en' }}"
+      dir="{{ site.direction | default: 'ltr' }}"
+      class="">
+<head>
+  {% include head.html %}
+</head>
+<body style="font-family: {{ site.body_font }};">
+
+  <a href="#main-content" class="skip-to-content">
+    {% if site.lang == 'ur' %}مواد پر جائیں{% else %}Skip to content{% endif %}
+  </a>
+
+  {% include icons-sprite.svg %}
+
+  {% include header.html %}
+
+  <main id="main-content">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ site.baseurl }}/assets/js/motion.js" defer></script>
+
+</body>
+</html>

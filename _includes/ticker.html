@@ -1,0 +1,144 @@
+<!-- ============================================================
+     ticker.html – scrolling news ticker for the Home page only.
+     Shows the 5 most recent items across Articles, Reviews,
+     Creative Writing (Short Stories, Poetry, Reflection, Dialogues,
+     Satire, Nonfiction), Letters, and the Teaching
+     Diary — sorted by date (newest first).
+     "Calls" (calls for submissions) are intentionally excluded.
+
+     COLOURS:
+       Background: #FFFFFF (dark mode: #1a1a1a)
+       Text:       #808217
+       Border:     1px bottom in #009F93
+       Heading:    ##00A693
+
+     ANIMATION: CSS-only marquee. Pauses on hover (mouse) and on
+     focus-within (keyboard) — no separate pause button; readers who
+     can't hover/focus (e.g. touchscreen without a pointer) still get
+     the full text via aria-live-free plain links, since every item is
+     a real, tabbable <a>, not purely decorative motion.
+     RTL: animation-direction reversed for dir="rtl" pages.
+     No icons, no emoji, plain text only.
+     ============================================================ -->
+
+<!-- Step 1: Collect all items from every ticker-eligible collection,
+     dropping any post that isn't available in the current language
+     build (available_en: false / available_ur: false) first — a
+     where_exp filter per collection, so nothing not-yet-translated
+     ever lands in the ticker and links to a "not available yet" note
+     instead of the piece itself. -->
+{% assign lang_ok = "site.lang != 'en' or item.available_en != false" %}
+{% assign lang_ok2 = "site.lang != 'ur' or item.available_ur != false" %}
+{% assign ticker_items = "" | split: "" %}
+{% assign coll_filtered = site.articles | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.reviews | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.short_stories | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.poetry | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.reflections | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.dialogues | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.satire | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.nonfiction | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.letters | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+{% assign coll_filtered = site.diary | where_exp: "item", lang_ok | where_exp: "item", lang_ok2 %}
+{% assign ticker_items = ticker_items | concat: coll_filtered %}
+
+<!-- Step 2: Sort by date descending, take top 5 -->
+{% assign ticker_sorted = ticker_items | sort: "date" | reverse %}
+{% assign ticker_top5 = ticker_sorted | limit: 5 %}
+
+<!-- Step 3: Render the ticker bar -->
+<div class="ticker-bar" style="background-color:#FFFFFF; border-bottom:1px solid #009F93;">
+
+  <!-- Heading label (not part of the scroll) -->
+  <span class="ticker-label" style="color:#009F93; font-weight:600; padding:0 12px; white-space:nowrap;">
+    {% if site.lang == 'ur' %}تازہ ترین{% else %}Latest{% endif %}
+  </span>
+
+  <!-- Scrolling track wrapper (overflow hidden) -->
+  <div class="ticker-overflow">
+    <div class="ticker-track">
+
+      <!-- Step 4: Output each item with its collection-type label (twice, for a seamless loop) -->
+      {% for pass in (1..2) %}
+        {% for item in ticker_top5 %}
+          {% assign item_type_en = "" %}
+          {% assign item_type_ur = "" %}
+          {% comment %}
+            Ticker items previously all rendered in one flat olive
+            color regardless of type. item_color reuses the same hues
+            as the per-collection accents in main.css, but darkened —
+            the raw card-accent hex values (used for icons/decorative
+            bars against tinted backgrounds) fail WCAG AA (many under
+            3:1) against the ticker's plain white bar; these variants
+            keep the same color identity per type while clearing a
+            4.5:1 contrast ratio for the small ticker text.
+          {% endcomment %}
+          {% assign item_color = "#808217" %}
+
+          {% if site.articles contains item %}
+            {% assign item_type_en = "Article" %}
+            {% assign item_type_ur = "مضمون" %}
+            {% assign item_color = "#8F6E2C" %}
+          {% elsif site.reviews contains item %}
+            {% assign item_type_en = "Review" %}
+            {% assign item_type_ur = "جائزہ" %}
+            {% assign item_color = "#AD5D3B" %}
+          {% elsif site.short_stories contains item %}
+            {% assign item_type_en = "Short Story" %}
+            {% assign item_type_ur = "مختصر کہانی" %}
+            {% assign item_color = "#9B637C" %}
+          {% elsif site.poetry contains item %}
+            {% assign item_type_en = "Poetry" %}
+            {% assign item_type_ur = "شاعری" %}
+            {% assign item_color = "#9859BB" %}
+          {% elsif site.reflections contains item %}
+            {% assign item_type_en = "Reflection" %}
+            {% assign item_type_ur = "عکاسی" %}
+            {% assign item_color = "#896E55" %}
+          {% elsif site.dialogues contains item %}
+            {% assign item_type_en = "Dialogue" %}
+            {% assign item_type_ur = "مکالمہ" %}
+            {% assign item_color = "#2D8167" %}
+          {% elsif site.satire contains item %}
+            {% assign item_type_en = "Satire" %}
+            {% assign item_type_ur = "طنزیہ تحریر" %}
+            {% assign item_color = "#9B6A30" %}
+          {% elsif site.nonfiction contains item %}
+            {% assign item_type_en = "Nonfiction" %}
+            {% assign item_type_ur = "نان فکشن" %}
+            {% assign item_color = "#4A7F4A" %}
+          {% elsif site.letters contains item %}
+            {% assign item_type_en = "Letter" %}
+            {% assign item_type_ur = "خط" %}
+            {% assign item_color = "#5A63C7" %}
+          {% elsif site.diary contains item %}
+            {% assign item_type_en = "Diary" %}
+            {% assign item_type_ur = "ڈائری" %}
+            {% assign item_color = "#7A6A4F" %}
+          {% endif %}
+
+          <span class="ticker-item" style="color:{{ item_color }};" {% if pass == 2 %}aria-hidden="true"{% endif %}>
+            <a href="{{ site.baseurl }}/{{ site.lang }}{{ item.url }}" style="color:{{ item_color }}; text-decoration:none;">
+              {% if site.lang == 'ur' %}{{ item_type_ur }}{% else %}{{ item_type_en }}{% endif %}
+              {% if site.lang == 'ur' %}{{ item.title_ur }}{% else %}{{ item.title_en }}{% endif %}
+              &ndash;
+              {% include localized-date.html date=item.date %}
+            </a>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+          </span>
+        {% endfor %}
+      {% endfor %}
+
+    </div><!-- /.ticker-track -->
+  </div><!-- /.ticker-overflow -->
+
+</div><!-- /.ticker-bar -->

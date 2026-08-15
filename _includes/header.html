@@ -1,0 +1,211 @@
+<!-- ============================================================
+     header.html – site-wide header
+     Contains: logo/site name, navigation (with one dropdown for
+     Creative Writing), language switcher, dark mode toggle.
+     Background: teal gradient (brand teal family). Text: #FFFFFF.
+     No icons anywhere – plain text only.
+     ============================================================ -->
+<header class="site-header" style="background:linear-gradient(120deg, #006D63 0%, #00786E 55%, #00877B 100%);">
+  <div class="header-inner">
+
+    <!-- Site name / logo -->
+    <a href="{{ site.baseurl }}/{% if site.lang == 'ur' %}ur{% else %}en{% endif %}/"
+       class="site-title"
+       style="color:#FFFFFF; text-decoration:none; display:flex; align-items:center; gap:8px;">
+      <svg width="32" height="32" viewBox="0 0 100 100" aria-hidden="true"
+           style="flex-shrink:0; color:#FFFFFF;">
+        <use href="#icon-open-book-pen"></use>
+      </svg>
+      {% if site.lang == 'ur' %}کتابومری{% else %}Kitabomori{% endif %}
+    </a>
+
+    <!-- Mobile nav toggle: borderless, matches the other header
+         controls (underline on hover/focus, no boxed outline). -->
+    <button class="nav-toggle header-control-btn" onclick="toggleNav()" aria-label="Toggle navigation"
+            aria-expanded="false" aria-controls="main-nav"
+            style="color:#FFFFFF; padding:3px 6px;">
+      {% if site.lang == 'ur' %}مینو{% else %}Menu{% endif %}
+    </button>
+
+    <!-- Main navigation -->
+    <nav class="main-nav" id="main-nav">
+      <ul>
+        {% for item in site.data.navigation %}
+        {% if item.children %}
+        <li class="nav-item-has-children">
+          <div class="nav-parent-row">
+            <a href="{% if site.lang == 'ur' %}{{ item.url_ur }}{% else %}{{ item.url_en }}{% endif %}"
+               style="color:#FFFFFF;">
+              {% if site.lang == 'ur' %}{{ item.name_ur }}{% else %}{{ item.name_en }}{% endif %}
+            </a>
+            <button class="submenu-toggle" onclick="toggleSubmenu(event, this)"
+                     aria-label="{% if site.lang == 'ur' %}ذیلی مینو کھولیں{% else %}Open submenu{% endif %}"
+                     aria-expanded="false"
+                     style="color:#FFFFFF; background:none; border:none; cursor:pointer; padding:0 4px; font-size:0.75rem;">▾</button>
+          </div>
+          <ul class="submenu" style="display:none;">
+            {% for child in item.children %}
+            <li>
+              <a href="{% if site.lang == 'ur' %}{{ child.url_ur }}{% else %}{{ child.url_en }}{% endif %}"
+                 style="color:#FFFFFF;">
+                {% if site.lang == 'ur' %}{{ child.name_ur }}{% else %}{{ child.name_en }}{% endif %}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        {% else %}
+        <li>
+          <a href="{% if site.lang == 'ur' %}{{ item.url_ur }}{% else %}{{ item.url_en }}{% endif %}"
+             style="color:#FFFFFF;">
+            {% if site.lang == 'ur' %}{{ item.name_ur }}{% else %}{{ item.name_en }}{% endif %}
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <!-- Header controls: language switcher + dark mode toggle -->
+    <div class="header-controls">
+
+      <!-- Language switcher: swaps /en/ <-> /ur/ in the current URL -->
+      <a href="#" onclick="switchLanguage(event)" class="lang-switch header-control-btn"
+         style="color:#FFFFFF; text-decoration:none; padding:3px 6px;">
+        {% if site.lang == 'ur' %}EN{% else %}UR{% endif %}
+      </a>
+
+      <!-- Theme toggle: cycles Light -> Sepia -> Dark. Plain text, no icon. -->
+      <button onclick="toggleDark()" id="theme-btn" class="header-control-btn"
+              title="{% if site.lang == 'ur' %}تھیم تبدیل کریں (روشن / سیپیا / تاریک){% else %}Cycle theme (Light / Sepia / Dark){% endif %}"
+              style="color:#FFFFFF; padding:3px 6px; margin-{% if site.lang == 'ur' %}right{% else %}left{% endif %}:6px;">
+        {% if site.lang == 'ur' %}سیپیا{% else %}Sepia{% endif %}
+      </button>
+
+      <!-- Font-size toggle: cycles the whole page's text size,
+           default -> large -> larger (see textsize.js / main.css). -->
+      <button onclick="toggleTextSize()" id="textsize-btn" class="header-control-btn"
+              title="{% if site.lang == 'ur' %}تحریر کا حجم تبدیل کریں{% else %}Change text size{% endif %}"
+              style="color:#FFFFFF; padding:3px 6px; margin-{% if site.lang == 'ur' %}right{% else %}left{% endif %}:6px;">
+        Aa
+      </button>
+
+    </div><!-- /.header-controls -->
+  </div><!-- /.header-inner -->
+</header>
+
+<script>
+  /* --------------------------------------------------------
+     switchLanguage()
+     Swaps /en/ and /ur/ in the current path, then navigates.
+     Falls back to the opposite home page if swap fails.
+  -------------------------------------------------------- */
+  function switchLanguage(e) {
+    e.preventDefault();
+    var path = window.location.pathname;
+    var newPath;
+    if (path.includes('/en/')) {
+      newPath = path.replace('/en/', '/ur/');
+    } else if (path.includes('/ur/')) {
+      newPath = path.replace('/ur/', '/en/');
+    } else {
+      // Fallback: go to opposite home
+      newPath = path.includes('/ur') ? '{{ site.baseurl }}/en/' : '{{ site.baseurl }}/ur/';
+    }
+    window.location.href = newPath;
+  }
+
+  /* --------------------------------------------------------
+     toggleNav()
+     Shows/hides the mobile navigation menu.
+  -------------------------------------------------------- */
+  function toggleNav() {
+    var nav = document.getElementById('main-nav');
+    var btn = document.querySelector('.nav-toggle');
+    var isOpen = nav.classList.toggle('open');
+    if (btn) { btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false'); }
+  }
+
+  /* --------------------------------------------------------
+     toggleSubmenu()
+     Opens/closes the Creative Writing submenu ONLY on click —
+     directly toggling inline display style (not just a CSS
+     class) so visibility can never depend on hover or on
+     Tailwind's compiled/cached CSS.
+  -------------------------------------------------------- */
+  function toggleSubmenu(e, btn) {
+    e.preventDefault();
+    e.stopPropagation();
+    var li = btn.closest('.nav-item-has-children');
+    var submenu = li.querySelector('.submenu');
+    var willOpen = submenu.style.display !== 'flex';
+
+    // Close every other open submenu first
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (openLi) {
+      if (openLi !== li) {
+        openLi.classList.remove('submenu-open');
+        openLi.querySelector('.submenu').style.display = 'none';
+        var openBtn = openLi.querySelector('.submenu-toggle');
+        if (openBtn) { openBtn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+
+    submenu.style.display = willOpen ? 'flex' : 'none';
+    li.classList.toggle('submenu-open', willOpen);
+    btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+  }
+
+  // Close any open submenu when clicking elsewhere
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.nav-item-has-children.submenu-open').forEach(function (li) {
+      if (!li.contains(e.target)) {
+        li.classList.remove('submenu-open');
+        var submenu = li.querySelector('.submenu');
+        if (submenu) { submenu.style.display = 'none'; }
+        var btn = li.querySelector('.submenu-toggle');
+        if (btn) { btn.setAttribute('aria-expanded', 'false'); }
+      }
+    });
+  });
+
+  /* --------------------------------------------------------
+     Sync theme toggle button label after theme.js runs.
+  -------------------------------------------------------- */
+  document.addEventListener('DOMContentLoaded', function () {
+    var html = document.documentElement;
+    var mode = html.classList.contains('dark') ? 'dark'
+             : html.classList.contains('sepia') ? 'sepia'
+             : 'light';
+    if (typeof updateThemeLabel === 'function') {
+      updateThemeLabel(mode);
+    }
+  });
+
+  /* --------------------------------------------------------
+     Sticky header: add a "compact" state once the page has
+     scrolled past a small threshold, so long posts don't give up
+     as much vertical space to the header while still keeping nav/
+     search/theme controls reachable without scrolling back up.
+  -------------------------------------------------------- */
+  (function () {
+    var header = document.querySelector('.site-header');
+    if (!header) return;
+    var ticking = false;
+    var THRESHOLD = 40;
+
+    function update() {
+      var scrolled = (window.scrollY || document.documentElement.scrollTop) > THRESHOLD;
+      header.classList.toggle('header-scrolled', scrolled);
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(update);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    update();
+  })();
+</script>

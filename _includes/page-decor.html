@@ -1,0 +1,42 @@
+<!-- ============================================================
+     page-decor.html – picks a decorative line-art icon for the
+     current page based on its permalink, and renders it.
+     Included from _layouts/page.html.
+     ============================================================ -->
+{% assign decor_icon = "papers" %}
+{% case page.permalink %}
+  {% when "/articles/" %}
+    {% assign decor_icon = "papers" %}
+  {% when "/reviews/" %}
+    {% assign decor_icon = "book-star" %}
+  {% when "/letters/" %}
+    {% assign decor_icon = "letter" %}
+  {% when "/creative-writing/" %}
+    {% assign decor_icon = "pen-nib" %}
+  {% when "/creative-writing/short-stories/" %}
+    {% assign decor_icon = "open-book" %}
+  {% when "/creative-writing/poetry/" %}
+    {% assign decor_icon = "quill" %}
+  {% when "/creative-writing/reflection/" %}
+    {% assign decor_icon = "mirror-book" %}
+  {% when "/creative-writing/dialogues/" %}
+    {% assign decor_icon = "dialogue" %}
+  {% when "/creative-writing/satire/" %}
+    {% assign decor_icon = "masks" %}
+  {% when "/creative-writing/nonfiction/" %}
+    {% assign decor_icon = "book-stack" %}
+  {% when "/diary/" %}
+    {% assign decor_icon = "journal" %}
+  {% when "/events/" %}
+    {% assign decor_icon = "calendar-book" %}
+  {% when "/guidelines/" %}
+    {% assign decor_icon = "checklist" %}
+  {% when "/submission/" %}
+    {% assign decor_icon = "paper-plane" %}
+  {% when "/search/" %}
+    {% assign decor_icon = "magnifier" %}
+{% endcase %}
+
+<div class="page-decor decor-{{ decor_icon }}" aria-hidden="true">
+  <svg class="decor-svg"><use href="#icon-{{ decor_icon }}"></use></svg>
+</div>

@@ -1,0 +1,42 @@
+{%- comment -%}
+  post-image.html – consistent, responsive image block for use inside
+  post/page bodies (kramdown content, or _collections/pages markdown).
+
+  Usage, anywhere inside a post or page's Markdown body:
+    {% include post-image.html
+       src="/assets/img/posts/practicum-5/classroom.jpg"
+       alt="Students working in small groups during the lesson"
+       caption="Grade 7 students during the group activity" %}
+
+  Params:
+    src         required. Path from the site root, starting with "/".
+                Put the actual image file under assets/img/posts/...
+                (any subfolder name is fine — see the folder
+                convention note in assets/img/posts/README.md).
+    alt         required. Accessible description of the image — never
+                leave this empty, screen readers and SEO both depend
+                on it.
+    caption     optional. Short line shown under the image.
+    width       optional. Caps the DISPLAY width, e.g. width="480px".
+                Omit for a full-width (responsive) image.
+    img_width,
+    img_height  optional, but recommended when known. The image
+                file's actual pixel dimensions (e.g. img_width="1200"
+                img_height="800"). Setting both lets the browser
+                reserve the correct space before the image loads, so
+                the page doesn't jump around while lazy-loaded images
+                come in further down a long post. Purely a layout
+                hint — the image still displays responsively at
+                whatever width the column/`width` param allows.
+{%- endcomment -%}
+<figure class="post-figure">
+  <img src="{{ site.baseurl }}{{ include.src }}"
+       alt="{{ include.alt | default: '' | escape }}"
+       loading="lazy"
+       decoding="async"
+       {% if include.img_width and include.img_height %}width="{{ include.img_width }}" height="{{ include.img_height }}"{% endif %}
+       {% if include.width %}style="max-width:{{ include.width }};"{% endif %}>
+  {% if include.caption %}
+  <figcaption class="post-figure-caption">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

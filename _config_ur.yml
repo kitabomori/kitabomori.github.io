@@ -1,0 +1,11 @@
+lang: ur
+direction: rtl
+body_font: "'Jameel Noori Nastaliq', serif"
+
+# See the matching comment in _config_en.yml — same fix, /ur subpath.
+url: "https://kitabomori.github.io/ur"
+
+title_display: "کتابومری"
+tagline: "تحقیق پر مبنی مواد کے ذریعے مطالعے کا فروغ"
+
+destination: ./_site/ur

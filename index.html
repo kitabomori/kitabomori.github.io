@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+  index.html – Root redirect page.
+  Detects browser language and redirects to /en/ or /ur/.
+  Falls back to /en/ for all unsupported languages.
+-->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kitabomori – Redirecting…</title>
+  <script>
+    (function () {
+      var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      // Redirect to Urdu build for Urdu/Pakistani Urdu locales
+      if (lang.startsWith('ur')) {
+        window.location.replace('/ur/');
+      } else {
+        window.location.replace('/en/');
+      }
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/en/">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting… <a href="/en/">Click here if not redirected.</a></p>
+</body>
+</html>

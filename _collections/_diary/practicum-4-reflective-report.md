@@ -1,0 +1,39 @@
+---
+layout: post
+title_en: "Practicum-IV - Reflective Report"
+title_ur: "پریکٹیکم چہارم - عکاسی رپورٹ"
+date: 2026-07-16
+author_en: ""
+author_ur: ""
+bio_en: ""
+bio_ur: ""
+description_en: "A comprehensive reflective report on the Practicum-IV teaching experience at X School, Sukkur."
+description_ur: "ایکس اسکول، سکھر میں پریکٹیکم چہارم کے تدریسی تجربے پر ایک جامع تفکراتی رپورٹ۔"
+youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"
+available_ur: false
+seq_prev_url: "/diary/practicum-4-lesson-plan-10/"
+seq_prev_title: "Practicum-IV Lesson Plan 10"
+seq_next_url: "/diary/practicum-5-lesson-plan-1/"
+seq_next_title: "Practicum-V Lesson Plan 1"
+---
+
+<p>As a teacher, the first time I met the student outside the classroom, I was a stranger to them. The second time I met on the playground, I was an instructor. The next time I was their class fellow. Being with the students at the playgrounds and having small chats here and there throughout the practicum at X School, Sukkur, made this experience a bit different from the past ones. In this reflective report, I will discuss what I did during the ten visits to the school and what I have learned.</p>
+
+<p>There were a couple of experiences during the first few visits to the school that prompted me to go against the odds. The initial interactions with the school administration gave me goosebumps, as I, along with my colleagues, was instructed to follow the school's rules, like prisoners in a jail. Imagine you are at a place with more than 2,000 people who came to interact and learn from one another for 6 hours. You are advised to follow the rules that halt learning. Would teachers be able to work if they had no agency? Secondly, teachers are the drivers and facilitators of learning. What I had found was that teachers at this particular school were exhausted while checking student homework copies, developing lesson plans, and giving reports to school administration and parents about students' progress. This also made them stay in the staffroom throughout the school hours. And I doubt there was any concept of collegiality among teachers to share and learn from one another's experiences. It is a question to ask management: how would they take off some of the teachers' burden so they could spend more time with students, beyond the 40-minute class?</p>
+
+<p>I was there to learn, practice, and make mistakes. Throughout the ten visits, I tried to be among students from dawn to dusk. Teaching is my vocation, and I enjoy it. I played cricket with the boys of Eighth Daisy. The students were jubilant when I smashed a couple of boundaries in the very first match. On the football pitch, on occasions, students were dribbling the football around me like Messi. While the Seventh Rose girls were equally enthusiastic to play cricket and football, their access was limited to the basketball court.</p>
+
+<p>Spending time with students helped me tremendously in the classroom. Most of the time, we, the teachers, create a wall to exclude the real world from the classroom. This leads to boredom; students do not remain attentive to the topic under discussion, and the teaching becomes less relevant to their interests, which disrupts the class. I tried to connect teaching to their experiences by giving time at the start to discuss and express what happened when they were playing, especially when I was teaching the boy in the first half of the practicum. Moreover, I tried my level best to learn about their personal lives and how they are dealing with the unhealthy competition among themselves.</p>
+
+<p>In the second half, I taught grade seven girls, which was a novel experience for me, as I had never done so before. I used a VARK worksheet to collect data from the girls on their learning modes/styles during the very first interaction, and then developed the following lessons, analysing the data. One lesson was on listening, followed by reading, and the last two were on writing.</p>
+
+{% include post-image.html
+   src="/assets/img/posts/practicum-4-reflective-report/learning-style-data.png"
+   alt="Pie chart of Grade 7 girls' VARK learning styles: Aural/Auditory 50%, Read/Write 16.7%, Kinesthetic 12.5%, Visual 8.3%, Aural/Auditory and Kinesthetic 4.2%, Visual and Kinesthetic 4.2%"
+   caption="Figure 1: Grade 7th Learning Style Data" %}
+
+<p>I had allowed the students to eat and move around in class if there was something important to share or discuss. Students always have a craving for snacks. When there are chips in the backpack, how will a student resist and focus on learning, which is all about paying attention and interaction? This slide changed the way I used to manage classroom decor and taught me that learning can take place while eating and moving in class.</p>
+
+<p>In this practicum, I tried to be a friend of the students, allowing myself to be with them. A teacher's work does not end after instructing for 40 minutes; rather, it continues in a continuous connection with them through thick and thin. By this, they feel free to share and learn. When I was about to leave on the last visit, one of my students, a girl, came to the bus door and said, "Sir, you are my favourite teacher." This is what I achieved at the end of this practicum.</p>
+

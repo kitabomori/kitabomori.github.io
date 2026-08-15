@@ -1,0 +1,36 @@
+<!-- ============================================================
+     post-decor.html – picks a decorative line-art icon for the
+     current post based on its collection.
+     Included from _layouts/post.html.
+     ============================================================ -->
+{% assign decor_icon = "papers" %}
+{% case page.collection %}
+  {% when "articles" %}
+    {% assign decor_icon = "papers" %}
+  {% when "reviews" %}
+    {% assign decor_icon = "book-star" %}
+  {% when "letters" %}
+    {% assign decor_icon = "letter" %}
+  {% when "calls" %}
+    {% assign decor_icon = "paper-plane" %}
+  {% when "short_stories" %}
+    {% assign decor_icon = "open-book" %}
+  {% when "poetry" %}
+    {% assign decor_icon = "quill" %}
+  {% when "reflections" %}
+    {% assign decor_icon = "mirror-book" %}
+  {% when "dialogues" %}
+    {% assign decor_icon = "dialogue" %}
+  {% when "satire" %}
+    {% assign decor_icon = "masks" %}
+  {% when "nonfiction" %}
+    {% assign decor_icon = "book-stack" %}
+  {% when "events" %}
+    {% assign decor_icon = "calendar-book" %}
+  {% when "diary" %}
+    {% assign decor_icon = "journal" %}
+{% endcase %}
+
+<div class="page-decor page-decor-post decor-{{ decor_icon }}" aria-hidden="true">
+  <svg class="decor-svg"><use href="#icon-{{ decor_icon }}"></use></svg>
+</div>

@@ -1,0 +1,16 @@
+# Urdu month names, keyed by month number (no leading zero, matching
+# Liquid's "%-m" date filter output e.g. "6" for June, "12" for December).
+# Used by _includes/localized-date.html since Ruby's strftime %B has
+# no Urdu locale and always returns the English name otherwise.
+"1": جنوری
+"2": فروری
+"3": مارچ
+"4": اپریل
+"5": مئی
+"6": جون
+"7": جولائی
+"8": اگست
+"9": ستمبر
+"10": اکتوبر
+"11": نومبر
+"12": دسمبر
