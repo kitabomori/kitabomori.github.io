@@ -195,7 +195,7 @@
      reliably show up for anyone who already has the old file cached
      — this is why CSS-only edits (like a font-size change) can look
      like they "didn't take" even though the deploy succeeded. -->
-<link rel="stylesheet" href="/assets/css/main.css?v=1786790770">
+<link rel="stylesheet" href="/assets/css/main.css?v=1786794037">
 
 <!-- Theme script: runs before paint to prevent flash of wrong colour scheme -->
 <script src="/assets/js/theme.js"></script>
@@ -944,9 +944,13 @@
 
     <div class="post-body-content">
       <!--KITABOMORI-POST-BODY-START-->
+      <!-- Liquid tags can't use parentheses to group and/or (they're
+           invalid characters in a Liquid tag and silently break it) —
+           so this is written as two single-condition checks into a
+           flag, not "(a and b) or (c and d)" in one unless. -->
       
       
-
+      
       
       <!--KITABOMORI-POST-BODY-END-->
     </div>
@@ -990,26 +994,8 @@
   
     
     
+    
 
-    
-    
-    
-    
-    <nav class="post-nav" data-section="reflections" aria-label="More from this collection">
-      
-      <a class="post-nav-link post-nav-prev" href="/en">
-        <svg class="post-nav-icon" aria-hidden="true"><use href="#icon-mirror-book"></use></svg>
-        <span class="post-nav-text">
-          <span class="post-nav-label">Older</span>
-          <span class="post-nav-title">
-            
-          </span>
-        </span>
-      </a>
-      
-
-      
-    </nav>
     
   
 
