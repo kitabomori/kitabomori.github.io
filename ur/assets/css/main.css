@@ -1843,10 +1843,34 @@ html:not([dir="rtl"]) .post-title {
    and set apart from the post's own prose so it reads as site chrome
    rather than part of the piece. */
 .post-header .post-lang-note,
-[dir="rtl"] .post-header .post-lang-note {
+[dir="rtl"] .post-header .post-lang-note,
+[dir="rtl"] .post-body p.post-lang-note {
   @apply text-sm italic mb-4;
+  display: block !important;
+  width: 100% !important;
   text-align: center !important;
+  text-align-last: center !important;
   color: #7A6A45;
+}
+
+/* Diary/Dialogues/Reviews/Satire force direction:ltr + text-align:left
+   on their whole .post-body-* container and its <p> children (see the
+   "Diary, Dialogues, Reviews, and Satire posts have no separate Urdu
+   body translation" rule further down this file) — because that body
+   copy stays English even on the /ur/ build. .post-lang-note is a <p>
+   that lives inside that same container, so without this override it
+   inherited direction:ltr and the left-aligned text-align-last from
+   that rule, which is what was pushing the Urdu "not available in
+   Urdu, switch to English" note over to the left instead of centring
+   it. This re-asserts rtl direction + centring specifically for the
+   Urdu note, regardless of which collection's post-body it sits in. */
+[dir="rtl"] .post-body-diary p.post-lang-note,
+[dir="rtl"] .post-body-dialogues p.post-lang-note,
+[dir="rtl"] .post-body-reviews p.post-lang-note,
+[dir="rtl"] .post-body-satire p.post-lang-note {
+  direction: rtl !important;
+  text-align: center !important;
+  text-align-last: center !important;
 }
 
 .post-header .post-lang-note a {
