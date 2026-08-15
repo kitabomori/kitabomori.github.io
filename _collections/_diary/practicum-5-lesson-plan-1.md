@@ -19,6 +19,7 @@ seq_next_url: "/diary/practicum-5-reflection-1/"
 seq_next_title_en: "Practicum-V Reflection 1"
 seq_next_title_ur: "پریکٹیکم پنجم - عکاسی 1"
 ---
+{% if site.lang == 'ur' %}
 
 <div dir="rtl" lang="ur">
 
@@ -76,4 +77,4 @@ seq_next_title_ur: "پریکٹیکم پنجم - عکاسی 1"
 <p>اردو کتاب ہشتم جماعت</p>
 
 </div>
-
+{% else %}
