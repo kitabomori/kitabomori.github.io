@@ -2537,6 +2537,26 @@ html[dir="rtl"] .search-result:hover {
   text-align-last: right;
 }
 
+/* Belt-and-suspenders: a paragraph that explicitly opts into
+   style="text-align:center" (e.g. a short couplet/epigraph quoted
+   at the top of a Diary/Dialogues/Reviews/Satire post) should stay
+   centred no matter what. That already follows from plain CSS
+   cascade rules (an inline style always wins over any non-!important
+   external rule, including the two immediately above), but this
+   makes it impossible for any other rule — present or future — to
+   pull it off-centre by matching on the inline value itself. */
+[dir="rtl"] .post-body-diary [style*="text-align:center"],
+[dir="rtl"] .post-body-dialogues [style*="text-align:center"],
+[dir="rtl"] .post-body-reviews [style*="text-align:center"],
+[dir="rtl"] .post-body-satire [style*="text-align:center"],
+[dir="rtl"] .post-body-diary [style*="text-align: center"],
+[dir="rtl"] .post-body-dialogues [style*="text-align: center"],
+[dir="rtl"] .post-body-reviews [style*="text-align: center"],
+[dir="rtl"] .post-body-satire [style*="text-align: center"] {
+  text-align: center !important;
+  text-align-last: center !important;
+}
+
 /* Table cells inside these Urdu blocks very often set their own
    inline text-align (e.g. style="text-align:center" for a value
    column) to line up a table's data — inline styles already win
