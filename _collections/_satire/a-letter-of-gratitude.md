@@ -12,7 +12,7 @@ description_ur: "یونیورسٹی کے دنوں میں عید کا جشن"
 youtube_en: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallback link, only used if youtube_id is left blank
 youtube_ur: "https://www.youtube.com/channel/UCKPb3SXn6wcDjMbobIFKxbg"  # Fallback link, only used if youtube_id is left blank
 youtube_id: ""                             # Preferred: just the YouTube video ID (e.g. "dQw4w9WgXcQ" 
-pull_quote_en: ""                          # Optional: pin the exact pull-quote sentence shown on the page
+pull_quote_en: "However, I intend to write this letter to thank the above-mentioned great personalities (as saluted) who have engraved “students: our priority"                          # Optional: pin the exact pull-quote sentence shown on the page
 pull_quote_ur: ""                          # (English/Urdu). Leave both blank and the site will automatically
                                             # pick the strongest sentence from the post itself; set these once
                                             # you've read the auto-picked one and want to override it.
