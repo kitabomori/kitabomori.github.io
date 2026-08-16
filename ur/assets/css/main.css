@@ -2492,6 +2492,49 @@ html[dir="rtl"] .search-result:hover {
   left: 0;
   right: auto;
 }
+
+/* Some Diary (lesson plan) posts are written entirely in Urdu, even
+   though the four rules above force the surrounding .post-body-diary
+   container to direction:ltr/text-align:left (correct for the
+   normal case of English body copy). Authors mark that Urdu content
+   by wrapping it in their own <div dir="rtl">...</div> in the post's
+   HTML. The dir="rtl" attribute correctly restores direction:rtl for
+   everything inside that div (a direct value on an element always
+   beats an inherited one, even one from a plain HTML attribute), so
+   word order was never the problem.
+   text-align is different: it's an *inherited* property, so any
+   heading/paragraph/list item inside that div which doesn't carry
+   its own explicit alignment quietly inherits the "left" set on the
+   distant .post-body-diary ancestor above — pulling Urdu headings
+   and prose to the left edge even though the characters themselves
+   read right-to-left. Rather than depend on every post remembering
+   to hand-add dir="rtl" + style="text-align:right" to every single
+   heading/paragraph/list item (most don't), this re-asserts right
+   alignment for every common text element inside *any* author-added
+   [dir="rtl"] wrapper in these four collections, automatically. */
+[dir="rtl"] .post-body-diary [dir="rtl"],
+[dir="rtl"] .post-body-dialogues [dir="rtl"],
+[dir="rtl"] .post-body-reviews [dir="rtl"],
+[dir="rtl"] .post-body-satire [dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .post-body-diary [dir="rtl"] :is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, th, blockquote, table),
+[dir="rtl"] .post-body-dialogues [dir="rtl"] :is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, th, blockquote, table),
+[dir="rtl"] .post-body-reviews [dir="rtl"] :is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, th, blockquote, table),
+[dir="rtl"] .post-body-satire [dir="rtl"] :is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, th, blockquote, table) {
+  text-align: right;
+  text-align-last: right;
+}
+
+/* Table cells inside these Urdu blocks very often set their own
+   inline text-align (e.g. style="text-align:center" for a value
+   column) to line up a table's data — inline styles already win
+   over the rule above with no extra work, so centred/left table
+   cells an author explicitly aligned stay exactly as written; only
+   cells with no inline alignment of their own fall back to right,
+   which is the correct default for Urdu table content. */
 /* ============================================================
    HOME PAGE ALIGNMENT OVERRIDES
    ============================================================ */
