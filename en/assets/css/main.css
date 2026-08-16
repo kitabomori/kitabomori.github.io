@@ -2493,25 +2493,31 @@ html[dir="rtl"] .search-result:hover {
   right: auto;
 }
 
-/* Some Diary (lesson plan) posts are written entirely in Urdu, even
-   though the four rules above force the surrounding .post-body-diary
-   container to direction:ltr/text-align:left (correct for the
-   normal case of English body copy). Authors mark that Urdu content
-   by wrapping it in their own <div dir="rtl">...</div> in the post's
-   HTML. The dir="rtl" attribute correctly restores direction:rtl for
-   everything inside that div (a direct value on an element always
-   beats an inherited one, even one from a plain HTML attribute), so
-   word order was never the problem.
+/* Some Diary (lesson plan / reflection) posts are written entirely
+   in Urdu, even though the four rules above force the surrounding
+   .post-body-diary container to direction:ltr/text-align:left
+   (correct for the normal case of English body copy). Authors mark
+   that Urdu content with a dir="rtl" attribute — either once, on a
+   single wrapping <div>, or repeated on every individual heading/
+   paragraph/list item. Either way dir="rtl" correctly restores
+   direction:rtl (a direct value on an element always beats an
+   inherited one, even one from a plain HTML attribute), so word
+   order was never the problem.
    text-align is different: it's an *inherited* property, so any
-   heading/paragraph/list item inside that div which doesn't carry
-   its own explicit alignment quietly inherits the "left" set on the
-   distant .post-body-diary ancestor above — pulling Urdu headings
-   and prose to the left edge even though the characters themselves
-   read right-to-left. Rather than depend on every post remembering
-   to hand-add dir="rtl" + style="text-align:right" to every single
-   heading/paragraph/list item (most don't), this re-asserts right
-   alignment for every common text element inside *any* author-added
-   [dir="rtl"] wrapper in these four collections, automatically. */
+   heading/paragraph/list item that doesn't carry its own explicit
+   alignment (or sits inside a wrapper that only sets dir, not
+   text-align) quietly inherits the "left" set on the distant
+   .post-body-diary ancestor above — pulling Urdu text to the left
+   edge even though the characters themselves read right-to-left.
+   Likewise text-align-last is never something an inline style sets,
+   so even a paragraph with its own inline text-align:justify still
+   has its last line pulled left by the .post-body-diary p rule
+   further up. Rather than depend on every post remembering to
+   hand-add text-align:right (and text-align-last) to every single
+   heading/paragraph/list item, the two rules below re-assert right
+   alignment for every common text element that either carries
+   dir="rtl" itself or sits inside something that does, anywhere in
+   these four collections, automatically. */
 [dir="rtl"] .post-body-diary [dir="rtl"],
 [dir="rtl"] .post-body-dialogues [dir="rtl"],
 [dir="rtl"] .post-body-reviews [dir="rtl"],
@@ -2520,10 +2526,10 @@ html[dir="rtl"] .search-result:hover {
   text-align: right;
 }
 
-[dir="rtl"] .post-body-diary [dir="rtl"] :is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, th, blockquote, table),
-[dir="rtl"] .post-body-dialogues [dir="rtl"] :is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, th, blockquote, table),
-[dir="rtl"] .post-body-reviews [dir="rtl"] :is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, th, blockquote, table),
-[dir="rtl"] .post-body-satire [dir="rtl"] :is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, th, blockquote, table) {
+[dir="rtl"] .post-body-diary :is([dir="rtl"], [dir="rtl"] *):is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, th, blockquote, table),
+[dir="rtl"] .post-body-dialogues :is([dir="rtl"], [dir="rtl"] *):is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, th, blockquote, table),
+[dir="rtl"] .post-body-reviews :is([dir="rtl"], [dir="rtl"] *):is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, th, blockquote, table),
+[dir="rtl"] .post-body-satire :is([dir="rtl"], [dir="rtl"] *):is(h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, th, blockquote, table) {
   text-align: right;
   text-align-last: right;
 }
