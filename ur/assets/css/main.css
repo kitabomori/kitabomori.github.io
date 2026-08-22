@@ -60,6 +60,13 @@
 
 html {
   background-color: var(--reading-bg);
+  /* Safety net: stops any future off-screen/negative-offset element
+     (or an accidentally-too-wide table, image, etc.) from silently
+     expanding the page's horizontal scroll range and landing readers
+     on an empty area instead of the real content — the exact failure
+     mode that caused a blank-looking screen on the rtl (Urdu) build.
+     Harmless on pages that don't overflow. */
+  overflow-x: hidden;
 }
 
 body {
@@ -67,6 +74,7 @@ body {
   color: var(--reading-text);
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 /* Long-form copy: comfortable size, generous leading, capped
@@ -1595,10 +1603,26 @@ html:not([dir="rtl"]) .site-title {
 
 /* Skip-to-content link: hidden off-screen until keyboard-focused,
    then jumps to the front of the page above the header. */
+/* Hidden the same safe way .sr-only is above: a 1px clipped box,
+   not a huge negative offset. The old `left: -9999px` technique
+   relied on browsers refusing negative scrollLeft — true for
+   dir="ltr" documents, but NOT true for dir="rtl" ones (negative
+   scroll positions are valid there per spec). On the Urdu (rtl)
+   build this silently expanded the page's real scrollable width by
+   9999px to the left, and mobile browsers would land their initial
+   scroll position inside that empty region instead of on the real
+   content — a totally blank-looking screen until the reader swiped
+   left back onto the page. Clipping instead of offsetting avoids
+   creating any extra scrollable area at all, in either direction. */
 .skip-to-content {
   position: absolute;
-  left: -9999px;
   top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
   z-index: 1000;
   background: #FFFFFF;
   color: #00695F;
@@ -1608,7 +1632,11 @@ html:not([dir="rtl"]) .site-title {
   text-decoration: none;
 }
 .skip-to-content:focus {
-  left: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
 }
 
 /* ---- Dropdown submenu (Creative Writing) ---- */
